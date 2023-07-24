@@ -1,0 +1,76 @@
+/* COMMON */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img, figure { margin:0; padding:0; }
+html { width:100%; height:100%; }
+body,code { font:0.75em 'AppleGothic','Lato','Verdana','Dotum','sans-serif'; color:#000; background:#fff; }
+body { min-width:1480px; }
+li { list-style:none; }
+img,fieldset { border:none; vertical-align:top; }
+table { width:100%; border:0; border-spacing:0; border-collapse:collapse; }
+caption { display:none; }
+th,td { border:0; vertical-align:top; }
+button { overflow:visible; padding:0; margin:0; border:0; cursor:pointer; }
+hr.layout { display:none; }
+a { text-decoration:none; color:#000; }
+a:hover { text-decoration:underline; }
+a:active { text-decoration:none; }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* 디자인 시스템 규칙 !! */
+:root {
+    /* 타이틀 규칙 */
+    --hc_tit_h1: font-size:60px;       
+    --hc_tit_page: font-size:60px;       
+    --hc_tit_content: font-size:60px;   
+    --hc_tit_headline: font-size:36px;  
+    --hc_tit_caption: font-size:24px;  
+
+    /* 본문 텍스트 규칙 */
+    --hc_bd_xsmall: font-size:12px; 
+    --hc_bd_small: font-size:14px; 
+    --hc_bd_medium: font-size:16px; 
+    --hc_bd_large: font-size:18px; 
+    --hc_bd_xlarge: font-size:20px; 
+    --hc_bd_xxlarge: font-size:22px; 
+
+    /* 컬러 규칙 */
+    --hc_dark_color :#000;
+    --hc_bright_color :#fff;
+}
+
+
+/* LAYOUT */
+.hc_common_wrap {
+    width:1920px;
+    margin: 0 auto;
+}
+
+/* MAIN */
+.hc_md_notice_top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    color: #fff;
+    font-size: var(--hc_bd_xxlarge);
+    background-color: var(--hc_dark_color);
+}
+.hc_main_section1 {
+    margin-bottom: 434px;
+}
+.hc_main_section3 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.hc_section3_contents1 {
+    margin: 0 230px;
+}
+
+.hc_titleRule_big {
+    margin-top:94px;
+    font-size: var(--hc_tit_h1);
+    text-transform: uppercase;
+}
