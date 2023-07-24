@@ -20,19 +20,19 @@ a:active { text-decoration:none; }
 /* 디자인 시스템 규칙 !! */
 :root {
     /* 타이틀 규칙 */
-    --hc_tit_h1: font-size:60px;       
-    --hc_tit_page: font-size:60px;       
-    --hc_tit_content: font-size:60px;   
-    --hc_tit_headline: font-size:36px;  
-    --hc_tit_caption: font-size:24px;  
+    --hc_tit_h1: 60px;       
+    --hc_tit_page: 60px;       
+    --hc_tit_content: 60px;   
+    --hc_tit_headline: 36px;  
+    --hc_tit_caption:24px;  
 
     /* 본문 텍스트 규칙 */
-    --hc_bd_xsmall: font-size:12px; 
-    --hc_bd_small: font-size:14px; 
-    --hc_bd_medium: font-size:16px; 
-    --hc_bd_large: font-size:18px; 
-    --hc_bd_xlarge: font-size:20px; 
-    --hc_bd_xxlarge: font-size:22px; 
+    --hc_bd_xsmall: 12px; 
+    --hc_bd_small: 14px; 
+    --hc_bd_medium: 16px; 
+    --hc_bd_large: 18px; 
+    --hc_bd_xlarge: 20px; 
+    --hc_bd_xxlarge: 22px; 
 
     /* 컬러 규칙 */
     --hc_dark_color :#000;
@@ -54,7 +54,7 @@ a:active { text-decoration:none; }
     width: 100%;
     height: 64px;
     color: #fff;
-    font-size: var(--hc_bd_xxlarge);
+    font-size: var(--hc_bd_large);
     background-color: var(--hc_dark_color);
 }
 .hc_main_section1 {
