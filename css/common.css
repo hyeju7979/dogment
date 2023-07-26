@@ -59,9 +59,7 @@ a:active { text-decoration:none; }
 .hc_between {
     display: flex;
     align-items: baseline;
-    justify-
-    
-    content: space-between;
+    justify-content: space-between;
 }
 /* LAYOUT */
 .hc_common_wrap {
@@ -215,7 +213,6 @@ input[name="tab_item"] {
 /* sub 탭 스타일 */
 .hc_vf_tab_item {
     display: inline-block;
-    float: right;
     margin-left: 14px;
     width: 25px;
     height: 25px;
@@ -502,8 +499,6 @@ footer {
         outline: none;
         border: 1px solid var(--hc_dark_color);;
         vertical-align: middle;
-        -webkit-appearance: none;
-        -webkit-box-sizing: border-box;
 }
 .hc_sorting_options input[type="checkbox"]::before {
     content: "\2713";
