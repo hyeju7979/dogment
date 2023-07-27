@@ -109,6 +109,7 @@ a:active { text-decoration:none; }
 /* 메인 header */
 .hc_header_main {
     position: absolute;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,7 +213,7 @@ input[name="tab_item"] {
 }
 /* sub 탭 스타일 */
 .hc_vf_tab_item {
-    display: inline-block;
+    float:right;
     margin-left: 14px;
     width: 25px;
     height: 25px;
@@ -241,6 +242,7 @@ input[name="tab_item"] {
     font-size: var(--hc_bd_small);
     text-align: center;
     transition: all 0.2s ease;
+    cursor: pointer;
   }
 /******************************************* and 모듈 탭 스타일 */
 .hc_aside_main nav {
@@ -289,8 +291,25 @@ input[name="tab_item"] {
 .hc_menu_state:checked ~ .hc_menu_content {  
   max-height: 400px;
 }
+/* 메인 랜덤 이미지 */
+.hc_main_section1 {
+    position: relative;
+}
 .hc_main_section1 img {
+    position: absolute;
+    top: 0;
+    z-index: 99;
     width: 100%;
+}
+.hc_loding_copy {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    font-size: var(--hc_tit);
+    background-color: rgba( 255, 255, 255, 0.5 );
 }
 /* 모달 검색창 */
 .hc_modal_search {
@@ -566,4 +585,47 @@ footer {
 .hc_all_next,
 .hc_all_prev {
     display: inline-block;
+}
+/* DETAIL */
+.hc_cdetail_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.hc_detail_info {
+    position: fixed;
+    right: 0;
+    padding: 30px 22px 0;
+    width: 600px;
+    height: 100vh;
+    /* border-left: 1px solid var(--hc_dark_color); */
+    /* background: var(--hc_bright_color); */
+    box-sizing: border-box;
+}
+.hc_detail_info_type3 {
+    display: grid;
+    grid-template-columns: 3fr auto auto;
+}
+.hc_detail_info .hc_prd_name {
+    font-size: var(--hc_bd_xlarge);
+}
+.hc_detail_info .hc_discount_price,
+.hc_detail_info .hc_normal_price {
+    font-size: var(--hc_bd_large);
+    text-align: right;
+}
+.hc_detail_info .hc_discount_price {
+    margin-left: 20px;
+}
+.hc_detail_info_type2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.hc_explanation {
+    color: var(--hc_color_point);
+    font-size: var(--hc_bd_xsmall);
+}
+.hc_detail_info .hc_discount_rate {
+    color: var(--hc_dark_color);
+    font-size: var(--hc_bd_xsmall);
+    text-align: right;
 }
