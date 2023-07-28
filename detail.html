@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETAIL</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/module.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.contentDetail').on('click', function(e) {
+                var target = $(e.currentTarget);
+                target.find('.arrow').toggleClass('active');                
+            });
+
+            // $('.arrow--l-r').on('click', function() {
+            //     $(this).toggleClass('left right');
+            // });
+        });
+    </script>
 </head>
 <body id="hc_wrap_top">        
     <!-- 상단 텍스트 배너 -->
@@ -171,9 +185,200 @@
 
     <!-- 컨텐츠 영역 -->
     <div class="hc_common_wrap">
-        <main class="hc_cdetail_wrap">
+        <main class="hc_detail_wrap">
             <div class="hc_cover">
-                <img src="img/detail/top_img.jpg"/>
+                <!-- 상품상세 대표 이미지 영역 -->
+                <section class="hc_detail_rep">
+                    <div class="hc_detail_main_img"><img src="img/detail/top_img.jpg"/></div>
+                    <!-- 다중이미지 -->
+                    <ul class="hc_img_carousel_list">
+                        <li><img src="img/detail/image_carousel1.jpg" alt ="" /></li>
+                        <li><img src="img/detail/image_carousel2.jpg" alt ="" /></li>
+                        <li><img src="img/detail/image_carousel3.jpg" alt ="" /></li>
+                        <li><img src="img/detail/image_carousel4.jpg" alt ="" /></li>
+                        <li><img src="img/detail/image_carousel5.jpg" alt ="" /></li>
+                        <li><img src="img/detail/image_carousel6.jpg" alt ="" /></li>
+                        <li><img src="img/detail/image_carousel7.jpg" alt ="" /></li>
+                    </ul>
+                </section>
+
+                <!-- 상품상세 영역 -->
+                <figure>
+                    <div>
+                        <p class="hc_titleRule">Design by PIGMENT</p>
+                        <p class="hc_tit_caption">순수자체제작 여성의류 브랜드, 편안한 실루엣과 섬세한 디테일</p>
+                    </div>
+                    <div class="hc_description_area">
+                        <img src="img/detail/outer_blackcream_02.jpg" alt ="" />
+                        <img src="img/detail/outer_blackcream_03.jpg" alt ="" />
+                        <!-- 상품 더보기 -->
+                        <details class="contentDetail">
+                            <summary class="hc_md_more_description">상품설명 더보기
+                                <div class="wrap">
+                                    <span class="arrow"><span></span><span></span></span>
+                                </div>
+                            </summary>
+                            <img src="img/detail/outer_blackcream_04.jpg" alt ="" />
+                            <img src="img/detail/outer_blackcream_05.jpg" alt ="" />
+                            <img src="img/detail/outer_blackcream_06.jpg" alt ="" />
+                            <img src="img/detail/outer_blackcream_07.jpg" alt ="" />
+                            <img src="img/detail/outer_blackcream_08.jpg" alt ="" />
+                            <img src="img/detail/outer_blackcream_09.jpg" alt ="" />
+                        </details>
+                    </div>
+                </figure>
+
+                <!-- 관련상품 -->
+                <div class="hc_detail_relation">
+                    <p class="hc_titleRule">COMPLETE THE LOOK</p>
+                    <p class="hc_tit_caption">함께 코디하면 좋은 제품</p>
+                    <ul class="hc_detail_relation_list">
+                        <li><img src="img/detail/relation1.jpg" alt ="" /></li>
+                        <li><img src="img/detail/relation2.jpg" alt ="" /></li>
+                        <li><img src="img/detail/relation3.jpg" alt ="" /></li>
+                        <li><img src="img/detail/relation4.jpg" alt ="" /></li>
+                    </ul>
+                </div>
+
+                <!-- 상품 리뷰 -->
+                <section class="hc_table_detail">
+                    <h4 class="hc_md_table_title">BEST REVIEW</h4>
+                    <div class="hc_md_table_detail_caption">
+                        <span>번호</span>
+                        <span>제목</span>
+                        <span>작성자</span>
+                        <span>평점</span>
+                    </div>
+                    <div class="hc_md_table_detail_article">
+                        <span>1</span>
+                        <span>안녕하세요 피그먼트 MD 은지입니다. 여름철 필수 아이템 컬러데일리t를 착용해보았습니다 !</span>
+                        <span>MD은지</span>
+                        <span>★★★★★</span>
+                    </div>
+                    <div class="hc_md_table_detail_article">
+                        <span>2</span>
+                        <span>부드럽고 기본 아이템으로 좋네요^^ 세일할 때 잘 샀어요</span>
+                        <span>윤소*</span>
+                        <span>★★★★★</span>
+                    </div>
+                    <div class="hc_pageing">
+                        <span class="hc_all_prev">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_934_3487)">
+                                <path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_934_3487">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <div class="hc_sub_pages3">
+                            <input id="hc_page1_show3" type="radio" name="tab_item" checked>
+                            <label class="hc_paging_item_show3" for="hc_page1_show3">1</label>
+                          
+                            <input id="hc_page2_show3" type="radio" name="tab_item">
+                            <label class="hc_paging_item_show3" for="hc_page2_show3">2</label>
+                          
+                            <input id="hc_page3_show3" type="radio" name="tab_item">
+                            <label class="hc_paging_item_show3" for="hc_page3_show3">3</label>
+                          
+                            <input id="hc_page4_show3" type="radio" name="tab_item">
+                            <label class="hc_paging_item_show3" for="hc_page4_show3">4</label>
+                          
+                            <div class="tab_content" id="hc_page1_content_show3"></div>
+                            <div class="tab_content" id="hc_page2_content_show3"></div>
+                            <div class="tab_content" id="hc_page3_content_show3"></div>
+                            <div class="tab_content" id="hc_page4_content_show3"></div>
+                        </div>
+                        <span class="hc_all_next">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_934_3487)">
+                                <path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_934_3487">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                </section>
+
+                <!-- 상품 문의 -->
+                <section class="hc_table_detail">
+                    <h4 class="hc_md_table_title">
+                        <div>Q&A</div>
+                        <div class="hc_btn_wrap">
+                            <span class="hc_btn_small_fill"><a href="">문의하기</a></span>
+                            <span class="hc_btn_small"><a href="">전체보기</a></span>
+                        </div>
+                    </h4>
+                    <div class="hc_md_table_detail_caption">
+                        <span>번호</span>
+                        <span>제목</span>
+                        <span>작성자</span>
+                        <span>작성일</span>
+                    </div>
+                    <div class="hc_md_table_detail_article">
+                        <span>1</span>
+                        <span>상품문의</span>
+                        <span>정나*</span>
+                        <span>2023.07.17</span>
+                    </div>
+                    <div class="hc_md_table_detail_article">
+                        <span>2</span>
+                        <span>상품문의</span>
+                        <span>이연*</span>
+                        <span>2023.07.03</span>
+                    </div>
+                    <div class="hc_pageing">
+                        <span class="hc_all_prev">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_934_3487)">
+                                <path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_934_3487">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <div class="hc_sub_pages4">
+                            <input id="hc_page1_show4" type="radio" name="tab_item" checked>
+                            <label class="hc_paging_item_show4" for="hc_page1_show4">1</label>
+                          
+                            <input id="hc_page2_show4" type="radio" name="tab_item">
+                            <label class="hc_paging_item_show4" for="hc_page2_show4">2</label>
+                          
+                            <input id="hc_page3_show4" type="radio" name="tab_item">
+                            <label class="hc_paging_item_show4" for="hc_page3_show4">3</label>
+                          
+                            <input id="hc_page4_show4" type="radio" name="tab_item">
+                            <label class="hc_paging_item_show4" for="hc_page4_show4">4</label>
+                          
+                            <div class="tab_content" id="hc_page1_content_show4"></div>
+                            <div class="tab_content" id="hc_page2_content_show4"></div>
+                            <div class="tab_content" id="hc_page3_content_show4"></div>
+                            <div class="tab_content" id="hc_page4_content_show4"></div>
+                        </div>
+                        <span class="hc_all_next">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_934_3487)">
+                                <path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_934_3487">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                </section>
             </div>
             <div class="hc_detail_info">
                 <div class="hc_detail_info_type3">
