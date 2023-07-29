@@ -1,13 +1,12 @@
-.hc_md_arrow {
+.arrow {
   width: 1.25rem;
   height: 1.25rem;
   display: inline-block;
   position: relative;
-  top: 3px;
   margin: 0 1rem;
 }
 
-.hc_md_arrow span {
+.arrow span {
   top: 0.5rem;
   position: absolute;
   width: 0.75rem;
@@ -17,22 +16,20 @@
   transition: all 0.2s ease;
 }
 
-.hc_md_arrow span:first-of-type {
+.arrow span:first-of-type {
   left: 0;
   transform: rotate(45deg);
 }
 
-.hc_md_arrow span:last-of-type {
+.arrow span:last-of-type {
   right: 0;
   transform: rotate(-45deg);
 }
 
-.hc_md_arrow.active span:first-of-type {
+.arrow.active span:first-of-type {
   transform: rotate(-45deg);
 }
 
-.hc_md_arrow.active span:last-of-type {
+.arrow.active span:last-of-type {
   transform: rotate(45deg);
-}
-
-/*# sourceMappingURL=module.css.map */
+}/*# sourceMappingURL=module.css.map */

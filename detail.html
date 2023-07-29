@@ -18,12 +18,8 @@
         $(document).ready(function(){
             $('.contentDetail').on('click', function(e) {
                 var target = $(e.currentTarget);
-                target.find('.arrow').toggleClass('active');                
+                target.find('.hc_md_arrow').toggleClass('active');                
             });
-
-            // $('.arrow--l-r').on('click', function() {
-            //     $(this).toggleClass('left right');
-            // });
         });
     </script>
 </head>
@@ -214,8 +210,8 @@
                         <!-- 상품 더보기 -->
                         <details class="contentDetail">
                             <summary class="hc_md_more_description">상품설명 더보기
-                                <div class="wrap">
-                                    <span class="arrow"><span></span><span></span></span>
+                                <div>
+                                    <span class="hc_md_arrow"><span></span><span></span></span>
                                 </div>
                             </summary>
                             <img src="img/detail/outer_blackcream_04.jpg" alt ="" />
@@ -243,24 +239,37 @@
                 <!-- 상품 리뷰 -->
                 <section class="hc_table_detail">
                     <h4 class="hc_md_table_title">BEST REVIEW</h4>
-                    <div class="hc_md_table_detail_caption">
-                        <span>번호</span>
-                        <span>제목</span>
-                        <span>작성자</span>
-                        <span>평점</span>
-                    </div>
-                    <div class="hc_md_table_detail_article">
-                        <span>1</span>
-                        <span>안녕하세요 피그먼트 MD 은지입니다. 여름철 필수 아이템 컬러데일리t를 착용해보았습니다 !</span>
-                        <span>MD은지</span>
-                        <span>★★★★★</span>
-                    </div>
-                    <div class="hc_md_table_detail_article">
-                        <span>2</span>
-                        <span>부드럽고 기본 아이템으로 좋네요^^ 세일할 때 잘 샀어요</span>
-                        <span>윤소*</span>
-                        <span>★★★★★</span>
-                    </div>
+                    <table>
+                        <colgroup>
+                            <col style="width:10%;">
+                            <col style="width:auto;">
+                            <col style="width:10%;">
+                            <col style="width:10%;">
+                        </colgroup>
+                        <thead class="hc_md_table_detail_caption">
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>평점</th>
+                            </tr>
+                        </thead>
+                        <tbody class="hc_md_table_detail_article">
+                            <tr>
+                                <td>2</td>
+                                <td>부드럽고 기본 아이템으로 좋네요^^ 세일할 때 잘 샀어요</td>
+                                <td>윤소*</td>
+                                <td>★★★★★</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>안녕하세요 피그먼트 MD 은지입니다. 여름철 필수 아이템 컬러데일리t를 착용해보았습니다 !</td>
+                                <td>MD은지</td>
+                                <td>★★★★★</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
                     <div class="hc_pageing">
                         <span class="hc_all_prev">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -316,24 +325,36 @@
                             <span class="hc_btn_small"><a href="">전체보기</a></span>
                         </div>
                     </h4>
-                    <div class="hc_md_table_detail_caption">
-                        <span>번호</span>
-                        <span>제목</span>
-                        <span>작성자</span>
-                        <span>작성일</span>
-                    </div>
-                    <div class="hc_md_table_detail_article">
-                        <span>1</span>
-                        <span>상품문의</span>
-                        <span>정나*</span>
-                        <span>2023.07.17</span>
-                    </div>
-                    <div class="hc_md_table_detail_article">
-                        <span>2</span>
-                        <span>상품문의</span>
-                        <span>이연*</span>
-                        <span>2023.07.03</span>
-                    </div>
+                    <table>
+                        <colgroup>
+                            <col style="width:10%;">
+                            <col style="width:auto;">
+                            <col style="width:10%;">
+                            <col style="width:10%;">
+                        </colgroup>
+                        <thead class="hc_md_table_detail_caption">
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody class="hc_md_table_detail_article">
+                            <tr>
+                                <td>2</td>
+                                <td>상품문의</td>
+                                <td>정나*</td>
+                                <td>2023.07.03</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>상품문의</td>
+                                <td>이연*</td>
+                                <td>2023.07.17</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <div class="hc_pageing">
                         <span class="hc_all_prev">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -381,23 +402,94 @@
                 </section>
             </div>
             <div class="hc_detail_info">
-                <div class="hc_detail_info_type3">
-                    <!-- 상품명 --><span class="hc_prd_name">[SET]단조직VT+단조직하프CD</span>
-                    <!-- 정상가 --><span class="hc_normal_price">38,000원</span>
-                    <!-- 할인가 --><span class="hc_discount_price">22,800</span>
+                <ul class="hc_detail_info_general">
+                    <li class="hc_detail_info_type3">
+                        <!-- 상품명 --><span class="hc_prd_name">[SET]단조직VT+단조직하프CD</span>
+                        <!-- 정상가 --><span class="hc_normal_price">38,000원</span>
+                        <!-- 할인가 --><span class="hc_discount_price">22,800</span>
+                    </li>
+                    <li class="hc_detail_info_type2">
+                        <!-- 추가설명 --><span class="hc_explanation">한여름에도 시원하게, 포인트로 입기 좋은 뷔스티에+가디건 세트 아이템</span>
+                        <!-- 할인율 --><span class="hc_discount_rate">(-40%)</span>
+                    </li>
+                    <li class="hc_detail_info_type2">
+                        <span>Design by</span>
+                        <span class="hc_alignR">피그먼트</span>
+                    </li>
+                    <li class="hc_detail_info_type2">
+                        <span>적립금</span>
+                        <span class="hc_alignR">1%</span>
+                    </li>
+                    <li class="hc_detail_info_type2">
+                        <span>옵션</span>
+                        <span class="hc_alignR">
+                            <select name="chooseOption" id="" class="hc_selectbox">
+                                <option value="0" selected>옵션 선택</option>
+                                <option value="4">초록/베이지,F(~66)</option>
+                                <option value="2">아이/곤색,F(~66)</option>
+                                <option value="3">파랑/밤색,F(~66)</option>
+                                <option value="4#">연베/카멜,F(~66)</option>
+                                <option value="5">핑크/연두,F(~66)</option>
+                            </select>
+                        </span>
+                    </li>
+                    <li class="hc_detail_info_type2">
+                        <span></span>
+                        <span class="hc_alignR hc_installment">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19.125 4.5H4.875C3.42525 4.5 2.25 5.67525 2.25 7.125V16.875C2.25 18.3247 3.42525 19.5 4.875 19.5H19.125C20.5747 19.5 21.75 18.3247 21.75 16.875V7.125C21.75 5.67525 20.5747 4.5 19.125 4.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.25 9H21.75M6 14.0625H8.25V15H6V14.0625Z" stroke="black" stroke-width="2.8125" stroke-linejoin="round"/>
+                            </svg>
+                            카드사 무이자 할부 혜택
+                        </span>
+                    </li>
+                    <li class="hc_detail_info_type2">
+                        <span></span>
+                        <span class="hc_alignR">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_959_1801)">
+                                <rect width="20" height="20" fill="white"/>
+                                <path d="M0 0V20H20V0H0ZM16 7V7.375C16 11.5 12.875 16.125 7.25 16.125C5.5 16.125 3.875 15.625 2.5 14.75H3.25C4.75 14.75 6 14.25 7.125 13.375C5.75 13.375 4.625 12.5 4.25 11.25H4.875C5.125 11.25 5.375 11.25 5.625 11.125C4.25 10.875 3.125 9.625 3.125 8.125C3.5 8.375 4 8.5 4.5 8.5C3.625 8 3.125 7 3.125 6C3.125 5.375 3.25 4.875 3.5 4.5C5 6.375 7.375 7.5 9.875 7.625C9.875 7.375 9.75 7.125 9.75 6.875C9.75 5.125 11.125 3.75 12.875 3.75C13.75 3.75 14.5 4.125 15.125 4.75C15.875 4.625 16.5 4.375 17.125 4C16.875 4.75 16.375 5.375 15.75 5.75C16.375 5.625 17 5.5 17.5 5.25C17.125 6 16.625 6.5 16 7Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_959_1801">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_959_1800)">
+                                <rect width="20" height="20" fill="white"/>
+                                <path d="M0 0V20H20V0H0ZM14.3872 2.60987C14.5325 2.60678 14.6837 2.6115 14.8401 2.62207C15.4147 2.62285 16.0148 2.67465 16.6101 2.72705L16.5454 5.09522H14.9463C14.1965 5.07862 13.9257 5.36977 13.9014 6.21582V8.07617H16.6101L16.5027 10.6128H13.9014V17.6746H11.2586V10.6128H9.42383V8.07617H11.2586V5.89843C11.2586 4.32828 11.9224 3.32887 13.23 2.82227C13.5658 2.69013 13.9515 2.61912 14.3872 2.60987Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_959_1800">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+                <div class="hc_detail_info_type3 hc_detail_total">
+                    <span>최소 주문 수량 1개 이상</span>
+                    <span>Total : </span>
+                    <span class="hc_total_price">0원</span>
                 </div>
-                <div class="hc_detail_info_type2">
-                    <!-- 추가설명 --><span class="hc_explanation">한여름에도 시원하게, 포인트로 입기 좋은 뷔스티에+가디건 세트 아이템</span>
-                    <!-- 할인율 --><span class="hc_discount_rate">(-40%)</span>
-                </div>
+                <!-- 갤러리형 리뷰 -->
                 <div>
-                    <ul>
-                        <li>
-                            <span></span>
-                            <span></span>
-                        </li>
-                    </ul>
+                    <img src="img/detail/photo_review.jpg" />
                 </div>
+
+                <div class="hc_btn_wrap_info">
+                    <div class="hc_btn_large_fill"><a href="">구매하기</a></div>
+                    <div class="hc_btn_large"><a href="">관심상품</a></div>
+                    <div class="hc_btn_large"><a href="">장바구니</a></div>
+                </div>
+
+                <div><a href=""><img src="img/detail/banner_coupon.jpg" /></a></div>
+                <div><img src="img/detail/banner_naver.jpg" /></div>
+
             </div>
         </main>    
     </div>
@@ -458,7 +550,7 @@
         </div>
         <div class="hc_badge_down">
             <a href="#hc_wrap_footer">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
                 </svg>
             </a>

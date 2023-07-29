@@ -12,8 +12,12 @@ button { overflow:visible; padding:0; margin:0; border:0; cursor:pointer; }
 a { text-decoration:none; color:#000; }
 a:hover { text-decoration:none; }
 a:active { text-decoration:none; }
-
-
+select:focus-visible {
+    outline-offset: 0px;
+}
+select:not(:-internal-list-box) {
+    overflow: hidden;
+}
 /* 디자인 시스템 규칙 !! */
 :root {
     /* 타이틀 규칙 */
@@ -52,66 +56,65 @@ a:active { text-decoration:none; }
 
     /* 폰트 스타일 */
     --fontfamily1: 'Lato';  /* 영문 */
+}
 
+// 버튼 규칙
+.hc_btn_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    gap: 10px;
+}
+.hc_btn_large a,
+.hc_btn_large_fill a,
+.hc_btn_small a,
+.hc_btn_small_fill a {
+    display: block;
+    color: var(--hc_bright_color);
+    font-size: var(--hc_bd_medium);
+    width: 88px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: var(--hc_dark_color);
+    box-sizing: border-box;
+}
+.hc_btn_large a,
+.hc_btn_small a {
+    color: var(--hc_dark_color);
+    background: var(--hc_bright_color);
+    border:1px solid var(--hc_dark_color);
+}
+.hc_btn_large a,
+.hc_btn_large_fill a {
+    width:100%;
+}
+// 테이블 규칙
+.hc_md_table_title {
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 120px 0 30px;
+    border-bottom: 3px solid var(--hc_dark_color);
+    font-size: var(--hc_tit);
+    font-weight: var(--hc_regular);
+}
+.hc_md_table_detail_article,
+.hc_md_table_detail_caption {
+    height: 70px;
+    line-height: 70px;
+    font-size: var(--hc_bd_large);
+    font-weight: var(--hc_regular);
+    text-align: center;
+    border-bottom: 1px solid var(--hc_dark_color);
 
-    // 버튼 규칙
-    .hc_btn_wrap {
-        display: flex;
-        justify-content: flex-end;
-        align-content: flex-end;
-        gap: 10px;
+    td {
+        border-bottom: 1px solid var(--hc_color_level2);
     }
-    .hc_btn_small a,
-    .hc_btn_small_fill a {
-        display: block;
-        color: var(--hc_bright_color);
-        font-size: var(--hc_bd_medium);
-        width: 88px;
-        height: 45px;
-        line-height: 45px;
-        text-align: center;
-        background: var(--hc_dark_color);
-        box-sizing: border-box;
+    td:nth-child(2) {
+        text-align: left;
     }
-    .hc_btn_small a {
-        color: var(--hc_dark_color);
-        background: var(--hc_bright_color);
-        border:1px solid var(--hc_dark_color);
-    }
-
-    // 테이블 규칙
-    .hc_md_table_title {
-        display: flex;
-        align-content: flex-end;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 120px 0 30px;
-        border-bottom: 3px solid var(--hc_dark_color);
-        font-size: var(--hc_tit);
-        font-weight: var(--hc_regular);
-    }
-    .hc_md_table_detail_article,
-    .hc_md_table_detail_caption {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 80px 4fr 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        height: 70px;
-        line-height: unset;
-        font-size: var(--hc_bd_large);
-        font-weight: var(--hc_regular);
-        border-bottom: 1px solid var(--hc_dark_color);
-    }
-    .hc_md_table_detail_article span:nth-child(2) {
-        justify-items: left;
-    }
-
-    --bg-pink: linear-gradient(
-    to right,
-        rgba(218, 28, 96, 1) 0%,
-        rgba(243, 102, 31, 0.9) 100%
-    );
 }
 
 /* 레이아웃 규칙 */
@@ -174,7 +177,6 @@ a:active { text-decoration:none; }
     font-size: var(--hc_tit);
     font-weight: var(--hc_bold);
 }
-
 
 /* 상단 텍스트 배너 */
 .hc_notice_top {
@@ -762,11 +764,15 @@ footer {
         width:70%;
         max-width: 1320px;
 
+        figure {
+            width: 900px;
+        }
         // 상품상세 대표 이미지 영역
         .hc_detail_rep {
             display: flex;
             flex-direction: column;
             // flex-direction: row;
+            width: 900px;
         }
         .hc_img_carousel_list {
             display: flex;
@@ -848,20 +854,27 @@ footer {
 .hc_img_carousel_list li img {
     width:100%;
 }
+.hc_detail_info {
+    .hc_prd_name {
+        font-size: var(--hc_bd_xlarge);
+    }
+    .hc_discount_price {
+        margin-left: 20px;
+    }
+    .hc_discount_rate {
+        color: var(--hc_dark_color);
+        font-size: var(--hc_bd_xsmall);
+        text-align: right;
+    }
+    .hc_discount_price,
+    .hc_normal_price {
+        font-size: var(--hc_bd_large);
+        text-align: right;
+    }
+}
 .hc_detail_info_type3 {
     display: grid;
     grid-template-columns: 3fr auto auto;
-}
-.hc_detail_info .hc_prd_name {
-    font-size: var(--hc_bd_xlarge);
-}
-.hc_detail_info .hc_discount_price,
-.hc_detail_info .hc_normal_price {
-    font-size: var(--hc_bd_large);
-    text-align: right;
-}
-.hc_detail_info .hc_discount_price {
-    margin-left: 20px;
 }
 .hc_detail_info_type2 {
     display: grid;
@@ -871,8 +884,50 @@ footer {
     color: var(--hc_color_point);
     font-size: var(--hc_bd_xsmall);
 }
-.hc_detail_info .hc_discount_rate {
-    color: var(--hc_dark_color);
-    font-size: var(--hc_bd_xsmall);
+.hc_selectbox{
+    padding: 12px 13px;
+    width: 188px;
+    border: 1px solid var(--hc_color_level2);
+    border: 0;
+}
+.hc_selectbox:focus{
+    border: 1px solid var(--hc_dark_color);
+    border: 0;
+}
+.hc_detail_info_general {
+    border-bottom: 1px solid var(--hc_dark_color);
+    li {
+        margin-bottom: 12px;
+    }
+    li:nth-child(2) {
+        margin-bottom: 64px
+    }
+}
+.hc_alignR {
     text-align: right;
+}
+.hc_installment {
+    font-size: var(--hc_bd_small);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+.hc_detail_total {
+    margin-bottom: 40px;
+    padding:35px 0;
+    border-bottom: 1px solid var(--hc_dark_color);
+    .hc_total_price {
+        padding-left: 10px;
+        // font-size: var(--hc_bd_xlarge);
+    }
+}
+.hc_btn_wrap_info {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
