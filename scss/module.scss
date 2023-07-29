@@ -1,4 +1,4 @@
-// 화살표
+// 상품설명 더보기 화살표
 .hc_md_arrow {
     width: 1.25rem;
     height: 1.25rem;
@@ -30,3 +30,76 @@
   .hc_md_arrow.active span:last-of-type {
     transform: rotate(45deg);
   }
+
+// 아코디언
+.hc_md_accordion {
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+/* Accordion styles */
+.hc_md_accordion {
+  overflow: hidden;
+  border-bottom:1px solid var(--hc_color_level2);
+}
+.accordion {
+  width: 100%;
+  color: var(--hc_dark_color);
+  font-size: var(--hc_bd_small);
+  overflow: hidden;
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: var(--hc_bright_color);
+    border-bottom:1px solid var(--hc_color_level2);
+    cursor: pointer;
+    /* Icon */
+    &:hover {
+      font-weight: var(--hc_bold);
+      // background: var(--hc_dark_color);
+    }
+    &::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all .35s;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: var(--hc_dark_color);
+    background: var(--hc_bright_color);
+    transition: all .35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    background: var(--hc_bright_color);
+    cursor: pointer;
+    &:hover {
+      background: var(--hc_bright_color);
+    }
+  }
+}
+
+// :checked
+input:checked {
+  + .accordion-label {
+    color: var(--hc_bright_color);
+    font-weight: var(--hc_bold);
+    background: var(--hc_dark_color);
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .accordion-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}
