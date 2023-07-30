@@ -148,7 +148,7 @@ img {
 .hc_main_section6,
 .hc_main_section5,
 .hc_main_section4 {
-    margin-bottom: 216px;
+    padding-bottom: 216px;
 }
 .hc_main_section7,
 .hc_main_section6,
@@ -219,6 +219,8 @@ img {
     color: var(--hc_bright_color);
     font-size: var(--hc_bd_large);
     background-color: var(--hc_dark_color);
+    top : 0;
+    position :relative;
 }
 /* 메인 header */
 .hc_header_main {
@@ -409,8 +411,11 @@ input[name="tab_item"] {
     max-height: 400px;
 }
 /* 메인 랜덤 이미지 */
+.mainImage {
+    display: none;
+}
 .hc_main_section1 {
-    position: relative;
+    position: relative;    
 }
 .hc_loding_copy {
     overflow: hidden;
@@ -420,7 +425,7 @@ input[name="tab_item"] {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: rgba( 255, 255, 255, 0.5 ); */
+    background-color: rgba( 255, 255, 255, 1 );    
 }
 .hc_loding_copy_bg {
     width: 100vw;
@@ -435,15 +440,15 @@ input[name="tab_item"] {
 }
 .hc_hc_loding_text {
     display: inline-block;
-    color: var(--hc_bright_color);
+    color: var(--hc_dark_color);
     font-family: var(--fontfamily1);
     font-size: var(--hc_bd_xlarge);
     font-weight: var(--hc_light);
     text-align: center;
 }
 .hc_main_section1 img {
-    position: absolute;
-    top: 0;
+    /*position: absolute;*/
+    /*top: 0;*/
     z-index: 99;
     width: 100%;
 }
@@ -550,6 +555,7 @@ input[name="tab_item"] {
     height: 100vh;  
     background: var(--hc_bright_color);
     display:none;
+    z-index: 9999;
 }
 .hc_modal_search .hc_hd_ic_close {
     position: absolute;
