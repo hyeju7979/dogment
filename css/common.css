@@ -244,6 +244,11 @@ img {
   font-weight: var(--hc_regular);
   line-height: 2;
 }
+.hc_prd_list_information .hc_prd_name {
+  font-size: var(--hc_bd_medium);
+  font-weight: var(--hc_regular);
+  line-height: 2;
+}
 
 .hc_prd_element li {
   display: inline-block;
@@ -264,6 +269,10 @@ img {
 .hc_md_tit_page {
   font-size: var(--hc_tit);
   font-weight: var(--hc_bold);
+}
+
+.hc_blind {
+  display: none;
 }
 
 /* 상단 텍스트 배너 */
