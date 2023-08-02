@@ -206,6 +206,26 @@ img {
     font-size: var(--hc_tit);
     font-weight: var(--hc_bold);
 }
+// 페이지 타이틀
+.hc_tit_page {
+    font-size: var(--hc_tit_page);
+    font-weight: var(--hc_bold);
+}
+// 제목
+.hc_tit_content {
+    font-size: var(--hc_tit_content);
+    font-weight: var(--hc_bold);
+}
+// 머리말
+.hc_tit_headline {
+    font-size: var(--hc_tit_headline);
+    font-weight: var(--hc_bold);
+}
+// 부 머리말
+.hc_tit_caption {
+    font-size: var(--hc_tit_caption);
+    font-weight: var(--hc_bold);
+}
 .hc_blind {
     display: none;
   }
@@ -824,9 +844,6 @@ footer {
         span {
             display: inline-block;
         }
-        span:first-child {
-            
-        }
         span:last-child {
             margin-left: 40px;
             font-size: var(--hc_bd_xlarge);
@@ -1019,4 +1036,18 @@ footer {
 }
 .hc_info_coupon {
     margin-bottom: 20px;
+}
+
+// ABOUT US
+.hc_page_about_content {
+    .hc_tit_content {
+        text-align: center;
+        margin: 0 0 144px;
+    }
+    .hc_tit_content:nth-child(2) {
+        margin-bottom: 54px;
+    }
+    .hc_tit_page {
+        margin-bottom: 38px; 
+    }
 }
