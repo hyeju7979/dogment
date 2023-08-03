@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORE</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/designsystem.css">
+    <link rel="stylesheet" type="text/css" href="css/module.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="hc_wrap_top">        
+    <!-- 상단 텍스트 배너 -->
+    <div class="hc_notice_top">MEMBER'S DAY</div>
+
+    <header>
+        <nav class="hc_header">
+            <svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_hamburger">
+                <path d="M4.99998 11.6279H35M4.99998 20.6279H35M4.99998 29.6279H35" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+            </svg>
+            <h1><a href="#">PIGMENT</a></h1>
+            <svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_search">
+                <path d="M15.6597 26.9483C21.5472 26.9483 26.32 22.1756 26.32 16.2881C26.32 10.4007 21.5472 5.62791 15.6597 5.62791C9.77226 5.62791 4.99951 10.4007 4.99951 16.2881C4.99951 22.1756 9.77226 26.9483 15.6597 26.9483Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M34.9994 35.4765L23.1218 23.7503" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_cart">
+                <path d="M27 18.9612V12.2946C27 10.5265 26.2976 8.83076 25.0474 7.58052C23.7971 6.33028 22.1014 5.6279 20.3333 5.6279C18.5652 5.6279 16.8695 6.33028 15.6193 7.58052C14.369 8.83076 13.6667 10.5265 13.6667 12.2946V18.9612M8.66667 15.6279H32L33.6667 35.6279H7L8.66667 15.6279Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        </nav>
+    </header>
+
+    <!-- 햄버거 메뉴 -->
+    <aside class="hc_aside_main">
+        <div class="tabs">
+            <input id="all" type="radio" name="tab_item" checked>
+            <label class="tab_item" for="all">카테고리</label>
+            <input id="programming" type="radio" name="tab_item">
+            <label class="tab_item" for="programming">로그인</label>
+            <div class="tab_content" id="all_content">
+                <ul>
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="#">SALE</a></li>
+                    <li><a href="#" class="hc_color_point">TODAY SALE</a></li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <label for="hc_menu_collection">
+                            <div class="hc_main_menu">COLLECTION</div>
+                        </label>
+                        <input type="checkbox" class="hc_menu_state" id="hc_menu_collection" hidden>
+                        <div class="hc_menu_content">
+                            <ul class="hc_submenu">
+                                <li><a href="">온라인 베스트</a></li>
+                                <li><a href="">오프라인 베스트</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="hc_menu_culture">
+                            <div class="hc_main_menu">CULTURE</div>
+                        </label>
+                        <input type="checkbox" class="hc_menu_state" id="hc_menu_culture" hidden>
+                        <div class="hc_menu_content">
+                            <ul class="hc_submenu">
+                                <li><a href="">PFS:CALLERY</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="hc_menu_shop">
+                            <div class="hc_main_menu">SHOP</div>
+                        </label>
+                        <input type="checkbox" class="hc_menu_state" id="hc_menu_shop" hidden checked>
+                        <div class="hc_menu_content">
+                            <ul class="hc_submenu">
+                                <li><a href="">NEW</a></li>
+                                <li><a href="">BEST</a></li>
+                                <li><a href="">ALL</a></li>
+                                <li><a href="">TOP</a></li>
+                                <li><a href="">SHIRT/BLOUSE</a></li>
+                                <li><a href="">KNIT</a></li>
+                                <li><a href="">OUTER</a></li>
+                                <li><a href="">BOTTOM</a></li>
+                                <li><a href="">DRESS</a></li>
+                                <li><a href="">ACC</a></li>
+                                <li><a href="">맘앤키즈</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <label for="hc_menu_information">
+                            <div class="hc_main_menu">+ INFORMATION</div>
+                        </label>
+                        <input type="checkbox" class="hc_menu_state" id="hc_menu_information" hidden>
+                        <div class="hc_menu_content">
+                            <ul class="hc_submenu">
+                                <li><a href="">NOTICE</a></li>
+                            <li><a href="">Q&A</a></li>
+                            <li><a href="">REVIEW</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">+ STORE <p>피그먼트 오프라인 매장안내</p></a></li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <label for="hc_menu_login">
+                            <div class="hc_main_menu">+ 로그인</div>
+                        </label>
+                        <input type="checkbox" class="hc_menu_state" id="hc_menu_login" hidden>
+                        <div class="hc_menu_content">
+                            <ul class="hc_submenu">
+                                <li><a href="">로그인</a></li>
+                                <li><a href="">주문조회</a></li>
+                                <li><a href="">마이페이지</a></li>
+                                <li><a href="">장바구니</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab_content" id="programming_content">
+                <label for="hc_menu_login">
+                    <div class="hc_main_menu">+ 로그인</div>
+                </label>
+                <input type="checkbox" class="hc_menu_state" id="hc_menu_login" hidden checked>
+                <div class="hc_menu_content">
+                    <ul class="hc_submenu">
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">주문조회</a></li>
+                        <li><a href="">마이페이지</a></li>
+                        <li><a href="">장바구니</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- 모달 검색창 -->
+    <div class="hc_modal_search">
+        <div class="hc_hd_ic_close">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M10.6667 31.6667L8.33337 29.3333L17.6667 20L8.33337 10.6667L10.6667 8.33334L20 17.6667L29.3334 8.33334L31.6667 10.6667L22.3334 20L31.6667 29.3333L29.3334 31.6667L20 22.3333L10.6667 31.6667Z" fill="black"/>
+            </svg>
+        </div>
+        <div>
+            <div class="hc_tit">What are you looking for?</div>
+            <div>상품, 색상, 컬렉션 등을 검색하세요.</div>
+            <div><form><input type="text" name="ProductName" placeholder="상품, 색상, 컬렉션 등을 검색하세요." autofocus="autofocus" autocomplete="on" size="40"><input type="submit" value="검색" name="검색"></form></div>
+            <ul class="hc_best_keyword">
+                <li><a href="#">모어앤모어</a></li>
+                <li><a href="#">1+1</a></li>
+                <li><a href="#">오프라인베스트</a></li>
+                <li><a href="#">outlet</a></li>
+                <li><a href="#">셔츠</a></li>
+                <li><a href="#">니트</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 컨텐츠 영역 -->
+    <div class="hc_common_wrap">
+        <main class="hc_store_wrap">
+            <div class="hc_representative">
+                <img src="img/store/top_img.jpg" alt="" />
+            </div>
+
+            <h3 class="hc_tit_page">PIGMENT OFF LINE STORE.</h3>
+
+            <mark>전국 50여개 이상의<br />피그먼트 오프라인 스토어</mark>
+            <div class="hc_clarification">
+                고객님들의 의견과 니즈를 반영한 검증된 핏과 원단, 디자인으로 제작했습니다.<br />
+                시간이 지나도 변하지 않을 가치. 피그먼트의 아이덴티티로<br />
+                손쉽게 다가갈 수 있는 편안하고 자연스러운 감성을 담았습니다.<br />
+                높은 퀄리티의 옷을 보다 합리적인 가격으로 오프라인 스토어에서 만나보세요.
+            </div>
+
+            <article>
+                <div id="storeInfo">
+                    <div class="link">
+                        <h5 class="hc_tit_caption">DEPARTMENT</h5>
+
+                        <ul>
+                            <li data-id="wrap1">현대백화점</li>
+                            <li data-id="wrap2">현대백화점 중동</li>
+                            <li data-id="wrap3">롯데백화점 구리</li>
+                            <li data-id="wrap4">롯데백화점 수원</li>
+                            <li data-id="wrap5">신세계 광주</li>
+                            <li data-id="wrap6">신세계 의정부</li>
+                            <li data-id="wrap7">신세계 천안</li>
+                        </ul>
+
+                        <h5 class="hc_tit_caption">MALL</h5>
+                        
+                        <ul>
+                            <li data-id="wrap8">롯데 창원(영플라자)</li>
+                            <li data-id="wrap9">롯데 동부산</li>
+                            <li data-id="wrap10">롯데 대구</li>
+                            <li data-id="wrap11">롯데 광주</li>
+                            <li data-id="wrap12">영등포 타임스퀘어</li>
+                            <li data-id="wrap13">안성 스타필드</li>
+                            <li data-id="wrap14">앨리웨이 광교</li>
+                        </ul>
+                        <ul>
+                            <li data-id="wrap8">동탄 피그먼트(레이크꼬모)</li>
+                            <li data-id="wrap9">반포 엔터식스</li>
+                            <li data-id="wrap10">애경 수원</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="storeWrap wrap1">
+                    <div class="info">
+                        <span>창원 롯데영플라자 피그먼트</span>
+                        <span>경상남도 창원시 성산구 상남로 121 (롯데백화점 영플라자) 지하1층</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap1">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap1">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <!-- ID="test1"을shop1로 수정 -->
+                    <div id="shop1" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap2">
+                    <div class="info">
+                        <span>대구 공평동 피그먼트</span>
+                        <span>대구 중구 동성로3길 64 (공평동)</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap2">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap2">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop2" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap3">
+                    <div class="info">
+                        <span>LF 스퀘어 광양 피그먼트</span>
+                        <span>전남 광양시 광양읍 순광로 466, LF스퀘어 2층 (선샤인동)</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap3">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap3">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop3" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap4">
+                    <div class="info">
+                        <span>수원애경 피그먼트</span>
+                        <span>경기 수원시 팔달구 덕영대로 924 (AK플라자) 3층</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap4">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap4">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop4" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap5">
+                    <div class="info">
+                        <span>안성 스타필드 피그먼트</span>
+                        <span>경기도 안성시 공도읍 서동대로 3930-39(스타필드 안성점 1층)</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap5">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap5">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop5" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap6">
+                    <div class="info">
+                        <span>중동 현대백화점 U-PEX 피그먼트</span>
+                        <span>경기 부천시 원미구 길주로 180(중동점 U-PEX) 2층</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap6">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap6">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop6" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap7">
+                    <div class="info">
+                        <span>PFS:MOF 플래그쉽스페이스</span>
+                        <span>서울특별시  성동구 성수동 1가 660-8번지</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap7">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap7">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop7" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap8">
+                    <div class="info">
+                        <span>LF 스퀘어 광양 피그먼트</span>
+                        <span>전남 광양시 광양읍 순광로 466, LF 스퀘어 2층 (선샤인동)</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap8">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap8">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop8" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap9">
+                    <div class="info">
+                        <span>LF 스퀘어 양주 피그먼트</span>
+                        <span>경기 양주시 평화로 1593, 2층 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap9">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap9">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop9" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap10">
+                    <div class="info">
+                        <span>경주 피그먼트 (계림로)</span>
+                        <span>경상북도 경주시 노동동 계림로 93-2</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap10">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap10">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop10" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap11">
+                    <div class="info">
+                        <span>광교 앨리웨이 피그먼트</span>
+                        <span>경기도 수원시 영통구 광교호수공원로 80 (원천동, 광교아이파크) 121,122호 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap11">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap11">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop11" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap12">
+                    <div class="info">
+                        <span>광주 롯데 피그먼트 (수완점)</span>
+                        <span>광주광역시 광산구 장신로 98 (장덕동, 롯데마트) 3층 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap12">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap12">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop12" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap13">
+                    <div class="info">
+                        <span>광주 신세계 더컬러웨이</span>
+                        <span>광주광역시 서구 죽봉대로 61 광주신세계 이마트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap13">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap13">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop13" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap14">
+                    <div class="info">
+                        <span>광주 황금동 피그먼트</span>
+                        <span>광주광역시 동구 중앙로 160번길 11 (황금동)</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap14">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap14">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop14" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap15">
+                    <div class="info">
+                        <span>구리 롯데백화점 피그먼트</span>
+                        <span>경기도 구리시 인창동677 롯데백화점 구리점 2층 </span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap15">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap15">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop15" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap16">
+                    <div class="info">
+                        <span>구미 피그먼트 (원평동)</span>
+                        <span>경상북도 구미시 문화로 26 (원평동 145-2)</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap16">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap16">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop16" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap17">
+                    <div class="info">
+                        <span>구미 홈플러스 피그먼트</span>
+                        <span>경상북도 구미시 구미대로 174 (광평동, 홈플러스 구미광평점) 1층 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap17">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap17">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop17" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap18">
+                    <div class="info">
+                        <span>김포 이마트 피그먼트 (한강점) </span>
+                        <span>경기도 김포시 김포한강7로 71 (구래동, 이마트 김포한강점) 1층 피그먼트 </span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap18">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap18">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop18" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap19">
+                    <div class="info">
+                        <span>김해 홈플러스 피그먼트</span>
+                        <span>경상남도 김해시 김해대로 2078 홈플러스 1층 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap19">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap19">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop19" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap20">
+                    <div class="info">
+                        <span>덕천 피그먼트</span>
+                        <span>부산광역시 북구 금곡대로14 덕천역 지하상가 B-8 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap20">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap20">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop20" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap21">
+                    <div class="info">
+                        <span>동부산 롯데 피그먼트</span>
+                        <span>부산광역시 기장군 기장읍 당사리 64 롯데프리미엄아울렛동부산 1층 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap21">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap21">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop21" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap22">
+                    <div class="info">
+                        <span>대전 유성 홈플러스 피그먼트</span>
+                        <span>대전 유성구 한밭대로 502 홈플러스 3층</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap22">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap22">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop22" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap23">
+                    <div class="info">
+                        <span>대구 피그먼트(공평동)</span>
+                        <span>대구 중구 동성로3길 64 (공평동) </span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap23">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap23">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop23" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap24">
+                    <div class="info">
+                        <span>대구 롯데 피그먼트 (율하점)</span>
+                        <span>대구광역시 동구 안심로 80 1층 피그먼트 </span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap24">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap24">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop24" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap25">
+                    <div class="info">
+                        <span>동탄 피그먼트(레이크꼬모)</span>
+                        <span>경기도 화성시 동탄대로 181 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap25">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap25">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop25" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap26">
+                    <div class="info">
+                        <span>마산 피그먼트점 (합성동)</span>
+                        <span>경상남도 창원시 마산회원구 3.15대로 지하758(합성동) 대현프리몰 H-3</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap26">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap26">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+                    
+                    <div id="shop26" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap27">
+                    <div class="info">
+                        <span>만촌 이마트 피그먼트</span>
+                        <span>대구광역시 수성구 동원로 136 이마트만촌점 2층 피그먼트  </span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap27">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap27">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop27" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap28">
+                    <div class="info">
+                        <span>반포 엔터식스 피그먼트</span>
+                        <span>서울특별시 서초구 신반포로 188 지하엔터식스몰</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap28">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap28">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+                    
+                    <div id="shop28" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap29">
+                    <div class="info">
+                        <span>부산 서면점 피그먼트</span>
+                        <span>부산광역시 부산진구 중앙대로 786 서면몰 2열37호, 3열37호</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap29">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap29">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop29" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap30">
+                    <div class="info">
+                        <span>부산아시아드 홈플러스</span>
+                        <span>부산광역시 연제구 종합운동장로 7 홈플러스 1층 피그먼트 
+                            (거제동, 부산아시아드주경기장노외주차장)</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap30">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap30">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop30" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap31">
+                    <div class="info">
+                        <span>부천상동 홈플러스 더컬러웨이</span>
+                        <span>경기도 부천시 원미구 상동 540-1 상동홈플러스 1층 더컬러웨이</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap31">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap31">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop31" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap32">
+                    <div class="info">
+                        <span>부평 피그먼트</span>
+                        <span>인천광역시 부평 대아지하상가 82,83호 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap32">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap32">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+                    
+                    <div id="shop32" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap33">
+                    <div class="info">
+                        <span>성서 홈플러스 피그먼트</span>
+                        <span>대구광역시 달서구 달구벌대로 1467 (용산동) 홈플러스 성서점 지하2층 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap33">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap33">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+                    
+                    <div id="shop33" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap34">
+                    <div class="info">
+                        <span>세종 홈플러스 피그먼트</span>
+                        <span>세종특별자치시 어진동 절재로154 홈플러스 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap34">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap34">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop34" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap35">
+                    <div class="info">
+                        <span>수원 롯데백화점 피그먼트</span>
+                        <span>경기도 수원시 세화로134 롯데몰 2층 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap35">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap35">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop35" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap36">
+                    <div class="info">
+                        <span>수원 애경 피그먼트</span>
+                        <span>경기도 수원시 팔달구 덕영대로 924 수원AK & 3층</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap36">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap36">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+                    
+                    <div id="shop36" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap37">
+                    <div class="info">
+                        <span>아산 더컬러웨이</span>
+                        <span>충청남도 아산시 번영로 225 아산시외버스터미널 1층 인더그레이</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap37">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap37">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop37" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="storeWrap wrap38">
+                    <div class="info">
+                        <span>양산 이마트 피그먼트</span>
+                        <span>경상남도 양산시 양산역6길 12 (중부동, 신세계이마트양산점) 2층 피그먼트</span>
+                        <span>· CALL. 02. 1234.5678</span>
+                        <span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+                        <button type="button" class="toggleMap" data-id="wrap38">
+                            <!-- 매장지도 -->
+                            <img src="img/icon/icon_camera.svg" alt="매장지도" />
+                        </button>
+                        <button type="button" class="togglePhoto" data-id="wrap38">
+                            <!-- 매장사진 -->
+                            <img src="img/icon/icon_map.svg" alt="매장사진" />
+                        </button>
+                    </div>
+
+                    <div id="shop38" class="map"></div>
+                    <div class="swiper slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/store/shopslide.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>    
+    </div>
+
+    <!-- 하단 -->
+    <footer id="hc_wrap_footer">
+        <div class="hc_ft_businessGuide">
+            <div class="hc_ft_basicInformation">
+                <ul class="hc_ft_cs">
+                    <li>DO YOU NEED HELP?</li>
+                    <li>1668-3189</li>
+                    <li>AM 10:00 - PM 5:00 MON-FRI / LUNCH TIME PM 13:00 - PM 14:00</li>
+                    <li>하나은행 359-910028-07304 / 주식회사 씨피에프엘씨리테일</li>
+                </ul>
+                <ul class="hc_ft_help">
+                    <li>HELP?</li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">AGREEMENT</a></li>
+                    <li><a href="">PRIVACY POLICY</a></li>
+                    <li><a href="">GUIDE</a></li>
+                </ul>
+            </div>
+            <div class="hc_ft_businessInformation">
+                <ul class="hc_ft_pigment">
+                    <li>WE ARE PIGMENT</li>
+                    <li>COMPANY : CPFLC RETAIL</li>
+                    <li>OWNER : kim nam-il</li>
+                    <li>ADDRESS : 17017 경기도 용인시 처인구 중부대로 1087(삼가동) 케이컴퍼니</li>
+                    <li>BUSUNESS LICENSE : 209-81-59688  [사업자정보확인]</li>
+                    <li>PRIVACY MANAGER : 고객센터(pigment.help@cpflc.co.kr)</li>
+                </ul>
+                <ul>
+                    <li>COMPANY : Pfs:gallery</li>
+                    <li>OWNER : Lee yu-na</li>
+                    <li>ADDRESS : 경기도 화성시 동탄기흥로614, 비221-1호(영천동)</li>
+                    <li>BUSUNESS LICENSE : 803-87-00598  [사업자정보확인] </li>
+                    <li>MALL ORDER LICENSE : 2020-화성동탄-0742</li>
+                </ul>
+            </div>
+        </div>
+        <div class="hc_copyright">Copyright. pigment all rights reserved. Designed By URBANSKIN</div>
+    </footer>
+    <div class="hc_badge">
+        <div>
+            <a href="">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" fill="black"/>
+                    <path d="M15.9463 6C21.9934 6 26.8947 9.74115 26.8947 14.3573C26.8947 18.9725 21.9934 22.7137 15.9474 22.7137C15.3453 22.7139 14.7439 22.6764 14.1468 22.6014L9.55098 25.5451C9.02863 25.8156 8.84409 25.786 9.05887 25.1234L9.98887 21.3679C6.98617 19.8772 5 17.2939 5 14.3573C5 9.74217 9.90025 6 15.9474 6H15.9463ZM22.1061 14.2297L23.6387 12.7757C23.7271 12.6858 23.7765 12.5657 23.7763 12.4409C23.7761 12.316 23.7265 12.1961 23.6379 12.1063C23.5492 12.0166 23.4284 11.9641 23.301 11.9598C23.1736 11.9555 23.0494 11.9999 22.9547 12.0835L20.9446 13.9887V12.4143C20.9446 12.2865 20.8927 12.1639 20.8004 12.0735C20.7082 11.9831 20.583 11.9323 20.4525 11.9323C20.322 11.9323 20.1968 11.9831 20.1045 12.0735C20.0122 12.1639 19.9604 12.2865 19.9604 12.4143V15.0251C19.942 15.0996 19.942 15.1773 19.9604 15.2518V16.7211C19.9604 16.8489 20.0122 16.9715 20.1045 17.0619C20.1968 17.1523 20.322 17.203 20.4525 17.203C20.583 17.203 20.7082 17.1523 20.8004 17.0619C20.8927 16.9715 20.9446 16.8489 20.9446 16.7211V15.3294L21.3898 14.9077L22.8786 16.9835C22.9158 17.0353 22.963 17.0795 23.0176 17.1134C23.0722 17.1474 23.1331 17.1705 23.1968 17.1814C23.2605 17.1923 23.3258 17.1908 23.3889 17.177C23.452 17.1632 23.5117 17.1373 23.5647 17.1009C23.6176 17.0645 23.6627 17.0183 23.6973 16.9648C23.732 16.9113 23.7556 16.8517 23.7667 16.7893C23.7778 16.7269 23.7763 16.663 23.7622 16.6012C23.7481 16.5394 23.7217 16.4809 23.6846 16.4291L22.1061 14.2287V14.2297ZM19.022 16.1942H17.4998V12.4296C17.494 12.3057 17.4396 12.1889 17.3481 12.1032C17.2565 12.0176 17.1348 11.9698 17.0082 11.9698C16.8816 11.9698 16.7599 12.0176 16.6683 12.1032C16.5768 12.1889 16.5225 12.3057 16.5166 12.4296V16.6762C16.5166 16.9416 16.7356 17.1581 17.0077 17.1581H19.022C19.1525 17.1581 19.2777 17.1073 19.37 17.0169C19.4623 16.9266 19.5141 16.804 19.5141 16.6762C19.5141 16.5483 19.4623 16.4258 19.37 16.3354C19.2777 16.245 19.1525 16.1942 19.022 16.1942ZM12.9155 15.0803L13.6411 13.3363L14.3063 15.0792L12.9155 15.0803ZM15.546 15.5775L15.5481 15.5612C15.5478 15.4398 15.5005 15.323 15.4156 15.2344L14.3251 12.3755C14.2794 12.2392 14.1923 12.1199 14.0755 12.0334C13.9587 11.9469 13.8177 11.8974 13.6714 11.8915C13.524 11.8909 13.3799 11.9342 13.2583 12.0157C13.1367 12.0973 13.0433 12.2131 12.9905 12.3479L11.2577 16.5087C11.2084 16.627 11.209 16.7597 11.2596 16.8776C11.3101 16.9955 11.4064 17.0888 11.5272 17.1372C11.6481 17.1855 11.7836 17.1849 11.9039 17.1354C12.0243 17.0859 12.1196 16.9916 12.169 16.8732L12.5151 16.0431H14.6733L14.984 16.86C15.0052 16.921 15.0387 16.9773 15.0825 17.0254C15.1263 17.0736 15.1795 17.1126 15.239 17.1403C15.2985 17.1679 15.3631 17.1836 15.4289 17.1863C15.4947 17.1891 15.5603 17.1789 15.622 17.1563C15.6837 17.1338 15.7402 17.0993 15.788 17.055C15.8359 17.0107 15.8741 16.9575 15.9006 16.8984C15.927 16.8393 15.9411 16.7757 15.942 16.7112C15.9429 16.6467 15.9305 16.5827 15.9057 16.523L15.546 15.5775ZM12.0824 12.4347C12.0824 12.3071 12.0307 12.1846 11.9387 12.0943C11.8466 12.0039 11.7217 11.953 11.5914 11.9528H8.2081C8.07759 11.9528 7.95241 12.0035 7.86013 12.0939C7.76784 12.1843 7.71599 12.3069 7.71599 12.4347C7.71599 12.5625 7.76784 12.6851 7.86013 12.7755C7.95241 12.8659 8.07759 12.9166 8.2081 12.9166H9.41752V16.7313C9.41752 16.8591 9.46937 16.9817 9.56166 17.0721C9.65395 17.1625 9.77912 17.2132 9.90964 17.2132C10.0402 17.2132 10.1653 17.1625 10.2576 17.0721C10.3499 16.9817 10.4017 16.8591 10.4017 16.7313V12.9166H11.5903C11.7208 12.9166 11.846 12.8659 11.9383 12.7755C12.0306 12.6851 12.0824 12.5625 12.0824 12.4347Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hc_badge_up">
+            <a href="#hc_wrap_top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hc_badge_down">
+            <a href="#hc_wrap_footer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -111,9 +111,8 @@ input:checked {
   margin-top: 50px;
   padding-bottom: 40px;
   background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 700px;
-  margin: 0 auto;}
+  margin: 0 auto;
+}
 
 /* 탭 스타일 */
 .hc_page_about {
@@ -150,7 +149,7 @@ input[name="hc_page_about"] {
 
 
 /* 선택 된 탭 콘텐츠를 표시 */
-#page_company:checked ~ #company_content,
+#page_company:checked + #company_content,
 #page_pigment:checked ~ #pigment_content {
   display: block;
 }
@@ -160,3 +159,74 @@ input[name="hc_page_about"] {
   background-color: #333333;
   color: #fff;
 }
+
+
+
+// POLICY
+.hc_policy_wrap {
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  // Layout
+  .row {
+    display:flex;
+    .col {
+      flex:1;
+      &:last-child {
+        margin-left: 1em;
+      }
+    }
+  }
+  /* Accordion styles */
+  .policys {
+    overflow: hidden;
+  }
+  .policytab {
+    width: 100%;
+    overflow: hidden;
+    &-label {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      border-bottom: 1px solid var(--hc_color_level2);
+      font-weight: var(--hc_regular);
+      cursor: pointer;
+      /* Icon */
+      &::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s;
+      }
+    }
+    &-content {
+      max-height: 0;
+      padding: 0 1em;
+      transition: all .35s;
+    }
+    &-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+      font-size: 0.75em;
+      cursor: pointer;
+    }
+  }
+
+  // :checked
+  input:checked {
+    + .policytab-label {
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    ~ .policytab-content {
+      max-height: 100vh;
+      padding: 1em;
+    }
+  }
+}
+  
