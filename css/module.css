@@ -1,0 +1,267 @@
+@charset "UTF-8";
+.hc_md_arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin: 0 1rem;
+}
+
+.hc_md_arrow span {
+  top: 0.5rem;
+  position: absolute;
+  width: 0.75rem;
+  height: 0.1rem;
+  background-color: #000;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.hc_md_arrow span:first-of-type {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.hc_md_arrow span:last-of-type {
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+.hc_md_arrow.active span:first-of-type {
+  transform: rotate(-45deg);
+}
+
+.hc_md_arrow.active span:last-of-type {
+  transform: rotate(45deg);
+}
+
+.hc_md_accordion input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Accordion styles */
+.hc_md_accordion {
+  overflow: hidden;
+  border-bottom: 1px solid var(--hc_color_level2);
+}
+
+.accordion {
+  width: 100%;
+  color: var(--hc_dark_color);
+  font-size: var(--hc_bd_small);
+  overflow: hidden;
+}
+.accordion-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: var(--hc_bright_color);
+  border-bottom: 1px solid var(--hc_color_level2);
+  cursor: pointer;
+  /* Icon */
+}
+.accordion-label:hover {
+  font-weight: var(--hc_bold);
+}
+.accordion-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.accordion-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: var(--hc_dark_color);
+  background: var(--hc_bright_color);
+  transition: all 0.35s;
+}
+.accordion-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  background: var(--hc_bright_color);
+  cursor: pointer;
+}
+.accordion-close:hover {
+  background: var(--hc_bright_color);
+}
+
+input:checked + .accordion-label {
+  color: var(--hc_bright_color);
+  font-weight: var(--hc_bold);
+  background: var(--hc_dark_color);
+}
+input:checked + .accordion-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .accordion-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+/* footer > about us : 탭 */
+.hc_about {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+/* 탭 스타일 */
+.hc_page_about {
+  width: 33.3333333333%;
+  height: 50px;
+  border-bottom: 3px solid #333333;
+  background-color: #f8f8f8;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.hc_page_about:hover {
+  opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name=hc_page_about] {
+  display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.hc_page_about_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#page_company:checked + #company_content,
+#page_pigment:checked ~ #pigment_content {
+  display: block;
+}
+
+/* 선택된 탭 스타일 */
+.hc_about input:checked + .hc_page_about {
+  background-color: #333333;
+  color: #fff;
+}
+
+.hc_policy_wrap {
+  /* Accordion styles */
+}
+.hc_policy_wrap input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.hc_policy_wrap .row {
+  display: flex;
+}
+.hc_policy_wrap .row .col {
+  flex: 1;
+}
+.hc_policy_wrap .row .col:last-child {
+  margin-left: 1em;
+}
+.hc_policy_wrap .policys {
+  overflow: hidden;
+}
+.hc_policy_wrap .policytab {
+  width: 100%;
+  overflow: hidden;
+}
+.hc_policy_wrap .policytab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 1px solid var(--hc_color_level2);
+  font-weight: var(--hc_regular);
+  cursor: pointer;
+  /* Icon */
+}
+.hc_policy_wrap .policytab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.hc_policy_wrap .policytab-content {
+  max-height: 0;
+  padding: 0 1em;
+  transition: all 0.35s;
+}
+.hc_policy_wrap .policytab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+.hc_policy_wrap input:checked + .policytab-label::after {
+  transform: rotate(90deg);
+}
+.hc_policy_wrap input:checked ~ .policytab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+.hc_board_wrap mark {
+  padding: 4px 10px;
+  color: var(--hc_bright_color);
+  font-size: var(--hc_bd_small);
+  font-weight: var(--hc_thin);
+  background: #000;
+}
+.hc_board_wrap button {
+  width: 324px;
+  color: var(--hc_bright_color);
+  font-size: var(--hc_bd_small);
+  line-height: 54px;
+  background: var(--hc_dark_color);
+}
+
+.hc_btn_large_fill {
+  width: 100%;
+  height: 48px;
+  color: var(--hc_bright_color);
+  font-size: var(--hc_bd_medium);
+  background: var(--hc_dark_color);
+  border: 1px solid var(--hc_dark_color);
+  cursor: pointer;
+}
+
+.hc_btn_large {
+  height: 48px;
+  color: var(--hc_dark_color);
+  font-size: var(--hc_bd_medium);
+  background: var(--hc_bright_color);
+  border: 1px solid var(--hc_dark_color);
+  cursor: pointer;
+}
+
+.hc_btn_large_fill:hover,
+.hc_btn_large:hover {
+  opacity: 0.75;
+  transition: all 0.35s;
+}
+
+.hc_selectbox_large {
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=module.css.map */

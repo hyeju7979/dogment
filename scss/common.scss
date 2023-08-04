@@ -13,13 +13,35 @@ a { text-decoration:none; color:#000; }
 a:hover { 
     text-decoration:none;
     transition: all 0.2s ease;
- }
+}
 a:active { text-decoration:none; }
-select:focus-visible {
+
+input[type=file],
+textarea,
+select,
+input[type=text] {
+    padding: 12px 13px;
+    font-family: var(--fontfamily1);
+    font-size: var(--hc_bd_medium);
+    border: 1px solid var(--hc_dark_color);
+    box-sizing: border-box;
+}
+textarea:focus-visible,
+select:focus-visible,
+input:focus-visible {
+    outline: none;
     outline-offset: 0px;
+    border-radius: 0;
+}
+input[type="checkbox"] {
+    cursor: pointer;
 }
 select:not(:-internal-list-box) {
     overflow: hidden;
+}
+
+small {
+    font-size: var(--hc_bd_xsmall); 
 }
 img {
     max-width: 100%;
@@ -67,8 +89,8 @@ img {
     font-size: var(--hc_tit);
     font-weight: var(--hc_regular);
 }
-.hc_md_table_detail_article,
-.hc_md_table_detail_caption {
+.hc_table_article,
+.hc_table_caption {
     height: 70px;
     line-height: 70px;
     font-size: var(--hc_bd_large);
@@ -78,9 +100,6 @@ img {
 
     td {
         border-bottom: 1px solid var(--hc_color_level2);
-    }
-    td:nth-child(2) {
-        text-align: left;
     }
 }
 
@@ -125,6 +144,10 @@ img {
 }
 .hc_section3_contents1 {
     margin: 0 230px;
+}
+// 간격 규칙
+.hc_interval1 {
+    margin-top: 20px;
 }
 .hc_main_timesale li img,
 .page_pfs ul li span img,
@@ -770,7 +793,16 @@ footer {
 .hc_all_prev {
     display: inline-block;
 }
-
+.hc_all_prev {
+    position: relative;
+    top: 5px;
+    padding: 0 10px;
+}
+.hc_all_next {
+    position: relative;
+    top: -2px;
+    padding: 0 10px;
+}
 // 이벤트 페이지
 .page_event {
     .hc_thumbnail_list li img {
@@ -890,6 +922,10 @@ footer {
         box-sizing: border-box;
         overflow-y: scroll;
     }
+
+    td:nth-child(2) {
+        text-align: left;
+    }
 }
 
 // 상품설명 더보기
@@ -956,6 +992,7 @@ footer {
     width: 188px;
     border: 1px solid var(--hc_color_level2);
     border: 0;
+    box-sizing: border-box;
 }
 .hc_selectbox:focus{
     border: 1px solid var(--hc_dark_color);
@@ -1169,4 +1206,128 @@ footer {
         }
         
     }
+}
+
+// 게시판-목록
+.hc_notice_list {
+    td:nth-child(3) {
+        text-align: left;
+    }
+    .hc_board_search {
+        text-align: center;
+
+        .hc_selectbox {
+            width:122px;
+            height: 48px;
+            border: 1px solid var(--hc_dark_color);
+        }
+        input { 
+            margin: 5px 0; 
+            padding: 12px 13px;
+            width: 286px; 
+            height: 48px;
+            resize: horizontal;
+            border: 1px solid var(--hc_dark_color);
+            box-sizing: border-box;
+        }
+        button {
+            width: 142px;
+            height: 48px;
+            line-height: 48px;
+        }
+    }
+    .hc_content_title {
+        padding: 30px 0 30px 10px;
+        font-size: var(--hc_bd_large);
+        border-top: 1px solid var(--hc_dark_color);;
+        border-bottom: 1px solid var(--hc_dark_color);;
+        
+    }
+    .hc_letterpress {
+        padding: 80px 0 80px;  
+        text-align: center;
+        border-bottom: 1px solid var(--hc_color_level2);;
+    }
+    .hc_btn_wrap {
+        margin-top: 68px;
+    }
+}
+.hc_edit {
+    margin: 0 auto;
+    width: 558px;
+    border-top: 1px solid var(--hc_dark_color);
+    // padding-bottom: 34px;
+    // border-bottom: 1px solid var(--hc_dark_color);
+
+    label {
+        display: block;
+        margin: 34px 0;
+    }
+    input[type="text"] {
+        width: 100%;
+        height: 48px;
+        resize: horizontal;
+    }
+    
+    .hc_assistant_mini_txt {
+        margin-left: 14px;
+        color: var(--hc_color_point);
+        font-size: var(--hc_bd_xsmall);
+    }
+    .hc_btn_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    .hc_checkbox {
+        label {
+            display: inline-block;
+            margin: 10px 0 10px 14px;
+            small {
+                position: relative;
+                bottom: 3px;
+            }
+        }
+        textarea {
+            width:100%;
+        }
+    }
+    .filebox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .upload-name {
+            display: inline-block;
+            padding: 12px 13px;
+            min-width: 408px;
+            height: 48px;
+            line-height: 48px;
+            vertical-align: middle;
+            font-size: var(--hc_bd_medium);
+            border: 1px solid var(--hc_dark_color);
+            box-sizing: border-box;
+        }
+        label {
+            display: inline-block;
+            margin: 0 0 0 4px;
+            width: 142px;
+            height: 48px;
+            line-height: 48px;
+            color: var(--hc_bright_color);
+            font-size: var(--hc_bd_small);
+            text-align: center;
+            vertical-align: middle;
+            background: var(--hc_dark_color);
+            cursor: pointer;
+        }
+        input[type="file"] {
+            position: absolute;
+            padding: 0;
+            width: 0;
+            height: 0;
+            border: 0;
+            overflow: hidden;
+        }
+    }
+    
 }
