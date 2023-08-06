@@ -48,12 +48,6 @@ img {
 }
 
 // 버튼 규칙
-.hc_btn_wrap {
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    gap: 10px;
-}
 .hc_btn_large a,
 .hc_btn_large_fill a,
 .hc_btn_small a,
@@ -1248,9 +1242,6 @@ footer {
         text-align: center;
         border-bottom: 1px solid var(--hc_color_level2);;
     }
-    .hc_btn_wrap {
-        margin-top: 68px;
-    }
 }
 .hc_edit {
     margin: 0 auto;
@@ -1261,14 +1252,17 @@ footer {
 
     label {
         display: block;
-        margin: 34px 0;
+        // margin: 34px 0;/
     }
     input[type="text"] {
         width: 100%;
         height: 48px;
-        resize: horizontal;
+        margin: 10px 0;
     }
     
+    h3 {
+        margin:54px 0 44px;
+    }
     .hc_assistant_mini_txt {
         margin-left: 14px;
         color: var(--hc_color_point);
@@ -1330,4 +1324,150 @@ footer {
         }
     }
     
+}
+// MEMBER 공통
+label.hc_single_line,
+.hc_single_layout  {
+    display: inline-block; 
+}
+.hc_amend {
+    position: relative;
+    bottom: 3px;
+    left: 8px;
+}
+// 아이디&패스워드 찾기
+.hc_page_member_find {
+    .hc_single_layout {
+        margin: 20px 0 10px;
+
+        span {
+            margin-right: 50px;
+        }
+    }
+}
+// 간편 회원가입
+.hc_page_simple_join {
+    .hc_clarification {
+        margin:40px 0;
+    }
+    .hc_row3 {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fill, minmax(32%, auto));
+    }
+    .hc_selectbox_small {
+        padding: 12px 13px;
+        border: 1px solid var(--hc_dark_color);
+        box-sizing: border-box;
+    }
+    .hc_single_layout {
+        margin: 20px 0 10px;
+        span {
+            margin-right: 20px;  
+        }
+    }
+    .hc_clarification {
+        li:last-child  {
+            margin-top: 48px;
+            padding: 48px;
+            color: var(--hc_color_point);
+            font-size: var(--hc_bd_large);
+            font-weight: normal;
+            border-top: 3px double var(--hc_dark_color);
+            border-bottom: 1px solid var(--hc_dark_color);
+        }
+        li {
+            margin: 10px 0;
+            font-weight: var(--hc_medium);
+            span:first-child {
+                display: inline-block;
+                width: 200px;
+                text-align: right;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    margin: 0 20px;
+                    width: 20px;
+                    height: 1px;
+                    background: var(--hc_dark_color);;
+                }
+            }
+            :last-child {
+                display: inline-block;
+                width: 358px;
+            }
+        }
+    }
+    .hc_btn_small {
+        margin-left: 4px;
+    }
+    .hc_required {
+        margin-top: 48px;
+        padding-top: 48px;
+        border-top: 3px double var(--hc_dark_color);
+        div:first-child {
+            margin-bottom: 22px;
+            font-size: var(--hc_bd_large);
+        }
+        .hc_checkbox {
+            margin-top: 58px;
+        }
+        .hc_under {
+            margin-left: 30px; 
+        }
+    }
+    .joinus {
+        margin-top: 48px;
+        overflow: hidden;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        .join {
+            width: 100%;
+            overflow: hidden;
+            &-label {
+                display: flex;
+                justify-content: space-between;
+                padding: 1em;
+                border-bottom: 1px solid var(--hc_color_level2);
+                font-weight: var(--hc_regular);
+                cursor: pointer;
+              /* Icon */
+                &::after {
+                    content: "\276F";
+                    width: 1em;
+                    height: 1em;
+                    text-align: center;
+                    transition: all .35s;
+                }
+            }
+            &-content {
+                max-height: 0;
+                padding: 0 1em;
+                transition: all .35s;
+            }
+            &-close {
+                display: flex;
+                justify-content: flex-end;
+                padding: 1em;
+                font-size: 0.75em;
+                cursor: pointer;
+            }
+        }
+        // :checked
+        input:checked {
+            + .join-label {
+                &::after {
+                    transform: rotate(90deg);
+                }
+            }
+            ~ .join-content {
+                max-height: 100vh;
+                padding: 1em;
+            }
+        }
+    }
 }
