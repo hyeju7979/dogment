@@ -29,6 +29,8 @@
   --hc_heavy: 900;
   /* 폰트 스타일 */
   --fontfamily1: "Lato"; /* 영문 */
+  --hc_title_area: 142px; /* 제목 영역 */
+  --hc_content_area: 416px; /* 내용 영역 */
 }
 
 /*# sourceMappingURL=designsystem.css.map */

@@ -209,7 +209,12 @@ img {
 }
 .hc_blind {
     display: none;
+}
+.hc_tinny:after {
+    content: "ⓘ";
+    margin-right: 8px;
   }
+
 /* 상단 텍스트 배너 */
 .hc_notice_top {
     display: flex;
@@ -1345,6 +1350,14 @@ label.hc_single_line,
         }
     }
 }
+// 아이디&패스워드 찾기 결과
+.hc_page_member_results {
+    .hc_resultfound {
+        margin:26px 0 14px;
+        color: var(--hc_color_point);
+        font-weight: var(--hc_medium);
+    }
+}
 // 간편 회원가입
 .hc_page_simple_join {
     .hc_clarification {
@@ -1420,7 +1433,7 @@ label.hc_single_line,
         margin-top: 48px;
         overflow: hidden;
 
-        input {
+        input[name=join]  {
             position: absolute;
             opacity: 0;
             z-index: -1;
@@ -1469,5 +1482,62 @@ label.hc_single_line,
                 padding: 1em;
             }
         }
+    }
+    .hc_join_privacy {
+        margin:10px 0 40px;
+        border-collapse : collapse; 
+        th,td {
+            
+            font-size: var(--hc_bd_small);
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid var(--hc_dark_color);;
+        }
+        th {
+            line-height: 48px;
+        }
+        td {
+            padding: 10px;
+        }
+    }
+}
+// 회원정보 변경
+.hc_page_member_modify {
+    .hc_resultfound {
+        margin:48px 0;
+        li {
+            margin-bottom: 10px;
+        }
+        span {
+            display: inline-block;
+            &:first-child{
+                width: var(--hc_title_area);
+                line-height: 48px;
+            }
+            &:last-child {
+                width: var(--hc_content_area);
+            }
+        }
+    }
+}
+// 개인 회원 가입&수정
+.hc_member_information {
+    table:first-child {
+        margin: 54px 0 44px;
+        border-bottom:1px solid var(--hc_dark_color);
+        border-bottom: 3px double var(--hc_dark_color);
+    }
+    th {
+        width: 142px;
+        height: 48px;
+        font-weight: var(--hc_regular);
+        text-align: left;
+        vertical-align: middle;
+    }
+    .hc_row3 {
+        grid-template-columns: repeat(auto-fill, minmax(26%, auto));
+    }
+    table:nth-child(2) .hc_single_layout {
+        margin: 10px 0 10px;
     }
 }

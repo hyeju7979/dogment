@@ -281,6 +281,11 @@ img {
   display: none;
 }
 
+.hc_tinny:after {
+  content: "ⓘ";
+  margin-right: 8px;
+}
+
 /* 상단 텍스트 배너 */
 .hc_notice_top {
   display: flex;
@@ -1448,6 +1453,12 @@ label.hc_single_line,
   margin-right: 50px;
 }
 
+.hc_page_member_results .hc_resultfound {
+  margin: 26px 0 14px;
+  color: var(--hc_color_point);
+  font-weight: var(--hc_medium);
+}
+
 .hc_page_simple_join .hc_clarification {
   margin: 40px 0;
 }
@@ -1519,7 +1530,7 @@ label.hc_single_line,
   margin-top: 48px;
   overflow: hidden;
 }
-.hc_page_simple_join .joinus input {
+.hc_page_simple_join .joinus input[name=join] {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -1562,6 +1573,58 @@ label.hc_single_line,
 .hc_page_simple_join .joinus input:checked ~ .join-content {
   max-height: 100vh;
   padding: 1em;
+}
+.hc_page_simple_join .hc_join_privacy {
+  margin: 10px 0 40px;
+  border-collapse: collapse;
+}
+.hc_page_simple_join .hc_join_privacy th, .hc_page_simple_join .hc_join_privacy td {
+  font-size: var(--hc_bd_small);
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid var(--hc_dark_color);
+}
+.hc_page_simple_join .hc_join_privacy th {
+  line-height: 48px;
+}
+.hc_page_simple_join .hc_join_privacy td {
+  padding: 10px;
+}
+
+.hc_page_member_modify .hc_resultfound {
+  margin: 48px 0;
+}
+.hc_page_member_modify .hc_resultfound li {
+  margin-bottom: 10px;
+}
+.hc_page_member_modify .hc_resultfound span {
+  display: inline-block;
+}
+.hc_page_member_modify .hc_resultfound span:first-child {
+  width: var(--hc_title_area);
+  line-height: 48px;
+}
+.hc_page_member_modify .hc_resultfound span:last-child {
+  width: var(--hc_content_area);
+}
+
+.hc_member_information table:first-child {
+  margin: 54px 0 44px;
+  border-bottom: 1px solid var(--hc_dark_color);
+  border-bottom: 3px double var(--hc_dark_color);
+}
+.hc_member_information th {
+  width: 142px;
+  height: 48px;
+  font-weight: var(--hc_regular);
+  text-align: left;
+  vertical-align: middle;
+}
+.hc_member_information .hc_row3 {
+  grid-template-columns: repeat(auto-fill, minmax(26%, auto));
+}
+.hc_member_information table:nth-child(2) .hc_single_layout {
+  margin: 10px 0 10px;
 }
 
 /*# sourceMappingURL=common.css.map */
