@@ -39,6 +39,9 @@ input[type="checkbox"] {
 select:not(:-internal-list-box) {
     overflow: hidden;
 }
+textarea[name="write"] {
+    width: 100%;
+  }
 
 small {
     font-size: var(--hc_bd_xsmall); 
@@ -134,7 +137,7 @@ img {
 .hc_main_section3 {
     margin-left: auto;
     margin-right: auto;
-    width: 1800px;
+    width: 100%;
 }
 .hc_section3_contents1 {
     margin: 0 230px;
@@ -1491,7 +1494,7 @@ label.hc_single_line,
             font-size: var(--hc_bd_small);
             text-align: center;
             vertical-align: middle;
-            border: 1px solid var(--hc_dark_color);;
+            border: 1px solid var(--hc_dark_color);
         }
         th {
             line-height: 48px;
@@ -1524,8 +1527,13 @@ label.hc_single_line,
 .hc_member_information {
     table:first-child {
         margin: 54px 0 44px;
-        border-bottom:1px solid var(--hc_dark_color);
-        border-bottom: 3px double var(--hc_dark_color);
+        border-collapse: inherit;
+    }
+    table:nth-child(2) {
+        padding:44px 0;
+        border-collapse: initial;
+        border-top: 1px solid var(--hc_dark_color);
+        border-bottom: 1px solid var(--hc_dark_color);
     }
     th {
         width: 142px;
@@ -1537,7 +1545,13 @@ label.hc_single_line,
     .hc_row3 {
         grid-template-columns: repeat(auto-fill, minmax(26%, auto));
     }
-    table:nth-child(2) .hc_single_layout {
-        margin: 10px 0 10px;
+    .hc_single_layout{
+        margin: 0;
+        line-height: 48px;
     }
+}
+// 회원 탈퇴 신청
+.hc_page_secession strong {
+    display: block; 
+    margin: 20px 0;
 }

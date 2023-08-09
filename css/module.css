@@ -42,7 +42,6 @@
   z-index: -1;
 }
 
-/* Accordion styles */
 .hc_md_accordion {
   overflow: hidden;
   border-bottom: 1px solid var(--hc_color_level2);
@@ -104,7 +103,6 @@ input:checked ~ .accordion-content {
   padding: 1em;
 }
 
-/* footer > about us : 탭 */
 .hc_about {
   margin-top: 50px;
   padding-bottom: 40px;
@@ -112,7 +110,6 @@ input:checked ~ .accordion-content {
   margin: 0 auto;
 }
 
-/* 탭 스타일 */
 .hc_page_about {
   width: 33.3333333333%;
   height: 50px;
@@ -133,12 +130,10 @@ input:checked ~ .accordion-content {
   opacity: 0.75;
 }
 
-/* 라디오 버튼 UI삭제*/
 input[name=hc_page_about] {
   display: none;
 }
 
-/* 탭 컨텐츠 스타일 */
 .hc_page_about_content {
   display: none;
   padding: 40px 40px 0;
@@ -146,13 +141,11 @@ input[name=hc_page_about] {
   overflow: hidden;
 }
 
-/* 선택 된 탭 콘텐츠를 표시 */
 #page_company:checked + #company_content,
 #page_pigment:checked ~ #pigment_content {
   display: block;
 }
 
-/* 선택된 탭 스타일 */
 .hc_about input:checked + .hc_page_about {
   background-color: #333333;
   color: #fff;

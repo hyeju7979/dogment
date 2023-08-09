@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원정보 입력</title>
+    <title>회원정보 탈퇴신청</title>
     <link rel="stylesheet" type="text/css" href="css/designsystem.css">
     <link rel="stylesheet" type="text/css" href="css/module.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -173,200 +173,25 @@
 
     <!-- 컨텐츠 영역 -->
     <div class="hc_common_wrap">
-        <main class="hc_member_wrap hc_page_simple_join">
+        <main class="hc_member_wrap hc_page_secession">
             <!-- 페이지 타이틀 -->
             <h2 class="hc_tit_page">JOIN-US</h2>
 
             <article class="hc_edit">
-                <h3 class="hc_tit_headline">카카오 연동하기</h3>
+                <h3 class="hc_tit_headline">회원정보 탈퇴신청</h3>
                 <div>
-                    연동하기 버튼만 누르면 카카오 1초 로그인이 완료됩니다.<br />
-                    이메일 주소를 확인해 주세요.
+                    저희 쇼핑몰의 부족했던 점과 아쉬웠던 점을 적어주십시오.<br />
+                    더 좋은 모습으로 발전하도록 최선을 다하겠습니다.<br />
+                    앞으로 더 나은 모습으로 고객님을 다시 만날 수 있도록 노력하겠습니다.<br /> 
+                    그동안 이용해주신 것을 진심으로 감사드립니다.<br />
+                    <strong>탈퇴 사유를 적어주시면 쇼핑몰 운영에 적극 반영하겠습니다.</strong>
                 </div>
+                <form>
+                    <textarea name="write" rows="10" placeholder="기타 불만사항이나 의견이 있으시면 기재 해주세요."></textarea><br>
+                </form>
                 <div class="hc_btn_wrap">
-                    <input type="submit" value="카카오 연동" class="hc_btn_large_fill" />
-                </div>
-
-                <div class="hc_member_information">
-                    <form>
-                        <table>
-                            <caption>표제목</caption>
-                            <colgroup>
-                                <col width="142px">
-                                <col width="auto">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th scope="col" class="hc_essential">이름</th>
-                                    <td><input type="text" name="name" placeholder="이름" autofocus   /></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">아이디</th>
-                                    <td><input type="text" name="id" placeholder="아이디"  /></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">비밀번호</th>
-                                    <td>
-                                        <input type="text" name="password" placeholder="비밀번호"  />
-                                        <span class="hc_tinny"></span>영문 대소문자/숫자/특수문자를 혼용하여 2종류 10~16자 또는 3종류 8~16자
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">비밀번호 확인</th>
-                                    <td><input type="text" name="verifypassword" placeholder="비밀번호 확인"  /></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">생년월일</th>
-                                    <td>
-                                        <div class="hc_row3">
-                                            <select name="chooseOption" id="" class="hc_selectbox_small">
-                                                <option value="0" selected>1990</option>
-                                                <option value="4">초록/베이지,F(~66)</option>
-                                                <option value="2">아이/곤색,F(~66)</option>
-                                                <option value="3">파랑/밤색,F(~66)</option>
-                                                <option value="4#">연베/카멜,F(~66)</option>
-                                                <option value="5">핑크/연두,F(~66)</option>
-                                            </select>
-                                            <select name="chooseOption" id="" class="hc_selectbox_small">
-                                                <option value="0" selected>월</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">8</option>
-                                                <option value="8">9</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                            </select>
-                                            <select name="chooseOption" id="" class="hc_selectbox_small">
-                                                <option value="0" selected>일</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                                <option value="6">6</option>
-                                                <option value="7">8</option>
-                                                <option value="8">9</option>
-                                                <option value="9">9</option>
-                                                <option value="10">10</option>
-                                                <option value="11">11</option>
-                                                <option value="12">12</option>
-                                            </select>
-                                        </div>
-                                        <div class="hc_single_layout">
-                                            <span>
-                                                <input type="radio" id="name" name="name" value="name" />
-                                                <label class="hc_single_line"><small class="hc_amend">선택안함</small></label>
-                                            </span>
-                                            <span>
-                                                <input type="radio" id="name" name="name" value="name" />
-                                                <label class="hc_single_line"><small class="hc_amend">남</small></label>
-                                            </span>
-                                            <span>
-                                                <input type="radio" id="name" name="name" value="name" />
-                                                <label class="hc_single_line"><small class="hc_amend">여</small></label>
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">이메일</th>
-                                    <td class="hc_row2">
-                                        <input type="text" name="email" placeholder="이메일" />
-                                        <input type="submit" value="중복확인" class="hc_btn_small" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">휴대폰</th>
-                                    <td><input type="text" name="phone" placeholder="휴대폰 번호" /></td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">뉴스메일</th>
-                                    <td>
-                                        <div class="hc_single_layout">
-                                            <span>
-                                                <input type="radio" id="name" name="name" value="name" />
-                                                <label class="hc_single_line"><small class="hc_amend">받습니다.</small></label>
-                                            </span>
-                                            <span>
-                                                <input type="radio" id="name" name="name" value="name" />
-                                                <label class="hc_single_line"><small class="hc_amend">받지 않습니다.</small></label>
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">SMS안내</th>
-                                    <td>
-                                        <div class="hc_single_layout">
-                                            <span>
-                                                <input type="radio" id="name" name="name" value="name" />
-                                                <label class="hc_single_line"><small class="hc_amend">받습니다.</small></label>
-                                            </span>
-                                            <span>
-                                                <input type="radio" id="name" name="name" value="name" />
-                                                <label class="hc_single_line"><small class="hc_amend">받지 않습니다.</small></label>
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">앱Push알림</th>
-                                    <td>
-                                        <div class="hc_single_layout">
-                                            <span>
-                                                <input type="radio" id="name" name="name" value="name" />
-                                                <label class="hc_single_line"><small class="hc_amend">받습니다.</small></label>
-                                            </span>
-                                            <span>
-                                                <input type="radio" id="name" name="name" value="name" />
-                                                <label class="hc_single_line"><small class="hc_amend">받지 않습니다.</small></label>
-                                            </span>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                       
-                        <table>
-                            <caption>표제목</caption>
-                            <colgroup>
-                                <col width="142px">
-                                <col width="auto">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th scope="col">
-                                        유입경로</th>
-                                    <td>
-                                        <select name="chooseOption" id="" class="hc_selectbox_large">
-                                            <option value="0" selected>필수선택</option>
-                                            <option value="4">네이버 쇼핑</option>
-                                            <option value="2">네이버 검색</option>
-                                            <option value="3">오프라인</option>
-                                            <option value="4#">SNS</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </form>
-                </div>
-                
-                <div class="hc_btn_wrap">
-                    <input type="submit" value="페이스북 연동" class="hc_btn_large" />
-                    <input type="submit" value="네이버 연동" class="hc_btn_large" />
-                </div>
-
-                <div class="hc_btn_wrap">
-                    <input type="submit" value="수정" class="hc_btn_large_fill" />
+                    <input type="submit" value="회원 탈퇴" class="hc_btn_large_fill" />
                     <input type="submit" value="취소" class="hc_btn_large" />
-                    <input type="submit" value="회원 탈퇴" class="hc_btn_large" />
                 </div>
             </article>
         </main>    
