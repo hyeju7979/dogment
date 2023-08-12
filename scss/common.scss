@@ -1555,3 +1555,55 @@ label.hc_single_line,
     display: block; 
     margin: 20px 0;
 }
+
+// 마이 페이지
+.hc_common_wrap.hc_wrap_mypage {
+    width: 100%;
+    box-sizing: border-box;
+}
+.hc_wrap_mypage {
+    position: relative;
+    main {
+        display: flex;   
+    }
+    .hc_mypage_nav {
+        padding: 45px;
+        line-height: 2;
+
+        h3 {
+            font-size: var(--hc_tit_headline);    
+        }
+        h4 {
+            font-size: var(--hc_tit_caption);  
+        }
+        li {
+            margin-left: 14px;
+        }
+        ul li:first-child {
+            margin: 40px 0 0 0;
+            font-size: var(--hc_bd_large);
+            font-weight: var(--hc_bold);
+        }
+    }
+    .hc_page_contents {
+        margin: 0 auto;
+        width: var(--hc_contents);
+        position: relative;
+        left: -140px;
+        border: 1px solid pink;
+    }
+    .hc_mypage_mine table {
+        padding: 30px;
+        border-collapse: unset;
+        border:1px solid var(--hc_dark_color);
+    }
+    .hc_mypage_mine th {
+        font-size: var(--hc_bd_large);
+        font-weight: var(--hc_regular);
+        text-align: left;
+        line-height: 48px;
+        ::after{
+            
+        }
+    }
+}
