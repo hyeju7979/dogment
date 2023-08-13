@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PAGE</title>
+    <title>SMART COUPON HISTORY</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/designsystem.css">
     <link rel="stylesheet" type="text/css" href="css/module.css">
@@ -173,7 +173,7 @@
 
     <!-- 컨텐츠 영역 -->
     <div class="hc_common_wrap hc_wrap_mypage">
-        <main>
+        <main class="hc_page_smartcoupon">
             <nav class="hc_mypage_nav">
                 <h3>WELCOME</h3> 
                 <h4>greate56 님</h4>
@@ -195,7 +195,7 @@
                         <span>3</span>
                     </li>
                 </ul>
-                
+
                 <ul>
                     <li>SHOPPING INFO</li>
                     <li><a href="">주문내역</a></li>
@@ -224,9 +224,9 @@
             </nav>
             <div class="hc_page_contents">
                 <!-- 페이지 타이틀 -->
-                <h2 class="hc_tit_page">MY PAGE</h2>
+                <h2 class="hc_tit_page">SMART COUPON</h2>
 
-                <div class="hc_mypage_mine">
+                <div class="hc_mypage_mine" style="display:none">
                     <table>
                         <caption>표제목</caption>
 
@@ -254,157 +254,120 @@
                     </table>
                 </div>
 
-                <!-- 최근 주문 -->
+                <div>
+                    <h4 class="hc_tit_caption">쿠폰 인증번호 등록하기</h4>
+                    <div class="hc_mypage_registercoupon">
+                        <input type="text" name="name" placeholder="시리얼 코드를 입력해 주세요." autofocus class="hc_input_long"  />
+                        <input type='submit' value='등록' class="hc_btn_small_fill"> 
+                    </div>
+                </div>
+                <!-- 쿠폰내역-->
                 <div class="hc_mypage_recentorder">
-                    <h3 class="hc_tit_headline">최근 주문</h3>
-                    <p class="hc_more">더보기</p>
+                    <h3 class="hc_tit_headline">쿠폰 이용 안내</h3>
+                    <div class="hc_clarification">
+                        · 쿠폰인증번호 등록하기에서 쇼핑몰에서 발행한 종이쿠폰/시리얼쿠폰/모바일쿠폰 등의 인증번호를 등록하시면 온라인쿠폰으로 발급되어 사용이 가능합니다.<br />
+                        · 쿠폰은 주문 시 1회에 한해 적용되며, 1회 사용 시 재 사용이 불가능합니다.<br />
+                        · 쿠폰은 적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.<br />
+                        · 특정한 종이쿠폰/시리얼쿠폰/모바일쿠폰의 경우 단 1회만 사용이 가능할 수 있습니다.
+                    </div>
+
                     <table class="hc_table_typeb">
                         <caption>표제목</caption>
 
                         <colgroup>
                             <col width="10%">
-                            <col width="30%">
-                            <col width="30%">
-                            <col width="10%">
-                            <col width="10%">
-                            <col width="10%">
-                        </colgroup>
-
-                        <thead>
-                            <tr>
-                                <th scope="col">주문일</th>
-                                <th scope="col">주문내역</th>
-                                <th scope="col">주문번호</th>
-                                <th scope="col">결제금액</th>
-                                <th scope="col">주문상세</th>
-                                <th scope="col">배송현황</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>2023.07.11</td>
-                                <td>[뉴컬러추가][T:RENDY]SS카라단자수NT</td>
-                                <td>20230711152436-52118287399</td>
-                                <td>29,800원</td>
-                                <td><span class="hc_btn_mini">VIEW</span></td>
-                                <td><span class="hc_btn_mini">VIEW</span></td>
-                            </tr>
-                            <tr>
-                                <td>2023.07.11</td>
-                                <td>[뉴컬러추가][T:RENDY]SS카라단자수NT</td>
-                                <td>20230711152436-52118287399</td>
-                                <td>29,800원</td>
-                                <td><span class="hc_btn_mini">VIEW</span></td>
-                                <td><span class="hc_btn_mini">VIEW</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- 관심상품 -->
-                <div class="hc_mypage_wishlist">
-                    <h3 class="hc_tit_headline">관심 상품</h3>
-                    <p class="hc_more">더보기</p>
-                    <ul class="hc_thumbnail_list">
-                        <li>
-                            <div><img src="img/sub/thumbnail/figure/01.jpg" /></div>
-                            <div class="hc_prd_list_information">
-                                <div class="hc_prd_name">[뉴컬러추가][T:RENDY] SS카라단자수NT</div>
-                                <ul class="hc_prd_element">
-                                    <li class="hc_normal_price">39,000</li>
-                                    <li class="hc_discount_price">11,700</li>
-                                    <li class="hc_discount_rate">30%</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div><img src="img/sub/thumbnail/figure/04.jpg" /></div>
-                            <div class="hc_prd_list_information">
-                                <div class="hc_prd_name">[뉴컬러추가][T:RENDY] SS카라단자수NT</div>
-                                <ul class="hc_prd_element">
-                                    <li class="hc_normal_price">39,000</li>
-                                    <li class="hc_discount_price">11,700</li>
-                                    <li class="hc_discount_rate">30%</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div><img src="img/sub/thumbnail/figure/05.jpg" /></div>
-                            <div class="hc_prd_list_information">
-                                <div class="hc_prd_name">[뉴컬러추가][T:RENDY] SS카라단자수NT</div>
-                                <ul class="hc_prd_element">
-                                    <li class="hc_normal_price">39,000</li>
-                                    <li class="hc_discount_price">11,700</li>
-                                    <li class="hc_discount_rate">30%</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div><img src="img/sub/thumbnail/figure/08.jpg" /></div>
-                            <div class="hc_prd_list_information">
-                                <div class="hc_prd_name">[뉴컬러추가][T:RENDY] SS카라단자수NT</div>
-                                <ul class="hc_prd_element">
-                                    <li class="hc_normal_price">39,000</li>
-                                    <li class="hc_discount_price">11,700</li>
-                                    <li class="hc_discount_rate">30%</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div><img src="img/sub/thumbnail/figure/16.jpg" /></div>
-                            <div class="hc_prd_list_information">
-                                <div class="hc_prd_name">[뉴컬러추가][T:RENDY] SS카라단자수NT</div>
-                                <ul class="hc_prd_element">
-                                    <li class="hc_normal_price">39,000</li>
-                                    <li class="hc_discount_price">11,700</li>
-                                    <li class="hc_discount_rate">30%</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <div><img src="img/sub/thumbnail/figure/12.jpg" /></div>
-                            <div class="hc_prd_list_information">
-                                <div class="hc_prd_name">[뉴컬러추가][T:RENDY] SS카라단자수NT</div>
-                                <ul class="hc_prd_element">
-                                    <li class="hc_normal_price">39,000</li>
-                                    <li class="hc_discount_price">11,700</li>
-                                    <li class="hc_discount_rate">30%</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- 최근 게시글 -->
-                <div class="hc_mypage_recentposts">
-                    <h3 class="hc_tit_headline">최근 게시글</h3>
-                    <p class="hc_more">더보기</p>
-                    <table class="hc_table_typeb">
-                        <caption>표제목</caption>
-
-                        <colgroup>
-                            <col width="10%">
-                            <col width="10%">
+                            <col width="20%">
                             <col width="auto">
+                            <col width="15%">
+                            <col width="15%">
+                            <col width="15%">
                         </colgroup>
 
                         <thead>
                             <tr>
-                                <th scope="col">작성일</th>
-                                <th scope="col">분류</th>
-                                <th scope="col">제목</th>
+                                <th scope="col">쿠폰번호</th>
+                                <th scope="col">쿠폰명</th>
+                                <th scope="col">적용품목</th>
+                                <th scope="col">사용가능금액</th>
+                                <th scope="col">할인액(%)/적립액(%)</th>
+                                <th scope="col">사용기간</th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                                <td colspan="3">
-                                    <div class="hc_no_date">작성된 게시글이 없습니다.</div>
-                                </td>
+                                <td>21112924</td>
+                                <td>신규가입 감사 쿠폰_SN</td>
+                                <td>전상품 (단, 기간 할인상품 제외)</td>
+                                <td>10,000원이상</td>
+                                <td>할인율 10%</td>
+                                <td>2023.08.02~2023.09.01</td>
                             </tr>
+                            <tr>
+                                <td>23101316</td>
+                                <td>[테스트] 테스트 쿠폰</td>
+                                <td>전상품 (단, 기간 할인상품 제외)</td>
+                                <td>제한없음</td>
+                                <td>배송비 할인</td>
+                                <td>2023.07.21~2024.07.18</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>[테스트] 테스트 쿠폰</td>
+                                <td>전상품 (단, 기간 할인상품 제외)</td>
+                                <td>제한없음</td>
+                                <td>할인율 10%</td>
+                                <td>2023.07.18~2024.07.18</td>
+                            </tr>
+
                         </tbody>
                     </table>
+
+                    <!-- 페이징 -->
+                    <div class="hc_pageing">
+                        <span class="hc_all_prev">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_934_3487)">
+                                <path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_934_3487">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                        <div class="hc_sub_pages4">
+                            <input id="hc_page1_show4" type="radio" name="tab_item" checked>
+                            <label class="hc_paging_item_show4" for="hc_page1_show4">1</label>
+                          
+                            <input id="hc_page2_show4" type="radio" name="tab_item">
+                            <label class="hc_paging_item_show4" for="hc_page2_show4">2</label>
+                          
+                            <input id="hc_page3_show4" type="radio" name="tab_item">
+                            <label class="hc_paging_item_show4" for="hc_page3_show4">3</label>
+                          
+                            <input id="hc_page4_show4" type="radio" name="tab_item">
+                            <label class="hc_paging_item_show4" for="hc_page4_show4">4</label>
+                          
+                            <div class="tab_content" id="hc_page1_content_show4"></div>
+                            <div class="tab_content" id="hc_page2_content_show4"></div>
+                            <div class="tab_content" id="hc_page3_content_show4"></div>
+                            <div class="tab_content" id="hc_page4_content_show4"></div>
+                        </div>
+                        <span class="hc_all_next">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_934_3487)">
+                                <path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_934_3487">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
                 </div>
             </div>
         </main>
@@ -448,6 +411,7 @@
         </div>
         <div class="hc_copyright">Copyright. pigment all rights reserved. Designed By URBANSKIN</div>
     </footer>
+
     <div class="hc_badge">
         <div>
             <a href="">

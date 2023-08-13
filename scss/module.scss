@@ -242,6 +242,7 @@ input[name="hc_page_about"] {
 }
 .hc_btn_large,
 .hc_btn_small,
+.hc_btn_small_fill,
 .hc_btn_large_fill {
   height: 48px;
   color: var(--hc_bright_color);
@@ -265,6 +266,7 @@ input[name="hc_page_about"] {
 .hc_btn_large_fill {
   width:100%;
 }
+.hc_btn_small_fill,
 .hc_btn_small {
   width: 142px;
 }
@@ -272,6 +274,14 @@ input[name="hc_page_about"] {
   color: var(--hc_dark_color);
   background: var(--hc_bright_color);
   border:1px solid var(--hc_dark_color);
+}
+.hc_btn_mini {
+  display: inline-block;
+  width: 80px;
+  height: 26px;
+  line-height: 26px;
+  font-size: var(--hc_bd_small);
+  border: 1px solid var(--hc_dark_color);
 }
 .hc_row2 {
   display: flex;
@@ -284,4 +294,57 @@ input[name="hc_page_about"] {
 .hc_text_decoration {
   text-decoration: underline;
   text-underline-offset: 8px;
+}
+// 더보기
+.hc_more {
+  margin-bottom: 10px;
+  text-align: right;
+  &:after {
+    content: " > ";
+    display: inline-block;
+    margin: 0 8px;
+  }
+}
+// table 타입
+.hc_table_typeb {
+  th {
+    line-height: 58px;
+    border-top: 3px solid var(--hc_dark_color);
+    border-bottom: 1px solid var(--hc_dark_color);
+  }
+  td {
+    line-height: 58px;
+    text-align: center;
+    border-bottom: 1px solid var(--hc_color_level2);
+  }
+}
+
+// 썸네일
+.hc_thumbnail_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, auto));
+  column-gap: 0.5%;
+  position: relative;
+}
+// NO DATE
+.hc_no_date {
+  line-height: 150px;
+}
+// 보조문구 간격
+.hc_clarification {
+  margin: 40px 0;
+}
+// 정렬
+.hc_left {
+  text-align: left;
+}
+.hc_right {
+  text-align: right;
+}
+// input type
+.hc_input_long {
+  width: 558px;
+  height: 48px;
+  line-height: 48px;
+  border:1px solid var(--hc_dark_color);
 }

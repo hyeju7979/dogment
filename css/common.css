@@ -795,7 +795,6 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  width: 1920px;
   margin: 0 auto;
   padding: 76px 0 40px;
 }
@@ -1654,7 +1653,7 @@ label.hc_single_line,
   display: flex;
 }
 .hc_wrap_mypage .hc_mypage_nav {
-  padding: 45px;
+  padding: 10px 45px 45px;
   line-height: 2;
 }
 .hc_wrap_mypage .hc_mypage_nav h3 {
@@ -1671,12 +1670,22 @@ label.hc_single_line,
   font-size: var(--hc_bd_large);
   font-weight: var(--hc_bold);
 }
+.hc_wrap_mypage .hc_mypage_nav .hc_mypage_info li {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0;
+  font-size: var(--hc_bd_large);
+  font-weight: var(--hc_heavy);
+}
+.hc_wrap_mypage .hc_mypage_nav .hc_mypage_info span {
+  display: inline-block;
+  text-align: left;
+}
 .hc_wrap_mypage .hc_page_contents {
   margin: 0 auto;
   width: var(--hc_contents);
   position: relative;
   left: -140px;
-  border: 1px solid pink;
 }
 .hc_wrap_mypage .hc_mypage_mine table {
   padding: 30px;
@@ -1688,6 +1697,52 @@ label.hc_single_line,
   font-weight: var(--hc_regular);
   text-align: left;
   line-height: 48px;
+  padding: 0 10px 0 30px;
+  border-right: 1px solid var(--hc_color_level2);
+}
+.hc_wrap_mypage .hc_mypage_mine th:first-child {
+  padding-left: 0;
+}
+.hc_wrap_mypage .hc_mypage_mine th:last-child {
+  border: 0;
+}
+.hc_wrap_mypage .hc_mypage_mine th:after {
+  content: " > ";
+  display: inline-block;
+  margin: 0 8px;
+}
+.hc_wrap_mypage .hc_mypage_mine td {
+  font-size: var(--hc_tit_page);
+  font-weight: var(--hc_medium);
+  text-align: right;
+  padding-right: 30px;
+  border-right: 1px solid var(--hc_color_level2);
+}
+.hc_wrap_mypage .hc_mypage_mine td:last-child {
+  border: 0;
+}
+.hc_wrap_mypage .hc_mypage_wishlist,
+.hc_wrap_mypage .hc_mypage_recentorder {
+  margin-top: 58px;
+}
+.hc_wrap_mypage .hc_thumbnail_list {
+  padding-top: 76px;
+  border-top: 3px solid #000;
+}
+.hc_wrap_mypage .hc_mypage_recentorder, .hc_wrap_mypage .hc_mypage_wishlist {
+  margin-bottom: 140px;
+}
+.hc_wrap_mypage .hc_page_orderhistory .hc_table_typeb td:nth-child(3) {
+  text-align: left;
+}
+.hc_wrap_mypage .hc_mypage_registercoupon {
+  display: flex;
+}
+.hc_wrap_mypage .hc_mypage_registercoupon input[type=text] {
+  border-width: 3px;
+}
+.hc_wrap_mypage .hc_mypage_registercoupon .hc_btn_small_fill {
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=common.css.map */

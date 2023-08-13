@@ -236,6 +236,7 @@ input[name=hc_page_about] {
 
 .hc_btn_large,
 .hc_btn_small,
+.hc_btn_small_fill,
 .hc_btn_large_fill {
   height: 48px;
   color: var(--hc_bright_color);
@@ -261,6 +262,7 @@ input[name=hc_page_about] {
   width: 100%;
 }
 
+.hc_btn_small_fill,
 .hc_btn_small {
   width: 142px;
 }
@@ -268,6 +270,15 @@ input[name=hc_page_about] {
 .hc_btn_large {
   color: var(--hc_dark_color);
   background: var(--hc_bright_color);
+  border: 1px solid var(--hc_dark_color);
+}
+
+.hc_btn_mini {
+  display: inline-block;
+  width: 80px;
+  height: 26px;
+  line-height: 26px;
+  font-size: var(--hc_bd_small);
   border: 1px solid var(--hc_dark_color);
 }
 
@@ -284,6 +295,57 @@ input[name=hc_page_about] {
 .hc_text_decoration {
   text-decoration: underline;
   text-underline-offset: 8px;
+}
+
+.hc_more {
+  margin-bottom: 10px;
+  text-align: right;
+}
+.hc_more:after {
+  content: " > ";
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.hc_table_typeb th {
+  line-height: 58px;
+  border-top: 3px solid var(--hc_dark_color);
+  border-bottom: 1px solid var(--hc_dark_color);
+}
+.hc_table_typeb td {
+  line-height: 58px;
+  text-align: center;
+  border-bottom: 1px solid var(--hc_color_level2);
+}
+
+.hc_thumbnail_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, auto));
+  column-gap: 0.5%;
+  position: relative;
+}
+
+.hc_no_date {
+  line-height: 150px;
+}
+
+.hc_clarification {
+  margin: 40px 0;
+}
+
+.hc_left {
+  text-align: left;
+}
+
+.hc_right {
+  text-align: right;
+}
+
+.hc_input_long {
+  width: 558px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid var(--hc_dark_color);
 }
 
 /*# sourceMappingURL=module.css.map */
