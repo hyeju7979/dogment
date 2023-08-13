@@ -1648,6 +1648,8 @@ label.hc_single_line,
 
 .hc_wrap_mypage {
   position: relative;
+  /* 스마트 쿠폰 탭 */
+  /* 스마트 쿠폰 탭 */
 }
 .hc_wrap_mypage main {
   display: flex;
@@ -1735,7 +1737,14 @@ label.hc_single_line,
 .hc_wrap_mypage .hc_page_orderhistory .hc_table_typeb td:nth-child(3) {
   text-align: left;
 }
+.hc_wrap_mypage .hc_page_smartcoupon .hc_tit_caption {
+  margin: 48px 0 36px;
+}
 .hc_wrap_mypage .hc_mypage_registercoupon {
+  display: flex;
+  flex-direction: column;
+}
+.hc_wrap_mypage .hc_mypage_registercoupon form {
   display: flex;
 }
 .hc_wrap_mypage .hc_mypage_registercoupon input[type=text] {
@@ -1743,6 +1752,50 @@ label.hc_single_line,
 }
 .hc_wrap_mypage .hc_mypage_registercoupon .hc_btn_small_fill {
   margin-left: 4px;
+}
+.hc_wrap_mypage .hc_mypage_registercoupon ul {
+  margin: 44px 0 0;
+}
+.hc_wrap_mypage .smartcoupon {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.hc_wrap_mypage .coupon_item {
+  display: block;
+  float: left;
+  width: 50%;
+  width: 198px;
+  height: 50px;
+  line-height: 50px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-bottom: 3px solid #333333;
+  transition: all 0.2s ease;
+}
+.hc_wrap_mypage .coupon_item:hover {
+  opacity: 0.75;
+}
+.hc_wrap_mypage input[name=coupon_item] {
+  display: none;
+}
+.hc_wrap_mypage .coupon_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+.hc_wrap_mypage #holding:checked ~ #holding_content,
+.hc_wrap_mypage #available:checked ~ #available_content {
+  display: block;
+}
+.hc_wrap_mypage .smartcoupon input:checked + .coupon_item {
+  background-color: #333333;
+  color: #fff;
 }
 
 /*# sourceMappingURL=common.css.map */
