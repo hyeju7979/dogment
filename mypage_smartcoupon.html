@@ -224,9 +224,9 @@
             </nav>
             <div class="hc_page_contents">
                 <!-- 페이지 타이틀 -->
-                <h2 class="hc_tit_page">SMART COUPON</h2>
+                <h2 class="hc_tit_page">MY COUPON</h2>
 
-                <div class="hc_mypage_mine" style="display:none">
+                <div class="hc_mypage_mine hc_blind">
                     <table>
                         <caption>표제목</caption>
 
@@ -255,13 +255,13 @@
                 </div>
 
                 <!-- 쿠폰 인증번호 등록하기 -->
-                <div class="hc_mypage_registercoupon">
+                <div>
                     <h4 class="hc_tit_caption">쿠폰 인증번호 등록하기</h4>
                     <form>
                         <input type="text" name="name" placeholder="시리얼 코드를 입력해 주세요." autofocus class="hc_input_long"  />
                         <input type='submit' value='등록' class="hc_btn_small_fill"> 
                     </form>
-                    <ul>
+                    <ul class="hc_clarification">
                         <li>· 피그먼트의 상품권 및 보너스 쿠폰 번호를 입력하세요.</li>
                         <li>· 오프라인, 이메일, 모바일을 통해 발급받으신 쿠폰 인증번호를 입력해 주시면 발급 가능합니다.</li>
                         <li>· 쿠폰의 발급 기간 / 마일리지 적립 기간을 꼭 확인해 주세요.</li>
@@ -269,22 +269,35 @@
                 </div>
 
                 <!-- 쿠폰내역-->
-                <div class="hc_mypage_recentorder">
-                    <h3 class="hc_tit_headline">쿠폰 이용 안내</h3>
-                    <div class="hc_clarification">
-                        · 쿠폰인증번호 등록하기에서 쇼핑몰에서 발행한 종이쿠폰/시리얼쿠폰/모바일쿠폰 등의 인증번호를 등록하시면 온라인쿠폰으로 발급되어 사용이 가능합니다.<br />
-                        · 쿠폰은 주문 시 1회에 한해 적용되며, 1회 사용 시 재 사용이 불가능합니다.<br />
-                        · 쿠폰은 적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.<br />
-                        · 특정한 종이쿠폰/시리얼쿠폰/모바일쿠폰의 경우 단 1회만 사용이 가능할 수 있습니다.
-                    </div>
+                <div>
                     <div class="smartcoupon">
                         <input id="holding" type="radio" name="coupon_item" checked>
-                        <label class="coupon_item" for="holding">보유 쿠폰 <strong>(0)</strong></label>
+                        <label class="coupon_item" for="holding">보유 쿠폰 <strong>(3)</strong></label>
                       
                         <input id="available" type="radio" name="coupon_item">
                         <label class="coupon_item" for="available">다운로드 가능 쿠폰 <strong>(0)</strong></label>
                       
                         <div class="coupon_content" id="holding_content">
+                            <h4 class="hc_tit_caption hc_blind">쿠폰 이용 안내</h4>
+                            <div class="hc_clarification hc_blind">
+                                · 쿠폰인증번호 등록하기에서 쇼핑몰에서 발행한 종이쿠폰/시리얼쿠폰/모바일쿠폰 등의 인증번호를 등록하시면 온라인쿠폰으로 발급되어 사용이 가능합니다.<br />
+                                · 쿠폰은 주문 시 1회에 한해 적용되며, 1회 사용 시 재 사용이 불가능합니다.<br />
+                                · 쿠폰은 적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.<br />
+                                · 특정한 종이쿠폰/시리얼쿠폰/모바일쿠폰의 경우 단 1회만 사용이 가능할 수 있습니다.
+                            </div>
+                            <div class="hc_own hc_interval1">
+                                <span class="hc_color_point">[000]님께서 보유하고 있는 쿠폰은 총 3장 입니다.</span>
+                                <span>
+                                    <select name="chooseOption" id="" class="hc_selectbox">
+                                        <option value="0" selected>유효기간 순</option>
+                                        <option value="4">초록/베이지,F(~66)</option>
+                                        <option value="2">아이/곤색,F(~66)</option>
+                                        <option value="3">파랑/밤색,F(~66)</option>
+                                        <option value="4#">연베/카멜,F(~66)</option>
+                                        <option value="5">핑크/연두,F(~66)</option>
+                                    </select>
+                                </span>
+                            </div>
                             <table class="hc_table_typeb">
                                 <caption>표제목</caption>
         
@@ -326,7 +339,7 @@
                                         <td>2023.07.21~2024.07.18</td>
                                     </tr>
                                     <tr>
-                                        <td>20</td>
+                                        <td>42181614</td>
                                         <td>[테스트] 테스트 쿠폰</td>
                                         <td>전상품 (단, 기간 할인상품 제외)</td>
                                         <td>제한없음</td>
@@ -338,7 +351,34 @@
                             </table>
                         </div>
                         <div class="coupon_content" id="available_content">
-                            https://velog.io/@henotony
+                            <h4 class="hc_tit_caption hc_blind">쿠폰 이용 안내</h4>
+                            <div class="hc_clarification">
+                                · 쿠폰인증번호 등록하기에서 쇼핑몰에서 발행한 종이쿠폰/시리얼쿠폰/모바일쿠폰 등의 인증번호를 등록하시면 온라인쿠폰으로 발급되어 사용이 가능합니다.<br />
+                                · 쿠폰은 주문 시 1회에 한해 적용되며, 1회 사용 시 재 사용이 불가능합니다.<br />
+                                · 쿠폰은 적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.<br />
+                                · 특정한 종이쿠폰/시리얼쿠폰/모바일쿠폰의 경우 단 1회만 사용이 가능할 수 있습니다.
+                            </div>
+
+                            <table class="hc_table_typeb">
+                                <caption>표제목</caption>
+        
+                                <colgroup>
+                                    <col width="10%">
+                                    <col width="20%">
+                                    <col width="auto">
+                                    <col width="15%">
+                                    <col width="15%">
+                                    <col width="15%">
+                                </colgroup>
+        
+                                <tbody>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div class="hc_no_date">다운로드 가능한 쿠폰이 없습니다.</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <!-- 페이징 -->

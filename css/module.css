@@ -252,12 +252,6 @@ input[name=hc_page_about] {
   transition: all 0.35s;
 }
 
-.hc_selectbox_large {
-  width: 100%;
-  height: 48px;
-  cursor: pointer;
-}
-
 .hc_btn_large_fill {
   width: 100%;
 }
@@ -280,6 +274,19 @@ input[name=hc_page_about] {
   line-height: 26px;
   font-size: var(--hc_bd_small);
   border: 1px solid var(--hc_dark_color);
+}
+
+.hc_input_long {
+  width: 558px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid var(--hc_dark_color);
+}
+
+.hc_selectbox_large {
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
 }
 
 .hc_row2 {
@@ -327,10 +334,20 @@ input[name=hc_page_about] {
 
 .hc_no_date {
   line-height: 150px;
+  border-top: 3px solid var(--hc_dark_color);
+  border-bottom: 1px solid var(--hc_dark_color);
 }
 
 .hc_clarification {
   margin: 40px 0;
+}
+
+.hc_interval1 {
+  margin-top: 20px;
+}
+
+.hc_interval2 {
+  margin-bottom: 140px;
 }
 
 .hc_left {
@@ -339,13 +356,6 @@ input[name=hc_page_about] {
 
 .hc_right {
   text-align: right;
-}
-
-.hc_input_long {
-  width: 558px;
-  height: 48px;
-  line-height: 48px;
-  border: 1px solid var(--hc_dark_color);
 }
 
 /*# sourceMappingURL=module.css.map */

@@ -142,10 +142,6 @@ img {
 .hc_section3_contents1 {
     margin: 0 230px;
 }
-// 간격 규칙
-.hc_interval1 {
-    margin-top: 20px;
-}
 .hc_main_timesale li img,
 .page_pfs ul li span img,
 .hc_md_accordion img,
@@ -1512,7 +1508,7 @@ label.hc_single_line,
         }
         span {
             display: inline-block;
-            &:first-child{
+            &:first-child {
                 width: var(--hc_title_area);
                 line-height: 48px;
             }
@@ -1648,76 +1644,100 @@ label.hc_single_line,
         padding-top: 76px;
         border-top: 3px solid #000;
     }
-    .hc_mypage_recentorder, .hc_mypage_wishlist {
-        margin-bottom: 140px;
-    }
     // 주문내역
     .hc_page_orderhistory .hc_table_typeb td:nth-child(3) {
         text-align: left;
     }
     // 쿠폰 인증번호 등록하기
-    .hc_page_smartcoupon .hc_tit_caption {
-        margin: 48px 0 36px;
-    }
-    .hc_mypage_registercoupon {
-        display: flex;
-        flex-direction: column;
-        form {
+    .hc_page_smartcoupon {
+        .hc_tit_caption {
+            margin: 48px 0 36px;
+        }
+        .hc_mypage_registercoupon {
             display: flex;
+            flex-direction: column;
+            form {
+                display: flex;
+            }
+            input[type=text] {
+                border-width: 3px;
+                height: 68px;
+            }
+            .hc_btn_small_fill {
+                margin-left: 4px;
+                height: 68px;
+                line-height: 68px;
+            }
+             ul {
+                margin: 44px 0 0;
+            }
         }
-        input[type=text] {
-            border-width: 3px;
+        .hc_own {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        .hc_btn_small_fill {
-            margin-left: 4px;
+        /* 스마트 쿠폰 탭 */
+        .smartcoupon {
+            margin-top: 50px;
+            padding-bottom: 40px;
+            background-color: var(--hc_bright_color);
+            margin: 0 auto;
         }
-         ul {
-            margin: 44px 0 0;
-         }
+        .coupon_item {
+            display: block;
+            float: left;
+            width: calc(100%/3);
+            width:300px;
+            height: 60px;
+            line-height: 60px;
+            color: var(--hc_dark_color);
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            background-color: var(--hc_bright_color);
+            border: 1px solid var(--hc_dark_color); 
+            transition: all 0.2s ease;
+        }
+        .coupon_item:hover {
+            // opacity: 0.75;
+        }
+        input[name="coupon_item"] {
+            display: none;
+        }
+        .coupon_content {
+            display: none;
+            clear: both;
+            overflow: hidden;
+        }
+        #holding:checked ~ #holding_content,
+        #available:checked ~ #available_content {
+            display: block;
+        }
+        .smartcoupon input:checked + .coupon_item {
+            background-color: var(--hc_dark_color); ;
+            color: var(--hc_bright_color);;
+        }
+        /* 스마트 쿠폰 탭 */
     }
-    /* 스마트 쿠폰 탭 */
-    .smartcoupon {
-        margin-top: 50px;
-        padding-bottom: 40px;
-        background-color: #ffffff;
-        margin: 0 auto;
+    // 마일리지
+    .hc_page_mileage {
+        .hc_table_typeb td:nth-child(3) {
+            text-align: left;
+        }
     }
-    .coupon_item {
-        display: block;
-        float: left;
-        width: calc(100%/2);
-        width:198px;
-        height: 50px;
-        line-height: 50px;
-        color: #333333;
-        font-size: 16px;
-        font-weight: bold;
-        text-align: center;
-        background-color: #f8f8f8;
-        border-bottom: 3px solid #333333; 
-        transition: all 0.2s ease;
+    // 상품 보관함
+    .hc_page_wishlist {
+        input[name=quantity] {
+            width: 62px;
+            height: 28px;
+        }
+        .hc_table_typeb td {
+            line-height: unset;
+            padding: 10px 0;
+            vertical-align: middle;
+        }
     }
-    .coupon_item:hover {
-        opacity: 0.75;
-    }
-    input[name="coupon_item"] {
-        display: none;
-    }
-    .coupon_content {
-        display: none;
-        padding: 40px 40px 0;
-        clear: both;
-        overflow: hidden;
-    }
-    #holding:checked ~ #holding_content,
-    #available:checked ~ #available_content {
-        display: block;
-    }
-    .smartcoupon input:checked + .coupon_item {
-        background-color: #333333;
-        color: #fff;
-    }
-    /* 스마트 쿠폰 탭 */
 }
 
 

@@ -207,10 +207,6 @@ img {
   margin: 0 230px;
 }
 
-.hc_interval1 {
-  margin-top: 20px;
-}
-
 .hc_main_timesale li img,
 .page_pfs ul li span img,
 .hc_md_accordion img,
@@ -1648,8 +1644,6 @@ label.hc_single_line,
 
 .hc_wrap_mypage {
   position: relative;
-  /* 스마트 쿠폰 탭 */
-  /* 스마트 쿠폰 탭 */
 }
 .hc_wrap_mypage main {
   display: flex;
@@ -1731,71 +1725,88 @@ label.hc_single_line,
   padding-top: 76px;
   border-top: 3px solid #000;
 }
-.hc_wrap_mypage .hc_mypage_recentorder, .hc_wrap_mypage .hc_mypage_wishlist {
-  margin-bottom: 140px;
-}
 .hc_wrap_mypage .hc_page_orderhistory .hc_table_typeb td:nth-child(3) {
   text-align: left;
+}
+.hc_wrap_mypage .hc_page_smartcoupon {
+  /* 스마트 쿠폰 탭 */
+  /* 스마트 쿠폰 탭 */
 }
 .hc_wrap_mypage .hc_page_smartcoupon .hc_tit_caption {
   margin: 48px 0 36px;
 }
-.hc_wrap_mypage .hc_mypage_registercoupon {
+.hc_wrap_mypage .hc_page_smartcoupon .hc_mypage_registercoupon {
   display: flex;
   flex-direction: column;
 }
-.hc_wrap_mypage .hc_mypage_registercoupon form {
+.hc_wrap_mypage .hc_page_smartcoupon .hc_mypage_registercoupon form {
   display: flex;
 }
-.hc_wrap_mypage .hc_mypage_registercoupon input[type=text] {
+.hc_wrap_mypage .hc_page_smartcoupon .hc_mypage_registercoupon input[type=text] {
   border-width: 3px;
+  height: 68px;
 }
-.hc_wrap_mypage .hc_mypage_registercoupon .hc_btn_small_fill {
+.hc_wrap_mypage .hc_page_smartcoupon .hc_mypage_registercoupon .hc_btn_small_fill {
   margin-left: 4px;
+  height: 68px;
+  line-height: 68px;
 }
-.hc_wrap_mypage .hc_mypage_registercoupon ul {
+.hc_wrap_mypage .hc_page_smartcoupon .hc_mypage_registercoupon ul {
   margin: 44px 0 0;
 }
-.hc_wrap_mypage .smartcoupon {
+.hc_wrap_mypage .hc_page_smartcoupon .hc_own {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hc_wrap_mypage .hc_page_smartcoupon .smartcoupon {
   margin-top: 50px;
   padding-bottom: 40px;
-  background-color: #ffffff;
+  background-color: var(--hc_bright_color);
   margin: 0 auto;
 }
-.hc_wrap_mypage .coupon_item {
+.hc_wrap_mypage .hc_page_smartcoupon .coupon_item {
   display: block;
   float: left;
-  width: 50%;
-  width: 198px;
-  height: 50px;
-  line-height: 50px;
-  color: #333333;
+  width: 33.3333333333%;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  color: var(--hc_dark_color);
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  background-color: #f8f8f8;
-  border-bottom: 3px solid #333333;
+  background-color: var(--hc_bright_color);
+  border: 1px solid var(--hc_dark_color);
   transition: all 0.2s ease;
 }
-.hc_wrap_mypage .coupon_item:hover {
-  opacity: 0.75;
-}
-.hc_wrap_mypage input[name=coupon_item] {
+.hc_wrap_mypage .hc_page_smartcoupon input[name=coupon_item] {
   display: none;
 }
-.hc_wrap_mypage .coupon_content {
+.hc_wrap_mypage .hc_page_smartcoupon .coupon_content {
   display: none;
-  padding: 40px 40px 0;
   clear: both;
   overflow: hidden;
 }
-.hc_wrap_mypage #holding:checked ~ #holding_content,
-.hc_wrap_mypage #available:checked ~ #available_content {
+.hc_wrap_mypage .hc_page_smartcoupon #holding:checked ~ #holding_content,
+.hc_wrap_mypage .hc_page_smartcoupon #available:checked ~ #available_content {
   display: block;
 }
-.hc_wrap_mypage .smartcoupon input:checked + .coupon_item {
-  background-color: #333333;
-  color: #fff;
+.hc_wrap_mypage .hc_page_smartcoupon .smartcoupon input:checked + .coupon_item {
+  background-color: var(--hc_dark_color);
+  color: var(--hc_bright_color);
+}
+.hc_wrap_mypage .hc_page_mileage .hc_table_typeb td:nth-child(3) {
+  text-align: left;
+}
+.hc_wrap_mypage .hc_page_wishlist input[name=quantity] {
+  width: 62px;
+  height: 28px;
+}
+.hc_wrap_mypage .hc_page_wishlist .hc_table_typeb td {
+  line-height: unset;
+  padding: 10px 0;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=common.css.map */
