@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>정기배송 관리</title>
+    <title>주문상세 내역</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/designsystem.css">
     <link rel="stylesheet" type="text/css" href="css/module.css">
@@ -173,7 +173,7 @@
 
     <!-- 컨텐츠 영역 -->
     <div class="hc_common_wrap hc_wrap_mypage">
-        <main class="hc_page_regulardelivery">
+        <main class="hc_page_orderdetails">
             <nav class="hc_mypage_nav">
                 <h3>WELCOME</h3> 
                 <h4>greate56 님</h4>
@@ -224,7 +224,7 @@
             </nav>
             <div class="hc_page_contents">
                 <!-- 페이지 타이틀 -->
-                <h2 class="hc_tit_page">REGULAR DELIVERY</h2>
+                <h2 class="hc_tit_page">ORDER DETAILS</h2>
 
                 <div class="hc_mypage_mine hc_blind">
                     <table>
@@ -254,58 +254,204 @@
                     </table>
                 </div>
 
-                <div class="regulardelivery">
-                    <input id="management" type="radio" name="regular_item" checked>
-                    <label class="regular_item" for="management">정기배송 관리</label>
-                    
-                    <input id="setting" type="radio" name="regular_item">
-                    <label class="regular_item" for="setting">정기배송 설정</label>
-                    
-                    <div class="regular_content" id="management_content">
-                        <div class="hc_clarification">
-                            정기배송 스케줄 관리
-                        </div>
-                        <div class="hc_no_date">
-                            <p><img src="img/icon/icon_truck.jpg" alt="" /></p>
-                            <span class="hc_tinny"></span>정기배송 서비스를 이용하지 않고 있습니다.
-                            <div>나만의 배송일에 맞춰 필요한 상품을 편하게 배송 받으세요~</div>
-                        </div>
-                    </div>
-                    <div class="regular_content" id="setting_content">
-                        <div class="hc_clarification hc_row2">
-                            <span>결제카드 정보</span>
-                            <span>· 최대 5개 등록 가능</span>
-                        </div>
-                        <table class="hc_table_typeb hc_interval1">
-                            <caption>주소록 관리</caption>
-                            <colgroup>
-                                <col width="10%">
-                                <col width="auto">
-                                <col width="15%">
-                                <col width="10%">
-                            </colgroup>
-                            <thead class="hc_blind">
-                                <tr>
-                                    <th scope="col">자동결제 카드</th>
-                                    <th scope="col">자동결제 등록 건 수</th>
-                                    <th scope="col">삭제</th>
-                                    <th scope="col">비고</th>
-                                </tr>
-                            </thead>
+                <!-- 주문 상세 내역 -->
+                <h3 class="hc_tit_headline">주문 상세 내역</h3>
+                <div class="hc_mypage_history hc_table_type">
+                    <ul>
+                        <li>주문일자 : <span>2023.07.11</span></li>
+                        <li>주문번호 : <span>20230711172937-23946396721</span></li>
+                    </ul>
+                    <ul>
+                        <li><input type="submit" value="현금영수증 수정" class="hc_btn_mini" /></li>
+                        <li><input type="submit" value="주문취소" class="hc_btn_mini_fill" /></li>
+                    </ul>
+                </div>
 
-                            <tbody>
-                                <tr>
-                                    <td colspan="4">
-                                        <div class="hc_no_date"><span class="hc_tinny"></span> 등록된 카드정보가 없습니다.</div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="hc_btn_wrap">
-                            <input type="submit" value="기본카드 설정" class="hc_btn_small" />
-                            <input type="submit" value="+ 카드 추가" class="hc_btn_small_fill" />
-                        </div>
-                    </div>
+                <!-- 주문상품 정보 -->
+                <div class="hc_order_info">
+                    <h3 class="hc_tit_headline">주문상품 정보</h3>
+                    <table class="hc_table_typeb">
+                        <caption>주문상품 정보</caption>
+                        <colgroup>
+                            <col width="auto">
+                            <col width="25%">
+                            <col width="25%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">상품정보</th>
+                                <th scope="col">진행상태</th>
+                                <th scope="col">배송</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="hc_prd_list_information">
+                                    <span><a href=""><img src="img/sub/thumbnail/figure/02.jpg" alt="" /></a></span>
+                                    <span>
+                                        <ul class="hc_prd_element">
+                                            <li class="hc_prd_name">[뉴컬러추가][T:RENDY] SS카라단자수NT</li>
+                                            <li>주문번호 : 20230711172937-23946396721_[1]</li>
+                                            <li>색상 : 아이/소라, 사이즈 : F (~66) <strong class="hc_btn_mini_small">취소</strong></li>
+                                            <li>39,000</li>
+                                            <li>적립금 : 390원</li>
+                                            <li>
+                                                수량 
+                                                <select name="chooseOption" id="" class="hc_select_mini_small">
+                                                    <option value="0" selected>1</option>
+                                                    <option value="4">2</option>
+                                                    <option value="2">3</option>
+                                                    <option value="3">4</option>
+                                                    <option value="4#">5</option>
+                                                    <option value="5">6</option>
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </td>
+                                <td>배송준비</td>
+                                <td>
+                                    배송번호 : S-23071117-799650411-00<br />
+                                    배송방법
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 구매자 정보 -->
+                <div class="hc_buyer_info">
+                    <h3 class="hc_tit_headline">구매자 정보</h3>
+                    <table class="hc_table_type">
+                        <caption>구매자 정보</caption>
+                        <colgroup>
+                            <col width="142px">
+                            <col width="30%">
+                            <col width="142px">
+                            <col width="30%">
+                            <col width="142px">
+                            <col width="30%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="col">주문자</th>
+                                <td>MD팀</td>
+                                <th scope="col">주문서 입금현황</th>
+                                <td>입금완료</td>
+                                <th scope="col">주문 메모</th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- 배송지 정보 -->
+                <div class="hc_delivery_info">
+                    <h3 class="hc_tit_headline">배송지 정보</h3>
+                    <table class="hc_table_type">
+                        <caption>배송지 정보</caption>
+                        <colgroup>
+                            <col width="142px">
+                            <col width="40%">
+                            <col width="142px">
+                            <col width="40%">
+                        </colgroup>
+                        <tbody>
+                            <!-- tr>
+                                <th scope="col">주문자</th>
+                                <td>MD팀</td>
+                                <th scope="col">주문서 입금현황</th>
+                                <td>입금완료</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">주문 메모</th>
+                                <td colspan="3">사이즈 잘 확인해서 보내주세요.</td>
+                            </tr -->
+                            <tr>
+                                <th scope="col">받는사람</th>
+                                <td>MD팀</td>
+                                <th scope="col">휴대폰번호</th>
+                                <td>010-1234-5678</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">배송번호</th>
+                                <td>S-23071117-799650411-00</td>
+                                <th scope="col">송장번호</th>
+                                <td>S-23071117-799650411-00</td>
+                            </tr>
+                            <tr>
+                                <th scope="col">주소</th>
+                                <td>17017 : 경기 용인시 처인구 중부대로 1087 (삼가동)</td>
+                                <th scope="col">배송요청사항</th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 결제 정보 -->
+                <div class="hc_payment_info">
+                    <h3 class="hc_tit_headline">결제 정보</h3>
+                    <table class="hc_table_type">
+                        <caption>결제 정보 </caption>
+                        <colgroup>
+                            <col width="142px">
+                            <col width="auto">
+                            <col width="45%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="col">사용한 적립금</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">사용한 예치금</th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">무통장</th>
+                                <td>16,900원 (입금완료)</td>
+                                <td>하나은행 359-910028-07304 (예금주:(주)케이컴퍼니) MD팀</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 쿠폰사용·할인 -->
+                <div class="hc_couponuse_info">
+                    <h3 class="hc_tit_headline">쿠폰사용·할인</h3>
+                    <table class="hc_table_typeb">
+                        <caption>쿠폰사용·할인</caption>
+                        <colgroup>
+                            <col width="142px">
+                            <col width="142px">
+                            <col width="142px">
+                            <col width="auto">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="col">종류</th>
+                                <th scope="col">금액</th>
+                                <th scope="col">적립금</th>
+                                <th scope="col">상세내역</th>
+                            </tr>
+                            <tr>
+                                <td>기간할인</td>
+                                <td>-33,600원</td>
+                                <td>0원</td>
+                                <td>
+                                    <p>사각버튼PT 20230711172937-23946396721_[1]</p>
+                                    <p>기간할인 : 70% 할인-ALL</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+
+                <div class="hc_btn_wrap">
+                    <input type="submit" value="주문하기" class="hc_btn_small_fill" />
                 </div>
             </div>
         </main>

@@ -1637,7 +1637,7 @@ label.hc_single_line,
     // 최근 주문
     .hc_mypage_wishlist,
     .hc_mypage_recentorder {
-        margin-top: 58px;
+        margin-top: 48px;
     }
     .hc_thumbnail_list {
         padding-top: 76px;
@@ -1790,6 +1790,134 @@ label.hc_single_line,
     }
     // 1:1 게시글+공지 목록
     .hc_page_privatelist td:nth-child(2) {
+        text-align: left;
+    }
+    // 정기배송 관리
+    .hc_page_regulardelivery {
+        .regulardelivery {
+            background-color: var(--hc_bright_color);
+            margin: 48px auto 0;
+        }
+        .regular_item {
+            width: 300px;
+            height: 50px;
+            border: 1px solid var(--hc_dark_color);
+            background-color: var(--hc_bright_color);
+            line-height: 50px;
+            font-size: 16px;
+            text-align: center;
+            color: var(--hc_dark_color);
+            display: block;
+            float: left;
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        input[name="regular_item"] {
+            display: none;
+        }
+        .regular_content {
+            display: none;
+            clear: both;
+            overflow: hidden;
+        }
+        #setting:checked ~ #setting_content,
+        #management:checked ~ #management_content {
+            display: block;
+        }
+        .regulardelivery input:checked + .regular_item {
+            background-color: var(--hc_dark_color);
+            color: var(--hc_bright_color);
+        }
+        .hc_no_date {
+            padding: 50px 0;
+            text-align: center;
+            line-height: 48px;
+        }
+    }
+    // 주문 상세 내역 
+    .hc_mypage_history {
+        display: flex;
+        justify-content: space-between;
+        line-height: 68px;
+        ul:first-child li:before {
+            content: "+";
+            margin-right: 10px;
+            font-weight: var(--hc_bold);
+        }
+        li {
+            display: inline-block;
+        }
+        span {
+            margin-right: 30px;
+        }
+        .hc_btn_mini {
+            padding: 0 10px;
+        }
+    }
+    .hc_delivery_info,
+    .hc_buyer_info {
+        .hc_table_type {
+            table-layout: fixed;
+            th {
+                border: 1px solid var(--hc_color_level2);
+                box-sizing: border-box;
+                &:first-child {
+                    border-left:0;
+                }
+            }
+            td {
+                padding-left: 10px;
+                border-bottom: 1px solid var(--hc_color_level2);
+            }
+        }
+    }
+    .hc_order_info {
+        .hc_table_typeb td{
+            margin: 0;
+            padding: 10px 0;
+            // line-height: 2;
+            span:first-child {
+                width: 200px;
+            }
+        }
+        .hc_prd_list_information {
+            display: flex;
+            align-items: center;
+        }
+        .hc_prd_element {
+            margin-left: 10px;
+            li {
+                display: flex;
+                align-items: center;
+                strong, select {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .hc_payment_info {
+        th,
+        td:nth-child(2) {
+            border-right: 1px solid var(--hc_color_level2);
+            border-color: var(--hc_color_level2);
+        }
+        td {
+            padding-left: 10px;
+            border-color: var(--hc_color_level2);
+        }
+    }
+    .hc_delivery_info,
+    .hc_buyer_info,
+    .hc_order_info,
+    .hc_couponuse_info,
+    .hc_payment_info {
+        margin-top: 48px;
+    }
+    .hc_couponuse_info td:last-child,
+    .hc_order_info td:nth-child(3),
+    .hc_prd_list_information {
         text-align: left;
     }
 }
