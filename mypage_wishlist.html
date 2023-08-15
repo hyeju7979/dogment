@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WISH LIST</title>
+    <title>상품 보관함</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/designsystem.css">
     <link rel="stylesheet" type="text/css" href="css/module.css">
@@ -276,7 +276,17 @@
                         <tbody>
                             <tr>
                                 <td><input type="checkbox" id="check" name="check" checked /></td>
-                                <td>2023.08.11</td>
+                                <td class="hc_prd_list_information">
+                                    <span><a href=""><img src="img/sub/thumbnail/figure/02.jpg" alt="" /></a></span>
+                                    <span>
+                                        <div class="hc_prd_name">[뉴컬러추가][T:RENDY] SS카라단자수NT</div>
+                                        <ul class="hc_prd_element">
+                                            <li class="hc_normal_price">39,000</li>
+                                            <li class="hc_discount_price">11,700</li>
+                                            <li class="hc_discount_rate">30%</li>
+                                        </ul>
+                                    </span>
+                                </td>
                                 <td><input type="text" id="quantity" name="quantity" required minlength="1" maxlength="1" size="1" placeholder="1" /></td>
                                 <td>있음</td>
                                 <td>
@@ -286,6 +296,9 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="hc_btn_wrap">
+                        <input type="submit" value="선택 삭제" class="hc_btn_small_fill" />
+                    </div>
                     <!-- 페이징 -->
                     <div class="hc_pageing">
                         <span class="hc_all_prev">

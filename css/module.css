@@ -239,6 +239,7 @@ input[name=hc_page_about] {
 .hc_btn_small_fill,
 .hc_btn_large_fill {
   height: 48px;
+  line-height: 48px;
   color: var(--hc_bright_color);
   font-size: var(--hc_bd_medium);
   background: var(--hc_dark_color);
@@ -261,6 +262,7 @@ input[name=hc_page_about] {
   width: 142px;
 }
 
+.hc_btn_small,
 .hc_btn_large {
   color: var(--hc_dark_color);
   background: var(--hc_bright_color);
@@ -268,6 +270,7 @@ input[name=hc_page_about] {
 }
 
 .hc_btn_mini {
+  margin: 2px 0;
   display: inline-block;
   width: 80px;
   height: 26px;
@@ -322,7 +325,26 @@ input[name=hc_page_about] {
 .hc_table_typeb td {
   line-height: 58px;
   text-align: center;
+  vertical-align: middle;
   border-bottom: 1px solid var(--hc_color_level2);
+}
+
+.hc_table_type {
+  border-top: 3px solid var(--hc_dark_color);
+  border-bottom: 1px solid var(--hc_color_level2);
+}
+.hc_table_type th {
+  line-height: 58px;
+  border-top: 1px solid var(--hc_dark_color);
+}
+.hc_table_type td {
+  line-height: 58px;
+  border-top: 1px solid var(--hc_dark_color);
+}
+
+.hc_table_detail {
+  padding: 50px;
+  text-align: center;
 }
 
 .hc_thumbnail_list {
@@ -356,6 +378,14 @@ input[name=hc_page_about] {
 
 .hc_right {
   text-align: right;
+}
+
+.hc_mark {
+  padding: 4px 10px;
+  color: var(--hc_bright_color);
+  font-size: var(--hc_bd_small);
+  font-weight: var(--hc_thin);
+  background: #000;
 }
 
 /*# sourceMappingURL=module.css.map */

@@ -914,7 +914,7 @@ footer {
 }
 
 .hc_pageing {
-  margin: 100px auto 340px;
+  margin: 100px auto 68px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1590,20 +1590,20 @@ label.hc_single_line,
   padding: 10px;
 }
 
-.hc_page_member_modify .hc_resultfound {
+.hc_resultfound {
   margin: 48px 0;
 }
-.hc_page_member_modify .hc_resultfound li {
+.hc_resultfound li {
   margin-bottom: 10px;
 }
-.hc_page_member_modify .hc_resultfound span {
+.hc_resultfound span {
   display: inline-block;
 }
-.hc_page_member_modify .hc_resultfound span:first-child {
+.hc_resultfound span:first-child {
   width: var(--hc_title_area);
   line-height: 48px;
 }
-.hc_page_member_modify .hc_resultfound span:last-child {
+.hc_resultfound span:last-child {
   width: var(--hc_content_area);
 }
 
@@ -1807,6 +1807,49 @@ label.hc_single_line,
   line-height: unset;
   padding: 10px 0;
   vertical-align: middle;
+}
+.hc_wrap_mypage .hc_page_wishlist .hc_mypage_locker .hc_prd_list_information {
+  text-align: left;
+}
+.hc_wrap_mypage .hc_page_wishlist .hc_mypage_locker .hc_prd_list_information span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.hc_wrap_mypage .hc_page_wishlist .hc_mypage_locker .hc_prd_list_information span:nth-child(2) {
+  margin-left: 10px;
+}
+.hc_wrap_mypage .hc_page_wishlist .hc_mypage_locker .hc_prd_list_information img {
+  width: 110px;
+}
+.hc_wrap_mypage .hc_page_address .hc_table_typeb td {
+  line-height: normal;
+}
+.hc_wrap_mypage .hc_mypage_addmanagement td:nth-child(3) {
+  line-height: unset;
+  text-align: left;
+  vertical-align: middle;
+}
+.hc_wrap_mypage .hc_mypage_lastaddress td:nth-child(2) {
+  line-height: unset;
+  text-align: left;
+  vertical-align: middle;
+}
+.hc_wrap_mypage .hc_page_email th {
+  height: 48px;
+  font-weight: var(--hc_regular);
+  text-align: left;
+  vertical-align: middle;
+}
+.hc_wrap_mypage .hc_page_email .filebox .upload-name {
+  min-width: 270px;
+}
+.hc_wrap_mypage .hc_page_email .filebox label {
+  font-size: var(--hc_tit_headline);
+  font-weight: var(--hc_thin);
+  line-height: 44px;
+}
+.hc_wrap_mypage .hc_page_privatelist td:nth-child(2) {
+  text-align: left;
 }
 
 /*# sourceMappingURL=common.css.map */

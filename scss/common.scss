@@ -768,7 +768,7 @@ footer {
     margin-right:0;
 }
 .hc_pageing {
-    margin: 100px auto 340px;
+    margin: 100px auto 68px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1500,24 +1500,23 @@ label.hc_single_line,
     }
 }
 // 회원정보 변경
-.hc_page_member_modify {
-    .hc_resultfound {
-        margin:48px 0;
-        li {
-            margin-bottom: 10px;
+.hc_resultfound {
+    margin:48px 0;
+    li {
+        margin-bottom: 10px;
+    }
+    span {
+        display: inline-block;
+        &:first-child {
+            width: var(--hc_title_area);
+            line-height: 48px;
         }
-        span {
-            display: inline-block;
-            &:first-child {
-                width: var(--hc_title_area);
-                line-height: 48px;
-            }
-            &:last-child {
-                width: var(--hc_content_area);
-            }
+        &:last-child {
+            width: var(--hc_content_area);
         }
     }
 }
+
 // 개인 회원 가입&수정
 .hc_member_information {
     table:first-child {
@@ -1737,6 +1736,61 @@ label.hc_single_line,
             padding: 10px 0;
             vertical-align: middle;
         }
+        .hc_mypage_locker {
+            .hc_prd_list_information {
+                text-align: left;
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                &:nth-child(2) {
+                    margin-left: 10px;
+                }
+                }
+                img {
+                    width: 110px;
+                }
+            }
+        }
+    }
+    // 주소록
+    .hc_page_address {
+        .hc_table_typeb td {
+            line-height: normal;
+        }
+    }
+    .hc_mypage_addmanagement td:nth-child(3) {
+        line-height: unset;
+        text-align: left;
+        vertical-align: middle;
+    }
+    // 최근 배송지
+    .hc_mypage_lastaddress {
+        td:nth-child(2) {
+            line-height: unset;
+            text-align: left;
+            vertical-align: middle;
+        }
+    }
+    // E-MAIL 문의
+    .hc_page_email {
+        th {
+            height: 48px;
+            font-weight: var(--hc_regular);
+            text-align: left;
+            vertical-align: middle;
+        }
+        .filebox .upload-name {
+            min-width: 270px;
+        }
+        .filebox label {
+            font-size: var(--hc_tit_headline);
+            font-weight: var(--hc_thin);
+            line-height: 44px;
+        }
+    }
+    // 1:1 게시글+공지 목록
+    .hc_page_privatelist td:nth-child(2) {
+        text-align: left;
     }
 }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>적립금 내역</title>
+    <title>재입고 신청 내역</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/designsystem.css">
     <link rel="stylesheet" type="text/css" href="css/module.css">
@@ -173,7 +173,7 @@
 
     <!-- 컨텐츠 영역 -->
     <div class="hc_common_wrap hc_wrap_mypage">
-        <main class="hc_page_mileage">
+        <main class="hc_page_address">
             <nav class="hc_mypage_nav">
                 <h3>WELCOME</h3> 
                 <h4>greate56 님</h4>
@@ -224,14 +224,7 @@
             </nav>
             <div class="hc_page_contents">
                 <!-- 페이지 타이틀 -->
-                <h2 class="hc_tit_page">MILIEAGE</h2>
-                <div class="hc_clarification">
-                    · 주문으로 발생한 RESERVE은 배송 완료 후 14일부터 실제 사용 가능한 RESERVE으로 전환됩니다.<br />
-                    · 배송 완료 시점으로부터 14일 동안은 미사용 RESERVE으로 분류됩니다.<br />
-                    · 미사용 RESERVE은 반품, 구매 취소 등을 대비한 임시 RESERVE으로 사용 가능 RESERVE으로 전환되기까지 상품 구매에 사용하실 수 없습니다.<br />
-                    · 사용 가능 RESERVE(총 RESERVE - 사용된 RESERVE - 미가 용 RESERVE)은 상품 구매 시 바로 사용 가능합니다.
-                </div>
-
+                <h2 class="hc_tit_page">RESTOCK</h2>
                 <div class="hc_mypage_mine hc_blind">
                     <table>
                         <caption>표제목</caption>
@@ -260,66 +253,32 @@
                     </table>
                 </div>
 
-                <!-- 마일리지 현황 -->
-                <div class="hc_mileagestatus hc_interval2">
-                    <h3 class="hc_tit_headline">마일리지 현황</h3>
+                <!-- 재입고 신청 내역-->
+                <div class="hc_mypage_addmanagement">
+                    <h3 class="hc_tit_headline">재입고 신청 내역</h3>
+                    <div class="hc_clarification">
+                        · 재입고 알림 신청은 최대 30개까지 가능합니다.<br />
+                        · 상품 구성, 가격 등은 신청 시점과 차이가 날 수 있으며, 재입고 알림을 받았더라도 구매 시점에 따라 품절이 발생할 수 있습니다.
+                    </div>
                     <table class="hc_table_typeb hc_interval1">
-                        <caption>표제목</caption>
-
+                        <caption>재입고 신청 내역   </caption>
                         <colgroup>
-                            <col width="50%">
-                            <col width="50%">
-                        </colgroup>
-
-                        <thead>
-                            <tr>
-                                <th scope="col">총 보유 마일리지</th>
-                                <th scope="col">출석체크 누적 마일리지</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>1,270원</td>
-                                <td>0원</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- 마일리지 내역 -->
-                <div class="hc_mileagehistory">
-                    <h3 class="hc_tit_headline">마일리지 내역</h3>
-                    <table class="hc_table_typeb hc_interval1">
-                        <caption>표제목</caption>
-
-                        <colgroup>
-                            <col width="15%">
-                            <col width="15%">
+                            <col width="10%">
                             <col width="auto">
+                            <col width="15%">
+                            <col width="10%">
                         </colgroup>
-
-                        <thead>
-                            <tr>
-                                <th scope="col">날짜</th>
-                                <th scope="col">적용내용</th>
-                                <th scope="col">마일리지</th>
-                            </tr>
-                        </thead>
-
                         <tbody>
                             <tr>
-                                <td>2023-08-08</td>
-                                <td>270원</td>
-                                <td class="hc_left">구매 적립금 지급 도와드렸습니다:)</td>
-                            </tr>
-                            <tr>
-                                <td>2023-07-26</td>
-                                <td>1,000원</td>
-                                <td>가입 축하금입니다.</td>
+                                <td colspan="4"><div class="hc_no_date">재입고 신청 내역이 없습니다.</div></td>
                             </tr>
                         </tbody>
                     </table>
+                    
+                    <div class="hc_btn_wrap">
+                        <input type="submit" value="선택 삭제" class="hc_btn_small_fill" />
+                    </div>
+
                     <!-- 페이징 -->
                     <div class="hc_pageing">
                         <span class="hc_all_prev">

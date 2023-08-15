@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>적립금 내역</title>
+    <title>1:1 게시글 보기</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/designsystem.css">
     <link rel="stylesheet" type="text/css" href="css/module.css">
@@ -173,7 +173,7 @@
 
     <!-- 컨텐츠 영역 -->
     <div class="hc_common_wrap hc_wrap_mypage">
-        <main class="hc_page_mileage">
+        <main class="hc_page_privateview">
             <nav class="hc_mypage_nav">
                 <h3>WELCOME</h3> 
                 <h4>greate56 님</h4>
@@ -224,14 +224,7 @@
             </nav>
             <div class="hc_page_contents">
                 <!-- 페이지 타이틀 -->
-                <h2 class="hc_tit_page">MILIEAGE</h2>
-                <div class="hc_clarification">
-                    · 주문으로 발생한 RESERVE은 배송 완료 후 14일부터 실제 사용 가능한 RESERVE으로 전환됩니다.<br />
-                    · 배송 완료 시점으로부터 14일 동안은 미사용 RESERVE으로 분류됩니다.<br />
-                    · 미사용 RESERVE은 반품, 구매 취소 등을 대비한 임시 RESERVE으로 사용 가능 RESERVE으로 전환되기까지 상품 구매에 사용하실 수 없습니다.<br />
-                    · 사용 가능 RESERVE(총 RESERVE - 사용된 RESERVE - 미가 용 RESERVE)은 상품 구매 시 바로 사용 가능합니다.
-                </div>
-
+                <h2 class="hc_tit_page">PRIVATE</h2>
                 <div class="hc_mypage_mine hc_blind">
                     <table>
                         <caption>표제목</caption>
@@ -260,110 +253,28 @@
                     </table>
                 </div>
 
-                <!-- 마일리지 현황 -->
-                <div class="hc_mileagestatus hc_interval2">
-                    <h3 class="hc_tit_headline">마일리지 현황</h3>
-                    <table class="hc_table_typeb hc_interval1">
-                        <caption>표제목</caption>
-
+                <!-- 1:1 게시판 보기-->
+                <div>
+                    <table class="hc_table_type hc_interval1">
+                        <caption>주소록 관리</caption>
                         <colgroup>
-                            <col width="50%">
-                            <col width="50%">
-                        </colgroup>
-
-                        <thead>
-                            <tr>
-                                <th scope="col">총 보유 마일리지</th>
-                                <th scope="col">출석체크 누적 마일리지</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>1,270원</td>
-                                <td>0원</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- 마일리지 내역 -->
-                <div class="hc_mileagehistory">
-                    <h3 class="hc_tit_headline">마일리지 내역</h3>
-                    <table class="hc_table_typeb hc_interval1">
-                        <caption>표제목</caption>
-
-                        <colgroup>
-                            <col width="15%">
-                            <col width="15%">
+                            <col width="10%">
                             <col width="auto">
                         </colgroup>
-
-                        <thead>
-                            <tr>
-                                <th scope="col">날짜</th>
-                                <th scope="col">적용내용</th>
-                                <th scope="col">마일리지</th>
-                            </tr>
-                        </thead>
-
                         <tbody>
                             <tr>
-                                <td>2023-08-08</td>
-                                <td>270원</td>
-                                <td class="hc_left">구매 적립금 지급 도와드렸습니다:)</td>
+                                <th scope="col">제목</th>
+                                <td>피그먼트 VVIP 기프트 증정 안내</td>
                             </tr>
                             <tr>
-                                <td>2023-07-26</td>
-                                <td>1,000원</td>
-                                <td>가입 축하금입니다.</td>
+                                <th scope="col">내용</th>
+                                <td class="hc_table_detail"><img src="img/board/notice.jpg" alt="" /></td>
                             </tr>
                         </tbody>
                     </table>
-                    <!-- 페이징 -->
-                    <div class="hc_pageing">
-                        <span class="hc_all_prev">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <g clip-path="url(#clip0_934_3487)">
-                                <path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_934_3487">
-                                <rect width="20" height="20" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
-                        <div class="hc_sub_pages4">
-                            <input id="hc_page1_show4" type="radio" name="tab_item" checked>
-                            <label class="hc_paging_item_show4" for="hc_page1_show4">1</label>
-                          
-                            <input id="hc_page2_show4" type="radio" name="tab_item">
-                            <label class="hc_paging_item_show4" for="hc_page2_show4">2</label>
-                          
-                            <input id="hc_page3_show4" type="radio" name="tab_item">
-                            <label class="hc_paging_item_show4" for="hc_page3_show4">3</label>
-                          
-                            <input id="hc_page4_show4" type="radio" name="tab_item">
-                            <label class="hc_paging_item_show4" for="hc_page4_show4">4</label>
-                          
-                            <div class="tab_content" id="hc_page1_content_show4"></div>
-                            <div class="tab_content" id="hc_page2_content_show4"></div>
-                            <div class="tab_content" id="hc_page3_content_show4"></div>
-                            <div class="tab_content" id="hc_page4_content_show4"></div>
-                        </div>
-                        <span class="hc_all_next">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <g clip-path="url(#clip0_934_3487)">
-                                <path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_934_3487">
-                                <rect width="20" height="20" fill="white"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
+
+                    <div class="hc_btn_wrap">
+                        <input type="submit" value="목록" class="hc_btn_small_fill" />
                     </div>
                 </div>
             </div>
