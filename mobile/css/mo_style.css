@@ -1,0 +1,46 @@
+.hc_notice_top {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--hc_bright_color);
+  background: var(--hc_dark_color);
+}
+
+header {
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: aqua;
+}
+header #hc_hamburger {
+  position: absolute;
+  left: 0;
+}
+header h1 {
+  font-size: var(--hc_bd_xxlarge);
+}
+header #hc_head_search {
+  position: absolute;
+  right: 80px;
+}
+header #hc_head_cart {
+  position: absolute;
+  right: 0;
+}
+
+.hc_main_section {
+  position: relative;
+}
+.hc_main_section .hc_random_imgs {
+  position: relative;
+}
+.hc_main_section .hc_random_imgs li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=mo_style.css.map */

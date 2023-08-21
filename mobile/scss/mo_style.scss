@@ -1,0 +1,50 @@
+// 상단 텍스트 공지
+.hc_notice_top {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: var(--hc_bright_color);
+    background: var(--hc_dark_color);
+}
+// 상단
+header {
+    position: relative;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aqua;
+    #hc_hamburger {
+        position: absolute;
+        left: 0;
+    }
+    h1 {
+        font-size: var(--hc_bd_xxlarge);
+    }
+    #hc_head_search {
+        position: absolute;
+        right: 80px;
+    }
+    #hc_head_cart {
+        position: absolute;
+        right: 0;
+    }
+}
+// 메인
+.hc_main_section {
+    position: relative;
+    margin: 0 auto;
+    // 랜덤이미지
+    .hc_main_section1 {
+        height: 60vh;
+    }
+    .hc_random_imgs {
+        position: relative;
+        li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}
