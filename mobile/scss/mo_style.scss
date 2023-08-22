@@ -1,3 +1,21 @@
+// 뱃지
+.hc_badge {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    z-index: 999;
+    width: 32px;
+    .hc_badge_up {
+        position: relative;
+        left: 3px;
+        transform: rotate(-90deg);
+    }
+    .hc_badge_down {
+        position: relative;
+        left: -3px;
+        transform: rotate(90deg);
+    }
+}
 // 상단 텍스트 공지
 .hc_notice_top {
     height: 40px;
@@ -13,7 +31,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: aqua;
+    color: var(--hc_dark_color);
     #hc_hamburger {
         position: absolute;
         left: 0;
@@ -25,6 +43,10 @@ header {
         position: absolute;
         right: 80px;
     }
+    #hc_head_mypage {
+        position: absolute;
+        right: 40px;
+    }
     #hc_head_cart {
         position: absolute;
         right: 0;
@@ -34,10 +56,33 @@ header {
 .hc_main_section {
     position: relative;
     margin: 0 auto;
-    // 랜덤이미지
-    .hc_main_section1 {
-        height: 60vh;
+    width: 100%;
+    a {
+        display: block;
     }
+    .hc_main_section10 img,
+    .hc_main_section9 img,
+    .hc_main_section8 img,
+    .hc_main_section7 img,
+    .hc_main_section6 img,
+    .hc_main_section5 img,
+    .hc_main_section4 img,
+    .hc_main_section3 img,
+    .hc_main_section2 img,
+    .hc_random_imgs li img {
+        width: 100%;
+    }
+    .hc_main_section9,
+    .hc_main_section8,
+    .hc_main_section7,
+    .hc_main_section6,
+    .hc_main_section5,
+    .hc_main_section4,
+    .hc_main_section3,
+    .hc_main_section2 {
+        margin-bottom: 48px;
+    }
+    // 랜덤이미지
     .hc_random_imgs {
         position: relative;
         li {
@@ -46,5 +91,68 @@ header {
             left: 0;
             width: 100%;
         }
+    }
+    // 타임세일
+    .hc_main_section2 {
+        position: relative;
+        .hc_main_time_wrap {
+            position: absolute;
+            bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .hc_bd_xxlarge {
+            color: var(--hc_bright_color);
+        }
+        .hc_main_timepasses {
+            color: var(--hc_bright_color);
+            font-size: var(--hc_tit_page);
+            font-weight: var(--hc_bold);
+        }
+        .hc_title_dashed {
+            border-bottom: 1px dashed var(--hc_dark_color);
+        }
+    }
+    // 하단
+    .hc_main_section11 {
+        background: var(--hc_color_level3);
+    }
+    .hc_main_section11 footer {
+        padding: 50px 25px 0;
+        line-height: 2.5;
+    }
+    .hc_footer_help {
+        li {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        .hc_md_arrow span {
+            background-color: var(--hc_dark_color);
+        }
+    }
+    .hc_footer_guied {
+        // position: fixed;
+        // bottom: 0;
+        width: 100%;
+        background: var(--hc_color_level3);
+        summary {
+            padding: 0 25px;
+            height: 48px;
+            line-height: 48px;
+            color: var(--hc_bright_color);
+            background: var(--hc_dark_color);
+        }
+        ul {
+            margin: 28px 25px 20px;
+        }
+    }
+    .hc_copyright {
+        padding: 10px 25px;
+        border-top: 1px solid var(--hc_dark_color);
+        
     }
 }

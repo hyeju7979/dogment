@@ -1,7 +1,7 @@
 /* 디자인 시스템 규칙 !! */
 :root {
     /* 타이틀 규칙 */
-    --hc_tit: 60px;          /* 로고용        */
+    --hc_logo: 60px;          /* 로고용        */
     --hc_tit_page: 60px;     /* 페이지 타이틀 */  
     --hc_tit_content: 60px;  /* 제목          */
     --hc_tit_headline: 36px; /* 머리말        */
@@ -9,12 +9,12 @@
 
 
     /* 본문 텍스트 규칙 */
-    --hc_bd_xsmall: 12px; 
-    --hc_bd_small: 14px; 
-    --hc_bd_medium: 16px; 
-    --hc_bd_large: 18px; 
-    --hc_bd_xlarge: 20px; 
-    --hc_bd_xxlarge: 22px; 
+    --hc_bd_xsmall: 10px; 
+    --hc_bd_small: 12px; 
+    --hc_bd_medium: 14px; 
+    --hc_bd_large: 16px; 
+    --hc_bd_xlarge: 18px; 
+    --hc_bd_xxlarge: 20px; 
 
 
     /* 컬러 규칙 */

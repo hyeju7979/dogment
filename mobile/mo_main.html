@@ -4,26 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAIN</title>
-    <link rel="stylesheet" type="text/css" href="css/mo_common.css">
     <link rel="stylesheet" type="text/css" href="css/mo_designsystem.css">
+    <link rel="stylesheet" type="text/css" href="css/mo_common.css">
     <link rel="stylesheet" type="text/css" href="css/mo_style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="css/mo_module.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="js/mo_common.js" ></script>
 </head>
-<body id="hc_wrap_top">        
+<body id="hc_wrap_top">    
+    <!-- 뱃지 -->
+    <div class="hc_badge">
+        <div>
+            <a href="">
+                <img src="../img/icon/icon_kakao.svg" alt="">
+            </a>
+        </div>
+        <div class="hc_badge_up">
+            <a href="#hc_wrap_top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hc_badge_down">
+            <a href="#hc_wrap_footer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+                </svg>
+            </a>
+        </div>
+    </div>    
     <!-- 상단 텍스트 배너 -->
     <div class="hc_notice_top">MEMBER'S DAY</div>
     <!-- 상단 영역 -->
     <header>
-        <div id="hc_hamburger">메뉴</div>
+        <div id="hc_hamburger">
+            <svg width="26" height="26" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_hamburger">
+                <path d="M4.99998 11.6279H35M4.99998 20.6279H35M4.99998 29.6279H35" stroke="black" stroke-width="1" stroke-miterlimit="10"/>
+            </svg>
+        </div>
         <h1>PIGMENT</h1>
-        <div id="hc_head_search">검색</div>
-        <divv id="hc_head_cart">장바구니</div>
+        <div id="hc_head_search">
+            <svg width="26" height="26" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_search">
+                <path d="M15.6597 26.9483C21.5472 26.9483 26.32 22.1756 26.32 16.2881C26.32 10.4007 21.5472 5.62791 15.6597 5.62791C9.77226 5.62791 4.99951 10.4007 4.99951 16.2881C4.99951 22.1756 9.77226 26.9483 15.6597 26.9483Z" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M34.9994 35.4765L23.1218 23.7503" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div id="hc_head_mypage">
+            <svg width="24" height="24" fill="none">
+                <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".7" d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM21 22a9 9 0 1 0-18 0"/>
+            </svg>
+        </div>
+        <div id="hc_head_cart">
+            <svg width="26" height="26" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_cart">
+                <path d="M27 18.9612V12.2946C27 10.5265 26.2976 8.83076 25.0474 7.58052C23.7971 6.33028 22.1014 5.6279 20.3333 5.6279C18.5652 5.6279 16.8695 6.33028 15.6193 7.58052C14.369 8.83076 13.6667 10.5265 13.6667 12.2946V18.9612M8.66667 15.6279H32L33.6667 35.6279H7L8.66667 15.6279Z" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
     </header>
 
     <!-- 중앙 영역 -->
@@ -67,48 +106,138 @@
         <!-- 타임세일 -->
         <section class="hc_main_section">
             <div class="hc_main_section2">
-                <div class="hc_main_timepasses">12:55:30</div>
-                <div><img src="../img/mobile/mo_main_tomesale.jpg" alt="" /></div>
-                <h3>타이틀</h3>
+                <a href="">
+                    <ul class="hc_main_time_wrap">
+                        <li class="hc_bd_xxlarge">BUY IT NOW?</li>
+                        <li class="hc_main_timepasses">12:55:30</li>
+                    </ul>
+                    <div><img src="../img/mobile/mo_main_tomesale.jpg" alt="time sale" /></div>
+                    <h3 class="hc_title_dashed">Sheer cotton blouse</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- 신상품 배너 -->
+        <section class="hc_main_section">
+            <div class="hc_main_section3">
+                <div><img src="../img/mobile/mo_main_new.jpg" alt="new" /></div>
+                <h3 class="hc_title_solid">New Arrival 30% Off.</h3>
+                <p>매일 오전 10시에 업데이트 되는 신상품 30% 할인</p>
+            </div>
+        </section>
+
+        <!-- 베스트 배너 -->
+        <section class="hc_main_section">
+            <div class="hc_main_section4">
+                <div><img src="../img/mobile/mo_main_best.jpg" alt="best" /></div>
+            </div>
+        </section>
+
+        <!-- PFS:GALLERY -->
+        <section class="hc_main_section">
+            <div class="hc_main_section5">
+                <div><img src="../img/mobile/mo_main_pfs.jpg" alt="PFS:GALLERY" /></div>
             </div>
         </section>
 
         <section class="hc_main_section">
-            <div class="hc_main_section3"></div>
+            <div class="hc_main_section6">
+                <div><img src="../img/mobile/mo_main_store.jpg" alt="STORE" /></div>
+                <h3 class="hc_title_solid">Pigment Off Line Store.</h3>
+                <p>
+                    전국 50여 개 이상의 피그먼트 오프라인<br />
+                    스토어 중 가장 가까운 매장을 알려드립니다.
+                </p>
+            </div>
         </section>
 
         <section class="hc_main_section">
-            <div class="hc_main_section4"></div>
+            <div class="hc_main_section7">
+                <div><img src="../img/mobile/mo_main_section7.jpg" alt="" /></div>
+            </div>
         </section>
 
         <section class="hc_main_section">
-            <div class="hc_main_section5"></div>
+            <div class="hc_main_section8">
+                <div><img src="../img/mobile/hc_main_section8.jpg" alt="" /></div>
+            </div>
         </section>
 
         <section class="hc_main_section">
-            <div class="hc_main_section6"></div>
+            <div class="hc_main_section9">
+                <div><img src="../img/mobile/mo_main_section9.jpg" alt="STORE" /></div>
+                <h3 class="hc_title_solid">Pigment Off Line Store.</h3>
+                <p>
+                    전국 50여 개 이상의 피그먼트 오프라인<br />
+                    스토어 중 가장 가까운 매장을 알려드립니다.
+                </p>
+            </div>
         </section>
 
         <section class="hc_main_section">
-            <div class="hc_main_section7"></div>
-        </section>
-
-        <section class="hc_main_section">
-            <div class="hc_main_section8"></div>
-        </section>
-
-        <section class="hc_main_section">
-            <div class="hc_main_section9"></div>
-        </section>
-
-        <section class="hc_main_section">
-            <div class="hc_main_section10"></div>
+            <div class="hc_main_section10">
+                <div><img src="../img/mobile/mo_main_section10.jpg" alt="" /></div>
+            </div>
         </section>
 
         <!-- 하단 영역 -->
-        <section class="hc_main_section">
+        <section id="hc_wrap_footer" class="hc_main_section">
             <div class="hc_main_section11">
-                <footer></footer>
+                <footer>
+                    <div class="hc_interval1">
+                        <strong>DO YOU NEED HELP?</strong>
+                        <p>1668-3189</p>
+                    </div>
+
+                    <div class="hc_interval2">
+                        AM 10:00 - PM 5:00 MON-FRI<br />
+                        LUNCH TIME PM 13:00 - PM 14:00
+                    </div>
+                    <div class="hc_interval1">
+                        하나은행 359-910028-07304<br />
+                        주식회사 씨피에프엘씨리테일
+                    </div>
+
+                    <div class="hc_interval2 hc_footer_help">
+                        <details>
+                            <summary class="hc_md_more_description"><strong>HELP?</strong>
+                                <div>
+                                    <span class="hc_md_arrow"><span></span><span></span></span>
+                                </div>
+                            </summary>
+                            <ul>
+                                <li><a href="">ABOUT US</a></li>
+                                <li><a href="">AGREEMENT</a></li>
+                                <li><a href="">PRIVACY POLICY</a></li>
+                                <li><a href="">GUIDE</a></li>
+                            </ul>
+                        </details>
+                    </div>
+                </footer>
+                <div class="hc_footer_guied">
+                    <details>
+                        <summary class="hc_md_more_description"><strong>WE ARE PIGMENT</strong>
+                            <div>
+                                <span class="hc_md_arrow"><span></span><span></span></span>
+                            </div>
+                        </summary>
+                        <ul>
+                            <li>COMPANY : CPFLC RETAIL</li>
+                            <li>OWNER : kim nam-il</li>
+                            <li>ADDRESS : 17017 경기도 용인시 처인구 중부대로 1087(삼가동) 케이컴퍼니</li>
+                            <li>BUSUNESS LICENSE : 209-81-59688  [사업자정보확인]</li>
+                            <li>PRIVACY MANAGER : 고객센터(pigment.help@cpflc.co.kr)</li>
+                        </ul>
+                        <ul>
+                            <li>COMPANY : Pfs:gallery</li>
+                            <li>OWNER : Lee yu-na</li>
+                            <li>ADDRESS : 경기도 화성시 동탄기흥로614, 비221-1호(영천동)</li>
+                            <li>BUSUNESS LICENSE : 803-87-00598  [사업자정보확인] </li>
+                            <li>MALL ORDER LICENSE : 2020-화성동탄-0742</li>
+                        </ul>
+                        <div class="hc_copyright">Copyright. pigment all rights reserved. Designed By URBANSKIN</div>
+                    </details>
+                </div>
             </div>
         </section>
     </main>
