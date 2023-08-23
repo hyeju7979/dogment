@@ -357,48 +357,97 @@ header {
 }
 
 // SUB
-.hc_prdlist_types {
-    .hc_prdlist_tabs {
-        margin-top: 50px;
-        padding-bottom: 40px;
-        background-color: #ffffff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        width: 700px;
-        margin: 0 auto;
+.hc_sub_wrap {
+    .hc_prdlist_types {
+        margin-top: 20px;
+        .prdlist_item {
+            // display: block;
+            margin: 10px 10px 0 0;
+            float: right;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            background-color: var(--hc_bright_color);
+            border:1px solid var(--hc_color_level2);
+            border-radius: 25px;
+            transition: all 0.2s ease;
+        }
+        input[name="prdlist_item"] {
+            display: none;
+        }
+        .prdlist_content {
+            padding: 20px 0 0;
+            text-align: center;
+            display: none;
+            clear: both;
+            overflow: hidden;
+        }
+        #prdlist1:checked ~ #prdlist1_content,
+        #prdlist2:checked ~ #prdlist2_content {
+            display: block;
+        }
+        .hc_prdlist_tabs h2 {
+            margin: 0;
+            padding-left: 10px;
+            display: inline-block;
+        }
+        .hc_prdlist_tabs input:checked + .prdlist_item {
+            color: var(--hc_bright_color);
+            background-color: var(--hc_dark_color);
+        }
     }
-    .prdlist_item {
-        width: calc(100%/3);
-        height: 50px;
-        border-bottom: 3px solid #333333;
-        background-color: #f8f8f8;
-        line-height: 50px;
-        font-size: 16px;
-        text-align: center;
-        color: #333333;
+    .hc_sort {
+        display: inline-block;
+        select {
+            border:0;
+        }
+    }
+    .hc_prdlist_view {
+        margin: 10px 10px 0 0;
+        float: right;
+    }
+    .hc_prd_element {
+        padding: 14px 10px 40px;
+        width: 100%;
+        text-align: right;
+        box-sizing: border-box;
+        li {
+            display: inline-block;
+            margin-left: 14px;
+            font-size: var(--hc_bd_medium);
+        }
+        .hc_normal_price:before {
+            content: "/";
+            display: inline-block;
+            margin-right: 14px;
+        }
+    }
+    #prdlist2_content {
+        > ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            gap:4px;
+        }
+        .hc_prd_element {
+            li {
+                margin-left: 6px;
+            }
+            .hc_normal_price:before {
+                margin-right: 6px;
+            }
+        }
+    }
+    // 투데이 특가
+    .hc_page_taday {
+        .hc_thumbnail img {
+            border-radius: 50em 50em 0 0;
+        }
+    }
+    // PFS:GALLERY
+    .hc_page_pfs .hc_prd_element LI {
         display: block;
-        float: left;
-        text-align: center;
-        font-weight: bold;
-        transition: all 0.2s ease;
-    }
-    .prdlist_item:hover {
-        opacity: 0.75;
-    }
-    input[name="prdlist_item"] {
-        display: none;
-    }
-    .prdlist_content {
-        display: none;
-        padding: 40px 40px 0;
-        clear: both;
-        overflow: hidden;
-    }
-    #prdlist1:checked ~ #prdlist1_content,
-    #prdlist2:checked ~ #prdlist2_content {
-        display: block;
-    }
-    .hc_prdlist_tabs input:checked + .prdlist_item {
-        background-color: #333333;
-        color: #fff;
     }
 }

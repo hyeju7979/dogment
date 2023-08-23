@@ -23,6 +23,14 @@ h6 {
 .hc_color_point {
     color:var(--hc_color_point);
 }
+@mixin hc_page_title {
+    margin-top: 20px;
+    text-align: center;
+}
+h2.hc_page_title {
+    @include hc_page_title;
+}
+
 // 타이틀
 .hc_title_solid {
     display: inline-block;
@@ -40,6 +48,7 @@ h6 {
     font-weight: var(--hc_regular);
     border-top: 1px dashed var(--hc_dark_color);
 }
+
 // 간격
 .hc_interval1 {
     margin-bottom: 48px;
@@ -47,6 +56,7 @@ h6 {
 .hc_interval2 {
     margin-bottom: 28px;
 }
+
 // 인풋박스/ 셀렉트박스
 .hc_inputbox_middle {
     width: 274px;
@@ -63,6 +73,35 @@ h6 {
     outline: 0;
     cursor: pointer;
 }
+
+// 썸네일
+.hc_thumbnail img {
+    width:100%;
+}
+.hc_prd_element {
+    display: inline-block;
+}
+.hc_prd_name {
+    font-size: var(--hc_bd_large);
+    font-weight: var(--hc_medium);
+    vertical-align: baseline;
+}
+.hc_normal_price {
+    color: var(--hc_color_level2);
+    font-size: var(--hc_bd_large);
+    font-weight: var(--hc_medium);
+    text-decoration: line-through;
+}
+.hc_discount_price {
+    font-size: var(--hc_bd_large);
+    font-weight: var(--hc_medium);
+}
+
+// 기타
+.hc_blind {
+    display: none !important;
+}
+
 // 상품설명 더보기
 .hc_md_more_description {
     display: flex;

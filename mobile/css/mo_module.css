@@ -31,6 +31,11 @@ h6 {
   color: var(--hc_color_point);
 }
 
+h2.hc_page_title {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .hc_title_solid {
   display: inline-block;
   margin-top: 38px;
@@ -72,6 +77,36 @@ h6 {
   border: 0;
   outline: 0;
   cursor: pointer;
+}
+
+.hc_thumbnail img {
+  width: 100%;
+}
+
+.hc_prd_element {
+  display: inline-block;
+}
+
+.hc_prd_name {
+  font-size: var(--hc_bd_large);
+  font-weight: var(--hc_medium);
+  vertical-align: baseline;
+}
+
+.hc_normal_price {
+  color: var(--hc_color_level2);
+  font-size: var(--hc_bd_large);
+  font-weight: var(--hc_medium);
+  text-decoration: line-through;
+}
+
+.hc_discount_price {
+  font-size: var(--hc_bd_large);
+  font-weight: var(--hc_medium);
+}
+
+.hc_blind {
+  display: none !important;
 }
 
 .hc_md_more_description {
