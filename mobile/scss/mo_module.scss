@@ -20,6 +20,9 @@ h6 {
 .hc_bd_xxlarge {
     font-size: var(--hc_bd_xxlarge);
 }
+.hc_color_point {
+    color:var(--hc_color_point);
+}
 // 타이틀
 .hc_title_solid {
     display: inline-block;
@@ -44,7 +47,22 @@ h6 {
 .hc_interval2 {
     margin-bottom: 28px;
 }
-
+// 인풋박스/ 셀렉트박스
+.hc_inputbox_middle {
+    width: 274px;
+    height: 58px;
+}
+.hc_inputbox_middle_btn {
+    margin-left: 4px;
+    width: 118px;
+    height: 58px;
+    color: var(--hc_bright_color);
+    font-size: var(--hc_bd_large);
+    background: var(--hc_dark_color);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
 // 상품설명 더보기
 .hc_md_more_description {
     display: flex;
@@ -214,4 +232,38 @@ animation-delay: 2.3s;
     100% {
         opacity: 1;
     }
+}
+// 탭스타일
+// 메인 > 햄버거 메뉴
+.hc_hamburger_tabs {
+}
+.hamburger_item {
+    display: block;
+    padding-right: 20px;
+    float: left;
+    // width: calc(100%/2);
+    // height: 40px;
+    // line-height: 40px;    
+    color: var(--hc_color_level2);
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    // border:1px solid var(--hc_dark_color);
+}
+input[name="hamburger_item"] {
+    display: none;
+}
+.hamburger_content {
+    display: none;
+    padding-top: 40px;
+    clear: both;
+    overflow: hidden;
+}
+#member:checked ~ #member_content,
+#category:checked ~ #category_content {
+    display: block;
+}
+.hc_hamburger_tabs input:checked + .hamburger_item {
+    color: var(--hc_dark_color);
+    // background-color: var(--hc_dark_color);
 }

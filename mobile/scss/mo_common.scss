@@ -59,6 +59,7 @@ button {
 a {
   text-decoration: none;
   color: var(--hc_dark_color);
+  transition: 0.3s;
 }
 
 a:hover {
@@ -74,11 +75,12 @@ input[type=file],
 textarea,
 select,
 input[type=text] {
-  padding: 12px 13px;
+  padding: 0 10px;
   font-family: var(--fontfamily1);
   font-size: var(--hc_bd_medium);
   border: 1px solid var(--hc_dark_color);
   box-sizing: border-box;
+  outline:0px;
 }
 
 textarea:focus-visible,
