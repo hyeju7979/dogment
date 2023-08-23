@@ -367,7 +367,7 @@ header {
         margin: 0 auto;
     }
     .prdlist_item {
-        width: calc(100%/2);
+        width: calc(100%/3);
         height: 50px;
         border-bottom: 3px solid #333333;
         background-color: #f8f8f8;
@@ -393,8 +393,8 @@ header {
         clear: both;
         overflow: hidden;
     }
-    #hc_list_type1:checked ~ #hc_list_type1_content,
-    #hc_list_type2:checked ~ #hc_list_type2_content {
+    #prdlist1:checked ~ #prdlist1_content,
+    #prdlist2:checked ~ #prdlist2_content {
         display: block;
     }
     .hc_prdlist_tabs input:checked + .prdlist_item {
