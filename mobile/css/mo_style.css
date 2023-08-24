@@ -442,5 +442,8 @@ header #hc_head_mypage {
 .hc_sub_wrap .hc_page_pfs .hc_prd_element LI {
   display: block;
 }
+.hc_sub_wrap .hc_page_half li:nth-child(5n) {
+  grid-column: auto/span 2;
+}
 
 /*# sourceMappingURL=mo_style.css.map */

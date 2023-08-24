@@ -450,4 +450,10 @@ header {
     .hc_page_pfs .hc_prd_element LI {
         display: block;
     }
+    // half
+    .hc_page_half {
+        // ul > li:nth-of-type(1),
+        li:nth-child(5n) {grid-column: auto / span 2; }
+    }
 }
+
