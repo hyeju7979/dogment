@@ -3,12 +3,14 @@
 <!-- <script id="kg-service-init" data-hosting="makeshop" data-env="mobile" src="//storage.keepgrow.com/admin/keepgrow-service/keepgrow-service_6ce6b61e-50b2-4e6b-8372-6e1656eea53b.js"></script> -->
 <!-- 스마트스킨 코드 시작 :: 지우지 마세요 -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+
 <script>
     try {
         var SMS_TD_shop_name = "pigment.co.kr";
 		var SMS_TD_DataObj={SMS_TD_shop_host:SMS_TD_shop_name,SMS_TD_shop_hosting:"mk",SMS_TD_userinfo:{SMS_TD_virtual_url:"",SMS_TD_host:"",SMS_TD_login_check:<!--/if_login/-->true<!--/else/-->false<!--/end_if/-->,SMS_TD_referrer:document.referrer,SMS_TD_current_path:window.location.pathname,SMS_TD_current_url:document.location.href,SMS_TD_useragent:navigator.userAgent},SMS_TD_pagelist:{SMS_TD_cate:{},SMS_TD_detail:{},SMS_TD_order:{},SMS_TD_order_complete:{},SMS_TD_mypage:{},SMS_TD_search:{}}};var SMS_TD_util={init:function(data_parm){this.hostst();this.vir_path(data_parm)},html_re:function(str){str=str.replace(/^\s+|\s+$/g,"");str=str.replace(/\n/g,"");str=str.replace(/'/gi,"");str=str.replace(/"/gi,"");return str.replace(/(<([^>]+)>)/gi,"")},num_re:function(str){return str.replace(/[^0-9]/g,"")},x_code:function(noc){if(noc){var _num=noc.split('xcode')[1];return this.num_re(_num)}else{return noc=""}},m_code:function(noc){if(noc){var _num=noc.split('mcode')[1];return this.num_re(_num)}else{return noc=""}},s_code:function(noc){if(noc){var _num=noc.split('scode')[1];return this.num_re(_num)}else{return noc=""}},hostst:function(){var SMS_hostUrl=window.location.hostname;var SMS_hostre=SMS_hostUrl.replace(/www|wwww|com|co|kr|jp|cafe24|skin-|skin\d{1,2}(?!\d)|100|mobile[0-9]{1,2}|mobile[0-9]{1,2}/g,'');var SMS_hostre1=SMS_hostre.replace('m.','');var SMS_hostst=SMS_hostre1.replace(/\./g,'');SMS_TD_DataObj.SMS_TD_userinfo.SMS_TD_host=SMS_hostst},vir_url:function(_insert){var sms_w_path=window.location.pathname;var sms_pst=sms_w_path.split('/').slice(-1)[0];var SMS_vir_url="sms_"+sms_pst+"?base=page";for(var i in _insert){for(var _i in _insert[i].path){if(_insert[i].path[_i]==sms_w_path){SMS_vir_url=_insert[i].html+_insert[i].parm}}};if(sms_w_path.indexOf("mypage.html")!=-1){for(var e in _insert.myshop_main){for(var _e in _insert.myshop_main[e].path){if(_insert.myshop_main[e].path[_e]==window.location.search){SMS_vir_url=_insert.myshop_main[e].html+_insert.myshop_main[e].parm}}}};if(sms_w_path.indexOf("board.html")!=-1){SMS_vir_url="sms_board/main.html?page=list";for(var e in _insert.board_m){for(var _e in _insert.board_m[e].path){if(window.location.search.indexOf(_insert.board_m[e].path)!=-1){SMS_vir_url=_insert.board_m[e].html+_insert.board_m[e].parm}}}};SMS_TD_DataObj.SMS_TD_userinfo.SMS_TD_virtual_url=SMS_vir_url},vir_path:function(_parm_data){var data_parm=_parm_data;if(data_parm==undefined||data_parm=="undefined"){data_parm="base=page"};var SMS_path_obj={main:{path:["/","/m","/m/","/m//","/main.html","/m/main.html","/m/main.html/","/m/main.html//"],html:"sms_main.html?",parm:"main_id=m"},list:{path:["/m/product_list.html"],html:"sms_list.html?",parm:data_parm},detail:{path:["/m/product.html"],html:"sms_detail.html?",parm:data_parm},search:{path:["/m/search.html"],html:"sms_search.html?",parm:data_parm},order:{path:["/m/order.html"],html:"sms_order.html?",parm:data_parm},ordercom:{path:["/m/order_complete.html"],html:"sms_ordercom.html?",parm:data_parm},cart:{path:["/m/basket.html"],html:"sms_cart.html?",parm:data_parm},myshop_check:{path:["/m/attendance.html"],html:"sms_mypage/stamp.html?",parm:"page=main"},myshop_check:{path:["/m/order_list.html"],html:"sms_mypage/orderlist.html?",parm:"page=main"},myshop_main:{sms_my_page01:{path:[""],html:"sms_mypage/main.html?",parm:"page=main"},sms_my_page02:{path:["?mypage_type=mycoupon"],html:"sms_mypage/coupon.html?",parm:"page=main"},sms_my_page03:{path:["?mypage_type=myreserve"],html:"sms_mypage/reserve.html?",parm:"page=main"},sms_my_page04:{path:["?mypage_type=myemoney"],html:"sms_mypage/deposit.html?",parm:"page=main"},sms_my_page05:{path:["?mypage_type=mypoint"],html:"sms_mypage/point.html?",parm:"page=main"},sms_my_page06:{path:["?mypage_type=mywishlist"],html:"sms_mypage/wish.html?",parm:"page=main"},sms_my_page07:{path:["?mypage_type=myseegoods"],html:"sms_mypage/recent.html?",parm:"page=main"},sms_my_page08:{path:["?mypage_type=myarticle"],html:"sms_mypage/article.html?",parm:"page=main"},sms_my_page09:{path:["?mypage_type=mym2mboard"],html:"sms_mypage/mymboard.html?",parm:"page=main"},},member:{path:["/m/login.html"],html:"sms_login.html?",parm:data_parm},agreement:{path:["/m/join_contract.html"],html:"sms_agreement.html?",parm:data_parm},join:{path:["/m/join_us.html"],html:"sms_join.html?",parm:data_parm},joinresult:{path:["/m/join_complete.html"],html:"sms_join_result.html?",parm:data_parm},board_m:{board_m01:{path:["type=i"],html:"sms_board/write.html?",parm:"page=write"},board_m02:{path:["type=v"],html:"sms_board/view.html?",parm:"page=view"},},power_r:{path:["/m/power_review.html"],html:"sms_power_review.html?",parm:data_parm}};this.vir_url(SMS_path_obj)}};SMS_TD_util.init()}catch(e){}
 </script>
 <!-- 스마트스킨 코드 끝 :: 지우지 마세요 -->
+
 
 <script>
     /**삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨]**/
@@ -29,7 +31,536 @@
     /**삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨]**/
 </script>
 
+<div id="SMS_style">
+<!-- Basement WHITE -->
+<!-- 전체 햄버거 사용 시 SMS_MenuAll_wrap -->
+<!-- 기존 햄버거 사용 시 Basement -->
 
+    <div id="SMS_HamburgerClose"></div>
+
+
+
+	<div id="Basement" class="SMS_DA_ham">
+		<div id="BasementContent" >	
+				<div class="MenuAllCon">		
+					<div class="logout_Module">
+						<div class="left_Same Close_Icon"></div>
+						<div class="left_logo">
+							<a href="<!--/link_home/-->">
+								<img src="/design/kcompany7/smartskin_v6/custom/img/logo_w.png">
+							</a>
+						</div>
+						<div class="left_Same Cart_Icon">
+							<a href="<!--/link_basket/-->"></a>
+							<!--/if_user_basket_count(+1)/-->
+							<p>
+								<!--/user_basket_count/-->
+							</p>
+							<!--/end_if/-->
+						</div>
+					</div>
+					<div class="ham_user_wrap">
+                    <!--/if_login/-->
+						<!-- 로그인 후 -->
+						<div class="ham_login_wrap">
+							<div class="SMS_user_info">
+								<p class="text"><b><!--/user_name/-->님</b> 즐거운 쇼핑되세요:)</p>
+								
+								<div class="userGroup">
+									<p><!--/next_group_price_gap/-->원 더 구매하시면 <!--/next_group_name/--> 등급 달성!<br>
+									<!--/next_group_name/--> 등급이 되시면 <!--/next_group_benefit/--></p>
+									<a href="/m/board.html?code=kcompany7_board1&page=1&type=v&board_cate=&num1=999905&num2=00000&number=77&lock=N&flag=notice">등급혜택&gt;</a>
+								</div>
+								
+								<div class="ham_header_menu">
+									<ul>
+										<li class="point"><a href="<!--/link_logout/-->">LOGOUT</a></li>
+										<li><a href="/m/mypage.html">MYPAGE</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="SMS_MemberMenuWrap">
+								<div class="SMS_MemberMenu_toggle">
+									<!-- 적립금 영역 -->
+									<div class="SMS_ham_myp_points">
+										<ul>
+											<li class="mileage">
+												<a href="/m/mypage.html?mypage_type=myreserve">
+													<div>
+														<em><!--/user_reserve/-->원</em>
+														<span>적립금</span>
+													</div>
+												</a>
+											</li>
+											<li class="coupon">
+												<a href="/m/coupon_list.html">
+													<div>
+														<em><!--/remain_coupon_count/-->개</em>
+														<span>쿠폰</span>
+													</div>
+												</a>
+											</li>
+											<li class="deposits">
+												<a href="/m/mypage.html?mypage_type=myemoney">
+													<div>
+														<em><!--/user_deposit/-->원</em>
+														<span>예치금</span>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!-- //적립금 영역 -->
+								</div>
+							</div>
+						</div>
+						<!-- //로그인 후 -->
+						<!--/else/-->
+					
+						<!-- 로그인 전 -->
+						<div class="ham_logout_wrap">
+							<p class="text">현재 <b>로그아웃</b> 상태입니다.<br>
+							회원가입 후 다양한 혜택을 경험하세요.</p>
+
+							<div class="ham_header_menu">
+								<ul>
+									<li class="point"><a href="/m/login.html">LOGIN</a></li>
+									<li><a href="/m/join_contract.html">JOIN</a></li>
+								</ul>
+								<div class="ham_util">
+									<a href="/m/mypage.html?mypage_type=myorder">주문/배송조회</a>
+									<a href="/m/mypage.html?mypage_type=myorder#noMemberOrder">비회원 주문조회</a>
+								</div>
+							</div>
+						</div>
+						<!--/end_if/-->
+						<!-- //로그인 전 -->
+					</div>
+				
+
+				            <!-- 오프라인배너시작 -->
+            <div class="SMSbanner">
+                <div><a href="#" data-type="banner"></a></div>
+            </div>
+				            <!-- 오프라인배너끝 -->
+
+				<!-- 햄버거 내 카테고리 메뉴 시작 -->
+				<div class="SMS_hamMenu">
+					<div class="menuWrap">
+						<h2 class="menuTit">CATEGORY</h2>
+						<ul class="ham_toggle">
+							<li><a class="depthTit" href="/m/product_list.html?xcode=035">신상 30%</a></li>
+							<li><a class="depthTit" href="/m/product_list.html?xcode=055">BEST 50</a></li>
+
+
+							<li>
+
+								<p class="depthTit"><a href="/m/product_list.html?xcode=012&type=P="style="color:royalblue"><b>T'OF</a><span class="ham_toggle_btn"></span></p></b>
+
+								<ol class="ham_toggle_contents">
+									<li><a href="/m/product_list.html?xcode=012&type=P=">T'OF</a></li>
+									<li><a href="/m/product_list.html?xcode=014&mcode=001&type=Y">2023 COLLECTION</a></li>
+
+
+								</ol>
+
+
+							<li><a class="depthTit" href="/m/product_list.html?xcode=118&type=P"><strong>2023 가을 컬렉션</strong></a></li>
+							<li><a class="depthTit" href="/m/product_list.html?xcode=041&type=P">PIGMENT:RENDY</a></li>
+							<li><a class="depthTit" href="/m/product_list.html?xcode=045&type=P">오프라인 베스트</a></li>
+							<li><a class="depthTit" href="/m/product_list.html?xcode=106&type=P">[추가10%할인]CODI-SET</a></li>
+							<li><a class="depthTit" href="/m/product_list.html?xcode=108&type=P">[1+1]ONE PLUS ONE</a></li>
+							<li><a class="depthTit" href="/m/product_list.html?xcode=018&type=Y">SALE</a></li>
+							<li><a class="depthTit" href="/m/product_list.html?xcode=097&type=Y&gf_ref=Yz1kRjA1R3k=">PFS:GALLERY</a></li>
+							<li><a class="depthTit" href="/m/product_list.html?xcode=077">투데이특가</a></li>
+
+
+							<li>
+								<p class="depthTit"><a href="/m/product_list.html?xcode=028">TOP</a><span class="ham_toggle_btn"></span></p>
+								<ol class="ham_toggle_contents">
+									<li><a href="/m/product_list.html?xcode=028&mcode=001">T-SHIRT</a></li>
+									<li><a href="/m/product_list.html?xcode=063&type=Y&mcode=001">KNIT</a></li>
+
+
+								</ol>
+							</li>
+							<li>
+								<p class="depthTit"><a href="/m/product_list.html?xcode=066">SHIRT/BLOUSE</a><span class="ham_toggle_btn"></span></p>
+								<ol class="ham_toggle_contents">
+
+									<li><a href="/m/product_list.html?xcode=066&type=Y&mcode=001">SHIRT</a></li>
+									<li><a href="/m/product_list.html?xcode=066&type=Y&mcode=002">BLOUSE</a></li>
+								</ol>
+							</li>
+							<li>
+								<p class="depthTit"><a href="/m/product_list.html?xcode=063">KNIT/CARDIGAN</a><span class="ham_toggle_btn"></span></p>
+								<ol class="ham_toggle_contents">
+									<li><a href="/m/product_list.html?xcode=063&mcode=001">KNIT</a></li>
+									<li><a href="/m/product_list.html?xcode=063&mcode=002">CARDIGAN</a></li>
+									<li><a href="/m/product_list.html?xcode=063&mcode=003">VEST</a></li>
+
+								</ol>
+							</li>
+							<li>
+								<p class="depthTit"><a href="/m/product_list.html?xcode=032">BOTTOM</a><span class="ham_toggle_btn"></span></p>
+								<ol class="ham_toggle_contents">
+									<li><a href="/m/product_list.html?xcode=032&mcode=001">PANTS</a></li>
+									<li><a href="/m/product_list.html?xcode=032&mcode=004">SKIRT</a></li>
+								</ol>
+							</li>
+							<li>
+
+
+						<p class="depthTit"><a href="/m/product_list.html?xcode=091">OUTER</a><span class="ham_toggle_btn"></span></p>
+								<ol class="ham_toggle_contents">
+									<li><a href="/m/product_list.html?xcode=091&mcode=003">VEST</a></li>
+									<li><a href="/m/product_list.html?xcode=091&mcode=002">CARDIGAN</a></li>
+									<li><a href="/m/product_list.html?xcode=091&mcode=001">JACKET</a></li>
+									<li><a href="/m/product_list.html?xcode=091&mcode=004">COAT</a></li>
+
+								</ol>
+							</li>
+
+							<li><a class="depthTit" href="/m/product_list.html?xcode=029&type=Y">DRESS</a></li>
+							<li><a class="depthTit" href="/m/product_list.html?xcode=092&type=Y">ACC</a></li>
+
+
+							<li><a class="depthTit" href="/m/product_list.html?xcode=011&type=P">맘앤키즈</a></li>
+
+													</ul>
+					</div>
+					<div class="menuWrap">
+						<h2 class="menuTit">COMMUNITY</h2>
+						<ul class="ham_toggle">
+							<li><a class="depthTit" href="/m/board.html?code=kcompany7_board1">NOTICE</a></li>
+							<li><a class="depthTit" href="/m/board.html?code=kcompany7">Q&amp;A</a></li>
+							<li><a class="depthTit" href="/m/board.html?code=kcompany7_board2">REVIEW</a></li>
+						</ul>
+					</div>
+					<!-- 최근본상품 스와이퍼 -->
+					<div class="menuWrap recentWrap">
+						<h2 class="menuTit">RECENT VIEW</h2>								
+						<div class="SMS_recent_swiper">
+							<div class="swiper-container SMS_recent_swiper_trigger">
+								<ul class="swiper-wrapper"></ul>
+								<div class="swiper-pagination"></div>
+							</div>
+						</div>
+					</div>
+					<!-- //최근본상품 스와이퍼 -->
+				</div>
+				<!-- //햄버거 내 카테고리 메뉴 시작 -->	
+			</div>		
+		</div><!-- BasementContent END -->
+	</div><!-- Basement END -->
+
+
+
+	<div id="Hamburger">
+		<div id="HamburgerPage">
+		
+			<div id="HamburgerPageContent"><!-- 스마트 스킨 컨텐츠 시작 : footer 에서 END-->
+				<div class="SMSheaderContainer SMS_DA_header"><!--SMSheaderContainer START -->        
+				
+					<!-- 상단 플립 배너 -->
+                    <div id="SMS_flipBannerContainer" class="JKJ_loginDisplay">
+                        <div class="origin"><img src="http://kcompony7.jpg3.kr/web/pigment/banner/plb/test_plb.jpg"></div>
+                        <div id="SMS_flipBanner">
+                            <div class="SMSFlipper">
+                                <div class="front animationFrontBanner" alt="카카오간편가입">
+                                    <a href="https://pigment.co.kr/m/join_contract.html?&gf_ref=Yz1BdmlRNUg="><img src="http://kcompony7.jpg3.kr/web/pigment/banner/plb/201221_plb_kakao.gif"></a>
+                                </div>
+                                <div class="back animationBackBanner" alt=UPTO 70%">
+                                    <a href="/m/product_list.html?xcode=018&type=Y"><img src="http://kcompony7.jpg3.kr/web/pigment/2023/banner/flipbanner.jpg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //상단 플립 배너 -->
+			
+                    <!-- 상단 1단 배너 
+                    <div class="SMSbannerTop JKJ_loginDisplay">
+                        <div class="closeBtn"></div>
+                        <div><a href="#" data-type="banner"><img src="//via.placeholder.com/500x45/eee"></a></div>
+                    </div>
+                    <!-- //상단 1단 배너 -->
+
+					<div id="header-container" style="<!--/head_bg_color/--><!--/head_bg_image/-->">
+                        <!-- 상단 55px메뉴 시작 -->
+                        <!-- SMSbookMarkBtn 북마크 클래스 -->
+                        <div id="fix_position">
+                            <div class="SMS_fixed_wrap">
+                                <div class="SMS_fixed_inner">
+                                    <div class="fixed_logo">
+                                        <a href="<!--/link_home/-->">
+                                            <!--/if_img_shop_logo/-->
+                                            <img src="<!--/img_shop_logo/-->">
+                                            <!--/else/-->
+                                            <img src="/design/kcompany7/smartskin_v6/custom/img/logo_w.png">
+                                            <!--/end_if/-->
+                                        </a>
+                                    </div>
+                                    <div class="small_icon m_menu"><a class="SMS_menu"></a></div>
+                                    <div class="small_icon search_fixed_btn"></div>
+                                    <div class="small_icon location"><a href="/m/join_contract.html"></a></div>
+                                    <div class="small_icon m_cart">
+                                        <a href="<!--/link_basket/-->">
+                                            <!--/if_user_basket_count(+1)/--> <b class="count">
+                                                <!--/user_basket_count/--></b>
+                                            <!--/end_if/--></a>
+                                    </div>
+                                    
+                                    <!--  롤링메뉴 영역 -->
+                                    <div class="rolling_wrap">
+                                        <div class="swiper-container SMS_rolling_menu">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=035&type=P&gf_ref=Yz0wdFM0MmQ="style="color:green"><b>신상 30%</a></div></b>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=055&type=P&gf_ref=Yz1QenVPbjc=">BEST 50</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=041&type=P&gf_ref=Yz1ZSWlhY0U=">[T:RENDY]</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=018&type=Y&gf_ref=Yz1DZlU2QUI=" style="color:red"><b>SALE</a></div></b>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=108&type=P&gf_ref=Yz1aRFZDc3Y=">1+1기획전</a></div>
+                                               <div class="swiper-slide"><a href="/m/product_list.html?xcode=045&type=P&gf_ref=Yz1XTmRRM3A=">오프라인베스트</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=028&type=Y&gf_ref=Yz1ObXBWQ2o=">TOP</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=063&type=Y&gf_ref=Yz1KUFJBazQ=">KNIT</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=032&type=Y&gf_ref=Yz1sb0ZodUo=">BOTTOM</a></div> 
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=029&type=Y&gf_ref=Yz1NU2FwS1A=">DRESS</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=066&type=Y&gf_ref=Yz1keXVhMVA=">SHIRT/BLOUSE</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=091&type=Y&gf_ref=Yz01VnZxTXM=">OUTER</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=077&type=P">투데이특가</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=097&type=Y&gf_ref=Yz1kOERtd1o=">PFS:GALLERY</a></div>
+                                                <div class="swiper-slide"><a href="/m/product_list.html?xcode=011&type=P&gf_ref=Yz1iNWJseEo=">맘앤키즈</a></div>
+
+
+
+
+
+                                            </div>    
+
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                        <div class="rolling_view"></div>
+                                        <div class="rolling_all"></div>
+                                    </div>
+                                    <!-- //롤링메뉴 영역 -->
+                                    
+                                </div>
+                                <div class="SMS_MainSearch">
+                                    <!-- 스마트뷰 topmodule_03-->
+                                    <div class="container_Box">
+                                        <ul>
+                                            <li class="search">
+                                                <form name="top_search" method="get" action="search.html" id="smartskinSearch">
+                                                    <input type="hidden" value="new" name="search_sort">
+                                                    <input type="hidden" value="" name="search_category">
+                                                    <input type="text" name="s" value="" placeholder="검색어를 입력하세요.">
+                                                    <span class="search_btn" onclick="smartskinSearchSubmit(this)"></span>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="SMS_main_gallery_search">
+										<h2 class="searchTit">HOT KEYWORDS</h2>
+                                        <div class="swiper-container SMS_search_keyword">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"><a href="#empty">기본셔츠</a></div>
+                                                <div class="swiper-slide"><a href="#empty">베이직티셔츠</a></div>
+                                                <div class="swiper-slide"><a href="#empty"></a>1+1</div>
+                                                <div class="swiper-slide"><a href="#empty"></a>셔츠</div>
+                                                <div class="swiper-slide"><a href="#empty">니트</a></div>
+                                                <div class="swiper-slide"><a href="#empty"></a>T:RENDY</div>
+                                                <div class="swiper-slide"><a href="#empty"></a>오프라인베스트</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 상단 55px메뉴 끝 -->
+					</div><!-- header-container END -->
+				</div><!--SMSheaderContainer END -->
+		
+			<!-- 어플에서 보기 웹페이지에서 보기 시작 -->
+			<div id="SMS_AppWeb_wrap">
+				<div class="SMS_AppWeb_wrap_inbody">
+					<div class="top_appweb">
+						<div class="appweb_body">
+							안녕하세요 고객님!<br>
+							<!--/shop_name/--> 회원가입 하시고<br>
+							30% 할인혜택 받으세요!<br>
+							추가적으로 어플도 설치하셔서<br>
+							30% 할인혜택 받으세요!
+							<div class="app"><a>네, 싸게 구매할래요!</a></div>
+						</div>
+					</div>
+					<div class="btn_appweb">
+						<div class="web"><a>아니요, 비싸게 구매할래요!</a></div>
+					</div>
+				</div>
+			</div>
+			<!-- 어플에서 보기 웹페이지에서 보기 끝 -->
+
+			<!-- img 이미지경로 / href='#'" 터치 시 링크 변경 -->
+			<!-- saledays에 원하는 요일 띄어쓰기없이!, starttime에 원하는 시작시간, endtime에 원하는 마침시간 입력 -->
+			<div id="smartskinMain_popup_Ver" class="main_popup_box SMS_DA_popup" saledays="월화수목금토일" starttime="0" endtime="24">
+				<div class="main_popup_DisplayContainer">
+					<div class="main_popup_container">
+						<div class="main_popup_body">
+							<a href="#">
+								<img src="//via.placeholder.com/500x500/eee">
+							</a>
+						</div>
+						<div class="main_popup_btn">
+							<a id="smartskinMain_popup_Ver2_Close_Btn" class="btn_close">CLOSE</a>
+							<span class="btn_todayClose"><input type="checkbox" id="smartskinMain_popup_Ver2_Close_Count" name="smartskinTodayClose"> Today Close</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //메인 접속시 전체 팝업 -->
+
+			<!-- 퀵메뉴 :: 기능 사용 원할 시 ▼▼▼ 아래 SMSQuickmenu ▼▼▼ 주석 해제 -->
+			<!--<div id="SMSQuickmenu" class="SMS_flotingbtn SMS_quick_event"></div>-->
+			<div id="SMSQuickmenuContainer" class="float">
+				<!-- 6.0클래스 float, under -->
+				<!--<div class="close">CLOSE</div>-->
+				<ul>
+					<!--/if_login/-->
+					<li class="quickMenu07"><a href="/m/mypage.html">마이페이지</a></li>
+					<!--/else/-->
+					<li class="quickMenu00"><a href="/m/join_contract.html">회원가입</a></li>
+					<!--/end_if/-->
+					<li class="quickMenu01">
+						<a href="<!--/link_basket/-->">장바구니</a>
+						<!--/if_user_basket_count(+1)/--> 
+						<b class="count"><!--/user_basket_count/--></b>
+						<!--/end_if/-->
+					</li>
+					<li class="quickMenu02 recent">
+						<a href="/m/mypage.html?mypage_type=myseegoods">최근본상품</a>
+						<b class="recentCount"></b>
+					</li>
+					<li class="quickMenu03"><a href="/m/wishlist.html">관심상품</a></li>
+					<li class="quickMenu04"><a href="/m/mypage.html?mypage_type=myorder">주문조회</a></li>
+					<!--/if_login/-->
+					<li class="quickMenu06"><a href="<!--/link_logout/-->">로그아웃</a></li>
+					<!--/else/-->
+					<li class="quickMenu05"><a href="/m/login.html">로그인</a></li>
+					<!--/end_if/-->
+				</ul>
+			</div>
+			<!-- //퀵메뉴 끝 -->
+			
+			<!-- 우측 플로팅 버튼 -->
+			<div class="SMS_flotingbtn SMS_kakaoFloat"><a href="http://pf.kakao.com/_xidlxeC/chat" target="_blank">카카오</a></div>
+			<div class="SMS_flotingbtn SMS_naverFloat">
+                  <!-- Talk Talk Banner Script start -->
+                  <script type="text/javascript" src="https://partner.talk.naver.com/banners/script"></script>
+                  <div class="talk_banner_div talk_banner_custom" data-id="80916"></div>
+                  <!-- Talk Talk Banner Script end -->
+            </div>
+			<div class="SMS_flotingbtn SMS_TopBtn"><b>TOP</b></div>
+			<div class="SMS_flotingbtn SMS_BottomBtn"><b>END</b></div>
+            <div class="SMS_flotingbtn SMS_HammenuBtn SMS_menu"><b>MENU</b></div>
+            
+			<!-- //우측 플로팅 버튼 -->
+			
+			<!-- 최근본상품 플로팅 -->
+			<!--<div class="SMS_recentIconInbody">
+				<ul></ul>
+				<div class="SMS_recentIcon"><a>Today<br>View</a></div>
+			</div>-->
+			<!-- //최근본상품 플로팅 -->
+
+			<div class="SMS_loveFloatBtn SMS_loveFloatToggle">Love<br>Item</div>						
+			<!-- 찜하기 플로팅 시작 -->
+			<div class="SMS_loveFloat">
+				<div class="title">
+					<strong>내가 찜한 상품</strong>
+					<div class="SMS_loveFloatToggle">닫기</div>
+					<div class="SMS_loveClear">전체삭제</div>
+				</div>
+				<div class="SMS_lovePrdWrap">
+					<div class="SMS_lovePrdWrapHeight SMS_Product_display">
+						<ul class="items">
+						</ul>
+						<!-- <div class="swiper-pagination"></div> -->
+					</div>
+				</div>
+			</div>
+			<!-- 찜하기 플로팅 끝 -->
+
+			<!-- /////// 최근본상품 모듈 지우지마세요!! /////// -->
+			<div class="SMS_Recent" style="display: none;">
+				<!--/if_view_product/-->
+				<!--/block_view_product/-->
+				<ul>
+					<!--/loop_view_product_ajax(10)/-->
+					<li><a href="<!--/view_product_ajax@link/-->">
+							<dl>
+								<dt class="thumb"><img src="<!--/view_product_ajax@mobile_image/-->" class="img" /></dt>
+								<dd class="name">
+									<!--/notag/view_product_ajax@name/-->
+								</dd>
+							</dl>
+						</a></li>
+					<!--/end_loop/-->
+				</ul>
+				<!--/end_block/-->
+				<!--/else/-->
+				<!--/end_if/-->
+			</div>
+			<!-- 최근본상품 모듈 지우지마세요!! -->
+
+			<!--/if_login/-->
+			<div id="SMS_IDcheckRmeberC" style="display: none;">
+				<!--/user_id/-->
+			</div>
+			<!--/else/-->
+			<!--/end_if/-->
+
+			<div id="iosBookmark">
+				<div class="iosB_text"><b></b>아이폰, 아이패드 계열은<br>아래의 메뉴에서<br>홈 화면에 추가하세요.<br></div>
+				<div class="isoB_btn"></div>
+			</div>
+
+			<!-- 찜하기 ALL MENU 모드 ON :: HTML : START -->
+			<div id="SMS_lovePopupWrap">
+				<div class="SMS_lovePopup">
+					<div class="contents">
+						<div class="title">
+							<span class="on">상품을 찜 하셨습니다!</span>
+							<span class="off">찜 해제!</span>
+						</div>
+						<!--<div class="sub">하트를 누르시면</br>찜한상품을 모아서 볼 수 있어요!</div>-->
+						<a href="/m/page.html?id=1" class="main_btn01_block">상품 보러가기</a>
+					</div>
+				</div>
+			</div>
+			<!-- 찜하기 ALL MENU 모드 ON :: HTML : END -->
+
+
+
+			<!-- 카운트 후 앱다운 팝업 -->
+			<div id="paramPopupWrap">
+				<div id="paramPopupBg"></div>
+				<div id="paramPopup">
+					<section>
+						<div class="closeIcon noApp"></div>
+						<img class="appIcon" src="//via.placeholder.com/100x100/eee">
+						<p class="desc">
+							안녕하세요 고객님!<br>
+							<!--/shop_name/--> 어플리케이션을 통하여<br>
+							다양한 정보와 이벤트를 먼저 확인하세요!
+						</p>
+						<h6 class="count"></h6>
+						<span>카운트 다운 후 자동으로 앱스토어로 이동 됩니다.</span>
+						<div class="justWeb noApp">그냥 웹으로 볼래요.</div>
+					</section>
+				</div>
+			</div>
+			<!-- // 카운트 후 앱다운 팝업 -->  
 
 <!-- snap common script contact mail : support@snapvi.co.kr -->
 <span id = 'solutiontype' style='display:none;'>makeshop</span>
