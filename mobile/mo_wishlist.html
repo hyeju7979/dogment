@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEARCH</title>
+    <title>관심 상품</title>
     <link rel="stylesheet" type="text/css" href="css/mo_designsystem.css">
     <link rel="stylesheet" type="text/css" href="css/mo_common.css">
     <link rel="stylesheet" type="text/css" href="css/mo_style.css">
@@ -241,7 +241,7 @@
 
         <!-- 상단 텍스트 배너 -->
         <div class="hc_notice_top">MEMBER'S DAY</div>
-        
+
         <!-- 상단 영역 -->
         <header>
             <div id="hc_hamburger">
@@ -272,9 +272,9 @@
         <!-- 중앙 영역 -->
         <div class="hc_entire">
             <div class="hc_container hc_sub_wrap">
-                <main class="hc_contents">
+                <main class="hc_contents hc_page_wishlist">
                     <!-- 페이지 타이틀 -->
-                    <h2 class="hc_page_title hc_blind">SEARCH</h2>
+                    <h2 class="hc_page_title hc_blind">관심 상품</h2>
                     <div class="hc_prdlist_types">
                         <div class="hc_prdlist_tabs">
                             <span class="hc_sort hc_blind">
@@ -290,8 +290,12 @@
                                 </form>
                             </span>
                             <!-- 페이지 타이틀 -->
-                            <h2 class="hc_page_title">SEARCH</h2>
-
+                            <h2 class="hc_page_title hc_blind">관심 상품</h2>
+                            <span class="hc_inline">
+                                <input type="checkbox" id="recently">
+                                <label for="recently"></label>
+                                <label>전체 상품 선택/해제</label>
+                            </span>
                             <input id="prdlist2" type="radio" name="prdlist_item">
                             <label class="prdlist_item" for="prdlist2">2</label>
 
@@ -302,14 +306,23 @@
                             <div class="prdlist_content" id="prdlist2_content">
                                 <ul>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail1.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
                                             <li class="hc_normal_price">39,000원</li>
                                             <li class="hc_discount_price">27,300원</li>
                                         </ul>
+                                        <div class="hc_btn_wrap"><a class="hc_btn_Regular" href="#"> </a></div>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail2.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -318,6 +331,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail3.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -326,6 +343,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail4.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -334,6 +355,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail5.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -342,6 +367,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail6.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -350,6 +379,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail7.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -358,6 +391,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail8.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -366,6 +403,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail9.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -374,6 +415,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail10.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -382,6 +427,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail11.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -390,6 +439,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail12.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -398,6 +451,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail13.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -410,6 +467,10 @@
                             <div class="prdlist_content" id="prdlist1_content">
                                 <ul>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail1.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -418,6 +479,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail2.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -426,6 +491,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail3.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -434,6 +503,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail4.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -442,6 +515,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail5.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -450,6 +527,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail6.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -458,6 +539,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail7.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -466,6 +551,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail8.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -474,6 +563,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail9.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -482,6 +575,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail10.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -490,6 +587,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail11.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -498,6 +599,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail12.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>
@@ -506,6 +611,10 @@
                                         </ul>
                                     </li>
                                     <li>
+                                        <div class="hc_checking">
+                                            <input type="checkbox" id="cb1">
+                                            <label for="cb1"></label>
+                                        </div>
                                         <div class="hc_thumbnail"><img src="../img/mobile/thumbnail13.jpg" alt="" /></div>
                                         <ul class="hc_prd_element">
                                             <li class="hc_prd_name">크롭꽈자수J</li>

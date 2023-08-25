@@ -73,7 +73,18 @@ h2.hc_page_title {
     outline: 0;
     cursor: pointer;
 }
-
+// 버튼 (long > middle >  Short > mini / Large > Medium > Tall > Regular > Petite > Small 
+.hc_btn_wrap {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px; 
+}
+.hc_btn_Regular {
+    display: inline-block;
+    padding: 0 4px;
+    border: 1px solid var(--hc_dark_color);
+}
 // 썸네일
 .hc_thumbnail img {
     width:100%;
@@ -101,7 +112,10 @@ h2.hc_page_title {
 .hc_blind {
     display: none !important;
 }
-
+.hc_inline {
+    display: inline-flex;
+    align-items: center; 
+}
 // 상품설명 더보기
 .hc_md_more_description {
     display: flex;
@@ -280,14 +294,10 @@ animation-delay: 2.3s;
     display: block;
     padding-right: 20px;
     float: left;
-    // width: calc(100%/2);
-    // height: 40px;
-    // line-height: 40px;    
     color: var(--hc_color_level2);
     text-align: center;
     font-weight: bold;
     transition: all 0.2s ease;
-    // border:1px solid var(--hc_dark_color);
 }
 input[name="hamburger_item"] {
     display: none;
@@ -304,5 +314,4 @@ input[name="hamburger_item"] {
 }
 .hc_hamburger_tabs input:checked + .hamburger_item {
     color: var(--hc_dark_color);
-    // background-color: var(--hc_dark_color);
 }

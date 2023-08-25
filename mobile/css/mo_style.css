@@ -359,6 +359,14 @@ header #hc_head_mypage {
   border-bottom: 1px dashed var(--hc_dark_color);
 }
 
+.hc_sub_wrap .prdlist_content li {
+  position: relative;
+}
+.hc_sub_wrap .prdlist_content li .hc_checking {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+}
 .hc_sub_wrap .hc_prdlist_types {
   margin-top: 20px;
 }
@@ -444,6 +452,37 @@ header #hc_head_mypage {
 }
 .hc_sub_wrap .hc_page_half li:nth-child(5n) {
   grid-column: auto/span 2;
+}
+.hc_sub_wrap .hc_page_recently .hc_inline {
+  margin-top: 10px;
+}
+.hc_sub_wrap .hc_page_recently input[id=recently] + label {
+  display: inline-block;
+  margin: 0 10px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--hc_dark_color);
+  cursor: pointer;
+}
+.hc_sub_wrap .hc_page_recently input[id=recently]:checked + label {
+  background-color: var(--hc_dark_color);
+}
+.hc_sub_wrap .hc_page_recently input[id=recently] {
+  display: none;
+}
+.hc_sub_wrap .hc_page_wishlist .hc_prd_element {
+  padding-bottom: 10px;
+}
+.hc_sub_wrap .hc_page_wishlist .hc_btn_wrap {
+  margin: 0 0 40px;
+}
+.hc_sub_wrap .hc_page_wishlist .hc_btn_Regular {
+  border: 1px solid var(--hc_color_level2);
+}
+.hc_sub_wrap .hc_page_wishlist .hc_btn_Regular::after {
+  content: "→ add to cart";
+  display: inline-block;
+  color: var(--hc_color_level2);
 }
 
 /*# sourceMappingURL=mo_style.css.map */

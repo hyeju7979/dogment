@@ -358,6 +358,14 @@ header {
 
 // SUB
 .hc_sub_wrap {
+    .prdlist_content li {
+        position: relative;
+        .hc_checking {
+            position: absolute;
+            top: 5px;
+            right: 7px; 
+        }
+    }
     .hc_prdlist_types {
         margin-top: 20px;
         .prdlist_item {
@@ -454,6 +462,44 @@ header {
     .hc_page_half {
         // ul > li:nth-of-type(1),
         li:nth-child(5n) {grid-column: auto / span 2; }
+    }
+    // 최근 본 상품
+    .hc_page_recently {
+        .hc_inline {
+            margin-top: 10px;
+        }
+
+        input[id="recently"] + label {
+            display: inline-block;
+            margin: 0 10px;
+            width: 10px;
+            height: 10px;
+            border: 1px solid var(--hc_dark_color);
+            cursor: pointer;
+        }
+        input[id="recently"]:checked + label {
+            background-color: var(--hc_dark_color);
+        }
+        input[id="recently"] {
+            display: none;
+        }
+    }
+    // 관심상품
+    .hc_page_wishlist {
+        .hc_prd_element {
+            padding-bottom: 10px;
+        }
+        .hc_btn_wrap {
+            margin: 0 0 40px;
+        }
+        .hc_btn_Regular {
+            border: 1px solid var(--hc_color_level2);
+        }
+        .hc_btn_Regular::after  {
+            content: "→ add to cart";
+            display: inline-block;
+            color: var(--hc_color_level2);
+        }
     }
 }
 

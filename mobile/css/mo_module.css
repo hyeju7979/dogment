@@ -79,6 +79,19 @@ h2.hc_page_title {
   cursor: pointer;
 }
 
+.hc_btn_wrap {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.hc_btn_Regular {
+  display: inline-block;
+  padding: 0 4px;
+  border: 1px solid var(--hc_dark_color);
+}
+
 .hc_thumbnail img {
   width: 100%;
 }
@@ -107,6 +120,11 @@ h2.hc_page_title {
 
 .hc_blind {
   display: none !important;
+}
+
+.hc_inline {
+  display: inline-flex;
+  align-items: center;
 }
 
 .hc_md_more_description {
