@@ -266,6 +266,7 @@ body, code {
 
 body {
   margin: 0;
+  font-family: 'Lato', sans-serif;
   font-size: var(--hc_bd_medium);
   box-sizing: border-box;
 }
@@ -470,9 +471,11 @@ h2.hc_page_title {
 }
 
 .hc_inputbox_middle_btn {
+  display: inline-block;
   margin-left: 4px;
   width: 118px;
-  height: 58px;
+  height: 35px;
+  line-height: 35px;
   color: var(--hc_bright_color);
   font-size: var(--hc_bd_large);
   background: var(--hc_dark_color);
@@ -852,9 +855,29 @@ header #hc_head_mypage {
   border-top: 1px solid var(--hc_dark_color);
 }
 
+/*마이페이지 */
+#hc_mypage_menu {
+  position: fixed;
+  top:90px;
+  right: 0;
+  z-index: 999;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  background: var(--hc_bright_color);
+  box-sizing: border-box;
+  transition: all 0.4s;
+  transform: translate(100%, 0);
+}
+
+#hc_mypage_menu.open {
+  transform: translate(0%, 0);
+}
+
+
 /* 모달 검색창 */
 #hc_modal_search {
-  position: absolute;
+  position: fixed;
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -863,7 +886,13 @@ header #hc_head_mypage {
   width: 100%;
   height: 100vh;
   background: var(--hc_bright_color);
-  display: none;
+  right: 0;
+  transition: all 0.4s;
+  transform: translate(100%, 0);
+}
+
+#hc_modal_search.open {
+  transform: translate(0%, 0);
 }
 
 #hc_modal_search .hc_modal_search_close {
@@ -879,12 +908,16 @@ header #hc_head_mypage {
 }
 
 #hc_modal_search form {
-  margin: 34px 0 42px;
+  display: inline-block;
 }
 
 .hc_best_keyword li {
   display: block;
   line-height: 2;
+}
+.hc_modal_search_form {
+    margin: 34px 0 42px;
+    display: flex;
 }
 
 /* 햄버거 & 마이페이지 메뉴 */
@@ -893,7 +926,6 @@ header #hc_head_mypage {
     opacity: 1;
     pointer-events: auto;
 }
-.hc_mypage_menu,
 .hc_hamburger_menu {
     position: fixed;
     left: 0;
@@ -944,10 +976,9 @@ header #hc_head_mypage {
   margin-bottom: 40px;
 }
 
-.hc_mypage_menu .hc_submenu a,
 .hc_hamburger_menu .hc_submenu a {
   margin-left: 14px;
-  font-size: var(--hc_bd_small);
+  /*font-size: var(--hc_bd_small);*/
 }
 
 .hc_main_menu {
@@ -966,7 +997,7 @@ header #hc_head_mypage {
 }
 
 .hc_menu_state:checked ~ .hc_menu_content {
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .hc_mypage_menu h4 {
@@ -1005,9 +1036,8 @@ header #hc_head_mypage {
 .hc_mypage_menu .tab-label {
   display: flex;
   justify-content: space-between;
-  padding: 0.5em;
+  line-height: 3;
   cursor: pointer;
-  /* Icon */
 }
 .hc_mypage_menu .tab-label:hover {
   background: var(--hc_bright_color);
@@ -1017,20 +1047,19 @@ header #hc_head_mypage {
   width: 1em;
   height: 1em;
   text-align: center;
-  transition: all 0.35s;
+  transition: all 0.3s ease-in-out;  
 }
 .hc_mypage_menu .tab-content {
   max-height: 0;
-  padding: 0 1em;
+  margin-left:14px;
   color: var(--hc_dark_color);
+  line-height: 2.5;
   background: var(--hc_bright_color);
-  transition: all 0.35s;
+  transition: all 0.3s ease-in-out;  
 }
 .hc_mypage_menu .tab-close {
   display: flex;
   justify-content: flex-end;
-  padding: 1em;
-  font-size: 0.75em;
   background: var(--hc_bright_color);
   cursor: pointer;
 }
@@ -1045,7 +1074,6 @@ header #hc_head_mypage {
 }
 .hc_mypage_menu input:checked ~ .tab-content {
   max-height: 100vh;
-  padding: 1em;
 }
 
 .hc_main_section {
@@ -1237,5 +1265,5 @@ header #hc_head_mypage {
 
 /* 레이아웃 */
 .hc_entire {
-    margin-top: 90px;
+    margin-top: 0;
 }
