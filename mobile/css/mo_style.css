@@ -453,9 +453,11 @@ header #hc_head_mypage {
 .hc_sub_wrap .hc_page_half li:nth-child(5n) {
   grid-column: auto/span 2;
 }
+.hc_sub_wrap .hc_page_wishlist .hc_inline,
 .hc_sub_wrap .hc_page_recently .hc_inline {
   margin-top: 10px;
 }
+.hc_sub_wrap .hc_page_wishlist input[id=recently] + label,
 .hc_sub_wrap .hc_page_recently input[id=recently] + label {
   display: inline-block;
   margin: 0 10px;
@@ -464,9 +466,11 @@ header #hc_head_mypage {
   border: 1px solid var(--hc_dark_color);
   cursor: pointer;
 }
+.hc_sub_wrap .hc_page_wishlist input[id=recently]:checked + label,
 .hc_sub_wrap .hc_page_recently input[id=recently]:checked + label {
   background-color: var(--hc_dark_color);
 }
+.hc_sub_wrap .hc_page_wishlist input[id=recently],
 .hc_sub_wrap .hc_page_recently input[id=recently] {
   display: none;
 }
@@ -474,7 +478,7 @@ header #hc_head_mypage {
   padding-bottom: 10px;
 }
 .hc_sub_wrap .hc_page_wishlist .hc_btn_wrap {
-  margin: 0 0 40px;
+  margin: 0 10px 40px 0;
 }
 .hc_sub_wrap .hc_page_wishlist .hc_btn_Regular {
   border: 1px solid var(--hc_color_level2);

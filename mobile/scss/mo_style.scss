@@ -464,6 +464,7 @@ header {
         li:nth-child(5n) {grid-column: auto / span 2; }
     }
     // 최근 본 상품
+    .hc_page_wishlist,
     .hc_page_recently {
         .hc_inline {
             margin-top: 10px;
@@ -490,7 +491,7 @@ header {
             padding-bottom: 10px;
         }
         .hc_btn_wrap {
-            margin: 0 0 40px;
+            margin: 0 10px 40px 0;
         }
         .hc_btn_Regular {
             border: 1px solid var(--hc_color_level2);

@@ -1,0 +1,554 @@
+<!--/include_header(1)/-->
+<script>SMARTSKIN_MAIN_OBJECT.page = 'category';</script>
+
+<!-- container -->
+<div id="container">
+    <!-- contents -->
+    <div id="contents">
+        <!-- main -->
+        <main class="shopbrand">
+			
+            <div class="shopbrandTitleImg">
+                <!--/if_category_title_img_mobile/-->
+                <img src="<!--/category_title_img_mobile/-->" />
+                <!--/end_if/-->
+                <!--/if_category_title_html_mobile/-->
+                <!--/category_title_html_mobile/-->
+                <!--/end_if/-->
+            </div>
+			
+			<!------------------------------- 베스트 상품 영역 끝 ------------------------------->       			
+			<div class="SMS_DA_catebestprd SMS_Product_display">	
+				<!-- 프로모션 상품 진열 상품 -->
+				<!--/if_promotion_product/--> 
+				<div class="SMS_CategoryBest_header"><!--/cate1_name/--> <span>BEST</span></div>
+				<div class="SMS_CategoryBest_wrap">       
+								
+					<div class="swiper-container SMS_CategoryBest">                                     
+						<ul class="smartskinBestCon swiper-wrapper items">
+							<!--/loop_promotion_product(12)/-->
+							<li class="swiper-slide">
+								<div class="container">
+									<dl>
+										<p class="best_text">BEST <b></b></p>
+										
+										<a href="<!--/promotion_product@link/-->&smslay=catebest&smsps=prd&sms_td_cate=catebest" class="SMS_Viewlink SMS_TD_CateBest_Prd"></a>
+										<div class="SMS_base_img">
+											<dt class="thumb"><span class="rank"></span><img src="<!--/promotion_product@mobile_image/-->"></dt>
+											<!--/if_promotion_product@etc/-->
+											<div class="imgStyle"><span class="txt"><!--/promotion_product@etc/--></span></div>
+											<!--/end_if/-->
+										</div>
+										<div class="SMS_base_mask">
+											<div class="SMS_loveWrap">
+												<div class="SMS_love"></div>
+												<a class="SMS_loveLink"></a>
+											</div>
+											<dd class="add_container">
+												<!--/if_promotion_product@color/-->
+												<p class="colorchips">
+													<!--/loop_promotion_product@color/-->
+													<span class="chips <!--/promotion_product@color@name/-->" style="background-color:#<!--/promotion_product@color@code/-->"></span>
+													<!--/end_loop/-->
+												</p>
+												<!--/end_if/-->
+											</dd>
+											<dd class="info_container">
+												<p class="name"><!--/notag/promotion_product@name/--></p>
+												<p class="subname"><!--/notag/promotion_product@subname/--></p>
+											</dd>
+											<!--/if_promotion_product@is_soldout/-->
+												<dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+											<!--/else/-->
+												<dd class="price_container">
+														<!--/if_promotion_product@price_replace/-->
+															<!--/if_promotion_product@price_consumer/-->
+															<p class="priceStrike"><del><!--/promotion_product@price_consumer/--></del></p>
+															<!--/end_if/-->
+														<p class="price"><!--/promotion_product@price_replace/--></p>
+														<!--/else/-->
+															<!--/if_promotion_product@price_discount/-->
+															<p class="dcPercent"></p>
+															<p class="priceStrike"><del><!--/number/promotion_product@price_sell/-->원</del></p>
+															<p class="price">
+																<!--/if_promotion_product@discount_apply_type(mobile)/-->
+																<span class="price_mobile"></span>
+																<!--/end_if/-->
+															<!--/number/promotion_product@price_discount/-->원
+															</p>
+															<!--/else/-->
+															
+															<!-- 추가부분 -->
+																<!--/if_promotion_product@price_consumer(+1)/-->
+																	<p class="priceStrike"><del><!--/number/promotion_product@price_consumer/-->원</del></p>
+																<!--/end_if/-->
+															<!-- 추가부분 --> 
+															
+															<p class="price"><!--/number/promotion_product@price_sell/-->원</p>
+															<!--/end_if/-->
+														<!--/end_if/-->
+												</dd>
+
+ 
+												<!--/if_promotion_product@is_term_discount/-->
+													<dd class="smartskinListProductDateDiscount" style="display: none;">
+													( 기간할인: <b><!--/promotion_product@discount_remain_term/--></b>)
+													</dd>
+												<!--/end_if/-->
+											<!--/end_if/-->
+											<!--/if_promotion_product@review_count(+1)/-->
+											<dd class="review_count">리뷰: <span><!--/promotion_product@review_count/--></span></dd>
+											<!--/end_if/-->
+											<!--/if_promotion_product@order_stock(+1)/-->
+											<dd class="sold_count">구매: <span><!--/promotion_product@order_stock/--></span></dd>
+											<!--/end_if/-->
+											<dd class="icons"><!--/promotion_product@mobile_icons/--></dd>
+										</div>
+									</dl>
+
+								</div>
+							</li>
+							<!--/end_loop/-->                                         
+						</ul>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Arrows -->
+						<div class="SMS_swiper_buttonNext"></div>
+						<div class="SMS_swiper_buttonPrev"></div>
+					</div>
+					
+				</div>
+				<!--/else/-->
+				
+				
+				
+				<!-- 추천 상품 진열 상품 -->
+				<!--/if_recmd_product/--> 
+				<div class="SMS_CategoryBest_header"><!--/cate1_name/--> <span>BEST</span></div>
+				<div class="SMS_CategoryBest_wrap">     
+					
+					<div class="swiper-container SMS_CategoryBest">                                     
+						<ul class="smartskinBestCon swiper-wrapper items">           
+							<!--/loop_recmd_product(12)/-->
+							<li class="swiper-slide">
+								<div class="container">
+									<dl>
+										<p class="best_text">BEST <b></b></p>
+
+										<a href="<!--/recmd_product@link/-->&smslay=catebest&smsps=prd&sms_td_cate=catebest" class="SMS_Viewlink SMS_TD_CateBest_Prd"></a>
+										<div class="SMS_base_img">
+											<dt class="thumb"><span class="rank"></span><img src="<!--/recmd_product@mobile_image/-->"></dt>
+											<!--/if_recmd_product@etc/-->
+											<div class="imgStyle"><span class="txt"><!--/recmd_product@etc/--></span></div>
+											<!--/end_if/-->
+										</div>
+										<div class="SMS_base_mask">
+											<div class="SMS_loveWrap">
+												<div class="SMS_love"></div>
+												<a class="SMS_loveLink"></a>
+											</div>
+											<dd class="add_container">
+												<!--/if_recmd_product@color/-->
+												<p class="colorchips">
+													<!--/loop_recmd_product@color/-->
+													<span class="chips <!--/recmd_product@color@name/-->" style="background-color:#<!--/recmd_product@color@code/-->"></span>
+													<!--/end_loop/-->
+												</p>
+												<!--/end_if/-->
+											</dd>
+											<dd class="info_container">
+												<p class="name"><!--/notag/recmd_product@name/--></p>
+												<p class="subname"><!--/notag/recmd_product@subname/--></p>
+											</dd>
+											<!--/if_recmd_product@is_soldout/-->
+												<dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+											<!--/else/-->
+												<dd class="price_container">
+													<!--/if_recmd_product@price_replace/-->
+														<!--/if_recmd_product@price_consumer/-->
+														<p class="priceStrike"><del><!--/recmd_product@price_consumer/--></del></p>
+														<!--/end_if/-->
+													<p class="price"><!--/recmd_product@price_replace/--></p>
+													<!--/else/-->
+														<!--/if_recmd_product@price_discount/-->
+														<p class="dcPercent"></p>
+														<p class="priceStrike"><del><!--/number/recmd_product@price_sell/-->원</del></p>
+														<p class="price">
+															<!--/if_recmd_product@discount_apply_type(mobile)/-->
+															<span class="price_mobile"></span>
+															<!--/end_if/-->
+														<!--/number/recmd_product@price_discount/-->원
+														</p>
+														<!--/else/-->
+														
+														<!-- 추가부분 -->
+															<!--/if_recmd_product@price_consumer(+1)/-->
+																<p class="priceStrike"><del><!--/number/recmd_product@price_consumer/-->원</del></p>
+															<!--/end_if/-->
+														<!-- 추가부분 --> 
+														
+														<p class="price"><!--/number/recmd_product@price_sell/-->원</p>
+														<!--/end_if/-->
+													<!--/end_if/-->
+												</dd>
+
+
+												<!--/if_recmd_product@is_term_discount/-->
+													<dd class="smartskinListProductDateDiscount" style="display: none;">
+													( 기간할인: <b><!--/recmd_product@discount_remain_term/--></b>)
+													</dd>
+												<!--/end_if/-->
+											<!--/end_if/-->
+											<!--/if_recmd_product@review_count(+1)/-->
+											<dd class="review_count">리뷰: <span><!--/recmd_product@review_count/--></span></dd>
+											<!--/end_if/-->
+											<!--/if_recmd_product@order_stock(+1)/-->
+											<dd class="sold_count">구매: <span><!--/recmd_product@order_stock/--></span></dd>
+											<!--/end_if/-->
+											<dd class="icons"><!--/recmd_product@mobile_icons/--></dd>
+										</div>
+									</dl>
+								</div>
+							</li>
+							<!--/end_loop/-->
+						</ul>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Arrows -->
+						<div class="SMS_swiper_buttonNext"></div>
+						<div class="SMS_swiper_buttonPrev"></div>
+					</div>
+					
+				</div>
+			    <!--/else/-->
+				
+				
+				<!-- 베스트 상품 진열 상품 -->
+				<!--/if_block_best_product/--> 
+				<div class="SMS_CategoryBest_header"><!--/cate1_name/--> <span>BEST</span></div>
+				<div class="SMS_CategoryBest_wrap">                  
+					<div class="swiper-container SMS_CategoryBest">                                     
+						<ul class="smartskinBestCon swiper-wrapper items">           
+							<!--/loop_best_product(12)/-->
+							<li class="swiper-slide">
+								<div class="container">
+									<dl>
+										<p class="best_text">BEST <b></b></p>
+										
+										<a href="<!--/best_product@link/-->&smslay=catebest&smsps=prd&sms_td_cate=catebest" class="SMS_Viewlink SMS_TD_CateBest_Prd"></a>
+										<div class="SMS_base_img">
+											<dt class="thumb"><span class="rank"></span><img src="<!--/best_product@mobile_image/-->"></dt>
+											<!--/if_best_product@etc/-->
+											<div class="imgStyle"><span class="txt"><!--/best_product@etc/--></span></div>
+											<!--/end_if/-->
+										</div>
+										<div class="SMS_base_mask">
+											<div class="SMS_loveWrap">
+												<div class="SMS_love"></div>
+												<a class="SMS_loveLink"></a>
+											</div>
+											<dd class="add_container">
+												<!--/if_best_product@color/-->
+												<p class="colorchips">
+													<!--/loop_best_product@color/-->
+													<span class="chips <!--/best_product@color@name/-->" style="background-color:#<!--/best_product@color@code/-->"></span>
+													<!--/end_loop/-->
+												</p>
+												<!--/end_if/-->
+											</dd>
+											<dd class="info_container">
+												<p class="name"><!--/notag/best_product@name/--></p>
+												<p class="subname"><!--/notag/best_product@subname/--></p>
+											</dd>
+											<!--/if_promotion_product@is_soldout/-->
+												<dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+											<!--/else/-->
+												<dd class="price_container">
+													<!--/if_best_product@price_replace/-->
+														<!--/if_best_product@price_consumer/-->
+														<p class="priceStrike"><del><!--/best_product@price_consumer/--></del></p>
+														<!--/end_if/-->
+													<p class="price"><!--/best_product@price_replace/--></p>
+													<!--/else/-->
+														<!--/if_best_product@price_discount/-->
+														<p class="dcPercent"></p>
+														<p class="priceStrike"><del><!--/number/best_product@price_sell/-->원</del></p>
+														<p class="price">
+															<!--/if_best_product@discount_apply_type(mobile)/-->
+															<span class="price_mobile"></span>
+															<!--/end_if/-->
+														<!--/number/best_product@price_discount/-->원
+														</p>
+														<!--/else/-->
+														
+														<!-- 추가부분 -->
+															<!--/if_best_product@price_consumer(+1)/-->
+																<p class="priceStrike"><del><!--/number/best_product@price_consumer/-->원</del></p>
+															<!--/end_if/-->
+														<!-- 추가부분 --> 
+														
+														<p class="price"><!--/number/best_product@price_sell/-->원</p>
+														<!--/end_if/-->
+													<!--/end_if/-->
+												</dd>	
+
+								
+												<!--/if_best_product@is_term_discount/-->
+													<dd class="smartskinListProductDateDiscount" style="display: none;">
+													( 기간할인: <b><!--/best_product@discount_remain_term/--></b>)
+													</dd>
+												<!--/end_if/-->
+											<!--/end_if/-->
+											<!--/if_best_product@review_count(+1)/-->
+											<dd class="review_count">리뷰: <span><!--/best_product@review_count/--></span></dd>
+											<!--/end_if/-->
+											<!--/if_best_product@order_stock(+1)/-->
+											<dd class="sold_count">구매: <span><!--/best_product@order_stock/--></span></dd>
+											<!--/end_if/-->
+											<dd class="icons"><!--/best_product@mobile_icons/--></dd>
+										</div>
+									</dl>
+								</div>
+							</li>
+							<!--/end_loop/-->
+						</ul>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Arrows -->
+						<div class="SMS_swiper_buttonNext"></div>
+						<div class="SMS_swiper_buttonPrev"></div>
+					</div>
+				</div>
+				<!--/end_if/-->			
+				<!--/end_if/-->  	
+			<!--/end_if/-->  
+			</div> 
+			<!------------------------------- //베스트 상품 영역 끝 ------------------------------->
+			
+			
+			<h2 class="shopbrandTitle"><a href="<!--/link_cate1/-->"><!--/cate1_name/--></a></h2>
+			
+			<!--/if_category/-->
+				<div class="SMS_Category_list">
+					<div class="CateInHeader" style="display:none;">상품분류 리스트</div>
+					<div class="CateInBody">
+						<ul>
+						<!--/loop_category/-->
+							<li><a href="<!--/category@link/-->"><!--/category@name/--><!--/if_category@brand_cnt/--><span class="count">(<!--/category@brand_cnt/-->)</span><!--/end_if/--></a></li>
+						<!--/end_loop/-->
+						</ul>
+					</div>
+				</div>
+			<!--/else/-->
+				<div class="SMS_Category_list">
+					<div class="CateInHeader" style="display:none;">상품분류 리스트</div>
+					<div class="CateInBody">
+						<ul>
+						<!--/loop_same_level_category/-->
+							<li><a href="<!--/same_level_category@link/-->" class="<!--/if_same_level_category@is_sel/-->sel<!--/end_if/-->"><!--/same_level_category@name/--><!--/if_same_level_category@brand_cnt/--><span class="count">(<!--/same_level_category@brand_cnt/-->)</span><!--/end_if/--></a></li>
+						<!--/end_loop/-->
+						</ul>
+					</div>
+				</div>
+			<!--/end_if/--> 
+
+            
+			<div id="SMS_list_array">
+				<div class="list_array">
+					<div class="list_arrayLeft">
+						<!-- 정렬 --> <!--/select_sort/-->
+					</div>
+					<div class="SMSprdSortWrap">
+						<ul>
+							<li data-sort="1col"></li>
+							<li data-sort="2col" class="on"></li>
+							<li data-sort="3col"></li>
+							<!--<li data-sort="4col"></li>-->
+						</ul>
+					</div>
+					
+					<div class="list_arrayRight" style="display: none;">
+						<!--/if_now_product_list_viewtype(list)/-->
+						<a href="#" onclick="changeviewtype('list');return false;"><img src="/images/d3/m_04/btn_horizontal_on@2x.png" alt="리스트 형"/></a>
+						<a href="#" onclick="changeviewtype('gallery');return false;"><img src="/images/d3/m_04/btn_vertical_off@2x.png" alt="갤러리 형"/></a>
+						<!--/else_if_now_product_list_viewtype(gallery)/-->
+						<a href="#" onclick="changeviewtype('list');return false;"><img src="/images/d3/m_04/btn_horizontal_off@2x.png" alt="리스트 형"/></a>
+						<a href="#" onclick="changeviewtype('gallery');return false;"><img src="/images/d3/m_04/btn_vertical_on@2x.png" alt="갤러리 형"/></a>
+						<!--/end_if/-->
+					</div>
+					
+				</div>
+            </div>
+			
+            
+			<!-- /////////// 더보기 시작 /////////// -->
+			
+            <!--/block_product/-->
+            <!--/if_product_list/-->
+            <!-- smartskinListPageUIDesign -->            
+            <div class="SMS_Product_display SMSprdSortTarget" data-sort="2col">
+                <ul data-type="gallery" data-open="on" class="items SMSitems">
+                    <!--/loop_product_list(250)/-->
+                    <li>
+                        <div class="container">
+							<dl>
+								<!--  이미지 모듈체크 -->
+								<div class="img_list" style="display:none">
+									<p class="img_mobile" data-src="<!--/product_list@mobile_image/-->"></p>
+									<p class="img_l" data-src="<!--/product_list@image_l/-->"></p>
+									<p class="img_m" data-src="<!--/product_list@image_m/-->"></p>
+									<p class="img_s" data-src="<!--/product_list@image_s/-->"></p>
+								</div>
+								<a href="<!--/product_list@link/-->&smslay=category&smsps=prd" class="SMS_Viewlink"></a>
+								<div class="SMS_base_img">                                       
+									<dt class="thumb">                                            
+										<img src="<!--/product_list@mobile_image/-->" class="img SMSthumb" alt="" />                                                
+									</dt>
+									<!--/if_product_list@etc/-->
+									<div class="imgStyle"><span class="txt"><!--/product_list@etc/--></span></div>
+									<!--/end_if/-->
+								 </div>
+								 
+								<div class="SMS_base_mask">                                                                        
+									<div class="SMS_loveWrap">
+										<div class="SMS_love"></div>
+										<a class="SMS_loveLink"></a>
+									</div>
+									<dd class="add_container">
+										<!--/if_product_list@reserve_price(+1)/-->
+										<p class="reserve">
+											<!--/if_product_list@used_mobile_reserve/-->
+											<span class="reserve_mobile"></span>
+											<!--/end_if/-->
+										<!--/number/product_list@reserve_price/-->원 적립</p>
+										<!--/end_if/-->
+										
+										<!--/if_product_list@point_price(+1)/-->
+										<p class="point"><!--/number/product_list@point_price/--><!--/product_list@point_unit/--> 적립</p>
+										<!--/end_if/-->
+										
+										<!--/if_product_list@color/-->
+										<p class="colorchips">
+											<!--/loop_product_list@color/-->
+											<span class="chips <!--/product_list@color@name/-->" style="background-color:#<!--/product_list@color@code/-->"></span>
+											<!--/end_loop/-->
+										</p>
+										<!--/end_if/-->
+									</dd>
+									<dd class="info_container">
+										<p class="name"><!--/product_list@name/--></p>
+										<p class="subname"><!--/product_list@subname/--></p>                                        
+									</dd>
+									<!--/if_product_list@is_soldout/-->
+<!--/if_product_list@is_short_soldout/-->
+<dd class="soldout_container"><p class="soldout">(예약주문)</p></dd>
+<!--/else/-->
+<dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+<!--/end_if/-->
+<!--/else/-->
+									<dd class="price_container">
+										<!--/if_product_list@price_replace/-->
+											<!--/if_product_list@price_consumer/-->
+											<p class="priceStrike"><del><!--/product_list@price_consumer/--></del></p>
+											<!--/end_if/-->
+										<p class="price"><!--/product_list@price_replace/--></p>
+										<!--/else/-->											
+                                                                                         <!--/if_product_list@price_discount/-->
+											<p class="dcPercent"></p>
+											<p class="priceStrike"><del><!--/number/product_list@price_sell/-->원</del></p>
+											<p class="price">
+												<!--/if_product_list@discount_apply_type(mobile)/-->
+												<span class="price_mobile"></span>
+												<!--/end_if/-->
+											<!--/number/product_list@price_discount/-->원
+											</p>
+											<!--/else/-->											
+								
+			                                                                  <!-- 추가부분 -->
+												<!--/if_product_list@price_consumer(+1)/-->
+													<p class="priceStrike"><del><!--/number/product_list@price_consumer/-->원</del></p>
+												<!--/end_if/-->
+											<!-- 추가부분 -->
+											
+											<p class="price"><!--/number/product_list@price_sell/-->원</p>
+											<!--/end_if/-->
+										<!--/end_if/-->
+									</dd>	
+
+                                                                                                <div class="price_container"><!--/product_list@icons/--></div>
+									
+									<!--/end_if/-->
+									
+									<!--/if_product_list@discount_percent/-->
+									<div class="dcPercent"><!--/product_list@discount_percent/-->%</div>
+									<!--/end_if/-->
+									
+
+
+									<!--/if_product_list@review_count(+1)/-->
+									<dd class="review_count">리뷰: <span><!--/product_list@review_count/--></span></dd>
+									<!--/end_if/-->
+									<!--/if_product_list@order_stock(+1)/-->
+									<dd class="sold_count">구매: <span><!--/product_list@order_stock/--></span></dd>
+									<!--/end_if/-->
+									<dd class="icons"><!--/product_list@mobile_icons/--></dd>
+									<!--/if_product_list@is_term_discount/-->
+									<dd class="startDate">
+										<!--/product_list@discount_date_start/-->
+									</dd>
+									<dd class="endDate">
+										<!--/product_list@discount_date_end/-->
+									</dd>
+									<!--/end_if/-->
+									<!-- <dd class="SMS_pm_link">
+										More Details
+									</dd> -->
+								</div>
+							</dl>
+                        </div>
+                    </li>              
+                    <!--/end_loop/-->
+                </ul>
+            </div>
+     
+            <!--/else/-->
+            <div class="none-data">
+                <i class="fa fa-exclamation-triangle fa-2x"></i>
+                <p>상품 준비중 입니다.</p>
+            </div>
+            <!--/end_if/-->
+        <!--/end_block/-->
+		
+		<!--/block_product_more/-->
+		<div class="SMS_moreBtn">
+			<a href="<!--/link_more_product_list/-->">MORE VIEW(<span class="special_product_current"><!--/block_current_page_cnt/--><!--/end_block/--></span>/<span class="product_total"><!--/block_total_page_cnt/--><!--/end_block/--></span>)</a>
+		</div>
+		<!--/end_block/-->
+		
+		<!-- /////////// 더보기 끝 /////////// -->
+            
+        </main>
+        <!-- //main -->
+    </div>
+    <!-- //contents -->
+</div>
+<!-- //container -->
+
+
+
+<!-- 스마트스킨 코드 시작 :: 지우지 마세요 -->
+<script> 
+try{var td_xcode=SMS_TD_util.x_code("<!--/link_cate1/-->");var td_mcode=SMS_TD_util.m_code("<!--/link_cate2/-->");var td_scode=SMS_TD_util.s_code("<!--/link_cate3/-->");var SMS_TD_cate={list_cate:{now_cate:"<!--/now_cate_name/-->",cate1:{name:"<!--/cate1_name/-->",code:td_xcode},cate2:{name:"<!--/cate2_name/-->",code:td_mcode},cate3:{name:"<!--/cate3_name/-->",code:td_scode}}};SMS_TD_DataObj.SMS_TD_pagelist.SMS_TD_cate=SMS_TD_cate;var SMS_data_parm="c_xno="+td_xcode+"&c_mno="+td_mcode+"&c_sno="+td_scode;SMS_TD_util.init(SMS_data_parm)}catch(e){}
+</script>
+<!-- 스마트스킨 코드 끝 :: 지우지 마세요 -->
+
+
+
+
+<!--/include_footer(1)/-->
+
+<!-- snap common start contact mail : support@snapvi.co.kr -->
+<div id='spm_page_type' style='display:none'>sq_product_list_page</div>
+<script async type="text/javascript" src="//cdn.snapfit.co.kr/js/spm_f_common.js" charset="utf-8"></script>
+<div id="spm_banner_main"></div>
+<!-- snap common end -->
