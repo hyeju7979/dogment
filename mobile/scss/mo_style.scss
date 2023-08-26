@@ -557,3 +557,92 @@ header {
         gap: 4px;
     }
 } 
+
+// ABOUT US
+// COMPANY
+.hc_about_wrap {
+    .hc_title_barrel {
+        margin-top: 40px;
+        h3,h4,h5 {
+            font-weight: var(--hc_light);
+        }
+    }
+    .hc_page_contents {
+        padding: 0 10px 80px;
+        p {
+            margin-top: 40px;
+        }
+        strong {
+            display: block;
+            margin-top: 40px;
+        }
+    }
+}
+// POLICY
+.hc_policy_wrap {
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+      }
+      .tabs {
+        overflow: hidden;
+      }
+      .tab {
+        width: 100%;
+        color: white;
+        overflow: hidden;
+        &-label {
+          display: flex;
+          justify-content: space-between;
+          padding: 1em;
+          background: BLUE;
+          font-weight: bold;
+          cursor: pointer;
+          /* Icon */
+          &:hover {
+            background: palevioletred;
+          }
+          &::after {
+            content: "\276F";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all .35s;
+          }
+        }
+        &-content {
+          max-height: 0;
+          padding: 0 1em;
+          color: palegreen;
+          background: white;
+          transition: all .35s;
+        }
+        &-close {
+          display: flex;
+          justify-content: flex-end;
+          padding: 1em;
+          font-size: 0.75em;
+          background: powderblue;
+          cursor: pointer;
+          &:hover {
+            background: peru;
+          }
+        }
+      }
+      
+      // :checked
+      input:checked {
+        + .tab-label {
+          background: green;
+          &::after {
+            transform: rotate(90deg);
+          }
+        }
+        ~ .tab-content {
+          max-height: 100vh;
+          padding: 1em;
+        }
+      }
+      
+}

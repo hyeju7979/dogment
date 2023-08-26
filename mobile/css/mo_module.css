@@ -8,15 +8,15 @@ h2 {
 }
 
 h3 {
-  font-size: var(--hc_tit_content); /* 제목      : 28px      */
+  font-size: var(--hc_bd_xlarge); /* 제목      : 28px → 18     */
 }
 
 h4 {
-  font-size: var(--hc_tit_headline); /* 머리말    : 26px      */
+  font-size: var(--hc_bd_medium); /* 머리말    : 26px → 14     */
 }
 
 h5 {
-  font-size: var(--hc_bd_small); /* 부 머리말 : 24px      */
+  font-size: var(--hc_bd_small); /* 부 머리말 : 24px → 12     */
 }
 
 h6 {

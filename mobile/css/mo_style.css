@@ -540,4 +540,82 @@ header #hc_head_mypage {
   gap: 4px;
 }
 
+.hc_about_wrap .hc_title_barrel {
+  margin-top: 40px;
+}
+.hc_about_wrap .hc_title_barrel h3, .hc_about_wrap .hc_title_barrel h4, .hc_about_wrap .hc_title_barrel h5 {
+  font-weight: var(--hc_light);
+}
+.hc_about_wrap .hc_page_contents {
+  padding: 0 10px 80px;
+}
+.hc_about_wrap .hc_page_contents p {
+  margin-top: 40px;
+}
+.hc_about_wrap .hc_page_contents strong {
+  display: block;
+  margin-top: 40px;
+}
+
+.hc_policy_wrap input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.hc_policy_wrap .tabs {
+  overflow: hidden;
+}
+.hc_policy_wrap .tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.hc_policy_wrap .tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: BLUE;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.hc_policy_wrap .tab-label:hover {
+  background: palevioletred;
+}
+.hc_policy_wrap .tab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.hc_policy_wrap .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: palegreen;
+  background: white;
+  transition: all 0.35s;
+}
+.hc_policy_wrap .tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: powderblue;
+  cursor: pointer;
+}
+.hc_policy_wrap .tab-close:hover {
+  background: peru;
+}
+.hc_policy_wrap input:checked + .tab-label {
+  background: green;
+}
+.hc_policy_wrap input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.hc_policy_wrap input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
 /*# sourceMappingURL=mo_style.css.map */
