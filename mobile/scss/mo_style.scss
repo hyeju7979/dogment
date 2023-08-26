@@ -504,3 +504,56 @@ header {
     }
 }
 
+// 매장
+.hc_store_wrap {
+    #storeInfo {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    h5 {
+        margin: 40px 0 20px;
+        font-size: var(--hc_bd_large);
+        font-weight: var(--hc_regular);
+    }
+    #storeInfo ul {
+        margin-bottom: 30px;
+    }
+    li {
+        display: inline-block;
+        font-size: var(--hc_bd_small);
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+    }
+    li:nth-child(odd):after {
+        content: "";
+        display: inline-block;
+        margin: 0 6px 0 10px;
+        position: relative;
+        top: 0;
+        width: 1px;
+        height: 10px;
+        background-color: var(--hc_dark_color);
+    }
+    li[data-id="hcStoreWrap35"]::before { 
+        content: "";
+        display: inline-block;
+        margin: 0 6px 0 10px;
+        position: relative;
+        top: 0;
+        width: 1px;
+        height: 10px;
+        background-color: var(--hc_dark_color);
+    }
+    li[data-id="hcStoreWrap35"]::after {
+        display: none;
+    }
+    .info {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px;
+        border-top: 1px solid var(--hc_dark_color);
+    }
+    .hc_inline {
+        gap: 4px;
+    }
+} 
