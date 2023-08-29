@@ -1,0 +1,275 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+	<!--/include_header(1)/-->
+	<div id="hc_commonWrap" class="hc_wrap_mypage">
+		<!-- 컨텐츠 영역 -->
+		<div id="hc_contentWrap">
+			<nav class="hc_mypage_nav">
+				<!--/include_menu(2)/-->
+			</nav>
+			<main class="hc_page_smartcoupon">
+				<!-- 페이지 타이틀 -->
+                <h2 class="hc_tit_page">MY COUPON</h2>
+				
+                <div class="hc_mypage_registercoupon">
+                    <!-- 쿠폰 인증번호 등록하기 -->
+					<!--/form_coupon/-->
+					<h3 class="hc_tit_headline">쿠폰 인증번호 등록하기</h3>
+					<ul class="hc_clarification">
+						<li>· 피그먼트의 상품권 및 보너스 쿠폰 번호를 입력하세요.</li>
+						<li>· 오프라인, 이메일, 모바일을 통해 발급받으신 쿠폰 인증번호를 입력해 주시면 발급 가능합니다.</li>
+						<li>· 쿠폰의 발급 기간 / 마일리지 적립 기간을 꼭 확인해 주세요.</li>
+					</ul>
+					<div>
+						<!--/input_coupon_number/-->
+						<a class="hc_btn_small_fill" href="<!--/link_coupon_insert/-->">등록</a>
+					</div>
+                    <!--/end_form/-->
+
+					<div class="smartcoupon">
+                        <input id="holding" type="radio" name="coupon_item" checked>
+                        <label class="coupon_item" for="holding">보유 쿠폰 <strong class="hc_blind">(<!--/block_coupon_count/--><!--/number/coupon_count/--><!--/end_block/-->)</strong></label>
+                      
+                        <input id="available" type="radio" name="coupon_item">
+                        <label class="coupon_item" for="available">다운로드 가능 쿠폰 <strong class="hc_blind">(<!--/block_offer_coupon_count/--><!--/number/offer_coupon_count/--><!--/end_block/-->)</strong></label>
+						
+						<!-- 보유 쿠폰 리스트 -->
+						<!--/block_coupon/-->
+                        <div class="coupon_content" id="holding_content">							
+                            <table class="hc_table_typeb hc_interval1 hc_bottomside">
+								<caption>표제목</caption>
+								<colgroup>
+									<col width="10%">
+									<col width="20%">
+									<col width="auto">
+									<col width="15%">
+									<col width="20%">
+									<col width="15%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">쿠폰번호</th>
+										<th scope="col">쿠폰명</th>
+										<th scope="col">적용품목</th>
+										<th scope="col">사용가능금액</th>
+										<th scope="col">할인액(%)/적립액(%)</th>
+										<th scope="col">사용기간</th>
+									</tr>
+								</thead>
+								<tbody>
+								<!--/if_coupon/-->
+									<!--/loop_coupon(5)/-->
+									<tr>
+										<td><!--/coupon@number/--></td>
+										<td>
+											<!--/if_coupon@is_mobile_use/--><img src="/images/d3/m_01/icon/icon_phone_write@2x.gif" /><!--/end_if/-->
+											<!--/if_coupon@is_app_use/--><img src="/images/d3/m_01/icon/icon_app_write@2x.gif" /> <!--/end_if/-->
+											<!--/coupon@name/-->
+										</td>
+										<td><!--/coupon@item/--></td>
+										<td><!--/coupon@valid_price/--></td>
+										<td><!--/coupon@sale/--></td>
+										<td><!--/date(%Y.%M.%D)/coupon@use_start_date/--> ~ <!--/date(%Y.%M.%D)/coupon@use_end_date/--></td>
+									</tr>
+									<!--/end_loop/-->
+								<!--/else/-->
+								<tr>
+									<td colspan="6"><div class="hc_no_date">쿠폰 내역이 없습니다.</div></td>
+								</tr>
+								<!--/end_if/-->
+								</tbody>
+							</table>
+							
+							<!-- 페이징 -->
+							<div class="paging">
+								<!--/if_pager_coupon::first/-->
+								<a href="<!--/pager_coupon::first@link/-->" class="first">
+									<span class="hc_all_prev">
+										<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+											<g clip-path="url(#clip0_934_3487)">
+											<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+											</g>
+											<defs>
+											<clipPath id="clip0_934_3487">
+											<rect width="20" height="20" fill="white"/>
+											</clipPath>
+											</defs>
+										</svg>
+									</span>
+								</a>
+								<!--/end_if/-->
+								
+								<!--/if_pager_coupon::prev/-->
+								<a class="prev hc_prev" href="<!--/pager_coupon::prev@link/-->">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+									</svg>
+								</a>
+								<!--/end_if/-->
+								
+								<!--/if_pager_coupon/-->
+								<!--/loop_pager_coupon::page/-->
+									<!--/if_pager_coupon::page@current/-->
+									<a class="now" href="<!--/pager_coupon::page@link/-->"><!--/pager_coupon::page/--></a>
+									<!--/else/-->
+									<a href="<!--/pager_coupon::page@link/-->"><!--/pager_coupon::page/--></a>
+									<!--/end_if/-->
+								<!--/end_loop/-->
+								<!--/end_if/-->
+								
+								<!--/if_pager_coupon::next/-->
+								<a class="next hc_next" href="<!--/pager_coupon::next@link/-->">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+									</svg>
+								</a>
+								<!--/end_if/-->
+								
+								<!--/if_pager_coupon::last/-->
+								<a class="last" href="<!--/pager_coupon::last@link/-->">
+									<span class="hc_all_next">
+										<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+											<g clip-path="url(#clip0_934_3487)">
+											<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+											</g>
+											<defs>
+											<clipPath id="clip0_934_3487">
+											<rect width="20" height="20" fill="white"/>
+											</clipPath>
+											</defs>
+										</svg>
+									</span>
+								</a>
+								<!--/end_if/-->
+							</div>
+                        </div>
+						<!--/end_block/-->
+						
+						<!-- 다운로드 가능 쿠폰 -->
+						<!--/block_offer_coupon/-->
+                        <div class="coupon_content" id="available_content">							
+                            <table class="hc_table_typeb hc_interval1 hc_bottomside">
+								<caption>다운로드 가능 쿠폰</caption>
+								<colgroup>
+									<col width="10%">
+									<col width="20%">
+									<col width="auto">
+									<col width="15%">
+									<col width="20%">
+									<col width="15%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">쿠폰번호</th>
+										<th scope="col">쿠폰명</th>
+										<th scope="col">적용품목</th>
+										<th scope="col">사용가능금액</th>
+										<th scope="col">할인액(%)/적립액(%)</th>
+										<th scope="col">사용기간</th>
+									</tr>
+								</thead>
+								<tbody>
+								<!--/if_offer_coupon/-->
+									<!--/loop_offer_coupon(5)/-->
+									<tr>
+										<td><!--/offer_coupon@number/--></td>
+										<td>
+											<!--/if_offer_coupon@is_mobile_use/--><img src="/images/d3/m_01/icon/icon_phone_write@2x.gif" /><!--/end_if/-->
+											<!--/if_offer_coupon@is_app_use/--><img src="/images/d3/m_01/icon/icon_app_write@2x.gif" /> <!--/end_if/-->
+											<!--/offer_coupon@name/-->
+										</td>
+										<td><!--/offer_coupon@item/--></td>
+										<td><!--/offer_coupon@valid_price/--></td>
+										<td><!--/offer_coupon@sale/--></td>
+										<td><!--/date(%Y.%M.%D)/offer_coupon@use_start_date/--> ~ <!--/date(%Y.%M.%D)/offer_coupon@use_end_date/--></td>
+									</tr>
+									<!--/end_loop/-->
+								<!--/else/-->
+								<tr>
+									<td colspan="6"><div class="hc_no_date">쿠폰 내역이 없습니다.</div></td>
+								</tr>
+								<!--/end_if/-->
+								</tbody>
+							</table>
+							
+							<!-- 페이징 -->
+							<div class="paging">
+								<!--/if_pager_offer_coupon::first/-->
+								<a href="<!--/pager_offer_coupon::first@link/-->" class="first">
+									<span class="hc_all_prev">
+										<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+											<g clip-path="url(#clip0_934_3487)">
+											<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+											</g>
+											<defs>
+											<clipPath id="clip0_934_3487">
+											<rect width="20" height="20" fill="white"/>
+											</clipPath>
+											</defs>
+										</svg>
+									</span>
+								</a>
+								<!--/end_if/-->
+								
+								<!--/if_pager_offer_coupon::prev/-->
+								<a class="prev hc_prev" href="<!--/pager_offer_coupon::prev@link/-->">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+									</svg>
+								</a>
+								<!--/end_if/-->
+								
+								<!--/if_pager_offer_coupon/-->
+								<!--/loop_pager_offer_coupon::page/-->
+									<!--/if_pager_offer_coupon::page@current/-->
+									<a class="now" href="<!--/pager_offer_coupon::page@link/-->"><!--/pager_offer_coupon::page/--></a>
+									<!--/else/-->
+									<a href="<!--/pager_offer_coupon::page@link/-->"><!--/pager_offer_coupon::page/--></a>
+									<!--/end_if/-->
+								<!--/end_loop/-->
+								<!--/end_if/-->
+								
+								<!--/if_pager_offer_coupon::next/-->
+								<a class="next hc_next" href="<!--/pager_offer_coupon::next@link/-->">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+									</svg>
+								</a>
+								<!--/end_if/-->
+								
+								<!--/if_pager_offer_coupon::last/-->
+								<a class="last" href="<!--/pager_offer_coupon::last@link/-->">
+									<span class="hc_all_next">
+										<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+											<g clip-path="url(#clip0_934_3487)">
+											<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+											</g>
+											<defs>
+											<clipPath id="clip0_934_3487">
+											<rect width="20" height="20" fill="white"/>
+											</clipPath>
+											</defs>
+										</svg>
+									</span>
+								</a>
+								<!--/end_if/-->
+							</div>
+                        </div>
+						<!--/end_block/-->
+						
+						<div class="hc_addition hc_bottomside">
+							<span class="hc_tinny"></span> 쿠폰 이용 안내
+							<ul class="hc_clarification ">
+								<li>· 쿠폰 인증번호 등록하기에서 쇼핑몰에서 발행한 종이쿠폰/시리얼 쿠폰/모바일 쿠폰 등의 인증번호를 등록하시면 온라인 쿠폰으로 발급되어 사용이 가능합니다.</li>
+								<li>· 쿠폰은 주문 시 1회에 한 해 적용되며, 1회 사용 시 재 사용이 불가능합니다.</li>
+								<li>· 쿠폰은 적용 가능한 상품이 따로 적용되어 있는 경우 해당 상품 구매 시에만 사용이 가능합니다.</li>
+								<li>· 특정한 종이쿠폰/시리얼 쿠폰/모바일 쿠폰의 경우 단 1회만 사용이 가능할 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+                </div>
+			</main>    
+		</div>
+	</div>
+	<!--/include_footer(1)/-->
+</div>

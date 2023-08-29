@@ -1,0 +1,241 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+	<!--/include_header(1)/-->
+	<div id="hc_commonWrap">
+		<!-- 컨텐츠 영역 -->
+		<div id="hc_contentWrap">
+			<main class="hc_wrap_cart">
+				<!-- 페이지 타이틀 -->
+				<h2 class="hc_tit_page">CART</h2>
+				
+				<!--/if_use_subs/-->
+				<div class="carttabWrap">
+					<ul class="cart-tab">
+						<li class="now"><a href="<!--/link_normal_basket/-->">일반구매 (<!--/number/user_normal_basket_count/-->)</a></li>
+						<li><a href="<!--/link_subs_basket/-->">정기배송 (<!--/number/user_subs_basket_count/-->)</a></li>
+					</ul>
+				</div>
+				<!--/end_if/-->	
+				
+				<!-- 장바구니 리스트 -->
+				<h3 class="hc_tit_headline">장바구니</h3>
+				<table summary="번호, 사진, 제품명, 수량, 적립, 가격, 배송비, 취소" class="hc_table_typeb">
+					<caption>장바구니 담긴 상품</caption>
+					<colgroup>
+						<col width="5%" />
+						<col width="15%" />
+						<col width="auto" />
+						<col width="10%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"><!--/checkbox_multi_all/--></th>
+							<th scope="col"></th>
+							<th scope="col">상품명</th>
+							<th scope="col">취소</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td colspan="4">
+							<!--/if_basket/-->
+								<div class="hc_alignR">
+									총 구매금액 : 
+									<!--/block_none_groupsale_total_price_sell/--><!--/number/none_groupsale_total_price_sell/--><!--/end_block/-->원
+									<!--/block_total_vat/--><!--/if_total_vat(+1)/--> + 부가세 <!--/number/total_vat/-->원<!--/end_if/--><!--/end_block/-->
+									<!--/block_total_delivery/--><!--/if_total_delivery/--> + 배송료 <!--/number/total_delivery/-->원<!--/end_if/--><!--/end_block/-->
+									<!--/block_total_delivery_add/--><!--/if_total_delivery_add/--> + 추가배송료 <!--/number/total_delivery_add/-->원 <!--/end_if/--><!--/end_block/-->
+									<!--/block_group_sale_price/--><!--/if_group_sale_price(+1)/--> - 그룹할인 <!--/group_sale_price/-->원<!--/end_if/--><!--/end_block/-->
+									= <strong><!--/block_total_price/--><!--/number/total_price/--><!--/end_block/-->원</strong>
+									<!--/block_total_reserve/--><!--/if_total_reserve/-->(적립금 <!--/number/total_reserve/-->원)<!--/end_if/--><!--/end_block/-->
+								</div>
+							<!--/else/-->
+								<div class="hc_no_date">장바구니에 담긴 상품이 없습니다.</div>
+							<!--/end_if/-->
+							</td>
+						</tr>
+					</tfoot>
+					<tbody>
+					<!--/loop_basket/-->
+						<!--/basket@form/-->
+							<!--/if_idx(1)/-->
+						<tr>
+							<!--/else/-->
+						<tr>
+							<!--/end_if/-->
+							
+							<td><!--/basket@checkbox_multi_basket/--></td>
+							<td><a href="<!--/basket@link/-->"><img src="<!--/basket@image_s/-->" alt="상품 섬네일" title="상품 섬네일" /></a></td>
+							<td>
+								<ul class="hc_alignL hc_interval3">
+									<!-- 상품명 -->
+									<li><a href="<!--/basket@link/-->"><!--/basket@name/--></a></li>
+									<!-- 옵션 -->
+									<li>
+										<span id="<!--/basket@option_container_id/-->">
+										<!--/if_basket@option/-->
+											<!--/basket@option/-->
+										<!--/end_if/-->
+										</span>
+										<!--/if_is_unify_option/-->
+											<!--/if_basket@option/-->
+											<a class="hc_btn_mini_fill" href="<!--/basket@link_option_modify/-->">EDIT</a>
+											<!--/end_if/-->
+										<!--/end_if/-->
+									</li>
+									<!-- 판매금액 -->
+									<li>
+										<!--/basket@block_price_sell/--><!--/number/basket@price_sell/--><!--/end_block/-->원
+									</li>
+									<!-- 포인트 -->
+									<li>
+										<!--/number/basket@reserve/--><!--/basket@point/-->
+									</li>
+									<!-- 수량 -->
+									<li>
+										<a href="<!--/basket@link_realtime_quantity_down/-->"></a>
+										<!--/basket@input_quantity(txt-spin)/-->
+										<a href="<!--/basket@link_realtime_quantity_up/-->"></a>
+									</li>
+									<li>
+										<!--/basket@delivery/--> / 배송방법 : <!--/basket@delivery_type/-->
+									</li>
+								</ul>
+							</td>
+							<td>
+								<div>
+									<a class="hc_btn_mini" href="<!--/basket@link_wish/-->">WISH LIST</a>
+									<a class="hc_btn_mini" href="<!--/basket@link_del/-->">DELETE</a>
+								</div>
+							</td>
+						</tr>
+						<!--/end_form/-->
+					<!--/end_loop/-->
+					</tbody>
+				</table>
+				
+				<!--/if_group_message/-->
+				<div class="mem-lvl">
+					<div class="lvl-img"><!--/if_group_image/--><img src="<!--/group_image/-->" /><!--/end_if/--></div>
+					<p>
+						<!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--><em>[<!--/group_name/-->]</em>회원입니다.<br />
+						<!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+						<!--/group_message/-->
+					</p>
+				</div>
+				<!--/end_if/-->
+				
+				<!--/if_delivery_message/-->
+				<div>
+					<span class="hc_color_point"><span class="hc_tinny"></span> <!--/delivery_message/--></span>
+					
+					<!--/if_cart_free/-->
+						(<!--/block_cart_free_price/--><!--/number/cart_free_price/--><!--/end_block/-->원 이상 구매 시 기본 배송비 무료)
+					<!--/end_if/-->
+				</div>
+				<!--/end_if/-->
+				
+				<!--/if_cart_free/-->
+				<!--/block_cart_free_area/-->
+				<div class="cart-free-wrap">
+					<!--a href="#none" class="btn-list-open">무료배송 추천상품 보기<span class="open"></span></a-->
+					<div class="list-wrap">
+						<!--/block_cart_free/-->
+							<ul>
+								<!--/loop_cart_free_list(4)/-->
+								<li>
+									<dl>
+										<dt><a href="<!--/cart_free_list@link/-->"><img src="<!--/cart_free_list@image_m/-->" alt="" /></a></dt>
+										<dd class="hc_prd_name"><!--/notag/cart_free_list@name/--></dd>
+										<dd class="hc_discount_price"><!--/number/cart_free_list@price_sell/-->원</dd>
+										<dd><a class="hc_btn_mini" href="<!--/cart_free_list@link_preview/-->">상품담기</a></dd>
+									</dl>
+								</li>
+								<!--/end_loop/-->
+							</ul>
+						<!--/end_block/-->
+						
+						<!--/block_cart_free_more/-->    
+							<a class="hc_btn_large_fill" href="<!--/link_more_cart_free_list/-->">더 보기 <span></span></a>
+						<!--/end_block/-->
+					</div>
+				</div>
+				<!--/end_block/-->
+				<!--/end_if/-->
+				
+				<div class="hc_btn_wrap">
+					<!--/if_btn_shoppay/--><!--/btn_shoppay/--><!--/end_if/-->
+					<!--/if_btn_kakaopay/--><!--/btn_kakaopay/--><!--/end_if/-->
+					<!--/if_btn_payco/--><!--/btn_payco/--><!--/end_if/-->
+					<!--/if_btn_nhn/--><!--/btn_nhn/--><!--/end_if/-->
+					<!--/if_btn_app/--><!--/btn_app/--> <!--/end_if/-->
+					<a class="hc_btn_small_fill" href="<!--/link_order/-->">주문하기</a>
+					<a class="hc_btn_small" href="<!--/link_shopping/-->">계속 쇼핑하기</a>
+					<a class="hc_btn_small" href="<!--/link_clear_basket/-->">장바구니 비우기</a>
+					<a class="hc_btn_small" href="<!--/link_multi_del/-->">선택 삭제</a>
+				</div>
+				
+				<!-- 관심 상품 리스트 -->
+				<!--/if_login/-->
+                <h3 class="hc_tit_headline hc_interval1">관심 상품</h3>
+				<table summary="사진, 제품명, 수량, 적립, 재고, 가격, 처리" class="hc_table_typeb">
+					<caption>관심상품</caption>
+					<colgroup>
+						<col width="15%" />
+						<col width="*" />
+						<col width="10%" />
+						<col width="10%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"><div class="tb-center"></div></th>
+							<th scope="col"><div class="tb-center">상품명</div></th>
+							<th scope="col"><div class="tb-center">재고</div></th>
+							<th scope="col"><div class="tb-center">처리</div></th>
+						</tr>
+					</thead>
+					<tbody>
+					<!--/loop_wishlist/-->
+						<!--/wishlist@form/-->
+							<!--/if_idx(1)/-->
+						<tr class="nbg">
+						<!--/else/-->
+						<tr>
+						<!--/end_if/-->
+							<td>
+								<div class="tb-center">
+									<div class="thumb">
+										<a href="<!--/wishlist@link/-->"><img src="<!--/wishlist@image_s/-->" alt="상품 섬네일" title="상품 섬네일" /></a>
+									</div>
+								</div>
+							</td>
+							<td>
+								<ul class="hc_alignL hc_interval3">
+									<!-- 상품명 -->
+									<li><!--/wishlist@name/--></li>
+									<!-- 금액 -->
+									<li><!--/number/wishlist@price_sell/-->원</li>
+									<!-- 적립 -->
+									<li><!--/number/wishlist@reserve_price/--><!--/wishlist@wish_point/--></li>
+									<!-- 수량 -->
+									<li><!--/wishlist@input_quantity(txt-spin)/--></li>
+								</ul>
+							</td>
+							<td><div><!--/wishlist@stock/--></div></td>
+							<td>
+								<div>
+									<a class="hc_btn_mini" href="<!--/wishlist@link_basket/-->">CART</a>
+									<a class="hc_btn_mini" href="<!--/wishlist@link_del/-->">DELETE</a>
+								</div>
+							</td>
+						</tr>
+						<!--/end_form/-->
+					<!--/end_loop/-->
+					</tbody>
+				</table>
+				<!--/end_if/-->
+			</main>    
+		</div>
+	</div>
+	<!--/include_footer(1)/-->
+</div> 	

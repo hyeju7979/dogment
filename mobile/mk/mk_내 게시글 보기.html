@@ -1,0 +1,140 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+	<!--/include_header(1)/-->
+	<div id="hc_commonWrap" class="hc_wrap_mypage">
+		<!-- 컨텐츠 영역 -->
+		<div id="hc_contentWrap">
+			<nav class="hc_mypage_nav">
+				<!--/include_menu(2)/-->
+			</nav>
+			<main class="hc_page_privatelist">
+				<h2 class="hc_tit_page">MY WROTE</h2>
+                <h3 class="hc_tit_headline">내 게시글</h3>
+								
+				<!-- 내가 쓴 게시판 목록 -->
+				<!--/if_my_board/-->
+				<div class="my-board-list">
+					<ul>
+					<!--/loop_my_board/-->
+						<li class="<!--/if_idx(1)/-->first<!--/end_if/-->"><a href="<!--/my_board@board_link/-->"><!--/my_board@board_name/--></a></li>
+					<!--/end_loop/-->
+					</ul>
+				</div>
+				<!--/end_if/-->
+						
+				<!-- 1:1 게시판 목록 -->
+				<table summary="번호, 게시판, 제목, 날짜, hit수" class="hc_table_typeb hc_interval1">
+					<caption>주소록 관리</caption>
+					<colgroup>
+						<col width="10%">
+						<col width="10%">
+						<col width="auto">
+						<col width="10%">
+						
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">게시판</th>
+							<th scope="col">제목</th>
+							<th scope="col">날짜</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+					<!--/if_my_list/-->
+						<!--/loop_my_list/-->
+						<tr>
+							<td><!--/my_list@num/--></td>
+							<td><a href="<!--/my_list@link_board/-->"><!--/my_list@board_name/--></a></td>
+							<td><a href="<!--/my_list@link/-->"><!--/if_my_list@subject/--><!--/my_list@subject/--><!--/else/-->제목없음<!--/end_if/--></a></td>
+							<td><!--/date(%Y.%M.%D)/my_list@date/--></td>
+						</tr>
+						<!--/end_loop/-->
+					<!--/else/-->
+						<tr>
+							<td colspan="4"><div class="hc_no_date">작성된 게시글이 없습니다.</div></td>
+						</tr>
+					<!--/end_if/-->
+					</tbody>
+				</table>
+
+				<!-- 페이징 -->
+				<div class="paging">
+					<!--/if_pager_my_list::first/-->
+					<a href="<!--/pager_my_list::first@link/-->" class="first">
+						<span class="hc_all_prev">
+							<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+								<g clip-path="url(#clip0_934_3487)">
+								<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_934_3487">
+								<rect width="20" height="20" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</span>
+					</a>
+					<!--/end_if/-->
+					
+					<!--/if_pager_my_list::prev/-->
+					<a class="prev hc_prev" href="<!--/pager_my_list::prev@link/-->">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+						</svg>
+					</a>
+					<!--/end_if/-->
+					
+					<!--/if_pager_my_list/-->
+					<!--/loop_pager_my_list::page/-->
+						<!--/if_pager_my_list::page@current/-->
+						<a class="now" href="<!--/pager_my_list::page@link/-->"><!--/pager_my_list::page/--></a>
+						<!--/else/-->
+						<a href="<!--/pager_my_list::page@link/-->"><!--/pager_my_list::page/--></a>
+						<!--/end_if/-->
+					<!--/end_loop/-->
+					<!--/end_if/-->
+					
+					<!--/if_pager_my_list::next/-->
+					<a class="next hc_next" href="<!--/pager_my_list::next@link/-->">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+						</svg>
+					</a>
+					<!--/end_if/-->
+					
+					<!--/if_pager_my_list::last/-->
+					<a class="last" href="<!--/pager_my_list::last@link/-->">
+						<span class="hc_all_next">
+							<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+								<g clip-path="url(#clip0_934_3487)">
+								<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_934_3487">
+								<rect width="20" height="20" fill="white"/>
+								</clipPath>
+								</defs>
+							</svg>
+						</span>
+					</a>
+					<!--/end_if/-->
+				</div>
+				
+				<!-- snap review script start contact mail : support@snapvi.co.kr -->
+				<span name="snapreview_my_page" class="snap_widget" id="17"></span>
+				<!-- snap review end --> 	
+			</main>  
+		</div>
+		
+		<!-- snap review script start contact mail : support@snapvi.co.kr -->
+		<script>
+			function onloadsnapscript () { var snapInstance = new snapSolution("pigment2"); snapInstance.loadScript('review_independent'); }
+		</script>
+		<script async type='text/javascript' src='//sfre-srcs-service.snapfit.co.kr/js/snap_combine_script.js' defer='true' charset='utf-8'
+		onload = 'onloadsnapscript()'></script>
+		<!-- snap review end -->
+	</div>
+	<!--/include_footer(1)/-->
+</div>

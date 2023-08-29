@@ -1,0 +1,128 @@
+/* tooltip 
+// a simple CSS tooltip that has been made by Sass 
+// source: https://github.com/arashmanteghi/tooltip/
+// ducoment: http://arashm.net/lab/tooltip/
+// by @ArashManteghi - http://arashm.net */
+[data-tooltip] {
+  position: relative;
+  display: inline-block;
+}
+
+[data-tooltip]:before, [data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999999;
+}
+
+[data-tooltip]:before {
+  content: '';
+  position: absolute;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+[data-tooltip]:after {
+  height: 22px;
+  padding: 11px 11px 0 11px;
+  font-size: 13px;
+  line-height: 11px;
+  content: attr(data-tooltip);
+  white-space: nowrap;
+}
+
+[data-tooltip].tooltip-position-right:before {
+  border-right-color: var(--hc_dark_color);
+}
+
+[data-tooltip].tooltip-position-right:after {
+  background-color: var(--hc_dark_color);
+  color: #ecf0f1;
+  min-width: 60px;
+}
+
+[data-tooltip]:hover, [data-tooltip]:focus {
+  background-color: transparent;
+}
+
+[data-tooltip]:hover:before, [data-tooltip]:hover:after, [data-tooltip]:focus:before, [data-tooltip]:focus:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/******************************* Position ****************************/
+
+.tooltip-position-right.tooltip-movable:before, .tooltip-position-right.tooltip-movable:after {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+
+.tooltip-position-right:before, .tooltip-position-right:after {
+  bottom: 50%;
+}
+
+.tooltip-position-right:before {
+  margin-bottom: -5px;
+  /*-5px*/
+}
+
+.tooltip-position-right:after {
+  margin-bottom: -14.66667px;
+}
+
+.tooltip-position-right.half-arrow:before {
+  bottom: 16px;
+  border-style: none;
+  border-top: 7px solid transparent;
+}
+
+.tooltip-position-right.tooltip-multiline:before, .tooltip-position-right.tooltip-multiline:after {
+  bottom: -50%;
+}
+
+.tooltip-position-right.tooltip-multiline:before {
+  margin-bottom: 15px;
+}
+
+
+.tooltip-position-right:before, .tooltip-position-right:after {
+  left: 100%;
+}
+
+.tooltip-position-right:before {
+  margin-left: -2px;
+}
+
+.tooltip-position-right:after {
+  margin-left: 10px;
+}
+
+.tooltip-position-right.tooltip-movable:before {
+  margin-left: -10px;
+}
+
+.tooltip-position-right.tooltip-movable:after {
+  margin-left: 2px;
+}
+
+.tooltip-position-right.tooltip-movable:hover:before, .tooltip-position-right.tooltip-movable:hover:after {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+.tooltip-position-right.tooltip-movable.half-arrow:before {
+  margin-left: -5px;
+}
+
+.tooltip-position-right.half-arrow:before {
+  margin-left: 3px;
+  border-right: 7px solid var(--hc_dark_color);
+}

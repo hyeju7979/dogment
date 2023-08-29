@@ -1,0 +1,143 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+	<!--/include_header(1)/-->
+	<div id="hc_commonWrap" class="hc_wrap_mypage">
+		<!-- 컨텐츠 영역 -->
+		<div id="hc_contentWrap">
+			<nav class="hc_mypage_nav">
+				<!--/include_menu(2)/-->
+			</nav>
+			<main class="hc_page_restock">
+				<!-- 페이지 타이틀 -->
+				<h2 class="hc_tit_page">RESTOCK</h2>
+				
+				<!-- 재입고 신청 내역-->
+				<!--/block_soldout_list/-->
+                <div class="hc_mypage_addmanagement">
+                    <h3 class="hc_tit_headline">재입고 신청 내역</h3>
+                    <div class="hc_clarification">
+                        · 재입고 알림 신청은 최대 30개까지 가능합니다.<br />
+                        · 상품 구성, 가격 등은 신청 시점과 차이가 날 수 있으며, 재입고 알림을 받았더라도 구매 시점에 따라 품절이 발생할 수 있습니다.
+                    </div>
+					
+					
+                    <table summary="사진, 상품명, 재입고 알림 신청일, 적립금, 가격, 관리" class="hc_table_typeb hc_interval1">
+                        <caption>재입고 신청 내역   </caption>
+                        <colgroup>
+                            <col width="5%">
+                            <col width="15%">
+                            <col width="auto">
+                            <col width="15%">
+							<col width="15%">
+                        </colgroup>
+						<thead>
+							<tr>
+								<th scope="row"><label><!--/checkbox_all/--></label></th>
+								<th scope="row">사진</th>
+								<th scope="row">상품명/적립금/가격</th>
+								<th scope="row">재입고 알림 신청일</th>
+								<th scope="row">관리</th>
+							</tr>
+                        </thead>
+                        <tbody>
+						<!--/if_soldout_list/-->
+							<!--/loop_soldout_list/-->
+							<tr>
+								<td><!--/soldout_list@checkbox/--></td>
+								<td><a href="<!--/soldout_list@link_product/-->"><img src="<!--/soldout_list@product_img/-->" alt="상품섬네일" /></a></td>
+								<td>
+									<ul class="hc_prd_element">
+										<li class="hc_prd_name"><!--/soldout_list@product_name/--></li>
+										<li class="hc_discount_price"><!--/number/soldout_list@price/--> 원</li>
+										<li><!--/soldout_list@reserve/--><!--/soldout_list@point/--></li>
+										<li><!--/if_soldout_list@opt_value/-->[<!--/soldout_list@opt_value/-->]<!--/end_if/--></li>
+									</ul>
+								</td>
+								<td>
+									<!--/soldout_list@sms_reg_date/--><br />
+									<!--/if_soldout_list@sms_send_date/--><span class="fc-red">[알림발송일 : <!--/soldout_list@sms_send_date/-->]</span><!--/end_if/-->
+								</td>
+								<td><a href="<!--/soldout_list@link_soldout_sel_delete/-->">삭제</a></td>
+							</tr>
+							<!--/end_loop/-->
+						<!--/else/-->
+                            <tr>
+                                <td colspan="5"><div class="hc_no_date">재입고 신청 내역이 없습니다.</div></td>
+                            </tr>
+						<!--/end_if/-->
+                        </tbody>
+                    </table>
+
+                    <!-- 페이징 -->
+                    <div class="paging">
+						<!--/if_pager_soldout_list::first/-->
+						<a href="<!--/pager_soldout_list::first@link/-->" class="first">
+							<span class="hc_all_prev">
+								<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+									<g clip-path="url(#clip0_934_3487)">
+									<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_934_3487">
+									<rect width="20" height="20" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</span>
+						</a>
+						<!--/end_if/-->
+						
+						<!--/if_pager_soldout_list::prev/-->
+						<a class="prev hc_prev" href="<!--/pager_soldout_list::prev@link/-->">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+							</svg>
+						</a>
+						<!--/end_if/-->
+						
+						<!--/if_pager_soldout_list/-->
+						<!--/loop_pager_soldout_list::page/-->
+							<!--/if_pager_soldout_list::page@current/-->
+							<a class="now" href="<!--/pager_soldout_list::page@link/-->"><!--/pager_soldout_list::page/--></a>
+							<!--/else/-->
+							<a href="<!--/pager_soldout_list::page@link/-->"><!--/pager_soldout_list::page/--></a>
+							<!--/end_if/-->
+						<!--/end_loop/-->
+						<!--/end_if/-->
+						
+						<!--/if_pager_soldout_list::next/-->
+						<a class="next hc_next" href="<!--/pager_soldout_list::next@link/-->">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+							</svg>
+						</a>
+						<!--/end_if/-->
+						
+						<!--/if_pager_soldout_list::last/-->
+						<a class="last" href="<!--/pager_soldout_list::last@link/-->">
+							<span class="hc_all_next">
+								<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+									<g clip-path="url(#clip0_934_3487)">
+									<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_934_3487">
+									<rect width="20" height="20" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</span>
+						</a>
+						<!--/end_if/-->
+					</div>
+				<!--/end_block/-->
+				
+					<div class="hc_btn_wrap">
+						<a class="hc_btn_small_fill" href="<!--/link_soldout_delete/-->">선택삭제</a>
+					</div>
+				</div>
+			</main>    
+		</div>
+	</div>
+	<!--/include_footer(1)/-->
+</div>

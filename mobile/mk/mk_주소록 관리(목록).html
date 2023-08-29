@@ -1,0 +1,161 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+	<!--/include_header(1)/-->
+	<div id="hc_commonWrap" class="hc_wrap_mypage">
+		<!-- 컨텐츠 영역 -->
+		<div id="hc_contentWrap">
+			<nav class="hc_mypage_nav">
+				<!--/include_menu(2)/-->
+			</nav>
+			<main class="hc_page_couponpack">
+				<!-- 페이지 타이틀 -->
+                <h2 class="hc_tit_page">ADDRESS</h2>
+				
+				<!-- 주소록 관리 -->
+				<div class="hc_mypage_addmanagement">
+					<h3 class="hc_tit_headline">주소록 관리</h3>
+					<table class="addrbook-list hc_table_typeb">
+						<caption>주소록 관리</caption>
+								
+						<colgroup>
+							<col width="5%">
+							<col width="5%">
+							<col width="auto">
+							<!--/if_addrbook_message_title/--><col width="10%"><!--/end_if/-->
+							<col width="10%">
+						</colgroup>
+						
+						<thead>
+							<th><!--/checkbox_all_addrbook/--></th>
+							<th>이동</th>
+							<th>배송지명/주소/연락처</th>
+							<!-- <th><div class="tb-center">주소</div></th> -->
+							<!-- <th><div class="tb-center">연락처</div></th> -->
+							<!--/if_addrbook_message_title/--><th><!--/addrbook_message_title/--></th><!--/end_if/-->
+							<th>관리</th>
+						</thead>
+						
+						<tbody>
+						<!--/if_addrbook_list/-->
+						<!--/loop_addrbook_list/-->
+							<tr class="ui-sortable">
+								<td>
+									<!--/addrbook_list@checkbox/-->
+								</td>
+								<td>
+									<a href="#self" class="moving-grap"><img src="http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_move.svg" alt="" /></a>
+								</td>
+								<td>
+									<div>
+										<!--/if_addrbook_list@is_standard/--><span class="basic">기본 배송지</span><br><!--/end_if/-->
+										<!--/if_addrbook_list@title/-->[<!--/addrbook_list@title/-->] <!--/end_if/--><!--/addrbook_list@receiver/-->
+									</div>
+									<div><!--/addrbook_list@addr1/--> <!--/addrbook_list@addr2/--></div>
+									<div>
+										<!--/if_addrbook_list@tel/--><div><!--/addrbook_list@tel/--></div><!--/end_if/-->
+										<!--/if_addrbook_list@mobile/--><div><!--/addrbook_list@mobile/--></div><!--/end_if/-->
+									</div>
+								</td>
+								<!--/if_addrbook_message_title/-->
+								<td>
+									<!--/if_addrbook_list@user_message/--><p class="memo"><!--/addrbook_list@user_message/--></p><!--/end_if/-->
+									<!--/if_addrbook_list@delivery_message/--><p class="memo"><!--/addrbook_list@delivery_message/--></p><!--/end_if/-->
+								</td>
+								<!--/end_if/-->
+								<td>
+									<!--/if_addrbook_list@link_modify/--><a class="hc_btn_mini" href="<!--/addrbook_list@link_modify/-->">수정</a><!--/end_if/-->
+									<!--/if_addrbook_list@link_delete/--><a class="hc_btn_mini" href="<!--/addrbook_list@link_delete/-->">삭제</a><!--/end_if/-->
+								</td>
+							</tr>
+							<!--/end_loop/-->
+							<!--/else/-->
+							<tr>
+								<td colspan="<!--/if_addrbook_message_title/-->5<!--/else/-->4<!--/end_if/-->">
+									<div class="hc_no_date">
+										자주 사용하는 배송지를 주소록에 추가해주세요.
+									</div>
+								</td>
+							</tr>
+							<!--/end_if/-->
+						</tbody>
+					</table>
+					<div class="hc_btn_wrap">
+						<!--/if_link_new_addrbook/--><a class="hc_btn_small_fill" href="<!--/link_new_addrbook/-->">배송지 추가</a><!--/end_if/-->
+						<!--/if_link_sort_addrbook/--><a class="hc_btn_small" href="<!--/link_sort_addrbook/-->">순서 저장</a><!--/end_if/-->
+						<!--/if_link_multi_delete_addrbook/--><a class="hc_btn_small" href="<!--/link_multi_delete_addrbook/-->">선택 삭제</a><!--/end_if/-->
+					</div>
+				</div>
+				
+				<!-- 최근 배송지 -->
+				<div class="hc_mypage_lastaddress">
+					<h3 class="hc_tit_headline">최근 배송지</h3>
+					<table class="past-list hc_table_typeb">
+						<caption>최근 배송지</caption>
+						
+						<colgroup>
+							<col width="10%" /> 체크
+							<col width="auto" />받는 사람/주소/연락처
+							<col width="10%" />관리
+						</colgroup>
+						
+						<thead>
+							<th><div class="tb-center"><!--/checkbox_all_past/--></div></th>
+							<th><div class="tb-center">받는 사람/주소/연락처</div></th>
+							<th><div class="tb-center">관리</div></th>
+						</thead>
+						
+						<tbody>
+							<!--/if_past_list/-->
+							<!--/loop_past_list/-->
+							<tr>
+								<td><!--/past_list@checkbox/--></td>
+								<td>
+									<div><!--/past_list@receiver/--></div>
+									<div><!--/past_list@addr1/--> <!--/past_list@addr2/--></div>
+									<div>
+										<!--/if_past_list@tel/--><div><!--/past_list@tel/--></div><!--/end_if/-->
+										<!--/if_past_list@mobile/--><div><!--/past_list@mobile/--></div><!--/end_if/-->
+									</div>
+								</td>
+								<td>
+									<!--/if_past_list@link_go_addrbook/--><a class="hc_btn_mini" href="<!--/past_list@link_go_addrbook/-->">+주소록</a><!--/end_if/-->
+									<!--/if_past_list@link_delete/--><a class="hc_btn_mini" href="<!--/past_list@link_delete/-->">삭제</a><!--/end_if/-->
+								</td>
+							</tr>
+							<!--/end_loop/-->
+							<!--/else/-->
+							<tr>
+								<td colspan="3">
+									<div class="hc_no_date">
+										최근 배송지 내역이 없습니다.
+									</div>
+								</td>
+							</tr>
+							<!--/end_if/-->
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 페이징 -->
+				<div class="paging">
+				<!--/if_pager_past/-->
+					<!--/loop_pager_past::page/-->
+						<!--/if_pager_past::page@current/-->
+							<a href="<!--/pager_past::page@link/-->" class="now"><!--/pager_past::page/--></a>
+						<!--/else/-->
+							<a href="<!--/pager_past::page@link/-->"><!--/pager_past::page/--></a>
+						<!--/end_if/-->
+					<!--/end_loop/-->
+				<!--/end_if/-->
+				</div>
+					
+				<div class="hc_btn_wrap">
+					<!--/if_link_multi_delete_past/-->
+						<a class="hc_btn_small_fill" href="<!--/link_multi_delete_past/-->">선택 삭제</a>
+					<!--/end_if/-->
+				</div>
+			</main>    
+		</div>
+	</div>
+	<!--/include_footer(1)/-->
+</div>

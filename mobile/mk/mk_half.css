@@ -1,0 +1,17 @@
+.hc_prdlist_row2 {
+    text-align: center;
+}
+.hc_prdlist_row2.hc_thumbnail_list dl {
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+}
+.hc_prdlist_row2.hc_thumbnail_list dl:nth-of-type(1),
+.hc_prdlist_row2.hc_thumbnail_list dl:nth-child(5n) {
+    width: 100%;
+}
+.hc_prdlist_row2.hc_thumbnail_list dl:nth-of-type(1) li,
+.hc_prdlist_row2.hc_thumbnail_list dl:nth-child(5n) li {
+    max-width: 500px;
+    margin: 0 auto;
+}

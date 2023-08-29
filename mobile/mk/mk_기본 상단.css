@@ -284,7 +284,9 @@ a.hc_btn_small_fill {
 .hc_no_date {
 	padding: 4%;
 	text-align:center;
-	/* border-bottom: 1px solid var(--hc_dark_color); */
+}
+.hc_thumbnail4 img {
+    width:236px;
 }
 
 /* 
@@ -323,7 +325,7 @@ a.hc_btn_small_fill {
     grid-template-columns: repeat(auto-fill, minmax(32%, auto));
 }
 .hc_interval1 {
-	margin-top: 20px;     /* 간격*/
+	margin-top: 20px;
 }
 .hc_interval2 {
   margin-bottom: 140px;

@@ -1,0 +1,161 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+	<!--/include_header(1)/-->
+	<div id="hc_commonWrap" class="hc_wrap_mypage">
+		<!-- 컨텐츠 영역 -->
+		<div id="hc_contentWrap">
+			<nav class="hc_mypage_nav">
+				<!--/include_menu(2)/-->
+			</nav>
+			<main class="hc_page_wishlist">
+				<!-- 페이지 타이틀 -->
+				<h2 class="hc_tit_page">WISH LIST</h2>	
+				
+				<!-- 상품보관함 -->
+                <div class="hc_mypage_locker">
+                    <h3 class="hc_tit_headline">상품 보관함</h3>
+                    <table summary="사진,  상품명, 수량, 재고, 적립금, 가격, 장바구니" class="hc_table_typeb hc_interval1">
+                        <caption>예치금 내역</caption>
+                        <colgroup>
+                            <col width="10%">
+							<col width="10%">
+                            <col width="auto">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                        </colgroup>
+						<!--/form_product/-->
+						<thead>
+							<tr>
+								<th scope="row"><!--input type="checkbox" class="chk-rdo" /--><!--/checkbox_all_check/--></th>
+								<th scope="row"></th>
+								<th scope="row">상품명</th>
+								<th scope="row">수량</th>
+								<th scope="row">재고</th>
+								<th scope="row">장바구니</th>
+							</tr>
+						</thead>
+                        <tbody>
+						<!--/if_product/-->
+							<!--/loop_product/-->
+							<tr>
+								<td><!--input type="checkbox" class="chk-rdo" /--><!--/product@checkbox/--></td>
+								<td><a href="<!--/product@link_detail/-->"><!--/if_product@image/--><img src="<!--/product@image/-->" /><!--/else/--><img src="/images/mini.gif" /><!--/end_if/--></a></td>
+								<td class="hc_alignL">
+									<div class="hc_prd_name"><!--/product@name/--></div>
+									<ul class="hc_prd_element">
+										<li class="hc_normal_price">
+											<!--/if_product@price_option/--><!--/product@price_option/--><!--/end_if/-->
+											<!--/number/product@price/-->원
+										</li>
+										<li>
+											<!--/if_product@price_discount/-->
+											<!-- 할인 가격 --><!--/number/product@price_discount/-->원
+											<!--/end_if/-->
+										</li>
+										<li class="hc_blind"><mark>M</mark> <!--/product@reserve/--><!--/product@point/--></li>
+									</ul>
+									<div>
+										<!--/if_product@option_desc/-->
+										[<!--/product@option_desc/-->]
+										<!--/end_if/-->
+									</div>
+								</td>
+								<td><!--/product@input_quantity(txt-input2 txt-spin)/-->개</td>
+								<td><!--/product@stock_flag_text/--></td>
+								<td>
+									<div>
+										<a class="hc_btn_mini" href="<!--/product@link_basket/-->">장바구니</a>
+										<!--/if_importune/-->
+										<a class="hc_btn_mini" href="<!--/product@link_importune/-->"><!--/if_product@importune_image/-->조르기<!--/else/-->조르기<!--/end_if/--></a>
+										<!--/end_if/-->
+										<a class="hc_btn_mini" href="<!--/product@link_delete/-->">삭제</a>
+									</div>
+								</td>
+							</tr>
+							<!--/end_loop/-->
+						<!--/else/-->
+							<tr>
+								<td colspan="6"><div class="hc_no_date">보관하신 상품 내역이 없습니다.</div></td>
+							</tr>
+						<!--/end_if/-->
+                        </tbody>
+						<!--/end_form/-->
+                    </table>
+                        
+					<div class="hc_btn_wrap">
+						<a class="hc_btn_small_fill" href="<!--/multi_check_delete/-->">선택삭제</a>
+						<!--/if_importune/-->
+						<a class="hc_btn_small" href="<!--/link_importune_all/-->">모든상품 조르기</a>
+						<a class="hc_btn_small" href="<!--/link_importune_select/-->">선택상품 조르기</a>
+						<!--/end_if/-->
+					</div>
+						
+					<!-- 페이징 -->
+					<div class="paging">
+						<!--/if_pager_product::first/-->
+						<a href="<!--/pager_product::first@link/-->" class="first">
+							<span class="hc_all_prev">
+								<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+									<g clip-path="url(#clip0_934_3487)">
+									<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_934_3487">
+									<rect width="20" height="20" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</span>
+						</a>
+						<!--/end_if/-->
+						
+						<!--/if_pager_product::prev/-->
+						<a class="prev hc_prev" href="<!--/pager_product::prev@link/-->">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+							</svg>
+						</a>
+						<!--/end_if/-->
+						
+						<!--/if_pager_product/-->
+						<!--/loop_pager_product::page/-->
+							<!--/if_pager_product::page@current/-->
+							<a class="now" href="<!--/pager_product::page@link/-->"><!--/pager_product::page/--></a>
+							<!--/else/-->
+							<a href="<!--/pager_product::page@link/-->"><!--/pager_product::page/--></a>
+							<!--/end_if/-->
+						<!--/end_loop/-->
+						<!--/end_if/-->
+						
+						<!--/if_pager_product::next/-->
+						<a class="next hc_next" href="<!--/pager_product::next@link/-->">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+							</svg>
+						</a>
+						<!--/end_if/-->
+						
+						<!--/if_pager_product::last/-->
+						<a class="last" href="<!--/pager_product::last@link/-->">
+							<span class="hc_all_next">
+								<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+									<g clip-path="url(#clip0_934_3487)">
+									<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_934_3487">
+									<rect width="20" height="20" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</span>
+						</a>
+						<!--/end_if/-->
+					</div>
+				</div>
+			</main>    
+		</div>
+	</div>
+	<!--/include_footer(1)/-->
+</div>
