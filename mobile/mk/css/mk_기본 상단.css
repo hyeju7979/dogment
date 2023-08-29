@@ -157,9 +157,7 @@ a.hc_btn_small_fill {
 */
 .hc_table_article,
 .hc_table_caption {
-  height: 70px;
-  line-height: 70px;
-  font-size: var(--hc_bd_large);
+  font-size: var(--hc_bd_medium);
   font-weight: var(--hc_regular);
   text-align: center;
   border-bottom: 1px solid var(--hc_dark_color);
@@ -167,6 +165,8 @@ a.hc_btn_small_fill {
 .hc_table_caption th,
 .hc_table_article td,
 .hc_table_caption td {
+    padding:10px 0;
+    height:40px;
 	vertical-align: middle;
 	border-bottom: 1px solid var(--hc_color_level2);
 }
