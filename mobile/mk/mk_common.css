@@ -1324,9 +1324,7 @@ input:checked ~ .accordion-content {
 }
 
 /*# sourceMappingURL=module.css.map */
-/* ×××××××××××××××××××××××××××××××××××××××××××××××
-	E: 공통 모듈 !!
-   ××××××××××××××××××××××××××××××××××××××××××××××× */
+
 
 /* 레이아웃 규칙 */
 #hc_commonWrap {
@@ -1334,14 +1332,6 @@ input:checked ~ .accordion-content {
 	position: relative;
 	max-width: var(--hc_contentwrap);
 }
-
-header {
-    position: fixed;
-    width: 100%; 
-    height:50px;
-    z-index: 9999;
-}
-
 
 /* 상단 텍스트 배너 */
 .hc_notice_top {
@@ -1357,70 +1347,88 @@ header {
 }
 
 /* 메인 header */
+header {
+    position: fixed;
+    width: 100%; 
+    height:50px;
+    z-index: 9999;
+}
 .hc_header_main {
-  position: absolute;
-  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;  
+  height: inherit;
 }
-
+.hc_left_wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hc_center_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.hc_right_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .hc_hd_ic_hamburger {
-  position: absolute;
-  left: 30px;
+  position: relative;
+  left:30px;
   cursor: pointer;
   z-index:990;
 }
-
-.hc_hd_ic_search {
-  position: absolute;
-  right: 80px;
-  cursor: pointer;
-  z-index : 990;
-}
-
-.hc_hd_ic_cart {
-  position: absolute;
-  right: 30px;
-  cursor: pointer;
-}
-
 .hc_header_main h1 a {
-    display: inline-block;
-    padding-top: 20px;
-    width: 100%;
-    height: 26px;
-    line-height: 26px;
     color: var(--hc_bright_color);
     font-size: var(--hc_tit);
     font-weight: var(--hc_light);
 }
+.hc_hd_ic_search {
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.hc_hd_ic_mypage {
+    position: relative;
+    top: 4px;
+    /*margin: 0 5px;*/
+    cursor: pointer;
+}
+.hc_hd_ic_cart {
+    /*margin: 0 5px;*/
+    cursor: pointer;
+}
 
 /* 공통 header */
 .hc_header {
-	display: flex;
-	align-items: center;
-	position: absolute;
-	z-index: 100;
-	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
 }
 .hc_incart {
     position: absolute;
-    top: 13px;
-    right: 13px;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
+    top: -4px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
     background: var(--hc_color_point);
-    border-radius: 24px;
+    border-radius: 20px;
 }
 .hc_header h1 a,
 .hc_header h1 {
     margin-left: 36px;
     font-size: var(--hc_tit);
     font-weight: var(--hc_light);
+    vertical-align: baseline;
 }
+
 /* 공통 좌측 햄버거 */
 .hc_aside_main {
 	padding: 45px;
@@ -1644,9 +1652,12 @@ header {
 }
 
 .hc_modal_search .hc_hd_ic_close {
-  position: absolute;
-  top: 80px;
-  right: 20px;
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    /*border: 1px solid var(--hc_dark_color);*/
 }
 .hc_modal_search_contents {
 	position: relative;
@@ -2940,19 +2951,20 @@ text-align: center;
   background-color: var(--hc_bright_color);
 }
 .hc_page_smartcoupon .coupon_item {
-  display: block;
-  float: left;
-  width: 33.3333333333%;
-  width: 300px;
-  height: 60px;
-  line-height: 60px;
-  color: var(--hc_dark_color);
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  background-color: var(--hc_bright_color);
-  border: 1px solid var(--hc_dark_color);
-  transition: all 0.2s ease;
+    display: block;
+    float: left;
+    width: 33.3333333333%;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    color: var(--hc_dark_color);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--hc_bright_color);
+    border: 1px solid var(--hc_dark_color);
+    transition: all 0.2s ease;
+    cursor: pointer;  
 }
 .hc_page_smartcoupon input[name=coupon_item] {
   display: none;
@@ -3159,7 +3171,7 @@ text-align: center;
     display: inline-block;
 	margin: 0 4px 10px;
     padding: 20px;
-    width: calc(50% - 100px);
+    width: calc(50% - 10px);
     max-width: 624px;
     min-height: 150px;
     vertical-align: top;

@@ -17,21 +17,33 @@
 <div class="hc_notice_top">MEMBER'S DAY</div>
 <header>
 	<nav class="hc_header_main">
-		<svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_hamburger" id="hcHamburger">
-			<path d="M4.99998 11.6279H35M4.99998 20.6279H35M4.99998 29.6279H35" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
-		</svg>
-		<svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_search" id="hcSearch">
-			<path d="M15.6597 26.9483C21.5472 26.9483 26.32 22.1756 26.32 16.2881C26.32 10.4007 21.5472 5.62791 15.6597 5.62791C9.77226 5.62791 4.99951 10.4007 4.99951 16.2881C4.99951 22.1756 9.77226 26.9483 15.6597 26.9483Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-			<path d="M34.9994 35.4765L23.1218 23.7503" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-		</svg>
-        <a href="<!--/link_basket/-->" style="display:contents;position:relative;">
-			<spna class="hc_incart"><!--/user_basket_quantity/--></spna>
-            <svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_cart" id="hcSearch">
-                <path d="M27 18.9612V12.2946C27 10.5265 26.2976 8.83076 25.0474 7.58052C23.7971 6.33028 22.1014 5.6279 20.3333 5.6279C18.5652 5.6279 16.8695 6.33028 15.6193 7.58052C14.369 8.83076 13.6667 10.5265 13.6667 12.2946V18.9612M8.66667 15.6279H32L33.6667 35.6279H7L8.66667 15.6279Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <span><!--/coupon_count/--></span>
-            </svg>
-        </a>
-		<h1 id="mainLogo"><a href="<!--/link_home/-->">PIGMENT</a></h1>
+		<span class="hc_left_wrap">
+			<svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_hamburger" id="hcHamburger">
+				<path d="M4.99998 11.6279H35M4.99998 20.6279H35M4.99998 29.6279H35" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+			</svg>
+		</span>
+		<span class="hc_center_wrap">
+			<h1 id="mainLogo"><a href="<!--/link_home/-->">PIGMENT</a></h1>
+		</span>
+		<span class="hc_right_wrap">
+			<svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_search" id="hcSearch">
+				<path d="M15.6597 26.9483C21.5472 26.9483 26.32 22.1756 26.32 16.2881C26.32 10.4007 21.5472 5.62791 15.6597 5.62791C9.77226 5.62791 4.99951 10.4007 4.99951 16.2881C4.99951 22.1756 9.77226 26.9483 15.6597 26.9483Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M34.9994 35.4765L23.1218 23.7503" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			<a href="<!--/link_mypage/-->">
+				<svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="hc_hd_ic_mypage">
+					<path d="M12 10C14.2091 10 16 8.20914 16 6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6C8 8.20914 9.79086 10 12 10Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M21 22C21 17.0294 16.9706 13 12 13C7.02945 13 3 17.0294 3 22" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</a>
+			<a href="<!--/link_basket/-->" style="position:relative; margin-right:46px;">
+				<span class="hc_incart"><!--/user_basket_quantity/--></span>
+				<svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_cart" id="hcSearch">
+					<path d="M27 18.9612V12.2946C27 10.5265 26.2976 8.83076 25.0474 7.58052C23.7971 6.33028 22.1014 5.6279 20.3333 5.6279C18.5652 5.6279 16.8695 6.33028 15.6193 7.58052C14.369 8.83076 13.6667 10.5265 13.6667 12.2946V18.9612M8.66667 15.6279H32L33.6667 35.6279H7L8.66667 15.6279Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<span><!--/coupon_count/--></span>
+				</svg>
+			</a>
+		</span>
 	</nav>
 </header>
 
@@ -140,8 +152,8 @@
 	<!-- 모달 검색창 -->
 	<div class="hc_modal_search" id="hcSearchWrap">
         <div class="hc_hd_ic_close">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="hcCloseSearchBtn">
-                <path d="M10.6667 31.6667L8.33337 29.3333L17.6667 20L8.33337 10.6667L10.6667 8.33334L20 17.6667L29.3334 8.33334L31.6667 10.6667L22.3334 20L31.6667 29.3333L29.3334 31.6667L20 22.3333L10.6667 31.6667Z" fill="black"/>
+            <svg width="30" height="30" viewBox="0 0 40 40" fill="none" class="hcCloseSearchBtn">
+                <path d="M10.6667 31.6667L8.33337 29.3333L17.6667 20L8.33337 10.6667L10.6667 8.33334L20 17.6667L29.3334 8.33334L31.6667 10.6667L22.3334 20L31.6667 29.3333L29.3334 31.6667L20 22.3333L10.6667 31.6667Z" fill="black" stroke="white" stroke-width="1" />
             </svg>
         </div>
         <div class="hc_modal_search_contents">
