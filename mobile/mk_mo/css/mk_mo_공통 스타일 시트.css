@@ -899,7 +899,7 @@ input[name=hamburger_item] {
 .hc_sub_wrap .prdlist2_content .hc_prd_element .hc_normal_price:before {
   margin-right: 6px;
 }
-.hc_sub_wrap .hc_page_taday .hc_thumbnail img {
+.hc_sub_wrap .hc_page_today .hc_thumbnail img {
   border-radius: 50em 50em 0 0;
 }
 .hc_sub_wrap .hc_page_pfs .hc_prd_element LI {
