@@ -465,7 +465,8 @@ header #hc_head_mypage {
 
 /* 하단 */
 .hc_common_footer {
-  background: var(--hc_color_level3);
+    margin-top: 140px;
+    background: var(--hc_color_level3);
 }
 .hc_common_footer footer {
   padding: 50px 25px 0;
@@ -828,13 +829,13 @@ input[name=hamburger_item] {
   border-bottom: 1px dashed var(--hc_dark_color);
 }
 .hc_sub_wrap .prdlist_content li {	
-    position: relative;	
-  }	
-  .hc_sub_wrap .prdlist_content li .hc_checking {	
-    position: absolute;	
-    top: 5px;	
-    right: 7px;	
-  }
+  position: relative;	
+}	
+.hc_sub_wrap .prdlist_content li .hc_checking {	
+  position: absolute;	
+  top: 5px;	
+  right: 7px;	
+}
 .hc_sub_wrap .hc_prdlist_types {
   margin-top: 20px;
 }
@@ -861,7 +862,6 @@ input[name=hamburger_item] {
   clear: both;
   overflow: hidden;
 }
-
 .hc_sub_wrap .hc_prdlist_types .hc_prdlist_tabs h2 {
   margin: 0;
   padding-left: 10px;
@@ -902,11 +902,24 @@ input[name=hamburger_item] {
 .hc_sub_wrap .hc_page_today .hc_thumbnail img {
   border-radius: 50em 50em 0 0;
 }
-.hc_sub_wrap .hc_page_pfs .hc_prd_element LI {
+.hc_sub_wrap .hc_page_pfs .hc_prd_element li {
   display: block;
+}
+.hc_sub_wrap .hc_page_pfs .hc_prd_name::after {
+  content: "";
+  margin: 0;
 }
 .hc_sub_wrap .hc_page_half li:nth-child(5n) {
   grid-column: auto/span 2;
+}
+/* 검색 */
+.hc_sub_wrap .hc_searchform {
+  margin: 0 10px;
+  border-bottom: 1px solid var(--hc_dark_color);
+}
+.hc_sub_wrap .hc_searchform input[name="s"] {
+  width: calc(100% - 30px);
+  border: 0;
 }
 .hc_policy_wrap .tab-label::after {	
   content: ">";	
