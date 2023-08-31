@@ -353,6 +353,9 @@ mark {
 	font-weight: var(--hc_thin);
 	background: var(--hc_dark_color);
 }
+.hc_badge_ranking {
+	position: absolute;
+}
 /* 더보기 */
 .hc_more {
   margin-bottom: 10px;

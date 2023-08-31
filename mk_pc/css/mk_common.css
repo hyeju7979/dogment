@@ -1906,6 +1906,13 @@ footer {
 	font-size: var(--hc_bd_xsmall);
 	box-sizing: border-box;
 }
+.hc_thumbnail_list dl {
+  position: relative;
+}
+.hc_thumbnail_list .hc_badge_ranking {
+  top: 5px;
+  right: 5px;
+}
 .hc_wrap_event .hc_thumbnail_list dt img {
 	border-radius: 318px 318px 0 0;
 }
@@ -2008,6 +2015,8 @@ footer {
 }
 .hc_wrap_pfs dl {
 	margin-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
 }
 .hc_wrap_pfs .hc_prd_list_information {
 	margin-left: 40px;
