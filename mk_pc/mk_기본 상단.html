@@ -55,7 +55,7 @@
 		<input id="all" type="radio" name="tab_item" checked>
 		<label class="tab_item" for="all">CATEGORY</label>
 		<input id="programming" type="radio" name="tab_item">
-		<label class="tab_item" for="programming">MEMBER</label>
+		<label class="tab_item" for="programming">TOF</label>
 		<div class="tab_content" id="all_content">
 			<ul>
 				<li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=035&type=P">NEW</a></li>
@@ -125,28 +125,20 @@
 						</ul>
 					</div>
 				</li>
-				<li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=004&type=Y">+ 신상품 캘린더</a></li>				
-				<li class="hcHoverMenu"><a href="/shop/page.html?id=6">+ STORE <p>피그먼트 오프라인 매장안내</p></a></li>
+				<li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=004&type=Y">신상품 캘린더</a></li>				
+				<li class="hcHoverMenu" style="margin:20px 0 20px"><a href="/shop/page.html?id=6">+ STORE <p>피그먼트 오프라인 매장안내</p></a></li>
+                <!--/if_login/-->
+                    <li class="hcHoverMenu"><a href="<!--/link_logout/-->">+ LOGOUT</a></li>
+                <!--/else/-->
+                    <li class="hcHoverMenu"><a href="<!--/link_login/-->">+ LOGIN</a></li>
+                <!--/end_if/-->
 			</ul>
 		</div>
 		<div class="tab_content" id="programming_content">
-			<label for="hc_menu_login">
-				<div class="hc_main_menu">+ 로그인</div>
-			</label>
-			<input type="checkbox" class="hc_menu_state_2" id="hc_menu_login" hidden checked>
-			<div class="hc_menu_content">
-				<ul class="hc_submenu">
-					<!--/if_login/-->
-                    <li class="hcHoverMenu"><a href="<!--/link_logout/-->">로그아웃</a></li>
-                    <!--/else/-->
-                    <li class="hcHoverMenu"><a href="<!--/link_login/-->">로그인</a></li>
-                    <!--/end_if/-->
-                    <li class="hcHoverMenu"><a href="<!--/link_basket/-->">장바구니</a></li>
-					<li class="hcHoverMenu"><a href="<!--/link_order/-->">주문조회</a></li>
-					<li class="hcHoverMenu"><a href="<!--/link_mypage/-->">마이페이지</a></li>
-					<li class="hcHoverMenu"><a href="/shop/mypage.html?mypage_type=myseegoods">최근 본 상품</a></li>
-				</ul>
-			</div>
+            <ul>
+                <li class="hcHoverMenu"><a href="">2023 S/S</a></li>
+                <li class="hcHoverMenu"><a href="">2023 F/W</a></li>
+            </ul>
 		</div>
 	</div>
 </aside>

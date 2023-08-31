@@ -1,0 +1,46 @@
+input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+.hc_guides {
+	overflow: hidden;
+}
+.hc_guide {
+	width: 100%;
+	overflow: hidden;
+}
+.hc_guide-label {
+    padding: 1em 0;
+	display: flex;
+	justify-content: space-between;
+    border-bottom: 1px solid var(--hc_color_level2);
+	cursor: pointer;
+}
+.hc_guide-label::after {
+	content: ">";
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	transition: all 0.35s;
+}
+.hc_guide-content {
+	max-height: 0;
+	padding: 0 1em;
+	transition: all 0.35s;
+}
+.hc_guide-close {
+	display: flex;
+	justify-content: flex-end;
+	padding: 1em;
+	font-size: 0.75em;
+	cursor: pointer;
+}
+
+input:checked + .hc_guide-label::after {
+	transform: rotate(90deg);
+}
+input:checked ~ .hc_guide-content {
+	max-height: 100vh;
+	padding: 1em;
+}

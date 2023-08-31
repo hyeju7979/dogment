@@ -2486,6 +2486,7 @@ input[name=hc_page_about] {
 .hc_wrap_policy input:checked ~ .policytab-content {
 	padding: 1em;
 	max-height: 100vh;
+    max-height: fit-content;
 	line-height: 2;
 }
 

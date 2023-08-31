@@ -78,12 +78,20 @@ h2.hc_page_title {
 .hc_interval2 {
   margin-bottom: 28px;
 }
+.hc_interval3 {
+  padding: 1em 0;
+}
 .hc_headline_checking {
   margin: 0 10px 20px;
   display: flex;
   gap: 10px;
 }
-
+.hc_page_content {
+  margin: 10px;
+}
+.hc_page_contents2 {
+  margin: 20px;
+}
 .hc_topfull {
   text-align: center;
 }
@@ -154,7 +162,7 @@ h2.hc_page_title {
 .hc_btn_more {
   font-size: var(--hc_bd_large);
   font-weight: var(--hc_mediums);
-  text-decoration: underline;
+  text-decoration: underline !important;
   text-underline-offset: 6px;
 }
 

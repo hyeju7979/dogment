@@ -29,9 +29,17 @@
                                     <li class="hc_prd_name">
                                         <a href="<!--/product@link_detail/-->"><!--/notag/product@name(16)/--></a>
                                     </li>
-                                    <li class="hc_normal_price"><!--/number/product@price/-->원</li>
+
+
                                     <!--/if_product@price_discount/-->
-                                    <li class="hc_discount_price"><!--/number/product@price_discount/-->원</li>
+                                        <li class="hc_normal_price"><!--/number/product@price/-->원</li>
+                                        <li class="hc_discount_price">
+                                            <!--/if_product@price_discount/-->
+                                            <!--/end_if/-->
+                                            <!--/number/product@price_discount/-->원
+                                        </li>
+                                    <!--/else/-->
+                                        <li><!--/number/product@price/-->원</li>
                                     <!--/end_if/-->
 
                                     <!--/if_product@reserve(+1)/-->

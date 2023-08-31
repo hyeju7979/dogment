@@ -882,7 +882,7 @@ input[name=hamburger_item] {
   text-align: right;
   box-sizing: border-box;
 }
-.hc_sub_wrap .prdlist2_content ul:first-child {
+.hc_sub_wrap .prdlist2_content .prd_list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
@@ -968,5 +968,19 @@ input[name=hamburger_item] {
 .hc_policy_wrap input:checked ~ .tab-content {	
   max-height: 100vh;	
   padding: 1em;	
+  padding: 1em;	
+}
+/* 이용안내 */
+.hc_page_guide h5 {
+  font-size: var(--hc_bd_large);
+  font-weight: var(--hc_medium);
+  margin-bottom: 20px;
+}
+.hc_page_guide p {
+  margin-bottom: 20px;
+}
+.hc_page_guide .hc_guide-content div,
+.hc_page_guide .hc_guide-content ul {
+  margin-bottom: 38px;
 }
 /*# sourceMappingURL=mo_style.css.map */
