@@ -312,6 +312,16 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+input[type="text"], 
+input[type="date"], 
+input[type="tel"], 
+input[type="number"], 
+input[type="email"], 
+input[type="password"],
+select {
+  height:40px;
+  border-color:var(--hc_dark_color);
+}
 input[type=file],
 textarea,
 select,
@@ -1050,9 +1060,11 @@ input[name=hamburger_item] {
 .hc_store_wrap .hc_inline {
   gap: 4px;
 }
+
 /* 게시판 보기 */
-.hc_page_boardlist_view .hc_border_list nobr {
-    margin-left: 0;
+.rbContent {
+  word-break:keep-all;
+  word-wrap:break-word;
 }
 
 /* 게시판 보기 > 댓글쓰기 */
@@ -1089,6 +1101,7 @@ input[name=hamburger_item] {
 }
 #check_auth h5.orange {
   padding:0;
+  color: var(--hc_color_point);
   background:none;
 }
 #check_auth h5.orange::before {
@@ -1098,4 +1111,36 @@ input[name=hamburger_item] {
 #check_auth h5.orange img {
   display:none;
 }
+
+/* 게시판 > 패스워드 */
+.hc_board_wrap input[type="password"]{
+  height:40px;
+}
+.hc_attach_pictures,
+.hc_entered_password {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  gap: 4px;
+}
+.hc_attach_pictures {
+  gap:0;
+}
+.hc_entered_password .hc_btn_long_fill {
+  height: 40px;
+  line-height: normal;
+  box-sizing: border-box;
+}
+.hc_attach_pictures .hc_btn_long_fill {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  line-height: normal;
+  font-size: 40px;
+  font-weight: var(--hc_thin);
+  box-sizing: border-box;
+}
+
 /*# sourceMappingURL=mo_style.css.map */

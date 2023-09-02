@@ -23,6 +23,8 @@
             <div class="hc_board_headline">
                 <div class="hc_board_date"><!--/if_write_date/--> <!--/date(%Y-%M-%D)/write_date/--><!--/end_if/--></div>
                 <h3><!--/notag/subject/--></h3>
+                <div class="hc_blind"><!--/writer/--></div>
+                <div><!--/if_qna_ordernum/-->주문번호 : <!--/qna_ordernum/--><!--/end_if/--></div>
                 <div class="rb_rating">
                     <!--/if_score/-->
                         <!--/loop_score/-->
@@ -48,27 +50,33 @@
                     <!--/end_loop/-->
                 </div>
                 <!--/end_if/-->
+
                 <!--/if_attach_image/-->
                 <div class="rb_thumbs">
-                <!--/if_attach_image_size/-->
-                    <img width="<!--/attach_image_size/-->" src="<!--/attach_image/-->" />
-                <!--/else/-->
-                    <img src="<!--/attach_image/-->" />
-                <!--/end_if/-->
+                    <!--/if_attach_image_size/-->
+                        <img width="<!--/attach_image_size/-->" src="<!--/attach_image/-->" />
+                    <!--/else/-->
+                        <img src="<!--/attach_image/-->" />
+                    <!--/end_if/-->
                 </div>
                 <!--/end_if/-->
+
                 <!--/content/-->
+
                 <!-- sns 버튼 -->
                 <div class="rb_icons">
                     <!--/if_link_scrap_fb/-->
                     <a href="#none" onclick="<!--/link_scrap_fb/-->"><img src="/images/d3/m_powerpack/32/btn/btn_facebook.gif" alt="페이스북"/></a>
                     <!--/end_if/-->
+
                     <!--/if_link_scrap_tw/-->
                     <a href="#none" onclick="<!--/link_scrap_tw/-->"><img src="/images/d3/m_powerpack/32/btn/btn_twitter.gif" alt="트위터"/></a>
                     <!--/end_if/-->
+
                     <!--/if_link_scrap_ka/-->
                     <a href="<!--/link_scrap_ka/-->"><img src="/images/d3/m_powerpack/32/btn/btn_kakatalk.gif" alt="카카오톡"/></a>
                     <!--/end_if/-->
+                    
                     <!--/if_link_scrap_ks/-->
                     <a href="<!--/link_scrap_ks/-->"><img src="/images/d3/m_powerpack/32/btn/btn_story.gif" alt="카카오스토리"/></a>
                     <!--/end_if/-->
