@@ -3,7 +3,7 @@
 <!-- 중앙 영역 -->
 <div class="hc_entire">
     <div class="hc_container">
-        <main class="hc_contents">
+        <main class="hc_contents hc_page_boardlist_view">
             <!-- 페이지 타이틀 -->
             <h2 class="hc_page_title">
                 <!--/now_board_name/-->
@@ -40,7 +40,7 @@
                                 <img src="<!--/notice_list@new_icon_image/-->"/>
                                 <!--/end_if/-->
                             </a>
-                            <div class="hc_blind"><!--/date(%Y-%M-%D)/notice_list@date_write/--></div>
+                            <div class="hc_blind"><!--/notice_list@writer/--> | <!--/date(%Y-%M-%D)/notice_list@date_write/--></div>
                         </li>
                     </ul>
                     <!--/end_loop/-->
@@ -54,7 +54,7 @@
                             <!--/if_list@depth(+1)/-->
                             <div class="<!--/if_list@depth/-->bl_depth<!--/list@depth/--><!--/end_if/-->"></div>
                             <!--/end_if/-->
-                            
+
                             <!--/if_list@product_mobile_image/-->
                             <div class="bl_image">
                                 <a href="<!--/list@link_product/-->"><img src="<!--/list@product_mobile_image/-->" /></a>
@@ -71,68 +71,74 @@
                                 <!--/end_if/-->
                             <!--/end_if/-->
 
-                                <!--/if_not_link/-->
-                                  <!--/if_list@product_name/-->
-                                    <dt class="dl_goodsName"><a href="<!--/list@link_product/-->"><!--/notag/list@product_name/--></a></dt>
-                                  <!--/end_if/-->
-                                <!--/end_if/-->
-        
-                                <!--/if_list@link/-->
-                                    <a href="<!--/list@link/-->">
-                                <!--/end_if/-->
+                            <!--/if_list@link/-->
+                                <a href="<!--/list@link/-->">
+                            <!--/end_if/-->
                                 
-                                <dt>
-                                    <!--/if_list@is_original_del/-->
-                                        <div class="original-del">* 아래 답변의 최초게시물을 게시자가 삭제하였습니다.</div>
-                                    <!--/end_if/-->
-                                    <nobr>
-                                        <!--/if_list@is_mobile_write/--><span class="fa fa-mobile fa-lg"></span> <!--/end_if/-->
+                            <dt>
+                                <!--/if_list@is_original_del/--><div class="original-del">* 아래 답변의 최초게시물을 게시자가 삭제하였습니다.</div><!--/end_if/-->
+                                <table>
+                                    <tr>
+                                        <td class="hc_board_list_icon"><!--/if_list@list_icon_image/--><img src="<!--/list@list_icon_image/-->"/> <!--/end_if/--></td>
+                                        <td>
+                                            <div>
+                                                <!--/if_not_link/-->
+                                                    <!--/if_list@product_name/-->
+                                                    <dt class="dl_goodsName"><a href="<!--/list@link_product/-->"><!--/notag/list@product_name/--></a></dt>
+                                                    <!--/end_if/-->
+                                                <!--/end_if/-->
 
-                                        <!--/if_list@link/-->
-                                            <span class="hc_ellipsis"><!--/notag/list@subject/--></span>
-                                        <!--/else/-->
-                                            <!--/notag/list@spam_subject/-->
-                                        <!--/end_if/-->
-                                        
-                                        <!--/if_list@comment_cnt/--><!--. 코멘트갯수처리 -->
-                                            <span class="bl_cmtCount">(<!--/list@comment_cnt/-->)</span>
-                                        <!--/end_if/-->
+                                                <!--/if_list@link/-->
+                                                    <!--/notag/list@subject/-->
+                                                <!--/else/-->
+                                                    <!--/notag/list@spam_subject/-->
+                                                <!--/end_if/-->
 
-                                        <!--/if_list@attach_image/--><i class="fa fa-camera"></i><!--/end_if/-->
+                                                <!--/if_list@comment_cnt/--><!--. 코멘트갯수처리 -->
+                                                    <span class="bl_cmtCount">(<!--/list@comment_cnt/-->)</span>
+                                                    <!--/end_if/-->
+                
+                                                    <!--/if_list@attach_image/--><i class="fa fa-camera"></i><!--/end_if/-->
+                
+                                                    <!--/if_list@reply_status/-->
+                                                        <span class="gray"><!--/list@reply_status/--></span>
+                                                    <!--/end_if/-->
+                
+                                                    <!--/if_list@new_icon_image/-->
+                                                        <span class="hc_icon_new">New</span>
+                                                    <!--/end_if/-->
+                
+                                                    <!--/if_list@hit_icon_image/-->
+                                                        <span class="bl_iconHit">Hit</span>
+                                                    <!--/end_if/-->
+                                            </div>
+                                            <div>
+                                                <span class="bl_name">
+                                                <!--/if_list@img_admin_icon/-->
+                                                    <img src = "<!--/list@img_admin_icon/-->" />
+                                                <!--/else/-->
+                                                    <!--/if_list@user_icon_image/-->
+                                                        <img src="<!--/list@user_icon_image/-->"/>
+                                                    <!--/end_if/-->
+                                                    <!--/list@writer/-->
+                                                <!--/end_if/-->
+                                                </span> 
+                                                | <!--/date(%Y-%M-%D)/list@date_write/-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </dt>
 
-                                        <!--/if_list@reply_status/-->
-                                            <span class="gray"><!--/list@reply_status/--></span>
-                                        <!--/end_if/-->
+                            <!--/if_is_review_score/-->
+                            <dd class="bl_star">
+                                <!--/list@review_score/-->
+                            </dd>
+                            <!--/end_if/-->
 
-                                        <!--/if_list@new_icon_image/-->
-                                            <span class="bl_iconNew">N</span>
-                                        <!--/end_if/-->
-
-                                        <!--/if_list@hit_icon_image/-->
-                                            <span class="bl_iconHit">H</span>
-                                        <!--/end_if/-->
-                                    </nobr>
-                                </dt>
-                                <!--/if_is_review_score/-->
-                                <dd class="bl_star">
-                                    <!--/list@review_score/-->
-                                </dd>
-                                <!--/end_if/-->
-
-                                <dd>
-                                    <span class="bl_name">
-                                    <!--/if_list@img_admin_icon/-->
-                                        <img src = "<!--/list@img_admin_icon/-->" />
-                                    <!--/else/-->
-                                        <!--/if_list@user_icon_image/-->
-                                            <img src="<!--/list@user_icon_image/-->"/>
-                                        <!--/end_if/-->
-                                    <!--/end_if/-->
-                                    </span> 
-                                </dd>
-                                <!--/if_list@link/-->
+                            <!--/if_list@link/-->
                                 </a>
-                                <!--/end_if/-->
+                            <!--/end_if/-->
                             </dl>
                         </li>
                         <!--/end_loop/-->

@@ -33,7 +33,9 @@ h6 {
   color: var(--hc_color_point);
 }
 
-/* 타이틀 */
+/* 
+  타이틀 
+*/
 h2.hc_page_title {
   margin-top: 20px;
   text-align: center;
@@ -71,7 +73,9 @@ h2.hc_page_title {
   border-top: 1px dashed var(--hc_dark_color);
 }
 
-/* 간격 */
+/* 
+  간격 
+*/
 .hc_interval1 {
   margin-bottom: 48px;
 }
@@ -95,13 +99,18 @@ h2.hc_page_title {
 .hc_topfull {
   text-align: center;
 }
+.hc_column2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-/* 인풋박스*/
+/* 
+  인풋박스
+*/
 .hc_inputbox_middle {
   width: 274px;
   height: 58px;
 }
-
 .hc_inputbox_middle_btn {
   margin-left: 4px;
   width: 118px;
@@ -125,7 +134,9 @@ h2.hc_page_title {
   right: 7px;	
 }
 
-/* 버튼 */
+/* 
+  버튼 
+*/
 .hc_btn_wrap {
   margin: 30px auto 0;
   text-align: center;
@@ -139,6 +150,7 @@ h2.hc_page_title {
 .hc_btn_long,
 .hc_btn_long_fill {
   display: block;
+  margin: 5px 0;
   padding: 10px;
   color:var(--hc_bright_color);
   text-align: center;
@@ -165,7 +177,9 @@ h2.hc_page_title {
   text-decoration: underline !important;
   text-underline-offset: 6px;
 }
-
+.hc_btn_wrap .hc_column2 {
+  gap: 4px;
+}
 .hc_topfull img,
 .hc_thumbnail img {
   width: 100%;
@@ -175,7 +189,6 @@ display: inline-block;
 }
 .hc_prd_element li {
 display: inline-block;
-/* margin: 0 7px; */
 font-size: var(--hc_bd_medium);
 }
 .hc_prd_name {
@@ -201,6 +214,9 @@ margin-left: 14px;
 color: var(--hc_color_point);
 }
 
+/* 
+  기타 
+*/
 .hc_blind {
 display: none !important;
 }
@@ -211,6 +227,11 @@ align-items: center;
 .hc_no_date {
 padding: 4%;
 text-align:center;
+}
+.hc_icon_new {
+  padding: 0 8px;
+  color:var(--hc_color_point); 
+  /* border:1px solid var(--hc_color_level2); */
 }
 .hc_md_more_description {
 display: flex;
@@ -250,4 +271,73 @@ transform: rotate(-45deg);
 }
 .hc_md_arrow.active span:last-of-type {
 transform: rotate(45deg);
+}
+
+/* 게시판 검색 */
+.hc_board_search {
+  margin: 20px 0 54px;
+  text-align: center;
+}
+.hc_board_search fieldset {
+  display: grid;
+  grid-template-columns: 100px auto 70px;
+}
+.hc_board_search select,
+.hc_board_search input {
+  height: 40px;
+}
+.hc_board_search select[name="search_type"] {
+  margin-right: 4px;
+}
+.hc_board_search fieldset a {
+  line-height: 40px;
+  vertical-align: top;
+  color: var(--hc_bright_color);
+  border: 0;
+  background: var(--hc_dark_color);
+}
+/* 게시판 리스트 */
+.hc_border_list li {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--hc_color_level2);
+}
+.hc_border_list mark {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0 4px;
+  width: 30px;
+  height: 24px;
+  line-height: 24px;
+  color: var(--hc_bright_color);
+  font-size: 12px;
+  text-align: center;
+  background: var(--hc_dark_color);
+}
+.hc_border_list nobr {
+  margin-left: 51px;
+}
+.hc_ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 게시판 보기 > 해드라인 */
+.hc_board_headline {
+  text-align: center;
+}
+.hc_board_date {
+  color: var(--hc_color_level2);
+}
+.hc_reply_write {
+  padding: 20px 0;
+  border-top: 1px solid var(--hc_dark_color);
+  border-bottom: 1px solid var(--hc_dark_color);
+}
+.hc_board_list_icon {
+  display: inline-block;
+  margin-top: 6px;
+  width: 38px;
+  text-align: center;
 }

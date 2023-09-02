@@ -68,7 +68,11 @@ textarea {border:1px solid #bbb; vertical-align: middle; box-sizing:border-box; 
 /* 페이징 */
 .paging {text-align:center; margin:26px 0;}
 .paging a {width:30px; height:30px; line-height:30px; background-color:#fff; border:1px solid #ddd; display:inline-block; margin:0 2px;}
-.paging a.now {background-color:#3b3b3b; color:#fff; border:1px solid #3b3b3b;}
+.paging a.now {
+    color:#fff; 
+    background-color:#000; 
+    border:1px solid #000;
+}
 /* //페이징 */
 
 /* 폰트 관련 */
@@ -1045,5 +1049,53 @@ input[name=hamburger_item] {
 }
 .hc_store_wrap .hc_inline {
   gap: 4px;
+}
+/* 게시판 보기 */
+.hc_page_boardlist_view .hc_border_list nobr {
+    margin-left: 0;
+}
+
+/* 게시판 보기 > 댓글쓰기 */
+.hc_reply_write h5 {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: var(--hc_color_level3);
+}
+.hc_reply_write  textarea,
+.hc_reply_write  input {
+  margin-bottom:10px;
+  border: 1px solid var(--hc_color_level2);
+}
+.hc_reply_write .hc_hoodwink {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid var(--hc_color_level2);
+  box-sizing: border-box;
+}
+.hc_reply_write  input[name="cname"] {
+  margin-bottom: 0;
+  padding: 0;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  border: 0;
+}
+#check_auth .head {
+  text-align: left;
+  color: inherit;
+}
+#check_auth h5.orange {
+  padding:0;
+  background:none;
+}
+#check_auth h5.orange::before {
+  content: "ⓘ";
+  margin-right: 4px;
+}
+#check_auth h5.orange img {
+  display:none;
 }
 /*# sourceMappingURL=mo_style.css.map */
