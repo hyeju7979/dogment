@@ -86,7 +86,7 @@ h2.hc_page_title {
   display: flex;
   gap: 10px;
 }
-.hc_page_content {
+.hc_page_contents {
   margin: 10px;
 }
 .hc_page_contents2 {
@@ -124,16 +124,15 @@ h2.hc_page_title {
   top: 28px;	
   right: 7px;	
 }
+
 /* 버튼 */
 .hc_btn_wrap {
   margin: 30px auto 0;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  text-align: center;
 }
 .hc_btn_column_layout {
   margin: 30px 10px 0;
-  display: flex;
+  display: grid;
   gap: 10px;
   flex-direction: column;
 }
@@ -160,6 +159,7 @@ h2.hc_page_title {
   border: 1px solid var(--hc_dark_color);
 }
 .hc_btn_more {
+  display: block;
   font-size: var(--hc_bd_large);
   font-weight: var(--hc_mediums);
   text-decoration: underline !important;

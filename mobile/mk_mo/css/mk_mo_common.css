@@ -933,7 +933,7 @@ input[name=hamburger_item] {
   border: 1px solid var(--hc_dark_color);
   cursor: pointer;
 }
-
+/*
 .hc_policy_wrap .tab-label::after {	
   content: ">";	
   width: 1em;	
@@ -970,6 +970,7 @@ input[name=hamburger_item] {
   padding: 1em;	
   padding: 1em;	
 }
+*/
 /* 이용안내 */
 .hc_page_guide h5 {
   font-size: var(--hc_bd_large);
@@ -982,5 +983,67 @@ input[name=hamburger_item] {
 .hc_page_guide .hc_guide-content div,
 .hc_page_guide .hc_guide-content ul {
   margin-bottom: 38px;
+}
+
+/* ABOUT US */
+.hc_pigment_groups {
+  margin: 0 auto 48px;
+  text-align: center;
+}
+.hc_pigment_groups li {
+  display: inline-block;
+  padding: 0 8px;
+}
+
+/* 매장안내 */
+.hc_store_wrap #storeInfo {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.hc_store_wrap h5 {
+  margin: 40px 0 20px;
+  font-size: var(--hc_bd_large);
+  font-weight: var(--hc_regular);
+}
+.hc_store_wrap #storeInfo ul {
+  margin-bottom: 30px;
+}
+.hc_store_wrap li {
+  display: inline-block;
+  font-size: var(--hc_bd_small);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.hc_store_wrap li:nth-child(odd):after {
+  content: "";
+  display: inline-block;
+  margin: 0 6px 0 10px;
+  position: relative;
+  top: 0;
+  width: 1px;
+  height: 10px;
+  background-color: var(--hc_dark_color);
+}
+.hc_store_wrap li[data-id=hcStoreWrap35]::before {
+  content: "";
+  display: inline-block;
+  margin: 0 6px 0 10px;
+  position: relative;
+  top: 0;
+  width: 1px;
+  height: 10px;
+  background-color: var(--hc_dark_color);
+}
+.hc_store_wrap li[data-id=hcStoreWrap35]::after {
+  display: none;
+}
+.hc_store_wrap .info {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  border-top: 1px solid var(--hc_dark_color);
+}
+.hc_store_wrap .hc_inline {
+  gap: 4px;
 }
 /*# sourceMappingURL=mo_style.css.map */
