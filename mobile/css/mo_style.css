@@ -618,4 +618,25 @@ header #hc_head_mypage {
   padding: 1em;
 }
 
+/* 게시판 */
+.hc_board_search {
+  margin: 20px 10px 54px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 100px auto 70px;
+}
+.hc_board_search select,
+.hc_board_search input {
+  height: 40px;
+}
+.hc_board_search select[name=choose] {
+  margin-right: 4px;
+}
+.hc_board_search input[type=submit] {
+  vertical-align: top;
+  color: var(--hc_bright_color);
+  border: 0;
+  background: var(--hc_dark_color);
+}
+
 /*# sourceMappingURL=mo_style.css.map */

@@ -646,3 +646,24 @@ header {
       }
       
 }
+/* 게시판 */
+.hc_board_search {
+    margin: 20px 10px 54px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100px auto 70px;
+    select,
+    input {
+        height: 40px;
+    }
+    select[name="choose"] {
+        margin-right: 4px;
+    }
+    input[type="submit"] {
+        vertical-align: top;
+        color: var(--hc_bright_color);
+        border: 0;
+        background: var(--hc_dark_color);
+    }
+
+}
