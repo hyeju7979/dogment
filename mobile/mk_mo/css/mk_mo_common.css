@@ -775,10 +775,6 @@ input[name=hamburger_item] {
     max-height: 100vh;
 }
 
-/* 레이아웃 */
-.hc_entire {
-  margin-top: 90px;
-}
 
 /* 
   스타일  
@@ -1150,4 +1146,23 @@ input[name=hamburger_item] {
   box-sizing: border-box;
 }
 
+/* 게시판 : 리뷰 */
+.hc_board_review_list {
+  display: grid;
+  grid-template-columns: 84px auto 54px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 6px;
+}
+.hc_page_board_review .hc_border_notice_list li {
+  display: grid;
+  grid-template-columns: 84px auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 6px;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
 /*# sourceMappingURL=mo_style.css.map */

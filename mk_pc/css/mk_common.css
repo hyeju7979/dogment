@@ -1387,7 +1387,6 @@ header {
 .hc_header_main h1 a {
     color: var(--hc_bright_color);
     font-size: var(--hc_tit);
-    font-weight: var(--hc_light);
 }
 .hc_hd_ic_search {
     position: relative;
@@ -1795,7 +1794,8 @@ header {
 	left: -50%;
     margin-left: -20px;
 	font-family: digital-7 mono;
-	font-size: 88px;
+	/*font-size: 88px;*/
+    font-size: 6em;
 	text-align: center;
 	color: var(--hc_bright_color);;  
 }
@@ -3328,10 +3328,47 @@ select[name="MK_sel_basket_amount_1"] {
     border: 0 !important;
 }
 
+.hcFontBold {
+    font-weight:bold !important;
+}
+
 /*메뉴 호버*/
 .hcHoverMenuColor {
     color : #8e8e8e !important;
 }
 #snapSyncContainer #snapSyncWrapper {
     margin-top: 120px !important;
+}
+.nano {
+    overflow :auto;
+    height : 1000px;
+}
+*::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+
+*::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #d9d9d9; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f8f8f8;  /*스크롤바 뒷 배경 색상*/
+}
+
+.hc_detail_info::-webkit-scrollbar {
+    width: 6px;  /* 스크롤바의 너비 */
+}
+
+.hc_detail_info::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: #e8e8e8; /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
+.hc_detail_info::-webkit-scrollbar-track {
+    background: #f8f8f8;  /*스크롤바 뒷 배경 색상*/
 }

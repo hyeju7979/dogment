@@ -1,0 +1,1424 @@
+/*
+	- Project : 디자인 시즌3
+	- Author : odini84@gmail.com
+	- Description : 디자인 편집 style sheet
+	- Create : 2011-01-25
+	- Modify : YYYY-MM-DD
+	- Version : ver 1.0
+
+	* 수정 주석처리 순서 : 날짜 이름 수정사항
+
+	- MODIFY HISTORY (수정 부분, 수정일 반드시 작성)
+		-
+*/
+/*
+========================================================================
+LAYOUT
+========================================================================
+*/
+#wrap,
+#fixMinWidth,
+#contentWrapper {
+	zoom: 1;
+	position: relative;
+}
+#wrap {
+    overflow:hidden;
+	margin: 0 auto;
+	_margin-left: 1200px;
+}
+#fixMinWidth {
+	_margin-left: -1200px;
+	min-width: 1100px;
+}
+#contentWrapper {
+	z-index: 0;
+}
+#contentWrapper:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#aside,
+#extra {
+	position: relative;
+	float: left;
+	display: inline;
+}
+#contentWrap {
+	position: relative;
+}
+#aside,
+#extra {
+	display: none;
+}
+#wrap.show-aside #contentWrapper {
+	padding-left: 200px;
+	background: url(../neoimages/bg/aside_extra_hor_line.gif) repeat-y 200px 0;
+}
+#wrap.show-extra #contentWrapper {
+	padding-right: 340px;
+}
+#wrap.show-aside #aside,
+#wrap.show-extra #extra {
+	display: inline;
+}
+#wrap.show-aside #aside { 
+	z-index: 1; 
+}
+#aside {
+	left: -200px;
+	width: 200px;
+	margin-right: -200px;
+	position: relative;
+}
+#extra {
+	*zoom: 1;
+	right: -340px;
+	width: 340px;
+	margin-left: -340px;
+	background: #fff;
+    position: absolute; 
+    top: 0; 
+    right: 0;
+}
+#contentWrap {
+	width: 100%;
+	/*padding-bottom: 50px;*/
+}
+#footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 11px;
+	font-family: Tahoma;
+	border-top: 1px solid #ddd;
+}
+/*
+========================================================================
+HEADER
+========================================================================
+*/
+#header {
+	position: relative;
+	z-index: 1;
+	*zoom: 1;
+	height: 22px;
+	position: relative;
+	padding: 10px 20px 10px 20px;
+	margin-right: 1px;
+	border-bottom: 3px solid #819ab8;
+	background-color: #fff;
+    min-width: 1200px;
+}
+	/* 샵단 스킨 수정 상태 */
+	#header.shop { background: #2c3f67; }
+	#header.shop .ftp .tit,
+	#header.shop .skin dt,
+	#header.shop .skin dd{ color: #fff;}
+
+#header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#header .ctrl-btns {
+	float: right;
+	width: auto;
+}
+#header .ctrl-btns dd {
+	float: left;
+}
+#header .ctrl-btns dd.vtag {
+	margin-left: 20px;
+}
+#header .ftp,
+#header .skin {
+	float: left;
+	width: auto;
+}
+/*  ftp */
+#header .ftp {
+	margin-right: 35px;
+}
+#header .ftp fieldset {
+	display: inline;
+}
+#header .ftp .tit {
+	display: inline;
+	font-weight: bold;
+	color: #010101;
+    line-height: 16px;
+}
+/* skin */
+#header .skin dt,
+#header .skin dd {
+	float: left;
+	width: auto;
+	display: inline;
+	color: #010101;
+	line-height: 20px;
+	font-weight: bold;
+}
+#header .skin dt {
+	margin-right: 5px;
+}
+#header .skin dd.btns {
+	font-size: 0;
+	line-height: 0;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+#header .skin dd img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+/*모바일 편집창 header*/
+#m-header {
+	position: relative;
+	z-index: 1;
+	*zoom: 1;
+	height: 22px;
+	position: relative;
+	padding: 10px 20px 10px 20px;
+	margin-right: 1px;
+	border-bottom: 3px solid #819ab8;
+	background-color: #AFECDD;
+    min-width: 1200px;
+}
+#m-header.prepare-go {
+	background-color: #FFC90E;
+}
+	/* 샵단 스킨 수정 상태 */
+	#m-header.shop { background: #E0ABFF; }
+    /*
+	#m-header.shop .ftp .tit,
+	#m-header.shop .skin dt,
+	#m-header.shop .skin dd{ color: #fff;}
+    */
+
+#m-header:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#m-header .ctrl-btns {
+	float: right;
+	width: auto;
+}
+#m-header .ctrl-btns dd {
+	float: left;
+}
+#m-header .ctrl-btns dd.vtag {
+	margin-left: 20px;
+}
+#m-header .ftp,
+#m-header .skin {
+	float: left;
+	width: auto;
+}
+/*  ftp */
+#m-header .ftp {
+	margin-right: 35px;
+}
+#m-header .ftp fieldset {
+	display: inline;
+}
+#m-header .ftp .tit {
+	display: inline;
+	font-weight: bold;
+	color: #010101;
+    line-height: 16px;
+}
+/* skin */
+#m-header .skin dt,
+#m-header .skin dd {
+	float: left;
+	width: auto;
+	display: inline;
+	color: #010101;
+	line-height: 20px;
+	font-weight: bold;
+}
+#m-header .skin dt {
+	margin-right: 5px;
+}
+#m-header .skin dd.btns {
+	font-size: 0;
+	line-height: 0;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+#m-header .skin dd img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+/*
+========================================================================
+공통
+========================================================================
+*/
+/* 텍스트 에디터 공통 */
+.source { position: relative; }
+.edit-box {
+	position: relative;
+	border: 1px solid #dbdbdb;
+    height: 100%;
+}
+.edit-box textarea {
+	overflow-y: scroll;
+	width: 100%;
+	border: 0;
+	padding: 0;
+	font-family: monospace;
+	resize: none;
+    outline : none;
+}
+.edit-box.box-sub {
+	/*margin-top: 10px;*/
+}
+.edit-box.box-sub textarea {
+	background-color: #efefef;
+}
+.display_block {
+    display : block;
+}
+.display_none {
+    display : none !important;
+}
+/*
+========================================================================
+LAYER
+========================================================================
+*/
+/* 레이어 - 디자인 저장 타입  */
+#layertempConfirm {
+	/*display: block;*/
+	left: 50%;
+	top: 300px;
+	margin-left: -205px;
+	width: 410px;
+}
+#layertempConfirm .box {
+	padding: 20px 10px;
+	margin-top: 10px;
+	border: 1px solid #d7dce0;
+	background-color: #f0f4f7;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#layertempConfirm .labels {
+	text-align: center;
+}
+#layertempConfirm .labels label {
+	margin-right: 10px;
+}
+#layertempConfirm .labels label.last {
+	margin-right: 0;
+}
+#layertempConfirm .txt-dsc {
+	margin-top: 10px;
+	text-align: center;
+}
+#layertempConfirm p.dsc {
+	margin-top: 15px;
+	color: #911212;
+	text-align: center;
+}
+#layertempConfirm .btn-foot {
+	text-align: center;
+	margin-top: 10px;
+}
+#layertempConfirm #realSave {
+    margin:0;
+    text-align:right;
+}
+#layertempConfirm .temp_store_no {
+    text-align : center;
+}
+
+/* 레이어 - filetree 파일 추가 */
+#layer-access-modify { 
+	left: 80%;
+	top: 185px; 
+	margin-left: -185px;
+	width: 370px;
+}
+#layer-access-modify.box{
+	margin-top: 10px; 
+}
+#layer-access-modify.list li {
+	padding-bottom: 5px;
+	padding-left: 5px; 
+}
+#layer-access-modify select {
+    width   : 250px;
+}
+#layerpageAdd { 
+	left: 50%;
+	top: 140px; 
+	margin-left: -185px;
+	width: 370px;
+}
+#layer-access-modify .list input{ 
+    width   : 245px;
+}
+#layer-access-modify .page_member_access {
+	margin-left: 5px;
+}
+#layer-access-modify .page_member_access label {
+    padding-right: 2px;
+    margin-left: 2px;
+}
+#layer-access-modify .group_list {
+    margin: 7px 0 0 65px;
+}
+#layer-access-modify .page_member_access_msg {
+    margin: 7px 0 0 5px;
+}
+#layer-access-modify .page_member_access_msg_text {
+    padding-top: 5px;
+}
+#layer-access-modify .page_member_access_msg input.txt-input {
+    width: 306px;
+}
+#layer-access-modify .desc { 
+	margin-top:2px;
+	font-size: 11px;
+	color: #737373;
+}
+#layer-access-modify .btn-foot {
+	margin-top: 10px; 
+	text-align: center;
+}
+#layerpageAdd h2 { 
+	font-size: 0; 
+	line-height: 0;
+	padding-bottom: 6px;
+	border-bottom: 2px solid #6882a3;
+}
+#layerpageAdd .stit {
+	padding-left: 10px;
+	font-weight: bold;
+	color: #2e6fc1;
+	margin-top: 20px;
+	margin-bottom: 5px; 
+	background: url(../neoimages/bull/bull_h7_w5_arow_blue.gif) no-repeat 0 45%; 
+}
+#layerpageAdd .box{
+	margin-top: 10px; 
+}
+#layerpageAdd .list li {
+	padding-bottom: 5px;
+	padding-left: 5px; 
+}
+#layerpageAdd .page_add_info .list  {
+    margin-left: 27px;
+}
+#layerpageAdd select {
+    width   : 250px;
+}
+#layerpageAdd .supply-list select {
+    width   : 215px;
+}
+#layerpageAdd .list input{ 
+    width   : 245px;
+}
+#layerpageAdd .b-list { 
+	margin-top: 5px;
+	padding: 10px 0 5px 10px;
+	border: 1px solid #d7dce2;
+	background-color: #eff3f6;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#layerpageAdd .b-list li {
+	padding-bottom: 5px;
+}
+#layerpageAdd .b-list li span {
+	display: inline-block;
+	width: 55px;
+}
+#layerpageAdd .supply-list .b-list li span {
+	width: 90px;
+}
+#layerpageAdd .page_member_access,
+#layerpageAdd .page_set_design_id {
+	margin-left: 5px;
+}
+#layerpageAdd .page_member_access label {
+    padding-right: 22px;
+    margin-left: 2px;
+}
+#layerpageAdd .group_list {
+    margin: 7px 0 0 65px;
+}
+#layerpageAdd .page_member_access_msg {
+    margin: 7px 0 0 5px;
+}
+#layerpageAdd .page_member_access_msg label {
+    padding-right: 22px;
+    margin-left: 2px;
+}
+#layerpageAdd .page_member_access_msg_text {
+    padding-top: 5px;
+}
+#layerpageAdd .page_member_access_msg input.txt-input {
+    width: 306px;
+}
+#layerpageAdd .page_set_design_id {
+    margin-top: 5px;
+}
+#layerpageAdd .dsc { 
+	margin-top:5px;
+	font-size: 11px;
+	color: #737373;
+	padding-left: 5px; 
+	background: url(../neoimages/bull/bull_2px_sqr_dgray.gif) no-repeat 0 5px; 
+}
+#layerpageAdd .desc { 
+	margin-top:2px;
+	font-size: 11px;
+	color: #737373;
+}
+#layerpageAdd .btn-foot {
+	margin-top: 10px; 
+	text-align: center;
+}
+
+/* 레이어 - 간단 메모 리스트, 등록 */
+#layerSimpleMemo {
+	left: 250px;
+	top: 200px;
+	left: 50%;
+	margin-left: -220px;
+	width: 400px;
+	padding: 20px 25px;
+}
+#layerSimpleMemo .layer-top {
+	padding-left: 20px;
+	background: url(../neoimages/bull/bull_go_sqr.gif) no-repeat 0 1px;
+}
+#layerSimpleMemo .layer-top h3 {
+	color: #005EB3;
+	font-size: 12px;
+	line-height: 16px;
+	height: 16px;
+	font-weight: bold;
+}
+#layerSimpleMemo .btn-foot {
+	margin-top: 15px;
+	text-align: center;
+}
+#layerSimpleMemo .btn-foot input {
+	vertical-align: top;
+}
+#layerSimpleMemo .btn-top{
+	text-align: right;
+	position: relative;
+	top: -15px;
+	margin-bottom: -20px;
+}
+	/* 메모 리스트 */
+	#layerSimpleMemo #simpleList .table-wrap {
+		margin-top: 10px;
+	}
+	#layerSimpleMemo #simpleList .hor-table-1 {
+		border-width: 1px;
+	}
+	#layerSimpleMemo #simpleList .tb-date {
+		padding: 0 3px;
+	}
+	#layerSimpleMemo #simpleList .btn-select {
+		margin-top: 5px;
+	}
+	#layerSimpleMemo #simpleList span.current {
+        color: red;
+    }
+	/* 메모 작성 */
+	#layerSimpleMemo #simpleWrite {
+		display: none;
+	}
+	#layerSimpleMemo #simpleWrite .form-box {
+		border: 1px solid #ccc;
+		*zoom: 1;
+		margin-top: 10px;
+	}
+	#layerSimpleMemo #simpleWrite .form-box .tit {
+		font-weight: normal;
+		color: #4d7ecb;
+		padding: 5px 10px;
+		border-bottom: 1px solid #ccc;
+	}
+	#layerSimpleMemo #simpleWrite .write-box textarea {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		border: 0;
+		overflow-y: scroll;
+	}
+/* 사용자 태그 도움말 */
+#layerMakeTag { 
+	top: 150px; 
+	left: 50%; 
+	width: 510px; 
+	margin-left: -255px;
+}
+#layerMakeTag .layer-wrap {
+    padding: 5px 15px; 
+    height: 500px; 
+    overflow-y: scroll;
+}
+#layerMakeTag h2 { 
+    margin-top: 30px; 
+    padding-left: 10px; 
+    background: url(../neoimages/bull/bull_h7_w5_arow_blue.gif) no-repeat 0 45%;
+    color: #2c6cc1; 
+    font-weight: bold; 
+}
+#layerMakeTag .dsc { 
+    margin-left: 10px;
+    line-height: 16px; 
+    font-size: 12px;
+}
+#layerMakeTag .dsc p { 
+    margin-top: 10px;
+}
+#layerMakeTag .dsc .pl-16 {
+    padding-left: 16px; 
+}
+#layerMakeTag .dsc strong {
+    color: #000; 
+}
+#layerMakeTag .btn {
+    margin: 25px 0;
+    text-align: center; 
+}
+/* 상단 측별 하단 디자인 설명 레이어 */
+#layerLayout { 
+	width: 405px; 
+	top: 100px; 
+	left:50%; 
+	margin-left:-202px;
+}
+#layerLayout h2 { 
+	padding-bottom: 7px; 
+	border-bottom: 2px solid #6882a5; 
+}
+#layerLayout h3 { 
+	padding-left: 10px; 
+	margin-top: 25px; 
+	font-weight: bold; 
+	color: #2c6cc1;  
+	background: url(../neoimages/bull/bull_h7_w5_arow_blue.gif) no-repeat 0 45% ; 
+}
+#layerLayout p { 
+	margin-left: 10px; 
+	letter-spacing: -1px; 
+}
+#layerLayout .ex { 
+	font-size: 0; 
+	line-height: 0; 
+	margin-left: 10px; 
+	margin-top: 25px; 
+}
+#layerLayout .dsc-1 { 
+	margin-top: 5px; 
+	color: #404040; 
+}
+#layerLayout .dsc-2 { 
+	margin-top: 15px; 
+	font-size: 11px; 
+	color: #fd4649; 
+}
+#layerLayout .dsc-2 .bull { 
+	font-size: 12px; 
+}
+#layerLayout .btn-foot { 
+	text-align: center; 
+	margin-top: 20px; 
+}
+#layerLayout .expire-close { 
+	text-align: right; 
+	color: #333; 
+	font-size: 11px; 
+}
+#layerLayout .expire-close img { 
+	vertical-align: middle; 
+	margin-right: 4px;
+}
+/* 게시판 복사하기 레이어 */
+#layerBoardMultiCopy {
+	width: 405px;  
+	top: 100px; 
+	left:50%; 
+	margin-left:-202px;
+}
+#layerBoardMultiCopy .layer-top h3 {
+	padding: 15px 0 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #fff; 
+	font-weight: bold;
+	border-bottom: 2px solid #6882a3;
+}
+#layerBoardMultiCopy .layer-cont {
+	padding: 15px;
+}
+#layerBoardMultiCopy .tit {
+	margin-top: 15px;
+	padding-left: 18px;
+	color: #005EB3;
+	font-size: 12px;
+	line-height: 16px;
+	height: 16px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	background: url(../neoimages/bull/bull_go_sqr.gif) no-repeat 0 45%;
+}
+#layerBoardMultiCopy .tit span {
+	font-weight: normal;
+}
+#layerBoardMultiCopy .layer-cont {
+	padding-top: 10px;
+}
+#layerBoardMultiCopy .t-msg {
+	font-size: 11px;
+	letter-spacing: -1px;
+	color: #647ea3;
+}
+#layerBoardMultiCopy .scr-table-wrap {
+	margin-top: 5px;
+}
+
+#layerBoardMultiCopy .box{
+	padding: 20px 10px;
+	margin-top: 5px;
+	border: 1px solid #d7dce0;
+	background-color: #f0f4f7;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#layerBoardMultiCopy .labels{
+	text-align: center;
+}
+#layerBoardMultiCopy .labels label{
+	margin-right: 10px;
+}
+#layerBoardMultiCopy .labels label.last {
+	margin-right: 0;
+}
+#layerBoardMultiCopy .txt-dsc {
+	margin-top: 10px;
+	text-align: center;
+}
+#layerBoardMultiCopy .btn-foot {
+	margin-top: 15px;
+	text-align: center;
+}
+#layerBoardMultiCopy .btn-close { 
+	margin-left: 7px;
+}
+#layerIngProcessing {
+	/*display: block;*/
+	left: 50%;
+	top: 320px;
+	margin-left: -92px;
+	width: 184px;
+}
+
+/*
+========================================================================
+ASIDE
+========================================================================
+*/
+/* lnb */
+#lnb .tit {
+	*zoom: 1;
+	height: 35px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 14px;
+	line-height: 35px;
+	text-align: center;
+	background: url(../neoimages/bg/lnb_tit.gif) repeat 0 0;
+}
+#lnb .list {
+	padding: 15px 10px 30px 20px;
+	*zoom: 1;
+}
+#lnb .list:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#lnb .list li {
+	float: left;
+	width: 157px;
+	overflow: hidden;
+	padding-left: 13px;
+	padding-bottom: 5px;
+}
+#lnb .list li .bull,
+#lnb .list li a {
+	float: left;
+	position: relative;
+}
+#lnb .list li .bull {
+	left: -13px;
+	width: 13px;
+	margin-right: -13px;
+}
+#lnb .list li a {
+	width: 100%;
+}
+#lnb .list li.now,
+#lnb .list li.now a {
+	color: #fe2e2e;
+}
+#lnb .list li.now a {
+	font-weight: bold;
+}
+/* file tree 컨트롤 버튼 */
+#designCtrlBtn { 
+	padding: 3px 0; 
+	background-color: #98b1c5; 
+}
+#designCtrlBtn .btns { 
+	zoom: 1; 
+	overflow: hidden; 
+	font-size: 0; 
+	line-height: 0; 
+	text-align: center; 
+	padding-left: 10px;
+}
+#designCtrlBtn button { 
+	float: left; 
+	overflow: hidden; 
+	height: 18px; 
+	margin-right: 3px; 
+	background: url(../neoimages/bg/neodesign_tree_btn.gif) no-repeat; 
+}
+#designCtrlBtn button em { 
+	visibility: hidden; 
+}
+#designCtrlBtn button.p-add { 
+	width: 81px; 
+	background-position: -10px -54px; 
+}
+#designCtrlBtn button.t-open { 
+	width: 45px; 
+	background-position: -10px -77px; 
+}
+#designCtrlBtn button.t-close { 
+	width: 45px; 
+	background-position: -60px -77px; 
+}
+/* file tree */
+#fileTreeWrap { 
+	overflow: scroll; 
+	zoom: 1; 
+	position: relative; 
+	height: 300px; 
+	width: 100%;
+}
+/*
+========================================================================
+EXTRA
+========================================================================
+*/
+#extra .tit-extra {
+	*zoom: 1;
+	height: 35px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 14px;
+	line-height: 35px;
+	text-align: center;
+}
+#extra .tit-vtag {
+	background: #abbdd5;
+}
+#extra .tit-modify-tag {
+	position: relative;
+	background: #8cd48a;
+}
+#extra .tit-modify-tag .btn-tag-make {
+	position: absolute;
+	right: 5px;
+	top: 7px;
+}
+#extra .form-vtag {
+	position: relative;
+	padding: 5px 4px;
+	height: 25px;
+    border-left: 1px solid #a1acc2;
+    border-right: 1px solid #a1acc2;
+    background-color: #ecf2fe;
+}
+#extra .extra-fix-height {
+	width: 100%; 
+	position: relative;
+	background: url(../neoimages/bg/aside_extra_hor_line.gif) repeat-y 0 0;
+}
+/* 태그목록 리사이즈 영역 */
+#extra .ui-widget-content {
+	position: relative;
+	height: 200px;
+	padding-bottom: 12px;
+}
+#extra .tag-scroll-top {
+	height: 100%; 
+	overflow-x: hidden; 
+	overflow-y: scroll; 
+	position: relative;
+}
+#extra .tag-list-cm {
+	position: relative;
+	_margin-right: -12px;
+	_width: 320px;
+	border-right: none;
+}
+#extra .tag-scroll-btm {
+	height: 300px; 
+	overflow-x: none; 
+	overflow-y: scroll; 
+	border-bottom: 1px solid #ddd;
+}
+#extra .ui-resizable-s {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 337px;
+	height: 10px;
+	border: 1px solid #fff;
+	margin-left: 1px;
+	font-size: 0;
+	line-height: 0;
+	background-color: #e6e6e6;
+	cursor: n-resize;
+}
+#extra .extra-fix-height { width: 336px; border: 2px solid #2c3f67; }
+#extra .extra-fix-height .make-w { height: 45px; line-height: 19px; padding: 5px 15px 5px 0; text-align: right; border-bottom: 1px solid #b2bcc6; }
+#extra .extra-fix-height .make-w-mobile { height: 19px; line-height: 19px; padding: 5px 15px 5px 0; text-align: right; border-bottom: 1px solid #b2bcc6; }
+#extra .extra-fix-height #make-w-desc { font-size: 11px; color:red; text-align:center; margin-top:2px; }
+#extra .extra-fix-height .make-w img { vertical-align: middle; }
+#extra .scroll-y { overflow-y: scroll; }
+#tabNav { zoom: 1; overflow: hidden; }
+#tabNav li { float: left; width: 112px; height: 33px; line-height: 33px; text-align: center; margin-right: -1px; margin-bottom: -1px; border: 1px solid #8c93a3; background: #bec2cd; }
+#tabNav li a { display: inline-block; width: 112px; height: 33px; color: #fff; font-size: 14px; font-weight: bold; }
+#tabNav li.now { background: #2c3f67; border: 1px solid #2c3f67; }
+/*
+========================================================================
+CONTENTWRAP
+========================================================================
+*/
+#asideViewCtrl {
+	position: absolute;
+	overflow: hidden;
+	display: block;
+	left: 1px;
+	top: 35px;
+	width: 20px;
+	height: 87px;
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+	background-position: -20px 0px;
+	background-repeat: no-repeat;
+	background-image: url(../neoimages/bg/bg_aside_ctrl.gif);
+}
+
+#designTipBtn {
+	position: absolute;
+	overflow: hidden;
+	display: block;
+	left: 1px;
+	top: 120px;
+	width: 20px;
+	height: 120px;
+	text-indent: -9999px;
+	font-size: 0;
+	line-height: 0;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-image: url(../neoimages/bg/d4_banner4.png);
+    background-color: #ffffff;
+}
+
+#asideViewCtrl.show {
+	background-position: 0px 0px;
+}
+#contentWrap .menu-go {
+	overflow: hidden;
+	height: 30px;
+	padding-left: 30px;
+	padding-top: 5px;
+	background-color: #eaeaea;
+    position:relative;
+}
+#contentWrap .menu-go .tit {
+	display: inline;
+	font-weight: bold;
+	color: #838383;
+	margin-right: 5px;
+}
+#contentWrap .menu-go select {
+	margin-right: 3px;
+}
+#contentBody {
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+#contentBody .tit-page {
+	*zoom: 1;
+	padding-bottom: 5px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #000000;
+	border-bottom: 2px solid #99b2c8;
+}
+#contentBody .tit-page img { 
+	margin-right: 3px;
+	vertical-align: middle; 
+}
+#contentBody .tit-page span.tit-data-area {
+    font-size:11px;
+    font-weight:normal;
+}
+#contentBody .tit-page a.btn-tit-modify-ok {
+    display:none;
+}
+#contentBody .tit-type-1 {
+	*zoom: 1;
+	padding-left: 10px;
+	color: #576bca;
+	font-size: 14px;
+	font-weight: bold;
+	background: url(../neoimages/bull/tit_type_1.gif) no-repeat 0 45%;
+}
+#contentBody .tit-type-1 .small {
+	font-size: 11px;
+	text-transform: Capitalize;
+	font-weight: normal;
+}
+#contentBody .page-body {
+	position: relative;
+	margin-right: 10px;
+}
+/*
+========================================================================
+디자인 환경설정
+========================================================================
+*/
+#designSet .tit-type-1 {
+	margin-top: 35px;
+}
+#designSet .cont-box {
+	margin-top: 10px;
+}
+/* 정렬 타입 */
+#designSet .align-type {
+	*zoom: 1;
+	overflow: hidden;
+}
+#designSet .align-type li {
+	float: left;
+	width: 181px;
+	margin-right: 30px;
+	text-align: center;
+}
+#designSet .align-type li .thumb-img { 
+	position: relative;
+	width: 181px;
+	height: 100px;
+}
+#designSet .align-type li .thumb-img label {
+	position: absolute;
+	top: 32px;
+	left: 0px; 
+	width: 181px;
+	text-align: center;
+}
+#designSet .align-type .labels {
+	margin-top: 10px;
+}
+/* 쇼핑몰 주소 표시 */
+
+#designSet .cont-url-set {
+	zoom: 1;
+	overflow: hidden;
+	margin-top: 10px; 
+}
+#designSet .cont-url-set li {
+	float: left;
+	width: auto;
+	margin-right: 40px; 
+}
+#designSet .cont-url-set li dt { 
+	color: #0070c0;
+}
+#designSet .cont-url-set li dt span {
+	font-size: 11px;
+}
+#designSet .cont-url-set li dd {
+	margin-top: 5px;
+	margin-left: 15px; 
+}
+/* DTD 타입 */
+#designSet .dtd-type .txt-dtd,
+#designSet .dtd-type .dsc {
+	margin-top: 5px;
+}
+
+#designSet .design-width .dsc,
+#designSet .dtd-type .dsc {
+	font-size: 11px;
+}
+#designSet .design-width .dsc-1,
+#designSet .dtd-type .dsc-1 {
+	color: #576bca;
+}
+#designSet .dtd-type .dsc-2 {
+	color: #fe2e2c;
+}
+#designSet #setViewWrap .opt-dsc .btn-cm {
+	vertical-align: middle;
+}
+#designSet #setViewWrap .table-wrap {
+	margin-top: 5px;
+}
+#designSet #setViewWrap .table-wrap .limit {
+	margin-left: 10px;
+}
+#designSet #setViewWrap .table-wrap .limit,
+#designSet #setViewWrap .table-wrap .limit dt,
+#designSet #setViewWrap .table-wrap .limit dd {
+	display: inline;
+}
+#designSet #setViewWrap .table-wrap .limit dt,
+#designSet #setViewWrap .table-wrap .limit dd {
+	font-size: 11px;
+}
+#designSet #setViewWrap .table-wrap .limit dt {
+	color: #595959;
+}
+#designSet #setViewWrap .table-wrap .limit dd {
+	color: #fd2f2f;
+}
+/* 저장 버튼 */
+#designSet .btn-save {
+	width: 100%;
+	margin-top: 40px;
+	text-align: center;
+}
+/* HEAD 입력 textarea*/
+#designSet .txt-head textarea {
+    width:100%;
+	overflow-y: scroll;
+    height:100px;
+	resize: none;
+	font-family: monospace;
+    outline : none;
+}
+/*
+========================================================================
+공통 스타일 시트 - 디자인 편집
+========================================================================
+*/
+#formWrap {
+	position: relative;
+	zoom: 1;
+}
+#editWrap {
+	position: relative;
+    z-index: 999;
+}
+#designEdit .tit-type-1 {
+	margin-top: 20px;
+}
+#editWrap .is-highlight {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	line-height: 20px;
+}
+#designEdit .set-view-wrapper .opt-dsc {
+	text-align: right;
+	position: relative;
+	top: -10px;
+	margin-bottom: -10px;
+}
+#designEdit .set-view-wrapper .opt-dsc .btn-cm {
+	top: -3px;
+	margin-bottom: -3px;
+}
+#designEdit .btn-edit-box-ctrl {
+	zoom: 1;
+	position: relative;
+	margin-top: 10px;
+	width: 100%;
+}
+#designEdit .btn-edit-box-ctrl:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#designEdit .btn-edit-box-ctrl .btn-left {
+	float: left;
+}
+#designEdit .btn-edit-box-ctrl .btn-right {
+	float: right;
+}
+#designEdit .submit_btn {
+	position: relative;
+	zoom: 1; 
+	margin-top: 15px;
+	text-align: center;
+	width: 100%;
+}
+#designEdit .submit_btn .btn-copy, #designEdit .submit_btn .btn-multi-copy {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+/* 개인회원가입/수정, BtoB 개인회원 가입 안내문구 */
+#designEdit .submit_btn ul.newjoin-msg {
+    text-align:left; 
+    margin-top:10px; 
+    color: #fd4649;
+    font-weight:bold;
+    /*color:#404040*/
+}
+#designEdit .submit_btn ul.newjoin-msg li {
+    background:url(/makeshop/newmanager/images/icon_bullet_dot_orange.gif) no-repeat left 3px; 
+    margin-top:3px; 
+    font-size:12px; 
+    padding-left:8px
+}
+#designEdit .submit_btn ul.newjoin-msg li.dsc-red {
+    font-size:11px; 
+    color: #fd4649; 
+    background:none
+}
+#designEdit .submit_btn ul.newjoin-msg span.dsc-bold {
+    color:#000;
+    font-weight:bold; 
+    font-size:13px
+}
+/* 주문서작성 안내문구 */
+#designEdit .submit_btn ul.order-msg {
+    text-align:left; 
+    margin-top:10px; 
+    color: #fd4649;
+    font-weight:bold;
+    /*color:#404040*/
+}
+/* 안내문구*/
+#designEdit .submit_btn ul.notice-msg {
+    text-align:left; 
+    margin-top:10px; 
+    color: #fd4649;
+    font-weight:bold;
+    /*color:#404040*/
+}
+
+#designEdit .submit_btn ul.order-msg li {
+    background:url(/makeshop/newmanager/images/icon_bullet_dot_orange.gif) no-repeat left 3px; 
+    margin-top:3px; 
+    font-size:12px; 
+    padding-left:8px
+}
+#designEdit .submit_btn ul.order-msg li.dsc-red {
+    font-size:11px; 
+    color: #fd4649; 
+    background:none
+}
+#designEdit .submit_btn ul.order-msg span.dsc-bold {
+    color:#000;
+    font-weight:bold; 
+    font-size:13px
+}
+#designEdit .submit_btn ul.notice-msg li {
+    background:url(/makeshop/newmanager/images/icon_bullet_dot_orange.gif) no-repeat left 3px; 
+    margin-top:3px; 
+    font-size:12px; 
+    padding-left:8px
+}
+#designEdit .submit_btn ul.notice-msg li.dsc-red {
+    font-size:11px; 
+    color: #fd4649; 
+    background:none
+}
+#designEdit .submit_btn ul.notice-msg span.dsc-bold {
+    color:#000;
+    font-weight:bold; 
+    font-size:13px
+}
+
+#designEdit .resizable {
+	*zoom: 1;
+	position: relative;
+	height: 300px;
+	padding-left: 0;
+	width: auto !important;
+	padding-bottom: 1px;
+}
+#designEdit .resizable textarea {
+	display: block;
+	height: 100%;
+	border-bottom: 1px solid #ddd;
+	resize: none;
+	font-family: monospace;
+}
+#designEdit .ui-resizable-s {
+    /*background: #FAFAFA url(../neoimages/bg/btn_drag01.gif) no-repeat 50% 0;*/
+    background-color: #FAFAFA;
+    bottom: 0;
+    cursor: n-resize;
+    font-size: 0;
+    height: 10px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    position: absolute;
+}
+/*
+========================================================================
+공통 스타일 시트 - 임시저장 소스
+========================================================================
+*/
+#designEdit .edit-box {
+	
+}
+#designEdit #tempSourceList .tit-list {
+	overflow: hidden;
+	width: 100%;
+	height: 34px;
+	color: #293ca3;
+	line-height: 34px;
+	text-align: center;
+	background: #e1e1e1 url(../neoimages/bg/temp_source_list_tit.gif) repeat-x 0 50%;
+}
+#designEdit #tempSourceList .tit-list span {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height: 34px;
+	height: 34px;
+	background-color: #e1e1e1;
+}
+#designEdit #tempSourceList .list {
+	border-left: 1px solid #dbdbdb;
+	border-right: 1px solid #dbdbdb;
+	border-bottom: 1px solid #dbdbdb;
+}
+#designEdit #tempSourceList .list,
+#designEdit #tempSourceList .list li .li-wrap {
+	*zoom: 1;
+	overflow: hidden;
+}
+#designEdit #tempSourceList .list li {
+	float: left;
+	width: 100%;
+}
+#designEdit #tempSourceList .list li .li-wrap {
+	position: relative;
+	display: block;
+	padding: 3px 165px;
+	color: #313131;
+	cursor: pointer;
+}
+#designEdit #tempSourceList .list li.now {
+	background-color: #d9dfff;
+}
+#designEdit #tempSourceList .list li .num,
+#designEdit #tempSourceList .list li .date,
+#designEdit #tempSourceList .list li .tit,
+#designEdit #tempSourceList .list li .btns {
+	position: relative;
+	float: left;
+}
+#designEdit #tempSourceList .list li .num,
+#designEdit #tempSourceList .list li .date,
+#designEdit #tempSourceList .list li .tit {
+	font-size: 12px;
+	line-height: 20px;
+}
+#designEdit #tempSourceList .list li .num {
+	left: -165px;
+	margin-right: -165px;
+	width: 30px;
+	text-align: center;
+}
+#designEdit #tempSourceList .list li .date {
+	width: 125px;
+	left: -125px;
+	margin-right: -125px;
+}
+#designEdit #tempSourceList .list li .tit {
+	width: 100%;
+}
+#designEdit #tempSourceList .list li .btns {
+	right: -160px;
+	margin-left: -260px;
+	width: 260px;
+	text-align: right;
+}
+#designEdit #tempSourceList .list li .btns .btn-cm {
+	margin-top: 3px;
+}
+#designEdit .tit-content {
+    color:#586ACC;
+    font-weight:bold;
+}
+.mobile-qrcode {
+    position: relative; 
+    width: 375px; 
+    height: 380px; 
+    background: url(../neoimages/mobile_d3_address.gif) 
+    no-repeat 0 0;
+    margin-top:10px;
+}
+.mobile-qrcode-img {
+    position: absolute; 
+    top: 134px; 
+    left: 218px
+}
+.mobile-shopurl {
+    font-weight:bold;
+    margin:10px 0 0 85px;
+}
+/*
+========================================================================
+공통 스타일 시트 - CSS
+========================================================================
+*/
+#commonCss {
+	*zoom: 1;
+}
+#commonCss .edit-box {
+	margin-top: 10px;
+}
+/* 저장 버튼 */
+#commonCss .btn-save {
+	width: 100%;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.layer-popup {
+    z-index:101; position:absolute; top:200px; left:30%; width:475px; border:3px solid #2868de; background:#fff; font-size:12px; font-weight:normal; text-align:left; vertical-align:top; }
+.layer-popup a.l-close { position:absolute; top:0; right:0; width:28px; height:28px; background:url(../neoimages/btn/h11_close.gif) no-repeat 50% 50%; text-indent:-9999px; }
+.layer-popup .cont { padding:20px 30px 50px 30px;  }
+.layer-popup .cont .tit { font-size:24px; color:#000; font-weight:bold; border-bottom:1px solid #ccc; }
+.layer-popup .cont p { padding:10px 0; line-height:1.8em;}
+.layer-popup .cont dl  { padding:10px 0; line-height:1.8em; }
+.layer-popup .cont dl dt { padding:0 0 0 10px; margin:0; color:#000; font-weight:bold; background:url(../neoimages/bull/bull_square_wh5.gif) no-repeat 0 5px; display:inline }
+.layer-popup .cont dl dd { padding:0; margin:0; display:inline }
+.layer-popup a.layer-close { position:absolute; right:10px;bottom:10px;}

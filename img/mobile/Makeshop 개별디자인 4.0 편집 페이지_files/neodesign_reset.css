@@ -1,0 +1,560 @@
+/*
+	- Project : 디자인 시즌3
+	- Author : odini84@gmail.com
+	- Description : reset, 기타 공통 style sheet
+	- Create : 2011-01-25
+	- Modify : YYYY-MM-DD
+	- Version : ver 1.0
+
+	* 수정 주석처리 순서 : 날짜 이름 수정사항
+
+	- MODIFY HISTORY (수정 부분, 수정일 반드시 작성)
+		-
+*/
+/*
+========================================================================
+RESET
+========================================================================
+*/
+/* global rest */
+html {
+	overflow-y: scroll;
+}
+html, body {
+	height: 100%;
+}
+html, body,
+h1, h2, h3, h4, h5, h6,
+dl, dt, dd, ul, li, ol,
+th, td, p, blockquote,
+form, fieldset, legend,
+input, select, textarea, button {
+	margin: 0;
+	padding: 0;
+}
+body,
+h1, h2, h3, h4, h5, h6,
+input, select, textarea, a {
+	font-family: Dotum, AppleGothic, Helvetica, sans-serif;
+}
+body,
+h1, h2, h3, h4, h5, h6,
+input, select, textarea {
+	color: #6a6a6a;
+	font-size: 12px;
+	line-height: 1.25;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+img, fieldset,button {
+	border:0 none;
+}
+img {
+	vertical-align: top;
+}
+li {
+	list-style: none;
+}
+hr, caption, legend {
+	display: none;
+}
+a {
+	color: #6a6a6a;
+	text-decoration: none;
+}
+a:hover {
+}
+button {
+	overflow: hidden;
+	cursor: pointer;
+}
+button span {
+	visibility: hidden;
+}
+address, em {
+	font-style: normal;
+}
+button, input, select, textarea, a {
+	vertical-align: middle;
+}
+select {
+	line-height: 18px;
+	height: 18px;
+}
+input:focus {
+	outline: none;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	word-wrap: break-word;
+	word-break: keep-all;
+}
+/*
+========================================================================
+기타 공통
+========================================================================
+*/
+/* image replace, hidden text */
+.ir *,
+.blind {
+	z-index:-1;
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	text-indent: -9999px;
+}
+/* form */
+.txt-input {
+	padding: 2px 0 0 2px;
+	height: 17px;
+	line-height: 17px;
+	border: 1px solid #7e9eb7;
+}
+.txt-disabled {
+	background-color: #f6f6f6;
+}
+.chk-rdo {
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+}
+/* file add trick  */
+.file-wrap {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	height: 23px;
+	width: 200px;
+	vertical-align: middle;
+	background: url(../neoimages/btn/h23_w67_trick_fileadd.gif) no-repeat right 0;
+}
+.file-wrap .file-txt {
+	float: left;
+	border: 0 none;
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	width: 125px;
+	border: 1px solid #ccc;
+}
+.file-wrap .file-trick {
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+	top: 0;
+	right: 0;
+	width: 67px;
+	height: 20px;
+	background: none;
+	border: 0 none;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+/* font-color */
+.fc-green {
+	color: #129C12;
+}
+.fc-red {
+	color: #fe2d30;
+}
+/* table */
+.tb-left,
+.tb-center,
+.tb-right {
+	padding: 0 10px;
+}
+.tb-left {
+	text-align: left;
+}
+.tb-center {
+	text-align: center;
+}
+.tb-right {
+	text-align: right;
+}
+.tb-label-r10 label {
+	margin-right: 10px;
+}
+.tb-label-r5 label {
+	margin-right: 5px;
+}
+.tb-label-r10 label.last,
+.tb-label-r5 label.laast {
+	margin-right: 0;
+}
+
+	/* 가로형 테이블 타입 1 */
+	.hor-table-1 th,
+	.hor-table-1 td {
+		border: 1px solid #dbdbdb;
+	}
+	.hor-table-1 th {
+		padding: 8px 0 7px;
+		color: #4d4d4d;
+		font-weight: bold;
+		background-color: #f6f6f6;
+	}
+	.hor-table-1 td {
+		padding: 5px 0;
+	}
+	/* 세로형 테이블 타입 1 */
+	.ver-table-1 th,
+	.ver-table-1 td {
+		border: 1px solid #dbdbdb;
+	}
+	.ver-table-1 th {
+		padding: 8px 0 7px;
+		color: #4d4d4d;
+		font-weight: bold;
+		background-color: #f6f6f6;
+	}
+	.ver-table-1 td {
+		padding: 5px 0;
+	}
+	/* 스크롤 세로형 테이블 타입 1*/
+	.scr-table-wrap .scr-table-1 {
+		border: 1px solid #dbdbdb;
+	}
+	.scr-table-1 thead th {
+		padding: 8px 0 7px;
+		color: #4d4d4d;
+		font-weight: bold;
+		border: 1px solid #dbdbdb;
+		background-color: #f6f6f6;
+	}
+	.scr-table-1 tbody table td {
+		padding: 5px 0;
+		border: 1px solid #dbdbdb;
+	}
+	.scr-wrapper {
+		*zoom: 1;
+		position: relative;
+        overflow-y:scroll;
+		width: 100%;
+	}
+	.scr-wrapper .scr-wrap {
+		*zoom: 1;
+		position: relative;
+		left: -1px;
+		top: -1px;
+		margin-bottom: -1px;
+	}
+	.scr-wrapper .scr-wrap .tb-left,
+	.scr-wrapper .scr-wrap .tb-center,
+	.scr-wrapper .scr-wrap .tb-right {
+		padding: 0 5px;
+	}
+	#extra .scr-wrapper .scr-wrap .tb-left,
+	#extra .scr-wrap .tb-center,
+	#extra .scr-wrap .tb-right {
+		padding: 0 2px;
+	}
+/* 텝 타입 1 */
+.tab-type-1 {
+	*zoom: 1;
+	overflow: hidden;
+	border-bottom: 3px solid #5f6fce;
+	position: relative;
+}
+.tab-type-1 li,
+.tab-type-1 li a {
+	float: left;
+	width: auto;
+	background-image: url(../neoimages/bg/tab_type_1.gif);
+	background-repeat: no-repeat;
+}
+.tab-type-1 li {
+	padding-left: 4px;
+	margin-right: 3px;
+	background-position: 0 -62px;
+}
+.tab-type-1 li a {
+	overflow: hidden;
+	height: 31px;
+	padding-left: 26px;
+	padding-right: 30px;
+	color: #808080;
+	font-weight: bold;
+	line-height: 35px;
+	background-position: right -93px;
+}
+.tab-type-1 li.now {
+	background-position: 0 0;
+}
+.tab-type-1 li.now a {
+	color: #fff;
+	background-position: right -31px;
+}
+.tab-type-1 li.design_source_desc {
+    margin-top: 15px;
+    padding-left: 0px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+/* 모바일일때 주요태그 설명 레이어 이미지*/
+.design_tag_desc {
+    position: absolute;
+    z-index: 999;
+    margin-left:500px;
+    display: none;
+}
+/* 레이어 팝업 타입 1 */
+.lpop-type-1 {
+	z-index: 10;
+	display: none;
+	position: absolute;
+	border: 3px solid #647ea3;
+	background-color: #fff;
+}
+.lpop-type-1 .close-layer {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	right: -3px;
+	top: -3px;
+	width: 21px;
+	height: 20px;
+	background: url(../neoimages/btn/btn_layer_close.gif) no-repeat 0 0;
+}
+.lpop-type-1 .layer-wrap {
+	padding: 15px;
+}
+.lpop-type-1 .tit-type-1 {
+	padding-left: 18px;
+	color: #015db2;
+	font-weight: bold;
+	background: url(../neoimages/bull/bull_go_sqr.gif) no-repeat 0 45%;
+}
+/* 레이어 팝업 타입 2 */
+.lpop-type-2 {
+	z-index: 10;
+	display: none;
+	position: absolute;
+}
+/* 레이어 팝업 오버레이 */
+.lpop-overlay {
+	z-index: 0;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #000;
+	opacity: 0.4;
+	filter: alpha(opacity=4	0);
+	display: none;
+}
+/* 적용디자인 위치 */
+.now-dclass-info {
+	margin-top: 10px;
+	text-align: right;
+}
+.now-dclass-info dt,
+.now-dclass-info dd {
+	display: inline;
+}
+.now-dclass-info dt {
+	font-weight: bold;
+}
+/* 적용 파일 */
+.target-file {
+	text-align: right;
+	font-size: 11px;
+	margin-top: 5px;
+}
+.target-file dd {
+	display: inline;
+}
+.target-file .html {
+	color: #058ce8;
+}
+.target-file .div {
+	color: #bdbdbd;
+}
+.target-file .css {
+	color: #ff2d2e;
+}
+/* 가상 태그 목록 리스트 */
+.tag-list-cm {
+	*zoom: 1;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+.tag-list-cm:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+div.grp-tit {
+    width: 100%;
+    height: 30px;
+	padding: 0;
+    color: #595959;
+    font-weight: bold;
+    letter-spacing: -1px;
+    background-color: #d9d9d9; 
+}
+div.grp-tit p {
+    padding: 8px 0 7px 10px;
+}
+div.grp-tit span {
+	position: absolute;
+	right: 6px;
+	top: 3px;
+}
+.tag-list-cm div.tag_list {
+	position: relative;
+	width: 100%;
+	padding: 8px 0 7px;
+	border-bottom: 1px solid #ddd;
+}
+.tag-list-cm div.tag_list.focus {
+	background-color: #e2ebfc;
+}
+.tag-list-cm .info {
+	margin-left: 10px;
+}
+.tag-list-cm .info dt {
+	color: #6c9be3;
+}
+.tag-list-cm .info dd {
+	margin-top: 5px;
+}
+.tag-list-cm .btns {
+	display: none;
+	position: absolute;
+	right: 10px;
+	*right: 25px;
+	top: 50%;
+	height: 19px;
+	margin-top: -10px;
+}
+
+
+/* file tree */ 
+.file-tree-tit {  
+	font-size: 12px;  
+	line-height: 14px; 
+	font-weight: bold; 
+	color: #6f6f6f; 
+	text-align: center; 
+	padding: 5px 0; 
+	background-color: #eaeaea; 
+}
+.file-tree-tit img{  
+    vertical-align : middle;
+}
+.file-tree { 
+	*zoom:1; 
+	position: relative; 
+	margin-top: 5px; 
+	margin-left: 5px; 
+	font-size: 12px; 
+	font-family: Dotum; 
+}
+.file-tree ul ul { 
+	zoom: 1;
+	margin:0 0 0 -10px;
+	background: #fff;
+	display: none;
+}
+.file-tree li{ 
+	*zoom:1; 
+	position:relative; 
+	padding: 2px 0 0 22px; 
+	white-space:nowrap; 
+	line-height:20px; 
+	background:url(../neoimages/bg/neodesign_tree_line.gif) no-repeat 9px 0; 
+	font-weight: bold;
+}
+.file-tree li.last{ 
+	background-position:9px -1766px;
+}
+.file-tree a{ 
+	text-decoration:none; color: #1f5699;
+}
+.file-tree .toggle,
+.file-tree li .ico { 
+	background: url(../neoimages/bg/neodesign_tree_btn.gif) no-repeat; 
+}
+.file-tree li .group_title { 
+    cursor: pointer;
+}
+.file-tree .toggle{ 
+	position:absolute; 
+	top:0; 
+	left:0; 
+	width:15px; 
+	height:15px; 
+	padding:0; 
+	overflow:hidden; 
+	border:0; 
+	font-size:0; 
+	color:#fff; 
+	vertical-align:middle; 
+	text-indent:19px; 
+	*text-indent:0; 
+	cursor:pointer;
+}
+.file-tree .toggle.plus{ 
+	background-position: -10px -10px;
+}
+.file-tree .toggle.minus{ 
+	background-position: -30px -10px;
+}
+.file-tree li .ico { 
+	overflow: hidden; 
+	display: inline-block; 
+	width: 13px; 
+	height: 16px; 
+	margin-right: 6px; 
+	vertical-align: middle; 
+}
+.file-tree li.file,
+.file-tree li.nfile { 
+	font-weight: normal; 
+	color: #000;
+    padding-left : 3px;
+}
+.file-tree li.file a,
+.file-tree li.nfile a { 
+	color: #000; 
+}
+.file-tree li.file .ico { 
+	background-position: -10px -29px; 
+}
+.file-tree li.nfile .ico { 
+	background-position: -28px -29px; 
+}
+.file-tree li .active a{ 
+	background: #d6e0e9; 
+	display: inline-block; 
+	padding: 0 3px;
+}
+/*상품분류 검색 설명*/
+.search-desc {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #6C9BE3;
+
+}
+.search-desc img {
+    vertical-align : middle;
+}
+
+.search-desc2 {
+    margin-top: 20px;
+}
+
+
+
+

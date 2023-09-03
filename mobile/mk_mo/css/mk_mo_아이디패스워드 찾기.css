@@ -1,0 +1,43 @@
+/* 레이아웃 */
+body {
+    word-break:keep-all;
+    word-wrap:break-word;
+}
+.hc_container {
+    padding: 0 10px;
+    text-align: center;
+}
+
+/* 타이틀 */
+h2.hc_page_title {
+    margin-top: 50px;
+}
+input[type="password"],
+input[type="text"] {
+    margin-bottom:8px;
+    width: 100%;
+}
+
+/* 기타 */
+.hc_clarification {
+    margin: 10px 0 34px;
+}
+
+.hc_login_check {
+    font-size: var(--hc_bd_small);
+}
+
+
+/* 페이지 스타일 */
+.hc_member_wrap section {
+    margin-bottom: 60px;
+}
+.hc_radio_check label,
+.hc_login_check label {
+    margin-right: 16px;
+    vertical-align: middle;
+}
+.hc_radio_check  {
+    text-align: left;
+    margin-bottom: 10px;
+}
