@@ -1,0 +1,17 @@
+#MS_product {
+  display : grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 4px;
+}
+.hc_sub_wrap li.hc_half_view:nth-child(1) {
+  grid-column: auto/span 2;
+}
+
+.hc_sub_wrap li.hc_half_view:nth-child(5n-1) {
+  grid-column: auto/span 2;
+}
+
+.hc_sub_wrap li.hc_half_view:nth-child(5n+4) {
+  grid-column: auto/span 2;
+}

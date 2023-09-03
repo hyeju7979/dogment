@@ -257,8 +257,7 @@ a.hc_btn_small_fill {
 #timesaleItemSlide div img {
     position: absolute;
     top: 0;
-    left: 50%;
-    /*margin-left: -91px;*/
+    let: 50%;
 }
 
 @font-face {
@@ -268,4 +267,52 @@ a.hc_btn_small_fill {
 }
 footer {
     margin-top: 0px;
+}
+
+header {
+    position: fixed;
+    top: 64px;
+    z-index: 9999;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
+.hc_header_main {
+    margin: 0 auto;
+    height: 50px;
+    text-align: center;
+}
+.hc_left_wrap {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+}
+.hc_hd_ic_hamburger {
+    top: 3px;
+    left: 0;
+}
+.hc_center_wrap {
+    display: inline-block;
+    text-align: center;
+}
+.hc_right_wrap {
+    display: inline-block;
+    position: absolute;
+    top:7px;
+    right: 30px;
+}
+.hc_right_wrap .hc_hd_ic_search, 
+.hc_right_wrap a {
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+}
+.hc_hd_ic_search {
+    margin: 0;
+    top: 2px;
+    height: 34px;
+}
+.hc_hd_ic_mypage {
+    top: 5px;
+    left: 3px;
 }
