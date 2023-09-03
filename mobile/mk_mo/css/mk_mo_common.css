@@ -574,11 +574,14 @@ header #hc_head_mypage {
 /*햄버거 메뉴*/
 .hamburger_item {
   display: block;
-  padding-right: 20px;
   float: left;
-  color: var(--hc_color_level2);
+  width: 50%;
+  height: 36px;
+  line-height: 36px;
   text-align: center;
-  font-weight: bold;
+  border: 1px solid var(--hc_dark_color);
+  box-sizing: border-box;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 input[name=hamburger_item] {
@@ -595,7 +598,9 @@ input[name=hamburger_item] {
   display: block;
 }
 .hc_hamburger_tabs input:checked + .hamburger_item {
-  color: var(--hc_dark_color);
+  /*color: var(--hc_dark_color);*/
+  color: var(--hc_bright_color);
+  background: var(--hc_dark_color);
 }
 #hc_hamburger .line{
   width: 20px;
@@ -1060,6 +1065,8 @@ input[name=hamburger_item] {
 .hc_store_wrap .hc_inline {
   gap: 4px;
 }
+
+/* 게시판 목록 > q&a*/
 
 /* 게시판 보기 */
 .rbContent {
