@@ -1,0 +1,68 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_member_wrap">
+        <main class="hc_contents">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">간편 로그인</h2>
+            <div class="hc_clarification">
+                SNS로 간편하게 로그인 하세요.
+            </div>
+
+            <!--/form_sns_join/-->
+                <!--/if_use_login_sns/-->
+                    <section class="hc_sns_login">
+                        <ul>
+                            <!--/if_link_login_facebook/--><li><a href="<!--/link_login_facebook/-->">페이스북 로그인</a></li><!--/end_if/-->
+                            <!--/if_link_login_naver/--><li><a href="<!--/link_login_naver/-->">네이버로로그인</a></li><!--/end_if/-->
+                            <!--/if_link_login_kakao/--><li><a href="<!--/link_login_kakao/-->">카카오톡 로그인</a></li><!--/end_if/-->
+                            <!--/if_link_login_apple/--><li><a href="<!--/link_login_apple/-->">애플 로그인</a></li><!--/end_if/-->
+                        </ul><!-- .sns-login -->
+                    </section>
+
+                    <!--/if_not_link_join_company/-->
+                    <div class="hc_btn_wrap">
+                        <!--/if_link_join_simple/-->
+                        <a class="hc_btn_long_fill" href="<!--/link_join_simple/-->">간편 회원가입하기</a>
+                        <!--/else/-->
+                        <a class="hc_btn_long_fill" href="<!--/link_join_person/-->">일반 회원가입하기</a>
+                        <!--/end_if/-->
+                    </div>
+                    <div class="hc_clarification">
+                        SNS계정이 없으신 경우<br />일반 회원가입을 통해회원가입을 진행할 수 있습니다.
+                    </div>
+                    <!--/end_if/-->
+                <!--/end_if/-->
+            <!--/end_form/-->
+            
+            <!--/if_link_join_company/-->
+            <section>
+                <h2 class="hc_page_title">회원 가입 유형 선택</h2>
+                <div class="hc_clarification">
+                    S목적에 맞는 유형을 선택해서 가입을 진행해주시기를 바랍니다.<br />
+                    유형에 따라 가입 절차 및 항목에 차이가 있을 수 있습니다.
+                </div>
+                <div class="type-select">
+                    <dl>
+                        <dt>일반 회원</dt>
+                        <dd>
+                            <span class="img"><img src="/images/common/join_type_general.png" alt=""></span>
+                            <span class="hc_btn_long_fill"><a href="<!--/link_join_person/-->">가입하기</a></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>기업 회원</dt>
+                        <dd>
+                            <span class="img"><img src="/images/common/join_type_company.png" alt=""></span>
+                            <span class="hc_btn_long_fill"><a href="<!--/link_join_company/-->">가입하기</a></span>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+            <!--/end_if/-->
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

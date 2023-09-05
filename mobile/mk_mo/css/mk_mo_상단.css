@@ -243,6 +243,12 @@ color: var(--hc_color_point);
   display: flex;
   gap: 10px;
 }
+.hc_clarification {
+  margin: 10px 0 34px;
+}
+.hc_login_check {
+  font-size: var(--hc_bd_small);
+}
 
 
 .hc_md_more_description {
