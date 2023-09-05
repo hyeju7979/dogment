@@ -1032,9 +1032,15 @@ input[name=hamburger_item] {
 }
 .hc_store_wrap #storeInfo ul {
   margin-bottom: 30px;
+  /*
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(100px, auto));
+  */
 }
 .hc_store_wrap li {
   display: inline-block;
+  padding: 0 10px;
   font-size: var(--hc_bd_small);
   cursor: pointer;
   transition: all 0.5s ease-out;
@@ -1042,9 +1048,9 @@ input[name=hamburger_item] {
 .hc_store_wrap li:nth-child(odd):after {
   content: "";
   display: inline-block;
-  margin: 0 6px 0 10px;
   position: relative;
   top: 0;
+  left: 10px;
   width: 1px;
   height: 10px;
   background-color: var(--hc_dark_color);
@@ -1064,7 +1070,8 @@ input[name=hamburger_item] {
 }
 .hc_store_wrap .info {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
+  justify-content: space-between;
   padding: 10px;
   border-top: 1px solid var(--hc_dark_color);
 }
@@ -1160,9 +1167,8 @@ input[name=hamburger_item] {
 .hc_board_review_list {
   display: grid;
   grid-template-columns: 84px auto 54px;
-  justify-content: center;
+  /*justify-content: space-between;*/
   align-items: center;
-  justify-items: center;
   gap: 6px;
 }
 .hc_page_board_review .hc_border_notice_list li {
