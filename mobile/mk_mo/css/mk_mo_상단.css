@@ -55,6 +55,16 @@ h6 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.hc_oneThird {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+.hc_oneThird .hc_btn_long_fill {
+    height: 40px;
+    line-height: normal;
+    box-sizing: border-box;
+}
 .hc_inline {
   display: inline-flex;
   align-items: center;

@@ -302,6 +302,10 @@ body #comment_password .contents .form-wrap2 p:last-child a {display:block; back
     box-shadow: none;
     box-sizing: border-box;
 }
+.fa-times:before {
+    content: "x";
+    font-size: var(--hc_bd_xlarge);
+}
 
 /*
 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
@@ -1250,10 +1254,13 @@ input[name=hamburger_item] {
 /* MEMBER */
 .hc_member_wrap .hc_contents {
   padding: 0 10px;
-  text-align: center;
+  /*text-align: center;*/
 }
 .hc_member_wrap h2.hc_page_title {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
+}
+.hc_member_wrap .hc_clarification {
+    text-align: center;
 }
 .hc_member_wrap input[type="password"],
 .hc_member_wrap input[type="text"] {
@@ -1326,6 +1333,7 @@ input[name=hamburger_item] {
   text-align: left;
   margin-bottom: 10px;
 }
+
 /* 아이디/패스워드 찾기 결과 */
 .hc_find_results {
     margin-top: 40px;
@@ -1333,5 +1341,134 @@ input[name=hamburger_item] {
 }
 .hc_find_results dt {
     margin-bottom: 20px
+}
+
+/* 간편 회원가입 화면 */
+.hc_member_wrap .tableBox {
+    text-align: left;
+}
+.hc_member_wrap .tableBox th {
+    vertical-align: middle;
+    font-weight: 400;
+}
+.hc_member_wrap .tableBox p.hc_color_point {
+    margin-bottom: 10px;
+    font-size: var(--hc_bd_small);
+}
+.hc_member_wrap .tableBox input[type="email"] {
+    width: 100% !important;
+}
+.hc_member_wrap .type1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+.gender th, .gender td {
+    height: 40px;
+    line-height: 40px;
+}
+.gender dl {
+    display: inline-flex;
+}
+.gender dd {
+    margin-right: 14px;
+}
+.form-terms .form-wrap {
+    margin: 0 !important;
+    padding: 18px 10px !important;
+    text-align: left;
+    border: 0 !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--hc_dark_color) !important;    
+}
+.form-terms .form-wrap textarea {
+    width: 100% !important;
+    color: inherit !important;
+    border-radius: 0 !important;
+    background: var(--hc_color_level3) !important;
+}
+.form-terms .form-wrap .contract-tbl th {
+    color: inherit !important;
+    background: var(--hc_color_level3) !important;
+}
+.form-terms .form-wrap .contract-tbl th, .form-terms .form-wrap .contract-tbl td {
+    border-color: var(--hc_color_level2) !important;
+    font-weight: var(--hc_light);
+}
+.form-terms .form-wrap h4.form-title {
+    font-size: inherit !important;
+    font-weight: var(--hc_light) !important;
+    font-family: inherit !important;
+}
+.form-terms .form-wrap h4.form-title .btn-toggle {
+    position: absolute;
+    right: 60px;
+}
+.form-terms .bold {
+    font-weight: var(--hc_light);
+}
+.sbSelector {
+    font-weight: normal;
+}
+.sbHolder {
+    border-color: var(--hc_dark_color) !important;
+}
+.join-msg li p {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* 비밀번호 재확인 */
+#reconfirmPasswd th, #reconfirmPasswd td {
+    text-align: left;
+    height:40px;
+}
+
+/* 우편번호 찾기 */
+#searchStep01 > p:first-child {
+    height: 40px;
+    background: var(--hc_color_level3);
+    line-height: 40px;
+}
+#searchStep01 p input[type="radio"] {
+    margin: 0 10px;
+}
+#MS_addr_type_number_to_load .msg01 {
+    color: var(--hc_color_point);
+    margin: 20px 0;
+}
+#searchStep01 .search-form {
+    margin-top: 20px;
+}
+#searchStep01 .search-form fieldset {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+#searchStep01 .search-form .btn_Grey {
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--hc_dark_color);
+    border: 0;
+}
+#searchStep01 .keyword input[type="text"] {
+    width:100%;
+}
+.layer-pop #searchStep01 form {
+    padding: 0;
+}
+#searchStep02 {
+    margin-top: 20px;
+}
+#searchStep02 select[name="addr_search_select"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.btn_Black {
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--hc_dark_color);
+    border: 0;
+
 }
 /*# sourceMappingURL=mo_style.css.map */

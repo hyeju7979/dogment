@@ -4,63 +4,281 @@
 <div class="hc_entire">
     <div class="hc_container hc_member_wrap">
         <main class="hc_contents">
+            <!--/form_join/-->
             <!-- 페이지 타이틀 -->
-            <h2 class="hc_page_title">간편 로그인</h2>
-            <div class="hc_clarification">
-                SNS로 간편하게 로그인 하세요.
-            </div>
-
-            <!--/form_sns_join/-->
-                <!--/if_use_login_sns/-->
-                    <section class="hc_sns_login">
+            <h2 class="hc_page_title">회원가입</h2>
+            <div class="join">
+                <div class="tableBox">
+                    <table>
+                        <colgroup>
+                            <col width="90" />
+                            <col width="*" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>이름</th>
+                                <td>
+                                    <!--/input_user_name(txt-input)/-->
+                                    <p class="hc_color_point"><!--/name_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>아이디</th>
+                                <td>
+                                    <!--/input_user_id(txt-input)/-->
+                                    <p class="hc_color_point"><!--/idcheck/--></p>
+                                    <p class="hc_color_point"><!--/id_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                                <td>
+                                    <!--/input_password1(txt-input)/-->
+                                    <p class="hc_color_point"><!--/password_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호확인</th>
+                                <td>
+                                    <!--/input_password2(txt-input)/-->
+                                    <p class="hc_color_point"><!--/repassword_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <!--/input_email(txt-input)/-->
+                                    <p class="hc_color_point"><!--/email_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/if_input_birth/-->
+                            <tr class="birth">
+                                <th>생년월일</th>
+                                <td>
+                                    <!--/input_birth/-->
+                                    <p class="hc_color_point"><!--/birth_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_gender/-->
+                                <tr class="gender" style="clear:both;">
+                                    <th>성별</th>
+                                    <td>
+                                        <!--/input_gender/-->
+                                        <p class="hc_color_point"><!--/gender_check_msg/--></p>
+                                    </td>   
+                                </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_mobile/-->
+                            <tr>
+                                <th>휴대폰번호</th>
+                                <td class="hc_oneThird">
+                                    <!--/input_mobile(txt-input)/-->
+                                    <!--/if_input_sms_auth/-->
+                                    <div>
+                                        <span <!--/sms_auth_div/-->><a class="hc_btn_long_fill" href="<!--/link_sms_auth/-->">인증</a></span>
+                                        <span <!--/sms_reauth_div/-->><a class="hc_btn_long_fill" href="<!--/link_sms_reauth/-->">재인증</a></span>
+                                    </div>
+                                    <!--/end_if/-->
+                                </td>
+                            </tr>
+                            <!--/if_input_sms_auth/-->
+                            <tr>
+                                <th>SMS 인증번호</th>
+                                <td class="hc_oneThird">
+                                    <!--/input_sms_auth(txt-input input-label)/--><a class="hc_btn_long_fill" href="<!--/link_check_sms/-->">확인</a>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/end_if/-->
+                            <!--/if_input_recommend/-->
+                            <tr>
+                                <th>추천인 ID</th>
+                                <td>
+                                    <!--/input_recommend(txt-input)/-->
+                                    <p class="hc_color_point"><!--/recommend_id_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <!--/if_input_app_recommend/-->
+                            <tr>
+                                <th>앱 초대회원 ID</th>
+                                <td>
+                                    <!--/input_app_recommend(txt-input)/-->
+                                    <p class="hc_color_point"><!--/app_recommend_id_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <tr style="display:none">
+                                <th>뉴스메일</th>
+                                <td>
+                                    <label><!--/radio_email_ok/--> 받습니다.</label>
+                                    <label><!--/radio_email_no/--> 받지 않습니다.</label>
+                                </td>
+                            </tr>
+                            <!--/if_input_mobile/-->
+                            <tr style="display:none">
+                                <th>SMS 안내</th>
+                                <td>
+                                    <label><!--/radio_sms_ok/--> 받습니다.</label>
+                                    <label><!--/radio_sms_no/--> 받지 않습니다.</label>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="join-msg">
+                    <!--/if_user_age_check/--><li style="padding-bottom:5px;color:#0549bb;"><label><!--/user_age_check/--> 만 14세 이상입니다. (필수)</label></li><!--/end_if/-->
+                    <li><p>* 회원가입에 필요한 최소한의 정보만 입력 받음으로써 개인정보 수집을 최소화하고 편리한 회원가입을 제공합니다.</p></li>
+                </ul>
+                <!-- 이용약관 -->
+                <!--/if_use_privacy/-->
+                     <!--/new_privacy_terms/-->
+                <!--/else/-->
+                <!--/if_new_privercy_type/-->
+                <div class="desc">
+                    <h3>이용약관</h3>
+                    <div>
+                        <p class="desc-3"><!--/summary_contract_terms/--></p>
+                    </div>
+                    <a href="<!--/link_contract_view/-->" class="open-pop">전문보기</a>
+                </div>
+                <div class="desc">
+                    <h3 class="none-line">개인정보 수집, 이용 안내</h3>
+                    <div class="privercy-contract-tap">
                         <ul>
-                            <!--/if_link_login_facebook/--><li><a href="<!--/link_login_facebook/-->">페이스북 로그인</a></li><!--/end_if/-->
-                            <!--/if_link_login_naver/--><li><a href="<!--/link_login_naver/-->">네이버로로그인</a></li><!--/end_if/-->
-                            <!--/if_link_login_kakao/--><li><a href="<!--/link_login_kakao/-->">카카오톡 로그인</a></li><!--/end_if/-->
-                            <!--/if_link_login_apple/--><li><a href="<!--/link_login_apple/-->">애플 로그인</a></li><!--/end_if/-->
-                        </ul><!-- .sns-login -->
-                    </section>
-
-                    <!--/if_not_link_join_company/-->
-                    <div class="hc_btn_wrap">
-                        <!--/if_link_join_simple/-->
-                        <a class="hc_btn_long_fill" href="<!--/link_join_simple/-->">간편 회원가입하기</a>
-                        <!--/else/-->
-                        <a class="hc_btn_long_fill" href="<!--/link_join_person/-->">일반 회원가입하기</a>
-                        <!--/end_if/-->
+                            <li class="sel"><a href="#none">수집하는 항목</a></li>
+                            <li><a href="#none">수집·이용 목적</a></li>
+                            <li class="end"><a href="#none">보유 및 이용기간</a></li>
+                        </ul>
                     </div>
-                    <div class="hc_clarification">
-                        SNS계정이 없으신 경우<br />일반 회원가입을 통해회원가입을 진행할 수 있습니다.
+                    <div class="tab-content">
+                        <div class="privercy-contract">
+                            <p><!--/summary_privercy_terms1/--></p>
+                        </div>
+                        <div class="privercy-contract" style="display: none;">
+                            <p><!--/summary_privercy_terms2/--></p>
+                        </div>
+                        <div class="privercy-contract" style="display: none;">
+                            <p><!--/summary_privercy_terms3/--></p>
+                        </div>
+                    </div><!-- .tab-content -->
+                    <a href="<!--/link_privercy_policy_view/-->" class="open-pop">전문보기</a>
+                </div>
+                <!--/if_third_party/-->
+                <div class="desc">
+                    <h3>개인정보의 제3자 제공</h3>
+                    <div>
+                        <p class="desc-3"><!--/summary_third_party_terms/--></p>
                     </div>
-                    <!--/end_if/-->
+                    <a href="<!--/link_third_party_view/-->" class="open-pop">전문보기</a>
+                </div>
                 <!--/end_if/-->
+                <!--/if_trust/-->
+                <div class="desc">
+                    <h3>개인정보 처리위탁안내</h3>
+                    <div>
+                        <p class="desc-3"><!--/summary_trust_terms/--></p>
+                    </div>
+                    <a href="<!--/link_trust_view/-->" class="open-pop">전문보기</a>
+                </div>
+                <!--/end_if/-->
+                <div class="desc">
+                    <p><label><!--/checkbox_contract_ok/--> 위의 이용약관에 동의합니다.</label></p>
+                    <p><label><!--/checkbox_privercy_ok/--> 개인정보 수집 및 이용안내에 동의합니다.</label></p>
+                    <!--/if_third_party/-->
+                    <p><label><!--/checkbox_third_party_ok/--> 개인정보 제3자 제공에 동의합니다.</label></p>
+                    <!--/end_if/-->
+                    <!--/if_trust/-->
+                    <p><label><!--/checkbox_trust_ok/--> 개인정보 처리위탁에 동의합니다.</label></p>
+                    <!--/end_if/-->
+                </div>
+                <!--/else/-->
+                <div class="desc">
+                    <h3>이용약관</h3>
+                    <div>
+                        <p class="desc-3"><!--/summary_contract_terms/--></p>
+                    </div>
+                    <a href="<!--/link_contract_view/-->" class="open-pop">전문보기</a>
+                </div>
+                <div class="agree-2">
+                    <p><label><!--/radio_contract_ok/--> 동의함 </label> <label><!--/radio_contract_no/--> 동의안함</label></p>
+                </div>
+                <div class="desc">
+                    <h3>개인정보 수집 이용안내</h3>
+                    <div>
+                        <p class="desc-3"><!--/summary_privercy_terms/--></p>
+                    </div>
+                    <a href="<!--/link_privercy_policy_view/-->" class="open-pop">내용 전체보기 &gt;</a>
+                </div>
+                <div class="agree-2">
+                    <p><label><!--/radio_privercy_ok/--> 동의함</label> <label><!--/radio_privercy_no/--> 동의안함</label></p>
+                </div>
+                <!--/end_if/-->
+                <!--/end_if/-->
+                <!-- //이용약관 -->
+            </div>
+            <div class="hc_btn_wrap">
+                <a class="hc_btn_long_fill" href="<!--/link_join/-->"><!--/if_login/-->정보수정<!--/else/-->회원가입<!--/end_if/--></a>
+            </div>
             <!--/end_form/-->
-            
-            <!--/if_link_join_company/-->
-            <section>
-                <h2 class="hc_page_title">회원 가입 유형 선택</h2>
-                <div class="hc_clarification">
-                    S목적에 맞는 유형을 선택해서 가입을 진행해주시기를 바랍니다.<br />
-                    유형에 따라 가입 절차 및 항목에 차이가 있을 수 있습니다.
+
+            <!-- 이용약관 레이어 -->
+            <div class="layerArea">
+                <!--/if_not_use_privacy/-->
+                <!--/block_contract_term/-->
+                <div class="layer">
+                    <div class="layer-pop">
+                        <h3>이용약관</h3>
+                        <div class="txt">
+                            <!--/contract_terms/-->
+                        </div>
+                        <a href="<!--/link_policy_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                    </div>
                 </div>
-                <div class="type-select">
-                    <dl>
-                        <dt>일반 회원</dt>
-                        <dd>
-                            <span class="img"><img src="/images/common/join_type_general.png" alt=""></span>
-                            <span class="hc_btn_long_fill"><a href="<!--/link_join_person/-->">가입하기</a></span>
-                        </dd>
-                    </dl>
-                    <dl>
-                        <dt>기업 회원</dt>
-                        <dd>
-                            <span class="img"><img src="/images/common/join_type_company.png" alt=""></span>
-                            <span class="hc_btn_long_fill"><a href="<!--/link_join_company/-->">가입하기</a></span>
-                        </dd>
-                    </dl>
+                <!--/end_block/-->
+                <!--/if_new_privercy_type/-->
+                <!--/if_third_party/-->
+                <!--/block_third_party/-->
+                <div class="layer">
+                    <div class="layer-pop">
+                        <h3>개인정보의 제3자 제공</h3>
+                        <div class="txt">
+                            <!--/third_party_terms/-->
+                        </div>
+                        <a href="<!--/link_policy_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                    </div>
                 </div>
-            </section>
-            <!--/end_if/-->
+                <!--/end_block/-->
+                <!--/end_if/-->
+                <!--/if_trust/-->
+                <!--/block_trust/-->
+                <div class="layer">
+                    <div class="layer-pop">
+                        <h3>개인정보 처리위탁안내</h3>
+                        <div class="txt">
+                            <!--/trust_terms/-->
+                        </div>
+                        <a href="<!--/link_policy_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                    </div>
+                </div>
+                <!--/end_block/-->
+                <!--/end_if/-->
+                <!--/end_if/-->
+                <!--/end_if/-->
+                <!--/block_privercy_policy/-->
+                <div class="layer">
+                    <div class="layer-pop">
+                        <h3>개인정보처리방침</h3>
+                        <div class="txt">
+                            <!--/privercy_terms/-->
+                        </div>
+                        <a href="<!--/link_policy_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                    </div>
+                </div>
+                <!--/end_block/-->
+            </div>
         </main>
     </div>
 </div>
