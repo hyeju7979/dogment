@@ -103,8 +103,8 @@ var UpDownArrow = (function(){
         });
         jQuery('div.hc_badge_down a').on('click',function(e){
             e.preventDefault();
-            if(HcFullPage.handler.isExist()) {                 
-                 HcFullPage.handler.moveTo('11');
+            if(HcFullPage.handler.isExist()) {
+                 HcFullPage.handler.moveToFooter();
                  //AnimateAction.handler.action(7,'animated-fadeInUp','animate__fadeInUp');
                  //AnimateAction.handler.action(7,'animated-fadeInDown','animate__fadeInDown');                     
             } else {
@@ -135,7 +135,7 @@ var HcFullPage = (function(){
         initFullPage : function() {
             jQuery('#fullpage').fullpage({        
                 verticalCentered: true,
-                anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6', 'anchor7', 'anchor8', 'anchor9', 'anchor10', 'anchor11'],
+                anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4', 'anchor5', 'anchor6', 'anchor7', 'anchor8', 'anchor9', 'anchor10', 'anchor11', 'anchor12', 'anchor13'],
                 afterLoad : function(origin, destination) {
                      if(destination == 11) return;        
                      AnimateAction.handler.action(destination,'animated-fadeInUp','animate__fadeInUp');
@@ -153,6 +153,11 @@ var HcFullPage = (function(){
         },
         setMouseWheelScrolling(boolean) {
             jQuery.fn.fullpage.setMouseWheelScrolling(boolean);
+        },
+        moveToFooter: function() {
+            var footerNo = jQuery('section.hc_main_section').length;
+            action.moveTo(footerNo+"");
+            
         }
     }
     
@@ -165,6 +170,9 @@ var HcFullPage = (function(){
         },
         setMouseWheelScrolling : function(boolean) {
             action.setMouseWheelScrolling(boolean);
+        },
+        moveToFooter : function() {
+            action.moveToFooter();
         }
     }
     

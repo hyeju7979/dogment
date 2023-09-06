@@ -1,0 +1,20 @@
+.hc_page_coupon .hc_oneThird {
+    gap: 4px;
+}
+.hc_page_coupon .hc_clarification li {
+    list-style: disc;
+}
+.hc_page_coupon .hc_oneThird input[type="text"] {
+    border-width: 2px;
+}
+.hc_page_coupon h4 {
+    margin-bottom: 25px;
+}
+.hc_page_coupon .hc_clarification {
+    margin: 20px 0 54px;
+}
+.hc_coupon_list li {
+    padding: 20px;
+    border: 1px solid var(--hc_color_level2);
+    
+}

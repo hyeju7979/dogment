@@ -891,21 +891,21 @@ var HCStoreInfo = (function() {
         generateLinkTemplate : function(data) {
             var department = data.filter(item => item.type == 'department');
             var mall = data.filter(item => item.type == 'mall');
-            $('#hcDepartment').after(template.makeUlTemplate(department));
-            $('#hcMall').after(template.makeUlTemplate(mall));
+            $('#hcDepartment').after(template.makeUlTemplate(department,'hcDepartMentStoreUl'));
+            $('#hcMall').after(template.makeUlTemplate(mall,'hcMallStoreUl'));
         },
-        makeUlTemplate : function(data) {
+        makeUlTemplate : function(data,className) {
             var ul = [];
             data.forEach(function(item,index,array) {
                 var display = 'inline-block';
                 var opacity = 1;
-                if(index%4 == 0) ul.push('<ul>');
+                if(index%2 == 0) ul.push('<ul class="'+className+'">');
                 if(!item.initShow) {
                     display = 'none';
                     opacity = 0;
                 }
                 ul.push('<li data-id="hcStoreWrap'+item.id+'" style="display:'+display+';opacity:'+opacity+'">'+item.name+'</li>');
-                if(index%4 == 3 || array.length == index+1) ul.push('</ul>');
+                if(index%2 == 1 || array.length == index+1) ul.push('</ul>');
             });          
             return ul.join(''); 
         },
@@ -1006,8 +1006,10 @@ var HCStoreInfo = (function() {
 		},
         scrollIntoView: function(target) {
             action.showMapNoSlide(target);
-            setTimeout(function(){
-                document.querySelector('.' + target).scrollIntoView({ behavior: 'smooth' });
+            setTimeout(function(){                
+                $('html, body').animate({
+                    scrollTop: jQuery('.'+target).offset().top - 100
+                }, 500);
             },500);
 		},
         kakaoMapInit : function() {

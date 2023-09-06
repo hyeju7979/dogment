@@ -3,7 +3,7 @@
 <!-- 중앙 영역 -->
 <div class="hc_entire">
     <div class="hc_container hc_mypage_wrap">
-        <main class="hc_contents" id="join">
+        <main class="hc_contents hc_page_mymain">
             <!-- 페이지 타이틀 -->
             <h2 class="hc_page_title">MY PAGE</h2>
             <div class="hc_user_info">
@@ -11,10 +11,10 @@
                     <p><!--/user_name/-->님</p>
                     <p>회원님의 회원등급은 <!--/group_name/--> 입니다.</p>
                 </span>
-                <span>
-                    <a href="">
+                <span class="hc_layout_c">
+                    <a href="/shop/page.html?id=12">
                         <p><img src="http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_membership.svg" alt="" /></p>
-                        <p>등급혜택 보기</p>
+                        <p class="hc_color_point">등급혜택 보기</p>
                     </a>
                 </span>
             </div>
@@ -25,7 +25,7 @@
 			</div>
 			
             <!--/if_group/-->
-            <div class="grp">
+            <div>
                 <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/-->
                 <!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--><br />
                 
@@ -34,6 +34,118 @@
             </div>
             <!--/end_if/-->
   
+            <div class="hc_my_points">
+                <!--/if_coupon_count/-->
+                <a href="<!--/link_coupon/-->">
+                    <div>사용 가능 쿠폰</div>
+                    <div><!--/coupon_count/-->개</div>
+                </a>
+                <!--/end_if/-->
+
+                <!--/if_usable_point/-->
+                <a href="<!--/link_point/-->">
+                    <div>포인트</div>
+                    <div><!--/number/usable_point/-->P</div>
+                </a>
+                <!--/end_if/-->
+                
+                <!--/if_user_reserve/-->
+                <a href="<!--/link_reserve/-->">
+                    <div>마일리지</div>
+                    <div><!--/number/user_reserve/-->원</div>
+                </a>
+                <!--/end_if/-->
+            </div>
+
+            <section>
+                <h4>SHOPPING INFO</h4>
+                <ul>
+                    <li>
+                        <a href="<!--/link_order_list/-->">주문 내역</a>
+                    </li>
+                    <!--/if_link_subs/-->
+                    <li>
+                        <a href="<!--/link_subs/-->">정기배송 관리</a>
+                    </li>
+                    <!--/end_if/-->
+                    <li>
+                        <a href="<!--/link_coupon/-->">쿠폰 내역</a>
+                    </li>
+                    <li>
+                        <a href="<!--/link_reserve/-->">적립금 내역</a>
+                    </li>
+                    <!--/if_link_attendance/-->
+                    <li>
+                        <a href="<!--/link_attendance/-->">출석체크</a>
+                    </li>
+                    <!--/end_if/-->
+                    <li>
+                        <a href="<!--/link_mypage_today_product/-->">오늘 본 상품</a>
+                    </li>
+                    <li>
+                        <a href="<!--/link_wish/-->">상품보관함</a>
+                    </li>
+                    <!--/if_link_mypage_place/-->
+                    <li>
+                        <a href="<!--/link_mypage_place/-->">주소록 관리</a>
+                    </li>
+                    <!--/end_if/-->
+                    <!--/if_link_mypage_soldout/-->                    
+                    <li>
+                        <a href="<!--/link_mypage_soldout/-->">재입고 신청 내역</a>
+                    </li>
+                    <!--/end_if/-->
+                    <li>
+                        <a href="<!--/link_money/-->">예치금내역</a>
+                    </li>
+                    <li>
+                        <a href="<!--/link_point/-->">포인트내역</a>
+                    </li>
+                    <!--/if_link_shoppay/-->
+                    <li>
+                        <a href="<!--/link_shoppay/-->"><!--/shoppay_name/--> 관리</a>
+                    </li>
+                    <!--/end_if/-->
+                    <!--/if_link_mypage_present/-->
+		            <li>
+                        <a href="<!--/link_mypage_present/-->">선물함</a>
+                    </li>
+		            <!--/end_if/-->
+                </ul>
+            </section>
+
+            <section>
+                <h4>SHOPPING QUESTION</h4>
+                <ul>
+                    <li>
+                        <a href="<!--/link_mypage_article/-->">내 게시글 보기</a>
+                    </li>
+                    <li>
+                        <a href="<!--/link_mypage_email/-->">E-mail 문의</a>
+                    </li>
+                    <!--/if_link_m2m_question/-->
+                    <li>
+                        <a href="<!--/link_m2m_question/-->">1:1게시판</a>
+                    </li>
+                    <!--/end_if/-->
+                </ul>
+            </section>
+
+            <section>
+                <h4>CUSTOMER INFO</h4>
+                <ul>
+                    <!--/if_link_withdraw/-->
+                    <li>
+                        <a href="<!--/link_join_modify/-->">회원정보 수정</a>
+                    </li>
+                    <!--/end_if/-->
+                    <!--/if_link_withdraw/-->
+                    <li>
+                        <a href="<!--/link_withdraw/-->">회원정보 탈퇴 신청</a>
+                    </li>
+                    <!--/end_if/-->
+                </ul>
+            </section>
         </main>
     </div>
 </div>

@@ -1506,6 +1506,53 @@ input[name=hamburger_item] {
 
 /* 회원 탈퇴 신청 */
 #drop textarea[id="reason"] {
-    width: 100%;
+  width: 100%;
+}
+
+/* 마이페이지 */
+.hc_user_info {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--hc_bright_color);
+  background: var(--hc_dark_color);
+}
+.hc_user_info span:nth-child(2) {
+  padding-left: 10px;
+  border-left: 1px solid rgba(255,255,255,0.8); 
+}
+.hc_mypage_wrap .hc_clarification p:nth-child(1) {
+  margin:28px 0 20px;
+}
+.hc_my_points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--hc_color_level2);
+}
+.hc_my_points a {
+  padding: 10px;
+}
+.hc_my_points a:first-child {
+  border-right: 1px solid var(--hc_color_level2);
+}
+.hc_my_points a div:last-child {
+  text-align: right;
+}
+.hc_page_mymain .hc_clarification {
+  margin-bottom: 0;
+}
+.hc_page_mymain h4 {
+    height: 40px;
+    line-height: 40px;
+    background: var(--hc_color_level3);
+    margin-top: 40px;
 }
 /*# sourceMappingURL=mo_style.css.map */
+
+/*비회원주문조회 닫기버튼 숨김*/
+#inquiryOrder div.layer-pop div.hc_btn_wrap a.hc_btn_long {
+    display:none;
+}

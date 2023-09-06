@@ -1,0 +1,62 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_mypage_wrap">
+        <main class="hc_contents hc_page_coupon">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">쿠폰</h2>
+
+            <!--/form_coupon/-->
+            <div class="coupon-num">
+                <h4>보유한 쿠폰 리스트 확인하기</h4>
+                <div class="hc_oneThird"><!--/input_coupon_number/--><a class="hc_btn_long_fill" href="<!--/link_coupon_insert/-->">등록</a></div>
+            </div>
+            <!--/end_form/-->
+           
+            <div class="hc_clarification">
+                <li>피그먼트의 상품권 및 보너스쿠폰 번호를 입력하세요.</li>
+                <li>오프라인, 이메일, 모바일을 통해 발급 받으신 쿠폰인증번호를 입력해주시면 발급 가능합니다.</li>
+                <li>쿠폰의 발급 기간 / 마일리지 적립 기간을 꼭 확인해주세요.</li>
+            </div>
+
+            <h4 class="hc_color_point">
+                <!--/user_name/-->님께서 보유하고 있는 쿠폰은 총 <!--/coupon_count/-->장 입니다.
+            </h4>
+
+            <!--/if_coupon/-->
+            <section class="hc_coupon_list">
+                <ul class="list clearFix">
+                    <!--/loop_coupon/-->
+                    <li>
+                        <h4>coupon serial number : <!--/if_coupon@is_mobile_use/--><img src="/images/d3/m_01/icon/icon_phone_write@2x.gif" /><!--/else_if_coupon@is_app_use/--><img src="/images/d3/m_01/icon/icon_app_write@2x.gif" /> <!--/end_if/--> [<!--/coupon@number/-->] <!--/coupon@name/--></h4>
+                        <dl>
+                            <dt>쿠폰적용품목</dt>
+                            <dd><!--/coupon@item/--></dd>
+                        </dl>
+                        <dl>
+                            <dt>사용가능금액</dt>
+                            <dd><!--/coupon@valid_price/--></dd>
+                        </dl>
+                        <dl>
+                            <dt>사용범위</dt>
+                            <dd><!--/coupon@use_device/--></dd>
+                        </dl>
+                        <dl>
+                            <dt>할인/적립액(률)</dt>
+                            <dd><!--/coupon@sale/--></dd>
+                        </dl>
+                        <dl>
+                            <dt>사용기간</dt>
+                            <dd><!--/date(%Y-%M-%D)/coupon@use_start_date/--> ~ <!--/date(%Y-%M-%D)/coupon@use_end_date/--></dd>
+                        </dl>
+                    </li>
+                    <!--/end_loop/-->
+                </ul>
+            </section>
+            <!--/end_if/-->
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

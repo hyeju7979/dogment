@@ -1,0 +1,70 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_mypage_wrap">
+        <main class="hc_contents hc_page_reserve">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">마일리지</h2>
+            
+            <section>
+                <h4 class="hc_bd_large">마일리지 현황</h4>
+                <ul>
+                    <li>총 보유 적립금액 <strong><!--/number/user_reserve/--> Point</strong></li>
+                    <li>출석체크 누적 적립금액 <strong><!--/number/attendance_reserve/--> Point</strong></li>
+                </ul>
+            </section>
+            
+            <!--/if_form_reserve/-->
+            <div class="search_reserve">
+                <!--/form_reserve/-->
+                <fieldset>
+                    <legend>적립금 기간 검색 폼</legend>
+                    <!--/input_search_date_start/--> ~ <!--/input_search_date_end/-->
+                    <a href="<!--/link_search_button/-->" class="btn_Grey"><strong>조회</strong></a>
+                </fieldset>
+                <!--/end_form/-->
+            </div>
+            <!--/end_if/-->
+
+            <section>
+                <h4 class="hc_bd_large">마일리지 내역</h4>
+                <ul class="list">
+                <!--/if_reserve/-->
+                    <!--/loop_reserve/-->
+                    <li><!--/reserve@content/--><strong><!--/number/reserve@price/--> Point</strong></li>
+                    <!--/end_loop/-->
+                <!--/else/-->
+                    <li class="hc_no_date">적립금 내역이 없습니다.</li>
+                <!--/end_if/-->
+                </ul>
+            </section>
+
+            <h4 class="hc_bd_large">마일리지 사용기준 및 사용기한</h4>
+            <div class="hc_clarification">
+                <li>적립된 금액이 <!--/number/usable_reserve/-->원 이상 누적되었을 때, 사용하실 수 있습니다.</li>
+                <li>결제 시 적립금 사용 여부를 확인할 수 있는 안내문이 나옵니다.</li>
+            </div>
+
+            <div class="paging">
+                <!--/if_pager_reserve::prev/-->
+                <a href="<!--/pager_reserve::prev@link/-->"><span class="fa fa-angle-left"></span></a>
+                <!--/end_if/-->
+                <!--/if_pager_reserve/-->
+                <!--/loop_pager_reserve::page(5)/-->
+                    <!--/if_pager_reserve::page@current/-->
+                    <a href="javascript:return false;" class="now"><!--/pager_reserve::page/--></a>
+                    <!--/else/-->
+                    <a href="<!--/pager_reserve::page@link/-->"><!--/pager_reserve::page/--></a>
+                    <!--/end_if/-->
+                <!--/end_loop/-->
+                <!--/end_if/-->
+                <!--/if_pager_reserve::next/-->
+                <a href="<!--/pager_reserve::next@link/-->"><span class="fa fa-angle-right"></span></a>
+                <!--/end_if/-->
+            </div>
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

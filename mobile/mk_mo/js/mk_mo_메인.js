@@ -43,7 +43,36 @@ $(document).ready( function(){
     get_main_list('block_add7_product', 1, '.MK_block_add7_product', 'btn-add7_product', '1');  //추가 7 (PC(기획전))
     get_main_list('block_add8_product', 1, '.MK_block_add8_product', 'btn-add8_product', '1');  //추가 8 (위클리_원피스)
     get_main_list('block_add9_product', 1, '.MK_block_add9_product', 'btn-add9_product', '1');  //추가 9 (위클리_니트)
+    
+    
+    //가을신상 반값세일에서 안보이는 3개 노출
+    setTimeout(function(){
+        timeSaleItemShow();
+    },1000)
+    
+    
+    
 });
+
+function timeSaleItemShow() {
+
+    if($('#timeSale01').length < 1) return;
+    var $hideItems_1 = $('#timeSale01 ul.items').children('li.hide').eq(0);
+    var $hideItems_2 = $('#timeSale01 ul.items').children('li.hide').eq(1);
+    var $hideItems_3 = $('#timeSale01 ul.items').children('li.hide').eq(2);
+    $hideItems_1.show();
+    $hideItems_1.find('.hide').show();
+    
+    
+    $hideItems_2.show();
+    $hideItems_2.find('.hide').show();
+    
+    
+    $hideItems_3.show();
+    $hideItems_3.find('.hide').show();
+    
+    
+}
 
 // tab
 /*
@@ -89,4 +118,5 @@ $(document).ready( function(){
 		},bserver: true,
 		// observeParents: true,
 	});
+    
 });

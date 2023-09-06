@@ -29,28 +29,16 @@ h6 {
   font-size: var(--hc_bd_xxlarge);
 }
 
-.hc_color_point {
-  color: var(--hc_color_point);
-}
-
 /* 레이아웃 */
-.hc_entire {
-  margin-top: 40px;
-}
-.hc_container {
-  padding-top: 40px;
-}
-.hc_mypage_wrap,
-.hc_board_wrap,
-.hc_page_contents {
-  margin: 10px;
-}
-.hc_page_contents2 {
-  margin: 20px;
-}
 .hc_layout_c,
 .hc_topfull {
   text-align: center;
+}
+.hc_layout_l {
+  text-align: left;
+}
+.hc_layout_r {
+  text-align: right;
 }
 .hc_column2 {
   display: grid;
@@ -129,11 +117,24 @@ h2.hc_page_title {
   padding: 1em 0;
 }
 .hc_normal_line_contents th, .hc_normal_line_contents td {
-    padding: 5px 0;
-    height: 40px;
-    line-height: 40px;
+  padding: 5px 0;
+  height: 40px;
+  line-height: 40px;
 }
-
+.hc_entire {
+  margin-top: 40px;
+}
+.hc_container {
+  padding-top: 40px;
+}
+.hc_mypage_wrap,
+.hc_board_wrap,
+.hc_page_contents {
+  margin: 10px;
+}
+.hc_page_contents2 {
+  margin: 20px;
+}
 /* 
   인풋박스
 */
@@ -247,6 +248,9 @@ color: var(--hc_color_point);
 /* 
   기타 
 */
+.hc_color_point {
+  color: var(--hc_color_point);
+}
 .hc_blind {
   display: none !important;
 }

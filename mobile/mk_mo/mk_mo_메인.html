@@ -1,266 +1,838 @@
 <!--/include_header(1)/-->
-
-<div id="container" class="hc_entire">
-    <div id="contents" class="hc_container">
-        <main class="hc_contents" id="fullpage">
-            <!-- 섹션1. 메인 랜덤 이미지 -->
-            <section id="hcMainImage" class="section hc_main_section" data-anchor="anchor1">
-                <div class="hc_main_section1">
-                    <!-- 로딩 텍스트 -->
-                    <div class="hc_loding_copy loadingImage">
-                        <div class="hc_loding_copy_bg"></div>
-                        <section class="loading-data">
-                            <div class="hc_hc_loding_text loading-text">
-                                <span class="char">산</span>
-                                <span class="char">뜻</span>
-                                <span class="char">함</span>
-                                <span class="char">가</span>
-                                <span class="char">득</span>
-                                <span class="char">한</span>
-                                <span class="char">여</span>
-                                <span class="char">름</span>
-                                <span class="char">을</span>
-                                <span class="char">위</span>
-                                <span class="char">한</span>
-                                <span class="char">,</span>
-                                <span class="char">피</span>
-                                <span class="char">그</span>
-                                <span class="char">먼</span>
-                                <span class="char">트</span>
-                            </div>
-                        </section>
-                    </div> 
-                    <ul class="hc_random_imgs">
-                        <li class="mainImage" data-order="1" menu-color="#000" logo-color="#000" search-color="#000" mypage-color="#000" cart-color="#000"><a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_top1.jpg" /></a></li>
-                        <li class="mainImage" data-order="2" menu-color="#000" logo-color="#000" search-color="#000" mypage-color="#000" cart-color="#000"><a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_top2.jpg" /></a></li>
-                        <li class="mainImage" data-order="3" menu-color="red" logo-color="red" search-color="red" mypage-color="red" cart-color="red"><a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_top3.jpg" /></a></li>
-                        <li class="mainImage" data-order="4" menu-color="#000" logo-color="#000" search-color="#000" mypage-color="#000" cart-color="#000"><a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_top4.jpg" /></a></li>
-                    </ul>
-                </div>
-            </section>
+<!-- 삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨] -->
+<script>
+    function SMARTSKIN_MAIN_OBJECT_CHECK_M(key) {
+        if (typeof(SMARTSKIN_MAIN_OBJECT) != "undefined" || typeof(SMARTSKIN_MAIN_OBJECT) != typeof undefined) {
+            if (key) {
+                if (typeof(SMARTSKIN_MAIN_OBJECT[key]) != "undefined" || typeof(SMARTSKIN_MAIN_OBJECT[key]) != typeof undefined)
+                    return SMARTSKIN_MAIN_OBJECT[key];
+                else
+                    return false;
+            }
+            else {
+                return true
+            }
+        }
+        else {
+            return false;
+        }
+    }
+    //스마트스킨 ObjectS/S
+    if (SMARTSKIN_MAIN_OBJECT_CHECK_M()) SMARTSKIN_MAIN_OBJECT.main = true;
+    SMARTSKIN_MAIN_OBJECT.page = 'main';
+    </script>
+    <style>
+        #SMS_oneSlideBanner .SMS_oneNone {
+            display: block;
+        }
+        .oneSlideFixed {
+            position: absolute;
+        }
+        .SMS_top_main_gallery {
+            display: block;
+        }
     
-            <!-- 타임세일 -->
-            <section class="hc_main_section section" data-anchor="anchor2">
-                <div class="hc_main_section2 timesaleItem">
-                    <a href="">
-                        <ul class="hc_main_time_wrap">
-                            <li class="hc_bd_xxlarge">BUY IT NOW?</li>
-                            <li data-remain-sec="" class="hc_main_timepasses hc_period">12:55:30</li>
+    </style>
+    <!-- 삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨] -->
+    
+    <div id="container" class="hc_entire">
+        <div id="contents" class="hc_container">
+            <main class="hc_contents" id="fullpage">
+                <!-- 섹션1. 메인 랜덤 이미지 -->
+                <section id="hcMainImage" class="section hc_main_section" data-anchor="anchor1">
+                    <div class="hc_main_section1">
+                        <!-- 로딩 텍스트 -->
+                        <div class="hc_loding_copy loadingImage">
+                            <div class="hc_loding_copy_bg"></div>
+                            <section class="loading-data">
+                                <div class="hc_hc_loding_text loading-text">
+                                    <span class="char">산</span>
+                                    <span class="char">뜻</span>
+                                    <span class="char">함</span>
+                                    <span class="char">가</span>
+                                    <span class="char">득</span>
+                                    <span class="char">한</span>
+                                    <span class="char">여</span>
+                                    <span class="char">름</span>
+                                    <span class="char">을</span>
+                                    <span class="char">위</span>
+                                    <span class="char">한</span>
+                                    <span class="char">,</span>
+                                    <span class="char">피</span>
+                                    <span class="char">그</span>
+                                    <span class="char">먼</span>
+                                    <span class="char">트</span>
+                                </div>
+                            </section>
+                        </div> 
+                        <ul class="hc_random_imgs">
+                            <li class="mainImage" data-order="1" menu-color="#000" logo-color="#000" search-color="#000" mypage-color="#000" cart-color="#000"><a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_top1.jpg" /></a></li>
+                            <li class="mainImage" data-order="2" menu-color="#000" logo-color="#000" search-color="#000" mypage-color="#000" cart-color="#000"><a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_top2.jpg" /></a></li>
+                            <li class="mainImage" data-order="3" menu-color="#000" logo-color="#000" search-color="#000" mypage-color="#000" cart-color="#000"><a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_top3.jpg" /></a></li>
+                            <li class="mainImage" data-order="4" menu-color="#000" logo-color="#000" search-color="#000" mypage-color="#000" cart-color="#000"><a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_top4.jpg" /></a></li>
                         </ul>
-                        <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_tomesale.jpg" alt="time sale" /></div>
-                        <h3 class="hc_title_dashed">Sheer cotton blouse</h3>
-                    </a>
-                </div>
-            </section>
-    
-            <!-- 신상품 배너 -->
-            <section class="hc_main_section section" data-anchor="anchor3">
-                <div class="hc_main_section3 animated-fadeInDown">
-                    <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_new.jpg" alt="new" /></div>
-                    <h3 class="hc_title_solid">New Arrival 30% Off.</h3>
-                    <p>매일 오전 10시에 업데이트 되는 신상품 30% 할인</p>
-                </div>
-            </section>
-    
-            <!-- 베스트 배너 -->
-            <section class="hc_main_section section" data-anchor="anchor4">
-                <div class="hc_main_section4 animated-fadeInUp">
-                    <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_best.jpg" alt="best" /></div>
-                </div>
-            </section>
-    
-            <!-- PFS:GALLERY -->
-            <section class="hc_main_section section" data-anchor="anchor5">
-                <div class="hc_main_section5 animated-fadeInLeft">
-                    <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_pfs.jpg" alt="PFS:GALLERY" /></div>
-                </div>
-            </section>
-    
-            <section class="hc_main_section section" data-anchor="anchor6">
-                <div class="hc_main_section6 animated-fadeInRight">
-                    <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_store.jpg" alt="STORE" /></div>
-                    <h3 class="hc_title_solid">Pigment Off Line Store.</h3>
-                    <p>
-                        전국 50여 개 이상의 피그먼트 오프라인<br />
-                        스토어 중 가장 가까운 매장을 알려드립니다.
-                    </p>
-                </div>
-            </section>
-    
-            <section class="hc_main_section section" data-anchor="anchor7">
-                <div class="hc_main_section7">
-                    <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_section7.jpg" alt="" /></div>
-                </div>
-            </section>
-    
-            <section class="hc_main_section section" data-anchor="anchor8">
-                <div class="hc_main_section8">
-                    <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_section8.jpg" alt="" /></div>
-                </div>
-            </section>
-    
-            <section class="hc_main_section section" data-anchor="anchor9">
-                <div class="hc_main_section9">
-                    <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_section9.jpg" alt="STORE" /></div>
-                    <h3 class="hc_title_solid">Pigment Off Line Store.</h3>
-                    <p>
-                        전국 50여 개 이상의 피그먼트 오프라인<br />
-                        스토어 중 가장 가까운 매장을 알려드립니다.
-                    </p>
-                </div>
-            </section>
-    
-            <section class="hc_main_section section" data-anchor="anchor10">
-                <div class="hc_main_section10"> 
-                    <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_section10.jpg" alt="" /></div>
-                </div>
-            </section>
-    
-            <!-- 하단 영역 -->
-            <section id="hc_wrap_footer" class="hc_main_section section" data-anchor="anchor11">
-                <div class="hc_main_section11 hc_common_footer">
-                    <footer>
-                        <div class="hc_interval1">
-                            <strong>DO YOU NEED HELP?</strong>
-                            <p>1668-3189</p>
-                        </div>
+                    </div>
+                </section>
+        
+                <!-- 타임세일 -->
+                <section class="hc_main_section section" data-anchor="anchor2">
+                    <div class="hc_main_section2 timesaleItem">
+                        <a href="">
+                            <ul class="hc_main_time_wrap">
+                                <li class="hc_bd_xxlarge">BUY IT NOW?</li>
+                                <li data-remain-sec="" class="hc_main_timepasses hc_period">12:55:30</li>
+                            </ul>
+                            <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_tomesale.jpg" alt="time sale" /></div>
+                            <h3 class="hc_title_dashed">Sheer cotton blouse</h3>
+                        </a>
+                    </div>
+                </section>
+        
+                <!-- 신상품 배너 -->
+                <section class="hc_main_section section" data-anchor="anchor3">
+                    <div class="hc_main_section3 animated-fadeInDown">
+                        <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_new.jpg" alt="new" /></div>
+                        <h3 class="hc_title_solid">New Arrival 30% Off.</h3>
+                        <p>매일 오전 10시에 업데이트 되는 신상품 30% 할인</p>
+                    </div>
+                </section>
+        
+                <!-- 베스트 배너 -->
+                <section class="hc_main_section section" data-anchor="anchor4">
+                    <div class="hc_main_section4 animated-fadeInUp">
+                        <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_best.jpg" alt="best" /></div>
+                    </div>
+                </section>
+        
+                <!-- PFS:GALLERY -->
+                <section class="hc_main_section section" data-anchor="anchor5">
+                    <div class="hc_main_section5 animated-fadeInLeft">
+                        <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_pfs.jpg" alt="PFS:GALLERY" /></div>
+                    </div>
+                </section>
+        
+                <section class="hc_main_section section" data-anchor="anchor6">
+                    <div class="hc_main_section6 animated-fadeInRight">
+                        <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_store.jpg" alt="STORE" /></div>
+                        <h3 class="hc_title_solid">Pigment Off Line Store.</h3>
+                        <p>
+                            전국 50여 개 이상의 피그먼트 오프라인<br />
+                            스토어 중 가장 가까운 매장을 알려드립니다.
+                        </p>
+                    </div>
+                </section>
+        
+                <section class="hc_main_section section" data-anchor="anchor7">
+                    <div class="hc_main_section7">
+                        <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_section7.jpg" alt="" /></div>
+                    </div>
+                </section>
+        
+                <section class="hc_main_section section" data-anchor="anchor8">
+                    <div class="hc_main_section8">
+                        <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_section8.jpg" alt="" /></div>
+                    </div>
+                </section>
+        
+                <section class="hc_main_section section" data-anchor="anchor9">
+                    <div class="hc_main_section9">
+                        <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_section9.jpg" alt="STORE" /></div>
+                        <h3 class="hc_title_solid">Pigment Off Line Store.</h3>
+                        <p>
+                            전국 50여 개 이상의 피그먼트 오프라인<br />
+                            스토어 중 가장 가까운 매장을 알려드립니다.
+                        </p>
+                    </div>
+                </section>
+        
+                <section class="hc_main_section section" data-anchor="anchor10">
+                    <div class="hc_main_section10"> 
+                        <div><img src="http://kcompony7.jpg3.kr/web/hncok/img/mobile/mo_main_section10.jpg" alt="" /></div>
+                    </div>
+                </section>
                 
-                        <div class="hc_interval2">
-                            AM 10:00 - PM 5:00 MON-FRI<br />
-                            LUNCH TIME PM 13:00 - PM 14:00
-                        </div>
-                        <div class="hc_interval1">
-                            하나은행 359-910028-07304<br />
-                            주식회사 씨피에프엘씨리테일
-                        </div>
                 
-                        <div class="hc_interval2 hc_footer_help">
+                <section class="hc_main_section section" data-anchor="anchor11">
+                    <!-- S  WEEKLY BEST -->
+        <div class="mainSection bestItem">
+          <section class="SMS_Product_display SMSprdSortTarget" data-sort="3col">
+            <div class="wrap">
+                <h3 class="enLang">
+                    WEEKLY BEST
+                    <a class="linkVeiw" href="/m/product_list.html?xcode=055&type=P&gf_ref=Yz1YTlpwSjg=&gf_ref=Yz1uMkZOaXI=">view more +</a>
+                </h3>
+                <!-- S WEEKLY BEST AREA -->
+                    <div class="bestArea">
+                        <!-- S swiper -->
+                         <div class="swiper-container">
+                             <ul class="swiper-wrapper">
+                                <!-- add1 -->
+                                 <li class="swiper-slide">
+                                     <ul class="items SMSitems">
+                                         <!--/loop_add1_product(6)/--> 
+                                         <li>
+                                         <!-- S container -->
+                                        <div class="container">
+                                                <dl>
+                                                    <a href="<!--/add1_product@link/-->" class="SMS_Viewlink"></a>
+                                                    <div class="SMS_base_img">
+                                                        <dt class="thumb">
+                                                            <img src="<!--/add1_product@mobile_image/-->" class="img" alt="" />
+                                                        </dt>
+                                                        <div class="SMS_loveWrap">
+                                                            <div class="SMS_love"></div>
+                                                            <a class="SMS_loveLink"></a>
+                                                        </div>
+                                                     </div>
+                                                    <div class="SMS_base_mask">
+                                                        <dd class="add_container">
+                                                            <!--/if_add1_product@reserve_price(+1)/-->
+                                                            <p class="reserve">
+                                                                <!--/if_add1_product@used_mobile_reserve/-->
+                                                                <span class="reserve_mobile"></span>
+                                                                <!--/end_if/-->
+                                                            <!--/number/add1_product@reserve_price/-->원 적립</p>
+                                                            <!--/end_if/-->
+                                                            <!--/if_add1_product@point_price(+1)/-->
+                                                            <p class="point"><!--/number/add1_product@point_price/--><!--/add1_product@point_unit/--> 적립</p>
+                                                            <!--/end_if/-->
+                                                        </dd>
+                                                        <dd class="info_container">
+                                                            <p class="name"><!--/add1_product@name/--></p>
+                                                            <p class="subname"><!--/add1_product@subname/--></p>
+                                                        </dd>
+                                                        <!--/if_add1_product@is_soldout/-->
+                                                        <dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+                                                        <!--/else/-->
+                                                        <dd class="price_container">
+                                                            <!--/if_add1_product@price_replace/-->
+                                                                <!--/if_add1_product@price_consumer/-->
+                                                                <p class="priceStrike"><del><!--/add1_product@price_consumer/--></del></p>
+                                                                <!--/end_if/-->
+                                                            <p class="price"><!--/add1_product@price_replace/--></p>
+                                                            <!--/else/-->
+                                                                <!--/if_add1_product@price_discount/-->
+                                                                 <p class="dcPercent" style="display:inlne-block;"></p>
+                                                                <p class="priceStrike"><del><!--/number/add1_product@price_sell/-->원</del></p>
+                                                                <p class="price">
+                                                                    <!--/if_add1_product@discount_apply_type(mobile)/-->
+                                                                    <span class="price_mobile"></span>
+                                                                    <!--/end_if/-->
+                                                                <!--/number/add1_product@price_discount/-->원
+                                                                </p>
+                                                                <!--/else/-->
+                                                                <!-- 추가부분 -->
+                                                                    <!--/if_add1_product@price_consumer(+1)/-->
+                                                                        <p class="priceStrike"><del><!--/number/add1_product@price_consumer/-->원</del></p>
+                                                                    <!--/end_if/-->
+                                                                <!-- 추가부분 --> 
+                                                                <p class="price"><!--/number/add1_product@price_sell/-->원</p>
+                                                                <!--/end_if/-->
+                                                            <!--/end_if/-->
+                                                        </dd>
+    
+                                                                  <div class="price_container"><!--/add1_product@icons/--></div>
+    
+                                                        <!--/end_if/-->
+                                                        <dd class="icons"><!--/add1_product@mobile_icons/--></dd>
+                                                    </div>
+                                                </dl>
+                                        </div>
+                                         <!-- // E container -->
+                                         </li>
+                                         <!--/end_loop/-->
+                                     </ul>
+                                 </li>
+                                <!--// E add1 -->
+                                <!-- SHIRTS -->
+                                 <li class="swiper-slide">
+                                     <ul class="items SMSitems">
+                                         <!--/loop_add6_product(6)/-->
+                                         <li>
+                                         <!-- S container -->
+                                        <div class="container">
+                                                <dl>
+                                                    <a href="<!--/add6_product@link/-->" class="SMS_Viewlink"></a>
+                                                    <div class="SMS_base_img">
+                                                        <dt class="thumb">
+                                                            <img src="<!--/add6_product@mobile_image/-->" class="img" alt="" />
+                                                        </dt>
+                                                        <div class="SMS_loveWrap">
+                                                            <div class="SMS_love"></div>
+                                                            <a class="SMS_loveLink"></a>
+                                                        </div>
+                                                     </div>
+                                                    <div class="SMS_base_mask">
+                                                        <dd class="add_container">
+                                                            <!--/if_add6_product@reserve_price(+1)/-->
+                                                            <p class="reserve">
+                                                                <!--/if_add6_product@used_mobile_reserve/-->
+                                                                <span class="reserve_mobile"></span>
+                                                                <!--/end_if/-->
+                                                            <!--/number/add6_product@reserve_price/-->원 적립</p>
+                                                            <!--/end_if/-->
+                                                            <!--/if_add6_product@point_price(+1)/-->
+                                                            <p class="point"><!--/number/add6_product@point_price/--><!--/add6_product@point_unit/--> 적립</p>
+                                                            <!--/end_if/-->
+                                                        </dd>
+                                                        <dd class="info_container">
+                                                            <p class="name"><!--/add6_product@name/--></p>
+                                                            <p class="subname"><!--/add6_product@subname/--></p>
+                                                        </dd>
+                                                        <!--/if_add6_product@is_soldout/-->
+                                                        <dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+                                                        <!--/else/-->
+                                                        <dd class="price_container">
+                                                            <!--/if_add6_product@price_replace/-->
+                                                                <!--/if_add6_product@price_consumer/-->
+                                                                <p class="priceStrike"><del><!--/add6_product@price_consumer/--></del></p>
+                                                                <!--/end_if/-->
+                                                            <p class="price"><!--/add6_product@price_replace/--></p>
+                                                            <!--/else/-->
+                                                                <!--/if_add6_product@price_discount/-->
+                                                                 <p class="dcPercent" style="display:inlne-block;"></p>
+                                                                <p class="priceStrike"><del><!--/number/add6_product@price_sell/-->원</del></p>
+                                                                <p class="price">
+                                                                    <!--/if_add6_product@discount_apply_type(mobile)/-->
+                                                                    <span class="price_mobile"></span>
+                                                                    <!--/end_if/-->
+                                                                <!--/number/add6_product@price_discount/-->원
+                                                                </p>
+                                                                <!--/else/-->
+                                                                <!-- 추가부분 -->
+                                                                    <!--/if_add6_product@price_consumer(+1)/-->
+                                                                        <p class="priceStrike"><del><!--/number/add6_product@price_consumer/-->원</del></p>
+                                                                    <!--/end_if/-->
+                                                                <!-- 추가부분 --> 
+                                                                <p class="price"><!--/number/add6_product@price_sell/-->원</p>
+                                                                <!--/end_if/-->
+                                                            <!--/end_if/-->
+                                                        </dd>
+    
+                                                                  <div class="price_container"><!--/add6_product@icons/--></div>
+    
+                                                        <!--/end_if/-->
+                                                        <dd class="icons"><!--/add6_product@mobile_icons/--></dd>
+                                                    </div>
+                                                </dl>
+                                        </div>
+                                         <!-- // E container -->
+                                         </li>
+                                         <!--/end_loop/-->
+                                     </ul>
+                                 </li>
+                                <!--// E SHIRTS -->
+                                <!-- TOP -->
+                                 <li class="swiper-slide">
+                                     <ul class="items SMSitems">
+                                         <!--/loop_add3_product(6)/-->
+                                         <li>
+                                         <!-- S container -->
+                                        <div class="container">
+                                                <dl>
+                                                    <a href="<!--/add3_product@link/-->" class="SMS_Viewlink"></a>
+                                                    <div class="SMS_base_img">
+                                                        <dt class="thumb">
+                                                            <img src="<!--/add3_product@mobile_image/-->" class="img" alt="" />
+                                                        </dt>
+                                                        <div class="SMS_loveWrap">
+                                                            <div class="SMS_love"></div>
+                                                            <a class="SMS_loveLink"></a>
+                                                        </div>
+                                                     </div>
+                                                    <div class="SMS_base_mask">
+                                                        <dd class="add_container">
+                                                            <!--/if_add3_product@reserve_price(+1)/-->
+                                                            <p class="reserve">
+                                                                <!--/if_add3_product@used_mobile_reserve/-->
+                                                                <span class="reserve_mobile"></span>
+                                                                <!--/end_if/-->
+                                                            <!--/number/add3_product@reserve_price/-->원 적립</p>
+                                                            <!--/end_if/-->
+                                                            <!--/if_add3_product@point_price(+1)/-->
+                                                            <p class="point"><!--/number/add3_product@point_price/--><!--/add3_product@point_unit/--> 적립</p>
+                                                            <!--/end_if/-->
+                                                        </dd>
+                                                        <dd class="info_container">
+                                                            <p class="name"><!--/add3_product@name/--></p>
+                                                            <p class="subname"><!--/add3_product@subname/--></p>
+                                                        </dd>
+                                                        <!--/if_add3_product@is_soldout/-->
+                                                        <dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+                                                        <!--/else/-->
+                                                        <dd class="price_container">
+                                                            <!--/if_add3_product@price_replace/-->
+                                                                <!--/if_add3_product@price_consumer/-->
+                                                                <p class="priceStrike"><del><!--/add3_product@price_consumer/--></del></p>
+                                                                <!--/end_if/-->
+                                                            <p class="price"><!--/add3_product@price_replace/--></p>
+                                                            <!--/else/-->
+                                                                <!--/if_add3_product@price_discount/-->
+                                                                 <p class="dcPercent" style="display:inlne-block;"></p>
+                                                                <p class="priceStrike"><del><!--/number/add3_product@price_sell/-->원</del></p>
+                                                                <p class="price">
+                                                                    <!--/if_add3_product@discount_apply_type(mobile)/-->
+                                                                    <span class="price_mobile"></span>
+                                                                    <!--/end_if/-->
+                                                                <!--/number/add3_product@price_discount/-->원
+                                                                </p>
+                                                                <!--/else/-->
+                                                                <!-- 추가부분 -->
+                                                                    <!--/if_add3_product@price_consumer(+1)/-->
+                                                                        <p class="priceStrike"><del><!--/number/add3_product@price_consumer/-->원</del></p>
+                                                                    <!--/end_if/-->
+                                                                <!-- 추가부분 --> 
+                                                                <p class="price"><!--/number/add3_product@price_sell/-->원</p>
+                                                                <!--/end_if/-->
+                                                            <!--/end_if/-->
+                                                        </dd>
+    
+                                                                  <div class="price_container"><!--/add3_product@icons/--></div>
+    
+                                                        <!--/end_if/-->
+                                                        <dd class="icons"><!--/add3_product@mobile_icons/--></dd>
+                                                    </div>
+                                                </dl>
+                                        </div>
+                                         <!-- // E container -->
+                                         </li>
+                                         <!--/end_loop/-->
+                                     </ul>
+                                 </li>
+                                <!--// E TOP -->
+                                <!-- PANTS -->
+                                 <li class="swiper-slide">
+                                     <ul class="items SMSitems">
+                                         <!--/loop_add4_product(6)/-->
+                                         <li>
+                                         <!-- S container -->
+                                        <div class="container">
+                                                <dl>
+                                                    <a href="<!--/add4_product@link/-->" class="SMS_Viewlink"></a>
+                                                    <div class="SMS_base_img">
+                                                        <dt class="thumb">
+                                                            <img src="<!--/add4_product@mobile_image/-->" class="img" alt="" />
+                                                        </dt>
+                                                        <div class="SMS_loveWrap">
+                                                            <div class="SMS_love"></div>
+                                                            <a class="SMS_loveLink"></a>
+                                                        </div>
+                                                     </div>
+                                                    <div class="SMS_base_mask">
+                                                        <dd class="add_container">
+                                                            <!--/if_add4_product@reserve_price(+1)/-->
+                                                            <p class="reserve">
+                                                                <!--/if_add4_product@used_mobile_reserve/-->
+                                                                <span class="reserve_mobile"></span>
+                                                                <!--/end_if/-->
+                                                            <!--/number/add4_product@reserve_price/-->원 적립</p>
+                                                            <!--/end_if/-->
+                                                            <!--/if_add4_product@point_price(+1)/-->
+                                                            <p class="point"><!--/number/add4_product@point_price/--><!--/add4_product@point_unit/--> 적립</p>
+                                                            <!--/end_if/-->
+                                                        </dd>
+                                                        <dd class="info_container">
+                                                            <p class="name"><!--/add4_product@name/--></p>
+                                                            <p class="subname"><!--/add4_product@subname/--></p>
+                                                        </dd>
+                                                        <!--/if_add4_product@is_soldout/-->
+                                                        <dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+                                                        <!--/else/-->
+                                                        <dd class="price_container">
+                                                            <!--/if_add4_product@price_replace/-->
+                                                                <!--/if_add4_product@price_consumer/-->
+                                                                <p class="priceStrike"><del><!--/add4_product@price_consumer/--></del></p>
+                                                                <!--/end_if/-->
+                                                            <p class="price"><!--/add4_product@price_replace/--></p>
+                                                            <!--/else/-->
+                                                                <!--/if_add4_product@price_discount/-->
+                                                                 <p class="dcPercent" style="display:inlne-block;"></p>
+                                                                <p class="priceStrike"><del><!--/number/add4_product@price_sell/-->원</del></p>
+                                                                <p class="price">
+                                                                    <!--/if_add4_product@discount_apply_type(mobile)/-->
+                                                                    <span class="price_mobile"></span>
+                                                                    <!--/end_if/-->
+                                                                <!--/number/add4_product@price_discount/-->원
+                                                                </p>
+                                                                <!--/else/-->
+                                                                <!-- 추가부분 -->
+                                                                    <!--/if_add4_product@price_consumer(+1)/-->
+                                                                        <p class="priceStrike"><del><!--/number/add4_product@price_consumer/-->원</del></p>
+                                                                    <!--/end_if/-->
+                                                                <!-- 추가부분 --> 
+                                                                <p class="price"><!--/number/add4_product@price_sell/-->원</p>
+                                                                <!--/end_if/-->
+                                                            <!--/end_if/-->
+                                                        </dd>
+    
+                                                                  <div class="price_container"><!--/add4_product@icons/--></div>
+    
+                                                        <!--/end_if/-->
+                                                        <dd class="icons"><!--/add4_product@mobile_icons/--></dd>
+                                                    </div>
+                                                </dl>
+                                        </div>
+                                         <!-- // E container -->
+                                         </li>
+                                         <!--/end_loop/-->
+                                     </ul>
+                                 </li>
+                                <!--// E PANTS -->
+                                <!-- OPS -->
+                                 <li class="swiper-slide">
+                                     <ul class="items SMSitems">
+                                         <!--/loop_add8_product(6)/-->
+                                         <li>
+                                         <!-- S container -->
+                                        <div class="container">
+                                                <dl>
+                                                    <a href="<!--/add8_product@link/-->" class="SMS_Viewlink"></a>
+                                                    <div class="SMS_base_img">
+                                                        <dt class="thumb">
+                                                            <img src="<!--/add8_product@mobile_image/-->" class="img" alt="" />
+                                                        </dt>
+                                                        <div class="SMS_loveWrap">
+                                                            <div class="SMS_love"></div>
+                                                            <a class="SMS_loveLink"></a>
+                                                        </div>
+                                                     </div>
+                                                    <div class="SMS_base_mask">
+                                                        <dd class="add_container">
+                                                            <!--/if_add8_product@reserve_price(+1)/-->
+                                                            <p class="reserve">
+                                                                <!--/if_add8_product@used_mobile_reserve/-->
+                                                                <span class="reserve_mobile"></span>
+                                                                <!--/end_if/-->
+                                                            <!--/number/add8_product@reserve_price/-->원 적립</p>
+                                                            <!--/end_if/-->
+                                                            <!--/if_add8_product@point_price(+1)/-->
+                                                            <p class="point"><!--/number/add8_product@point_price/--><!--/add8_product@point_unit/--> 적립</p>
+                                                            <!--/end_if/-->
+                                                        </dd>
+                                                        <dd class="info_container">
+                                                            <p class="name"><!--/add8_product@name/--></p>
+                                                            <p class="subname"><!--/add8_product@subname/--></p>
+                                                        </dd>
+                                                        <!--/if_add8_product@is_soldout/-->
+                                                        <dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+                                                        <!--/else/-->
+                                                        <dd class="price_container">
+                                                            <!--/if_add8_product@price_replace/-->
+                                                                <!--/if_add8_product@price_consumer/-->
+                                                                <p class="priceStrike"><del><!--/add8_product@price_consumer/--></del></p>
+                                                                <!--/end_if/-->
+                                                            <p class="price"><!--/add8_product@price_replace/--></p>
+                                                            <!--/else/-->
+                                                                <!--/if_add8_product@price_discount/-->
+                                                                 <p class="dcPercent" style="display:inlne-block;"></p>
+                                                                <p class="priceStrike"><del><!--/number/add8_product@price_sell/-->원</del></p>
+                                                                <p class="price">
+                                                                    <!--/if_add8_product@discount_apply_type(mobile)/-->
+                                                                    <span class="price_mobile"></span>
+                                                                    <!--/end_if/-->
+                                                                <!--/number/add8_product@price_discount/-->원
+                                                                </p>
+                                                                <!--/else/-->
+                                                                <!-- 추가부분 -->
+                                                                    <!--/if_add8_product@price_consumer(+1)/-->
+                                                                        <p class="priceStrike"><del><!--/number/add8_product@price_consumer/-->원</del></p>
+                                                                    <!--/end_if/-->
+                                                                <!-- 추가부분 --> 
+                                                                <p class="price"><!--/number/add8_product@price_sell/-->원</p>
+                                                                <!--/end_if/-->
+                                                            <!--/end_if/-->
+                                                        </dd>
+    
+                                                                  <div class="price_container"><!--/add8_product@icons/--></div>
+    
+                                                        <!--/end_if/-->
+                                                        <dd class="icons"><!--/add8_product@mobile_icons/--></dd>
+                                                    </div>
+                                                </dl>
+                                        </div>
+                                         <!-- // E container -->
+                                         </li>
+                                         <!--/end_loop/-->
+                                     </ul>
+                                 </li>
+                                <!--// E OPS -->
+                                <!-- KNIT/CARDIGAN -->
+                                 <li class="swiper-slide">
+                                     <ul class="items SMSitems">
+                                         <!--/loop_add9_product(6)/--> 
+                                         <li>
+                                         <!-- S container -->
+                                        <div class="container">
+                                                <dl>
+                                                    <a href="<!--/add9_product@link/-->" class="SMS_Viewlink"></a>
+                                                    <div class="SMS_base_img">
+                                                        <dt class="thumb">
+                                                            <img src="<!--/add9_product@mobile_image/-->" class="img" alt="" />
+                                                        </dt>
+                                                        <div class="SMS_loveWrap">
+                                                            <div class="SMS_love"></div>
+                                                            <a class="SMS_loveLink"></a>
+                                                        </div>
+                                                     </div>
+                                                    <div class="SMS_base_mask">
+                                                        <dd class="add_container">
+                                                            <!--/if_add9_product@reserve_price(+1)/-->
+                                                            <p class="reserve">
+                                                                <!--/if_add9_product@used_mobile_reserve/-->
+                                                                <span class="reserve_mobile"></span>
+                                                                <!--/end_if/-->
+                                                            <!--/number/add9_product@reserve_price/-->원 적립</p>
+                                                            <!--/end_if/-->
+                                                            <!--/if_add9_product@point_price(+1)/-->
+                                                            <p class="point"><!--/number/add9_product@point_price/--><!--/add9_product@point_unit/--> 적립</p>
+                                                            <!--/end_if/-->
+                                                        </dd>
+                                                        <dd class="info_container">
+                                                            <p class="name"><!--/add9_product@name/--></p>
+                                                            <p class="subname"><!--/add9_product@subname/--></p>
+                                                        </dd>
+                                                        <!--/if_add9_product@is_soldout/-->
+                                                        <dd class="soldout_container"><p class="soldout">(품절)</p></dd>
+                                                        <!--/else/-->
+                                                        <dd class="price_container">
+                                                            <!--/if_add9_product@price_replace/-->
+                                                                <!--/if_add9_product@price_consumer/-->
+                                                                <p class="priceStrike"><del><!--/add9_product@price_consumer/--></del></p>
+                                                                <!--/end_if/-->
+                                                            <p class="price"><!--/add9_product@price_replace/--></p>
+                                                            <!--/else/-->
+                                                                <!--/if_add9_product@price_discount/-->
+                                                                 <p class="dcPercent" style="display:inlne-block;"></p>
+                                                                <p class="priceStrike"><del><!--/number/add9_product@price_sell/-->원</del></p>
+                                                                <p class="price">
+                                                                    <!--/if_add9_product@discount_apply_type(mobile)/-->
+                                                                    <span class="price_mobile"></span>
+                                                                    <!--/end_if/-->
+                                                                <!--/number/add9_product@price_discount/-->원
+                                                                </p>
+                                                                <!--/else/-->
+                                                                <!-- 추가부분 -->
+                                                                    <!--/if_add9_product@price_consumer(+1)/-->
+                                                                        <p class="priceStrike"><del><!--/number/add9_product@price_consumer/-->원</del></p>
+                                                                    <!--/end_if/-->
+                                                                <!-- 추가부분 --> 
+                                                                <p class="price"><!--/number/add9_product@price_sell/-->원</p>
+                                                                <!--/end_if/-->
+                                                            <!--/end_if/-->
+                                                        </dd>
+    
+                                                                  <div class="price_container"><!--/add9_product@icons/--></div>
+    
+                                                        <!--/end_if/-->
+                                                        <dd class="icons"><!--/add9_product@mobile_icons/--></dd>
+                                                    </div>
+                                                </dl>
+                                        </div>
+                                         <!-- // E container -->
+                                         </li>
+                                         <!--/end_loop/-->
+                                     </ul>
+                                 </li>
+                                <!--// E KNIT -->
+                             </ul>
+                             <!-- S swiper-pagination -->
+                             <div class="swiper-pagination"></div>
+                         </div>
+                        <!--// E swiper -->
+                    </div>			
+                <!--// E tabArea -->
+            </div>
+          </section>
+        </div>
+        <!--// E WEEKLY BEST  -->
+    </section>
+           
+                
+                <!-- 타임세일 -->
+                <section class="hc_main_section section" data-anchor="anchor12">
+                    
+                    <div class="mainSection" id="timeSale01" style="display: none;">
+                    <section class="SMS_Product_display SMSprdSortTarget" data-sort="2col">
+    
+                    <p style="font-size: 17px; font-weight: bold; float: right; display: inline-block; font-size: 12px; font-style: italic; ">
+                    <a href="/m/product_list.html?xcode=077&type=P">view more +</a>
+                    </p>
+    
+                    <div id="SMSmainDisplayPrd1" style="clear:both; ">
+                    <div class="dateSaleHeader">
+                    <p class="title enLang">
+                    TODAY TIME SALE
+                    <strong>가을신상 반값 세일</strong>
+                    </p>
+                    <p class="timer">
+                    <!--<span class="dayWrap"><span class="day"></span>Day</span>-->
+                    <span class="hour"></span>:<span class="min"></span>:<span class="sec"></span>
+                    </p>
+                    <div class="guageWrap"><span class="guage"></span></div>
+                    </div>
+    
+    
+                    <div class="SMS_main_category_product">
+                    </div>
+                    <!-- <div class="SMS_moreBtn">
+                    <a href="#none">더보기</a>
+                    </div> -->
+    
+                    </div>
+                    </section>
+                    </div>                
+                </section>
+                <!-- //타임세일 -->
+                
+        
+                <!-- 하단 영역 -->
+                <section id="hc_wrap_footer" class="hc_main_section section" data-anchor="anchor13">
+                    <div class="hc_main_section11 hc_common_footer">
+                        <footer>
+                            <div class="hc_interval1">
+                                <strong>DO YOU NEED HELP?</strong>
+                                <p>1668-3189</p>
+                            </div>
+                    
+                            <div class="hc_interval2">
+                                AM 10:00 - PM 5:00 MON-FRI<br />
+                                LUNCH TIME PM 13:00 - PM 14:00
+                            </div>
+                            <div class="hc_interval1">
+                                하나은행 359-910028-07304<br />
+                                주식회사 씨피에프엘씨리테일
+                            </div>
+                    
+                            <div class="hc_interval2 hc_footer_help">
+                                <details>
+                                    <summary class="hc_md_more_description"><strong>HELP?</strong>
+                                        <div>
+                                            <span class="hc_md_arrow"><span></span><span></span></span>
+                                        </div>
+                                    </summary>
+                                    <ul>
+                                        <li><a href="/shop/page.html?id=5">ABOUT US</a></li>
+                                        <li><a href="<!--/link_contract/-->">AGREEMENT</a></li>
+                                        <li><a href="<!--/link_privacy/-->">PRIVACY POLICY</a></li>
+                                        <li><a href="<!--/link_useinfo/-->">GUIDE</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </footer>
+                        <div class="hc_footer_guied">
                             <details>
-                                <summary class="hc_md_more_description"><strong>HELP?</strong>
+                                <summary class="hc_md_more_description"><strong>WE ARE PIGMENT</strong>
                                     <div>
                                         <span class="hc_md_arrow"><span></span><span></span></span>
                                     </div>
                                 </summary>
                                 <ul>
-                                    <li><a href="/shop/page.html?id=5">ABOUT US</a></li>
-                                    <li><a href="<!--/link_contract/-->">AGREEMENT</a></li>
-                                    <li><a href="<!--/link_privacy/-->">PRIVACY POLICY</a></li>
-                                    <li><a href="<!--/link_useinfo/-->">GUIDE</a></li>
+                                    <li>COMPANY : CPFLC RETAIL</li>
+                                    <li>OWNER : kim nam-il</li>
+                                    <li>ADDRESS : 17017 경기도 용인시 처인구 중부대로 1087(삼가동) 케이컴퍼니</li>
+                                    <li>BUSUNESS LICENSE : 209-81-59688  [사업자정보확인]</li>
+                                    <li>PRIVACY MANAGER : 고객센터(pigment.help@cpflc.co.kr)</li>
                                 </ul>
+                                <ul>
+                                    <li>COMPANY : Pfs:gallery</li>
+                                    <li>OWNER : Lee yu-na</li>
+                                    <li>ADDRESS : 경기도 화성시 동탄기흥로614, 비221-1호(영천동)</li>
+                                    <li>BUSUNESS LICENSE : 803-87-00598  [사업자정보확인] </li>
+                                    <li>MALL ORDER LICENSE : 2020-화성동탄-0742</li>
+                                </ul>
+                                <div class="hc_copyright">Copyright. pigment all rights reserved. Designed By URBANSKIN</div>
                             </details>
                         </div>
-                    </footer>
-                    <div class="hc_footer_guied">
-                        <details>
-                            <summary class="hc_md_more_description"><strong>WE ARE PIGMENT</strong>
-                                <div>
-                                    <span class="hc_md_arrow"><span></span><span></span></span>
-                                </div>
-                            </summary>
-                            <ul>
-                                <li>COMPANY : CPFLC RETAIL</li>
-                                <li>OWNER : kim nam-il</li>
-                                <li>ADDRESS : 17017 경기도 용인시 처인구 중부대로 1087(삼가동) 케이컴퍼니</li>
-                                <li>BUSUNESS LICENSE : 209-81-59688  [사업자정보확인]</li>
-                                <li>PRIVACY MANAGER : 고객센터(pigment.help@cpflc.co.kr)</li>
-                            </ul>
-                            <ul>
-                                <li>COMPANY : Pfs:gallery</li>
-                                <li>OWNER : Lee yu-na</li>
-                                <li>ADDRESS : 경기도 화성시 동탄기흥로614, 비221-1호(영천동)</li>
-                                <li>BUSUNESS LICENSE : 803-87-00598  [사업자정보확인] </li>
-                                <li>MALL ORDER LICENSE : 2020-화성동탄-0742</li>
-                            </ul>
-                            <div class="hc_copyright">Copyright. pigment all rights reserved. Designed By URBANSKIN</div>
-                        </details>
                     </div>
-                </div>
-            </section>
-        </main>
+                </section>
+                
+            </main>
+        </div>
     </div>
-</div>
-
-<script type="text/javascript" src="/js/idangerous.swiper-2.1.min.js"></script>
-<script type="text/javascript" src="/js/fitToParent.js"></script>
-<script type="text/javascript">
-$(function() {
-    // 화면 사이즈 변경시
-    var supportsOrientationChange = 'onorientationchange' in window,
-        orientationEvent = supportsOrientationChange ? 'orientationchange' : 'resize';
-
-    // 메인 이벤트 롤링
-    // 옵션 api는 http://www.idangero.us/sliders/swiper/api.php 에서 확인 가능합니다.
-    var is_loop = $('.MS_img-area').size() > 1 ? true : false;
-    var main_event = new Swiper('.MS_img-wrap', {
-        loop: is_loop,
-        wrapperClass : 'event-imgs',
-        slideClass: 'MS_img-area',
-        slidesPerView: 1,
-        calculateHeight: true,
-        resizeReInit: true,
-        autoplay: 5000,                      // 롤링되는 시간(이벤트 이미지가 변하는 시간, 1000 = 1초) - 수정 가능
-        speed: 300,                          // 이미지가 슬라이드되는 속도 (숫자가 작을수록 빠름, 1000 = 1초) - 수정 가능
-        pagination: '.pagination',
-        paginationClickable: true,
-        onFirstInit: function(swiper) {
-            $('.MS_img-area').show();
-        },
-        onSlideChangeEnd: function(swiper) {
-            swiper.startAutoplay()
-        },
-        useCSS3Transforms : false
-    });
-
-    // 로고 이미지 없을경우 대체 텍스트로
-    $('#logo img').error(function() {
-        $(this).replaceWith('<span>' + this.alt + '</span>');
-    });
-
-    // 상품리스트 on/off
-    $('.items-wrap .toggle-btn a').click(function(e) {
-        e.preventDefault();
-        var now_type = $(this).parent().prev().attr('data-open');
-
-        if (now_type == 'on') {
-            $(this).parent().prev().attr('data-open', 'off');
-        } else {
-            $(this).parent().prev().attr('data-open', 'on');
-        }
-    });
-
-    // 상품 재배열
-    window.fits = new Object;
-    $('.items-wrap ul.items').each(function(i) {
-        window.fits[i] = new fitToParent($(this));
-    });
-
-    var reDraw = function() {
-        $.each(window.fits, function(i, obj) {
-            obj.init();
+    <!-- 스마트스킨 공통 JS -->
+    <script id="smartskinCustomJs" charset="utf-8" type="text/javascript" src="/design/kcompany7/smartskin_v6/custom/SMS_pigment_v6_2021.js?ver0.4"></script>
+    <!-- 스마트스킨 공통 JS -->
+    <!--script type="text/javascript" src="/js/idangerous.swiper-2.1.min.js"></script-->
+    <!--script type="text/javascript" src="/js/fitToParent.js"></script-->
+    <script type="text/javascript">
+    $(function() {
+        // 화면 사이즈 변경시
+        var supportsOrientationChange = 'onorientationchange' in window,
+            orientationEvent = supportsOrientationChange ? 'orientationchange' : 'resize';
+    
+        // 메인 이벤트 롤링
+        // 옵션 api는 http://www.idangero.us/sliders/swiper/api.php 에서 확인 가능합니다.
+        var is_loop = $('.MS_img-area').size() > 1 ? true : false;
+        var main_event = new Swiper('.MS_img-wrap', {
+            loop: is_loop,
+            wrapperClass : 'event-imgs',
+            slideClass: 'MS_img-area',
+            slidesPerView: 1,
+            calculateHeight: true,
+            resizeReInit: true,
+            autoplay: 5000,                      // 롤링되는 시간(이벤트 이미지가 변하는 시간, 1000 = 1초) - 수정 가능
+            speed: 300,                          // 이미지가 슬라이드되는 속도 (숫자가 작을수록 빠름, 1000 = 1초) - 수정 가능
+            pagination: '.pagination',
+            paginationClickable: true,
+            onFirstInit: function(swiper) {
+                $('.MS_img-area').show();
+            },
+            onSlideChangeEnd: function(swiper) {
+                swiper.startAutoplay()
+            },
+            useCSS3Transforms : false
         });
-    };
-
-    // 화면 크기 변경
-    $(window).bind(orientationEvent, function() {
-        setTimeout(function() {
-            reDraw();
-            var img_size = 0;
-            $('.MS_img-wrap').find('img').each(function() {
-                if (img_size < $(this).height()) {
-                    img_size = $(this).height();
-                }
+    
+        // 로고 이미지 없을경우 대체 텍스트로
+        $('#logo img').error(function() {
+            $(this).replaceWith('<span>' + this.alt + '</span>');
+        });
+    
+        // 상품리스트 on/off
+        $('.items-wrap .toggle-btn a').click(function(e) {
+            e.preventDefault();
+            var now_type = $(this).parent().prev().attr('data-open');
+    
+            if (now_type == 'on') {
+                $(this).parent().prev().attr('data-open', 'off');
+            } else {
+                $(this).parent().prev().attr('data-open', 'on');
+            }
+        });
+    
+        // 상품 재배열
+        window.fits = new Object;
+        $('.items-wrap ul.items').each(function(i) {
+            window.fits[i] = new fitToParent($(this));
+        });
+    
+        var reDraw = function() {
+            $.each(window.fits, function(i, obj) {
+                obj.init();
             });
-            $('.MS_img-wrap').height(img_size);
-        }, ($.browser.webkit && $.browser.version < 534.46) ? 500 : 0);
+        };
+    
+        // 화면 크기 변경
+        $(window).bind(orientationEvent, function() {
+            setTimeout(function() {
+                reDraw();
+                var img_size = 0;
+                $('.MS_img-wrap').find('img').each(function() {
+                    if (img_size < $(this).height()) {
+                        img_size = $(this).height();
+                    }
+                });
+                $('.MS_img-wrap').height(img_size);
+            }, ($.browser.webkit && $.browser.version < 534.46) ? 500 : 0);
+        });
     });
-});
-
-// 이벤트 경로 이동
-function move_event_link(href, move_mobile) {
-    if (move_mobile != '1') {
-        var curCookie = 'mobile_use=NO;expires=0;path=/;domain=' + location.host;
-        document.cookie = curCookie;
-    }   
-    document.location.href = href; 
-}
-</script>
+    
+    // 이벤트 경로 이동
+    function move_event_link(href, move_mobile) {
+        if (move_mobile != '1') {
+            var curCookie = 'mobile_use=NO;expires=0;path=/;domain=' + location.host;
+            document.cookie = curCookie;
+        }   
+        document.location.href = href; 
+    }
+    </script>

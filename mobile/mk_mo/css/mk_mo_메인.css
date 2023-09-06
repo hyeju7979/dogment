@@ -1,3 +1,79 @@
+/*기존 css start*/
+
+/* CSS Document */
+
+/*
+	File Name :           main.css
+	Fuction :                main
+	Last Update :        2021-12-16
+*/
+
+#fix_position { border-bottom:0; }
+div.abcd {width:100%; }
+div.abcd img {width:100%; height:auto; }
+
+/* bestItem */
+.bestItem .SMS_Product_display { margin:0; }
+.bestItem .wrap{margin: 0 14px; }
+/* 2021-12-16
+.bestItem .tabMenu{margin-bottom:10px; width:100%;height:20px; clear:both;}
+.bestItem .tabMenu li{display:inline; margin-right:8px; width:auto; float:left;}
+.bestItem .tabMenu li a{display:block;color:#3b3b3b; font-size:13px;}
+.bestItem .tabMenu li a:hover, .bestItem .tabMenu li.active a{border-bottom:2px solid #c6c6ab; color:#c6c6ab; font-weight:bold;}
+.bestItem .tabCon .tabConOuter, .bestItem .tabCon .tabConTop, .bestItem .tabCon .tabConPants, .bestItem .tabCon .tabConDress, .bestItem .tabCon .tabConKnit{display:none;}
+.bestItem .tabCon .tabConBest{display:block;}
+*/
+.bestItem .tabCon .hide{display:none;}
+.bestItem{box-sizing:border-box;}
+.bestItem .btnArea{text-align:center; min-height:30px;}
+.bestItem .btnArea .btnMore{border:1px solid #d2d2c2; padding:10px 20px; text-align:center; color:#333;font-size:12px; font-weight:bold; letter-spacing:1px;}
+.bestItem .btnArea .btnMore:hover{background:#89907e; color:#fff;}
+.bestItem .swiper-wrapper{padding-top:30px;}
+.bestItem .swiper-pagination{display:block;top:0; width:100%; height:20px; text-align:left;}
+.bestItem .swiper-pagination-bullets .swiper-pagination-bullet{background:none;margin:0 8px 0 0;width:auto;height:auto;font-size: 13px; opacity:1;}
+.bestItem .swiper-pagination-bullets .swiper-pagination-bullet-active {border-bottom:2px solid #c6c6ab;border-radius:0; color:#c6c6ab; font-weight:bold;}
+
+#SMSmainDisplayPrd5 > .swiper-pagination-bullets { position:inherit; margin-top:20px; width: 100%; left: 0; }
+/*
+#SMSmainDisplayPrd5 > .swiper-pagination-bullets .swiper-pagination-bullet {	margin:0 5px; width:auto;height:auto; background:none;border-radius:0; font-size:10px;font-weight:bold;color:#000; vertical-align:middle; opacity:1;}
+#SMSmainDisplayPrd5 > .swiper-pagination-bullets .swiper-pagination-bullet-active {font-size:0;width:9px;height:1px;background:#000; 
+*/
+#SMSmainDisplayPrd5 .items li .SMS_base_mask { display:none; }
+#SMSmainDisplayPrd5 .items li { padding:4px; margin:0; }
+/*메인베스트페이지네이션*/
+#SMSmainDisplayPrd5 > .swiper-pagination-bullets .swiper-pagination-bullet { width: 8px; height: 8px; background: #eee; border-radius: 50%; font-size: 0; opacity: 1; }
+#SMSmainDisplayPrd5 > .swiper-pagination-bullets .swiper-pagination-bullet-active { background: #c6c6ab; }
+
+/* WEEKLY BEST */
+#SMSmainDisplayPrd4{background:#d2d2c2;}
+.SMS_Product_display.wide{margin:30px 0 0 0;}
+.SMS_Product_display.wide #SMSmainDisplayPrd4{padding:10px 14px 20px;}
+#SMSmainDisplayPrd4 .SMS_base_img .bestIcon{display:none;}
+#SMSmainDisplayPrd4 h3{margin-top:10px;}
+.SMS_Product_display h3, .SMSnaverStyleGallery h3, .mainSection h3 {
+    margin-bottom: 20px;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+
+} 
+
+/* icon */
+#container .main .MK-product-icons img{padding:0; margin:0 2px; width:30%; !important;}
+
+/*기존 css end*/
+
+
+
+.hc_entire {
+    margin-top: 0 !important;
+}
+.hc_hamburger_menu {
+    padding-top: 90px !important;
+}
+
 .hc_loding_copy {
   overflow: hidden;
   position: relative;

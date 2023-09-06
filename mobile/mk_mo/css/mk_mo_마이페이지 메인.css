@@ -1,0 +1,13 @@
+.hc_page_mymain section {
+    margin-bottom: 54px;
+}
+.hc_page_mymain section li {
+    padding-left: 10px;
+    font-size: var(--hc_bd_small);
+    line-height: 40px;
+    border-bottom: 1px solid var(--hc_color_level2);
+    background: url("http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_arr.svg") 100% 50% no-repeat;
+}
+.hc_page_mymain section li a {
+    display: block;
+}

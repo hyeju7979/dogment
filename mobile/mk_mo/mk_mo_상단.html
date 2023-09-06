@@ -1,3 +1,36 @@
+<!-- Uneedcomms Keepgrow Script -->
+<div id="kg-service-data" data-member="<!--/if_login/--><!--/user_id/--><!--/end_if/-->" style="display:none !important"></div>
+<!-- <script id="kg-service-init" data-hosting="makeshop" data-env="mobile" src="//storage.keepgrow.com/admin/keepgrow-service/keepgrow-service_6ce6b61e-50b2-4e6b-8372-6e1656eea53b.js"></script> -->
+<!-- 스마트스킨 코드 시작 :: 지우지 마세요 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+
+<script>
+    try {
+        var SMS_TD_shop_name = "pigment.co.kr";
+		var SMS_TD_DataObj={SMS_TD_shop_host:SMS_TD_shop_name,SMS_TD_shop_hosting:"mk",SMS_TD_userinfo:{SMS_TD_virtual_url:"",SMS_TD_host:"",SMS_TD_login_check:<!--/if_login/-->true<!--/else/-->false<!--/end_if/-->,SMS_TD_referrer:document.referrer,SMS_TD_current_path:window.location.pathname,SMS_TD_current_url:document.location.href,SMS_TD_useragent:navigator.userAgent},SMS_TD_pagelist:{SMS_TD_cate:{},SMS_TD_detail:{},SMS_TD_order:{},SMS_TD_order_complete:{},SMS_TD_mypage:{},SMS_TD_search:{}}};var SMS_TD_util={init:function(data_parm){this.hostst();this.vir_path(data_parm)},html_re:function(str){str=str.replace(/^\s+|\s+$/g,"");str=str.replace(/\n/g,"");str=str.replace(/'/gi,"");str=str.replace(/"/gi,"");return str.replace(/(<([^>]+)>)/gi,"")},num_re:function(str){return str.replace(/[^0-9]/g,"")},x_code:function(noc){if(noc){var _num=noc.split('xcode')[1];return this.num_re(_num)}else{return noc=""}},m_code:function(noc){if(noc){var _num=noc.split('mcode')[1];return this.num_re(_num)}else{return noc=""}},s_code:function(noc){if(noc){var _num=noc.split('scode')[1];return this.num_re(_num)}else{return noc=""}},hostst:function(){var SMS_hostUrl=window.location.hostname;var SMS_hostre=SMS_hostUrl.replace(/www|wwww|com|co|kr|jp|cafe24|skin-|skin\d{1,2}(?!\d)|100|mobile[0-9]{1,2}|mobile[0-9]{1,2}/g,'');var SMS_hostre1=SMS_hostre.replace('m.','');var SMS_hostst=SMS_hostre1.replace(/\./g,'');SMS_TD_DataObj.SMS_TD_userinfo.SMS_TD_host=SMS_hostst},vir_url:function(_insert){var sms_w_path=window.location.pathname;var sms_pst=sms_w_path.split('/').slice(-1)[0];var SMS_vir_url="sms_"+sms_pst+"?base=page";for(var i in _insert){for(var _i in _insert[i].path){if(_insert[i].path[_i]==sms_w_path){SMS_vir_url=_insert[i].html+_insert[i].parm}}};if(sms_w_path.indexOf("mypage.html")!=-1){for(var e in _insert.myshop_main){for(var _e in _insert.myshop_main[e].path){if(_insert.myshop_main[e].path[_e]==window.location.search){SMS_vir_url=_insert.myshop_main[e].html+_insert.myshop_main[e].parm}}}};if(sms_w_path.indexOf("board.html")!=-1){SMS_vir_url="sms_board/main.html?page=list";for(var e in _insert.board_m){for(var _e in _insert.board_m[e].path){if(window.location.search.indexOf(_insert.board_m[e].path)!=-1){SMS_vir_url=_insert.board_m[e].html+_insert.board_m[e].parm}}}};SMS_TD_DataObj.SMS_TD_userinfo.SMS_TD_virtual_url=SMS_vir_url},vir_path:function(_parm_data){var data_parm=_parm_data;if(data_parm==undefined||data_parm=="undefined"){data_parm="base=page"};var SMS_path_obj={main:{path:["/","/m","/m/","/m//","/main.html","/m/main.html","/m/main.html/","/m/main.html//"],html:"sms_main.html?",parm:"main_id=m"},list:{path:["/m/product_list.html"],html:"sms_list.html?",parm:data_parm},detail:{path:["/m/product.html"],html:"sms_detail.html?",parm:data_parm},search:{path:["/m/search.html"],html:"sms_search.html?",parm:data_parm},order:{path:["/m/order.html"],html:"sms_order.html?",parm:data_parm},ordercom:{path:["/m/order_complete.html"],html:"sms_ordercom.html?",parm:data_parm},cart:{path:["/m/basket.html"],html:"sms_cart.html?",parm:data_parm},myshop_check:{path:["/m/attendance.html"],html:"sms_mypage/stamp.html?",parm:"page=main"},myshop_check:{path:["/m/order_list.html"],html:"sms_mypage/orderlist.html?",parm:"page=main"},myshop_main:{sms_my_page01:{path:[""],html:"sms_mypage/main.html?",parm:"page=main"},sms_my_page02:{path:["?mypage_type=mycoupon"],html:"sms_mypage/coupon.html?",parm:"page=main"},sms_my_page03:{path:["?mypage_type=myreserve"],html:"sms_mypage/reserve.html?",parm:"page=main"},sms_my_page04:{path:["?mypage_type=myemoney"],html:"sms_mypage/deposit.html?",parm:"page=main"},sms_my_page05:{path:["?mypage_type=mypoint"],html:"sms_mypage/point.html?",parm:"page=main"},sms_my_page06:{path:["?mypage_type=mywishlist"],html:"sms_mypage/wish.html?",parm:"page=main"},sms_my_page07:{path:["?mypage_type=myseegoods"],html:"sms_mypage/recent.html?",parm:"page=main"},sms_my_page08:{path:["?mypage_type=myarticle"],html:"sms_mypage/article.html?",parm:"page=main"},sms_my_page09:{path:["?mypage_type=mym2mboard"],html:"sms_mypage/mymboard.html?",parm:"page=main"},},member:{path:["/m/login.html"],html:"sms_login.html?",parm:data_parm},agreement:{path:["/m/join_contract.html"],html:"sms_agreement.html?",parm:data_parm},join:{path:["/m/join_us.html"],html:"sms_join.html?",parm:data_parm},joinresult:{path:["/m/join_complete.html"],html:"sms_join_result.html?",parm:data_parm},board_m:{board_m01:{path:["type=i"],html:"sms_board/write.html?",parm:"page=write"},board_m02:{path:["type=v"],html:"sms_board/view.html?",parm:"page=view"},},power_r:{path:["/m/power_review.html"],html:"sms_power_review.html?",parm:data_parm}};this.vir_url(SMS_path_obj)}};SMS_TD_util.init()}catch(e){}
+</script>
+<!-- 스마트스킨 코드 끝 :: 지우지 마세요 -->
+
+
+<script>
+    /**삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨]**/
+    //스마트스킨 Object
+    var SMARTSKIN_MAIN_OBJECT = {
+        "popup": false, // 메인팝업 미 사용시 false 로 변경 사용:true
+        "popupCloseTime": 0, // 팝업 자동 닫기 [미사용시 0] / 사용시 시간 적용 [1초:1000]
+        "mallname": "피그먼트", //북마크 시 아이콘 이름
+        "mallcode": "ad=smartskin_Bookmark", // 북마크로 몰 접근 시 광고 코드
+        "bookmarkAuto": false, //북마크 자동 설치 true,false 변경
+        "bookmarkConfirm": false, //북마크 자동 설치 alert, 미 사용시 false로 변경
+        "AppAble": false, //앱으로 보기 웹으로 보기 팝업 사용, 미 사용시 false로 변경
+        "AppCount": 3, // 웹페이지 방문 카운트 수
+        "AppIOSLink": "https://apps.apple.com/kr/app/%ED%94%BC%EA%B7%B8%EB%A8%BC%ED%8A%B8/id1480339041", // IOS 앱 링크 //
+        "AppAndroidLink": "market://details?id=com.pigment.byapps&hl=en_ko" // 안드로이드 앱 링크 
+        // 앱 다운로드 onclick="smartskinAppLink()"
+    };
+    /**삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨]**/
+</script>
+
 <!-- 모달 검색창 -->
 <div id="hc_modal_search">
     <div class="hc_modal_search_close" id="hcHeaderCloseBtn">
