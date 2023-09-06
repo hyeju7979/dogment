@@ -1,0 +1,105 @@
+/*신상품 캘린더*/
+#pigmentCalendar {
+	width: 938px;
+	height: 527px;
+	margin: 0 auto;
+}
+#selectItem {
+	display: flex;
+	justify-content: center;
+    margin-top: 100px;
+}
+#selectItem > div {
+	flex-direction: column;
+	padding-right: 10px;
+}
+.litepicker .container__months {
+	width: 100%;
+}
+.litepicker .container__months .month-item {
+	width: 100%;
+}
+.litepicker .container__months .month-item-weekdays-row > div {
+	margin-bottom: 10px;
+	width: 134px;
+	height: 40px;
+	line-height: 40px;
+	color: var(--hc_bright_color);
+	font-size: 18px;
+	text-transform: uppercase;
+	background: var(--hc_dark_color);
+}
+.litepicker .container__days > div,
+.litepicker .container__days > a {
+	padding: 0;
+	width: 134px;
+	box-sizing: border-box;
+}
+.litepicker .container__days .day-item {
+	padding: 15px 25px 0 0;
+	width: 134px;
+	height: 80px;
+	color: var(--hc_dark_color);
+	font-size: 28px;
+	font-style: italic;
+	font-weight: 100;
+	text-align: right;
+	border-radius: 0;
+	box-sizing: border-box;
+}
+.litepicker .container__days .day-item.is-end-date {
+	background-color: var(--hc_dark_color);
+}
+.litepicker .container__days .day-item.is-end-date:hover {
+	color: var(--hc_bright_color);
+}
+.litepicker .container__days .day-item.is-start-date.is-end-date {
+	border-radius: 0;
+}
+.litepicker .container__days .day-item.is-today {
+	position: relative;
+	color: #31a364;
+	font-weight: 700;
+	/* background-color:var(--hc_bright_color); */
+}
+.litepicker .container__days .day-item.is-today:hover {
+	color: #31a364;
+	border-radius: 0;
+}
+.litepicker .container__days > .day-item.is-today::after {
+	content: '●';
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-weight: normal;
+	font-size: 10px;
+}
+.litepicker .container__days .day-item:hover {
+	color: var(--hc_dark_color);
+	box-shadow: inset 0 0 0 1px var(--hc_dark_color);
+}
+.litepicker .container__months .month-item-header {
+	color: var(--hc_dark_color);
+	font-family: var(--fontfamily1);
+	font-size: var(--hc_tit_headline);
+	font-weight: var(--hc_bold);
+	text-transform: uppercase;
+}
+.litepicker .container__months .month-item-header div > .month-item-name {
+}
+
+.litepicker .container__months .month-item-header .button-previous-month span, .litepicker .container__months .month-item-header .button-next-month span {
+    visibility:visible !important
+}
+.litepicker .container__months .month-item-header .button-previous-month, .litepicker .container__months .month-item-header .button-next-month {
+	color: var(--hc_dark_color);
+    font-size: var(--hc_tit_headline);
+    font-family: var(--fontfamily1);
+}
+.litepicker .container__months .month-item-header .button-next-month:hover {
+    color: var(--hc_dark_color);
+}
+#selectItem a img {
+    width:400px;
+}
