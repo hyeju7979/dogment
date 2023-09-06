@@ -1,0 +1,10 @@
+.join select[name="etc[0]"],
+.join input[type="tel"] {
+    width: 100%;
+}
+.hc_normal_line_contents th {
+    width:90px;
+}
+.hc_normal_line_contents {
+    margin: 10px 0;
+}

@@ -1,0 +1,184 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_member_wrap">
+        <main class="hc_contents" id="join">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">회원가입</h2>
+
+            <!--/form_agree/-->
+            <div class="privercy">
+                <!--/if_use_privacy/-->
+                <div class="form-terms"> 
+                    <!-- 모든 약관 동의 -->
+                    <div class="all-chk">
+                        <div class="chk-box">
+                            <h4>
+                                <strong>모든 약관에 동의합니다.</strong>
+                                <span class="privercy-chk">
+                                    <label><!--/checkbox_all_agree(input-cbox)/--></label>
+                                </span>
+                            </h4>
+                        </div>
+                        <div class="txt-desc">
+                            <ul>
+                                <li>전체 동의는 선택  정보에 대한 동의도 포함되어 있으며, 필수 및 선택 정보는 모두 개별적으로 선택할 수 있습니다.</li>
+                                <li>선택 동의 항목은 동의하지 않아도 서비스를 이용할 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="join_terms">
+                <!-- // 모든 약관 동의 -->
+                    <!--/new_privacy_terms/-->
+                </div>
+
+                <div class="btn-agree">
+                    <a href="<!--/link_agree/-->"><span>동의하고 가입하기</span></a>
+                </div>
+                <!--/else/-->
+                    <!--/if_new_privercy_type/-->
+                    <div class="desc">
+                        <h3>이용약관</h3>
+                        <div class="desc-3">
+                            <p><!--/summary_contract_terms/--></p>
+                        </div>
+                        <a href="<!--/link_contract_view/-->" class="open-pop">전문보기</a>
+                    </div>
+                    <div class="desc">
+                        <h3 class="none-line">개인정보 수집, 이용 안내</h3>
+                        <div class="desc-3 privercy-contract-tap">
+                            <ul>
+                                <li class="sel"><a href="#none">수집하는 항목</a></li>
+                                <li><a href="#none">수집·이용 목적</a></li>
+                                <li class="end"><a href="#none">보유 및 이용기간</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div class="privercy-contract">
+                                <p><!--/summary_privercy_terms1/--></p>
+                            </div>
+                            <div class="privercy-contract" style="display: none;">
+                                <p><!--/summary_privercy_terms2/--></p>
+                            </div>
+                            <div class="privercy-contract" style="display: none;">
+                                <p><!--/summary_privercy_terms3/--></p>
+                            </div>
+                        </div><!-- .tab-content -->
+                        <a href="<!--/link_privercy_policy_view/-->" class="open-pop">전문보기</a>
+                    </div>
+                        <!--/if_third_party/-->
+                        <div class="desc">
+                            <h3>개인정보의 제3자 제공</h3>
+                            <div class="desc-3">
+                                <p><!--/summary_third_party_terms/--></p>
+                            </div>
+                            <a href="<!--/link_third_party_view/-->" class="open-pop">전문보기</a>
+                        </div>
+                        <!--/end_if/-->
+
+                        <!--/if_trust/-->
+                        <div class="desc">
+                            <h3>개인정보 처리위탁안내</h3>
+                            <div class="desc-3">
+                                <p><!--/summary_trust_terms/--></p>
+                            </div>
+                            <a href="<!--/link_trust_view/-->" class="open-pop">전문보기</a>
+                        </div>
+                        <!--/end_if/-->
+                        <div class="desc">
+                            <p><label><!--/checkbox_contract_ok/--> 위의 이용약관에 동의합니다.</label></p>
+                            <p><label><!--/checkbox_privercy_ok/--> 개인정보 수집 및 이용안내에 동의합니다.</label></p>
+                            <!--/if_third_party/-->
+                            <p><label><!--/checkbox_third_party_ok/--> 개인정보 제3자 제공에 동의합니다.</label></p>
+                            <!--/end_if/-->
+                            <!--/if_trust/-->
+                            <p><label><!--/checkbox_trust_ok/--> 개인정보 처리위탁에 동의합니다.</label></p>
+                            <!--/end_if/-->
+                        </div>
+                    <!--/else/-->
+                        <div class="desc">
+                            <h3>이용약관</h3>
+                            <div class="desc-3">
+                                <p><!--/summary_contract_terms/--></p>
+                            </div>
+                            <a href="<!--/link_contract_view/-->" class="open-pop">전문보기</a>
+                        </div>
+                        <div class="agree-2">
+                            <p><label><!--/radio_contract_ok/--> 동의함 </label> <label><!--/radio_contract_no/--> 동의안함</label></p>
+                        </div>
+                        <div class="desc">
+                            <h3>개인정보 수집 이용안내</h3>
+                            <div class="desc-3">
+                                <p><!--/summary_privercy_terms/--></p>
+                            </div>
+                            <a href="<!--/link_privercy_policy_view/-->" class="open-pop">전문보기</a>
+                        </div>
+                        <div class="agree-2">
+                            <p><label><!--/radio_privercy_ok/--> 동의함 </label> <label><!--/radio_privercy_no/--> 동의안함</label></p>
+                        </div>
+                    <!--/end_if/-->
+                    <div class="pd10">
+                        <a href="<!--/link_agree/-->" class="btn_Red"><span>확인</span></a>
+                        <a href="<!--/link_reject/-->" class="btn_White"><span>취소</span></a>
+                    </div>
+                <!--/end_if/-->
+            </div>
+            <!--/end_form/-->
+
+            <!-- 이용약관 -->
+            <!--/if_not_use_privacy/-->
+                <!--/block_contract_term/-->
+                <div class="layer-pop" style="display:block;">
+                    <div id="layerTerms">
+                        <h3>이용약관</h3>
+                        <div class="txt">
+                            <!--/contract_terms/-->
+                        </div>
+                        <a href="<!--/link_policy_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                    </div>
+                </div>
+                <!--/end_block/-->
+                <!--/if_new_privercy_type/-->
+                    <!--/if_third_party/-->
+                        <!--/block_third_party/-->
+                        <div id="layerThirdParty" class="layer-pop-join">
+                            <h3>개인정보의 제3자 제공</h3>
+                            <div class="txt">
+                                <!--/third_party_terms/-->
+                            </div>
+                            <a href="<!--/link_policy_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                        </div>
+                        <!--/end_block/-->
+                    <!--/end_if/-->
+
+                    <!--/if_trust/-->
+                        <!--/block_trust/-->
+                        <div id="layerTrust" class="layer-pop-join">
+                            <h3>개인정보 처리위탁안내</h3>
+                            <div class="txt">
+                                <!--/trust_terms/-->
+                            </div>
+                            <a href="<!--/link_policy_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                        </div>
+                        <!--/end_block/-->
+                    <!--/end_if/-->
+                <!--/end_if/-->
+            <!--/end_if/-->
+
+            <!--/block_privercy_policy/-->
+            <div id="layerPrivercy" class="layer-pop-join">
+                <h3>개인정보처리방침</h3>
+                <div class="txt">
+                    <!--/privercy_terms/-->
+                </div>
+                <a href="<!--/link_policy_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+            </div>
+            <!--/end_block/-->
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

@@ -40,6 +40,7 @@ h6 {
 .hc_container {
   padding-top: 40px;
 }
+.hc_mypage_wrap,
 .hc_board_wrap,
 .hc_page_contents {
   margin: 10px;
@@ -59,6 +60,11 @@ h6 {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
+}
+.hc_column3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
 }
 .hc_oneThird .hc_btn_long_fill {
     height: 40px;
@@ -121,6 +127,11 @@ h2.hc_page_title {
 }
 .hc_interval3 {
   padding: 1em 0;
+}
+.hc_normal_line_contents th, .hc_normal_line_contents td {
+    padding: 5px 0;
+    height: 40px;
+    line-height: 40px;
 }
 
 /* 

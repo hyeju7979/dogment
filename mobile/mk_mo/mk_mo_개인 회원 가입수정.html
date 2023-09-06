@@ -1,0 +1,378 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_member_wrap">
+        <main class="hc_contents">
+            <!--/form_join/-->
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">회원가입</h2>
+            <div class="join">
+                <div class="tableBox">
+                    <table>
+                        <colgroup>
+                            <col width="90" />
+                            <col width="*" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>이름</th>
+                                <td>
+                                    <!--/input_user_name(txt-input)/-->
+                                    <p class="hc_color_point"><!--/name_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/if_input_user_nickname/-->
+                            <tr>
+                                <th>닉네임</th>
+                                <td>
+                                    <!--/input_user_nickname(txt-input)/-->
+                                    <p class="hc_color_point"><!--/nickname_check_msg/--> </p>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            <tr>
+                                <th>아이디</th>
+                                <td>
+                                    <!--/input_user_id(txt-input)/-->
+                                    <p class="hc_color_point"><!--/idcheck/--></p>
+                                    <p class="hc_color_point"><!--/id_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                                <td>
+                                    <!--/input_password1(txt-input)/-->
+                                    <p class="hc_color_point"><!--/password_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호확인</th>
+                                <td>
+                                    <!--/input_password2(txt-input)/-->
+                                    <p class="hc_color_point"><!--/repassword_check_msg/--></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tableBox">
+                    <table>
+                        <colgroup>
+                            <col width="90" />
+                            <col width="*" />
+                        </colgroup>
+                        <tbody>
+                            <!--/if_input_birth/-->
+                            <tr class="birth">
+                                <th>생년월일</th>
+                                <td class="hc_column3">
+                                    <!--/input_birth/-->
+                                    <p class="hc_color_point"><!--/birth_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+
+                            <!--/if_input_gender/-->
+                            <tr class="gender" style="clear:both;">
+                                <th>성별</th>
+                                <td>
+                                    <!--/input_gender/-->
+                                    <p class="hc_color_point"><!--/gender_check_msg/--></p>
+                                </td>   
+                            </tr>
+                            <!--/end_if/-->
+
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <!--/input_email(txt-input)/-->
+                                    <p class="hc_color_point"><!--/email_check_msg/--></p>
+                                </td>
+                            </tr>
+                            
+                            <!--/if_input_tel/-->
+                            <tr>
+                                <th>연락처</th>
+                                <td>
+                                    <!--/input_tel(txt-input)/-->
+                                    <p><!--/tel_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+
+                            <!--/if_input_mobile/-->
+                            <tr>
+                                <th>휴대폰</th>
+                                <td>
+                                    <!--/input_mobile(txt-input)/-->
+                                    <p><!--/mobile_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+
+                            <tr>
+                                <td colspan="2">
+                                    <table class="hc_normal_line_contents">
+                                    <!--/if_use_privacy/-->
+                                        <!--/if_login/-->
+                                        <tr>
+                                            <th>메일정보수신</th>
+                                            <td><!--/radio_email_ok/--> 동의 <!--/radio_email_no/--> 동의안함</td>
+                                        </tr>
+                                            <!--/if_radio_sms_ok/-->
+                                            <tr>
+                                                <th>SMS수신</th>
+                                                <td><!--/radio_sms_ok/--> 동의 <!--/radio_sms_no/--> 동의 안함</td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                            <!--/if_checkbox_info_push_ok/-->
+                                            <tr>
+                                                <th>앱Push알림</th>
+                                                <td>
+                                                    <!--/checkbox_info_push_ok/--> 정보성 정보
+                                                    <!--/checkbox_advert_push_ok/--> 광고성 정보
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                        <!--/end_if/-->
+                                    <!--/else/-->
+                                        <tr>
+                                            <th>메일정보수신</th>
+                                            <td><!--/radio_email_ok/--> 동의 <!--/radio_email_no/--> 동의안함</td>
+                                        </tr>
+                                            <!--/if_radio_sms_ok/-->
+                                            <tr>
+                                                <th>SMS수신</th>
+                                                <td><!--/radio_sms_ok/--> 동의 <!--/radio_sms_no/--> 동의 안함</td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                            <!--/if_checkbox_info_push_ok/-->
+                                            <tr>
+                                                <th>앱Push알림</th>
+                                                <td>
+                                                    <!--/checkbox_info_push_ok/--> 정보성 정보
+                                                    <!--/checkbox_advert_push_ok/--> 광고성 정보
+                                                </td>
+                                            </tr>
+                                            <!--/end_if/-->
+                                    <!--/end_if/-->
+                                    </table>
+                                </td>
+                            </tr>
+                            
+                            <!--/if_input_addr1/-->
+                            <tr>
+                                <th>우편번호</th>
+                                <td>
+                                    <!--/input_zip(txt-input50)/-->
+                                    <a href="<!--/link_search_zip/-->" class="btn_Grey" style="margin-top:10px;"><span>우편번호 찾기</span></a>
+                                    <p><!--/address_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td>
+                                    <!--/input_addr1(txt-input)/-->
+                                    <!--/input_addr2(txt-input)/-->
+                                    <!--/if_input_addr_default/-->
+                                        <div style="margin-top:10px"><label><!--/input_addr_default/-->&nbsp;기본배송지로 저장</label></div>
+                                    <!--/end_if/-->
+                                </td>
+                            </tr>
+                            <!--/end_if/-->        
+
+                            <!--/if_input_recommend/-->
+                            <tr>
+                                <th>추천인 ID</th>
+                                <td>
+                                    <!--/input_recommend(txt-input)/-->
+                                    <p class="hc_color_point"><!--/recommend_id_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                            
+                            <!--/if_input_app_recommend/-->
+                            <tr>
+                                <th>앱 초대회원 ID</th>
+                                <td>
+                                    <!--/input_app_recommend(txt-input)/-->
+                                    <p class="hc_color_point"><!--/app_recommend_id_check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/end_if/-->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--/if_etc_info/-->
+                <div class="tableBox">
+                    <table>
+                        <colgroup>
+                            <col width="90" />
+                            <col width="*" />
+                        </colgroup>
+                        <tbody>
+                            <!--/loop_etc_info/-->
+                            <tr>
+                                <th><!--/etc_info@input_title/--></th>
+                                <td>
+                                    <!--/etc_info@input_value(txt-input)/-->
+                                    <p><!--/etc_info@check_msg/--></p>
+                                </td>
+                            </tr>
+                            <!--/end_loop/-->
+                        </tbody>
+                    </table>
+                </div>
+                <!--/end_if/-->
+            </div>
+
+            <!--/if_use_login_sns/-->
+            <ul id="snsConnect" class="hc_btn_wrap">
+                <!--/if_use_login_facebook/-->
+                <li class="facebook">
+                    <!--/if_facebook_connect_id/-->
+                    <!--/facebook_connect_id/--> <a class="hc_btn_long" href="<!--/link_disconnect_facebook/-->">연결 끊기</a>
+                    <!--/else/-->
+                    <a class="hc_btn_long" href="<!--/link_connect_facebook/-->">페이스북 연결</a>
+                    <!--/end_if/-->
+                </li>
+                <!--/end_if/-->
+
+                <!--/if_use_login_naver/-->
+                <li class="naver">
+                    <!--/if_naver_connect_id/-->
+                    <!--/naver_connect_id/--> <a class="hc_btn_long" href="<!--/link_disconnect_naver/-->">연결 끊기</a>
+                    <!--/else/-->
+                    <a class="hc_btn_long" href="<!--/link_connect_naver/-->">네이버 연결</a>
+                    <!--/end_if/-->
+                </li>
+                <!--/end_if/-->
+
+                <!--/if_use_login_kakao/-->
+                <li class="kakaotalk">
+                    <!--/if_kakao_connect_id/-->
+                    <!--/kakao_connect_id/--> <a class="hc_btn_long" href="<!--/link_disconnect_kakao/-->">연결 끊기</a>
+                    <!--/else/-->
+                    <a class="hc_btn_long" href="<!--/link_connect_kakao/-->">카카오 연결</a>
+                    <!--/end_if/-->
+                </li>
+                <!--/end_if/-->
+
+                <!--/if_use_login_apple/-->
+                <li class="apple">
+                    <!--/if_apple_connect_id/-->
+                    <!--/apple_connect_id/--> <a class="hc_btn_long" href="<!--/link_disconnect_apple/-->">연결 끊기</a>
+                    <!--/else/-->
+                    <a class="hc_btn_long" href="<!--/link_connect_apple/-->">애플 연결</a>
+                    <!--/end_if/-->
+                </li>
+                <!--/end_if/-->
+            </ul>
+            <!--/end_if/-->  
+
+            <!--/if_user_age_check/--><div class="user_age_wrap"><label class="label"><!--/user_age_check/--> 만 14세 이상입니다. (필수)</label></div><!--/end_if/-->     
+            <div class="hc_btn_wrap">
+                <a class="hc_btn_long_fill" href="<!--/link_join/-->">확인</a>
+            </div>
+            <!--/end_form/-->
+
+            <!-- 우편번호 찾기 레이어-->
+            <!--/block_join_addr/-->
+            <div class="layer">
+                <div class="layer-pop">
+                    <h3>우편번호 찾기</h3>
+                    <div class="txt">
+                        <!--/block_join_search_addr/-->
+                        <p class="addr_type">
+                    <!--/if_radio_addr_type_number/-->
+                    <label><!--/radio_addr_type_number/--> 지번 주소</label>
+                    <!--/end_if/-->
+                    <!--/if_radio_addr_type_load/-->
+                    <label><!--/radio_addr_type_load/--> 도로명 검색</label>
+                    <!--/end_if/-->
+                    <!--/if_radio_addr_type_number_to_load/-->
+                    <label><!--/radio_addr_type_number_to_load/--> 지번+도로명 검색</label>
+                    <!--/end_if/-->
+                        </p>
+                        <!--/if_block_addr_type_number/-->
+                        <!--/block_addr_type_number/-->
+                        <div class="msg-wrap">
+                            <p class="msg01 bold"><span class="msg01-highlight">동(읍/면/리)</span>명을 2글자 이상 입력하세요.</p>
+                            <p class="msg02">예) 삼성동, 가산동</p>
+                            <p class="msg03"><!--/addr_search_type_text/--></p>
+                        </div>
+                        <!--/end_block/-->
+                        <!--/end_if/-->
+                        <!--/block_addr_type_load/-->
+                        <div class="msg-wrap">
+                            <p class="msg01 bold"><span class="msg01-highlight">도로명(건물명)</span>을 2글자 이상 입력하세요.</p>
+                            <p class="msg02">예)강남대로100길, 가산디지털1로</p>
+                            <p class="msg03"><!--/addr_search_type_text/--></p>
+                        </div>
+                        <!--/end_block/-->
+                        <!--/block_addr_type_number_to_load/-->
+                        <div class="msg-wrap">
+                            <p class="msg01 bold"><span class="msg01-highlight">동/번지(건물명)</span>을 두 단어 이상 입력하세요.</p>
+                            <p class="msg02">예) 가산동 우림라이온스밸리, 압구정 로데오</p>
+                            <p class="msg03"><!--/addr_search_type_text/--></p>
+                        </div>
+                        <!--/end_block/-->
+                        <div class="search-form">
+                            <!--/form_addr_search/-->
+                            <fieldset>
+                            <legend>우편번호 검색 폼</legend>
+                            <span class="keyword"><!--/input_search_addr_text/--></span><button class="btn_Grey" type="submit" onclick="<!--/link_addr_search/-->">검색</button>
+                            </fieldset>
+                            <!--/end_form/-->
+                        </div>
+                        <div id="searchStep02">
+                            <h4>주소 선택</h4>
+                            <!--/select_addr/-->
+                            <a href="<!--/link_addr_select_ok/-->" class="btn_Black">다음</a>
+                        </div>
+                        <!--/end_block/-->
+                        <!--/block_join_detail_addr/-->
+                        <div class="msg-wrap">
+                            <p>상세 주소를 입력해주세요.</p>
+                        </div>
+                        <div class="detail-addr">
+                            <!--/form_detail_addr/-->
+                            <fieldset>
+                                <legend>상세 주소 입력 폼</legend>
+                                <table>
+                                    <tr class="detail-addrPost">
+                                        <th>우편번호</th>
+                                        <td>
+                                <!--/if_input_search_post/-->
+                                    <!--/input_search_post/-->
+                                <!--/else/-->
+                                    <!--/input_search_post1/-->
+                                                        -
+                                    <!--/input_search_post2/-->
+                                <!--/end_if/-->
+                                        </td>
+                                    </tr>
+                                    <tr class="detail-addrAddress">
+                                        <th>주소</th>
+                                        <td><!--/input_search_address1/--> <!--/input_search_address2/--></td>
+                                    </tr>
+                                </table>
+                                <a href="<!--/link_addr_ok/-->" class="btn_Black" >확인</a>
+                            </fieldset>
+                            <!--/end_form/-->
+                        </div>
+                        <!-- //detail-addr -->
+                        <!--/end_block/-->
+                    </div>
+                    <a href="<!--/link_addr_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                </div>
+            </div>
+            <!--/end_block/-->
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

@@ -1348,7 +1348,6 @@ input[name=hamburger_item] {
     text-align: left;
 }
 .hc_member_wrap .tableBox th {
-    vertical-align: middle;
     font-weight: 400;
 }
 .hc_member_wrap .tableBox p.hc_color_point {
@@ -1443,7 +1442,7 @@ input[name=hamburger_item] {
 #searchStep01 .search-form fieldset {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    align-items: center;
+    align-items: start;
 }
 #searchStep01 .search-form .btn_Grey {
     height: 40px;
@@ -1454,6 +1453,7 @@ input[name=hamburger_item] {
 #searchStep01 .keyword input[type="text"] {
     width:100%;
 }
+.layer-pop .detail-addr form,
 .layer-pop #searchStep01 form {
     padding: 0;
 }
@@ -1469,6 +1469,43 @@ input[name=hamburger_item] {
     line-height: 40px;
     background-color: var(--hc_dark_color);
     border: 0;
+}
+#searchStep03 .msg-wrap {
+    margin:20px 0;
+}
+.detail-addr th {
+    font-weight: normal;
+    vertical-align: baseline;
+}
+.detail-addr table {
+    margin-bottom:30px;
+}
+.detail-addrAddress input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.detail-addrPost td {
+    margin-bottom:10px;
+    /*
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, auto));
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    */
+    text-align: center;
+}
+#addrSearch .fa-times:before {
+    content: "x";
+    font-size: var(--hc_bd_xlarge);
+}
+#layerPrivercyWrap .fa-times:before {
+    content: "x";
+    font-size: var(--hc_bd_xlarge);
+}
 
+/* 회원 탈퇴 신청 */
+#drop textarea[id="reason"] {
+    width: 100%;
 }
 /*# sourceMappingURL=mo_style.css.map */

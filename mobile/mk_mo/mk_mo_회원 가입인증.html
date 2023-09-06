@@ -1,0 +1,33 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_member_wrap">
+        <main class="hc_contents" id="join">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">회원가입</h2>
+
+            <div class="privercy">
+                <!--/if_use_auth/-->
+                <div id="member_auth">
+                    <div class="member_authTop">
+                        <p class="cont-tit bold">본인인증</p>
+                        <p>인증 수단을 선택하고 본인인증을 해주세요.</p>
+                    </div>
+                    <div class="member_authBottom">
+                        <div class="btns_auth">
+                        <!--/if_auth_method/-->
+                            <!--/loop_auth_method/-->
+                                <li><a href="<!--/auth_method@link/-->"><span><img src="<!--/auth_method@image/-->"></span><!--/auth_method@title/--></a>
+                            <!--/end_loop/-->
+                        <!--/end_if/--> 
+                        </div>
+                    </div>
+                </div>
+                <!--/end_if/-->
+            </div>
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->
