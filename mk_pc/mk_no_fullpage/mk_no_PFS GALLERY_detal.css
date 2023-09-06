@@ -1,0 +1,14 @@
+.qna_board_content div {
+    width: auto !important;
+}
+.MS_qna_content_box td {
+    height: auto !important;
+    padding: 0 !important;
+    border-bottom: 0 !important;
+}
+.hc_md_table_title {
+    border-width: 0;
+}
+.qna_board_content span {
+    color: var(--hc_color_point) !important;
+}

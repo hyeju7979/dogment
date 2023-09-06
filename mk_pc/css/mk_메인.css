@@ -15,9 +15,7 @@
     margin-top: 0 !important;
 }
 
-.hc_timesale_list .timesaleItem:first-child {
-  border: 2px solid orange;
-}  
-.hc_timesale_list div:first-child .timesaleItem {
-  border: 2px solid orange;
-} 
+
+div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next){
+    opacity : 0.2;    
+}

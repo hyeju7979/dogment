@@ -1,7 +1,6 @@
 jQuery(document).ready(function(){
     //풀페이지
-    //fullPageEvent();
-    aosInit();
+    fullPageEvent();
     randowMainImageEvent();
     sideMenuEvent();
     searchEvent();
@@ -13,9 +12,6 @@ jQuery(document).ready(function(){
     
     
 });
-function aosInit() {
-    AOS.init();
-}
 function windowEventRelease() {
     var action_invalidity = function(){
         return true;
@@ -78,18 +74,10 @@ function timeLimitEvent() {
     if(jQuery(".timesaleItemSlide").length < 1) return;
     
     var swiper = new Swiper('.timesaleItemSlide', {       
-        slidesPerView: 4,
-        slidesPerGroup :1,
+        slidesPerView: 4,        
         spaceBetween: 10,
-        //centeredSlides: false,
-        loop:true,
-        //loopAdditionalSlides: 10,
-        //slidesOffsetBefore : 10,
-        //slidesOffsetAfter : 10,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+        centeredSlides: true,
+        loop:true,                
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -116,9 +104,7 @@ function timeLimitEvent() {
                     });
             },
         }
-    })
-    swiper.loopDestroy();
-swiper.loopCreate();
+    });    
     
     /*jQuery("#timesaleItemSlide").bxSlider({
         minSlides: 5,
@@ -423,7 +409,7 @@ function searchEvent() {
             //seconds %= 3600 * 24;
             var hours = Math.floor(seconds / 3600);
             seconds %= 3600;
-            var minutes = Math.floor(seconds / 60);
+            var minutes = Math.floor(seconds / 60) < 10 ? '0'+(Math.floor(seconds / 60)) : Math.floor(seconds / 60);
             var remainingSeconds = (seconds % 60) < 10 ? '0'+(seconds % 60) : seconds % 60;
             
             return {
