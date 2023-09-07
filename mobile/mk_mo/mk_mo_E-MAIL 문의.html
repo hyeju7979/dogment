@@ -1,53 +1,58 @@
 <!--/include_header(1)/-->
 
-<!-- 본문 -->
-<!-- container -->
-<div id="container">
-    <!-- contents -->
-    <div id="contents">
-        <!-- main -->
-        <main id="review-board-write">
-            <div class="h_title">
-                <h3>메일문의</h3>
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_mypage_wrap">
+        <main class="hc_contents hc_page_email">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">E-MAIL 문의</h2>
+            <div class="hc_clarification">
+                회원님의 질문사항을 운영자 이메일로 문의합니다.
             </div>
+
             <!--/form_mail/-->
             <table>
-            <tbody>
-                <tr>
-                    <th>받는이</th>
-                    <td><!--/shop_email/--></td>
-                </tr>
-                <tr>
-                    <th>이름</th>
-                    <td><input type="text" class="comm"/></td>
-                </tr>
-                <tr>
-                    <th>이메일</th>
-                    <td><!--/input_sender_email(comm)/--></td>
-                </tr>
-                <tr>
-                    <th>제목</th>
-                    <td><!--/input_subject(comm)/--></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><!--/text_content/--></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><!--/file_attach/--></td>
-                </tr>
-            </tbody>
+                <caption></caption>
+                <colgroup>
+                    <col width="90" />
+                    <col width="*" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>받는이</th>
+                        <td><!--/shop_email/--></td>
+                    </tr>
+                    <tr>
+                        <th>이름</th>
+                        <td><input type="text" class="comm"/></td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td><!--/input_sender_email(comm)/--></td>
+                    </tr>
+                    <tr>
+                        <th>제목</th>
+                        <td><!--/input_subject(comm)/--></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><!--/text_content/--></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><!--/file_attach/--></td>
+                    </tr>
+                </tbody>
             </table>
             <!--/end_form/-->
-            <p class="pd10">문의하신 내용은 고객의 서비스 품질 향상을 위하여 회사가 서비스 제공기간 동안 보유할 수 있으며, 고객님의 이메일 정보는 문의사항에 대한 답변 회신 후 즉시 파기처리 합니다.</p>
-            <div class="write-btn">
-                <a href="<!--/link_send/-->" class="btn_Red"><strong>메일보내기</strong></a>
+
+            <div class="hc_clarification">
+                문의하신 내용은 고객의 서비스 품질 향상을 위하여 회사가 서비스 제공기간 동안 보유할 수 있으며, 고객님의 이메일 정보는 문의사항에 대한 답변 회신 후 즉시 파기처리 합니다.
+            </div>
+
+            <div class="hc_btn_wrap">
+                <a class="hc_btn_long_fill" href="<!--/link_send/-->">메일 보내기</a>
             </div>
         </main>
-        <!-- //main -->
     </div>
-    <!-- //contents -->
 </div>
-<!-- //container -->
-<!-- //본문 -->
 
 <!--/include_footer(1)/-->

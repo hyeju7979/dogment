@@ -1,0 +1,13 @@
+.hc_page_email th, .hc_page_email td {
+    padding-bottom: 10px;
+    height: 40px;
+    text-align: left;
+    vertical-align: baseline;
+}
+.hc_page_email textarea,
+.hc_page_email input[type="email"],
+.hc_page_email input[type="text"] {
+    outline: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}

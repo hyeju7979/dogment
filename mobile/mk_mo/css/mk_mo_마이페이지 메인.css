@@ -1,53 +1,53 @@
 .hc_user_info {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--hc_bright_color);
-    background: var(--hc_dark_color);
-  }
-  .hc_user_info span:nth-child(2) {
-    padding-left: 10px;
-    border-left: 1px solid rgba(255,255,255,0.8); 
-  }
-  .hc_mypage_wrap .hc_clarification p:nth-child(1) {
-    margin:28px 0 20px;
-  }
-  .hc_my_points {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--hc_color_level2);
-  }
-  .hc_my_points a {
-    padding: 10px;
-  }
-  .hc_my_points a:first-child {
-    border-right: 1px solid var(--hc_color_level2);
-  }
-  .hc_my_points a div:last-child {
-    text-align: right;
-  }
-  .hc_page_mymain .hc_clarification {
-    margin-bottom: 0;
-  }
-  .hc_page_mymain h5 {
-      height: 40px;
-      line-height: 40px;
-      background: var(--hc_color_level3);
-      margin-top: 40px;
-  }
-  .hc_page_mymain section {
-      margin-bottom: 54px;
-  }
-  .hc_page_mymain section li {
-      padding-left: 10px;
-      font-size: var(--hc_bd_small);
-      line-height: 40px;
-      border-bottom: 1px solid var(--hc_color_level2);
-      background: url("http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_arr.svg") 100% 50% no-repeat;
-  }
-  .hc_page_mymain section li a {
-      display: block;
-  }
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--hc_bright_color);
+  background: var(--hc_dark_color);
+}
+.hc_user_info span:nth-child(2) {
+  padding-left: 10px;
+  border-left: 1px solid rgba(255,255,255,0.8); 
+}
+.hc_mypage_wrap .hc_clarification p:nth-child(1) {
+  margin:28px 0 20px;
+}
+.hc_my_points {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--hc_color_level2);
+}
+.hc_my_points a {
+  padding: 10px;
+}
+.hc_my_points a:first-child {
+  border-right: 1px solid var(--hc_color_level2);
+}
+.hc_my_points a div:last-child {
+  text-align: right;
+}
+.hc_page_mymain .hc_clarification {
+  margin-bottom: 0;
+}
+.hc_page_mymain h5 {
+  height: 40px;
+  line-height: 40px;
+  background: var(--hc_color_level3);
+  margin-top: 40px;
+}
+.hc_page_mymain section {
+  margin-bottom: 54px;
+}
+.hc_page_mymain section li {
+  padding-left: 10px;
+  font-size: var(--hc_bd_small);
+  line-height: 40px;
+  border-bottom: 1px solid var(--hc_color_level2);
+  background: url("http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_arr.svg") 100% 50% no-repeat;
+}
+.hc_page_mymain section li a {
+  display: block;
+}
