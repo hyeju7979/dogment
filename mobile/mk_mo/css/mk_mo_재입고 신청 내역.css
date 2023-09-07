@@ -1,0 +1,7 @@
+.hc_page_restock h4 {   
+    margin-bottom: 20px;
+}
+.hc_restock_list li,
+.hc_no_date {
+    border-bottom: 1px solid var(--hc_color_level2);
+}

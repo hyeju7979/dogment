@@ -1,0 +1,352 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_board_wrap">
+        <main class="hc_contents">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">
+                <!--/now_board_name/-->
+            </h2>
+
+            <!--/if_link/-->
+            <div class="rbItem clearFix" style="border-bottom: 1px solid #bebebe;">
+                <dl>
+                    <dt><img src="<!--/mobile_image/-->" alt="" /></dt>
+                    <dd class="subject"><!--/notag/name(100)/--></dd>
+                    <dd class="link-view"><a href="<!--/link/-->">자세히 보기</a></dd>
+                </dl>
+            </div>
+            <!--/end_if/-->
+
+            <!-- 제목 -->
+            <div class="hc_board_headline">
+                <div class="hc_board_date"><!--/if_write_date/--> <!--/date(%Y-%M-%D)/write_date/--><!--/end_if/--></div>
+                <h3><!--/notag/subject/--></h3>
+                <div class="hc_blind"><!--/writer/--></div>
+                <div><!--/if_qna_ordernum/-->주문번호 : <!--/qna_ordernum/--><!--/end_if/--></div>
+                <div class="rb_rating">
+                    <!--/if_score/-->
+                        <!--/loop_score/-->
+                        <span class="rb_star"><!--/score@title/--> <!--/score@icon/--></span>
+                        <!--/end_loop/-->
+                    <!--/end_if/-->
+
+                    <!--/if_link_report_popup/-->
+                        <a href="javascript:void(0);" class="btn-report" onclick="<!--/link_report_popup/-->">신고/차단</a>
+                    <!--/end_if/-->
+                </div>
+            </div>
+
+            <!-- 내용 -->
+            <div class="rbContent">
+                <!--/if_add_info/-->
+                <div class="rb_addInfo">
+                    <!--/loop_add_info/-->
+                    <dl>
+                        <dt><!--/add_info@title/--></dt>
+                        <dd><!--/add_info@content/--></dd>
+                    </dl>
+                    <!--/end_loop/-->
+                </div>
+                <!--/end_if/-->
+
+                <!--/if_attach_image/-->
+                <div class="rb_thumbs">
+                    <!--/if_attach_image_size/-->
+                        <img width="<!--/attach_image_size/-->" src="<!--/attach_image/-->" />
+                    <!--/else/-->
+                        <img src="<!--/attach_image/-->" />
+                    <!--/end_if/-->
+                </div>
+                <!--/end_if/-->
+
+                <!--/content/-->
+
+                <!-- sns 버튼 -->
+                <div class="rb_icons">
+                    <!--/if_link_scrap_fb/-->
+                    <a href="#none" onclick="<!--/link_scrap_fb/-->"><img src="/images/d3/m_powerpack/32/btn/btn_facebook.gif" alt="페이스북"/></a>
+                    <!--/end_if/-->
+
+                    <!--/if_link_scrap_tw/-->
+                    <a href="#none" onclick="<!--/link_scrap_tw/-->"><img src="/images/d3/m_powerpack/32/btn/btn_twitter.gif" alt="트위터"/></a>
+                    <!--/end_if/-->
+
+                    <!--/if_link_scrap_ka/-->
+                    <a href="<!--/link_scrap_ka/-->"><img src="/images/d3/m_powerpack/32/btn/btn_kakatalk.gif" alt="카카오톡"/></a>
+                    <!--/end_if/-->
+                    
+                    <!--/if_link_scrap_ks/-->
+                    <a href="<!--/link_scrap_ks/-->"><img src="/images/d3/m_powerpack/32/btn/btn_story.gif" alt="카카오스토리"/></a>
+                    <!--/end_if/-->
+                </div>
+                <!-- //sns 버튼 -->
+            </div>
+
+            <!--/if_recommend_product/-->
+            <section class="list_shopping3x">
+                <div class="rbRelations">
+                    <h5>게시글 관련 상품</h5>
+                    <ul class="rb_items">
+                        <!--/loop_recommend_product/-->
+                        <li><a href="<!--/recommend_product@link/-->"><img src="<!--/recommend_product@mobile_image/-->" class="listPic" alt="" /></a></li>
+                        <!--/end_loop/-->
+                    </ul>
+                </div>
+            </section>
+            <!--/end_if/-->
+
+            <!--/if_is_reply_score_use/-->
+                <!--/if_is_reply_score_flag/-->
+                    <div class="score-list">
+                        <h5>답변 만족도 평가</h5>
+                        <table>
+                            <colgroup>
+                                <col width="*" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="sco-lst-txtr">
+                                            <div class="sco-date">
+                                                <strong><!--/reply_score_value2/--></strong>
+                                                <span><!--/reply_score_date/--></span>
+                                            </div>
+                                            <div class="sco-txt"><!--/reply_score_text/--></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                <!--/else/-->
+                    <div class="score-write">
+                        <h5>답변 만족도 평가</h5>
+                        <table>
+                            <colgroup>
+                                <col width="*" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="sco-wrt-des">
+                                            <label><!--/radio_reply_score_5/--> <!--/reply_score_type_5/--></label>
+                                            <label><!--/radio_reply_score_4/--> <!--/reply_score_type_4/--></label>
+                                            <label><!--/radio_reply_score_3/--> <!--/reply_score_type_3/--></label>
+                                            <label><!--/radio_reply_score_2/--> <!--/reply_score_type_2/--></label>
+                                            <label><!--/radio_reply_score_1/--> <!--/reply_score_type_1/--></label>
+                                        </div>
+                                        <div class="sco-wrt-txtr">
+                                            <!--/reply_score_textarea/-->
+                                            <!--/if_link_reply_score/--><a href="#" onclick="<!--/link_reply_score/-->" class="btn_Red">완료</a><!--/end_if/-->
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                <!--/end_if/-->
+            <!--/end_if/-->
+
+            <!-- 댓글쓰기 -->
+            <!--/if_block_comment/-->
+            <div class="hc_reply_write">
+                <h5>댓글쓰기</h5>
+                <!--/form_comment/-->
+                <table>
+                    <colgroup>
+                        <col width="*" />
+                        <col width="*" />
+                    </colgroup>
+
+                    <tbody>
+                    <!--/if_not_login/-->
+                        <!--/if_use_privacy/-->
+                            <!--/new_privacy_terms/-->
+                        <!--/else/-->
+                            <!--/if_privercy_terms/-->
+                                <!--/if_new_privercy_type/-->
+                                    <tr>
+                                        <td colspan="2">
+                                            <ul class="agree">
+                                                <li>
+                                                    <p>
+                                                        <span class="bold">개인정보 수집에 대한 동의</span> <a href="<!--/link_privercy_policy_view/-->" target="_blank" class="btn_White">약관보기</a>
+                                                    </p>
+                                                    <p>
+                                                        <label><!--/radio_privercy_ok/-->동의</label> <label><!--/radio_privercy_no/-->동의안함</label>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                        <!--/if_third_party/-->
+                                        <tr>
+                                            <td colspan="2">
+                                                <ul class="agree">
+                                                    <li>
+                                                        개인정보의 제3자 제공 <label><!--/radio_third_party_ok/--> 동의</label>
+                                                        <label><!--/radio_third_party_no/--> 동의안함</label>
+                                                        <a href="<!--/link_third_party_view/-->" target="_blank" class="btn_White">약관보기</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <!--/end_if/-->
+
+                                        <!--/if_trust/-->
+                                        <tr>
+                                            <td colspan="2">
+                                                <ul class="agree">
+                                                    <li>
+                                                        개인정보 처리위탁안내 <label><!--/radio_trust_ok/--> 동의</label>
+                                                        <label><!--/radio_trust_no/--> 동의안함</label>
+                                                        <a href="<!--/link_trust_view/-->" target="_blank" class="btn_White">약관보기</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <!--/end_if/-->
+                                <!--/else/-->
+                                    <tr>
+                                        <td colspan="2">
+                                            <ul class="agree">
+                                                <li>
+                                                    <p>
+                                                        <span class="bold">개인정보 수집에 대한 동의</span> <a href="<!--/link_privercy_policy_view/-->" target="_blank" class="btn_White">약관보기</a>
+                                                    </p>
+                                                    <p>
+                                                        <label><!--/radio_privercy_ok/-->동의</label> <label><!--/radio_privercy_no/-->동의안함</label>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                <!--/end_if/-->
+                            <!--/end_if/-->
+                        <!--/end_if/-->
+                    <!--/end_if/-->
+
+                        <tr>
+                            <td colspan="2" class="hc_hoodwink"><!--/input_nickname(txt-input1)/--></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><!--/input_password(txt-input1)/--></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><!--/text_comment(txt-input1)/--><a class="hc_btn_long_fill" href="<!--/link_comment/-->">댓글쓰기</a></td>
+                        </tr>
+
+                        <!--/if_checkbox_secret/-->
+                        <tr>
+                            <td colspan="2"><label><!--/checkbox_secret/--> 운영자만 보기</label></td>
+                        </tr>
+                        <!--/end_if/-->
+                    </tbody>
+                </table>
+                <!--/block_prevent_auto_input/-->
+                <!--/end_block/-->
+                <!--/end_form/-->
+            </div>
+            <!--/end_if/-->
+
+            <!-- 댓글 -->
+            <!--/block_comment/-->
+                <!--/if_comment/-->
+                <div class="sub-reviews">
+                    <ul>
+                        <!--/loop_comment/-->
+                        <li>
+                            <div class="info">
+                                <span class="id">
+                                <!--/if_comment@is_mobile_write/--><span class="fa fa-mobile fa-lg"></span> <!--/end_if/-->
+                                <!--/if_comment@icon_sub_manager/--><!--/comment@icon_sub_manager/--><!--/else/--><!--/comment@writer/--><!--/end_if/-->
+                                <!--/if_comment@write_date/--> | <!--/date(%Y-%M-%D)/comment@write_date/--><!--/end_if/-->
+                                </span>
+                                <!--/if_comment@link_report_popup/--><a href="javascript:void(0);" class="btn_White" onclick="<!--/comment@link_report_popup/-->">신고/차단</a><!--/end_if/-->
+                                <!--/if_comment@link_del_click/--><a href="#none" onclick="<!--/comment@link_del_click/-->" class="btn_White">삭제</a><!--/end_if/-->
+                                <!--/if_comment@link_comment_click/--><a href="#none" onclick="<!--/comment@link_comment_click/-->" class="btn_White">댓글</a><!--/end_if/-->
+                            </div>
+                            <!--/if_comment@depth(+1)/-->
+                            <p class="re" style="margin-left: <!--/comment@depth/-->0px"><span class="fa fa-level-up fa-rotate-90"></span> <!--/comment@content/--></p>
+                            <!--/else/-->
+                            <p><!--/comment@content/--></p>
+                            <!--/end_if/-->
+                        </li>
+                        <!--/end_loop/-->
+                    </ul>
+                </div>
+                <!--/end_if/-->
+            <!--/end_block/-->
+        
+            <div class="hc_btn_wrap">
+                <!--/if_link_write/--><a class="hc_btn_long_fill" href="<!--/link_write/-->">글쓰기</a><!--/end_if/-->
+                <div class="hc_column2">
+                    <!--/if_link_edit/--><a class="hc_btn_long" href="<!--/link_edit/-->" >수정</a><!--/end_if/-->
+                    <!--/if_link_del/--><a class="hc_btn_long" href="<!--/link_del/-->">삭제</a><!--/end_if/-->
+                    <!--/if_link_answer/--><a class="hc_btn_long" href="<!--/link_answer/-->">답변</a><!--/end_if/-->
+                    <!--/if_is_recommend/--><a class="hc_btn_long" href="<!--/link_recommend/-->">추천</a><!--/end_if/-->
+                </div>
+                <!--/if_link_list/--><a class="hc_btn_long" href="<!--/link_list/-->">목록</a><!--/end_if/-->
+            </div>
+
+            <!--/if_block_comment_write/-->
+                <!--/block_comment_write/-->
+                <div class="layer-pop">
+                    <h3>댓글쓰기</h3>
+                    <div class="txt">
+                        <!--/if_not_login/-->
+                        <!--/if_use_privacy/-->
+                            <!--/new_privacy_terms/-->
+                        <!--/else/-->
+                        <!--/if_privercy_terms/-->
+                        <!--/if_new_privercy_type/-->
+                    <ul class="agree">
+                        <li>개인정보 수집
+                            <label><!--/radio_privercy_ok/-->동의</label>
+                            <label><!--/radio_privercy_no/-->동의안함</label> 
+                            <span><a href="<!--/link_privercy_policy_view/-->" target="_blank" class="btn-white-h15">약관보기</a></span>
+                        </li>
+                        <!--/if_third_party/-->
+                        <li>개인정보 제3자 제공
+                            <label><!--/radio_third_party_ok/-->동의</label>
+                            <label><!--/radio_third_party_no/-->동의안함</label> 
+                            <span><a href="<!--/link_third_party_view/-->" target="_blank" class="btn-white-h15">약관보기</a></span>
+                        </li>
+                        <!--/end_if/-->
+                        <!--/if_trust/-->
+                        <li>개인정보 처리 위탁안내
+                            <label><!--/radio_trust_ok/-->동의</label>
+                            <label><!--/radio_trust_no/-->동의안함</label> 
+                            <span><a href="<!--/link_trust_view/-->" target="_blank" class="btn-white-h15">약관보기</a></span>
+                        </li>
+                        <!--/end_if/-->
+                    </ul>
+                        <!--/else/-->
+                    <ul class="agree">
+                        <li>개인정보 처리 위탁안내
+                            <label><!--/radio_privercy_ok/-->동의</label>
+                            <label><!--/radio_privercy_no/-->동의안함</label> 
+                            <span><a href="<!--/link_third_party_view/-->" target="_blank" class="btn-white-h15">약관보기</a></span>
+                        </li>
+                    </ul>
+                        <!--/end_if/-->
+                        <!--/end_if/-->
+                        <!--/end_if/-->
+                        <!--/end_if/-->
+                        <!--/input_nickname(txt-input1)/-->
+                        <!--/input_password(txt-input1)/-->
+                        <!--/text_comment(txt-input1)/-->
+                        <a href="<!--/link_comment/-->" class="btn_Black">쓰기</a>
+                        <!--/block_prevent_auto_input_reply/--><!--/end_block/-->
+                    </div>
+                    <a href="<!--/link_close_comment_write/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                </div>
+                <!--/end_block/-->
+            <!--/end_if/-->
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

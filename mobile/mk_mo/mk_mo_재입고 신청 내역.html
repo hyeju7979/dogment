@@ -1,0 +1,64 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_mypage_wrap">
+        <main class="hc_contents hc_page_restock">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">재입고 신청 내역</h2>
+
+            <h4 class="hc_column2">
+                <div>재입고 신청 리스트</div>
+                <div class="hc_check_all">
+                    <label><!--/checkbox_all/--> 상품 전체 선택/해제</label>
+                </div>
+            </h4>
+            <!--/block_soldout_list/-->
+                <!--/if_soldout_list/-->
+                <div class="hc_restock_list hc_line_start">
+                    <ul data-type="vertical" data-open="on" data-checkbok="on">
+                        <!--/loop_soldout_list/-->
+                        <li>
+                            <figure>
+                                <div class="basketLeft">
+                                    <!--/soldout_list@checkbox/-->
+                                    <a href="<!--/soldout_list@link_product/-->"><img src="<!--/soldout_list@product_img/-->" alt="상품명" class="response100" /></a>
+                                </div>
+                                <figcaption class="basketRight">
+                                    <p class="pname">
+                                        <a href="<!--/soldout_list@link_product/-->"><!--/soldout_list@product_name/--></a>
+                                        <a href="<!--/soldout_list@link_soldout_sel_delete/-->"><span class="fa fa-times fa-2x"></span></a>
+                                    </p>
+                                    <!--/if_soldout_list@opt_value/--><p>[<!--/soldout_list@opt_value/-->]</p><!--/end_if/-->
+                                    <p>상품가 : <!--/number/soldout_list@price/-->원</p>
+                                    <p>적립금 : <!--/number/soldout_list@reserve/-->원</p>
+                                    <p>알림 신청일 : <!--/soldout_list@sms_reg_date/--></p>
+                                    <!--/if_soldout_list@sms_send_date/--><p class="fc-red">알림 발송일 : <!--/soldout_list@sms_send_date/--></p><!--/end_if/-->
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <!--/end_loop/-->		
+                    </ul>
+                </div>
+                <!--/else/-->
+                <div class="hc_no_date hc_line_start">재입고 신청 내역이 없습니다.</div>
+                <!--/end_if/-->
+            <!--/end_block/-->
+            <div class="hc_btn_wrap">
+                <a class="hc_btn_more" href="<!--/link_soldout_list_more/-->">MORE</a>
+            </div>
+
+            <div class="hc_btn_wrap">
+                <a class="hc_btn_long_fill" href="<!--/link_soldout_delete_all/-->">전체삭제</a>
+                <a class="hc_btn_long" href="<!--/link_soldout_delete/-->">선택삭제</a>
+            </div>
+
+            <ul class="hc_clarification">
+                <li>재입고 알림 신청은 최대 30개까지 가능합니다.</li>
+                <li>상품 구성, 가격 등은 신청 시점과 차이가 날 수 있으며, 재입고 알림을 받았더라도 구매 시점에 따라 품절이 발생할 수 있습니다.</li>
+            </ul>
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

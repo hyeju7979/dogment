@@ -1,0 +1,94 @@
+#review-board-type .rbItem { padding: 10px; }
+#review-board-type .rbItem dl {  }
+#review-board-type .rbItem dl dt { float: left; padding-right: 10px; padding-bottom: 10px; }
+#review-board-type .rbItem dl dt img { width: 125px; }
+#review-board-type .rbItem dl dd { line-height: 20px; }
+#review-board-type .rbItem dl dd.subject { font-weight: bold; word-break: break-all; }
+#review-board-type .rbItem dl dd.link-view {  }
+#review-board-type .rbItem dl dd.link-view a { width: 85px; height: 23px; border: 1px solid #c7c7c7; display: inline-block; text-align: center; line-height: 23px; font-weight: bold; margin-top: 10px; }
+#review-board-type .rbInfo { clear: both; padding: 10px; background-color: #f9f9f9; border-bottom: 1px solid #bebebe;}
+#review-board-type .rbInfo dt { font-weight: bold; word-break: break-all; }
+#review-board-type .rbInfo dd { color: #7d7d7d; line-height: 20px; }
+#review-board-type .rbInfo dd .rb_name {  }
+#review-board-type .rbInfo dd .rb_name img { vertical-align: middle; }
+#review-board-type .rbInfo dd .split { padding: 0 5px; }
+#review-board-type .rbInfo .rb_rating { position:relative; }
+#review-board-type .rbInfo .rb_rating .rb_star { display: block; }
+#review-board-type .rbContent { padding: 10px; line-height:20px; word-break: break-all; }
+#review-board-type .rbContent img {max-width:100%;}
+#review-board-type .rbContent .rb_addInfo { margin-bottom: 10px; border-bottom: 1px solid #c6c6c6; }
+#review-board-type .rbContent .rb_addInfo dl { border: 1px solid #c6c6c6; padding: 7px 10px; border-bottom: none; }
+#review-board-type .rbContent .rb_addInfo dl dt { float: left; padding-right: 6px; font-weight: bold; }
+#review-board-type .rbContent .rb_addInfo dl dd { min-height: 20px; }
+#review-board-type .rbContent .rb_thumbs { text-align: center; }
+#review-board-type .rbContent .rb_icons { padding-top: 20px; text-align: right; }
+#review-board-type .rbContent .rb_icons img { width: 29px; margin-left: 2px; }
+#review-board-type .rbRelations {border-top:2px solid #bebebe; border-bottom: 1px solid #bebebe; padding:15px 0;}
+#review-board-type .rbRelations h5 {text-align:left; font-weight:bold; padding:0 10px; margin-bottom:5px;}
+#review-board-type .rbRelations ul {padding:0 8px;}
+#review-board-type .rbRelations ul li { font-size: 12px; }
+#review-board-type .reply-write {background-color:#f9f9f9; border-top: 1px solid #bebebe; border-bottom: 1px solid #bebebe; padding:10px;}
+#review-board-type .reply-write h5 {font-weight:bold;}
+#review-board-type .reply-write table {width:100%;}
+#review-board-type .reply-write table .agree {position: relative;}
+#review-board-type .reply-write table .agree li {padding: 10px 0;}
+#review-board-type .reply-write table .agree li .btn_White {position: absolute; right: 10px; width: 65px; top: 0;}
+#review-board-type .reply-write table .agree label {margin-left:5px;}
+#review-board-type .reply-write table .agree .privacy-agree-btn {border: 1px solid #bbb; background-color: #fff; float: right; padding:4px 10px;}
+#review-board-type .reply-write table .agree .privacy-agree-btn strong {font-weight: normal;}
+#review-board-type .reply-write table th {font-weight:normal; text-align:left;}
+#review-board-type .reply-write table .w-100 {width:100%;}
+#review-board-type .reply-write table th {padding:5px 0;}
+#review-board-type .reply-write table td {padding:5px 0;}
+#review-board-type .reply-write table .custom {padding-right:74px; position: relative;}
+#review-board-type .reply-write table .custom .w-100 {height:45px;}
+#review-board-type .reply-write table .custom .btn_Grey {width:65px; height:45px; line-height:45px; position: absolute; top: 0; right:0;}
+#review-board-type .sub-reviews li {border-bottom:1px solid #bebebe; padding:10px;}
+#review-board-type .sub-reviews li .info {margin-bottom:5px;}
+#review-board-type .sub-reviews li .info .id {font-size:0.917em; color:#7d7d7d;}
+#review-board-type .sub-reviews li .info .btn_White {width:54px; height:22px; line-height:22px; display:inline-block; float:right; margin-left: 5px;}
+#review-board-type .pd10 .small-btns {text-align:right; margin:10px 0;}
+#review-board-type .rb_white_btn { border: 1px solid #c6c6c6; height: 22px; line-height: 22px; text-align: center; display: inline-block; padding: 0 10px; }
+#review-board-type .rb_gray_btn { color: #ffffff; background-color: #858585; display: inline-block; text-align: center; width: 56px; height: 36px; line-height: 36px; }
+#review-board-type .pd10 .btn_Red {margin-top:10px;}
+/* 다른 게시글 */
+#review-board-type .board-Chain {padding:5px 10px; margin-top:20px; border-top: 1px solid #464646; border-bottom: 1px solid #464646;}
+#review-board-type .board-Chain li {margin:5px 0;}
+#review-board-type .board-list {margin-top:20px; border-top: 1px solid #dfdfdf;}
+#review-board-type .board-list li.list {padding:10px; border-bottom: 1px solid #dfdfdf;}
+/* 다른 게시글 */
+/* 댓글의 댓글쓰기 레이어 팝업 */
+#contents #comment_reply_input {width:90%;}
+.layer-pop h3  {background-color: #efefef; height: 36px; line-height: 36px; font-weight: bold; padding: 0 10px; }
+.layer-pop .txt {max-height: 300px; overflow-y: auto; padding:10px;}
+.layer-pop .txt input.txt-input1 {margin-bottom:10px;}
+.layer-pop .txt .btn_Black {margin:20px 0;}
+.layer-pop .txt #check_auth_reply {border-top:1px solid #c6c6c6; padding-top:20px;}
+.layer-pop .txt #check_auth_reply .head {text-align:center; color:#f46b00; margin-bottom:10px;}
+.layer-pop .txt #check_auth_reply table {margin:0 auto;}
+.layer-pop .txt #check_auth_reply table td {padding:5px 0;}
+.layer-pop .txt #check_auth_reply #authtext {height: 35px !important;}
+.layer-pop .close {width:45px; height:36px; color:#fff; line-height: 42px; position:absolute; top:0; right:0;  background-color: #4f4f4f; text-align: center;}
+/* //댓글의 댓글쓰기 레이어 팝업 */
+
+#review-board-type .btn-report { position:absolute; right:0; bottom:0; display:inline-block; color:#9d9d9d; font-size:11px; z-index:1; }
+#review-board-type .rb_rating {position: relative; min-height:20px;}
+#review-board-type .rb_rating .btn-report { position:absolute; right:0; bottom:0; display:inline-block; color:#9d9d9d; font-size:11px; z-index:1; }
+/* 답변 만족도 평가 */
+.score-write { padding: 10px; border-top: 1px solid #bebebe; color: #000; }
+.score-write h5 { font-weight: bold; }
+.score-write table { width: 100%; }
+.score-write table .sco-wrt-des { padding: 10px 0; }
+.score-write table .sco-wrt-des label { display: inline-block; margin-left: 15px; font-weight: bold; }
+.score-write table .sco-wrt-des.stars label { margin-left: 8px; }
+.score-write table .sco-wrt-des.txts label { margin-left: 4px; }
+.score-write table .sco-wrt-des label:first-child { margin-left: 0; }
+.score-write table .sco-wrt-txtr textarea { width: 100%; height: 80px; margin-bottom: 5px; }
+/* 답변 만족도 평가 결과 */
+.score-list { padding: 10px; border-top: 1px solid #bebebe; color: #000; }
+.score-list h5 { font-weight: bold; }
+.score-list table { width: 100%; }
+.score-list table .sco-lst-txtr { padding: 10px; margin-top: 10px; color: #000; background: #f1f1f1; }
+.score-list table .sco-lst-txtr .sco-date { display: flex; justify-content: space-between; }
+.score-list table .sco-lst-txtr .sco-date span { color: #a9a9a9; }
+.score-list table .sco-lst-txtr .sco-txt { margin-top: 10px; }

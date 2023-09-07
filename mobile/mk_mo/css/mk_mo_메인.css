@@ -233,14 +233,14 @@ div.abcd img {width:100%; height:auto; }
 }
 /*# sourceMappingURL=mo_module.css.map */
 html, body {
-     min-height: 100%;
+  min-height: 100%;
 }
 .hc_main_section {
-    overflow: hidden;
-    height: auto;
+  overflow: hidden;
+  height: auto;
 }
 .hc_main_section1 {
-    min-height: 100%;
-    overflow: hidden;
-    height: auto;
+  min-height: 100%;
+  overflow: hidden;
+  height: auto;
 }

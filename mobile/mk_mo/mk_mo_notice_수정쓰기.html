@@ -1,0 +1,224 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_board_wrap">
+        <main class="hc_contents">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">
+                <!--/now_board_name/-->
+            </h2>
+
+            <!--/if_link/-->
+            <div>
+                <figure>
+                    <a href="<!--/link/-->"><img src="<!--/mobile_image/-->" alt="" /></a>
+                    <figcaption>
+                        <!--/notag/name(100)/-->
+                    </figcaption>
+                </figure>
+            </div>
+            <!--/end_if/-->
+
+            <!--/form_write/-->
+            <div id="review-board-write" class="form-wrap">
+                <table>
+                    <colgroup>
+                        <col width="90px" />
+                        <col width="*" />
+                    </colgroup>
+                    <tbody>
+                        <!--/if_select_header/-->
+                        <tr>
+                            <th>문의항목</th>
+                            <td><!--/select_header(txt-input1)/--></td>
+                        </tr>
+                        <!--/end_if/-->
+
+                        <!--/if_input_name/-->
+                        <tr>
+                            <th>이름</th>
+                            <td><!--/input_name(txt-input1)/--></td>
+                        </tr>
+                        <!--/end_if/-->
+
+                        <!--/if_input_password/-->
+                        <tr>
+                            <th>비밀번호</th>
+                            <td class="hc_color_point">
+                                <!--/input_password(txt-input1)/-->
+                                <!--/if_is_auto_lock/--><span class="hc_tinny">자동 잠금 기능</span><!--/end_if/-->
+                                <!--/if_input_lock_checkbox/--><!--/input_lock_checkbox/--> 잠금 사용<!--/end_if/-->
+                            </td>
+                        </tr>
+                        <!--/end_if/-->
+
+                        <!--/if_input_email/-->
+                        <tr>
+                            <th>이메일</th>
+                            <td><!--/input_email(txt-input1)/--></td>
+                        </tr>
+                        <!--/end_if/-->
+
+                        <!--/if_input_subject/-->
+                        <tr>
+                            <th>제목</th>
+                            <td><!--/input_subject(txt-input1)/--></td>
+                        </tr>
+                        <!--/end_if/-->
+
+                        <!--/if_input_qna_ordernum/-->
+                        <tr>
+                            <th>주문번호</th>
+                            <td>
+                                <div class="myorder">
+                                    <a href="#myorderlayer" class="btn_Grey layer-open">주문내역 조회</a>
+                                    <div class="input-group">
+                                        <!--/input_qna_ordernum/-->
+                                    <span id="ordernumclear">X</span>
+                                    </div>
+                                    <div id="myorderlayer">
+                                    <div class="layer">
+                                        <div class="layer-pop">
+                                        <div class="tit-fix">
+                                            <h3>주문내역조회</h3>
+                                            <a href="#myorderlayer" class="close layer-close"><span class="fa fa-times fa-2x"></span></a>
+                                            </div>
+                                        <div class="txt">
+                                            <div class="tab">
+                                            <ul>
+                                                <li class="now"><a href="javascript:void(0);" class="month_1">1개월</a></li>
+                                                <li><a href="javascript:void(0);" class="month_3">3개월</a></li>
+                                                <li><a href="javascript:void(0);" class="month_6">6개월</a></li>
+                                                <li><a href="javascript:void(0);" class="month_12">12개월</a></li>
+                                            </ul>
+                                            </div>
+                                                                    <!--/block_order_list/-->
+                                            <div class="tabWrap">
+                                            <ul>
+                                                                        <!--/if_order_list/-->
+                                                                        <!--/loop_order_list/-->
+                                                <li>
+                                                <a href="<!--/order_list@link_product_name/-->">
+                                                    <dl>
+                                                    <dt><span class="prd-blue"><!--/order_list@product_name/--></span></dt>							
+                                                                                        <dd>주문번호 <!--/order_list@ordernum/--></dd>
+                                                    <dd><!--/number/order_list@price/-->원 <span class="bar"></span> <!--/order_list@order_date/--></dd>
+                                                    </dl>
+                                                </a>
+                                                </li>
+                                                                        <!--/end_loop/-->
+                                                                        <!--/else/-->
+                                                                        <li class="myorder-none">주문내역이 없습니다.</li>
+                                                                        <!--/end_if/-->
+                                            </ul>
+                                            </div>
+                                                                    <!--/end_block/-->
+                                                                    <div class="pd10">
+                                                <a href="<!--/link_order_list_more/-->" class="btn_White bold order_list_more">더보기</a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    </div><!-- #myorderlayer-->
+                                </div>
+                            </td>
+                        </tr>
+                        <!--/end_if/-->
+
+                        <!--/if_add_info_html/-->
+                        <tr>
+                            <td colspan="2">
+                                <!--/add_info_html/-->
+                            </td>
+                        </tr>
+                        <!--/end_if/-->
+                        <tr>
+                            <th>내용</th>
+                            <td class="textArea">
+                                <!--/text_content(txt-input1)/-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>사진첨부</th>
+                            <td>
+                                <div class="hc_attach_pictures">
+                                    <!--/file_attach(txt-input1)/--><a class="hc_btn_long_fill" href="<!--/link_file_upload/-->">+</a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!--/if_not_login/-->
+                            <!--/if_use_privacy/-->
+                                <!--/new_privacy_terms/-->
+                            <!--/else/-->
+                                <!--/if_privercy_terms/-->
+                                    <!--/if_new_privercy_type/-->
+                                    <tr>
+                                        <td colspan="2">
+                                            <ul class="agree">
+                                                <li>
+                                                    개인정보 수집에 대한 동의 <label><!--/radio_privercy_ok/--> 동의</label>
+                                                    <label><!--/radio_privercy_no/--> 동의안함</label>
+                                                    <a href="<!--/link_privercy_policy_view/-->" target="_blank" class="btn-white-h15" id="btn-view-privercy-policy"><strong>약관보기</strong></a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                        <!--/if_third_party/-->
+                                        <tr>
+                                            <td colspan="2">
+                                                <ul class="agree">
+                                                    <li>
+                                                        개인정보의 제3자 제공 <label><!--/radio_third_party_ok/--> 동의</label>
+                                                        <label><!--/radio_third_party_no/--> 동의안함</label>
+                                                        <a href="<!--/link_third_party_view/-->" target="_blank" class="btn-white-h15" id="btn-view-privercy-policy"><strong>약관보기</strong></a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <!--/end_if/-->
+
+                                        <!--/if_trust/-->
+                                        <tr>
+                                            <td colspan="2">
+                                                <ul class="agree">
+                                                    <li>
+                                                        개인정보 처리위탁안내 <label><!--/radio_trust_ok/--> 동의</label>
+                                                        <label><!--/radio_trust_no/--> 동의안함</label>
+                                                        <a href="<!--/link_trust_view/-->" target="_blank" class="btn-white-h15" id="btn-view-privercy-policy"><strong>약관보기</strong></a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <!--/end_if/-->
+                                    <!--/else/-->
+                                    <tr>
+                                        <td colspan="2">
+                                            <ul class="agree">
+                                                <li>
+                                                    개인정보 수집에 대한 동의 <label><!--/radio_privercy_ok/--> 동의</label>
+                                                    <label><!--/radio_privercy_no/--> 동의안함</label>
+                                                    <a href="<!--/link_privercy_policy_view/-->" target="_blank" class="btn-white-h15" id="btn-view-privercy-policy"><strong>약관보기</strong></a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <!--/end_if/-->
+                                <!--/end_if/-->
+                            <!--/end_if/-->
+                        <!--/end_if/-->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="hc_btn_wrap">
+                <a class="hc_btn_long_fill" href="<!--/link_write_ok/-->">글쓰기</a>
+                <a class="hc_btn_long" href="<!--/link_list/-->">목록</a>
+            </div>
+            <!--/end_form/-->
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

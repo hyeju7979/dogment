@@ -1,0 +1,8 @@
+.hc_sub_wrap .hc_searchform {
+  margin: 0 10px 48px;
+  border-bottom: 1px solid var(--hc_dark_color);
+}
+.hc_sub_wrap .hc_searchform input[name="s"] {
+  width: calc(100% - 30px);
+  border: 0;
+}

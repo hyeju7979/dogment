@@ -1,0 +1,10 @@
+.hc_page_add h4 {   
+    margin-bottom: 20px;
+}
+.hc_page_add section {
+    margin-bottom: 58px;
+}
+.hc_add_list li {
+    padding: 10px;
+    border-bottom: 1px solid var(--hc_color_level2);
+}

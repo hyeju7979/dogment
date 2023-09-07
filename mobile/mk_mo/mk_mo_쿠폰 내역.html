@@ -13,48 +13,98 @@
                 <div class="hc_oneThird"><!--/input_coupon_number/--><a class="hc_btn_long_fill" href="<!--/link_coupon_insert/-->">등록</a></div>
             </div>
             <!--/end_form/-->
-           
-            <div class="hc_clarification">
+
+            <ul class="hc_clarification">
                 <li>피그먼트의 상품권 및 보너스쿠폰 번호를 입력하세요.</li>
                 <li>오프라인, 이메일, 모바일을 통해 발급 받으신 쿠폰인증번호를 입력해주시면 발급 가능합니다.</li>
                 <li>쿠폰의 발급 기간 / 마일리지 적립 기간을 꼭 확인해주세요.</li>
-            </div>
-
+            </ul>
+            
             <h4 class="hc_color_point">
                 <!--/user_name/-->님께서 보유하고 있는 쿠폰은 총 <!--/coupon_count/-->장 입니다.
             </h4>
 
             <!--/if_coupon/-->
             <section class="hc_coupon_list">
-                <ul class="list clearFix">
+                <ul>
                     <!--/loop_coupon/-->
                     <li>
-                        <h4>coupon serial number : <!--/if_coupon@is_mobile_use/--><img src="/images/d3/m_01/icon/icon_phone_write@2x.gif" /><!--/else_if_coupon@is_app_use/--><img src="/images/d3/m_01/icon/icon_app_write@2x.gif" /> <!--/end_if/--> [<!--/coupon@number/-->] <!--/coupon@name/--></h4>
-                        <dl>
-                            <dt>쿠폰적용품목</dt>
-                            <dd><!--/coupon@item/--></dd>
-                        </dl>
-                        <dl>
-                            <dt>사용가능금액</dt>
-                            <dd><!--/coupon@valid_price/--></dd>
-                        </dl>
-                        <dl>
-                            <dt>사용범위</dt>
-                            <dd><!--/coupon@use_device/--></dd>
-                        </dl>
-                        <dl>
-                            <dt>할인/적립액(률)</dt>
-                            <dd><!--/coupon@sale/--></dd>
-                        </dl>
-                        <dl>
-                            <dt>사용기간</dt>
-                            <dd><!--/date(%Y-%M-%D)/coupon@use_start_date/--> ~ <!--/date(%Y-%M-%D)/coupon@use_end_date/--></dd>
-                        </dl>
+                        <p class="hc_coupon_num">
+                            COUPON SERIAL NUMBER : 
+                            <!--/if_coupon@is_mobile_use/-->
+                                <img src="/images/d3/m_01/icon/icon_phone_write@2x.gif" />
+                            <!--/else_if_coupon@is_app_use/-->
+                                <img src="/images/d3/m_01/icon/icon_app_write@2x.gif" /> 
+                            <!--/end_if/--> 
+                            <!--/coupon@number/-->
+                        </p>
+                        <p class="hc_coupon_name"><!--/coupon@name/--></p>
+                        <p><!--/coupon@sale/--></p>
+                        <p><!--/date(%Y-%M-%D)/coupon@use_start_date/--> ~ <!--/date(%Y-%M-%D)/coupon@use_end_date/--></p>
+                        <p><!--/coupon@use_device/--></p>
+                        <p>쿠폰적용품목 : <!--/coupon@item/--></p>
+                        <p class="hc_coupon_range">사용가능금액 : <!--/coupon@valid_price/--></p>
                     </li>
                     <!--/end_loop/-->
                 </ul>
             </section>
             <!--/end_if/-->
+
+            <section>
+                <!--/if_offer_coupon/-->
+                    <!--/loop_offer_coupon/-->
+                    <ul class="hc_coupon_list">
+                        <li class="hc_coupon_num">쿠폰번호 : <!--/offer_coupon@number/--></li>
+                        <li class="hc_coupon_name">쿠폰명 : <!--/offer_coupon@name/--></li>
+                        <li>쿠폰 할인액(률) / 적립액(률) : <!--/offer_coupon@sale/--></li>
+                        <li>쿠폰 사용가능 시작일 : <!--/offer_coupon@use_start_date/--></li>
+                        <li>쿠폰 사용가능 종료일 : <!--/offer_coupon@use_end_date/--></li>
+
+                        <li>쿠폰 적용 품목 : <!--/offer_coupon@item/--></li>
+                        <li class="hc_coupon_range">사용가능 금액 : <!--/offer_coupon@valid_price/--></li>
+
+                        <li>쿠폰설명 :<!--/offer_coupon@explain/--></li>
+                        <li>모바일 파워앱 전용 쿠폰 : <!--/offer_coupon@is_app_use/--></li>
+                        <li>모바일 전용 쿠폰 : <!--/offer_coupon@is_mobile_use/--></li>
+                    </ul>
+                    <!--/end_loop/-->
+                <!--/end_if/-->
+            </section>
+
+            <section>
+                <!--/if_offer_coupon_list/-->
+                    <!--/loop_offer_coupon_list/-->
+                    <ul class="hc_coupon_list">
+                        <li class="hc_coupon_num">쿠폰번호 : <!--/offer_coupon_list@number/--></li>
+                        <li class="hc_coupon_name">쿠폰명 : <!--/offer_coupon_list@name/--></li>
+                        <li>쿠폰 할인액(률) / 적립액(률) : <!--/offer_coupon_list@sale/--></li>
+                        <li>쿠폰 사용가능 시작일 : <!--/offer_coupon_list@use_start_date/--></li>
+                        <li>쿠폰 사용가능 종료일 : <!--/offer_coupon_list@use_end_date/--></li>
+
+                        <li>쿠폰 적용 품목 : <!--/offer_coupon_list@item/--></li>
+                        <li class="hc_coupon_range">사용가능 금액 : <!--/offer_coupon_list@valid_price/--></li>
+
+                        <li>쿠폰설명 : <!--/offer_coupon_list@explain/--></li>
+                        <li>모바일 파워앱 전용 쿠폰 : <!--/offer_coupon_list@is_app_use/--></li>
+                        <li>모바일 전용 쿠폰 : <!--/offer_coupon_list@is_mobile_use/--></li>
+                    </ul>
+                    <!--/end_loop/-->
+                <!--/end_if/-->
+            </section>
+
+            <div class="cautionCoupon hc_line_start">
+                <h4>주문서 작성시 해당 쿠폰번호를 입력하시면 됩니다.</h4>
+                <ul class="hc_clarification">
+                    <li>쿠폰별 사용가능금액과 기간이 정해져있습니다.</li>
+                    <li>주문서당 1개의 쿠폰만 사용 가능합니다.</li>
+                    <li>반품/환불/취소된 경우 재사용 할 수 없습니다.</li>
+                    <li>각 품목 및 카테고리별 제한이 있을 수 있습니다.</li>
+                    <li>할인/적립쿠폰은 적립금 할인 등을 제외한 실제 결제 금액에 적용됩니다.</li>
+                    <li>해당 상품에 대한 쿠폰은 해당 상품만 구매시 적용이 가능합니다.</li>
+                    <li>배송비 무료 쿠폰은 해당 배송에만 적용됩니다.</li>
+                    <li>(기본 배송비 무료는 당일, 해외, 기타 배송에는 미적용)</li>
+                </ul>
+            </div>
         </main>
     </div>
 </div>

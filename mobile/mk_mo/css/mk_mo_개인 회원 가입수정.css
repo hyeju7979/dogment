@@ -1,6 +1,10 @@
+.join input[type="email"],
 .join select[name="etc[0]"],
 .join input[type="tel"] {
     width: 100%;
+}
+input[type="email"] {
+    margin-bottom: 8px;
 }
 .hc_normal_line_contents th {
     width:90px;
@@ -8,3 +12,6 @@
 .hc_normal_line_contents {
     margin: 10px 0;
 }
+.join th {
+    text-align: left;
+ }

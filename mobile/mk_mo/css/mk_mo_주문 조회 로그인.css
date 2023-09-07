@@ -1,34 +1,3 @@
-/* 레이아웃 */
-body {
-    word-break:keep-all;
-    word-wrap:break-word;
-}
-.hc_container {
-    padding: 0 10px;
-    text-align: center;
-}
-
-/* 타이틀 */
-h2.hc_page_title {
-    margin-top: 50px;
-}
-input[type="password"],
-input[type="text"] {
-    margin-bottom:8px;
-    width: 100%;
-}
-
-/* 기타 */
-.hc_clarification {
-    margin: 10px 0 34px;
-}
-
-.hc_login_check {
-    font-size: var(--hc_bd_small);
-}
-
-
-/* 페이지 스타일 */
 .hc_member_wrap section {
     margin-bottom: 60px;
 }
@@ -43,25 +12,4 @@ input[type="text"] {
     list-style: inside;
     list-style-type: circle;
     text-align: left;
-}
-/* 팝업 */
-.layer .layer-pop h3 {
-    background-color: #fff;
-    text-align: left;
-}
-.layer .layer-pop .close {
-    background-color: #000;
-    line-height: 36px;
-}
-.layer-pop form {
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-.layer .layer-pop .txt {
-    padding: 20px 0 30px;
-    text-align: left;
-}
-.layer-pop .frm dt {
-    text-align: left;
-    padding: 10px 4px;
 }

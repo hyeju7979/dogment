@@ -1,0 +1,56 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_mypage_wrap">
+        <main class="hc_contents hc_page_deposit">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">예치금 내역</h2>
+            <ul class="hc_clarification">
+                <li>보유하신 예치금은 주문서 작성 시 사용할 수 있습니다.</li>
+            </ul>
+
+            <h4 class="hc_color_point">
+                총 보유 예치금 <!--/if_user_deposit(+1)/--><!--/number/user_deposit/--><!--/else/-->0<!--/end_if/-->원
+            </h4>
+
+            <table class="hc_deposit_list hc_line_start">
+                <!--/if_deposit_list/-->
+                    <!--/loop_deposit_list/-->
+                    <tr>
+                        <th>
+                            <!--/deposit_list@content/-->
+                            <span class="deposit_date"><!--/deposit_list@date/--></span>
+                        </th>
+                        <td><span class="deposit-price"><!--/number/deposit_list@price/--></span>원</td>
+                    </tr>
+                    <!--/end_loop/-->
+                <!--/else/-->
+                    <tr>
+                        <th class="hc_no_date"> 예치금 내역이 없습니다.</th>
+                    </tr>
+                <!--/end_if/-->
+            </table>
+    
+            <div class="paging">
+                <!--/if_pager_deposit_list::prev/-->
+                <a href="<!--/pager_deposit_list::prev@link/-->" class="prev"><span class="fa fa-angle-left"></span></a>
+                <!--/end_if/-->
+                <!--/if_pager_deposit_list/-->
+                <!--/loop_pager_deposit_list::page(5)/-->
+                    <!--/if_pager_deposit_list::page@current/-->
+                    <a href="javascript:return false;" class="now"><!--/pager_deposit_list::page/--></a>
+                <!--/else/-->
+                    <a href="<!--/pager_deposit_list::page@link/-->"><!--/pager_deposit_list::page/--></a>
+                    <!--/end_if/-->
+                <!--/end_loop/-->
+                <!--/end_if/-->
+                <!--/if_pager_deposit_list::next/-->
+                <a href="<!--/pager_deposit_list::next@link/-->" class="next"><span class="fa fa-angle-right"></span></a>
+                <!--/end_if/-->
+            </div>
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

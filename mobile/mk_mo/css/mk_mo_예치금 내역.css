@@ -1,0 +1,7 @@
+.hc_deposit_list th, .hc_deposit_list td {
+    border-bottom: 1px solid var(--hc_color_level2);
+}
+.hc_page_deposit h4 {
+    margin-bottom: 20px;
+    text-align: center;
+}

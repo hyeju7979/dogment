@@ -1,5 +1,6 @@
 <!--/include_header(1)/-->
 
+
 <!-- 중앙 영역 -->
 <div class="hc_entire">
     <div class="hc_container hc_board_wrap">
@@ -73,58 +74,47 @@
                         <!--/if_list@link/-->
                             <a href="<!--/list@link/-->">
                         <!--/end_if/-->
-                            
-                        <dt class="hc_board_review_list">
-                            <!-- 이미지 -->
-                            <div>
-                                <!-- 상품 이미지 사용 여부 -->
-                                <img src="<!--/image_s/-->" alt="" />
+                                <dt class="hc_board_review_list">
+                                    <!-- 이미지 -->
+                                    <div>                            
+                                        <!-- 리뷰 상품 이미지 -->
+                                        <img src="<!--/list@product_image_s/-->" alt="" />
+                                    </div>
 
-                                <!-- 리뷰 상품 이미지 -->
-                                <img src="<!--/list@product_image_s/-->" alt="" />
-                                
-                                <!-- 작은 이미지 -->
-                                <img src="<!--/image_s/-->" alt="" />
-                                
-                                <!-- 모바일 이미지 -->
-                                <img src="<!--/mobile_image/-->" alt="" />
-                            </div>
+                                    <div>
+                                        <p><!-- 리뷰 상품명 --><!--/list@product_name/--></p>
+                                        <p><!-- 게시판 내용 일부 --><!--/list@content/--></p>
+                                        <p class="hc_blind"><!-- 제목 --><!--/list@subject/--></p>
+                                        <p><!-- 작성일 --><!--/list@date_write/--> <span><!-- 작성자 --><!--/list@writer/--></span></p>
+                                        <p><!-- 추천 리뷰 내용 --><!--/recmd_review_[1-3]@content/--></p>
+                                        <p><!-- 상품명 --><!--/name/--></p>
+                                    </div>
 
-                            <div>
-                                <p><!-- 리뷰 상품명 --><!--/list@product_name/--></p>
-                                <p><!-- 게시판 내용 일부 --><!--/list@content/--></p>
-                                <p class="hc_blind"><!-- 제목 --><!--/list@subject/--></p>
-                                <p><!-- 작성일 --><!--/list@date_write/--> <span><!-- 작성자 --><!--/list@writer/--></span></p>
-                                <p><!-- 추천 리뷰 내용 --><!--/recmd_review_[1-3]@content/--></p>
-                                <p><!-- 상품명 --><!--/name/--></p>
-                            </div>
+                                    <div class="hc_layout_c">
+                                        <!-- 조회수 -->
+                                        <p><img src="http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_like.svg" alt="좋아요 추천수" /></p>
+                                        <p><!--/list@cnt_read/--></p>
+                                    </div>
+                                </dt>
 
-                            <div class="hc_layout_c">
-                                <!-- 조회수 -->
-                                <p><img src="http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_like.svg" alt="좋아요 추천수" /></p>
-                                <p><!--/list@cnt_read/--></p>
-                            </div>
-                        </dt>
-
-                        <!--/if_is_review_score/-->
-                        <dd class="bl_star">
-                            <!--/list@review_score/-->
-                        </dd>
-                        <!--/end_if/-->
-
-                        <dd>
-                            <span class="bl_name">
-                            <!--/if_list@img_admin_icon/-->
-                                <img src = "<!--/list@img_admin_icon/-->" />
-                            <!--/else/-->
-                                <!--/if_list@user_icon_image/-->
-                                    <img src="<!--/list@user_icon_image/-->"/>
+                                <!--/if_is_review_score/-->
+                                <dd class="bl_star">
+                                    <!--/list@review_score/-->
+                                </dd>
                                 <!--/end_if/-->
-                            <!--/end_if/-->
-                            </span> 
-                        </dd>
 
-                        <!--/if_list@link/-->
+                                <dd>
+                                    <span class="bl_name">
+                                    <!--/if_list@img_admin_icon/-->
+                                        <img src = "<!--/list@img_admin_icon/-->" />
+                                    <!--/else/-->
+                                        <!--/if_list@user_icon_image/-->
+                                            <img src="<!--/list@user_icon_image/-->"/>
+                                        <!--/end_if/-->
+                                    <!--/end_if/-->
+                                    </span> 
+                                </dd>
+                                <!--/if_list@link/-->
                             </a>
                         <!--/end_if/-->
                         </dl>

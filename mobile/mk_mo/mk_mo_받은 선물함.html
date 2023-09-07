@@ -1,0 +1,180 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_mypage_wrap">
+        <main class="hc_contents">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">선물함</h2>
+
+            <div class="hc_gift_list hc_line_start">
+				<table summary="선물한 사람, 선물명, 상세">
+					<caption>선물함 내역</caption>
+					<colgroup>
+						<col width="25%" />
+						<col width="*" />
+						<col width="25%" />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"><div class="txt-c">선물한 사람</div></th>
+							<th scope="col"><div class="txt-c">선물명</div></th>
+							<th scope="col"><div class="txt-c">상세</div></th>
+						</tr>
+					</thead>
+					<tbody>
+                        <!--/if_present_list/-->
+                        <!--/loop_present_list/-->
+						<tr>
+							<td><div class="txt-c"><!--/present_list@sender_name/--></div></td>
+							<td><div class="txt-c"><!--/loop_present_list@order_product(1)/--><!--/present_list@order_product@present_name/--><!--/end_loop/--></div></td>
+							<td><div class="txt-c"><p class="show-gift">상세보기 <span class="fa fa-chevron-down"></span><span class="fa fa-chevron-up" style="display: none;"></span></p></div></td>
+						</tr>
+						<tr class="gift-detail" style="display: none;">
+							<td colspan="3" class="pd0">
+								<div class="txt-l gift-wrap">
+									<div class="gift-wrap-tit">선물메시지</div>
+									<div class="gift-card">
+										<div class="card-txts card-type-<!--/present_list@card_type/-->">
+											<textarea name="" readonly><!--/present_list@present_message/--></textarea>
+										</div>
+									</div>
+									<div class="gift-wrap-tit">선물상품 정보</div>
+									<table>
+										<caption>선물상품 정보</caption>
+										<colgroup>
+											<col width="30%" />
+											<col width="*" />
+										</colgroup>
+										<tbody>
+                                            <!--/loop_present_list@order_product/-->
+											<tr>
+												<td colspan="2">
+													<div class="txt-l">
+														<a href="<!--/present_list@order_product@link/-->"><img src="<!--/present_list@order_product@image_s/-->" class="response10" alt="상품명" /></a>
+														<ul>
+                                                            <li><!--/present_list@order_product@name/--> / <span class="amountCount"><!--/present_list@order_product@amount/--></span>개</li>
+                                                            <li class="optionArea">
+                                                            <!--/block_option_area/-->
+                                                            <!--/present_list@order_product@option/-->
+                                                            <!--/end_block/-->
+                                                            <!--/if_present_list@order_product@option/-->
+                                                            <!--/present_list@order_product@link_change_option/-->
+                                                            <!--/end_if/-->
+                                                            </li>
+														</ul>
+													</div>
+												</td>
+											</tr>
+                                            <!--/end_loop/-->
+											<tr>
+                                                <th><div class="txt-l">선물번호</div></th>
+                                                <td><div class="txt-l"><!--/present_list@present_num/--></div></td>
+											</tr>
+											<tr>
+                                                <th><div class="txt-l">선물수신일</div></th>
+                                                <td><div class="txt-l"><!--/present_list@receiver_time/--></div></td>
+											</tr>
+
+                                            <!--/if_present_list@approval_enddate/-->
+											<tr>
+                                                <th><div class="txt-l">만료예정일</div></th>
+                                                <td><div class="txt-l"><!--/present_list@approval_enddate/--></div></td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+                                            <!--/if_present_list@use_present_time/-->
+                                                <th><div class="txt-l">사용 일시</div></th>
+                                                <td><div class="txt-l"><!--/present_list@use_present_time/--></div></td>
+                                            <!--/end_if/-->
+
+											<tr>
+												<th><div class="txt-l">주문상태</div></th>
+                                            <!--/if_present_list@present_status(선물 거절)/-->
+                                                    <td><div class="txt-l"><span class="gift-red"><!--/present_list@present_status/--></span></div></td>
+                                            <!--/else_if_present_list@present_status(선물취소)/-->
+                                                    <td><div class="txt-l"><span class="gift-red"><!--/present_list@present_status/--></span></div></td>
+                                            <!--/else/-->
+                                                    <td><div class="txt-l"><!--/present_list@present_status/--></div></td>
+                                            <!--/end_if/-->
+											</tr>
+
+                                            <!--/if_present_list@order_status(배송중)/-->
+                                            <tr>
+                                                <th><div class="txt-l">배송상태</div></th>
+                                                <td><div class="txt-l"><!--/present_list@order_status/--> <!--/if_present_list@link_delivery/--><a href="<!--/present_list@link_delivery/-->" class="btn-white">배송조회</a><!--/end_if/--></div></td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+                                            <!--/if_present_list@order_status(배송완료)/-->
+                                            <tr>
+                                                <th><div class="txt-l">배송상태</div></th>
+                                                <td><div class="txt-l"><!--/present_list@order_status/--> <!--/if_present_list@link_delivery/--><a href="<!--/present_list@link_delivery/-->" class="btn-white">배송조회</a><!--/end_if/--></div></td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+                                            <!--/if_present_list@delivery_address/-->
+                                            <tr>
+                                                <th><div class="txt-l">배송지<br>입력 정보</div></th>
+                                                <td><div class="txt-l"><!--/present_list@delivery_address/--></div></td>
+                                            </tr>
+                                            <!--/end_if/-->
+
+                                            <!--/if_present_list@delivery_msg/-->
+                                            <tr>
+                                                <th><div class="txt-l">배송 메시지</div></th>
+                                                <td><div class="txt-l"><!--/present_list@delivery_msg/--></div></td>
+                                            </tr>
+                                            <!--/end_if/-->
+										</tbody>
+									</table>
+									<div class="hc_btn_wrap">
+										<!--/if_present_list@link_no_present/--><a class="hc_btn_long" href="#" onclick="<!--/present_list@link_no_present/-->">거절하기</a><!--/end_if/-->
+                                        <!--/if_present_list@link_ok_present/--><a class="hc_btn_long_fill" href="#" onclick="<!--/present_list@link_ok_present/-->">선물수락</a><!--/end_if/-->
+									</div>
+								</div>
+							</td>
+						</tr>
+                        <!--/end_loop/-->
+                        <!--/else/-->
+                            <tr>
+                                <td colspan="3"><div class="hc_no_date">선물함 내역이 없습니다.</div></td>
+                            </tr>
+                        <!--/end_if/-->
+					</tbody>
+				</table>
+                <!--/if_block_option_layer/-->
+                <!-- (레이어) 옵션변경 -->
+                <!--/block_option_layer/--><!--/end_block/-->
+                <!-- //(레이어) 옵션변경 -->
+                <!--/end_if/-->
+			</div>     
+
+            <div class="paging">
+                <!--/if_pager_present::first/-->
+                    <a href="<!--/pager_present::first@link/-->" class="first">&lt;&lt;</a>
+                <!--/end_if/-->
+                <!--/if_pager_present::prev/-->
+                    <a href="<!--/pager_present::prev@link/-->" class="prev"><span class="fa fa-angle-left"></span></a>
+                <!--/end_if/-->
+                <!--/if_pager_present/-->
+                    <!--/loop_pager_present::page/-->
+                        <!--/if_pager_present::page@current/-->
+                            <a href="<!--/pager_present::page@link/-->" class="now"><!--/pager_present::page/--></a>
+                        <!--/else/-->
+                            <a href="<!--/pager_present::page@link/-->"><!--/pager_present::page/--></a>
+                        <!--/end_if/-->
+                    <!--/end_loop/-->
+                <!--/end_if/-->
+                <!--/if_pager_present::next/-->
+                    <a href="<!--/pager_present::next@link/-->" class="next"><span class="fa fa-angle-right"></span></a>
+                <!--/end_if/-->
+                <!--/if_pager_present::last/-->
+                    <a href="<!--/pager_present::last@link/-->" class="last">&gt;&gt;</a>
+                <!--/end_if/-->
+            </div>  
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

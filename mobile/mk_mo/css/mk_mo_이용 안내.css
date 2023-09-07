@@ -42,5 +42,6 @@ input:checked + .hc_guide-label::after {
 }
 input:checked ~ .hc_guide-content {
 	max-height: 100vh;
+    max-height: fit-content;
 	padding: 1em;
 }
