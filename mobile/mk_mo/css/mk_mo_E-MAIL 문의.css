@@ -1,13 +1,33 @@
-.hc_page_email th, .hc_page_email td {
-    padding-bottom: 10px;
-    height: 40px;
-    text-align: left;
-    vertical-align: baseline;
-}
 .hc_page_email textarea,
 .hc_page_email input[type="email"],
 .hc_page_email input[type="text"] {
     outline: 0px;
     width: 100%;
     box-sizing: border-box;
+}
+.hc_page_email textarea {
+    height:80px;
+}
+.hc_attach_pictures {
+    position: relative;
+    margin-right: -4px;
+}
+input[type="file"] {
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+input[type="file"]::file-selector-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:76px;
+    height:40px;
+    line-height:40px;
+    color:var(--hc_bright_color);
+    background: var(--hc_dark_color);
+    border:0;
+}
+.hc_clarification {
+    padding-top: 40px;
 }

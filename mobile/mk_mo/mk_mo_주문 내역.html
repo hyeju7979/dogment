@@ -1,0 +1,305 @@
+<!--/include_header(1)/-->
+
+<!--/block_cancel_layer/--><!--/end_block/-->
+<!--/block_trade_layer/--><!--/end_block/-->
+<!--/block_return_layer/--><!--/end_block/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container hc_mypage_wrap">
+        <main class="hc_contents" id="order-list">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">주문내역</h2>
+            <h4 class="hc_color_point"><!--/user_name/-->님의 주문이 완료되었습니다.</h4>
+
+            <section>
+                <!--/block_order/-->
+                <!--/if_order_list/-->
+                <ul>
+                    <!--/loop_order_list/-->
+                    <li>
+                        <h4>
+                            주문번호 : <!--/order_list@order_num/-->
+                            <!--/if_order_list@is_subs_order/-->정기배송 결제<!--/end_if/-->
+                            <!--/if_order_list@is_present/--><i class="fa fa-gift"> 선물</i><!--/end_if/-->
+                        </h4>
+                        
+                        <!--/loop_order_list@delivery/-->
+                            <!--/loop_order_list@delivery@product/-->
+                                <!--/if_order_list@delivery@product@link/-->
+                                <div class="hc_tinny"><!--/order_list@delivery@product@delivery_state/--></div>
+                                <!--/end_if/-->
+
+                                <dl class="hc_column2">
+                                    <dt>
+                                        <!-- 이미지 경로 -->
+                                        <img src="<!--/order_list@delivery@product@image_s/-->" alt="" />
+                                    </dt>
+                                    <dd>
+                                        <p><!--/order_list@delivery@product@checkbox_item/--></p>
+                                        <p>
+                                            <!--/if_order_list@delivery@product@link/-->
+                                            <a href="<!--/order_list@delivery@product@link/-->" >
+                                                <!--/notag/order_list@delivery@product@name/-->
+                                            </a>
+                                            <!--/end_if/-->
+                                        </p>
+                                        <p>
+                                            수량 : <!--/order_list@delivery@product@amount/-->
+                                            <!--/if_order_list@delivery@product@link_basket/-->
+                                            <a href="<!--/order_list@delivery@product@link_basket/-->"></a>
+                                            <!--/end_if/-->
+                                        </p>
+                                        <!--/if_order_list@delivery@product@option/-->
+                                        <p class="option"><!--/order_list@delivery@product@option/--></p>
+                                        <!--/end_if/-->
+
+                                        <p>
+                                            <!--/if_order_list@delivery@product@review_write_link/-->
+                                            <a href="<!--/order_list@delivery@product@review_write_link/-->" class="hc_btn_mini_fill">리뷰작성</a>
+                                            <!--/end_if/-->
+                                        </p>
+                                        <p>배송방법 :<!--/order_list@delivery_type/--></p>
+                                        <p>스마트픽업배송방법 : <!--/order_list@delivery@product@delivery_type/--></p>
+                                        <p>스마트픽업매장정보 : <!--/order_list@delivery@product@icon_smartpickup_shop_info/--></p>
+                                        <p>스마트픽업희망일 : <!--/order_list@delivery@product@smartpickup_wish_date/--></p>
+                                    </dd>
+                                </dl>
+                            <!--/end_loop/-->
+
+                            <!-- 배송 상세 정보 -->
+                            <div class="detail delivery-detail">
+                                <h5><a href="#none" class="btn_White">배송 상세 정보</a></h5>
+                                <table>
+                                    <colgroup>
+                                        <col width="100" />
+                                        <col width="*" />
+                                    </colgroup>
+                                    <tbody>
+                                        <!--/if_order_list@delivery@deli_num/-->
+                                        <tr>
+                                            <th>배송번호</th>
+                                            <td><!--/order_list@delivery@deli_num/--></td>
+                                        </tr>
+                                        <!--/end_if/-->
+                                        <!--/if_order_list@delivery@num/-->
+                                        <tr>
+                                            <th>송장번호</th>
+                                            <td><!--/order_list@delivery@num/--></td>
+                                        </tr>
+                                        <!--/end_if/-->
+                                        <!--/if_order_list@delivery@company/-->
+                                        <tr>
+                                            <th>택배업체</th>
+                                            <td><!--/order_list@delivery@company/--></td>
+                                        </tr>
+                                        <!--/end_if/-->
+                                        <tr>
+                                            <th>받으실분</th>
+                                            <td><!--/order_list@delivery@receiver/--></td>
+                                        </tr>
+                                        <tr>
+                                            <th>우편번호</th>
+                                            <td><!--/order_list@delivery@post/--></td>
+                                        </tr>
+                                        <tr>
+                                            <th>주소</th>
+                                            <td><!--/order_list@delivery@address/--></td>
+                                        </tr>
+                                        <tr>
+                                            <th>연락처1</th>
+                                            <td><!--/order_list@delivery@receiver_tel/--></td>
+                                        </tr>
+                                        <tr>
+                                            <th>연락처2</th>
+                                            <td><!--/order_list@delivery@receiver_phone/--></td>
+                                        </tr>
+                                        <tr>
+                                            <th>주문메세지</th>
+                                            <td>
+                                                <!--/if_order_list@delivery@order_message/-->
+                                                <!--/order_list@delivery@order_message/-->
+                                                <!--/else/-->
+                                                없음
+                                                <!--/end_if/-->
+                                            </td>
+                                        </tr>
+                                        <!--/if_order_list@delivery@send_memo/-->
+                                        <tr>
+                                            <th>상점 메모</th>
+                                            <td><!--/order_list@delivery@send_memo/--></td>
+                                        </tr>
+                                        <!--/end_if/-->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //배송 상세 정보 -->
+
+                            <!--/if_order_list@delivery@link_delivery/-->
+                            <div class="ncount item-delivery clearFix">
+                                <!--/if_order_list@delivery@link_buy_ok/-->
+                                <a href="<!--/order_list@delivery@link_buy_ok/-->" class="hc_btn_long_fill fl" title="구매확정"><span>구매확정</span></a>
+                                <!--/end_if/-->
+
+                                <!--/if_order_list@delivery@is_present/--> <!-- //선물 주문 -->
+                                    <a href="<!--/order_list@delivery@link_delivery/-->" class="hc_btn_long_fill" title="배송조회"><span>배송조회</span></a>
+                                <!--/else/-->
+                                    <a href="<!--/order_list@delivery@link_delivery/-->" class="hc_btn_long_fill" target="_blank" title="배송조회"><span>배송조회</span></a>
+                                <!--/end_if/-->
+                            </div>
+                            <!--/end_if/-->
+                        <!--/end_loop/-->
+
+                        <!--/if_order_list@link_all_basket/-->
+                        <div class="detail all-cart"><a class="hc_btn_long_fill" href="<!--/order_list@link_all_basket/-->">전체상품 다시담기</a></div>
+                        <!--/end_if/-->
+
+                        <!-- 결제 정보 -->
+                        <div class="detail pay-detail">
+                            <h5><a href="#none" class="btn_White">결제/주문 정보</a></h5>
+                            <table>
+                                <colgroup>
+                                    <col width="100" />
+                                    <col width="*" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>주문일자</th>
+                                        <td class="bold"><!--/order_list@order_date/--></td>
+                                    </tr>
+                                    <tr>
+                                        <th>결제금액</th>
+                                        <td><!--/number/order_list@pay_price/-->원 <!--/if_order_list@delivery_price(+1)/--> (배송비 : <!--/number/order_list@delivery_price/-->원)<!--/end_if/--></td>
+                                    </tr>
+                                    <!--/if_login/-->
+                                    <tr>
+                                        <th>적립금</th>
+                                        <td>사용 : <!--/if_order_list@use_reserve(+1)/-->-<!--/end_if/--><!--/number/order_list@use_reserve/-->원</td>
+                                    </tr>
+                                    <!--/if_order_list@total_point/-->
+                                    <tr>
+                                        <th>포인트</th>
+                                        <td>지급예정 : <!--/if_order_list@total_point(+1)/-->+<!--/end_if/--><!--/order_list@total_point/--><!--/order_list@point_unit/--></td>
+                                    </tr>
+                                    <!--/end_if/-->
+                                    <!--/end_if/-->
+                                    <tr>
+                                        <th>결제방식</th>
+                                        <td><!--/order_list@pay_method/--> <!--/if_order_list@pay_info/-->(<!--/order_list@pay_info/-->)<!--/end_if/--></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- 결제관련내역 -->
+                            <!--/if_order_list@product@product_id/-->
+                            <!--/else/-->
+                            <table class="status-list">
+                                <colgroup>
+                                    <col width="*" />
+                                    <col width="80" />
+                                    <col width="60" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>결제관련내역</th>
+                                        <th>금액</th>
+                                        <th>적립</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!--/loop_order_list@extension_info/-->
+                                    <tr>
+                                        <td><!--/notag/order_list@extension_info@title/--></td>
+                                        <td><!--/number/order_list@extension_info@price/--></td>
+                                        <td><!--/number/order_list@extension_info@reserve/--></td>
+                                    </tr>
+                                    <!--/end_loop/-->
+                                </tbody>
+                            </table>
+                            <!--/end_if/-->
+                            <!-- //결제관련내역 -->
+                        </div>
+                        <!-- //결제 정보 -->
+
+                        <!-- 주문 추가 정보 -->
+                        <!--/if_order_list@add_info/-->
+                        <div class="detail add_info">
+                            <h5><a href="#none" class="btn_White">주문 추가 정보</a></h5>
+                            <table>
+                                <colgroup>
+                                    <col width="100" />
+                                    <col width="*" />
+                                </colgroup>
+                                <tbody>
+                                    <!--/loop_order_list@add_info/-->
+                                    <tr>
+                                        <th scope="row"><!--/order_list@add_info@title/--></th>
+                                        <td><!--/order_list@add_info@value/--></td>
+                                    </tr>
+                                    <!--/end_loop/-->
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--/end_if/-->
+
+                        <!-- //주문 추가 정보 -->
+                        <div class="ncount item-links clearFix">
+                            <div class="hc_btn_wrap">
+                                <!--/if_order_list@is_present/--> <!-- //선물 주문 -->
+                                    <!--/if_order_list@link_cancel_present/-->
+                                    <a href="<!--/order_list@link_cancel_present/-->" class="hc_btn_long"><span>주문취소</span></a>
+                                    <!--/end_if/-->
+                                <!--/else/--> <!-- //일반 주문 -->
+                                    <!--/if_order_list@link_cancel/-->
+                                        <a href="<!--/order_list@link_cancel/-->" class="hc_btn_long"><span>주문취소</span></a>
+                                    <!--/end_if/-->
+                                <!--/end_if/-->
+
+                                <!--/if_order_list@link_gift/-->
+                                <a href="<!--/order_list@link_gift/-->" class="hc_btn_long_fill"><span>사은품 선택</span></a>
+                                <!--/end_if/-->
+
+                                <!--/if_order_list@link_cash_receipt/-->
+                                <a href="<!--/order_list@link_cash_receipt/-->" class="hc_btn_long_fill"><span>현금영수증</span></a>
+                                <!--/end_if/-->
+
+                                <!--/if_order_list@link_all_smorder/-->
+                                <a href="<!--/order_list@link_all_smorder/-->" class="hc_btn_long_fill"><span>CS접수</span></a>
+                                <!--/end_if/-->
+
+                                <!--/if_order_list@link_all_return/-->
+                                <a href="<!--/order_list@link_all_return/-->" class="hc_btn_long_fill"><span>선택상품 반품</span></a>
+                                <!--/end_if/-->
+
+                                <!--/if_order_list@is_present/--> <!-- //선물 주문 -->
+                                    <!--/if_order_list@link_cancel_present/-->
+                                        <!--/if_order_list@link_all_cancel/-->
+                                            <a href="<!--/order_list@link_all_cancel/-->" class="hc_btn_long_fill"><span>선택상품 취소</span></a>
+                                        <!--/end_if/-->
+                                    <!--/end_if/-->
+                                <!--/else/--> <!-- //일반 주문 -->
+                                    <!--/if_order_list@link_all_cancel/-->
+                                        <a href="<!--/order_list@link_all_cancel/-->" class="hc_btn_long_fill"><span>선택상품 취소</span></a>
+                                    <!--/end_if/-->
+                                <!--/end_if/-->
+                            </div>
+                        </div>
+                    </li>
+                    <!--/end_loop/-->
+                </ul>
+                <!--/else/-->
+                <div class="hc_no_date">고객님의 주문서가 없습니다.</div>
+                <!--/end_if/-->
+            <!--/end_block/-->
+            
+            <!--/block_order_more/-->
+            <div class="hc_btn_wrap">
+                <a class="hc_btn_long_fill" href="<!--/link_more_order/-->">주문서 더보기</a>
+            </div>
+            <!--/end_block/-->
+            </section>
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->

@@ -116,6 +116,12 @@ h6 {
   padding: 4%;
   text-align:center;
 }
+.hc_no_date_big {
+  padding: 5em 0;
+  text-align: center;
+  border-top: 3px solid var(--hc_dark_color);
+  border-bottom: 1px solid var(--hc_color_level2);
+}
 .hc_icon_new {
   padding: 0 8px;
   color:var(--hc_color_point); 
@@ -124,6 +130,7 @@ h6 {
 .hc_headline_checking {
   margin: 0 10px 20px;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .hc_check_all {
@@ -132,7 +139,6 @@ h6 {
 }
 .hc_clarification {
   margin: 10px 0 34px;
-  line-height: 2.5;
 }
 .hc_clarification li {
   list-style-position: inside;
@@ -161,7 +167,7 @@ h6 {
   타이틀 
 */
 h2.hc_page_title {
-  margin-top: 20px;
+  margin: 20px 0;
   text-align: center;
 }
 .hc_title_barrel {

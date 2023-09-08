@@ -1,0 +1,49 @@
+#review-board-write {}
+#review-board-write .reviewInfo {width:100%; border-bottom:1px solid #bebebe; display: table; padding:10px 0;}
+#review-board-write .reviewInfo figure a {width:145px; display:table-cell; padding:0 10px;}
+#review-board-write .reviewInfo figure a img {width:100%;}
+#review-board-write .reviewInfo figcaption {display:table-cell; vertical-align: middle; font-weight:bold; word-break: break-all;}
+#review-board-write .form-wrap {background-color:#eaeaea; padding:10px;}
+#review-board-write table {width:100%;}
+#review-board-write table th {text-align:left;}
+#review-board-write table th, #review-board-write table td {padding:8px 0;}
+#review-board-write table .fixButtonR .btn_Grey {width: 115px; display: inline-block; position: absolute; top:0; right:0;}
+#review-board-write table .textArea textarea {height:110px;}
+#review-board-write table .agree a {position: absolute; right: 0; border: 1px solid #c4c4c4; padding: 2px 5px; margin-right: 10px; background-color: #fff;}
+#review-board-write .pd10 {margin-top:20px;}
+#review-board-write .pd10 .btn_Red {margin-bottom:10px;}
+#review-board-write .myorder { position: relative; }
+#review-board-write .myorder .input-group { position: relative; }
+#review-board-write .myorder .input-group input[type=text]:-ms-clear { display: none; }
+#review-board-write .myorder .input-group #ordernumclear { position: absolute; right: 0; top: 0; bottom: 0; width: 23px; height: 16px; margin: auto; font-size: 12px; cursor: pointer; color: #000; text-align: center; }
+
+/* 주문내역 조회 레이어 */
+#myorderlayer { display: none; }
+#myorderlayer .layer { text-align:center; height:100%; z-index: 999; }
+#myorderlayer .layer:before { content: ''; width:1px; height:100%; display:inline-block; vertical-align:middle; }
+#myorderlayer .layer .layer-pop { display:inline-block; max-height:90%; margin:0; vertical-align:middle; overflow:auto; }
+#myorderlayer .layer .layer-pop .tit-fix { position:fixed; width:90%; z-index:99; }
+#myorderlayer .layer .layer-pop .tit-fix h3 { text-align:left; }
+#myorderlayer .layer .layer-pop .txt { margin-top:36px; padding:0; max-height:none; text-align: left; font-family: "Malgun Gothic"; }
+#myorderlayer .layer .layer-pop .txt .tab { padding: 15px 10px; }
+#myorderlayer .layer .layer-pop .txt .tab ul { display: table; width: 100%; height: 30px; }
+#myorderlayer .layer .layer-pop .txt .tab ul li { display: table-cell; width: 25%; height: 28px; border: 1px solid #c9c9c9; background:#fff; }
+#myorderlayer .layer .layer-pop .txt .tab ul li a { display:block; line-height: 28px; color: #3b3b3b; font-size: 12px; text-align:center; text-decoration:none; background:none; }
+#myorderlayer .layer .layer-pop .txt .tab ul li.now { font-weight:bold; background: #d1d1d1; }
+#myorderlayer .layer .layer-pop .txt .tabWrap { border-top: 1px solid #cecece; border-bottom: 1px solid #cecece; font-size: 13px; }
+#myorderlayer .layer .layer-pop .txt .tabWrap li { margin: 0 10px; padding: 10px 0; border-top: 1px solid #cfcfcf; }
+#myorderlayer .layer .layer-pop .txt .tabWrap li:first-child { border: none; }
+#myorderlayer .layer .layer-pop .txt .tabWrap li a { display: block; }
+#myorderlayer .layer .layer-pop .txt .tabWrap li a dl { word-break: break-all; }
+#myorderlayer .layer .layer-pop .txt .tabWrap li a dl dt { font-weight: bold; }
+#myorderlayer .layer .layer-pop .txt .tabWrap li a dl dd .bar { display: inline-block; width: 1px; height: 10px; margin: 0 5px; background: #ddd; }
+#myorderlayer .layer .layer-pop .txt .tabWrap li.myorder-none { text-align: center; }
+#myorderlayer .layer .layer-pop .txt .order_list_more { margin-top:15px; }
+#myorderlayer .layer .layer-pop .txt .pd10 { padding: 0 10px 15px; margin: 0; }
+#myorderlayer .layer .layer-pop .txt .pd10 a { border: 1px solid #393939; }
+
+
+/* hncok 커스텀 */
+figcaption {
+    padding: 20px 0;
+}

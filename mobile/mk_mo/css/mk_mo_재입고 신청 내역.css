@@ -5,3 +5,6 @@
 .hc_no_date {
     border-bottom: 1px solid var(--hc_color_level2);
 }
+.hc_clarification {
+    padding-top: 40px;
+}
