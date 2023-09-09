@@ -1,0 +1,47 @@
+.hc_couponpack_list li {
+    display: inline-block;
+	margin: 0 0 10px;
+    padding: 20px;
+    width: 100%;
+    min-height: 150px;
+    vertical-align: top;
+	border: 1px solid var(--hc_color_level2);
+	box-sizing: border-box;
+}
+.hc_couponpack_list 
+.hc_couponpack_list div {
+	margin-bottom: 6px;
+}
+.hc_couponpack_no {
+	text-transform: uppercase;
+    color: var(--hc_color_level4);
+    margin-bottom: 18px;
+}
+.hc_couponpack_list .hc_couponpack_class {
+	margin-bottom: 18px;
+	padding-bottom: 18px;
+	font-size: var(--hc_tit_caption);
+    border-bottom: 1px solid var(--hc_color_level2);
+}
+.hc_couponpack_list .hc_couponpack_class span {
+    display: inline;
+    font-size: var(--hc_bd_medium);
+    vertical-align: text-top;
+}
+.hc_couponpack_list .hc_couponpack_discount {
+	color: var(--hc_color_point);
+}
+.hc_tit_caption {
+    font-size: var(--hc_bd_large);
+    font-weight: var(--hc_thin);
+}
+.hc_page_coupon h4 {
+    margin: 40px 0 20px;
+}
+.hc_page_coupon h4:first-child  {
+    margin-top: 0;
+}
+.hc_page_coupon .hc_table_list th, 
+.hc_page_coupon .hc_table_list td {
+    text-align: center;
+}
