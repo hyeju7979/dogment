@@ -1257,3 +1257,16 @@ input[name=hamburger_item] {
 #inquiryOrder div.layer-pop div.hc_btn_wrap a.hc_btn_long {
   display:none;
 }
+
+#order-list th, #order-list td,
+.hc_member_wrap th, .hc_member_wrap td,
+.hc_page_email th, .hc_page_email td {
+    padding-bottom: 10px;
+    height: 40px;
+    text-align: left;
+    vertical-align: baseline;
+}
+.layer_smartmypage_sys h3,
+.hc_mypage_wrap .detail h4 {
+  height: 40px;
+}

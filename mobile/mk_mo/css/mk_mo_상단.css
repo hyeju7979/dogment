@@ -20,7 +20,7 @@ h3 {
 h4 {
   font-size: var(--hc_bd_large);  
 }
- /* 
+/* 
   부 머리말 : 24px → 12 → 14
   마이페이지 메인에서 사용    
 */
@@ -285,7 +285,6 @@ h2.hc_page_title {
   text-underline-offset: 6px;
 }
 
-
 .hc_btn_wrap .hc_column2 {
   gap: 4px;
 }
@@ -442,4 +441,18 @@ h2.hc_page_title {
   margin-top: 6px;
   width: 38px;
   text-align: center;
+}
+
+/* 테이블 형식 */
+.hc_table_list {
+  border-top: 3px solid var(--hc_dark_color);
+  margin-bottom:54px;
+}
+.hc_table_list th, .hc_table_list td {
+  padding: 5px 0;
+  height: 40px;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--hc_color_level2);
 }
