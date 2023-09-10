@@ -1033,36 +1033,6 @@ small {
 
 /* ×××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××× */
 
-.hc_wrap_event .hc_thumbnail_list dt img, 
-.MS_prod_img_m,
-.hc_thumbnail_list img,
-.hc_main_section6 img,
-.hc_main_section4 img, 
-.hc_main_section3 img,
-.hc_main_section1 img {
-  /*max-width: 100%;*/
-}
-.hc_main_section6,
-.hc_main_section4, 
-.hc_main_section3,
-.hc_main_timesale,
-.hc_main_section1 {
-    height: 1080px;
-    max-height:100vh;
-    box-sizing: border-box;
-}
-.hc_main_section1,
-.hc_main_timesale,
-.hc_main_section7,
-.hc_main_section6,
-.hc_main_section5,
-.hc_main_section4 {
-  /*margin-bottom: 216px;*/
-}
-
-.hc_main_section3 {
-    max-height: calc(100% - 100px);
-}
 #hc_contentWrap > main,
 #hc_commonWrap,
 #hc_commonWrap #hc_contentWrap,
@@ -1508,141 +1478,6 @@ header {
   max-height: 400px;
 }
 
-/* 메인 랜덤 이미지 */
-.mainImage {
-   display: none;
-}
-.hc_loding_copy {
-  overflow: hidden;
-  position: relative;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgba( 0, 0, 0, 0.1 );
-}
-
-.hc_loding_copy_bg {
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  animation: page-up 1s ease 0s none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  background: var(--bg-pink);
-}
-
-.hc_hc_loding_text {
-  display: inline-block;
-  color: var(--hc_dark_color);
-  font-family: var(--fontfamily1);
-  font-size: var(--hc_bd_xlarge);
-  font-weight: var(--hc_light);
-  text-align: center;
-}
-
-.hc_main_section1 img {
-  position: absolute;
-  top: 0;
-  z-index: 99;
-}
-
-@keyframes page-up {
-  0% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 1;
-  }
-}
-.loading-data {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loading-text .char {
-  opacity: 0;
-  animation: loading-text 2s infinite ease-in-out;
-  display: inline-block;
-}
-.loading-text .char:nth-child(1) {
-  animation-delay: 0.9s;
-}
-.loading-text .char:nth-child(2) {
-  animation-delay: 1s;
-}
-.loading-text .char:nth-child(3) {
-  animation-delay: 1.1s;
-}
-.loading-text .char:nth-child(4) {
-  animation-delay: 1.2s;
-}
-.loading-text .char:nth-child(5) {
-  animation-delay: 1.3s;
-}
-.loading-text .char:nth-child(6) {
-  animation-delay: 1.4s;
-}
-.loading-text .char:nth-child(7) {
-  animation-delay: 1.5s;
-}
-.loading-text .char:nth-child(8) {
-  animation-delay: 1.6s;
-}
-.loading-text .char:nth-child(9) {
-  animation-delay: 1.7s;
-}
-.loading-text .char:nth-child(10) {
-  animation-delay: 1.8s;
-}
-.loading-text .char:nth-child(11) {
-  animation-delay: 1.9s;
-}
-.loading-text .char:nth-child(12) {
-  animation-delay: 2s;
-}
-.loading-text .char:nth-child(13) {
-  animation-delay: 2.1s;
-}
-.loading-text .char:nth-child(14) {
-  animation-delay: 2.2s;
-}
-.loading-text .char:nth-child(15) {
-  animation-delay: 2.3s;
-}
-.loading-text .char:nth-child(16) {
-  animation-delay: 2.4s;
-}
-@keyframes loading-text {
-  0% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  20% {
-    transform: translateY(-60%);
-    opacity: 1;
-  }
-  40% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /* 모달 검색창 */
 .hc_modal_search {
   position: absolute;
@@ -1659,7 +1494,6 @@ header {
     right: 30px;
     width: 30px;
     height: 30px;
-    /*border: 1px solid var(--hc_dark_color);*/
 }
 .hc_modal_search_contents {
 	position: relative;
@@ -1696,106 +1530,6 @@ header {
   line-height: 1.7;
   border: 1px solid var(--hc_color_level2);
   border-radius: 20px;
-}
-/* 
-	메인 
-*/
-#hc_mainWrap {
-    margin:0 auto;
-}
-.hc_main_section3 {
-	margin: 0 auto 232px;
-	display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.hc_section3_contents1 a {
-	display: block;
-    position: relative;
-    height: 100%;
-}
-.hc_section3_contents1 a figcaption {
-	position: absolute;
-    bottom: 0;
-}
-.hc_main_section4 h3 {
-	margin-bottom: 40px;
-	font-size: 50px;
-	text-align: center;
-}
-.hc_main_section5 {
-	text-align: center;
-}
-.hc_main_section5 figcaption {
-	margin-bottom: 40px;
-}
-.hc_main_section6 h3 {
-	margin-bottom:12px;
-	font-size: 25px;
-	text-align: center;
-}
-.hc_main_section7 h3:nth-child(2) {
-	margin-top:12px;
-	font-size: 25px;
-	text-align:right;
-}
-.hc_main_section7 h3 {
-	margin-bottom:12px;
-	font-size: 25px;
-}
-.hc_main_section5 figure,
-.hc_main_section7 {
-	display: flex;
-    justify-content: center;
-	gap: 10px;
-}
-.hc_main_section6,
-.hc_main_section4 {
-	clear: both;
-	text-align: center;
-}
-/* 타임세일 */
-.hc_main_timesale .hc_headline {
-    font-size: 40px;
-    text-align: center;
-}
-.hc_timesale_rep {
-    position : relative;
-    margin: 0 auto 40px;
-    width: 100%;
-    height: 170px;
-    background: url('http://kcompony7.jpg3.kr/web/hncok/img/main/bg_timesale.png') 50% 0 no-repeat;
-    background-size: contain;
-    
-    /*clip-path: polygon(15% 3%, 82% 1%, 100% 30%, 100% 74%, 84% 99%, 15% 100%, 0 77%, 0 31%);
-    border: 1px dashed #000;*/
-}
-.hc_timesale_list {
-    margin: 0 auto;
-}
-.hc_timesale_list div {
-    position: relative;
-    /*width : 470px*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.hc_main_period {
-    font-size: 88px;
-    font-family: digital-7 mono;
-	text-align: center;
-	position: relative;
-    top: 6px;
-}
-.hc_period {
-	position: absolute;
-    top: 70%;	
-	font-family: digital-7 mono;
-	/*font-size: 88px;*/
-    font-size: 5vw;
-	text-align: center;
-	color: var(--hc_bright_color);;  
 }
 
 /* 컨텐츠 영역 */
@@ -1896,7 +1630,12 @@ footer {
 	position: relative;
 	left: -1px;
 }
-
+.hc_wrap_event .hc_thumbnail_list dt img, 
+.MS_prod_img_m,
+.hc_thumbnail_list img {
+    width:100%;
+    max-width: 100%;
+}
 /* 
 	SUB 
 */
@@ -3212,7 +2951,6 @@ text-align: center;
     display: inline;
     font-size: var(--hc_bd_medium);
     vertical-align: text-top;
-   
 }
 .hc_couponpack_list .hc_couponpack_discount {
 	color: var(--hc_color_point);
