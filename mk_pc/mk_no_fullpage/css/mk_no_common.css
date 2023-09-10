@@ -1052,10 +1052,6 @@ small {
 	width: 100%;
 }
 
-#hc_contentWrap {
-    margin: 0 auto;
-    width: var(--hc_contentwrap);
-}
 .hc_md_table_title {
   display: flex;
   align-content: flex-end;
@@ -1297,11 +1293,17 @@ input:checked ~ .accordion-content {
 
 
 /* 레이아웃 규칙 */
+#hc_contentWrap {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+}
 #hc_commonWrap {
 	margin: 0 auto;
 	position: relative;
     top:114px;
-	max-width: var(--hc_contentwrap);
+	width: 100%;
+    max-width: 100%;
 }
 
 /* 상단 텍스트 배너 */
@@ -1407,7 +1409,7 @@ header {
 	position: fixed;
 	top: 64px;
 	left: -400px;
-	z-index: 999;
+	z-index: 1000;
 	width: 400px;
 	height: 100vh;
 	line-height: 2;
@@ -1480,9 +1482,9 @@ header {
 
 /* 모달 검색창 */
 .hc_modal_search {
-  position: absolute;
+  position: fixed;
   top:0;
-  z-index:999;
+  z-index:1000;
   display: none;
   height: 100vh;
   background: var(--hc_bright_color);
@@ -1746,31 +1748,8 @@ footer {
 	vertical-align: middle;
 	background: var(--hc_color_point);
 }
-.hc_wrap_pfs .hc_page_heading {
-	margin: 140px 0 280px;
-	text-align: center;
-}
-.hc_wrap_pfs dl {
-	margin-bottom: 140px;
-    display: flex;
-    justify-content: space-between;
-}
-.hc_wrap_pfs .hc_prd_list_information {
-	margin-left: 40px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-.hc_wrap_pfs dt img {
-	max-width: 600px;
-}
-.hc_wrap_pfs .hc_prd_name {
-	font-size: var(--hc_bd_xlarge);
-}
-.hc_wrap_pfs .hc_prd_element:before {
-	display:none;
-}
 .hc_headline {
+    text-align:center;
 	font-size: var(--hc_tit);
 	font-weight: var(--hc_regular);
 }
@@ -2951,6 +2930,7 @@ text-align: center;
     display: inline;
     font-size: var(--hc_bd_medium);
     vertical-align: text-top;
+   
 }
 .hc_couponpack_list .hc_couponpack_discount {
 	color: var(--hc_color_point);

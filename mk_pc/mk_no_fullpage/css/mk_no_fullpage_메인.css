@@ -246,6 +246,9 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
 }
 
 /* 섹션5 */
+.hc_main_section5 figcaption {
+    text-align: center;
+}
 .hc_main_section6,
 .hc_main_section4 {
 	text-align: center;
