@@ -3,16 +3,17 @@
 .h_title2 h3 { font-weight:bold; }
 .h_title2 h3 .fa { font-size:1.3em; vertical-align:middle; }
 .h_title2 .fa-angle-up { position:absolute; top:1px; right:0; padding:0 10px; }
-.fc-red { color:#ff0000; }
+.fc-red { 
+    color: var(--hc_color_point);
+}
 
 /* 주문상품 */
-#order .prd_order li { borderbt-bottom:1px solid #dedede; padding:10px 0; }
 #order figure {
-    /*width:100%; 
-    display: table;*/
-    box-sizing: border-box; 
-    padding:0 10px;
+    padding: 10px 0;
+    margin: 0 10px;
     gap: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--hc_color_level2);
 }
 #order .basketLeft { 
     position:relative; 
@@ -38,20 +39,44 @@
 #order .basketRight span.gray-delivery {padding: 2px;background-color: #fff;color: #656565;font-size: 0.875em;border-radius: 3px;border: 1px solid #656565;margin-left: 4px;}
 #order .amount-input {width:30px; text-align : right;}
 
-#order .couponBody { padding:5px 10px; border-bottom:1px solid #c0c0c0; background: #f5f5f5; }
+#order .couponBody {
+    margin: 0 10px;
+    border-bottom: 3px solid var(--hc_dark_color);
+}
+#order .couponBody dl {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#order .couponBody dl.fc-red {
+    display: block;
+    padding:0;
+}
+#order .couponBody dl.fc-red dt {
+    float: left;
+}
+#order .couponBody dl.fc-red dd {
+    float: right;
+}
 #order .couponBody dl:after { clear: both; content: ""; display: block; }
-#order .couponBody dl { padding-left:5px; padding-right:5px; }
-#order .couponBody dl dt { float:left; width:35%; padding:3px 0; text-align:left; font-weight:bold; }
-#order .couponBody dl dd { float:right; width:65%; padding:3px 0; text-align:right; font-weight:bold; }
-#order .couponBody dl.total { padding:5px 0; line-height:24px; }
-#order .couponBody dl.total dd { font-weight:normal; }
-#order .couponBody dl.total .fc-red { display:inline-block; margin-top:-2px; vertical-align:middle; }    
-#order .couponBody dl.total .t-reserve { color:#666; font-size:0.875em; }    
-#order .couponBody dl.line { padding-top:10px; border-top:1px solid #cbcbcb; }
-#order .couponBody div > dl:last-child { padding-bottom:7px; }
+#order .couponBody dl dt { 
+    text-align:left; 
+}
+#order .couponBody dl dd { 
+    text-align:right; 
+}
+#order .couponBody dl.total dd { 
+    color: var(--hc_color_point);
+}
+#order .couponBody dl.total .fc-red { display:inline-block; margin-top:-2px; vertical-align:middle; }       
+#order .couponBody dl.line { 
+    padding: 10px 0;    
+}
 #order .couponBody .btn-coupon-cart { display:inline-block; width:100%; height:40px; line-height:40px; margin:10px 0 5px; color:#fff; background:#393939; text-align:center; }
 #order .couponBody .fa { padding-left:5px; vertical-align:sub; cursor:pointer; }
-#order .couponBody dl dd strong.fc-red { font-size:1.2em; }
+#order .couponBody dl dd strong.fc-red { 
+    font-weight: var(--hc_regular);
+}
 /* 주문상품 */
 
 /* 할인적용 */
@@ -63,16 +88,36 @@
 #order .discountInfo .delivery-button {font-size: 1.5em; vertical-align: top;}
 /* 할인적용 */
 
+#order .orderBody {
+    margin: 0 10px;
+}
 #order .orderBody h5 {margin:15px 0 10px 0; padding:0 10px; font-weight: bold;}
 #order .orderBody .order-info {background-color: #eaeaea; border-top:2px solid #454545; border-bottom:1px solid #454545; padding:10px;}
 #order .order-info .btn_White {width:47px; height:23px; font-size:0.917em; float:right; line-height: 23px; margin-top: -3px;}
-#order .orderBody table {width:100%; margin-top: 20px;}
+#order .orderBody table {
+    margin-bottom: 40px;
+}
 #order .orderBody thead {text-align:left;}
-#order .orderBody thead th {padding-bottom: 5px;}
-#order .orderBody tbody {background-color: #eaeaea; border-top:2px solid #454545; border-bottom:1px solid #454545;}
-#order .orderBody th {text-align:left; padding-left:10px;}
-#order .orderBody td {padding:6px 10px 6px 0;}
-#order .orderBody table input[name="post1"], .orderBody table input[name="post2"] {height: 28px; border: 1px solid #bbb; vertical-align: middle;}
+#order .orderBody thead th {
+    height: 40px;
+    line-height: 40px;
+    background: var(--hc_color_level3);
+}
+#order .orderBody th {
+    height: 40px;
+    text-align: left;
+    font-weight: var(--hc_regular);
+    vertical-align: middle;
+}
+#order .orderBody td {
+    padding:5px 0;
+    position: relative;
+}
+#order .orderBody table input[name="post1"], .orderBody table input[name="post2"] {
+    height: 40px; 
+    border: 1px solid var(--hc_dark_color);
+    vertical-align: middle;
+}
 #order .orderBody table select[name="order_add_info[0]"], textarea[name="order_add_info[0]"] {width:100%;}
 #order .orderBody table select[name="time"], .orderBody table select[name="choice_reserve"] { width:100%; }
 #order .orderBody .btn_coupon {width:64px; display:inline-block; vertical-align:top; -webkit-box-shadow: 1px 1px 0 0 #ededed; box-shadow: 1px 1px 0 0 #ededed; background-color: #898686; background-image: -webkit-gradient(linear, left top, left bottom, from(#898686), to(#595858)); background-image: -webkit-linear-gradient(top, #898686, #595858); background-image: -moz-linear-gradient(top, #898686, #595858); background-image: -o-linear-gradient(top, #898686, #595858); background-image: linear-gradient(to bottom, #898686, #595858);}
@@ -83,9 +128,24 @@
 #order .Write-order .order-info-detail,
 #order .Write-deli .order-info-detail {display: none;}
 #order .Write-order .order-info-simple td,
-#order .Write-deli .order-info-simple td {position: relative; background-color: #6F6F6F; color: #fff;padding: 10px 10px 8px 10px;}
+#order .Write-deli .order-info-simple td {
+    position: relative; 
+     padding: 10px 0;
+}
 #order .Write-order .order-info-simple .btn_White,
-#order .Write-deli .order-info-simple .btn_White {position: absolute; right: 10px; top: 5px; width: 50px; height: 25px; line-height: 25px; background-color: #fff; text-align: center; display: block; border: 1px solid #c6c6c6; vertical-align: middle;}
+#order .Write-deli .order-info-simple .btn_White {
+    position: absolute; 
+    right: 0; 
+    top: 9px; 
+    width: 50px; 
+    height: 25px; 
+    line-height: 25px; 
+    background-color: #fff; 
+    text-align: center; 
+    display: block; 
+    border: 1px solid var(--hc_dark_color);
+    vertical-align: middle;
+}
 #order .select_delivery_date {margin-top: 5px;}
 #order .hope-delivery { position:relative; margin-bottom:5px; padding-right:65px; }
 #order .hope-delivery .btn_Grey { position:absolute; top:0; right:0; width:60px; }
@@ -121,7 +181,6 @@
 #addrSearch .search-form .btn_Grey {width:105px; display:inline; margin-left: 10px;}
 #addrSearch .addr-list {width:100%;}
 #addrSearch .msg-wrap {background-color: #fbfbfb; padding:10px 0; text-align: center;}
-#addrSearch .msg-wrap .msg01-highlight {color:#1984f1;}
 #addrSearch #searchStep02 {margin-top:10px;}
 #addrSearch #searchStep02 h4 {font-weight: bold;}
 #addrSearch #searchStep02 .btn_Black {margin-top:10px;}
@@ -404,7 +463,11 @@ background:#fafafa; color:#777; vertical-align:middle; font-family:돋움; text-
 #layerMarketingWrap .layer-pop .txt .l-tbl caption { display:none; }
 /* 간단가입 할인, 주문서 동의 추가 */
 
-#order .orderBody td .txt-pay { width: 40%; margin-bottom: 5px; }
+#order .orderBody td .txt-pay { 
+    width: auto;
+    background: var(--hc_bright_color) !important;
+    border: 0;
+}
 #order .orderBody td .txt { margin-top: 5px; color: #777; font-size: .875em; }
 #order .orderBody td .txt em { color: #f00; text-decoration: underline; font-style: normal; }
 #order .orderBody td .opt { color: #777; font-size: .875em; }
@@ -416,9 +479,13 @@ background:#fafafa; color:#777; vertical-align:middle; font-family:돋움; text-
 #order .orderBody td .okcashbag input[type=text] { width: 100%; }
 #order .orderBody td .okcashbag a { position: absolute; top: 0; right: 0; width: 50px; line-height: 35px; }
 #order .orderBody .total th, 
-#order .orderBody .total td { border-top: 1px solid #aeaeae; }
+#order .orderBody .total td { 
+    border-top: 1px solid var(--hc_dark_color);
+}
 #order .orderBody .total td { padding-top: 10px; padding-bottom: 10px; }
-#order .orderBody .total td strong { color: #f00; font-size: 1.125em; }
+#order .orderBody .total td strong { 
+    color: var(--hc_color_point);
+}
 #order .orderBody td .escrow-info li { position: relative; padding: 12px 10px 12px 105px; background-color: #eef1f7; border-bottom: 1px solid #fff; color: #777; font-size: .75em; }
 #order .orderBody td .escrow-info li img { position: absolute; top: 50%; left: 5px; margin-top: -10px; width: 95px; }
 #order .orderBody .MS_tel { width:60px; }
@@ -582,26 +649,63 @@ background:#fafafa; color:#777; vertical-align:middle; font-family:돋움; text-
 .block_list li {margin: 7px 7px 7px 7px; padding: 15px 10px; border: 1px solid #d5d5d5;}
 
 #tab_addrbook, #tab_past {float: left;width: 50%; padding-bottom:5px;}
-#tab_addrbook.on a, #tab_past.on a {background: #858585; color: #ffffff;}
-#tab_addrbook a, #tab_past a {display:block;border: 1px solid #858585;line-height: 40px;text-align: center;font-size: 13px;color: #3b3b3b;background: #f1f1f1;}
-
+#tab_addrbook.on a, #tab_past.on a {
+    background: var(--hc_dark_color);
+    color: var(--hc_bright_color);
+}
 #block_mobile_addr_book {text-align: left;}
 #block_mobile_area_list {text-align: center;}
 #block_mobile_area_list .btn-close {display: block; width: 17px; height: 17px; background: url(/images/d3/m_01/bull/addList_btn_close.png) 0 0 no-repeat; background-size: 17px 17px; position: absolute; top:-23px; right: 0; text-indent: -9999px;}
 #block_mobile_area_list .tab_ul {overflow:hidden;}
 #block_mobile_area_list .block_list li {padding-right: 70px; position: relative; border-radius:5px;}
 #block_mobile_area_list .block_list li .btn-select {position: absolute; right: 14px; top: 50%; transform:translateY(-50%);}
-#block_mobile_area_list .block_list li .btn-select .btn-apply-addrbook {display: inline-block; width: 40px; height: 25px; background: #858585; text-align:center; line-height:25px; font-size:12px; color:#fff;}
+#block_mobile_area_list .block_list li .btn-select .btn-apply-addrbook {
+    display: inline-block; 
+    width: 40px; 
+    height: 25px; 
+    background: background: var(--hc_color_level4); 
+    text-align:center; 
+    line-height:25px; 
+    font-size:12px; 
+    color: var(--hc_bright_color);
+}
 #block_mobile_area_list .block_list li .btn-select .btn-add-addr { display: inline-block; width: 38px; height: 23px; margin-top:5px; border:1px solid #383838; background: #fff; text-align:center; line-height:23px; font-size:12px; color:#383838; }
 #block_mobile_area_list .block_list li .text .name {font-weight: bold; font-size: 12px; color: #000;}
 #block_mobile_area_list .block_list li .text .ad {margin-top:5px;}
-#block_mobile_area_list .block_list li .text .name .basic {display: inline-block; margin-left: 10px; width: 60px; line-height: 20px; text-align: center; border-radius: 50px; background: #68c40e; font-weight: bold; font-size: 10px; color: #fff;}
+#block_mobile_area_list .block_list li .text .name .basic {
+    display: inline-block; 
+    margin-left: 10px; 
+    width: 60px; 
+    line-height: 20px; 
+    text-align: center; 
+    border-radius: 50px; 
+    background: var(--hc_color_point); 
+    font-weight: bold; 
+    font-size: 10px; 
+    color: var(--hc_bright_color);
+}
 #block_mobile_area_list .block_list li .text .add {font-size: 12px; line-height: 22px; color: #000;}
 #block_mobile_area_list .block_list li .text .tell {font-size: 12px; line-height: 22px; color: #000;}
 #block_mobile_area_list .btns {overflow:hidden; padding:7px 7px 15px;}
-#block_mobile_area_list .btn-manage {display: inline-block; width: 49%; line-height: 40px; text-align: center; border: 1px solid #000; box-sizing:border-box; font-weight: bold; font-size: 13px; color: #000;}
+#block_mobile_area_list .btn-manage {
+    display: inline-block; 
+    width: 49%; 
+    line-height: 40px; 
+    text-align: center; 
+    border: 1px solid var(--hc_dark_color);
+    box-sizing:border-box; 
+}
 #block_mobile_area_list .block-add-address {border-top:1px solid #000;}
-#block_mobile_area_list .add-place {display: inline-block; width: 49%; line-height: 40px; text-align: center; background:#393939; border: 1px solid #000; box-sizing:border-box; font-weight: bold; font-size: 13px; color: #fff;}
+#block_mobile_area_list .add-place {
+    display: inline-block; 
+    width: 49%; 
+    line-height: 40px; 
+    text-align: center; 
+    color: var(--hc_bright_color);
+    background: var(--hc_dark_color); 
+    border: 1px solid var(--hc_dark_color); 
+    box-sizing:border-box;
+}
 
 #block_mobile_area_list .block-add-address .address-add {text-align: left;}
 #block_mobile_area_list .block-add-address .title {padding: 0 9px; line-height: 40px; font-size: 13px; font-weight: bold; color: #3b3b3b;}
@@ -631,7 +735,19 @@ background:#fafafa; color:#777; vertical-align:middle; font-family:돋움; text-
 #block_mobile_area_list .block-add-address .btn-wrap .link_add_place_save {float: right; border: 1px solid #393939; background: #393939; color: #fff;}
 #block_mobile_area_list .block-add-address .btn-wrap .link_add_place_cancel {float: left; border: 1px solid #393939; background: #fff; color: #393939;}
 
-.btn-adr-layer {display:inline-block; width:47px; margin-left:5px; line-height:19px; text-align:center; border: 1px solid #000; font-size:12px; font-weight:bold;}
+.btn-adr-layer {
+    position: absolute;
+    right: 0;
+    top: 9px;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #fff;
+    text-align: center;
+    display: block;
+    border: 1px solid var(--hc_dark_color);
+    vertical-align: middle;
+}
 /* test */
 
 /* 결제 선택(결제수단 UI 변경) */
@@ -694,8 +810,15 @@ background:#fafafa; color:#777; vertical-align:middle; font-family:돋움; text-
 .block_list li {margin: 7px 7px 7px 7px; padding: 15px 10px; border: 1px solid #d5d5d5;}
 
 #tab_addrbook, #tab_past {float: left;width: 50%; padding-bottom:5px;}
-#tab_addrbook.on a, #tab_past.on a {background: #858585; color: #ffffff;}
-#tab_addrbook a, #tab_past a {display:block;border: 1px solid #858585;line-height: 40px;text-align: center;font-size: 13px;color: #3b3b3b;background: #f1f1f1;}
+#tab_addrbook a, #tab_past a {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    color: var(--hc_dark_color);
+    font-size: var(--hc_bd_medium);
+    background: var(--hc_bright_color);
+    border: 1px solid var(--hc_dark_color);
+}
 
 #block_mobile_addr_book {text-align: left;}
 #block_mobile_area_list {text-align: center;}
@@ -707,14 +830,19 @@ background:#fafafa; color:#777; vertical-align:middle; font-family:돋움; text-
 #block_mobile_area_list .block_list li .btn-select .btn-add-addr { display: inline-block; width: 38px; height: 23px; margin-top:5px; border:1px solid #383838; background: #fff; text-align:center; line-height:23px; font-size:12px; color:#383838; }
 #block_mobile_area_list .block_list li .text .name {font-weight: bold; font-size: 12px; color: #000;}
 #block_mobile_area_list .block_list li .text .ad {margin-top:5px;}
-#block_mobile_area_list .block_list li .text .name .basic {display: inline-block; margin-left: 10px; width: 60px; line-height: 20px; text-align: center; border-radius: 50px; background: #68c40e; font-weight: bold; font-size: 10px; color: #fff;}
 #block_mobile_area_list .block_list li .text .add {font-size: 12px; line-height: 22px; color: #000;}
 #block_mobile_area_list .block_list li .text .tell {font-size: 12px; line-height: 22px; color: #000;}
 #block_mobile_area_list .btns {overflow:hidden; padding:7px 7px 15px;}
-#block_mobile_area_list .btn-manage {display: inline-block; width: 49%; line-height: 40px; text-align: center; border: 1px solid #000; box-sizing:border-box; font-weight: bold; font-size: 13px; color: #000;}
 #block_mobile_area_list .block-add-address {border-top:1px solid #000;}
-#block_mobile_area_list .add-place {display: inline-block; width: 49%; line-height: 40px; text-align: center; background:#393939; border: 1px solid #000; box-sizing:border-box; font-weight: bold; font-size: 13px; color: #fff;}
-#block_mobile_area_list .btns a { display: inline-block; width: 49%; line-height: 40px; text-align: center; border: 1px solid #000; box-sizing:border-box; font-weight: bold; font-size: 13px; }
+#block_mobile_area_list .btns a { 
+    margin-bottom: 5px;
+    display: inline-block; 
+    width: 100%; 
+    line-height: 40px; 
+    text-align: center; 
+    border: 1px solid var(--hc_dark_color); 
+    box-sizing:border-box; 
+}
 #block_mobile_area_list .btns a.btn-black { border: 1px solid #000; color: #fff; background:#000; }
 
 #block_mobile_area_list .block-add-address .address-add {text-align: left;}
@@ -745,10 +873,6 @@ background:#fafafa; color:#777; vertical-align:middle; font-family:돋움; text-
 #block_mobile_area_list .block-add-address .btn-wrap a {display: inline-block; width: 49.2%; box-sizing:border-box; line-height: 40px; text-align: center; font-size: ; font-weight: bold; font-size: 12px;}
 #block_mobile_area_list .block-add-address .btn-wrap .link_add_place_save {float: right; border: 1px solid #393939; background: #393939; color: #fff;}
 #block_mobile_area_list .block-add-address .btn-wrap .link_add_place_cancel {float: left; border: 1px solid #393939; background: #fff; color: #393939;}
-
-#block_mobile_area_list .add-place {display: inline-block; width: 49%; line-height: 40px; text-align: center; background:#393939; border: 1px solid #000; box-sizing:border-box; font-weight: bold; font-size: 13px; color: #fff;}
-
-.btn-adr-layer {display:inline-block; width:47px; margin-left:5px; line-height:19px; text-align:center; border: 1px solid #000; font-size:12px; font-weight:bold; text-indent: 0;}
 
 /* 주소록 개인정보 동의 */
 .privercy-contract { font-size:12px; margin-top: 10px; }
@@ -795,4 +919,28 @@ max-height:763px; margin-left:-230px; margin-top:-365px;
 
 .hc_revoke {
     text-decoration: line-through;
+}
+.txt-input3 {
+    width: 30% !important;
+}
+input[type="radio"] {
+    margin-right: 6px;
+}
+.txt-input2 {
+    width: 100% !important;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.hc_btn_long_fill {
+    margin: 0 !important;
+}
+#order .orderBody td.coupon {
+    display: grid;
+    grid-template-columns: auto 75px;
+}
+#order .orderBody td.coupon .hc_btn_long_fill {
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
 }

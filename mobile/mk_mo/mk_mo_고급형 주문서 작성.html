@@ -46,21 +46,13 @@
 
                                 <div class="reserve-point">
                                     <!--/if_provider_product@list@reserve_price/-->
-                                    <!--/provider_product@list@reserve_price/-->원 적립
+                                        <!--/provider_product@list@reserve_price/-->원 적립
                                     <!--/end_if/-->
 
                                     <!--/if_provider_product@list@point_price/-->
-                                    <!--/provider_product@list@point_price/-->point 적립
+                                        <!--/provider_product@list@point_price/-->point 적립
                                     <!--/end_if/-->
                                 </div>
-
-                                <!--/if_provider_product@list@option/-->
-                                <div><!--/provider_product@list@option/--></div>
-                                <!--/end_if/-->
-
-                                <!--/if_weightdeli_use/-->
-                                <div><!--/provider_product@list@weight/--></div>
-                                <!--/end_if/-->
 
                                 <ul class="price-coupon">
                                     <!--/if_provider_product@list@prd_discount_period/-->
@@ -98,6 +90,20 @@
                                         <!--/end_if/-->
                                     <!--/end_if/-->
                                 </ul>
+
+                                <ul>
+                                    <li>배송방법 : <!--/provider_product@list@delivery_type/--></li>
+                                    <li>픽업 희망일 : <!--/provider_product@list@smartpickup_wish_date/--></li>
+                                    <li>픽업 매장 : <!--/provider_product@list@smartpickup_shop_name/--></li>
+                                </ul>
+
+                                <!--/if_provider_product@list@option/-->
+                                <div><!--/provider_product@list@option/--></div>
+                                <!--/end_if/-->
+
+                                <!--/if_weightdeli_use/-->
+                                    <div><!--/provider_product@list@weight/--></div>
+                                <!--/end_if/-->
                             </figcaption>
                         </figure>
                     </li>                            
@@ -116,7 +122,6 @@
                             <dd>
                                 <strong class="fc-red"><!--/provider_product@total_sumprice/--></strong>원 
                                 <!--/provider_product@block_expect_reserve/--><span class="t-reserve">(적립예정 <!--/number/provider_product@expect_reserve/-->원)</span> <!--/end_block/-->
-                                <span class="fa fa-angle-up fa-2x"></span>
                             </dd>
                         </dl>
                         <dl class="line">
@@ -161,38 +166,38 @@
 
             <!-- 할인적용 -->
             <div class="discountInfo">
-                <div class="desc">
+                <ul class="hc_clarification">
                 <!--/if_not_provider/-->
                     <!--/if_delivery_type(무료)/-->
-                    <p>배송정보 : 무료<!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="fa fa-info-circle delivery-button"></span></a><!--/end_if/--></p>
+                    <li>배송정보 : 무료<!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="hc_tinny"></span></a><!--/end_if/--></li>
                     <!--/else_if_delivery_type(착불)/-->
-                    <p>배송정보 : 착불<!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="fa fa-info-circle delivery-button"></span></a><!--/end_if/--></p>
+                    <li>배송정보 : 착불<!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="hc_tinny"></span></a><!--/end_if/--></li>
                     <!--/else_if_delivery_type(고정)/-->
-                    <p>배송정보 : <!--/number/delivery_price/-->원<!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="fa fa-info-circle delivery-button"></span></a><!--/end_if/--></p>
+                    <li>배송정보 : <!--/number/delivery_price/-->원<!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="hc_tinny"></span></a><!--/end_if/--></li>
                     <!--/else_if_delivery_type(조건)/-->
-                    <p>배송정보 : <!--/number/delivery_order_price/-->원 미만시 <!--/number/delivery_price/-->원<!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="fa fa-info-circle delivery-button"></span></a><!--/end_if/--></p>
+                    <li>배송정보 : <!--/number/delivery_order_price/-->원 미만시 <!--/number/delivery_price/-->원<!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="hc_tinny"></span></a><!--/end_if/--></li>
                     <!--/else_if_delivery_type(금액별)/-->
-                    <p>배송정보 : <!--/if_link_delivery_different/--><a href="<!--/link_delivery_different/-->">차등</a><!--/end_if/--><!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="fa fa-info-circle delivery-button"></span></a><!--/end_if/--></p>
+                    <li>배송정보 : <!--/if_link_delivery_different/--><a href="<!--/link_delivery_different/-->">차등</a><!--/end_if/--><!--/if_link_delivery_country/-->, <a href="<!--/link_delivery_country/-->">지역별 <span class="hc_tinny"></span></a><!--/end_if/--></li>
                     <!--/else_if_delivery_type(무게별)/-->
-                    <p>배송정보 : 무게별 차등</p>
+                    <li>배송정보 : 무게별 차등</li>
                     <!--/end_if/-->
                 <!--/end_if/-->
-                    <p>지역별/상품개별배송정책에 따라 변동될 수 있습니다.</p>
+                    <li>지역별/상품개별배송정책에 따라 변동될 수 있습니다.</li>
                 <!--/if_login/-->
                     <!--/if_group_name/-->
-                    <p><strong><!--/user_name/--></strong>님은 <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/--><strong>[<!--/group_name/-->]</strong>회원입니다.</p>
+                    <li><!--/user_name/-->님은 <!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/--><!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/-->[<!--/group_name/-->]회원입니다.</li>
                     <!--/if_group_reserve_message/-->
-                    <p>(<!--/group_reserve_message/-->)</p>
+                    <li>(<!--/group_reserve_message/-->)</li>
                     <!--/end_if/-->
                     <!--/if_group_message/-->
-                    <p><!--/group_message/--></p>
+                    <li><!--/group_message/--></li>
                     <!--/end_if/-->
                     <!--/end_if/-->
                 <!--/end_if/-->
                 <!--/if_powerapp_message/-->
-            <p><!--/powerapp_message/--></p>
+                    <li><!--/powerapp_message/--></li>
                 <!--/end_if/-->
-                </div>
+                </ul>
             </div>
             <!-- //할인적용 -->
 
@@ -328,13 +333,13 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td colspan="2" style="padding: 6px 10px; background-color: #fff; text-align: right;">
+                                <td colspan="2">
                                     <label><!--/checkbox_same_data(chk-rdo)/--> 주문자 정보 자동 입력</label>
                                 </td>
                             </tr>
                             <!--/if_login/-->
                             <tr>
-                                <td colspan="2" style="padding: 0px 10px 6px 10px; background-color: #fff; text-align: right;" class="korea-radio-addr">
+                                <td colspan="2" class="korea-radio-addr">
                                     <!--/radio_delivery_addr(select-country)/-->
                                     <a href="<!--/link_past_list/-->" class="btn-adr-layer">주소록</a>
                                 </td>
@@ -381,7 +386,7 @@
                                             <!--/input_receiver_zip(txt-input2)/-->
                                         </div>
                                         <div class="pad-5">
-                                            <a href="<!--/link_search_zip/-->" class="btn_Grey">우편번호 찾기</a>
+                                            <a href="<!--/link_search_zip/-->" class="hc_btn_long_fill">우편번호 찾기</a>
                                         </div>
                                         <div class="pad-5">
                                             <!--/input_receiver_addr1(txt-input w120)/-->
@@ -401,7 +406,7 @@
                             </tr>
                             <tr class="order-info-detail">
                                 <th></th>
-                                <td><a href="<!--/link_search_zip/-->" class="btn_Grey">우편번호 찾기</a></td>
+                                <td><a href="<!--/link_search_zip/-->" class="hc_btn_long_fill">우편번호 찾기</a></td>
                             </tr>
                             <tr class="order-info-detail">
                                 <th>주소</th>
@@ -428,12 +433,12 @@
                             <!--/end_if/-->
                             <!--/if_checkbox_modify_address/-->
                             <tr class="order-info-detail">
-                                <td colspan="6">
+                                <td colspan="6" class="hc_layout_r">
                                     <label class="chk-label"><!--/checkbox_modify_address/--> 해당 배송지 정보를 나의 회원정보로 등록합니다.</label>
                                 </td>
                             </tr>
                             <!--/end_if/-->
-                            <tr style="border-top: 1px solid #454545;">
+                            <tr style="border-top: 1px solid #454545">
                                 <th>주문메세지</th>
                                 <td><!--/text_user_message(txt-area1)/--></td>
                             </tr>
@@ -553,9 +558,7 @@
                                 <th>적립금사용</th>
                                 <td>    
                                     <!--/input_user_reserve(txt-input input02 txt-pay)/-->원 
-                                    <div>
-                                        <label class="fade"><!--/check_all_reserve/--> 전액사용</label> <span class="fc-gray">(사용가능 : <!--/input_possible_reserve(txt-input input02 txt-pay)/--> 원)</span>
-                                    </div>
+                                    <div><label><!--/check_all_reserve/--> 전액사용</label>(사용가능 : <!--/input_possible_reserve(txt-input input02 txt-pay)/--> 원)</div>
                                 </td>
                             </tr>
                             <!--/end_if/-->
@@ -614,8 +617,8 @@
                                 <th>쿠폰</th>
                                 <td class="coupon">
                                     <!--/input_coupon_number(txt-pay)/-->
-                                    <a href="<!--/link_coupon/-->" class="btn_Grey btn_coupon"><span>쿠폰 선택</span></a>
-                                    <a href="<!--/link_coupon_cancel/-->" class="btn_Grey btn_coupon coupon_cancel" style="display: none"><span>쿠폰 취소</span></a>
+                                    <a href="<!--/link_coupon/-->" class="hc_btn_long_fill">쿠폰 선택</a>
+                                    <a href="<!--/link_coupon_cancel/-->" class="hc_btn_long_fill" style="display: none">쿠폰 취소</a>
                                     <div><!--/coupon_desc/--></div>
                                 </td>
                             </tr>
@@ -634,7 +637,7 @@
                             <!--/end_if/-->
                             <tr class="total">
                                 <th>결제 예정금액</th>
-                                <td><strong><!--/block_op_sum_price/--><!--/number/total_price/--><!--/end_block/--> 원</strong></td>
+                                <td><!--/block_op_sum_price/--><!--/number/total_price/--><!--/end_block/--> 원</td>
                             </tr>
                         </tbody>
                     </table>
