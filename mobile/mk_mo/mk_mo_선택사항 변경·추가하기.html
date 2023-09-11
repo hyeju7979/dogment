@@ -1,0 +1,140 @@
+<div id="layer-opt-ctrl">
+    <a href="<!--/link_cancle/-->" class="btn-close">닫기</a>
+    <h3>선택사항 변경/추가</h3>
+    <div class="opt-ctrl-wrap">
+        <div class="lcont">
+        <!--/form_option/-->
+            <dl>
+                <dd class="pname">
+                    <div class="prd-w">
+                        <div class="thumb"><a href="<!--/link_product_detail/-->" target="_blank"><img src="<!--/mobile_image/-->" alt=""></a></div>
+                        <div class="pinfo">
+                            <p class="prd_name">
+                                <!--/name/--> 
+                                <!--/if_mobile_name/-->
+                                    [<!--/mobile_name/-->]
+                                <!--/end_if/--> 
+
+                                <!--/if_engname/-->
+                                    (<!--/engname/-->)
+                                <!--/end_if/-->
+                            </p>
+                            <p class="price"><!--/number/price_sell/-->원</p>
+                            <p class="price-info">
+                                <ul>
+                                <!--/if_hybrid_option/-->
+                                    <!--/loop_hybrid_option/-->
+                                        <div class="option-box"> 
+                                            <p class="tit"><strong><!--/hybrid_option@title/--></strong><!--/if_hybrid_option@min_quantity/-->(최소 <!--/hybrid_option@min_quantity/-->개<!--/if_not_hybrid_option@max_quantity/-->선택가능)<!--/end_if/--><!--/end_if/--> 
+            <!--/if_hybrid_option@max_quantity/--><!--/if_not_hybrid_option@min_quantity/-->(<!--/end_if/--> ~ 최대 <!--/hybrid_option@max_quantity/-->개 선택가능)<!--/end_if/--></p>
+                                            <ul class="list">        
+                                            <!--/loop_hybrid_option@option/-->                                                
+                                                <li class="<!--/if_step(6)/-->first<!--/end_if/--> <!--/if_hybrid_option@option@soldout/-->lst-soldout<!--/end_if/-->">
+                                                    <dl>
+                                                        <dd class="prdchk"><label><!--/hybrid_option@option@checkbox/--></label></dd>
+                                                        <dd class="prdimg"><!--/hybrid_option@option@opt_s_img/--><!--/if_hybrid_option@option@soldout/--><span class="soldout-bg"></span><span class="soldout">품절</span><!--/end_if/--></dd>
+                                                        <dd class="prdname"><!--/hybrid_option@option@title/--></dd>
+                                                        <dd class="prdprice"><strong><!--/hybrid_option@option@opt_price/--></strong></dd>
+                                                        <dd class="prdnote"><!--/hybrid_option@option@note/--></dd>
+                                                    </dl>
+                                                </li> 
+                                                <!--/if_step(5)/-->
+                                            </ul>
+                                            <ul class="list">
+                                            <!--/else/-->
+                                                </li>
+                                            <!--/end_if/-->
+                                        <!--/end_loop/-->  
+                                        </ul>
+                                    </div>
+                                    <!--/end_loop/-->  
+                                    <!--/end_if/-->
+                                    <!--/if_not_multi_option_box/-->
+                                    <li>
+                                        <span class="tit">수량 : </span>
+                                        <span class="txt">
+                                            <!--/input_quantity/-->
+                                            <a href="<!--/link_quantity_up/-->" class="btn-type-02 box-gradient-02 box-shadow-02"><span>+1</span></a>
+                                            <a href="<!--/link_quantity_down/-->" class="btn-type-02 box-gradient-02 box-shadow-02"><span>-1</span></a>
+                                        </span>
+                                    </li>
+                                    <!--/end_if/-->
+                                    <!--/if_option/-->
+                                        <!--/loop_option/-->
+                                        <li>
+                                        <!--/if_option@oneclick_list/-->
+                                            <div class="shopdetailInfoOneclick">
+                                                 <span class="tit"><!--/option@title/--> : </span>
+                                                 <div class="shopdetailInfoList"><!--/option@oneclick_value/--><!--/option@oneclick_list/--></div>
+                                             </div>
+                                             <!--/else/-->
+                                             <span class="tit"><!--/option@title/--> : </span>
+                                             <span class="txt">
+                                             <!--/option@select/-->
+                                             </span>
+                                        <!--/end_if/-->
+                                        </li>
+                                        <!--/end_loop/-->
+                                    <!--/end_if/-->
+                                    <!--/if_not_hybrid_option/-->
+                                        <!--/if_link_option_select_complete/-->
+                                        <li style="text-align: right;">
+                                            <a href="<!--/link_option_select_complete/-->"><img src="/images/d3/modern_simple/btn/btn_h18_select_complete.gif" title="옵션 선택 완료" alt="옵션 선택 완료" /></a>
+                                        </li>
+                                        <!--/end_if/-->
+                                    <!--/else/-->
+                                        <li style="margin-top:15px;"></li>
+                                    <!--/end_if/-->
+                                    <!--/loop_option_add/-->
+                                    <li>
+                                        <span class="tit"><!--/option_add@title/--> : </span>
+                                        <span class="txt">
+                                        <!--/option_add@select/-->
+                                        <!--/if_not_multi_option_box/-->
+                                            <!--/option_add@input_quantity/-->
+                                            <a href="<!--/option_add@link_quantity_up/-->" class="btn-type-02 box-gradient-02 box-shadow-02"><span>+1</span></a>
+                                            <a href="<!--/option_add@link_quantity_down/-->" class="btn-type-02 box-gradient-02 box-shadow-02"><span>-1</span></a>
+                                        <!--/end_if/-->
+                                        </span>
+                                    </li>
+                                    <!--/end_loop/-->
+                                    <li>
+                                        <div class="opt-wrap">
+                                            <!--/if_hybrid_option_list/-->
+                                            <div class="opt-scroll">
+                                                <!--/hybrid_option_list/-->
+                                            </div>
+                                            <!--/end_if/-->
+                                            <!--/if_multi_option_box/-->
+                                            <div class="opt-scroll">
+                                                <!--/multi_option_box/-->
+                                                <!--/multi_option_add_box/-->
+                                            </div>
+                                            <!--/end_if/-->
+                                            <div class="opt-total">
+                                                <div id="MK_innerOptPrice">
+                                                    상품금액 <span id="MK_txt-prd"></span> 원 + 기본옵션 <span id="MK_txt-opt"></span> 원
+                                                </div>
+                                                <div id="MK_innerOptAdd">
+                                                    + 추가옵션 <span id="MK_txt-add"></span> 원
+                                                </div>
+                                                <span class="opt-p-tit">총 상품 금액</span>
+                                                <strong class="opt-p-total"><!--/multi_option_total_price/--></strong>
+                                                <span class="opt-p-won">원</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="hc_btn_wrap">
+            <a href="<!--/link_save/-->" class="hc_btn_long_fill">저장</a>
+        </div>
+        <!--/end_form/-->
+    </div><!-- .opt-ctrl-wrap -->
+</div>

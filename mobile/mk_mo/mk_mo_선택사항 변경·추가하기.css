@@ -1,0 +1,228 @@
+#layer-opt-ctrl { width: 100%; min-height: 100%; background-color: #fff; text-align:left; font-size:1.2em; }
+#layer-opt-ctrl .btn-close { 
+    display: block; 
+    width: 40px; 
+    height: 40px; 
+    position: absolute; 
+    right: 0; 
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" color="white"><path d="M10.6667 31.6667L8.33337 29.3333L17.6667 20L8.33337 10.6667L10.6667 8.33334L20 17.6667L29.3334 8.33334L31.6667 10.6667L22.3334 20L31.6667 29.3333L29.3334 31.6667L20 22.3333L10.6667 31.6667Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-size: 24px; 
+    text-indent: -9999px; 
+    font-size: 0; 
+}
+/* 타이틀 */
+#layer-opt-ctrl h3 { 
+    min-height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: var(--hc_bright_color);
+    background-color: var(--hc_dark_color);
+    font-size: var(--hc_bd_xlarge);
+    font-weight: var(--hc_regular);
+}
+/* 상품 썸네일 */
+#layer-opt-ctrl .opt-ctrl-wrap { padding-bottom:14px; border-bottom:1px solid #e3e3e3; }
+#layer-opt-ctrl .opt-ctrl-wrap .lcont { 
+    margin:25px 10px 0; 
+    box-sizing: border-box;
+}
+#layer-opt-ctrl .opt-ctrl-wrap dl .pname .prd-w {
+    zoom:1; 
+    overflow:hidden; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+}
+#layer-opt-ctrl .opt-ctrl-wrap dl .pname .prd-w .pinfo { 
+    font-size: var(--hc_bd_medium);
+}
+#layer-opt-ctrl .opt-ctrl-wrap dl .pname .prd-w .pinfo .prd_name { 
+    width: 100%; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+}
+#layer-opt-ctrl .opt-ctrl-wrap dl .pname .prd-w .pinfo .price { color: #ed0000; font-weight: bold; }
+/* 옵션 박스 */
+#layer-opt-ctrl .opt-ctrl-wrap dl .price-info ul { width: 100%;margin-top:10px; }
+#layer-opt-ctrl .opt-ctrl-wrap dl .price-info ul li { margin: 0 0 5px 0; line-height: 1.5em; list-style:none; }
+#layer-opt-ctrl .opt-ctrl-wrap dl .price-info ul li .tit { display:inline-block; width:20%; font-weight:bold; color:#777; }
+#layer-opt-ctrl .opt-ctrl-wrap dl .price-info ul li .txt { display:inline-block; width:78%; }
+#layer-opt-ctrl .opt-ctrl-wrap dl .price-info ul li .txt select { max-width:100%; }
+#layer-opt-ctrl .opt-ctrl-wrap dl .price-info ul li .txt input.txt-input,
+#layer-opt-ctrl .opt-ctrl-wrap dl .price-info ul li .txt input.input_quantity  { width: 30px; padding: 2px; text-align:right; }
+/* 옵션 결과 리스트 */
+#layer-opt-ctrl .opt-wrap { margin-top: 10px; }
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li { 
+    *zoom: 1; 
+    position: relative; 
+}
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_qty-ctrl,
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_price,
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_btn-del { 
+    position: relative; 
+}
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_p-name,
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_qty-ctrl,
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_price,
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_btn-del { display: block; }
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_btn-del img { 
+    width: 24px; 
+    display: none;
+}
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_btn-del:after {
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top:-23px;
+    right: 0;
+    background-image: url('http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_close.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-size: 24px;
+    text-indent: -9999px;
+    font-size: 0;
+}
+/* 타입 */
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_p-name {
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+}
+#layer-opt-ctrl .opt-wrap .MK_inner-opt-cm li .MK_qty-ctrl input { 
+    padding: 0 4px;
+    width: 40px;
+    height: 24px;
+    line-height: 24px;
+}
+/* 총합계 */
+#layer-opt-ctrl .opt-wrap .opt-total { 
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    background: var(--hc_color_level2);
+    color: var(--hc_color_point);
+}
+#layer-opt-ctrl .opt-wrap .opt-total .opt-p-total strong { 
+    font-weight: var(--hc_regular);
+}
+/* 저장버튼 */
+#layer-opt-ctrl .btn { margin-top: 10px; }
+#layer-opt-ctrl .btn a { display: block; line-height: 35px; width: 90.3125%; margin: 0 auto; text-align: center; }
+.box-gradient-02 {
+    background-color: #898686;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#898686), to(#595858));
+    background-image: -webkit-linear-gradient(top, #898686, #595858);
+    background-image: -moz-linear-gradient(top, #898686, #595858);
+    background-image: -o-linear-gradient(top, #898686, #595858);
+    background-image: linear-gradient(to bottom, #898686, #595858);
+	color:#fff;
+}
+.box-shadow-02 {
+    -webkit-box-shadow: 1px 1px 0 0 #ededed;
+    box-shadow: 1px 1px 0 0 #ededed;
+	color:#fff;
+}
+.btn-type-02 {
+    display: inline-block;  
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background: var(--hc_dark_color);
+}
+/* 하이브리드 */
+#layer-opt-ctrl .price-info .option-box:not(:last-child)  { width:100%; border-bottom:1px solid #cecece; }
+#layer-opt-ctrl .price-info .option-box.last { border-bottom:none; }
+#layer-opt-ctrl .price-info .option-box .tit { width:100%; padding:10px 0; color:#3b3b3b; }
+#layer-opt-ctrl .price-info .option-box .list:after { clear: both; content: ""; display: block; }
+#layer-opt-ctrl .price-info .option-box .list { width:100%; font-size:0.875em; }
+#layer-opt-ctrl .price-info .option-box .list li { float:left; width:20%; list-style:none; }
+#layer-opt-ctrl .price-info .option-box .list li.last { }
+#layer-opt-ctrl .price-info .option-box .list li dl { width:54px; padding-bottom:10px; text-align:center; color:#333; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdchk { text-align:left; padding-bottom:5px; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdchk input { width:12px; height:12px; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdimg { position:relative; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdimg img { width:54px; height:54px; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdimg.noimg { width:52px; height:52px; border:1px solid #d8d8d8; background:#fff url(/makeshop/newmanager/neoimages/h52_noimg.gif) no-repeat center center; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdimg .soldout { position:absolute; top:0; left:0; display:inline-block; width:54px; height:54px; line-height:56px; color:#fff; text-align:center; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdimg .soldout-bg { position:absolute; top:50%; left:0; display:inline-block; width:54px; height:20px; margin-top:-10px; background:#000; filter:alpha(opacity:40); opacity:0.4; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdimg .sel-img { position:absolute; top:0; left:0; display:inline-block; width:54px; height:54px; background:#000; filter:alpha(opacity:40); opacity:0.4; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdname { padding-top:5px; line-height:14px; word-wrap:break-word; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdnote { padding-bottom:3px; line-height:14px; word-wrap:break-word; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdprice { padding-bottom:3px; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdqty { }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdqty input { display:inline-block; width:20px; height:15px; line-height:17px; padding:0 5px; border:1px solid #707070; font-size:11px; text-align:right; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdqty .btn-up-down { display:inline-block; width:11px; height:14px; line-height:0; font-size:0; vertical-align:top; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdqty .btn-up-down a { display:inline-block; width:11px; height:9px; line-height:0; font-size:0; vertical-align:top; }
+#layer-opt-ctrl .price-info .option-box .list li dl dd.prdqty .btn-up-down .btn-up { margin-bottom:1px; }
+#layer-opt-ctrl .price-info .add-option-sel { font-weight: bold; font-size: 1.1em; padding: 10px 0; border-top:1px solid #cecece; }
+#layer-opt-ctrl .price-info .shopdetailInfoName { width: 28%; padding-right: 5px; display:inline-block; }
+#layer-opt-ctrl .price-info .shopdetailInfoCont {width:70%; display:inline-block; margin-left: -4px;}
+#layer-opt-ctrl .price-info .shopdetailInfoCont select {width:100%;}
+#layer-opt-ctrl .price-info .shopdetailInfoCount .txt-qnty {text-align:right; padding:0 6px; width: 50px !important;}
+#layer-opt-ctrl .price-info .shopdetailInfoCount .fa-plus {background-color: #bbb; width: 35px; height: 35px; text-align: center; vertical-align: middle; line-height: 35px; color: #fff; margin: 0 5px;}
+#layer-opt-ctrl .price-info .shopdetailInfoCount .fa-minus {background-color: #bbb; width: 35px; height: 35px; text-align: center; vertical-align: middle; line-height: 35px; color: #fff;}
+
+#MK_innerOptPrice { display:none; padding: 12px 0px 10px; font-size: 12px; color: #333; text-align: right; }
+#MK_innerOptAdd {  display:none; font-size: 12px; color: #333; text-align: right; margin-bottom:10px; }
+#MK_innerOptTotal { padding: 10px 5px; font-size: 12px; color: #333; text-align: right; }
+#MK_innerOptTotal .MK_txt-total { }
+#MK_innerOptTotal .MK_txt-won { }
+#MK_innerOptTotal .MK_total { color: #ff0000; font-weight: bold; }
+
+/* 원클릭옵션 */
+.shopdetailInfoOneclick {clear:both;  overflow:hidden; zoom:1; }
+.shopdetailInfoOneclick > span { float:left; margin-right: 5px; }
+.shopdetailInfoOneclick .shopdetailInfoList {float:left; width: 70%; }
+.shopdetailInfoOneclick ul {  margin-top :0px !important; }
+#layer-opt-ctrl .MK-oneclick-list { overflow:hidden; zoom:1; }
+#layer-opt-ctrl .MK-oneclick-list:after { content: ""; display: block; clear: both; }
+#layer-opt-ctrl .MK-oneclick-list li { float:left; margin: 0 5px 5px 0 !important; }                                                                                
+#layer-opt-ctrl .MK-oneclick-list li a { border:1px solid #231f20; display: inline-block; border-radius: 1px; box-sizing:border-box; } 
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-sel a { border:2px solid #000000; }
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-dis a { filter:alpha(opacity=50); -moz-opacity:.5; opacity:.5; }
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-color.MK-oneclick-sel a {  padding:1px; filter:alpha(opacity=100); -moz-opacity:1; opacity:1; }
+#layer-opt-ctrl .MK-oneclick-list li a span { display: block; text-align: center; vertical-align: middle; line-height: 19px; }                         
+#layer-opt-ctrl .MK-oneclick-list li a img { width: 100%; height:100%;}
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-image a {height:50px;}
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-image a img {width: auto; height: 48px;;}
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-image.MK-oneclick-sel a img {height:46px; width: auto;}
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-color { width:50px; height: 50px; } 
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-color a { padding: 2px; }
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-color span { width: 44px; height: 44px; }
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-color .mk-oo-sel span { width: 27px; height: 27px; }
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-text  .MK-oneclick-list li.MK-oneclick-text {min-width:35px; max-width:100%; height: 50px; }
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-text a { padding: 2px; }
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-text.MK-oneclick-sel a {padding:1px;}
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-text span { min-width: 29px; line-height: 44px; }                                             
+#layer-opt-ctrl .MK-oneclick-list li.MK-oneclick-text .MS-oneclick-sel span { min-width: 30px; line-height: 27px; }
+#layer-opt-ctrl .MK-oneclick-value { padding: 5px 0; display:block; }
+#layer-opt-ctrl .MK-oneclick-only-text li.MK-oneclick-text { height: auto; }
+#layer-opt-ctrl .MK-oneclick-only-text li.MK-oneclick-text span { height: auto; line-height: 19px; }
+/*
+    혜윰 커스텀
+*/
+.hc_btn_wrap {
+    margin: 30px 10px 0;
+    text-align: center;
+}
+.hc_btn_long_fill {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+    color:var(--hc_bright_color);
+    background: var(--hc_dark_color);
+}
+select {
+    border: 0;
+    padding: 0;
+    height: 24px;
+    vertical-align: baseline;
+}

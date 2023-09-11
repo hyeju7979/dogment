@@ -58,24 +58,18 @@ figcaption p {
     right: 0;
     width: 14px;
     height: 14px;
-    line-height: 16px;
     text-align: center;
     border: 1px solid var(--hc_dark_color);
-    /*color: var(--hc_bright_color);
-    background: var(--hc_dark_color);*/
 }
 .hc_quantity_down,
 .hc_quantity_up {
-    position: relative;
+    position: absolute;
     top: 4px;
+    right:0;
     display: inline-block;
-    width: 14px;
-    height: 14px;
-    line-height: 16px;
-    text-align: center;
-    font-size: var(--hc_bd_xxlarge);
-    font-weight: var(--hc_light);
-    border: 1px solid var(--hc_dark_color);
-    /*color: var(--hc_bright_color);
-    background: var(--hc_dark_color);*/
+    width: 20px;
+    height: 20px;
+}
+.hc_quantity_up {
+    right: 24px;
 }
