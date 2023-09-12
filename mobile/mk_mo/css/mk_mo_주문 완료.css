@@ -1,0 +1,81 @@
+#order-complete {
+    margin: 0 10px;
+}
+#order-complete .complete-msg {text-align:center; padding:30px 10px;}
+
+.pay_info span,
+#order-complete .complete-msg span {
+    color: var(--hc_dark_color) !important;
+    font-weight: var(--hc_regular) !important;
+}
+#order-complete .complete-price {
+    padding:30px 0;
+    color: var(--hc_color_point);
+    text-align: center;
+    border-top: 3px solid var(--hc_dark_color);
+}
+#order-complete .complete-price .color_f1191f  {font-weight:bold;}
+#order-complete table {width:100%;}
+#order-complete table thead {
+    text-align:left; 
+    background-color: var(--hc_color_level3);
+}
+#order-complete table thead th {
+    padding-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: var(--hc_regular);
+}
+#order-complete table thead th .btn_White {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    background: url(http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_arr.svg) 100% 50% no-repeat;
+    border: 0;    
+}
+#order-complete table tbody th {
+    padding: 10px 0;
+    min-height: 40px;
+    text-align: left;
+    font-weight: var(--hc_regular);
+    font-size: var(--hc_bd_medium);
+    vertical-align: middle;
+}
+#order-complete table tbody tr {
+    border-bottom: 1px solid var(--hc_color_level2);
+}
+#order-complete table tbody td {
+    padding:10px 0;
+ }
+#order-complete .pay_info, #order-complete .product_info, #order-complete .delivery_info {margin-bottom:10px;}
+#order-complete .product_info tbody, #order-complete .delivery_info tbody {display:none;}
+#order-complete .product_info .title .fa-angle-right {margin-left:10px;}
+#order-complete .product_info .title .num {float:right;}
+#order-complete .product_info .box-round {padding: 2px; background-color: #fff; color: #1FA950; font-size: 0.875em; border-radius: 3px; border: 1px solid #1FA950;}
+#order-complete .product_info .red-delivery {padding: 2px; background-color: #fff; color: #FB9C15; font-size: 0.875em; border-radius: 3px; border: 1px solid #FFA82C;}
+#order-complete .product_info .blue-delivery {padding: 2px; background-color: #fff; color: #3D9EFF; font-size: 0.875em; border-radius: 3px; border: 1px solid #58ACFF;}
+#order-complete .product_info .gray-delivery {padding: 2px;background-color: #fff;color: #656565;font-size: 0.875em;border-radius: 3px;border: 1px solid #656565;margin-left: 4px;}
+#gift-select .layer .desc {text-align: center;  border-bottom: 1px solid #bebebe; padding:10px 0;}
+#gift-select .layer .desc .basic_price_style {width:40px; color: #f1191f !important; border: 0px none; text-align: center; padding:0;}
+#gift-select .layer li {padding:20px 0;}
+#gift-select .layer figure {width:100%; display: table; box-sizing: border-box;}
+#gift-select .layer .basketLeft {width:130px; position:relative; float: left;}
+#gift-select .layer .basketLeft a {padding:0 20px; display:block;}
+#gift-select .layer .basketLeft .MS_input_checkbox {top:0; left:0; position:absolute;}
+#gift-select .layer .basketRight {padding-left:140px;}
+#gift-select .layer .basketRight p {color:#707070; margin-bottom:5px;}
+#gift-select .layer .basketRight .pname {padding-bottom: 4px;}
+#gift-select .layer .basketRight .pname .blue-delivery {background-color: #74a9e4; color:#fff; font-size:0.917em; padding: 1px 2px;}
+#gift-select .layer .basketRight .pname .red-delivery {background-color: #d674e4; color:#fff; font-size:0.917em; padding: 1px 2px;}
+#gift-select .layer .basketRight .pname .fa {float:right; margin-top: -6px;}
+#gift-select .layer .basketRight .fa-plus {background-color: #bbb; width: 30px; height: 30px; text-align: center; vertical-align: middle; line-height: 30px; color: #fff;}
+#gift-select .layer .basketRight .fa-minus {background-color: #bbb; width: 30px; height: 30px; text-align: center; vertical-align: middle; line-height: 30px; color: #fff;}
+#gift-select .layer .basketRight .btn_Black {height:28px; line-height:28px; margin-top:5px;}
+#gift-select .layer .basketRight select {width:100%;}
+#gift-select .layer .basketRight .amount-input {width:30px; text-align : right;}
+#gift-select .layer .basketRight .btn_Grey {background-color: #efefef; color:#000; border: 1px solid #efefef;}
+.btn-gift-select { margin: 10px 0; }
+
+/* 하이브리드 옵션이미지 */
+.basket-option-dlist dd img { width:30px; height:30px; vertical-align:middle; }

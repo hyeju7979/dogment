@@ -221,7 +221,16 @@
                         <tbody>
                             <!--/if_login/-->
                             <tr class="order-info-simple">
-                                <td colspan="2"><!--/simple_user_name/--> / <!--/simple_user_tel/--> / <!--/simple_user_email/--> <a href="#" class="btn_White">변경</a></td>
+                                <th>주문자명</th>
+                                <td><!--/simple_user_name/--><a href="#" class="btn_White">변경</a></td>
+                            </tr>
+                            <tr class="order-info-simple">
+                                <th>전화번호</th>
+                                <td><!--/simple_user_tel/--></td>
+                            </tr>
+                            <tr class="order-info-simple">
+                                <th>이메일</th>
+                                <td><!--/simple_user_email/--></td>
                             </tr>
                             <!--/end_if/-->
                             <tr class="order-info-detail">
@@ -438,7 +447,7 @@
                                 </td>
                             </tr>
                             <!--/end_if/-->
-                            <tr style="border-top: 1px solid #454545">
+                            <tr>
                                 <th>주문메세지</th>
                                 <td><!--/text_user_message(txt-area1)/--></td>
                             </tr>
@@ -557,8 +566,11 @@
                             <tr>
                                 <th>적립금사용</th>
                                 <td>    
-                                    <!--/input_user_reserve(txt-input input02 txt-pay)/-->원 
-                                    <div><label><!--/check_all_reserve/--> 전액사용</label>(사용가능 : <!--/input_possible_reserve(txt-input input02 txt-pay)/--> 원)</div>
+                                    <div class="hc_column2_reserve"><!--/input_user_reserve(txt-input input02 txt-pay)/-->원</div>
+                                    <p>
+                                        <label><!--/check_all_reserve/--> 전액사용</label>
+                                        (사용가능 : <!--/input_possible_reserve(txt-input input02 txt-pay)/--> 원)
+                                    </p>
                                 </td>
                             </tr>
                             <!--/end_if/-->
@@ -582,9 +594,10 @@
                                     <div class="paym-input">
                                     <ul>
                                         <!--/if_radio_mem_person/-->
-                                           <li><label><!--/radio_mem_person/--> 일반회원</label>
-                                               <label><!--/radio_mem_company/--> 기업회원</label>
-                                            </li>
+                                        <li>
+                                            <label><!--/radio_mem_person/--> 일반회원</label>
+                                            <label><!--/radio_mem_company/--> 기업회원</label>
+                                        </li>
                                         <!--/end_if/-->
 
                                         <li><!--/input_user_id/--></li>
@@ -1128,9 +1141,9 @@
             </div>
             <!--/end_if/-->
 
-            <div class="pd10 btn_next">
-                <a href="<!--/link_payment/-->" class="btn_Red all-ok"><span>결제하기</span></a>
-                <a href="<!--/link_back/-->" class="btn_White"><span>이전</span></a>
+            <div class="hc_btn_wrap">
+                <a href="<!--/link_payment/-->" class="hc_btn_long_fill">결제하기</a>
+                <a href="<!--/link_back/-->" class="hc_btn_long">이전</a>
             </div>
         <!--/end_form/-->
             
@@ -1147,7 +1160,7 @@
                                 <div class="coupon">
                                     <table>
                                         <colgroup>
-                                            <col width="110" />
+                                            <col width="120" />
                                             <col width="*" />
                                         </colgroup>
                                         <thead>
@@ -1212,7 +1225,7 @@
                             <a href="<!--/link_coupon_close/-->" class="btn_White"><span>닫기</span></a>
                         </div>
                         <!-- //txt -->
-                        <a href="<!--/link_coupon_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                        <a href="<!--/link_coupon_close/-->" class="close"></a>
                     </div>
                     <!-- //layer-pop -->
                 </div>
@@ -1434,7 +1447,7 @@
                         <!-- //detail-addr -->
                         <!--/end_block/-->
                     </div>
-                    <a href="<!--/link_addr_close/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                    <a href="<!--/link_addr_close/-->" class="close"></a>
                 </div>
             </div>
             <!--/end_block/-->
@@ -1679,8 +1692,8 @@
             <!--/end_block/-->
                 <div class="btns">
                     <!--/if_block_contact_myplace/--><!--/block_contact_myplace/-->주소록 관리<!--/end_block/--><!--/end_if/-->
-                    <!--/block_contact_addplace/-->+ 배송지 추가<!--/end_block/-->
                     <!--/block_contact_multi_del_past/-->선택 삭제<!--/end_block/-->
+                    <!--/block_contact_addplace/-->+ 배송지 추가<!--/end_block/-->
                     <!--/block_contact_close_black/-->닫기<!--/end_block/-->
                 </div>
             <!--/block_contact_close/-->닫기<!--/end_block/-->
@@ -1793,7 +1806,7 @@
 					</p>
 					<div id="MS_addr_type_load" class="" style="display: none;"></div>      
 					<div class="msg-wrap">
-						<p class="msg01 bold"><span class="msg01-highlight">도로명(건물명)</span>을 2글자 이상 입력하세요.</p>
+						<p class="msg01"><span class="msg01-highlight">도로명(건물명)</span>을 2글자 이상 입력하세요.</p>
 						<p class="msg02">예)강남대로100길, 가산디지털1로</p>
 						<p class="msg03">국내 주소만 입력이 가능합니다.</p>
 					</div>

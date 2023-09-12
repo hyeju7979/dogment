@@ -1,17 +1,11 @@
-.hc_member_wrap section {
-    margin-bottom: 60px;
+.layer .layer-pop {
+    padding: 10px;
 }
-.hc_login_check {
-    text-align: left;
-}
-.hc_login_check label {
-    margin-right: 16px;
-    vertical-align: middle;
-}
-.hc_sns_login li {
-    list-style: inside;
-    list-style-type: circle;
-    text-align: left;
+.layer .layer-pop h3 {
+    height: 40px;
+    line-height: 40px;
+    font-size: var(--hc_bd_large);
+    font-weight: var(--hc_regular);
 }
 .layer .layer-pop .close {
     display: block; 
@@ -24,12 +18,7 @@
     background-position: center center;
     background-size: 24px; 
 }
-.layer .layer-pop h3 {
-    height: 40px;
-    line-height: 40px;
-    font-size: var(--hc_bd_large);
-    font-weight: var(--hc_regular);
-}
-.layer .layer-pop {
-    padding: 10px;
+.layer .layer-pop .txt {
+    padding: 0 10px;
+    box-sizing: border-box;
 }

@@ -8,7 +8,6 @@
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" color="white"><path d="M10.6667 31.6667L8.33337 29.3333L17.6667 20L8.33337 10.6667L10.6667 8.33334L20 17.6667L29.3334 8.33334L31.6667 10.6667L22.3334 20L31.6667 29.3333L29.3334 31.6667L20 22.3333L10.6667 31.6667Z" fill="white"/></svg>');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
     background-size: 24px; 
     text-indent: -9999px; 
     font-size: 0; 
@@ -20,7 +19,7 @@
     padding-left: 10px;
     color: var(--hc_bright_color);
     background-color: var(--hc_dark_color);
-    font-size: var(--hc_bd_xlarge);
+    font-size: var(--hc_bd_large);
     font-weight: var(--hc_regular);
 }
 /* 상품 썸네일 */
@@ -45,7 +44,10 @@
     white-space: nowrap; 
     text-overflow: ellipsis; 
 }
-#layer-opt-ctrl .opt-ctrl-wrap dl .pname .prd-w .pinfo .price { color: #ed0000; font-weight: bold; }
+#layer-opt-ctrl .opt-ctrl-wrap dl .pname .prd-w .pinfo .price { 
+    color: var(--hc_color_point);
+    font-weight: var(--hc_mediums);
+}
 /* 옵션 박스 */
 #layer-opt-ctrl .opt-ctrl-wrap dl .price-info ul { width: 100%;margin-top:10px; }
 #layer-opt-ctrl .opt-ctrl-wrap dl .price-info ul li { margin: 0 0 5px 0; line-height: 1.5em; list-style:none; }
@@ -79,13 +81,13 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    top:-23px;
+    top:-24px;
     right: 0;
     background-image: url('http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_close.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    background-size: 24px;
+    background-size: 20px;
     text-indent: -9999px;
     font-size: 0;
 }
@@ -103,6 +105,7 @@
 }
 /* 총합계 */
 #layer-opt-ctrl .opt-wrap .opt-total { 
+    padding-right: 10px;
     height: 40px;
     line-height: 40px;
     text-align: right;
@@ -218,6 +221,7 @@
     padding: 10px;
     text-align: center;
     color:var(--hc_bright_color);
+    font-size: var(--hc_bd_medium);
     background: var(--hc_dark_color);
 }
 select {

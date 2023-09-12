@@ -1,0 +1,266 @@
+<!--/include_header(1)/-->
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container">
+        <main class="hc_contents" id="order-complete">
+            <!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">주문완료</h2>
+
+            <div class="complete-msg hc_clarification">
+            <!--/admin_message/-->
+
+            <!--/if_re_basket_fail_message/-->
+                실패된 주문건은 마이페이지 > 주문내역에서 장바구니 다시담기로 재주문하실 수 있습니다.
+            <!--/end_if/-->
+            </div>
+
+            <div class="complete-price">결제금액 <!--/number/pay_price/-->원</div>
+
+            <!-- 결제정보 -->
+            <div class="pay_info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>결제정보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><!--/total_price/--><!--/if_total_reserve(+1)/--> (적립금 : <!--/number/total_reserve/-->원)<!--/end_if/--><!--/if_total_point(+1)/--> (포인트 : <!--/total_point/--><!--/point_unit/-->)<!--/end_if/--></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>결제방법 : <!--/pay_method/--></p>
+                                <!--/if_bank_name/-->
+                                <p>입금자명 : <span class="bank_name"><!--/bank_name/--></span></p>
+                                <!--/end_if/-->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //결제정보 -->
+            
+            <!-- 주문 상품 정보 -->
+            <div class="product_info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>주문 상품 정보 <a href="#none" class="btn_White"></a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--/loop_order_product/-->
+                        <!--/if_order_product@product_id/-->
+                        <tr>
+                            <td>
+                                <div class="title">
+                                    <!--/if_order_product@link/--><a href="<!--/order_product@link/-->" ><!--/end_if/--><!--/notag/order_product@name(100)/--> <!--/if_order_product@link/--></a><!--/end_if/-->
+                                    <span class="num">수량 : <!--/number/order_product@amount/-->개</span>
+                                </div>
+                                <!--/if_order_product@option/-->
+                                <div class="option">
+                                    <!--/order_product@option/-->
+                                </div>
+                                <!--/end_if/-->
+                                <!--/if_order_product@provider_icon/-->
+                                <div class="provider_icon">
+                                    <!--/order_product@provider_icon/-->
+                                </div>
+                                <!--/end_if/-->
+                            </td>
+                        </tr>
+                        <!--/end_if/-->
+                        <!--/end_loop/-->
+                    </tbody>
+                </table>
+            </div>
+            <!-- //주문 상품 정보 -->
+            
+            <!--/if_is_present/-->
+            <!-- 선물하기 start -->
+            <div class="delivery_info">
+                <table>
+                    <colgroup>
+                        <col width="30%" />
+                        <col width="*" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="2">받는 분 정보 <a href="#none" class="btn_White"><span class="fa fa-chevron-down"></span></a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>이 름</th>
+                            <td><!--/receiver/--></td>
+                        </tr>
+                        <tr>
+                            <th>연락처</th>
+                            <td><!--/receiver_mobile/--></td>
+                        </tr>
+                        <tr>
+                            <th>메시지</th>
+                            <td>
+                                <!--/present_message/-->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>  
+            <!-- //선물하기 end -->
+            <!--/end_if/-->
+            
+            <!--/if_not_is_present/-->
+            <!-- 배송정보 -->
+            <div class="delivery_info">
+                <table>
+                    <colgroup>
+                        <col width="30%" />
+                        <col width="*" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="2">배송 정보 <a href="#none" class="btn_White"></a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>보내는사람</th>
+                            <td><!--/sender/--></td>
+                        </tr>
+                        <tr>
+                            <th>받는사람</th>
+                            <td><!--/receiver/--></td>
+                        </tr>
+                        <tr>
+                            <th>연락처1</th>
+                            <td><!--/receiver_mobile/--></td>
+                        </tr>
+                        <tr>
+                            <th>연락처2</th>
+                            <td><!--/receiver_tel/--></td>
+                        </tr>
+                        <tr>
+                            <th>배송주소</th>
+                            <td><!--/receiver_addr/--></td>
+                        </tr>
+                        <tr>
+                            <th>요청사항</th>
+                            <td>
+                                <!--/if_order_message/-->
+                                <!--/order_message/-->
+                                <!--/else/-->
+                                없음
+                                <!--/end_if/-->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //배송정보 -->
+            <!--/end_if/-->
+            
+            <div class="hc_btn_wrap">
+                <a href="<!--/link_complete/-->" class="hc_btn_long_fill">주문내역 확인</a>
+                <!--/if_link_gift/--><a href="<!--/link_gift/-->" class="hc_btn_long"><span>사은품선택</span></a><!--/end_if/-->
+            </div>
+
+            <!-- 사은품 -->
+            <!--/if_gift/-->
+                <!--/block_choice_gift/-->
+                    <div class="layer">
+                        <div class="layer-pop">
+                            <h3>사은품 선택</h3>
+                            <!--/if_multiple/-->
+                            <div class="desc">
+                                <!--/if_gift_multi_point/-->
+                                <!-- 다중-포인트 -->
+                                [선택가능한 사은품포인트는 <!--/user_point(basic_price_style)/-->점 입니다.]
+                                <!--/end_if/-->
+                                <!--/if_gift_multi_qty/-->
+                                <!-- 다중-개수 -->
+                                <div class="gift-count">
+                                    [선택 가능한 사은품은 <em class="color_f1191f"> <!--/user_qty(basic_price_style)/-->개</em> 입니다.]
+                                </div>
+                                <!--/end_if/-->
+                            </div>
+                            <!--/end_if/-->
+                            <div class="txt">
+                                <!-- 다중 사은품 -->
+                                <!--/if_multiple/-->
+                                <ul data-type="vertical" data-open="on" data-checkbok="on">
+                                <!--/loop_gift/-->
+                                    <li>
+                                        <!--/gift@form/-->
+                                        <figure>
+                                            <div class="basketLeft">
+                                                <img src="<!--/gift@image/-->" alt="상품명" class="response100" />
+                                            </div>
+                                            <figcaption class="basketRight">
+                                                <p class="pname"><!--/gift@checkbox_choice/--> <!--/gift@name/--></p>
+                                                <!--/if_gift@price_end/-->
+                                                <p><!--/number/gift@price_start/-->원이상 <!--/number/gift@price_end/-->원이하 구매시</p>
+                                                <!--/end_if/-->
+                                                <p>수량 <!--/gift@select_count/--></p>
+                                                <!--/loop_gift@option/-->
+                                                <!--/if_gift@option@title/-->
+                                                <p><!--/gift@option@title/--> <!--/gift@option@select/--></p>
+                                                <!--/end_if/-->
+                                                <!--/end_loop/-->
+                                            </figcaption>
+                                        </figure>
+                                        <!--/end_form/-->
+                                    </li>
+                                    <!--/end_loop/-->
+                                </ul>
+                                <div class="btn-wrap">
+                                    <a href="<!--/link_choice/-->" class="btn_Black" style="margin-bottom:10px;"><span>선택</span></a>
+                                    <a href="<!--/link_close_gift/-->" class="btn_White"><span>닫기</span></a>
+                                </div>
+                                <!-- //다중 사은품 -->
+                                <!--/else/-->
+                                <!-- 단일 사은품 -->
+                                <ul data-type="vertical" data-open="on" data-checkbok="on">
+                                <!--/loop_gift/-->
+                                    <li>
+                                        <!--/gift@form/-->
+                                        <figure>
+                                            <div class="basketLeft">
+                                                <img src="<!--/gift@image/-->" alt="상품명" class="response100" />
+                                            </div>
+                                            <figcaption class="basketRight">
+                                                <p class="pname"><!--/gift@name/--></p>
+                                                <!--/if_gift@price_end/-->
+                                                <p><!--/number/gift@price_start/-->원이상 <!--/number/gift@price_end/-->원이하 구매시</p>
+                                                <!--/end_if/-->
+                                                <!--/loop_gift@option/-->
+                                                <!--/if_gift@option@title/-->
+                                                <p><!--/gift@option@title/--> <!--/gift@option@select/--></p>
+                                                <!--/end_if/-->
+                                                <!--/end_loop/-->
+                                                <a href="<!--/gift@link_choice/-->" class="btn_Grey"><span>선택</span></a>
+                                            </figcaption>
+                                        </figure>
+                                        <!--/end_form/-->
+                                    </li>
+                                    <!--/end_loop/-->
+                                </ul>
+                                <div class="btn-wrap">
+                                    <a href="<!--/link_close_gift/-->" class="btn_Black"><span>닫기</span></a>
+                                </div>
+                                <!-- //단일 사은품 -->
+                                <!--/end_if/-->
+                            </div>
+                            <a href="<!--/link_close_gift/-->" class="close"><span class="fa fa-times fa-2x"></span></a>
+                        </div>
+                    </div>
+                <!--/end_block/-->
+            <!--/end_if/-->
+            <!-- //사은품 -->
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->
