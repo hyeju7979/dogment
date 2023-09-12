@@ -1,0 +1,107 @@
+<!--/include_header(1)/-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container">
+        <main class="hc_contents">
+            <section class="shopdetailInfo">
+                <!-- 대표 이미지 -->
+                <div class="hc_detail_top">
+                    <img src="<!--/mobile_image/-->" alt="<!--/img_alt/-->"/>
+                </div>
+
+                <!-- 공유 -->
+                <div class="hc_detail_share">
+                    <img src="http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_heart.svg" alt="좋아요" /> 
+                    <!-- 위시리스트 카운트 -->
+                    <!--/block_wish_cnt/-->
+                        <!--/wish_cnt/-->
+                    <!--/end_block/-->
+                    /
+                    <!-- 상품 조회수 -->
+                    <!--/view_count/-->
+                </div>
+
+                <!-- 위치 -->
+                <nav class="hc_page_location">
+                    <ol class="clearFix">
+                        <!--/if_cate1_name/--><li><a href="<!--/link_cate1/-->"><!--/cate1_name/--></a></li><!--/end_if/-->
+                        <!--/if_cate2_name/--><li><a href="<!--/link_cate2/-->"><!--/cate2_name/--></a></li><!--/end_if/-->
+                        <!--/if_cate3_name/--><li><a href="<!--/link_cate3/-->"><!--/cate3_name/--></a></li><!--/end_if/-->
+                    </ol>
+                </nav>
+
+                <div>
+                    <h2><!-- 상품명 --><!--/notag/name/--></h2>
+                    <div class="hc_color_point"><!-- 추가 상품명 --><!--/subname/--></div>
+                </div>
+                
+                <!--/form_product/-->
+                <div class="shopdetailInfoBottom">
+                    <div class="shopdetailInfoValue">                                                
+                        <!--/if_price_consumer(+1)/-->
+                        <p>
+                            <span class="shopdetailInfoName">소비자가</span>
+                            <span class="shopdetailInfoCont">
+                                <del>
+                                    <!--/number/price_consumer/-->원
+                                </del>
+                            </span>
+                        </p>
+                        <!--/end_if/-->
+
+                        <!--/if_price_replace/-->
+                        <p class="shopdetailInfoDiscount bold">
+                            <!-- 판매가 -->
+                            <span class="shopdetailInfoCont">
+                                <em><!--/price_replace/--></em>
+                            </span>
+                        </p>
+                        <!--/else/-->
+                            <!--/if_dc_price_sell/-->
+                            <p class="shopdetailInfoDiscount bold">
+                                <!--/if_discount_apply_type(mobile)/-->
+                                    <!-- 모바일가 -->
+                                <!--/else/-->
+                                    <!-- 할인가 -->
+                                <!--/end_if/-->
+                                <span class="shopdetailInfoCont">
+                                    <!-- 할인율 --><span class="hc_discount_rate"><!--/dc_text/--></span>
+                                    <!-- 할인가 --><span class="hc_discount_price"><!--/number/dc_price_sell/-->원</span>
+                                    <!-- 정상가 --><span class="hc_regular_price"><!--/number/price_sell/-->원</span>
+                                </span>
+                            </p>
+                            <!--/else/-->
+                            <p class="shopdetailInfoDiscount bold">
+                                <span class="shopdetailInfoName">판매가a</span>
+                                <span class="shopdetailInfoCont">
+                                    <em>
+                                        <!--/number/price_sell/-->
+                                    </em>
+                                    <b class="won">원</b>
+                                </span>
+                            </p>
+                            <!--/end_if/-->
+                        
+                            <!-- 할인기간 -->
+                            <p class="SMS_detail_dcPeriod">
+                                <span class="shopdetailInfoName">할인기간</span>
+                                <span class="shopdetailInfoCont">
+                                    <span class="SMS_dcColor">남은기간 <!--/dc_period_daytime/-->(<!--/dc_text/-->할인)</span><br>
+                                    <!--/dc_start_date/--> - <!--/dc_end_date/-->
+                                </span>
+                            </p>
+                            <!-- //할인기간 -->
+                        <!--/end_if/-->
+                <!--/end_form/-->
+            </section>
+            
+
+            
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->
