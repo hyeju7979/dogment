@@ -1,0 +1,136 @@
+<!--/include_header(1)/-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+
+<!-- 중앙 영역 -->
+<div class="hc_entire">
+    <div class="hc_container">
+        <main class="hc_contents hc_page_detail">
+			<section>
+				<!-- 대표 이미지 -->
+				<div class="hc_detail_top">
+					<img src="<!--/mobile_image/-->" alt="<!--/img_alt/-->"/>
+				</div>
+
+				<!-- 공유 -->
+				<div class="hc_detail_share">
+					<img src="http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_heart.svg" alt="좋아요"  /><!--/block_wish_cnt/--><!--/wish_cnt/--><!--/end_block/-->
+				</div>
+
+				<!-- 위치 -->
+				<nav class="hc_page_location">
+					<ol class="clearFix">
+						<!--/if_cate1_name/--><li><a href="<!--/link_cate1/-->"><!--/cate1_name/--></a></li><!--/end_if/-->
+						<!--/if_cate2_name/--><li><a href="<!--/link_cate2/-->"><!--/cate2_name/--></a></li><!--/end_if/-->
+						<!--/if_cate3_name/--><li><a href="<!--/link_cate3/-->"><!--/cate3_name/--></a></li><!--/end_if/-->
+					</ol>
+				</nav>
+
+				<h3><!-- 상품명 --><!--/notag/name/--></h3>
+				<div class="hc_color_point"><!-- 추가 상품명 --><!--/subname/--></div>
+
+				<div class="shopdetailInfoValue">
+					<p>
+						<span class="shopdetailInfoName">상품가</span>
+						<span class="shopdetailInfoCont">
+							<!--/if_price_replace/-->
+								<!--/price_replace/-->
+							<!--/else/-->
+							<!--/if_dc_price_sell/-->
+								<del><!--/number/price_consumer/-->원</del>
+							<!--/else/-->
+								<em class="bold"><!--/number/price_sell/--></em>원
+							<!--/end_if/-->
+							<!--/end_if/-->
+						</span>
+					</p>
+
+					<!--/if_dc_price_sell/-->
+					<p class="shopdetailInfoDiscount bold">
+						<!--/if_discount_apply_type(mobile)/-->
+							<span class="shopdetailInfoName"><span class="fa fa-mobile fa-lg"></span> 모바일가</span>
+						<!--/else/-->
+							<span class="shopdetailInfoName">할인가</span>
+						<!--/end_if/-->
+							<span class="shopdetailInfoCont"><em><!--/block_dc_price_sell/--><!--/number/dc_price_sell/--><!--/end_block/--></em>원</span>
+					</p>
+					<!--/end_if/-->
+
+					<!--/if_link_subs/-->
+					<div class="delivery">
+						<span class="shopdetailInfoName">정기배송가</span>
+						<span class="shopdetailInfoCont btn-view"><em class="bold"><!--/number/subs_price/--></em>원
+						<!--/if_subs_discount_turn/-->
+						<a href="#none" class="btn-coupon "><span>%</span> 정기배송 할인 혜택 <em>▼</em></a></span>
+						<div class="view-wrap">
+							<div class="layer-view">
+								<h3 class="title">정기배송 할인 혜택</h3>
+								<div class="list">
+									<!--/loop_subs_discount_turn_info/-->
+									<dl>
+										<!--/if_subs_discount_turn_info@last_turn/-->
+										<dt><!--/subs_discount_turn_info@turn/-->회차 이상</dt>
+										<!--/else/-->
+										<dt><!--/subs_discount_turn_info@turn/-->회차</dt>
+										<!--/end_if/-->
+										<dd class="tb-center txt"><!--/subs_discount_turn_info@discount/-->% 할인</dd>
+										<dd><!--/number/subs_discount_turn_info@discount_price/-->원</dd>
+									</dl>
+									<!--/end_loop/-->
+								</div>
+								<p>* 할인 예상가이며, 결제시점의 판매가와 할인율에<br />
+									따라서 결제 가격은 변동될 수 있습니다.</p>
+								<a href="#none" class="btn-close" id="view_close"><img src="/images/common/btn_layer_pop_close.png" alt="" /></a>
+							</div>
+						</div>
+						<!--/end_if/-->
+					</div>
+					<!--/end_if/-->
+
+					<!--/if_link_benefit/-->
+					<p>
+						<span class="shopdetailInfoName">쿠폰할인</span>
+						<span class="shopdetailInfoCont listCoupon">
+							<em class="bold"><!--/if_coupon_discount_price(+1)/-->-<!--/end_if/--><!--/number/coupon_discount_price/--></em>원<a href="<!--/link_benefit/-->" class="btn-coupon"><span>%</span> 혜택확인 <em>▼</em></a>
+						</span>
+					</p>
+					<!--/else/-->
+						<!--/if_discount_promotion_title/-->
+						<div style="margin-bottom:8px;">
+							<span class="shopdetailInfoName">혜택</span>
+							<div class="shopdetailInfoCont">
+								<div class="buy-benefit">
+									<span class="tit-txt"><!--/discount_promotion_title/--></span>
+									<a href="#none" class="btn-view"><span>더보기</span> <em>▼</em></a>
+									<!-- 더보기 레이어 -->
+									<div class="view-wrap">
+										<div class="layer-view">
+											<p><!--/discount_promotion_title/--><br />동일상품 구매 시, <!--/if_discount_promotion_option_apply/-->옵션 포함<!--/else/-->옵션 제외<!--/end_if/--></p>  
+
+											<ul class="list">
+											<!--/loop_bulk_info/-->
+												<li>· <!--/bulk_info@min_stock/--> ~ <!--/bulk_info@max_stock/-->개 개당 
+													<span class="fc-red">
+													<!--/if_discount_promotion_discount_type(WON)/--><!--/number/bulk_info@price/-->원
+													<!--/else/--><!--/bulk_info@percent/-->%<!--/end_if/--> 할인
+													</span>
+												</li>
+											<!--/end_loop/-->
+											<li class="layer-info">* 할인적용금액은 장바구니에서<br>확인해주세요.</li>
+											</ul>
+										</div>
+										<a href="#none" class="btn-close" id="view_close"><img src="/images/common/btn_layer_close.gif" alt="" /></a>
+									</div>
+									<!-- // 더보기 레이어 --> 
+								</div>
+							</div>
+						</div>
+						<!--/end_if/-->
+					<!--/end_if/-->
+				</div>
+			</section>
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->
