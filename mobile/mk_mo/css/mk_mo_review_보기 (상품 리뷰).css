@@ -92,3 +92,14 @@
 .score-list table .sco-lst-txtr .sco-date { display: flex; justify-content: space-between; }
 .score-list table .sco-lst-txtr .sco-date span { color: #a9a9a9; }
 .score-list table .sco-lst-txtr .sco-txt { margin-top: 10px; }
+
+
+.subject {
+    padding: 20px 0;
+}
+.link-view {
+    margin-bottom: 20px;
+}
+.hc_board_date {
+    padding: 30px 0 10px;
+}

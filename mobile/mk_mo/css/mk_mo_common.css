@@ -250,9 +250,8 @@ body #comment_password .contents .form-wrap2 p:last-child a {display:block; back
     height: -webkit-fill-available;
 }
 #authimg {
-    margin: 80px auto 0;
+    margin: 10px auto 0;
     padding: 20px;
-    position: absolute;
     left: 0;
     right: 0;
     width: 95%;
@@ -306,6 +305,7 @@ body #comment_password .contents .form-wrap2 p:last-child a {display:block; back
     content: "x";
     font-size: var(--hc_bd_xlarge);
 }
+/*
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   font-family: 'Noto Sans KR', sans-serif !important;
 }
@@ -313,7 +313,7 @@ input, input[type=email], input[type=password], input[type=tel], input[type=text
   -webkit-appearance: auto !important;
   -moz-appearance: auto !important;
   appearance: auto !important;
-}
+}*/
 /*
 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
@@ -740,7 +740,7 @@ input[name=hamburger_item] {
     z-index: 999;
     padding: 20px;
     width: 100%;
-    height: calc(100vh - 40px);
+    height: 100vh;
     line-height: 2;
     background-color: var(--hc_bright_color);
     box-sizing: border-box;
@@ -1269,4 +1269,25 @@ input[name=hamburger_item] {
 .layer_smartmypage_sys h3,
 .hc_mypage_wrap .detail h4 {
   height: 40px;
+}
+
+/*상세페이지 more 버튼*/
+.hc_detail_more_btn {
+	margin: 40px auto;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	width: 380px;
+	border: 1px solid var(--hc_dark_color);
+	box-sizing: border-box;
+	transition: all 0.6s ease 0s;
+	cursor: pointer;
+}
+/* 디테일 이미지 그라데이션, 더보기 버튼*/
+.hcMoreBtn img {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.hcHiddenPart {
+    display : none;
 }

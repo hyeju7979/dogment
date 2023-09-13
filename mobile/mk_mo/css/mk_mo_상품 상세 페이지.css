@@ -1,19 +1,12 @@
-.shopdetail .shopdetailInfo {background-color:#f5f5f5; border-top:1px solid #c7c7c7;}
-.shopdetail .shopdetailInfo .prd-wish { background: #f5f5f5; padding: 10px 17px 10px 10px; text-align: right; }
-.shopdetail .shopdetailInfo .prd-wish p { display: inline-block; height: 22px; line-height: 20px; padding: 0 4px 0 5px; border: 1px solid #b9b9b9; border-radius: 3px; font-family: 'malgun gothic'; font-size: 13px; color: #000; background: #fff; }
-.shopdetail .shopdetailInfo .prd-wish p i.fa-heart { margin-right: 4px; color: #f41f3a; }
 .shopdetail .shopdetailInfo h2 {font-size:1.333em; font-weight:bold; text-align:center; padding-top:16px;}
-.shopdetail h3 {font-weight:bold; padding:10px 15px; margin-bottom:10px; background-color:#E6D9D9;}
-.shopdetail h3 .fa {float:right; font-size: 1.5em;}
-.shopdetail .shopdetailInfo .shopdetailInfoTop figure {padding:16px 15px; border-bottom:1px solid #c7c7c7;}
-.shopdetail .shopdetailInfo .shopdetailInfoTop figcaption {text-align:left; margin-top:16px;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom {background-color:#fff;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue {position: relative; border-bottom:1px solid #c7c7c7; padding:18px 15px;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue em {color:#f1191f; font-size:1.333em;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue p {margin-bottom:8px;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue p:last-child {margin-bottom:0px;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .shopdetailInfoName {width:30%; display:inline-block;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .shopdetailInfoCont {width:70%; display:inline-block; margin-left: -4px;}
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue {
+    position: relative;
+}
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .shopdetailInfoName {
+    margin-left: 10px;
+}
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .shopdetailInfoCont { }
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .region {margin-left: 10px;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .btn_relation {position:absolute; top:50%; right:10px; text-align:center; margin-top: -25px;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoValue .btn_relation a {width:50px; height:50px; color:#fff; background-color:#636363; display: inline-block; font-size:0.917em; border-radius: 4px; border:1px solid #424242;}
@@ -33,23 +26,53 @@
  to {bottom:0;}
 }
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .option_area.fixed .option_tk {height:150px; overflow-y:auto; background-color: #fff;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .fixed-btn {width:100%; box-sizing: border-box; position:relative; bottom:0; left:0; right:0; background-color:#f6f6f6; border-top:1px solid #dfdfdf; z-index: 101; text-align: center; padding:6px; margin:0 auto; display:none;}
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .fixed-btn {
+    width:100%; 
+    box-sizing: border-box; 
+    position:relative; 
+    bottom:0; 
+    left:0; 
+    right:0; 
+    background-color: var(--hc_bright_color);
+    z-index: 101; 
+    text-align: center; 
+    padding:6px; 
+    margin:0 auto; 
+    display:none;
+}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .fixed-btn.fixed {display: block; position: fixed;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .option_area.fixed .fixed-btn.fixed {display: block; position: relative;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .fixed-btn .btn_option {position: absolute; top: -16px; left: 50%; margin-left:-33px;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoMultiSelect {background-color: #fff; }
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on {background-color: #f6f6f6; text-align: center; padding: 10px 15px; display:none;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a {width:48%; color: #3b3b3b; background-color:#fff; border:1px solid #f1191f; display: inline-block; padding:6px 0; margin:2px 0; }
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a.buy {background-color:#f1191f; color:#fff;}
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on {
+    margin: 0 10px;
+    text-align: center; 
+}
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    line-height: 40px;
+    border: 1px solid var(--hc_dark_color);
+}
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a.buy {
+    color: var(--hc_bright_color);
+    background-color: var(--hc_dark_color);
+}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a.cart {  background-color:#FFF; border:1px solid #f1191f; color:#f1191f; }
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a.gift { display: inline-flex; align-items: center; justify-content: center; width: 97%; color: #262626; background: #fff; border: 1px solid #333; } /* 선물하기 */	
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a.gift .fa-gift { margin-top: -2px; margin-right: 3px; font-size: 16px; color: #777; } /* 선물하기*/
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .buy_on a.subs { width:97%; color:#fff; background-color:#393939; border:1px solid #393939; }
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect {}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect .opt-com {text-align: right;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect p {background-color:#f6f6f6; padding: 5px 15px;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect p:last-child {margin-bottom:0px;}
-.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect .shopdetailInfoName {width: 28%; padding-right: 5px; display:inline-block; padding-top: 3px; }
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect p {
+    padding: 20px;
+    border-bottom: 1px solid var(--hc_dark_color);
+}
+.shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect .shopdetailInfoName {
+    width: 26%; 
+    display:inline-block;
+}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect .shopdetailInfoCont {width:70%; display:inline-block; margin-left: -4px;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect .shopdetailInfoCont select {width:100%;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailInfoSelect .shopdetailInfoCount .txt-qnty {text-align:right; padding:0 6px; width: 50px !important;}
@@ -76,11 +99,15 @@
 .MK_optAddWrap .MK_inner-opt-cm .MK_price {position:absolute; bottom:21px; right:0; font-size: 1.3em; margin-right:5px;}
 .MK_optAddWrap .MK_inner-opt-cm .MK_qty-ctrl .btn-type-02 {background-color: #bbb; width: 35px; height: 35px; text-align: center; vertical-align: middle; line-height: 35px; color: #fff; display: inline-block;}
 .MK_optAddWrap .total {text-align:right; padding:10px 15px; font-size: 17px;}
-.MK_optAddWrap .MK_total {font-size:18px; color:#f1191f; margin-left:5px;}
-.MK_optAddWrap .MK_txt-won {font-size:17px;}
+.MK_optAddWrap .MK_total {
+    color: var(--hc_color_point);
+}
 .MK_optAddWrap_div { height:10px;padding:0;background:#f6f6f6;border-top:1px solid #c7c7c7; border-bottom:1px solid #c7c7c7; }
 .MK_optAddWrap_line { height:1px;padding:0;background:#f6f6f6; border-bottom:1px solid #c7c7c7; }
-#MK_innerOptTotal { padding:12px 10px; text-align:right; }
+#MK_innerOptTotal { 
+    padding: 20px; 
+    text-align:right; 
+}
 /* //착불 아이콘 */
 .shopdetail .shopdetailInfo .gray-delivery {padding: 2px;background-color: #fff;color: #656565;font-size: 0.875em;border-radius: 3px;border: 1px solid #656565;}
 /* //상품옵션 */
@@ -101,16 +128,37 @@
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonTop a.gift .fa-gift { margin-top: -2px; margin-right: 3px; font-size: 16px; } /* 선물하기 */
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonBottom {margin:20px 0;}
 .shopdetail .shopdetailInfo .shopdetailInfoBottom .shopdetailButton .shopdetailButtonBottom img {margin:0 2px; width:45px; height:auto;}
-.shopdetail .shopdetailCoupon {margin-top:15px;}
-.shopdetail .shopdetailCoupon .shopdetailCouponGet {padding:0 15px;}
+.shopdetail .shopdetailCoupon {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
 .shopdetail .shopdetailCoupon .shopdetailCouponGet .image_src {max-width: 100%; padding-bottom: 5px;}
-.shopdetail .shopdetailCoupon .shopdetailCouponGet li dl {height:34px; background:url("/images/d3/m_04/bg_coupon@2x.gif") no-repeat left center; padding:10px 0 10px 92px; border-bottom:1px dashed #cbcbcb; position:relative; background-size: 81px auto;}
-.shopdetail .shopdetailCoupon .shopdetailCouponGet li:last-child {border-bottom:0px none;}
-.shopdetail .shopdetailCoupon .shopdetailCouponGet .MS_coupon dt {width:82px; position:absolute; top:10px; left:0 ; color:#fff; text-align:center;}
-.shopdetail .shopdetailCoupon .shopdetailCouponGet .MS_coupon dt strong {font-weight: normal;}
+.shopdetail .shopdetailCoupon .shopdetailCouponGet li dl {
+    position:relative;  
+}
+.shopdetail .shopdetailCoupon .shopdetailCouponGet li dl::after {
+	content: " 쿠폰 다운받기 ↓";
+	color: var(--hc_bright_color);
+    display: inline-block;
+	padding: 10px 20px;
+    min-width: 60px;
+    min-height: 20px;
+    line-height: 20px;
+    background: var(--hc_dark_color);
+}
 .shopdetail .shopdetailCoupon .shopdetailCouponGet .MS_coupon h4 {font-weight:bold;}
-.shopdetail .shopdetailItem .shopdetailItemPopup {text-align:center; padding:0 15px; margin:22px 0;}
-.shopdetail .shopdetailItem .shopdetailItemPopup a {font-weight:bold; color:#fff; background-color:#636363; display:block; padding:10px 0;}
+.shopdetail .shopdetailItem .shopdetailItemPopup {
+    text-align:center; 
+    padding:0 10px; 
+}
+.shopdetail .shopdetailItem .shopdetailItemPopup a {
+    font-weight:bold; 
+    color:#fff; 
+    background-color: var(--hc_dark_color);
+    display:block; 
+    padding:10px 0;
+}
 .shopdetail .shopdetailItem .shopdetailItemPopup .shopdetailItemZoom {height:60px; padding:0 0 0 75px; margin-top:10px; background:url("/images/d3/m_04/bg_hand@2x.gif") no-repeat 20px center; line-height: 60px; background-size: 50px auto;}
 .shopdetail .shopdetailItem .shopdetailImage img {max-width:100% !important; height: auto !important;}
 .shopdetail .shopdetailItem .shopdetailImage table {width:100% !important;}
@@ -135,13 +183,37 @@
 .shopdetailRelation .list_shoppingRelationItem1x li img.listPic {width:40%; float:left;}
 .shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo {width:57%; float:left; padding-left:3%; position: relative;}
 .shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .listName {border-bottom: 1px solid #dedede; padding: 0 15px 2px 0; margin-bottom: 5px;}
-.shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .options-select {width:100%;}
+.shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .options-select {
+    width:100%;
+    font-size: var(--hc_bd_medium);
+ }
 .shopdetailRelation .list_shoppingRelationItem1x .MS_related_checkbox {position:absolute; top:0; right:0;}
 .shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .listCount {margin: 12px 0;}
-.shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .listCount .amount-input {text-align:right;}
-.shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .listCount .fa-plus {background-color: #bbb; width: 30px; height: 30px; text-align: center; vertical-align: middle; line-height: 30px; color: #fff;}
-.shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .listCount .fa-minus {background-color: #bbb; width: 30px; height: 30px; text-align: center; vertical-align: middle; line-height: 30px; color: #fff;}
-.shopdetailRelation .list_shoppingRelationItem1x .btn_Black {width:290px; margin: 0 auto;}
+.shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .listCount .amount-input {
+    text-align:right;
+    border:0;
+}
+.shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .listCount .fa-plus {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--hc_bright_color);
+    background-color: var(--hc_dark_color);
+}
+.shopdetailRelation .list_shoppingRelationItem1x .list_shoppingInfo .listCount .fa-minus {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--hc_bright_color);
+    background-color: var(--hc_dark_color);
+}
+.shopdetailRelation .list_shoppingRelationItem1x .btn_Black {
+    margin: 0 auto;
+}
 /* //관련상품 */
 
 /* IOS 디바이스 옵션 선택 시 자동 확대 방지 */
@@ -427,17 +499,118 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="number"],
 .shoppay_type_A_3 .shoppay_btn_link.shoppay_btn_pay { background-position: 50% -40px !important; }
 
 
-
 /* hncok 커스텀 */
 .hc_detail_top {
     margin: 10px 0 20px;
 }
+/* 공유 */
 .hc_detail_share {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 10px;
+	margin: 0 10px;
+	text-align: right;
+}
+.hc_detail_share li {
+	margin-left: 8px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+/* 위치 */
+.hc_page_location {
+	margin: 0 10px;
+    font-size: var(--hc_bd_large);
+}
+.hc_page_location li {
+    display: inline-block;
 }
 .hc_page_location li:after {
     content: " > ";
+    margin: 0 8px;
+}
+/* 할인율 */
+.hc_discount_rate {
+    margin:0 10px !important;
+    font-size: var(--hc_bd_large);
+}
+/* 할인가 */
+.hc_discount_price {
+    font-size: var(--hc_bd_large);
+}
+/* 정상가 */
+.hc_regular_price {
+    color: var(--hc_color_level2);
+    text-decoration: line-through;
+    font-size: var(--hc_bd_small);
+    font-weight: var(--hc_regular);
+}
+/* 최대 할인가 */
+.hc_maximum_discount {
+	margin: 20px 0;
+}
+.hc_maximum_discount details {
+	padding: 20px;
+	font-size: var(--hc_bd_large);
+	border-top: 1px solid var(--hc_dark_color);
+    border-bottom: 1px solid var(--hc_dark_color);
+}
+.hc_maximum_discount details > summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    cursor: pointer;
+}
+.hc_maximum_discount details > summary span:last-child {
+	text-align: right;
+    color: var(--hc_color_point);
+}
+.hc_maximum_discount details > summary span:last-child em {
+    font-size: var(--hc_bd_small);
+}
+.hc_maximum_discount details > summary span:last-child img {
+	transform: rotate(90deg);
+}
+/* 배송정보 */
+.hc_shipping_information {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid var(--hc_dark_color);
+}
+.hc_shipping_information h4 {
+	margin-bottom: 20px;
+}
+.hc_shipping_information .hc_column2 {
+	grid-template-columns: 100px 1fr;
+	color: var(--hc_color_level4);
+}
+.hc_shipping_information .hc_column2 p::before {
+	content: " · ";
+}
+.multi_image_thumb,
+.detail_image {
+	width: 100%;
+}
+/* 버튼 */
+.hc_btn_wrap {
+	padding: 0 10px;
+}
+.btn_Red {
+    background-color: var(--hc_dark_color);
+    color: var(--hc_bright_color);
+    border: 0;
+}
+#multi_image_thumb_list {
+	margin: 10px 0;
+}
+.option_tk .basic_option {
+    width: 100%;
+    border: 0;
+}
+.option_tk .hc_column2 {
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+}
+/* 쿠폰 리스트 */
+.hc_coupon_list {
+    padding: 0 10px;
+}
+/* 상품명 */
+.hc_product_name {
+	position: relative;
+	padding: 0 10px;
 }

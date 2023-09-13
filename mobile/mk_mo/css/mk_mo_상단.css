@@ -109,6 +109,9 @@ h6 {
 .hc_color_point {
   color: var(--hc_color_point);
 }
+.hc_bold {
+  font-weight: var(--hc_mediums);
+}
 .hc_blind {
   display: none !important;
 }
@@ -162,6 +165,9 @@ h6 {
   content: "ⓘ";
   margin-right: 8px;
 }
+.hc_full_img img {
+  width:100%;
+}
 
 /* 
   타이틀 
@@ -213,8 +219,8 @@ h2.hc_page_title {
 .hc_inputbox_middle_btn {
   margin-left: 4px;
   width: 118px;
-  height: 35px;
-  line-height: 35px;
+  height: 40px;
+  line-height: 40px;
   color: var(--hc_bright_color);
   font-size: var(--hc_bd_large);
   background: var(--hc_dark_color);
@@ -253,30 +259,29 @@ h2.hc_page_title {
   text-align: center;
   border: 1px solid var(--hc_dark_color);
 }
-.hc_btn_long_fill {
-  color:var(--hc_bright_color);
-  background: var(--hc_dark_color);
+.hc_btn_medium_fill,
+.hc_btn_medium,
+.hc_btn_Regular {
+  display: inline-block;
+  padding: 0 4px;
+  border: 1px solid var(--hc_dark_color);
 }
 .hc_btn_mini_fill,
 .hc_btn_mini {
   padding: 0 5px 2px 4px;
   border: 1px solid var(--hc_dark_color);
 }
-.hc_btn_mini_fill {
+.hc_btn_mini_fill,
+.hc_btn_medium_fill,
+.hc_btn_long_fill {
   color:var(--hc_bright_color);
   background: var(--hc_dark_color);
-}
-/*
-.hc_btn_Regular {
-  display: inline-block;
-  padding: 0 4px;
-  border: 1px solid var(--hc_dark_color);
 }
 .hc_btn_small {
   padding: 0 4px;
   border: 1px solid var(--hc_dark_color);
 }
-*/
+
 .hc_btn_more {
   display: block;
   font-size: var(--hc_bd_large);

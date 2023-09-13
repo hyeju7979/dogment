@@ -1,17 +1,17 @@
 .hc_board_review_list {
-    display: grid;
-    grid-template-columns: 84px auto 54px;
-    /*justify-content: space-between;*/
-    align-items: center;
-    gap: 6px;
-  }
-  .hc_page_board_review .hc_border_notice_list li {
-    display: grid;
-    grid-template-columns: 84px auto;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    gap: 6px;
-    word-break: keep-all;
-    word-wrap: break-word;
-  }
+  display: grid;
+  grid-template-columns: 84px auto 54px;
+  /*justify-content: space-between;*/
+  align-items: center;
+  gap: 6px;
+}
+.hc_page_board_review .hc_border_notice_list li {
+  display: grid;
+  grid-template-columns: 84px auto;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 6px;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
