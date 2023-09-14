@@ -167,6 +167,9 @@
     background: var(--hc_dark_color);
 }
 .shopdetail .shopdetailCoupon .shopdetailCouponGet .MS_coupon h4 {font-weight:bold;}
+.shopdetail .shopdetailItem {
+    margin-top: 40px;
+}
 .shopdetail .shopdetailItem .shopdetailItemPopup {
     text-align:center; 
     padding:0 10px; 

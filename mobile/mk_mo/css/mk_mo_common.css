@@ -1273,11 +1273,10 @@ input[name=hamburger_item] {
 
 /*상세페이지 more 버튼*/
 .hc_detail_more_btn {
-	margin: 40px auto;
-	padding: 20px 0;
+	margin: 40px 10px;
+	padding: 10px 0;
 	display: flex;
 	justify-content: center;
-	width: 380px;
 	border: 1px solid var(--hc_dark_color);
 	box-sizing: border-box;
 	transition: all 0.6s ease 0s;
