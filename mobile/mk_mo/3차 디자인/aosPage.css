@@ -1,0 +1,12 @@
+.hc_aospae div {
+    margin-bottom:60px;
+}
+.hc_aospae div img {
+    width:100%;
+}
+.hc_double_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+}
