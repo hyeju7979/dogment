@@ -666,3 +666,17 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="number"],
 .hc_count_list img {
     vertical-align: middle;
 }
+/* 컬러칩*/
+.hc_colorchip {
+    margin: 0 10px;
+}
+.hc_colorchip font::before {
+    content: "■";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+}
+.hc_colorchip span {
+    font-size: var(--hc_bd_xsmall);
+}

@@ -234,85 +234,13 @@ a.hc_btn_small_fill {
 	border-top: 3px solid var(--hc_dark_color);
 }
 
-/*
-타임세일 , bxslide
-*/
-.bx-wrapper .bx-viewport {
-    height: 634px!important;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-}
-/* Push slider arrows down */
-.bx-wrapper .bx-controls-direction a {
-    margin-top: 25px;
-}
-#timesaleItemSlide {
-    margin: 0;
-}
-/* Push slider content down */
-#timesaleItemSlide div {
-    /* padding-top: 184px; */
-}
-/* Position image at top center */
-#timesaleItemSlide div img {
-    position: absolute;
-    top: 0;
-    let: 50%;
-}
-
 @font-face {
-	font-family: digital-7 mono;
-	src: local("https://www.pigment.co.kr//design/kcompany7/fonts/digital_7_mono.ttf"), local("https://www.pigment.co.kr//design/kcompany7/fonts/digital_7_mono.ttf"), url("https://www.pigment.co.kr//design/kcompany7/fonts/digital_7_mono.ttf");
+	font-family: Arialn;
+	src: local("http://kcompony7.jpg3.kr/web/font/Arialn.ttf"), 
+	     local("http://kcompony7.jpg3.kr/web/font/Arialn.ttf"), 
+		 url("http://kcompony7.jpg3.kr/web/font/Arialn.ttf");
 	font-weight: bold;
 }
 footer {
     margin-top: 0px;
-}
-
-header {
-    position: fixed;
-    top: 64px;
-    z-index: 9999;
-    width: 100%;
-    height: 50px;
-    box-sizing: border-box;
-}
-.hc_header_main {
-    margin: 0 auto;
-    height: 50px;
-    text-align: center;
-}
-.hc_left_wrap {
-    display: inline-block;
-    position: absolute;
-    left: 30px;
-}
-.hc_hd_ic_hamburger {
-    top: 3px;
-    left: 0;
-}
-.hc_center_wrap {
-    display: inline-block;
-    text-align: center;
-}
-.hc_right_wrap {
-    display: inline-block;
-    position: absolute;
-    top:7px;
-    right: 30px;
-}
-.hc_right_wrap .hc_hd_ic_search, 
-.hc_right_wrap a {
-    position: relative;
-    display: inline-block;
-    vertical-align: baseline;
-}
-.hc_hd_ic_search {
-    margin: 0;
-    top: 2px;
-    height: 34px;
-}
-.hc_hd_ic_mypage {
-    top: 5px;
-    left: 3px;
 }

@@ -1,6 +1,10 @@
 /*
     ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ hncok 공통 모듈 분리 ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 */
+.hc_detail_main_img img,
+.hc_multi_img_list img {
+    width: 100%;
+}
 /* 
 	버튼 
 */
@@ -123,7 +127,7 @@ a.hc_btn_small_fill {
 	타이틀 
 */
 .hc_tit_page {
-    font-size: var(--hc_tit_page);
+    font-size: var(--hc_bd_xlarge);
     font-weight: var(--hc_regular);
     text-align: center;
 }
@@ -341,6 +345,9 @@ a.hc_btn_small_fill {
 }
 .hc_bottomside {
 	margin-bottom: 68px
+}
+.hc_bottomside img {
+    width:100%;
 }
 .hc_tinny:after {
     content: "ⓘ";
