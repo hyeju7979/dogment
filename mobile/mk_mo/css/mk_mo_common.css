@@ -359,8 +359,9 @@ input, input[type=email], input[type=password], input[type=tel], input[type=text
   --hc_heavy: 900;
 
   /* 폰트 스타일 */
-  --main_font: 'Lato', sans-serif;
-  --sub_font: 'Noto Sans KR', sans-serif;
+  --fontfamily1: "Lato";
+  --fontfamily2: "digital-7 mono";
+  --fontfamily3: "Arial Black";
 
   --hc_title_area: 142px; /* 제목 영역 */
   --hc_content_area: 416px; /* 내용 영역 */
@@ -524,6 +525,9 @@ img {
   width: 100%;
   top: 0;
 }
+.hc_notice_top a {
+    color: var(--hc_bright_color);
+}
 
 /* 상단 */
 header {
@@ -598,6 +602,9 @@ header #hc_head_mypage {
   line-height: 48px;
   color: var(--hc_bright_color);
   background: var(--hc_dark_color);
+}
+.hc_footer_guied .hc_md_arrow span {
+    background-color: var(--hc_bright_color)!important;
 }
 .hc_footer_guied ul {
   margin: 28px 25px 20px;
@@ -701,10 +708,10 @@ input[name=hamburger_item] {
 }
 #hc_hamburger .line{
   width: 20px;
-  height: 0.5px;
+  height: 2px;
   background-color: var(--hc_dark_color);
   display: block;
-  margin: 6px auto;
+  margin: 4px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;

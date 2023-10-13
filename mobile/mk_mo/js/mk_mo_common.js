@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {    
-    HcFullPage.init();
+    //HcFullPage.init();
     HeaderMenuOpen.init();
     RandomImage.init();
     UpDownArrow.init();
