@@ -1,0 +1,798 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+	<!--/include_header(1)/-->
+    <script>
+var nameStyle = 'font-size:12px;padding-left:5px;';
+var PIGMENT_STORE_INFOS =
+                [
+                      {
+                        id: "100",
+                        type: "mall",
+                        initShow: true,
+                        name: "광주 피그먼트(황금동)",
+                        address: "광주광역시 동구 중앙로 160번길 11 (황금동)",
+                        tel: "· CALL. 062-223-7771",
+                        businessHours: "· OPEN. 10:30 - 21:30",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">광주 피그먼트(황금동)</span>',
+                        lng: 126.914535,
+                        lat: 35.1477843,
+                      },
+                      {
+                        id: "101",
+                        type: "mall",
+                        initShow: true,
+                        name: "덕천 피그먼트",
+                        address: "부산광역시 북구 금곡대로14 덕천역 지하상가 B-8(9,10번 출구)",
+                        tel: "· CALL. 051-331-8051",
+                        businessHours: "· OPEN. 11:00 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">덕천 피그먼트</span>',
+                        lng: 129.005544,
+                        lat: 35.2100838,
+                      },
+                      {
+                        id: "102",
+                        type: "mall",
+                        initShow: true,
+                        name: "마산 피그먼트(합성동)",
+                        address:
+                          "경상남도 창원시 마산회원구 3·15대로 758 대현프리몰창원 H-4호, 피그먼트",
+                        tel: "· CALL. 055-252-9345",
+                        businessHours: "· OPEN. 11:00 - 20:30",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">마산 피그먼트(합성동)</span>',
+                        lng: 128.582844,
+                        lat: 35.2387943,
+                      },
+                      {
+                        id: "103",
+                        type: "mall",
+                        initShow: true,
+                        name: "반포 엔터식스 피그먼트",
+                        address: "서울특별시 서초구 신반포로 188 지하1층 엔터식스 강남점, 피그먼트",
+                        tel: "· CALL. 02-6321-6106",
+                        businessHours: "· OPEN. 10:30 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">반포 엔터식스 피그먼트</span>',
+                        lng: 127.004821,
+                        lat: 37.5049926,
+                      },
+                      {
+                        id: "104",
+                        type: "mall",
+                        initShow: true,
+                        name: "서면점 피그먼트(부산)",
+                        address:
+                          "부산광역시 부산진구 중앙대로 지하717 서면몰 2열 37, 3열37, 피그먼트",
+                        tel: "· CALL. 051-807-0166",
+                        businessHours: "· OPEN. 11:00 - 21:30",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">서면점 피그먼트</span>',
+                        lng: 129.063263,
+                        lat: 35.1617587,
+                      },
+                      {
+                        id: "105",
+                        type: "mall",
+                        initShow: true,
+                        name: "부평 피그먼트",
+                        address: "인천광역시 부평구 부평대로 69 대아지하상가 82, 83호 피그먼트",
+                        tel: "· CALL. 032-501-0322",
+                        businessHours: "· OPEN. 11:00 - 21:00 (일요일 휴무)",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">부평 피그먼트</span>',
+                        lng: 126.722062,
+                        lat: 37.4977067,
+                      },
+                      {
+                        id: "106",
+                        type: "mall",
+                        initShow: true,
+                        name: "영등포 타임스퀘어 피그먼트",
+                        address: "서울특별시 영등포구 영종로 15 타임스퀘어 지하 1층, 피그먼트",
+                        tel: "· CALL. 02-2632-4578",
+                        businessHours: "· OPEN. 10:30 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">영등포 타임스퀘어 피그먼트</span>',
+                        lng: 126.903324,
+                        lat: 37.5170614,
+                      },
+                      {
+                        id: "107",
+                        type: "mall",
+                        initShow: true,
+                        name: "포항 피그먼트",
+                        address: "경상북도 포항시 북구 중앙상가길 35 피그먼트",
+                        tel: "· CALL. 054-243-5553",
+                        businessHours: "· OPEN. 10:00 - 21:30",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">포항 피그먼트</span>',
+                        lng: 129.363974,
+                        lat: 36.0382745,
+                      },
+                      {
+                        id: "108",
+                        type: "mall",
+                        initShow: false,
+                        name: "광교 앨리웨이 피그먼트",
+                        address:
+                          "경기 수원시 영통구 광교호수공원로 80 (원천동, 광교아이파크), 피그먼트",
+                        tel: "· CALL. 02. 1234.5678",
+                        businessHours: "· OPEN. 11:00 - 21:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">광교 앨리웨이 피그먼트</span>',
+                        lng: 127.061185,
+                        lat: 37.2740017,
+                      },
+                      {
+                        id: "109",
+                        type: "mall",
+                        initShow: false,
+                        name: "동탄 피그먼트(레이크꼬모)",
+                        address:
+                          "경기 화성시 동탄대로 181 (송동, 동탄린스트라우스더레이크), 피그먼트",
+                        tel: "· CALL. 031-2495-4024",
+                        businessHours: "· OPEN. 10:30 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">동탄 피그먼트(레이크꼬모)</span>',
+                        lng: 127.104061,
+                        lat: 37.1720643,
+                      },
+                      {
+                        id: "110",
+                        type: "mall",
+                        initShow: false,
+                        name: "인천 스퀘어원 피그먼트",
+                        address: "인천 연수구 청능대로 210 (동춘동, 스퀘어원) 1층 피그먼트",
+                        tel: "· CALL. 032-456-4165",
+                        businessHours: "· OPEN. 10:30 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">인천 스퀘어원 피그먼트</span>',
+                        lng: 126.683605,
+                        lat: 37.4059774,
+                      },
+                      {
+                        id: "111",
+                        type: "mall",
+                        initShow: false,
+                        name: "LF스퀘어 양주점",
+                        address: "경기 양주시 평화로 1593 LF스퀘어 2층 피그먼트",
+                        tel: "· CALL. 031-894-2665",
+                        businessHours: "· OPEN. 10:30 - 21:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">LF 스퀘어 양주점</span>',
+                        lng: 127.052397,
+                        lat: 37.8313328,
+                      },
+                      {
+                        id: "112",
+                        type: "mall",
+                        initShow: false,
+                        name: "LF스퀘어 광양점",
+                        address: "전남 광양시 광양읍 순광로 466 2층 피그먼트",
+                        tel: "· CALL. 061-815-4761",
+                        businessHours: "· OPEN. 10:30 - 21:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">LF스퀘어 광양점</span>',
+                        lng: 127.566872,
+                        lat: 34.962746,
+                      },
+                      {
+                        id: "113",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 김해점 피그먼트",
+                        address: "경상남도 김해시 김해대로 2078 홈플러스 1층, 피그먼트",
+                        tel: "· CALL. 055-336-6922",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 김해점 피그먼트</span>',
+                        lng: 128.870182,
+                        lat: 35.2418443,
+                      },
+                      {
+                        id: "114",
+                        type: "mall",
+                        initShow: false,
+                        name: "롯데아울렛 수원점 피그먼트",
+                        address: "경기도 수원시 세화로134 롯데몰 2층 피그먼트",
+                        tel: "· CALL. 031-8066-1705",
+                        businessHours: "· OPEN. 10:30 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">롯데아울렛 수원점 피그먼트</span>',
+                        lng: 126.997163,
+                        lat: 37.264262,
+                      },
+                      {
+                        id: "115",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 세종점 피그먼트",
+                        address:
+                          "세종특별자치시 절재로 154 (어진동, 홈플러스 세종점), 1층 피그먼트",
+                        tel: "· CALL. 044-867-6069",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 세종점 피그먼트</span>',
+                        lng: 127.258853,
+                        lat: 36.5073139,
+                      },
+                      {
+                        id: "116",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 구미점 피그먼트",
+                        address:
+                          "경북 구미시 구미대로 174 (광평동, 홈플러스 구미광평점) 1층 피그먼트",
+                        tel: "· CALL. 054-462-2921",
+                        businessHours: "· OPEN. 11:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 구미점 피그먼트</span>',
+                        lng: 128.363775,
+                        lat: 36.102776,
+                      },
+                      {
+                        id: "117",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 인하점 피그먼트",
+                        address: "인천광역시 미추홀구 소성로 6 (용현동, 홈플러스), 1층 피그먼트",
+                        tel: "· CALL. 032-872-2127",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 인하점 피그먼트</span>',
+                        lng: 126.65093,
+                        lat: 37.447349,
+                      },
+                      {
+                        id: "118",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 유성점 피그먼트",
+                        address: "대전광역시 유성구 한밭대로 502 (봉명동, 홈플러스), 3층 피그먼트",
+                        tel: "· CALL. 042-824-5940",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 유성점 피그먼트</span>',
+                        lng: 127.354446,
+                        lat: 36.3585314,
+                      },
+                      {
+                        id: "119",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 울산점 피그먼트",
+                        address:
+                          "울산광역시 중구 번영로 475 (복산동, 홈플러스울산점) 2층, 피그먼트",
+                        tel: "· CALL. 02. 1234.5678",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 울산점 피그먼트</span>',
+                        lng: 129.33475,
+                        lat: 35.5645052,
+                      },
+                      {
+                        id: "120",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 상동점 더컬러웨이",
+                        address: "부천시 원미구 상동 540-1 상동홈플러스 1층 더컬러웨이",
+                        tel: "· CALL. 032-322-6069",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 상동점 더컬러웨이</span>',
+                        lng: 126.755016,
+                        lat: 37.5043033,
+                      },
+                      {
+                        id: "121",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 간석점 더컬러웨이",
+                        address: "인천광역시 남동구 경원대로 971 홈플러스 간석점 1층 피그먼트",
+                        tel: "· CALL. 032-861-8631",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 간석점 더컬러웨이</span>',
+                        lng: 126.68909,
+                        lat: 37.469567,
+                      },
+                      {
+                        id: "122",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 칠곡점 피그먼트",
+                        address:
+                          "대구광역시 북구 동암로12길 8 (동천동, 칠곡홈플러스), 3층 피그먼트",
+                        tel: "· CALL. 053-311-9702",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 칠곡점 피그먼트</span>',
+                        lng: 128.555958,
+                        lat: 35.9448667,
+                      },
+                      {
+                        id: "123",
+                        type: "mall",
+                        initShow: false,
+                        name: "A 홈플러스 성서점 피그먼트",
+                        address:
+                          "대구광역시 달서구 달구벌대로 1467 (용산동) 홈플러스 성서점, 지하2층 피그먼트",
+                        tel: "· CALL. 053-521-6079",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">A 홈플러스 성서점 피그먼트</span>',
+                        lng: 128.527407,
+                        lat: 35.8494688,
+                      },
+                      {
+                        id: "124",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 아시아드점 피그먼트",
+                        address:
+                          "부산광역시 연제구 종합운동장로 7 (거제동, 부산아시아드주경기장노외주차장), 1층 피그먼트",
+                        tel: "· CALL. 051-501-8855",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 아시아드점 피그먼트</span>',
+                        lng: 129.062122,
+                        lat: 35.1909034,
+                      },
+                      {
+                        id: "125",
+                        type: "mall",
+                        initShow: false,
+                        name: "이마트 만촌점 피그먼트",
+                        address: "대구 수성구 동원로 136 (만촌동, 이마트만촌점) 1층 피그먼트",
+                        tel: "· CALL. 053-751-0816",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">만촌 이마트 피그먼트</span>',
+                        lng: 128.637187,
+                        lat: 35.8711112,
+                      },
+                      {
+                        id: "126",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 파주 운정점",
+                        address:
+                          "경기 파주시 청암로17번길 17 (목동동, 홈플러스 파주운정점) 1층 피그먼트",
+                        tel: "· CALL. 053-751-0816",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">홈플러스 파주 운정점</span>',
+                        lng: 126.736819,
+                        lat: 37.729679,
+                      },
+                      {
+                        id: "127",
+                        type: "mall",
+                        initShow: false,
+                        name: "원평 피그먼트(구미)",
+                        address: "경상북도 구미시 문화로 26, 피그먼트",
+                        tel: "· CALL. 054-441-4194",
+                        businessHours: "· OPEN. 12:00 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">원평 피그먼트(구미)</span>',
+                        lng: 128.333999,
+                        lat: 36.1287843,
+                      },
+                      {
+                        id: "128",
+                        type: "mall",
+                        initShow: false,
+                        name: "이마트 월계점 피그먼트",
+                        address: "서울특별시 노원구 마들로3길 15,(이마트 월계점) 2층, 피그먼트",
+                        tel: "· CALL. 02-978-1230",
+                        businessHours: "· OPEN. 11:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">이마트 월계점 피그먼트</span>',
+                        lng: 127.061841,
+                        lat: 37.6273227,
+                      },
+                      {
+                        id: "129",
+                        type: "mall",
+                        initShow: false,
+                        name: "홈플러스 의정부점 피그먼트",
+                        address: "경기 의정부시 청사로 38 (금오동, 삼성홈플러스), 1층 피그먼트",
+                        tel: "· CALL. 031-851-5770",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">홈플러스 의정부점 피그먼트</span>',
+                        lng: 127.07102,
+                        lat: 37.7521202,
+                      },
+                      {
+                        id: "130",
+                        type: "mall",
+                        initShow: false,
+                        name: "경주 피그먼트(계림로)",
+                        address: "경상북도 경주시 계림로 93-2 피그먼트",
+                        tel: "· CALL. 054-771-0212",
+                        businessHours: "· OPEN. 12:00 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">경주 피그먼트(계림로)</span>',
+                        lng: 129.213393,
+                        lat: 35.8428326,
+                      },
+                      {
+                        id: "131",
+                        type: "mall",
+                        initShow: false,
+                        name: "대구 피그먼트(공평동)",
+                        address: "대구 중구 동성로3길 64 (공평동) 피그먼트",
+                        tel: "· CALL. 053-256-6678",
+                        businessHours: "· OPEN. 10:30 - 21:30",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">대구 피그먼트(공평동)</span>',
+                        lng: 128.598267,
+                        lat: 35.8681656,
+                      },
+                      {
+                        id: "132",
+                        type: "mall",
+                        initShow: false,
+                        name: "안성 스타필드 피그먼트",
+                        address:
+                          "경기 안성시 공도읍 서동대로 3930-39 (진사리, 스타필드 안성) 1층 피그먼트",
+                        tel: "· CALL. 031-8092-1411",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">안성 스타필드 피그먼트</span>',
+                        lng: 127.147307,
+                        lat: 36.9943473,
+                      },
+                      {
+                        id: "133",
+                        type: "mall",
+                        initShow: false,
+                        name: "이마트 양산점 피그먼트",
+                        address:
+                          "경남 양산시 양산역6길 12 (중부동, 신세계 이마트양산점) 2층 피그먼트",
+                        tel: "· CALL. 055-371-8123",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">이마트 양산점 피그먼트</span>',
+                        lng: 129.026376,
+                        lat: 35.3368709,
+                      },
+                      {
+                        id: "134",
+                        type: "mall",
+                        initShow: false,
+                        name: "이마트 천안점 피그먼트",
+                        address: "충남 천안시 서북구 충무로 187 (쌍용동, E 마트) 2층 피그먼트",
+                        tel: "· CALL. 070-4459-1713",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">이마트 천안점 피그먼트</span>',
+                        lng: 127.127333,
+                        lat: 36.7960758,
+                      },
+                      {
+                        id: "135",
+                        type: "mall",
+                        initShow: false,
+                        name: "이마트 김포 한강점 피그먼트",
+                        address:
+                          "경기 김포시 김포한강7로 71 (구래동, 이마트 김포한강점) 2층 피그먼트",
+                        tel: "· CALL. 031-982-9683",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">이마트 김포 한강점 피그먼트</span>',
+                        lng: 126.628205,
+                        lat: 37.6444162,
+                      },
+                      {
+                        id: "136",
+                        type: "mall",
+                        initShow: false,
+                        name: "PFS:MOF 플래그쉽 스토어(성수동)",
+                        address: "서울특별시 성동구 왕십리로6길 4-8",
+                        tel: "· CALL. 02-462-6608",
+                        businessHours: "· OPEN. 10:30 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">PFS:MOF 플래그쉽 스토어(성수동)</span>',
+                        lng: 127.045084,
+                        lat: 37.5459078,
+                      },
+
+                      {
+                        id: "200",
+                        type: "department",
+                        initShow: true,
+                        name: "신세계백화점 광주점 더컬러웨이",
+                        address:
+                          "광주광역시 서구무진대로 932, 신세계백화점 광주점, 지하1층 패션스트리스(신관) 더컬러웨이",
+                        tel: "· CALL. 062-360-1949",
+                        businessHours: "· OPEN. 10:30 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">신세계백화점 광주점 더컬러웨이</span>',
+                        lng: 126.882025,
+                        lat: 35.1588162,
+                      },
+                      {
+                        id: "201",
+                        type: "department",
+                        initShow: true,
+                        name: "롯데 광주 수완점 피그먼트",
+                        address: "광주 광산구 장신로 98 (장덕동, 롯데아울렛) 3층 피그먼트",
+                        tel: "· CALL. 062-616-2719",
+                        businessHours: "· OPEN. 10:30 - 21:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">롯데 광주 수완점 피그먼트</span>',
+                        lng: 126.820987,
+                        lat: 35.1902158,
+                      },
+                      {
+                        id: "202",
+                        type: "department",
+                        initShow: true,
+                        name: "신세계백화점 천안점 더컬러웨이",
+                        address: "충청남도 천안시 동남구 만남로 43(신부동) 신세계 천안아산점",
+                        tel: "· CALL. 041-640-5107",
+                        businessHours: "· OPEN. 10:30 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">신세계백화점 천안점 더컬러웨이</span>',
+                        lng: 127.156704,
+                        lat: 36.8202718,
+                      },
+                      {
+                        id: "203",
+                        type: "department",
+                        initShow: true,
+                        name: "롯데아울렛 율하점 (대구)",
+                        address: "대구 동구 안심로 80 (율하동) 롯데아울렛 대구율하점 2층 피그먼트",
+                        tel: "· CALL. 053-960-2747",
+                        businessHours: "· OPEN. 10:30 - 21:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">롯데아울렛 율하점 (대구)</span>',
+                        lng: 128.693396,
+                        lat: 35.8684852,
+                      },
+                      {
+                        id: "204",
+                        type: "department",
+                        initShow: true,
+                        name: "AK 수원 피그먼트",
+                        address: "경기 수원시 팔달구 덕영대로 924 (매산로1가, AK&) 3층 피그먼트",
+                        tel: "· CALL. 031-240-1905",
+                        businessHours: "· OPEN. 10:30 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup: '<span style="' + nameStyle + '">AK 수원 피그먼트</span>',
+                        lng: 126.999872,
+                        lat: 37.2661507,
+                      },
+                      {
+                        id: "205",
+                        type: "department",
+                        initShow: true,
+                        name: "롯데백화점 창원점 피그먼트",
+                        address:
+                          "경남 창원시 성산구 중앙대로 124 (상남동, 롯데영플라자), 지하1층 피그먼트",
+                        tel: "· CALL. 055-279-2117",
+                        businessHours: "· OPEN. 10:30 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">롯데백화점 창원점 피그먼트</span>',
+                        lng: 128.683507,
+                        lat: 35.2249371,
+                      },
+                      {
+                        id: "206",
+                        type: "department",
+                        initShow: true,
+                        name: "롯데백화점 청량리 피그먼트",
+                        address: "서울특별시 동대문구 왕산로 214 청량리역 롯데백화점 2층 피그먼트",
+                        tel: "· CALL. 02-3707-1028",
+                        businessHours: "· OPEN. 10:30 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">롯데백화점 청량리 피그먼트</span>',
+                        lng: 127.046486,
+                        lat: 37.5806135,
+                      },
+                      {
+                        id: "207",
+                        type: "department",
+                        initShow: true,
+                        name: "현대백화점 디큐브점 피그먼트",
+                        address: "서울 구로구 경인로 662 (신도림동, 디큐브시티) 지하 1층 피그먼트",
+                        tel: "· CALL. 02-2210-9752",
+                        businessHours: "· OPEN. 11:00 - 21:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">현대백화점 디큐브점 피그먼트</span>',
+                        lng: 126.889592,
+                        lat: 37.5089852,
+                      },
+                      {
+                        id: "208",
+                        type: "department",
+                        initShow: false,
+                        name: "현대백화점 중동점 피그먼트",
+                        address: "경기 부천시 길주로 180 (중동, 현대백화점부천중동점) 2층 피그먼트",
+                        tel: "· CALL. 032-623-1266",
+                        businessHours: "· OPEN. 10:30 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">현대백화점 중동점 피그먼트</span>',
+                        lng: 126.762559,
+                        lat: 37.5042197,
+                      },
+                      {
+                        id: "209",
+                        type: "department",
+                        initShow: false,
+                        name: "신세계백화점 의정부점 더컬러웨이",
+                        address: "경기도 의정부시 평화로 525(신세계백화점 의정부점) 5층 더컬러웨이",
+                        tel: "· CALL. 031-8082-0591",
+                        businessHours: "· OPEN. 10:30 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">신세계백화점 의정부점 더컬러웨이</span>',
+                        lng: 127.045855,
+                        lat: 37.7379692,
+                      },
+                      {
+                        id: "210",
+                        type: "department",
+                        initShow: false,
+                        name: "롯데아울렛 동부산점 피그먼트",
+                        address:
+                          "부산 기장군 기장읍 기장해안로 147 (당사리, 롯데몰 동부산점) 1층 피그먼트",
+                        tel: "· CALL. 051-901-2790",
+                        businessHours: "· OPEN. 10:30 - 21:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">롯데아울렛 동부산점 피그먼트</span>',
+                        lng: 129.212312,
+                        lat: 35.1925159,
+                      },
+                      {
+                        id: "211",
+                        type: "department",
+                        initShow: false,
+                        name: "스타필드 고양점 TOF:GALLERY",
+                        address: "경기 고양시 덕양구 고양대로 1955 1층 TOF:GALLERY",
+                        tel: "· CALL. 031-5173-1804",
+                        businessHours: "· OPEN. 10:00 - 22:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">스타필드 고양점 TOF:GALLERY</span>',
+                        lng: 126.894779,
+                        lat: 37.64716,
+                      },
+                      {
+                        id: "212",
+                        type: "department",
+                        initShow: false,
+                        name: "롯데백화점 구리점 피그먼트",
+                        address: "경기 구리시 인창동 677 롯데백화점 2층 피그먼트",
+                        tel: "· CALL. 031-550-7269",
+                        businessHours: "· OPEN. 10:30 - 20:00",
+                        shopPhotos: [],
+                        nameMarkup:
+                          '<span style="' + nameStyle + '">롯데백화점 구리점 피그먼트</span>',
+                        lng: 127.143776,
+                        lat: 37.6027185,
+                      },				
+				]
+</script>
+	<div id="hc_commonWrap">
+		<!-- 컨텐츠 영역 -->
+		<div id="hc_contentWrap">
+			<main class="hc_wrap_store">
+				<div class="hc_representative">
+					<img src="http://kcompony7.jpg3.kr/web/hncok/img/store/top_img.jpg" alt="" />
+				</div>
+
+				<h3 class="hc_tit_page">PIGMENT OFF LINE STORE.</h3>  
+
+				<mark>전국 50여개 이상의<br />피그먼트 오프라인 스토어</mark>
+				<div class="hc_clarification">
+					고객님들의 의견과 니즈를 반영한 검증된 핏과 원단, 디자인으로 제작했습니다.<br />
+					시간이 지나도 변하지 않을 가치. 피그먼트의 아이덴티티로<br />
+					손쉽게 다가갈 수 있는 편안하고 자연스러운 감성을 담았습니다.<br />
+					높은 퀄리티의 옷을 보다 합리적인 가격으로 오프라인 스토어에서 만나보세요.
+				</div>
+
+				<article>
+					<div id="storeInfo">
+						<div class="hcStoreLink">
+							<h5 class="hc_tit_caption" id="hcDepartment">DEPARTMENT</h5>
+
+							<!-- <ul>
+								<li data-id="hcStoreWrap1">현대백화점 디큐브점 피그먼트</li>
+                                <li data-id="hcStoreWrap2">중동 현대 피그먼트</li>
+                                <li data-id="hcStoreWrap3">의정부 신세계 더컬러웨이</li>
+                                <li data-id="hcStoreWrap4">광주 신세계 더컬러웨이</li>
+                            </ul>
+                            <ul>
+                                <li data-id="hcStoreWrap5">천안 신세계 더컬러웨이</li>
+                                <li data-id="hcStoreWrap6">구리 롯데백화점 피그먼트점</li>
+                                <li data-id="hcStoreWrap7">수원 롯데백화점 피그먼트점</li>
+							</ul>
+ -->
+							<h5 class="hc_tit_caption" id="hcMall">MALL</h5>
+							
+							<!-- <ul>
+								<li data-id="hcStoreWrap8">PFS:MOF 플래그쉽스페이스</li>
+                                <li data-id="hcStoreWrap9">LF 스퀘어 광양 피그먼트</li>
+                                <li data-id="hcStoreWrap10">LF 스퀘어 양주 피그먼트</li>
+                                <li data-id="hcStoreWrap11">경주 피그먼트(계림로)</li>
+                            </ul>                            
+                            <ul>
+                                <li data-id="hcStoreWrap48">청량리 롯데 피그먼트</li>
+                                <li data-id="hcStoreWrap49">칠곡 홈플러스 피그먼트</li>
+                                <li data-id="hcStoreWrap50">포항 피그먼트</li>
+                                <li data-id="hcStoreWrap51">해운대 홈플러스 피그먼트</li>
+                            </ul> -->
+						</div>                        
+                        <div style="width:100px;cursor:pointer;margin:0 auto;" id="hcMallMoreBtn">
+                            <span class="hc_md_arrow "><span></span><span></span></span>
+                        </div>
+					</div>
+
+                    <!-- <div class="storeWrap hcStoreWrap1">
+						<div class="info">
+							<span>현대백화점 디큐브점 피그먼트</span>
+							<span>서울특별시 구로구 경인로 662 현대백화점 디큐브점 지하1층</span>
+							<span>· CALL. 02. 1234.5678</span>
+							<span>· OPEN. 11:00 - 21:00 (일요일 휴무)</span>
+							<button type="button" class="toggleMap" data-id="hcStoreWrap1">
+								
+								<img src="http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_camera.svg" alt="매장지도" />
+							</button>
+							<button type="button" class="togglePhoto" data-id="hcStoreWrap1">
+								
+								<img src="http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_map.svg" alt="매장사진" />
+							</button>
+						</div>
+						
+						<div id="shop1" class="map"></div>
+						<div class="swiper slide">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="https://hncok-pigment.netlify.app/img/testslide.7e8c00b7.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="https://hncok-pigment.netlify.app/img/testslide.7e8c00b7.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="https://hncok-pigment.netlify.app/img/testslide.7e8c00b7.png" />
+								</div>
+							</div>
+						</div>
+					</div> -->
+				</article>
+			</main>   
+		</div>
+	</div>
+	<!--/include_footer(1)/-->
+</div>

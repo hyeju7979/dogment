@@ -1031,6 +1031,7 @@ small {
 	
   /* 간격 */
   --hc_clarification: 54px 0 44px; 
+  --main_space: 0 20px;
 }
 
 /* ×××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××××× */
@@ -1050,7 +1051,8 @@ small {
 .hc_edit .hc_checkbox textarea,
 .hc_edit .hc_filebox .hc_upload,
 .hc_wrap_policy .policytab {
-	width: 100%;
+    /*width: 100%;*/
+    max-width: 100%;
 }
 #hc_commonWrap {
 	margin: 0 auto;
@@ -1060,9 +1062,12 @@ small {
     max-width: 100%;
 }
 #hc_contentWrap {
-    margin: 0 auto;
     max-width: var(--hc_basewrap);
 }
+.hc_wrap_cart {
+    margin:var(--main_space);
+}
+
 .hc_md_table_title {
   display: flex;
   align-content: flex-end;
@@ -1310,6 +1315,7 @@ input:checked ~ .accordion-content {
     position: fixed;
     top:0;
     z-index: 9999;
+    width: 100%;
     height: 46px;
     color: var(--hc_bright_color);
     font-size: var(--hc_bd_small);
@@ -1485,6 +1491,7 @@ header nav h1 a {
   top:0;
   z-index:1000;
   display: none;
+  width:100vw;
   height: 100vh;
   background: var(--hc_bright_color);
 }
@@ -1910,11 +1917,7 @@ footer {
 	border-top: 1px solid  var(--hc_dark_color);
 	border-bottom: 1px solid var(--hc_dark_color);
 }
-.snap_widget {
-    /*margin: 100px auto 0;
-    display: block;
-	text-align: center;*/
-}
+
 .qna_board_content {
 	font-weight: var(--hc_thin);
 }
@@ -2048,12 +2051,8 @@ footer {
 	height: 10px;
 	background-color: var(--hc_bright_color);
 }
-.hc_wrap_about .hc_representative nav div:hover {
-	/* color: var(--hc_bright_color); */
-}
 .hc_wrap_about .hc_representative nav .hc_on {
 	font-weight: var(--hc_medium);
-	/* background: var(--hc_bright_color); */
 	border-top: 1px solid var(--hc_bright_color);
 	transition: all 0.2s ease;
 }
@@ -2190,100 +2189,11 @@ input[name=hc_page_about] {
 }
 
 /*
-	STORE
-*/
-.hc_wrap_store h3 {
-margin: 200px 0 20px;
-text-align: center;
-}
-.hc_wrap_store mark {
-	display: block;
-	font-size: var(--hc_tit_caption);
-	text-align: center;
-	background: none;
-}
-.hc_wrap_store mark::after {
-	content: "";
-	display: block;
-	width: 40px;
-	height: 1px;
-	background-color: var(--hc_dark_color);
-	margin: 40px auto;
-}
-.hc_wrap_store .hc_clarification {
-	text-align: center;
-}
-.hc_wrap_store .map {
-	width: var(--hc_contentwrap);
-	height: 400px;
-	float: left;
-	border: 1px solid #d9d9d9;	
-}
-.hc_wrap_store .slide {
-	float: left;
-	width: var(--hc_contentwrap);
-	display: none;
-}
-.hc_wrap_store .storeWrap {
-	clear: both;
-}
-.hc_wrap_store .storeWrap .info {
-    display: grid;
-    grid-template-columns: 250px 1fr 200px 250px 60px 60px;
-	align-items: center;
-    font-weight: var(--hc_medium);
-    height: 75px;
-    line-height: 2;
-    border-bottom: 1px solid var(--hc_color_level2);
-}
-.hc_wrap_store button {
-	background-color: #fff;
-}
-.hc_wrap_store #storeInfo {
-	margin-bottom: 200px;
-	text-align: center;
-}
-.hc_wrap_store #storeInfo h5 {
-	margin-top: 140px;
-	font-weight: var(--hc_regular);
-}
-.hc_wrap_store #storeInfo h5::after {
-	content: "";
-	display: block;
-	width: 40px;
-	height: 1px;
-	background-color: var(--hc_dark_color);
-	margin: 40px auto;
-}
-.hc_wrap_store #storeInfo ul {
-	margin-bottom: 30px;
-}
-.hc_wrap_store #storeInfo ul li {
-	display: inline-block;
-	cursor: pointer;
-	transition: all 0.5s ease-out;
-}
-
-.hc_wrap_store #storeInfo ul li::after {
-	content: "";
-	display: inline-block;
-	margin: 0 40px;
-	position: relative;
-	top: 2px;
-	width: 1px;
-	height: 15px;
-	background-color: var(--hc_dark_color);
-}
-.hc_wrap_store #storeInfo ul :last-of-type::after {
-	display: none;
-}
-.hc_wrap_store #storeInfo li:hover {
-	color: var(--hc_color_point);
-}
-
-/*
 	일반 게시판 - 목록
 */
+.hc_wrap_board {
+    margin: var(--main_space);
+}
 .hc_notice_list .brd-st {
 	border: 0;
 }
@@ -3037,7 +2947,7 @@ select[name="MK_sel_basket_amount_1"] {
     font-weight:bold !important;
 }
 
-/*메뉴 호버*/
+/*메뉴 hover */
 .hcHoverMenuColor {
     color : #8e8e8e !important;
 }

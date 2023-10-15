@@ -1,0 +1,30 @@
+.hc_wrap_pfs .hc_page_heading {
+	margin: 140px 0 280px;
+	text-align: center;
+}
+.hc_page_top_banner img {
+    width:100%;
+    max-width:100%;
+}
+.hc_wrap_pfs dl {
+	margin-bottom: 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap:10px;
+}
+.hc_wrap_pfs dt img {
+    max-width: 100%;
+    width: 100%;
+}
+.hc_wrap_pfs .hc_prd_name {
+	font-size: var(--hc_bd_xlarge);
+}
+.hc_wrap_pfs .hc_prd_element:before {
+	display:none;
+}
+.hc_vf_tabs {
+    margin:var(--main_space);
+}

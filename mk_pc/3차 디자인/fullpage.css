@@ -1,0 +1,14 @@
+#hc_commonWrap {
+    top: 44px;
+}
+#hc_contentWrap {
+    max-width: 100%;
+}
+.hc_page_fullscreen img {
+    width: 100%;
+}
+footer {
+    position: absolute;
+    bottom: 44px;
+    width: 100%;
+}

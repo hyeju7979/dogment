@@ -90,14 +90,14 @@ function timeLimitEvent() {
                 centerPadding: '320px'
             }
         }, {
-            breakpoint: 1500,
+            breakpoint: 1440,
             settings: {
-                centerPadding: '280px'
+                centerPadding: '343px'
             }
         }, {
-            breakpoint: 1100,
+            breakpoint: 1024,
             settings: {
-                centerPadding: '100px'
+                centerPadding: '385px'
             }
         }]
   
@@ -305,7 +305,7 @@ function sideMenuEvent() {
 
 function resizeSideScroll() {
     var documentHeight = jQuery(window).height();
-    console.log('height::'+jQuery(window).height());
+    //console.log('height::'+jQuery(window).height());
     var membersDayHeight = jQuery('.hc_notice_top').height();
     var bufferHeight = 85;
     var tabHeight = jQuery('.tab_item').outerHeight(true);

@@ -135,3 +135,17 @@
 #productClass .total-sort { padding-top: 30px; }
 
 #contentWrapper{width:100% !important;}
+
+.bx-wrapper {
+    margin: 0 auto;
+}
+.hc_title_img img {
+    width:100%;
+}
+.prd_week_best h3 {
+    text-align: center;
+}
+.hc_vf_tabs {
+    max-width: 2030px;
+    margin: 0 auto;
+}

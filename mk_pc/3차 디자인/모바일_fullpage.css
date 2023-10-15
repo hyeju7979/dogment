@@ -1,0 +1,14 @@
+.hc_page_fullscreen {
+    margin-top: -40px;
+}
+.hc_page_fullscreen img {
+    width: auto;
+    max-width: revert;
+    height: 100vh;
+}
+.hc_common_footer {
+    position: absolute;
+    bottom: 40px;
+    margin-top: 0;
+    width: 100%;
+}
