@@ -5,7 +5,7 @@
 		<!-- 컨텐츠 영역 -->
         <main>
             <!-- 섹션1 : 랜덤 이미지 -->
-            <section class="section hc_main_section1 fp-is-overflow" id="hcMainImage" data-anchor="anchor1">
+            <section class="hc_main_section1" id="hcMainImage">
                 <div class="hc_loding_copy loadingImage">
                     <div class="hc_loding_copy_bg"></div>
                     <section class="loading-data">
@@ -37,24 +37,34 @@
             </section>
 
             <!-- 섹션2 : 타임세일 -->
-            <section class="section fp-is-overflow hc_main_section2" data-anchor="anchor2">
-                <div class="hc_main_timesale_copy" id="hcTimeSaleWrap">
+            <section class="hc_main_section2">
+                <div class="hc_main_timesale_copy">
                     <!-- 대표 시계 -->
                     <div class="hc_headline">PIGMENT HOUR<span>®</span></div>
                 </div>
-                <ul class="hc_main_timesale_banner">
-                    <li><a href="#"><img src="http://kcompony7.jpg3.kr/web/hncok/img/main/main_timesale_banner01.jpg" alt="" /></a></li>
-                    <li>
+                <ul id="hcTimeSaleWrap" class="center">
+                    <li class="slide-item">
                         <a href="#">
-                            <div class="hc_main_period hc_period" id="firstItemTime" data-remain-sec="">12:50:40</div>
+                            <div class="hc_main_period hc_period" data-remain-sec="">12:50:40</div>
+                            <img src="http://kcompony7.jpg3.kr/web/hncok/img/main/main_timesale_banner01.jpg" alt="" />
+                        </a>
+                    </li>
+                    <li class="slide-item">
+                        <a href="#">
+                            <div class="hc_main_period hc_period" data-remain-sec="">12:50:40</div>
                             <img src="http://kcompony7.jpg3.kr/web/hncok/img/main/main_timesale_banner02.jpg" alt="" />
                         </a>
-                        <div class="hc_titmain_new">NEW BRAND DAY</div>
                     </li>
-                    <li><a href="#"><img src="http://kcompony7.jpg3.kr/web/hncok/img/main/main_timesale_banner03.jpg" alt="" /></a></li>
+                    <li class="slide-item">
+                        <a href="#">
+                            <div class="hc_main_period hc_period" data-remain-sec="">12:50:40</div>
+                            <img src="http://kcompony7.jpg3.kr/web/hncok/img/main/main_timesale_banner03.jpg" alt="" />
+                        </a>
+                    </li>
                 </ul>
+                <div class="hc_titmain_new">NEW BRAND DAY</div>
             </section>
-
+            
             <!-- 섹션3 : new arrival 30% off. -->
             <section class="hc_main_section3">
                 <a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/main/newbanner.jpg" /></a>
