@@ -631,7 +631,9 @@ hot issue common class
 */
 
 /* .item-wrap */
-.item-wrap { overflow: hidden; width:1100px }
+.item-wrap {
+    overflow: hidden;
+}
 .item-wrap .item-hd { margin: 40px 0 20px 0 }
 .item-wrap .nbg { background: none; text-align: center; }
 .item-wrap .item-info { zoom: 1; overflow: hidden; padding: 35px 0 10px; margin-bottom:10px }
@@ -692,8 +694,10 @@ hot issue common class
 .prd_week_best {   
 	width: 100%;    
 }
-.item-wrap{width:1920px; margin:0 auto;}
-.item-wrap .item-cont{width:100%; display:table; overflow:hidden; font-size:0; line-height:0;}
+.item-wrap {
+    margin:0 auto;
+}
+.item-wrap .item-cont{/*width:100%;*/ display:table; overflow:hidden; font-size:0; line-height:0;}
 .item-wrap .item-cont .item-list{display:inline-block; width:25%; vertical-align:top; overflow:hidden; padding:0 10px; box-sizing:border-box; padding-bottom:50px;}
 .item-wrap .item-cont.grid4 .item-list{width:25%;}
 .item-wrap .item-cont.grid3 .item-list{width:33.25%;}
@@ -745,7 +749,6 @@ hot issue common class
 
 .item_slide_wrap{
 	position:relative; 
-	left: 2px;
 }
 .prd_week_best .item_slide_wrap{
 	padding-bottom:40px;
@@ -771,8 +774,8 @@ hot issue common class
     overflow:hidden; 
     font-size:0;
 }
-.item_slide_wrap .bx-controls .bx-controls-direction .bx-prev{right: auto; left: 50%; margin-left: -630px;  background-image: url(/design/kcompany7/images/btn_visual_prev.gif);}
-.item_slide_wrap .bx-controls .bx-controls-direction .bx-next{left: auto; right: 50%; margin-right: -630px; background-image: url(/design/kcompany7/images/btn_visual_next.gif);}
+.item_slide_wrap .bx-controls .bx-controls-direction .bx-prev{right: auto; left: 0%; background-image: url(/design/kcompany7/images/btn_visual_prev.gif);}
+.item_slide_wrap .bx-controls .bx-controls-direction .bx-next{left: auto; right: 0%; background-image: url(/design/kcompany7/images/btn_visual_next.gif);}
 
 .titleArea {
     margin: 0 auto 90px;
@@ -906,7 +909,9 @@ img, fieldset {
 	border: none;
 	vertical-align: top;
 }
-
+img {
+    max-width:100%;
+}
 table {
   width: 100%;
   border: 0;
@@ -1015,7 +1020,9 @@ small {
   --hc_light: 300;
   --hc_regular: 400;
   --hc_medium: 500;
+  --hc_medium_m: 600;
   --hc_bold: 700;
+  --hc_bold_m: 800;
   --hc_heavy: 900;
   
   /* 폰트 스타일 */
@@ -1062,6 +1069,7 @@ small {
     max-width: 100%;
 }
 #hc_contentWrap {
+    margin: 0 auto;
     max-width: var(--hc_basewrap);
 }
 .hc_wrap_cart {
@@ -1690,6 +1698,7 @@ footer {
 	justify-content: flex-end;
 	align-items: center;
 	padding: 20px 0 66px;
+    width: 100%;
 }
 .hc_sorting_options li {
 	display: inline-block;

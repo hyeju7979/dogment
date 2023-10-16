@@ -451,21 +451,29 @@
 								<!-- ::: 상품상세 영역 -->
 								<div class="hc_detail_info">
 									<!--/form_product/-->
-									<div class="info">                                
-										<div class="hc_detail_info_type3">
-											<span class="hc_prd_name"><!-- 상품명 --><!--/name/--></span>
-											<!--/if_replace_price/-->
-												<span><!--/replace_price/--></span>
-											<!--/else/-->
-												<!--/if_dc_price_sell/-->
-													<span class="hc_normal_price"><!-- 정상가 --><!--/number/price_sell/-->원</span>
-													<span class="hc_discount_price"><!-- 할인판매가 --><!--/number/dc_price_sell/--></span>
-												<!--/else/-->
-													<span class="hc_normal_price"><!-- 정상가 --><!--/number/price_sell/-->원</span>
-												<!--/end_if/-->
-											<!--/end_if/-->
+									<div class="info">   
+                                        <div class="hc_detail_info_brand"><!-- 브랜드 --><!--/brand/--></div>  
+                                        <div class="hc_prd_name"><!-- 상품명 --><!--/name/--></div>   
+                                        <div class="hc_detail_info_code"><!-- 상품 코드 --><!--/code/--></div>
+										<div class="hc_discount_rate">
+                                            <!-- 설정한 할인가격 or 할인율 -->
+                                            &ndash; <!--/dc_text/-->할인
+                                            
+                                            <!-- 소비자 가격 대비 할인율 -->
+                                            <!--/discount_percent/-->
+                                        </div>
+                                        <!--/if_coupon_discount_price/-->
+										<div>
+											&ndash; 쿠폰 최대 할인가 : <!--/coupon_discount_price/-->
 										</div>
-										
+                                        <!--/end_if/-->  
+
+                                        <!--/if_reserve(+1)/-->
+                                        <div>
+											&ndash; 적립금 : <!--/reserve/--><!--/reserve_unit/-->
+										</div>
+										<!--/end_if/-->
+
 										<div class="hc_detail_info_type2">
 											<span class="hc_explanation">
 												<!--/if_package_product@subname/-->
@@ -478,14 +486,6 @@
 												</span>
 												<!--/end_if/-->  
 											</span>
-											
-											<span class="hc_discount_rate">
-												<!-- 설정한 할인가격 or 할인율 -->
-												(<!--/dc_text/-->)
-												
-												<!-- 소비자 가격 대비 할인율 -->
-												<!--/discount_percent/-->
-											</span>
 										</div>
 								
 										<!-- 컬러칩 -->
@@ -497,11 +497,6 @@
 										<!--/end_if/-->
 										</div>
 										<!-- 컬러칩 -->
-										
-										<div class="hc_detail_info_type2">
-											<span>쿠폰 최대 할인가</span>
-											<span class="hc_alignR"><!--/coupon_discount_price/--></span>
-										</div>
 										
 										<!-- 혜택확인  -->
 										<div class="price sell_benefit">
@@ -620,16 +615,7 @@
 													</tr>
 													<!--/end_if/-->
 													
-													<!--/if_reserve(+1)/-->
-													<tr>
-														<th scope="row"><div class="tb-left">적립금</div></th>
-														<td>
-															<div class="hc_alignR">
-																<!--/reserve/--><!--/reserve_unit/-->
-															</div>
-														</td>
-													</tr>
-													<!--/end_if/-->
+													
 													
 													<!--/if_point(+1)/-->
 													<tr>
@@ -649,14 +635,7 @@
 													</tr>
 													<!--/end_if/-->   
 													
-													<tr>
-														<th scope="row"><div class="tb-left">Design by</div></th>
-														<td>
-															<div class="hc_alignR">
-																피그먼트
-															</div>
-														</td>
-													</tr>
+													
 													<!--/if_not_multi_option_box/-->
 														<!--/if_option_price_sell/-->
 														<tr>
@@ -935,7 +914,7 @@
 																							<!--/if_replace_price/-->
 																								<!--/replace_price/-->
 																							<!--/else/-->
-																								<!--/number/price_sell/-->원
+																								<!--/number/price_sell/-->
 																							<!--/end_if/-->                   
 																						</em>
 																					</strong>
@@ -964,10 +943,6 @@
 														</tr>
 														<!--/end_if/-->
 													
-														<tr>
-															<td colspan="2"><span class="min-product-notice">(최소주문수량 1개 이상)</span></td>
-														</tr>
-														
 														<!--/if_multi_option_box/-->
 														<tr>
 															<td colspan="2" style="padding-top:0;">
@@ -976,13 +951,6 @@
 																		<div id="MK_innerOptScroll" class="line" style="padding-top:0;">
 																			<!--/multi_option_box/-->
 																			<!--/multi_option_add_box/-->
-																		</div>
-																		<div id="MK_innerOptTotal">
-																			<p class="totalLeft"><span class="MK_txt-total"><!-- 총 상품 금액 --></span></p>
-																			<p class="totalRight">
-																				<b>TOTAL : </b>&nbsp;<strong class="MK_total" id="MK_p_total"><!--/multi_option_total_price/--></strong>
-																				<span class="MK_txt-won">원</span>
-																			</p>
 																		</div>
 																		
 																		<!-- snapq 당일배송 프래임 -->
@@ -1121,10 +1089,48 @@
 											
 											<div class="hc_btn_wrap_info">
 												<!--/if_not_soldout/-->
-												<div class="hc_btn_large_fill"><a href="<!--/link_immediate/-->">구매하기</a></div>                                    
-												<div class="hc_btn_large"><a id="wishBtn" href="<!--/link_wishlist/-->"onclick="awAddToWishList();">관심상품</a></div>
+												<div class="hc_btn_large_fill"><a href="<!--/link_immediate/-->">BUY NOW</a></div>                                    
+												<div class="hc_btn_large"><a id="wishBtn" href="<!--/link_wishlist/-->"onclick="awAddToWishList();">WISH LIST</a></div>
 												<div class="hc_btn_large">
-													<a id="cartBtn" href="<!--/link_basket/-->" onclick="awAddToCart();">장바구니</a>
+													<a id="cartBtn" href="<!--/link_basket/-->" onclick="awAddToCart();">
+                                                        ADD TO CART
+                                                        <div>
+                                                            <!--/if_replace_price/-->
+                                                                <span><!--/replace_price/--></span>
+                                                            <!--/else/-->
+                                                                <!--/if_dc_price_sell/-->
+                                                                    <span class="hc_normal_price"><!-- 정상가 --><!--/number/price_sell/-->원</span>
+                                                                    <span class="hc_discount_price">
+                                                                        <!--/if_dc_price_sell/-->
+                                                                            <!--/if_multi_option_box/-->
+                                                                            <div class="MK_optAddWrap">
+                                                                                <div id="MK_innerOptWrap">
+                                                                                    <div id="MK_innerOptScroll" class="line" style="padding-top:0;">
+                                                                                        <!--/multi_option_box/-->
+                                                                                        <!--/multi_option_add_box/-->
+                                                                                    </div>
+                                                                                    <div id="MK_innerOptTotal">
+                                                                                        <p class="totalRight">
+                                                                                            <strong id="MK_p_total"><!--/multi_option_total_price/--></strong>
+                                                                                        </p>
+                                                                                    </div>
+                                                                                    
+                                                                                    <div id="MK_innerOptPrice">
+                                                                                        (상품금액 <span id="MK_txt-prd"></span> 원 + 기본옵션 <span id="MK_txt-opt"></span> 원 <!--/if_multi_option_add/-->+ 추가옵션 <span id="MK_txt-add"></span> 원<!--/end_if/-->)
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--/end_if/-->
+                                                                        <!--/else/-->
+                                                                            <!-- 할인판매가 --><!--/number/dc_price_sell/-->
+                                                                        <!--/end_if/-->
+                                                                    </span>
+                                                                <!--/else/-->
+                                                                    <span class="hc_normal_price"><!-- 정상가 --><!--/number/price_sell/-->원</span>
+                                                                <!--/end_if/-->
+                                                            <!--/end_if/-->
+                                                        </div>
+                                                    </a>
 													<!--/if_is_smartpickup/-->
 													<a href="<!--/link_smartpickup/-->" onMouseDown="try{_CTS_DETAIL();}catch (_e){}">스마트픽업</a>
 													<!--/end_if/-->
