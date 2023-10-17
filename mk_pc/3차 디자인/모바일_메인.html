@@ -20,8 +20,8 @@
     //스마트스킨 ObjectS/S
     if (SMARTSKIN_MAIN_OBJECT_CHECK_M()) SMARTSKIN_MAIN_OBJECT.main = true;
     SMARTSKIN_MAIN_OBJECT.page = 'main';
-    </script>
-    <style>
+</script>
+<style>
         #SMS_oneSlideBanner .SMS_oneNone {
             display: block;
         }
@@ -32,9 +32,9 @@
             display: block;
         }
     
-    </style>
-    <!-- 삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨] -->
-    <link rel="stylesheet" href="https://kcompony7.jpg3.kr/web/hncok/old_snapfit.css" />
+</style>
+<!-- 삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨] -->
+<link rel="stylesheet" href="https://kcompony7.jpg3.kr/web/hncok/old_snapfit.css" />
     
     <div id="container" class="hc_entire">
         <div id="contents" class="hc_container">
@@ -78,35 +78,38 @@
                 <!-- 타임세일 -->
                 <section class="hc_main_section section" data-anchor="anchor2">
                     <div class="hc_main_section2">
-                        <h3>PIGMENT HOUR <span>®</span></h3>
+                        <h3>
+                            <span>PIGMENT HOUR</span> 
+                            <em>®</em>
+                        </h3>
                         <ul id="hcTimeSaleWrap" class="center">
-                            <!--/loop_add1_product(6)/--> 
+                            <!--/loop_add2_product(10)/--> 
                                 <li class="slide-item">
-                                    <a href="<!--/add1_product@link/-->">
+                                    <a href="<!--/add2_product@link/-->">
                                         <div class="timeSaleimageWrap">
                                             <ul class="timesaleItem">
                                                 <li data-remain-sec="" class="hc_main_timepasses hc_period">12:50:40</li>
-                                                <li>실시간 <!--/add1_product@order_stock/-->명이 구매중입니다.</li>
+                                                <li>실시간 <!--/add2_product@order_stock/-->명이 구매중입니다.</li>
                                             </ul>
-                                            <img src="<!--/add1_product@mobile_image/-->" class="listPic" alt="" />
+                                            <img src="<!--/add2_product@image_m/-->" class="listPic" alt="" />
                                         </div>
                                         <div class="hc_prd_list_information">
-                                            <p class="hc_prd_name"><!--/add1_product@name/--></p>
+                                            <p class="hc_prd_name"><!--/add2_product@name/--></p>
                                             <p class="hc_addition_name">
-                                                <!--/if_add1_product@subname/-->
-                                                    <!--/add1_product@subname/-->
+                                                <!--/if_add2_product@subname/-->
+                                                    <!--/add2_product@subname/-->
                                                 <!--/else/-->
                                                     [피그먼트 단독특가] BRAND WEEK
                                                 <!--/end_if/-->
                                             </p>
-                                            <p><!--/add1_product@mobile_icons/--><!--/add1_product@subs_icon/--><!--/add1_product@promotion_icon_mobile/--></p>
-                                            <!--/if_add1_product@is_soldout/-->
+                                            <p><!--/add2_product@mobile_icons/--><!--/add2_product@subs_icon/--><!--/add2_product@promotion_icon_mobile/--></p>
+                                            <!--/if_add2_product@is_soldout/-->
                                                 <p class="listSoldout">(품절)</p>
                                             <!--/else/-->
-                                                <p class="hc_discount_price"><!--/number/add1_product@price_sell/--></p>
+                                                <p class="hc_discount_price"><!--/number/add2_product@price_sell/--></p>
                                                 
-                                                <!--/if_add1_product@point_price(+1)/-->
-                                                <p class="listPoint"><!--/number/add1_product@point_price/--><!--/add1_product@point_unit/--> 적립</p>
+                                                <!--/if_add2_product@point_price(+1)/-->
+                                                <p class="listPoint"><!--/number/add2_product@point_price/--><!--/add2_product@point_unit/--> 적립</p>
                                                 <!--/end_if/-->
                                             <!--/end_if/-->
                                         </div>
@@ -114,6 +117,7 @@
                                 </li>
                             <!--/end_loop/-->
                         </ul>
+                        <div class="hc_titmain_new">NEW BRAND DAY</div>
                     </div>
                 </section>
         
@@ -136,12 +140,14 @@
     
                 <section class="hc_main_section section" data-anchor="anchor4">
                     <div class="hc_main_section5 animated-fadeInUp">
-                        <h3>NEW ARRIVALS <span>&gt;</span></h3>
-                        <h4>피그먼트의 특별한 가을 신상품</h4>
+                        <a href="/shop/shopbrand.html?xcode=035&type=P">
+                            <h3>NEW ARRIVALS <span>&gt;</span></h3>
+                            <h4>피그먼트의 특별한 가을 신상품</h4>
+                        </a>
                         <ul>
-                            <!--/loop_add3_product(6)/--> 
+                            <!--/loop_recmd_product(23)/--> 
                                 <li>
-                                    <a href="<!--/add3_product@link/-->"><img src="<!--/add3_product@mobile_image/-->" class="listPic" alt="" /></a>
+                                    <a href="<!--/recmd_product@link/-->"><img src="<!--/recmd_product@mobile_image/-->" class="listPic" alt="" /></a>
                                 </li>
                             <!--/end_loop/-->
                         </ul>
@@ -213,12 +219,10 @@
         </div>
     </div>
     <!-- 스마트스킨 공통 JS -->
-    <script id="smartskinCustomJs" charset="utf-8" type="text/javascript" src="/design/kcompany7/smartskin_v6/custom/SMS_pigment_v6_2021.js?ver0.4"></script>
-    <!-- 스마트스킨 공통 JS -->
-    <!--script type="text/javascript" src="/js/idangerous.swiper-2.1.min.js"></script-->
-    <!--script type="text/javascript" src="/js/fitToParent.js"></script-->
+    <!--script id="smartskinCustomJs" charset="utf-8" type="text/javascript" src="/design/kcompany7/smartskin_v6/custom/SMS_pigment_v6_2021.js?ver0.4"></script-->
+    <!-- 스마트스킨 공통 JS -->    
     <script type="text/javascript">
-    $(function() {
+    /*$(function() {
         // 화면 사이즈 변경시
         var supportsOrientationChange = 'onorientationchange' in window,
             orientationEvent = supportsOrientationChange ? 'orientationchange' : 'resize';
@@ -297,5 +301,5 @@
             document.cookie = curCookie;
         }   
         document.location.href = href; 
-    }
+    }*/
     </script>

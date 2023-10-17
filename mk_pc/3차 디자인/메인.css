@@ -28,9 +28,6 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
 .hc_wrap_event .hc_thumbnail_list dt img, 
 .MS_prod_img_m,
 .hc_thumbnail_list img,
-.hc_main_section7 img,
-.hc_main_section6 img,
-.hc_main_section5 img,
 .hc_main_section4 img, 
 .hc_main_section3 img,
 .hc_main_section2 img,
@@ -225,7 +222,7 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
 }
 .hc_titmain_new {
     margin-top: 54px;
-    font-family: var(--fontfamily3_3);
+    font-family: var(--fontfamily3_4);
     font-size: 38px;
 }
 .hc_titmain_new::after {
@@ -269,6 +266,7 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
     -ms-transition: transform .5s ease-in-out;
     -o-transition: transform .5s ease-in-out;
     transition: transform .5s ease-in-out;
+    border-radius: 50% 50% 0 0;
 }
 .center .slide-item img {
     opacity: 0.5;
@@ -293,7 +291,7 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
 }
 .slick-prev {
     left: 100px;
-    top:38%;
+    top:50%;
 }
 .slick-prev:before, .slick-next:before {
     font-size: 0;
@@ -369,6 +367,9 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
     gap: 10px;
     overflow: hidden;
 }
+.hc_prdlist_type1 dl {
+    display: inline-block;
+}
 .thumb img {
     width: 100%;
     border-radius: 20px;
@@ -379,4 +380,20 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
 .hc_normal_price,
 .prd-price {
     color:var(--hc_color_level5);
+}
+.hc_discount_price em {
+    font-size: var(--hc_bd_small);
+    margin-left: 0;
+}
+
+/* 3.4 추가 */
+.hc_live_check {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -58%);
+    margin-left: 20px;
+    color: var(--hc_bright_color);
+    font-size: var(--hc_tit_headline);
+    text-align: center;
 }

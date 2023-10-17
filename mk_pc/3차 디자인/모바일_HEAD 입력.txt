@@ -1,0 +1,83 @@
+<span itemscope="" itemtype="//schema.org/Organization">
+    <link itemprop="url" href="http://pigment.co.kr/">
+     <a itemprop="sameAs" href="https://www.instagram.com/pigment__official/"></a>
+     <a itemprop="sameAs" href="https://play.google.com/store/apps/details?id=com.pigment.byapps/"></a>
+     <a itemprop="sameAs" href="https://apps.apple.com/app/id1480339041/"></a>
+     <a itemprop="sameAs" href="https://smartstore.naver.com/pigment7/"></a>
+    </span>
+    <script defer type="text/javascript" charset="utf-8" src="//tagm.uneedcomms.com/tgm/pigmentcokr/uneedcomms_tgm.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-361179733"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'AW-361179733');
+    </script>
+    
+    
+    <!-- RE:LOAD -->
+    <script type="text/javascript" charset="utf-8" src="//rs.pangx2.com/sdk/reload/js/reload.js"></script>
+    <script type="text/javascript">PX2.Reload.create({id:"200213A1", sno:"0003"});</script>
+    <!-- RE:LOAD. COPYRIGHT Pangpang, Inc. ALL RIGHTS RESERVED. -->
+    
+    <script>
+    (function(w,n,r){
+        var c = "_dtrConfig"; w[c] = w[c] || [];
+        w[c].push({id:r,pType:"makeshop"});
+        var s="//assets.datarize.ai/logger";
+        var c=n.getElementsByTagName("script")[0];
+        var a=n.createElement("script");a.async=true,a.src=s+"/genesis.common.min.js";
+        c.parentNode.insertBefore(a,c);
+    })(window,document,"10426");
+    </script>
+    
+    <!--- 오드컨셉 GA 추적 Start ------>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TC9T5GP');</script>
+    <!-- End Google Tag Manager -->
+    <!--- 오드컨셉 GA 추적 Start ------>
+    
+    <script type="text/javascript">
+    (function(w, d, a){
+        w.__beusablerumclient__ = {
+            load : function(src){
+                var b = d.createElement("script");
+                b.src = src; b.async=true; b.type = "text/javascript";
+                d.getElementsByTagName("head")[0].appendChild(b);
+            }
+        };w.__beusablerumclient__.load(a);
+    })(window, document, "//rum.beusable.net/script/b220628e142704u449/8a0047d1ef");
+    </script>
+    
+    
+    <!-- Social Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P7NGFSN');</script>
+    <!-- End Google Tag Manager -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://kcompony7.jpg3.kr/web/hncok/css/arial_webfont.css"/>
+    <link rel="stylesheet" type="text/css" href="https://kcompony7.jpg3.kr/web/hncok/css/font_digitalmono.css"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=68ae6dc019c300ab9952102ddde44eb8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="https://kcompony7.jpg3.kr/web/hncok/css/slick.css"/>
+    <!--link rel="stylesheet" type="text/css" href="https://kcompony7.jpg3.kr/web/hncok/css/slick-theme.css"/-->
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

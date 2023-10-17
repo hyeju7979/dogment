@@ -360,8 +360,17 @@ input, input[type=email], input[type=password], input[type=tel], input[type=text
 
   /* 폰트 스타일 */
   --fontfamily1: "Lato";
-  --fontfamily2: "digital-7 mono";
+  --fontfamily2: "digital_7_mono";
   --fontfamily3: "Arial Black";
+  --fontfamily3_1: "Arial Regular";
+  --fontfamily3_2: "Arial Narrow";
+  --fontfamily3_3: "Arial Medium";
+  --fontfamily3_4: "Arial Bold";
+  --fontfamily3_5: "Arial Narrow Bold";
+  --fontfamily3_6: "Arial Light Regular";
+  --fontfamily3_7: "Arial CE Regular";
+  --fontfamily3_8: "Arial CE MT Black Regular";
+  --fontfamily3_9: "Arial CE Bold";
 
   --hc_title_area: 142px; /* 제목 영역 */
   --hc_content_area: 416px; /* 내용 영역 */
