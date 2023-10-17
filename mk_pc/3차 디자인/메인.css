@@ -38,10 +38,15 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
     width:100%;
     max-width: 100%;
 }
-
+.hc_headline {
+	font-family:var(--fontfamily3);
+	font-weight:var(--hc_heavy);
+	font-size:60px;
+    letter-spacing: -3px;
+}
 /* 섹션1 : 랜덤 이미지 */
 .hc_main_section1 {
-  margin: 44px 0 72px;
+  margin: 44px 0 216px;
 }
 .mainImage {
    display: none;
@@ -179,11 +184,6 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
     min-width: 1024px;
     box-sizing: border-box;
 }
-.hc_main_section2 .hc_headline {
-	font-family:var(--fontfamily3);
-	font-weight:var(--hc_heavy);
-	font-size:72px;
-}
 .hc_main_section2 .hc_headline span {
     position: relative;
     top: 14px;
@@ -202,27 +202,6 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
 	display:inline-block;
   vertical-align: top;
 }
-/*
-.hc_main_timesale_banner li:first-child {
-    left:-15%;
-}
-.hc_main_timesale_banner li:last-child {
-    right:-15%;
-}
-
-.hc_main_timesale_banner li:first-child,
-.hc_main_timesale_banner li:last-child {
-    background-color: rgba(0,0,0,1);
-    top:20px;
-}
-.hc_main_timesale_banner li:first-child img,
-.hc_main_timesale_banner li:last-child img {
-    opacity: 0.5;
-}
-.hc_main_section2 li:nth-child(even) .hc_main_period {
-  display: none;
-}
-*/
 .hc_main_timesale_banner a {
     display: block;
 }
@@ -246,13 +225,14 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
 }
 .hc_titmain_new {
     margin-top: 54px;
+    font-family: var(--fontfamily3_3);
     font-size: 38px;
 }
 .hc_titmain_new::after {
     content: "";
     display: inline-block;
     position: absolute;
-    width:185px;
+    width:190px;
     height:2px;
     background:var(--hc_dark_color);
 }
@@ -369,4 +349,34 @@ div.timesaleItem:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-s
   .hc_titmain_new::after {
     left: 400px;
   }
+}
+
+.hc_main_section3 {
+    margin: 0 auto 162px;
+}
+
+.hc_main_section4 {
+    margin: 0 auto 162px;
+    overflow: hidden;
+}
+.hc_prdwrap_type1 {
+    margin-top: 94px;
+}
+.hc_prdlist_type1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+    overflow: hidden;
+}
+.thumb img {
+    width: 100%;
+    border-radius: 20px;
+}
+.prd-info {
+    margin: 20px 0 0 20px;
+}
+.hc_normal_price,
+.prd-price {
+    color:var(--hc_color_level5);
 }

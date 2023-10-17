@@ -46,6 +46,7 @@
                     <li class="slide-item">
                         <a href="#">
                             <div class="hc_main_period hc_period" data-remain-sec="">12:50:40</div>
+                            <div>실시간 <!--/add1_product@order_stock/-->명이 구매중입니다.</div>
                             <img src="http://kcompony7.jpg3.kr/web/hncok/img/main/main_timesale_banner01.jpg" alt="" />
                         </a>
                     </li>
@@ -86,6 +87,64 @@
             <!-- 섹션3 : new arrival 30% off. -->
             <section class="hc_main_section3">
                 <a href=""><img src="http://kcompony7.jpg3.kr/web/hncok/img/main/newbanner.jpg" /></a>
+            </section>
+
+            <!-- 섹션4 : new arrivals -->
+            <section class="hc_main_section4">
+                <div class="hc_headline">NEW ARRIVALS</div>
+                <!-- 추천상품 영역 -->
+                <!--/if_recmd_product/-->
+                    <div class="hc_prdwrap_type1">
+                        <div class="hc_prdlist_type1">
+                        <!--/loop_recmd_product(3)/-->
+                            <dl>
+                                <dt class="thumb"><a href="<!--/recmd_product@link/-->"><img src="<!--/recmd_product@image_m/-->" alt=""/></a></dt>
+                                <dd class="prd-info">
+                                    <ul>   
+                                        <li class="prd-ico"><!--/recmd_product@icons/--><!--/recmd_product@subs_icon/--><!--/recmd_product@promotion_icon/--></li>
+                                        <li class="hc_prd_name"><a href="<!--/recmd_product@link/-->"><!--/recmd_product@name/--></a></li>
+                                        <li class="prd-price">
+                                        <!--/if_recmd_product@price_replace/-->
+                                            <!--/recmd_product@price_replace/-->
+                                        <!--/else_if_recmd_product@is_soldout/-->
+                                            Sold Out
+                                        <!--/else/-->
+                                            <!--/if_recmd_product@price_discount/-->
+                                                <span class="hc_normal_price"><!--/number/recmd_product@price_sell/--></span>
+                                                <span class="price"><!--/number/recmd_product@price_discount/--> WON</span>
+                                            <!--/else/-->
+                                                <!--/if_recmd_product@price_consumer(+1)/-->
+                                                    <strike><!--/number/recmd_product@price_consumer/-->원</strike>
+                                                <!--/end_if/-->
+                                                <span class="hc_discount_price"><!--/number/recmd_product@price_sell/--> WON</span>
+                                            <!--/end_if/-->
+                                        <!--/end_if/-->
+                                        </li>
+                                        <!--/if_recmd_product@color/-->
+                                        <li class="prd-color">
+                                            <!--/loop_recmd_product@color/-->
+                                            <font color="<!--/recmd_product@color@code/-->">■</font>
+                                            <!--/end_loop/-->
+                                        </li>
+                                        <!--/end_if/-->
+
+                                        <!--/if_recmd_product@link_pop_product_benefit/-->
+                                        <li class="prd-benefit">
+                                            <a href="<!--/recmd_product@link_pop_product_benefit/-->"><img src="/images/d3/modern_simple/btn_benefit.gif" alt="혜택팝업보기" /></a>
+                                        </li>
+                                        <!--/end_if/-->
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <!--/if_step(3)/-->
+                        </div>
+                        <div class="hc_prdlist_type1">
+                            <!--/end_if/-->
+                        <!--/end_loop/-->
+                        </div>
+                    </div>
+                <!--/end_if/-->
+                <!-- 추천상품 영역 -->
             </section>
         </main>              
 	</div>

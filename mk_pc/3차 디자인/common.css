@@ -1014,6 +1014,7 @@ small {
   --hc_color_level2:#D9D9D9;
   --hc_color_level3:#F8F8F8;
   --hc_color_level4:#8E8E8E;
+  --hc_color_level5:#999;
   
   /* 텍스트 Weight 규칙 */
   --hc_thin: 100;
@@ -1027,8 +1028,17 @@ small {
   
   /* 폰트 스타일 */
   --fontfamily1: "Lato";
-  --fontfamily2: "digital-7 mono";
+  --fontfamily2: "digital_7_mono";
   --fontfamily3: "Arial Black";
+  --fontfamily3_1: "Arial Regular";
+  --fontfamily3_2: "Arial Narrow";
+  --fontfamily3_3: "Arial Medium";
+  --fontfamily3_4: "Arial Bold";
+  --fontfamily3_5: "Arial Narrow Bold";
+  --fontfamily3_6: "Arial Light Regular";
+  --fontfamily3_7: "Arial CE Regular";
+  --fontfamily3_8: "Arial CE MT Black Regular";
+  --fontfamily3_9: "Arial CE Bold";
   
   /* width & height 수치 값 */
   --hc_basewrap:1920px;
