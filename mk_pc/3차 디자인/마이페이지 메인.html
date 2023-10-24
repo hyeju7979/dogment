@@ -1,0 +1,162 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+	<!--/include_header(1)/-->
+	<div id="hc_commonWrap" class="hc_wrap_mypage">
+		<!-- 컨텐츠 영역 -->
+		<div id="hc_contentWrap">
+			<nav class="hc_mypage_nav">
+				<!--/include_menu(2)/-->
+				<p>
+				<!--/if_group/-->
+					<!--/if_group_free_delivery/-->기본배송비가 무료인 <!--/end_if/-->
+					<!--/if_group_allfree_delivery/-->전체 배송비가 무료인 <!--/end_if/-->
+					<!--/if_group_reserve_message/-->(<!--/group_reserve_message/-->)<br /><!--/end_if/-->
+					<!--/if_buy_benefit_message/--><span><!--/number/min_buy_price/-->원 이상 <!--/buy_method/-->구매시,</span> <!--/buy_benefit_message/--><!--/end_if/-->
+				<!--/end_if/-->
+				</p>				
+			</nav>
+			<main>
+				<!-- 페이지 타이틀 -->
+				<h2 class="hc_tit_page">MY PAGE</h2>
+								
+				<!-- 최근 주문 -->
+				<div class="hc_mypage_recentorder">
+					<h3 class="hc_tit_headline">최근 주문</h3>
+					<p class="hc_more"><a href="<!--/link_order/-->">더보기</a></p>
+					<table class="hc_table_typeb" summary="주문일자, 상품명, 결제금액, 주문상세">
+						<caption>최근 주문 정보 목록</caption>
+						<colgroup>
+							<col width="15%">
+							<col width="auato">
+							<col width="30%">
+							<col width="15%">
+							<col width="10%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">주문일</th>
+								<th scope="col">주문내역</th>
+								<th scope="col">주문번호</th>
+								<th scope="col">결제금액</th>
+								<th scope="col">주문상세</th>
+							</tr>
+						</thead>
+						<tbody>
+						<!--/if_order_list/-->
+							<!--/loop_order_list(5)/-->
+							<tr>
+								<td><!-- 주문일자 --><!--/order_list@order_date/--></td>
+								
+								<!--/if_order_list@is_present/-->
+								<td>
+									<div>
+										<span class="gift">선물</span> 
+										<!--/order_list@brand_name/-->
+										<!--/if_order_list@is_subs_order/--> 
+											정기배송 결제
+										<!--/end_if/-->
+									</div>
+								</td>
+								<!--/else/-->
+								<td>
+									<ul class="hc_alignL">
+										<li><!-- 상품명 --><!--/order_list@brand_name/--></li>
+										<li><!-- 입금일자 --><!--/order_list@pay_bank_date/--></li>
+										<li><!-- 수령자명 --><!--/order_list@receiver/--></li>
+									</ul>
+								</td>
+								<!--/end_if/-->
+								
+								<td><!--/order_list@order_num/--></td>
+								<td><!--/number/order_list@order_price/-->원</td>
+								<td><span class="hc_btn_mini"><a href="<!--/order_list@link_smorder/-->">VIEW</a></span></td>
+							</tr>
+							 <!--/end_loop/-->
+						<!--/else/-->
+							<tr>
+								<td colspan="5">
+									<div class="hc_no_date">주문 내역이 없습니다.</div>
+								</td>
+							</tr>
+						<!--/end_if/-->
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 관심상품 -->
+                <div class="hc_mypage_wishlist hc_bottomside">
+                    <h3 class="hc_tit_headline">관심 상품</h3>
+                    <p class="hc_more"><a href="<!--/link_wish/-->">더보기</a></p>
+					<ul class="hc_thumbnail_list">
+						<!--/loop_wishlist_product(4)/-->
+                        <li>
+                            <div class="hc_thumbnail4"><a href="<!--/wishlist_product@link/-->"><img src="<!--/wishlist_product@image_m/-->" alt="상품 섬네일" title="상품 섬네일" /></a></div>
+                            <div class="hc_prd_list_information">
+								<!-- 상품명 -->
+                                <div class="hc_prd_name"><a href="<!--/wishlist_product@link/-->"><!--/wishlist_product@name/--></a></div>
+                                <ul class="hc_prd_element">
+									<!--/if_wishlist_product@price_replace/--><!-- 가격 대체문구 -->
+										<!--/wishlist_product@price_replace/-->
+									<!--/else_if_wishlist_product@is_soldout/--><!-- 품절여부 -->
+										Sold Out
+									<!--/else/-->
+										<!--/if_wishlist_product@price_discount/--><!-- 할인 가격 -->
+											<span class="hc_normal_price"><!--/number/wishlist_product@price_sell/-->원</span><!-- 판매 가격 -->
+											<span class="hc_discount_price"><!--/number/wishlist_product@price_discount/-->원</span><!-- 할인 가격 -->
+										<!--/else/-->
+											<!--/if_wishlist_product@price_consumer(+1)/--><!-- 소비자 가격 -->
+												<span class="hc_normal_price"><!--/number/wishlist_product@price_consumer/-->원</span>
+											<!--/end_if/-->
+											<span class="price"><!--/number/wishlist_product@price_sell/-->원</span>
+										<!--/end_if/-->
+									<!--/end_if/-->
+									<li class="prd-ico"><!--/wishlist_product@icons/--></li>
+                                </ul>
+                            </div>
+                        </li>
+						<!--/end_loop/-->
+                    </ul>
+                </div>
+				
+				<!-- 최근 게시글 -->
+                <div class="hc_mypage_recentposts">
+                    <h3 class="hc_tit_headline">최근 게시글</h3>
+                    <p class="hc_more"><a href="<!--/link_mypage_article/-->">더보기</a></p>
+                    <table class="hc_table_typeb">
+                        <caption>표제목</caption>
+                        <colgroup>
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="auto">
+                        </colgroup>
+						<thead>
+							<tr>
+								<th>날짜</th>
+								<th>제목</th>
+								<th>게시판</th>
+							</tr>
+						</thead>
+						<tbody>
+						<!--/if_my_list/-->
+							<!--/loop_my_list(5)/-->
+							<tr>
+								<td><!--/my_list@date/--></td>
+								<td><a href="<!--/my_list@link/-->"><!--/if_my_list@subject/--><!--/my_list@subject/--><!--/else/-->제목없음<!--/end_if/--></a></td>
+								<td><a href="<!--/my_list@link_board/-->"><!--/my_list@board_name/--></a></td>
+							</tr>
+							<!--/end_loop/-->
+						<!--/else/-->
+							<tr>
+								<td colspan="3">
+									<div class="hc_no_date">작성된 게시글이 없습니다.</div>
+								</td>
+							</tr>
+						<!--/end_if/-->
+						</tbody>
+                    </table>
+                </div>
+			</main>    
+		</div>
+	</div>
+	<!--/include_footer(1)/-->
+</div>
