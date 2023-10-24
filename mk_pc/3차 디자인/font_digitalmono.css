@@ -1,6 +1,5 @@
 @font-face {
-    font-family: 'digital mono';
-    font-style: normal;
-    font-weight: normal;
-    src: local('digital mono'), url('https://kcompony7.jpg3.kr/web/hncok/font/digital mono.ttf') format('ttf');
+	font-family: digital_7_mono;
+	src: local("https://www.pigment.co.kr//design/kcompany7/fonts/digital_7_mono.ttf"), local("https://www.pigment.co.kr//design/kcompany7/fonts/digital_7_mono.ttf"), url("https://www.pigment.co.kr//design/kcompany7/fonts/digital_7_mono.ttf");
+	font-weight: bold;
 }
