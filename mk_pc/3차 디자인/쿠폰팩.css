@@ -1,0 +1,12 @@
+#hc_contentWrap main h2.hc_tit_page {
+    display: none;
+}
+.hc_tit_headline {
+    margin-top: 100px;
+}
+.hc_clarification {
+    margin: 10px 0 44px !important;
+}
+.hc_tit_caption {
+    font-family: var(--fontfamily3_3);
+}

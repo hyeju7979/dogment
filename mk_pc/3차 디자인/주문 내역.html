@@ -1,0 +1,130 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+	<!--/include_header(1)/-->
+	<div id="hc_commonWrap" class="hc_wrap_mypage">
+		<!-- 컨텐츠 영역 -->
+		<div id="hc_contentWrap">
+			<nav class="hc_mypage_nav">
+				<!--/include_menu(2)/-->
+			</nav>
+			<main class="hc_page_orderhistory">
+                <!--/include_menu(4)/-->
+                
+				<!-- 페이지 타이틀 -->
+                <h2 class="hc_tit_page">ORDER HISTORY</h2>
+				
+				<!-- 주문내역 -->
+                <div class="hc_mypage_recentorder">
+                    <h3 class="hc_tit_headline">주문 내역</h3>
+                    <div class="hc_clarification">
+                        · 상품명 또는 주문상세의 조회 버튼을 클릭하시면, 주문상세 내역을 확인하실 수 있습니다.<br />
+                        · 배송 현황의 조회 버튼을 클릭하시면, 해당 주문의 배송 현황을 한눈에 확인하실 수 있습니다.
+                    </div>
+                    <table class="hc_table_typeb">
+                        <caption>표제목</caption>
+                        <colgroup>
+                            <col width="8%">
+                            <col width="15%">
+                            <col width="auto">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="10%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">주문일</th>
+                                <th scope="col">상품명</th>
+                                <th scope="col">결제금액</th>
+                                <th scope="col">주문상세</th>
+                                <th scope="col">배송현황</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+						<!--/if_order_list/-->
+							<!--/loop_order_list/-->
+                            <tr>
+                                <td><!--/order_list@number/--></td>
+                                <td><!--/order_list@order_date/--></td>
+                                <td class="hc_left"><!--/order_list@brand_name/--></td>
+                                <td><!--/number/order_list@order_price/--> 원</td>
+                                <td><a class="hc_btn_mini" href="<!--/order_list@link_smorder/-->">VIEW</a></td>
+                                <td><a class="hc_btn_mini" href="<!--/order_list@link_delivery/-->">VIEW</a></td>
+                            </tr>
+							<!--/end_loop/-->
+						<!--/else/-->
+							<tr>
+								<td colspan="6"><div class="hc_no_date">주문내역이 없습니다.</div></td>
+							</tr>
+						<!--/end_if/-->
+                        </tbody>
+                    </table>
+					
+                    <!-- 페이징 -->
+                    <div class="paging">
+						<!--/if_pager_order_list::first/-->
+						<a href="<!--/pager_order_list::first@link/-->" class="first">
+							<span class="hc_all_prev">
+								<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+									<g clip-path="url(#clip0_934_3487)">
+									<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_934_3487">
+									<rect width="20" height="20" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</span>
+						</a>
+						<!--/end_if/-->
+						
+						<!--/if_pager_order_list::prev/-->
+						<a class="prev hc_prev" href="<!--/pager_order_list::prev@link/-->">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+							</svg>
+						</a>
+						<!--/end_if/-->
+						
+						<!--/if_pager_order_list/-->
+						<!--/loop_pager_order_list::page/-->
+							<!--/if_pager_order_list::page@current/-->
+							<a class="now" href="<!--/pager_order_list::page@link/-->"><!--/pager_order_list::page/--></a>
+							<!--/else/-->
+							<a href="<!--/pager_order_list::page@link/-->"><!--/pager_order_list::page/--></a>
+							<!--/end_if/-->
+						<!--/end_loop/-->
+						<!--/end_if/-->
+						
+						<!--/if_pager_order_list::next/-->
+						<a class="next hc_next" href="<!--/pager_order_list::next@link/-->">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+							</svg>
+						</a>
+						<!--/end_if/-->
+						
+						<!--/if_pager_order_list::last/-->
+						<a class="last" href="<!--/pager_order_list::last@link/-->">
+							<span class="hc_all_next">
+								<svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+									<g clip-path="url(#clip0_934_3487)">
+									<path d="M9 9.99989L14.1725 15.1724L15.3508 13.9941L11.3567 9.99989L15.3508 6.00573L14.1725 4.82739L9 9.99989ZM13.7083 9.99989L18.8808 15.1724L20.0592 13.9941L16.065 9.99989L20.0592 6.00573L18.8808 4.82739L13.7083 9.99989Z" fill="black"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_934_3487">
+									<rect width="20" height="20" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</span>
+						</a>
+						<!--/end_if/-->
+					</div>
+                </div>
+			</main>    
+		</div>
+	</div>
+	<!--/include_footer(1)/-->
+</div>

@@ -1,0 +1,13 @@
+/* 적립금 검색 */
+#myReserv .search_reserve { float: right; margin-top: 20px; }
+#myReserv .search_reserve img { vertical-align: middle; }
+
+#hc_contentWrap main h2.hc_tit_page {
+    display: none;
+}
+.hc_tit_headline {
+    margin-top: 100px;
+}
+.hc_clarification {
+    margin: 10px 0 44px !important;
+}
