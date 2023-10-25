@@ -1,3 +1,80 @@
+/* 
+	하단 
+*/
+footer {
+  margin-top: 240px;
+  font-family: var(--fontfamily1);
+  font-size: var(--hc_bd_small);
+  font-weight: var(--hc_regular);
+  line-height: 2;
+  background: var(--hc_color_level3);
+}
+
+.hc_ft_businessGuide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 76px 0 40px;
+}
+.hc_ft_businessGuide div:nth-child(1) {
+  margin-right: 400px;
+}
+
+.hc_ft_businessGuide ul {
+  margin-bottom: 58px;
+}
+
+.hc_ft_cs li:nth-child(2) {
+  margin: 30px 0 68px;
+}
+
+.hc_ft_help li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.hc_ft_help li:nth-child(1) {
+  list-style: none;
+  margin-left: 0;
+}
+
+.hc_ft_pigment li:nth-child(1) {
+  margin-bottom: 42px;
+}
+.hc_copyright {
+	padding: 30px 90px 35px;
+	text-align: right;
+	border-top: 1px solid var(--hc_dark_color);
+}
+
+.hc_badge {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index:9999;
+  width:32px;
+  height:100px;
+}
+
+.hc_badge_up {
+	transform: rotate(272deg);
+	position: relative;
+	left: 1px;
+}
+
+.hc_badge_down {
+	transform: rotate(-272deg);
+	position: relative;
+	left: -1px;
+}
+.hc_wrap_event .hc_thumbnail_list dt img, 
+.MS_prod_img_m,
+.hc_thumbnail_list img {
+    width:100%;
+    max-width: 100%;
+}
+
 .npay_text,
 .npay_btn_link.npay_btn_zzim,
 .npay_event {
@@ -8,6 +85,7 @@
     border: 0 !important;
 }
 #nhn_btn {
+    margin-top: 20px;
     padding-top: 20px !important;
     text-align: left !important;
 }
