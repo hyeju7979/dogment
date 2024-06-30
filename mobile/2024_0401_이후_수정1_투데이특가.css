@@ -1,0 +1,10 @@
+.timesaleItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: var(--hc_bright_color);
+    font-size: var(--hc_bd_large);
+}
