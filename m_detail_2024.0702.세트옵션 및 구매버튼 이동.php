@@ -590,7 +590,7 @@
 
                     <!--/if_package_product/-->
                         <!-- 세트상품 구매 버튼 시작 -->
-                        <div class="new_baro_btns">
+                        <div class="new_baro_btns sets">
                             <a href="<!--/link_immediate/-->" class="buy hc_btn_mini_fill hc_btn_setBuy">구매하기</a>
                             <a class="hc_btn_mini hc_btn_setWish"  style="display:none" href="<!--/link_wishlist/-->">관심상품</a>
                             <a id="cartBtn" class="hc_btn_mini hc_btn_setCart" href="<!--/link_basket/-->">장바구니</a>
