@@ -11,19 +11,21 @@
                 <div class="hc_detail_top">
                     <div class="shopdetailInfoTop" style="width:100%">
                         <figure>
+                            <div>
+                                <!-- 다중 이미지 썸네일 상세 이미지 -->
+                                <!--/multi_image_enlarge/-->
+                            </div>
+                            
                             <!--/if_multi_image_enlarge/-->
-                            <ul>
-                                <li><!--/multi_image_enlarge/--></li>
                                 <ul id="hcDetailMainSlide" class="hc_detail_multis2">
                                     <!--/loop_multi_image_list/-->
                                     <li><img src="<!--/multi_image_list@img/-->" class="new_multi_image_thumbnail2" onmouseover="<!--/multi_image_list@link/-->" /></li>
                                     <!--/end_loop/-->
-                                </ul>
-                            </ul>
-                            
+                                </ul>                        
                             <!--/else/-->
-                                <!--/zoom_image/-->
-                            <!--/end_if/-->
+                                <!-- 상품 이미지 -->
+                                <img src="<!--/mobile_image/-->" alt="<!--/img_alt/-->"/>                    
+                            <!--/end_if/-->                            
                         </figure>
                     </div>
                 </div>
