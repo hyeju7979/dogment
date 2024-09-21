@@ -1,0 +1,22 @@
+/* 썸네일 */
+.hc_thumbnail_list {
+    display: flex;
+    flex-wrap: wrap; /* 요소들이 자동으로 줄바꿈 되도록 */
+    justify-content: left; /* 썸네일들 사이에 간격 적용 */
+}
+.hc_thumbnail_list dl {
+    position: relative;
+    float: left;
+    width: 25%;
+    padding: 0 .8rem;
+    box-sizing: border-box;
+}
+
+.hc_thumbnail_list dl:nth-child(1) {
+    margin-left: 25%;
+    width: 37.5%;
+}
+
+.hc_thumbnail_list dl:nth-child(2) {
+    width: 37.5%;
+}

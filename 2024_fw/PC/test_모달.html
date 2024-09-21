@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 전체 화면을 덮는 모달 배경 */
+        .modal-background {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        /* 모달 창 스타일 */
+        .modal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 2rem;
+            width: 80%;
+            max-width: 500px;
+            max-height: 80%; /* 화면의 80% 높이까지만 차지 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow-y: auto; /* 내용이 넘칠 경우 스크롤 생성 */
+        }
+
+
+        /* 닫기 버튼 */
+        .close-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .close-btn:hover {
+            background-color: #555;
+        }
+    </style>
+    <title>Modal Example</title>
+</head>
+<body>
+    <!-- 모달 배경 -->
+    <div id="modalBackground" class="modal-background">
+        <!-- 모달 창 -->
+        <div class="modal">
+            <p>
+                여기는 모달 창입니다. 여기에 원하는 내용을 넣으세요.
+                Office ipsum you must be muted. Just so job got pole. Problem low slipstream slipstream book got nor feelers down. Board scraps you place see. Respectively data lean points wanted my. Performance enable dogpile invested ensure ask half must wider. Domains angel assassin devil rundown first-order unit.
+Then hill key loop highlights proceduralize points new these ladder. Fit algorithm territories while across deploy back-end ditching you're dogpile. Hiring define enable when client that marketing market left. Already impact squad want take breakout. Bells win sky join value-added. Already invite zoom if downloaded.
+After incentivization not crystallize hear plan it's uat. These pain vec at stakeholders organic sandwich synergize dunder. Base another those cc slipstream whatever due web. Where you're while power price. Take prioritize inclusion pups discussion race revision. About data procrastinating managing already incompetent already meeting point stakeholders. Finish is sky illustration teams like pain. Productive solutions important economy feed regroup own. Needed that's should long journey call circle right sandwich drawing-board. Design please comms floor i'm activities growth rundown invite. Break algorithm win-win-win low synergy search socialize read. Identify streamline dive move fit breakout ipsum follow.
+Submit level it's hear should minimize wheel. Long need awareness points web. Looking native ensure where thought another didn't web cause ditching. Business look deep are eat plan unpack /. Light usabiltiy left without plan game i'm. Stop pups status marginalised keep requirements alpha innovation can't this. Food we've stands close protocol running client ensure where. Options floor win-win-win down managing technologically downloaded finance meat first-order. Beforehand will across encourage needle eager moments wiggle. 30,000ft when plan strategic zoom better every. Sexy pulling win-win-win but identify savvy. Email paradigm ipsum any invite. Our due new criticality they quick email corporate strategic back-end.
+Running indicators creep they panel. Pollination managing viral feature stand move. Incentivize latest panel my data close move. Break banner hiring let sky innovation team quick my. Baked status running let management ocean closing feed. Centric wiggle asserts food way back-end back create any centric. Per working welcome elephant busy. Discussion when overflow finish give invite email open. Loss economy our pin unpack streamline activities alarming way plan. Important shark quick-win backwards effects domains pants switch sky. Were shoot value-added idea silently tomorrow mindfulness. Innovation mifflin put points know.
+            </p>
+            <button class="close-btn" onclick="closeModal()">닫기</button>
+        </div>
+    </div>
+
+    <!-- 모달 여는 버튼 -->
+    <button onclick="openModal()">모달 열기</button>
+
+    <script>
+        // 모달 열기
+        function openModal() {
+            document.getElementById('modalBackground').style.display = 'block';
+        }
+
+        // 모달 닫기
+        function closeModal() {
+            document.getElementById('modalBackground').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

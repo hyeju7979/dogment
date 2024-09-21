@@ -1,0 +1,46 @@
+/* 사이드바 스타일 */
+.hncok_sidebar {
+    position: relative; /* 자식 요소가 부모 기준으로 배치될 수 있도록 relative로 설정 */
+    width: 200px; /* 사이드바의 너비를 200px로 고정 */
+}
+
+/* 대분류 스타일 */
+.hncok_vertical_menu .depth_1 {
+    padding: 10px; /* 항목 내부에 10px 간격을 줌 */
+    background-color: #fff; /* 대분류 항목의 배경색을 밝은 회색으로 설정 */
+    cursor: pointer;
+}
+
+/* 중,소분류 기본 스타일: 처음엔 숨겨져 있음 */
+.hncok_vertical_menu .depth_3,
+.hncok_vertical_menu .depth_2 {
+    display: none; /* 기본적으로 보이지 않음 */
+    position: absolute; /* 대분류 옆에 표시하기 위해 절대 위치 설정 */
+    top: 0; /* 중,소분류가 대분류와 같은 높이에 맞춰 나타나도록 설정 */
+    left: 150px; /* 대분류 바로 옆에 중, 소분류가 나타나도록 설정 */
+    width: 150px; /* 중,소분류 리스트의 너비를 150px로 설정 */
+    min-height:200px;
+}
+
+/* 대분류에 마우스를 올렸을 때 중,소분류가 나타남 */
+.hncok_vertical_menu .depth_2 li:hover > .depth_3,
+.hncok_vertical_menu .depth_1:hover > .depth_2 {
+    display: block; /* hover 시 중,소분류가 보이도록 설정 */
+}
+
+/* 세부적으로 각 항목의 스타일 지정 */
+.hncok_vertical_menu .depth_1, 
+.hncok_vertical_menu .depth_2 li {
+    background-color: #fff; /* 대분류 및 중분류 항목의 배경색을 연한 회색으로 설정 */
+}
+
+.hncok_vertical_menu .depth_3 li,
+.hncok_vertical_menu .depth_2 li {
+    padding: 10px; /* 중분류 항목의 패딩을 10px로 설정 */
+    background-color: #fff; /* 중분류 배경색을 중간 회색으로 설정 */
+    cursor: pointer; 
+}
+
+.hncok_vertical_menu .depth_3 li {
+    background-color: #eee; /* 소분류 항목의 배경색을 더 진한 회색으로 설정 */
+}

@@ -1,0 +1,21 @@
+.hc_prdlist_row2 {
+    text-align: center;
+}
+.hc_prdlist_row2.hc_thumbnail_list dl {
+    display: inline-block;
+    vertical-align: top;
+}
+.hc_prdlist_row2.hc_thumbnail_list dl:nth-child(5n+4),
+.hc_prdlist_row2.hc_thumbnail_list dl:nth-child(5n-1) ,
+.hc_prdlist_row2.hc_thumbnail_list dl:nth-child(1) {
+    /*width: 100% !important;*/
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+.hc_thumbnail_list img {
+    width: revert;
+}
+.bx-wrapper {
+    margin: 0 auto;
+}

@@ -1,0 +1,40 @@
+<nav></nav>
+    <!-- 전체 사이드바 메뉴를 감싸는 컨테이너 START -->
+    <ul class="hncok_sidebar hncok_vertical_menu">
+    <!--/loop_category1/-->
+        <!--/if_category1@category2/-->
+        
+        <!-- 대분류 -->
+        <li class="depth_1">
+            <a href="<!--/category1@link/-->"><!--/category1@name/--></a>
+            
+            <!-- 중분류 항목 리스트 (기본적으로 숨겨져 있음) -->
+            <ul class="depth_2">
+            <!--/loop_category1@category2/-->
+                <!--/if_category1@category2@category3/-->
+                <li>
+                    <a href="<!--/category1@category2@link/-->"><!--/category1@category2@name/--></a>
+                    <!-- 소분류 항목 리스트 (기본적으로 숨겨져 있음) -->
+                    <ul class="depth_3">
+                        <!--/loop_category1@category2@category3/-->
+                        <li><a href="<!--/category1@category2@category3@link/-->"><!--/category1@category2@category3@name/--></a></li>
+                        <!--/end_loop/-->
+                    </ul>
+                </li>
+                <!--/else/-->
+                
+                <!-- 중분류 하위 메뉴가 없는 경우 -->
+                <li><a href="<!--/category1@category2@link/-->"><!--/category1@category2@name/--></a></li>
+                <!--/end_if/-->
+            <!--/end_loop/-->
+            </ul>
+        </li>
+        <!--/else/-->
+        
+        <!-- 대분류 하위 메뉴가 없는 경우 -->
+        <li class="depth_1"><a href="<!--/category1@link/-->"><!--/category1@name/--></a></li>
+        <!--/end_if/-->
+    <!--/end_loop/-->
+    </ul>
+    <!-- 전체 사이드바 메뉴를 감싸는 컨테이너 END -->
+</nav>

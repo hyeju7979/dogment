@@ -1,0 +1,237 @@
+<!--/script_scroll(1)/-->
+<div id="hc_entireWrap">
+    <!--/include_header(1)/-->
+	<div id="hc_mainWrap">
+        <!-- 섹션1 메인영역 -->  
+        <ul class="hc_page_fullscreen" id="fullpage">
+            <li class="section">
+                <a href="/shop/shopbrand.html?xcode=001&type=P">
+                  <img src="http://kcompony7.jpg3.kr/web/hncok/pc/img/main/pc_2222.jpg" alt="" />
+                </a>
+            </li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <main class="hncok_new_layout">
+            <!-- 섹션4 : new arrivals -->
+            <section class="hc_main_section4" SNAP_DP_main-cate-id="3">
+                <div class="hc_headline">NEW ARRIVALS</div>
+                <!-- 추천상품 영역 시작 -->
+                <!--/if_recmd_product/-->
+                    <div class="hc_prdwrap_type1" id="hcNewArrivals">
+                        <div class="hc_prdlist_type1 swiper-wrapper">
+                        <!--/loop_recmd_product(23)/-->
+                            <dl class="swiper-slide">
+                                <dt class="thumb"><a href="<!--/recmd_product@link/-->"><img src="<!--/recmd_product@image_m/-->" alt=""/></a></dt>
+                                <dd class="prd-info">
+                                    <ul>   
+                                        <li class="prd-ico"><!--/recmd_product@icons/--><!--/recmd_product@subs_icon/--><!--/recmd_product@promotion_icon/--></li>
+                                        <li class="hc_prd_name"><a href="<!--/recmd_product@link/-->"><!--/recmd_product@name/--></a></li>
+                                        <li class="prd-price">
+                                            <!--/if_recmd_product@price_replace/-->
+                                                <!--/recmd_product@price_replace/-->
+                                            <!--/else_if_recmd_product@is_soldout/-->
+                                                Sold Out
+                                            <!--/else/-->
+                                                <!--/if_recmd_product@price_discount/-->
+                                                    <span class="hc_normal_price"><em><!--/number/recmd_product@price_sell/-->WON</em></span>
+                                                    <span class="hc_discount_price"><!--/number/recmd_product@price_discount/-->WON</span>
+                                                <!--/else/-->
+                                                    <!--/if_recmd_product@price_consumer(+1)/-->
+                                                    <span class="hc_normal_price"><em><!--/number/recmd_product@price_consumer/-->WON</em></span>
+                                                    <!--/end_if/-->
+                                                    <span class="hc_discount_price"><!--/number/recmd_product@price_sell/-->WON</span>
+                                                <!--/end_if/-->
+                                            <!--/end_if/-->
+
+                                            <!-- 소비자가 대비 할인금액 할인율 소스 -->
+                                            <span class="hncok_discount_badge hc_blind">
+                                                <!--/if_recmd_product@consumer_discount_rate/-->
+                                                    <!--/recmd_product@consumer_discount_rate/-->%
+                                                <!--/end_if/-->
+                                            </span>
+
+                                            <!-- 판매가 대비 할인금액 할인율 소스 -->
+                                            <span class="hncok_discount_badge">
+                                                <!--/if_recmd_product@sell_discount_rate/-->
+                                                    <!--/recmd_product@sell_discount_rate/-->%
+                                                <!--/end_if/-->
+                                            </span>
+                                        </li>
+
+                                        <!--/if_recmd_product@color/-->
+                                        <li class="prd-color">
+                                            <!--/loop_recmd_product@color/-->
+                                            <font color="<!--/recmd_product@color@code/-->">■</font>
+                                            <!--/end_loop/-->
+                                        </li>
+                                        <!--/end_if/-->
+
+                                        <!--/if_recmd_product@link_pop_product_benefit/-->
+                                        <li class="prd-benefit">
+                                            <a href="<!--/recmd_product@link_pop_product_benefit/-->"><img src="/images/d3/modern_simple/btn_benefit.gif" alt="혜택팝업보기" /></a>
+                                        </li>
+                                        <!--/end_if/-->
+                                    </ul>
+                                </dd>
+                            </dl>
+                            <!--/end_loop/-->
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                <!--/end_if/-->
+                <!-- 추천상품 영역 끝 -->
+            </section>
+            <br>
+            <br>
+            <br>
+
+            <section class="hc_main_section9">
+                <h3 class="hc_headline">BEST COLLECTION</h3>
+                <div class="swiper hncokSwiperSlideStyle" id="hncokSwiperSlideMain">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="https://www.pigment.co.kr/shop/shopbrand.html?xcode=055&type=P"><img src="http://kcompony7.jpg3.kr/web/hncok/pc/img/main/p_best.jpg" /></a></div>
+                        <div class="swiper-slide"><a href="/shop/shopbrand.html?xcode=001&type=P"><img src="http://kcompony7.jpg3.kr/web/hncok/pc/img/main/pc_newautumn.jpg" /></a></div>
+                        <div class="swiper-slide"><a href="https://www.pigment.co.kr/shop/shopbrand.html?xcode=055&type=P"><img src="http://kcompony7.jpg3.kr/web/hncok/pc/img/main/p_best.jpg" /></a></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </section>
+            <!-- BEST COLLECTION END -->
+
+            <!-- 섹션10 신규 영역 추가 START -->
+            <section class="hc_main_section10">
+                <h3 class="hc_headline">FW NEWARRIVALS</h3>
+                <!--/if_add7_product_list/-->
+                <div class="">
+                    <!--/block_add7_product/-->
+                    <div class="item-cont">
+                        <ul class="thumbnailRuleColumn3">
+                        <!--/loop_add7_product_list(6)/-->
+                            <li class="">
+                                <figure><a href="<!--/add7_product_list@link/-->"><img src="<!--/add7_product_list@image_m/-->" /></a></figure>
+                                <figcaption class="hc_prd_element">
+                                    <p class="hc_prd_name"><a href="<!--/add7_product_list@link/-->"><!--/add7_product_list@name/--></a></p>
+                                    <p><!--/add7_product_list@icons/--></p>
+                                    <p class="prd-price">
+                                        <!--/if_add7_product_list@price_replace/-->
+                                            <!--/add7_product_list@price_replace/-->
+                                        <!--/else_if_add7_product_list@is_soldout/-->
+                                            Sold Out
+                                        <!--/else/-->
+                                            <!--/if_add7_product_list@price_discount/-->
+                                                <span class="hc_normal_price"><em><!--/number/add7_product_list@price_sell/-->WON</em></span>
+                                                <span class="hc_discount_price"><!--/number/add7_product_list@price_discount/-->WON</span>
+                                            <!--/else/-->
+                                                <!--/if_add7_product_list@price_consumer(+1)/-->
+                                                <span class="hc_normal_price"><em><!--/number/add7_product_list@price_consumer/-->WON</em></span>
+                                                <!--/end_if/-->
+                                                <span class="hc_discount_price"><!--/number/add7_product_list@price_sell/-->WON</span>
+                                            <!--/end_if/-->
+                                        <!--/end_if/-->
+                                        
+                                        <!-- 소비자가 대비 할인금액 할인율 소스 -->
+                                        <span class="hncok_discount_badge hc_blind">
+                                            <!--/if_add7_product_list@consumer_discount_rate/-->
+                                                <!--/add7_product_list@consumer_discount_rate/-->%
+                                            <!--/end_if/-->
+                                        </span>
+
+                                        <!-- 판매가 대비 할인금액 할인율 소스 -->
+                                        <span class="hncok_discount_badge">
+                                            <!--/if_add7_product_list@sell_discount_rate/-->
+                                                <!--/add7_product_list@sell_discount_rate/-->%
+                                            <!--/end_if/-->
+                                        </span>
+                                    </p>
+
+                                    <!--/if_add7_product_list@color/-->
+                                    <p class="prd-color">
+                                        <!--/loop_add7_product_list@color/-->
+                                        <font color="<!--/add7_product_list@color@code/-->">■</font>
+                                        <!--/end_loop/-->
+                                    </p>
+                                    <!--/end_if/-->
+
+                                    <!--/if_add7_product_list@link_preview/-->
+                                    <p class="hc_blind">
+                                        <a href="<!--/add7_product_list@link_preview/-->"><img src="<!--/add7_product_list@preview_icon/-->" alt="미리보기" /></a>
+                                    </p>
+                                    <!--/end_if/-->
+
+                                    <p class="hc_blind"><!--/add7_product_list@subname/--></p>
+                                </figcaption>
+                            </li>
+                            <!--/if_step(3)/-->
+                        </ul>
+                        <ul class="thumbnailRuleColumn3">
+                            <!--/end_if/-->
+                        <!--/end_loop/-->
+                        </ul>
+                    <!--/end_block/-->
+                    </div>
+
+                    <!-- more 버튼 -->
+                    <div class="more">
+                        <!--/add7_product_more/-->
+                    </div>
+                </div>
+                <!--/end_if/-->
+            </section>
+            <!-- 섹션10 신규 영역 추가 END -->
+        </main>
+	</div>	
+</div>
+
+<div class="section" style="background: var(--hc_color_level3);">     
+<!--/include_footer(1)/-->
+</div>
+                    
+<!-- Luks AD Start -->
+<script type="text/javascript">	
+	fn_s3dpop_importScript = function(url) {
+		var script = document.createElement('script');
+		script.type = "text/javascript";
+		script.async = true;
+		script.src = url;				
+		(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(script);
+	};
+
+	var s3dpop_page_mode = "index";	//페이지 모드
+	var s3dpop_order_num = "";	//주문 번호
+	var s3dpop_order_quantity = "";	//주문 총수량
+	var s3dpop_order_amount = "";	//주문 금액
+
+	var target_url = "https://ad.3dpop.kr/web_convert/s3dpop.pop?business_uid=7d88cc5762d45acc9c5f9b6b0222ed06e7652f32";
+	target_url += "&page_mode="+s3dpop_page_mode+"&order_num="+s3dpop_order_num+"&order_quantity="+s3dpop_order_quantity+"&order_amount="+s3dpop_order_amount;
+	fn_s3dpop_importScript(target_url);				
+</script>
+<!-- Luks AD End -->
+
+<!---- snapvi start --->
+<div id="snackbe_main"></div>
+<!---- collection view start---->
+<script>var useCollectionView = 'true';</script>
+<!---- collection view end---->
+<span id='snackbe_store_id' style='display:none'>pigment2</span>
+<script async type="text/javascript" src="//cdn.snapbe.co.kr/service/quickview.js" defer='true' charset="utf-8"></script>
+<!---- snapvi end --->
+
+<!-- snap common start contact mail : support@snapvi.co.kr -->
+<div id='spm_page_type' style='display:none'>sq_main_page</div>
+<script async type="text/javascript" src="//cdn.snapfit.co.kr/js/spm_f_common.js" charset="utf-8"></script>
+<div id="spm_banner_main"></div>
+<!-- snap common end -->
+
+
+
+<!-- 스냅DP 해당 스크립트 삭제에 유의 부탁드리며, 스냅 솔루션의 스크립트입니다. strat -->
+<div data-ez-module="user-defined/1" data-ez-name="USER DEFINED" data-ez-type="plain" data-ez="module-1mqcq2j-1"><script async src="https://cdn.snapfit.co.kr/snap-dp/initializer.js" onload="window.INIT_SNAP_DP({ hosting: 'makeshop', frontRoot: 'https://dp-script.snapfit.co.kr/snap-dp', apiRoot: 'https://dp-admin.snapfit.co.kr', });"></script></div>
+<!-- 스냅DP 해당 스크립트 삭제에 유의 부탁드리며, 스냅 솔루션의 스크립트입니다. end -->
