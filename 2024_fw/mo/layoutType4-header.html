@@ -1,0 +1,39 @@
+<!-- 카테고리 -->
+<aside>
+    <div class="asideTop">
+        <a href="#" id="category" class="act"><span class="fa fa-bars fa-2x"></span><br/>카테고리</a><a href="#" id="community"><span class="fa fa-pencil fa-2x"></span><br/>커뮤니티</a><!--/if_login/--><a href="#" id="mypage"><span class="fa fa-heart fa-2x"></span><br/>마이페이지</a><!--/end_if/-->
+    </div>
+    <div class="navCategory">
+        <nav>
+            <ul>
+                <!--/loop_category1/-->
+                <!--/if_category1@category2/-->
+                <li>
+                    <a href="<!--/category1@link/-->&viewtype=gallery"><!--/category1@name/--></a><span class="fa fa-angle-down"></span>
+                    <ul>
+                        <!--/loop_category1@category2/-->
+                        <!--/if_category1@category2@category3/-->
+                        <li>
+                            <a href="<!--/category1@category2@link/-->&viewtype=gallery"><!--/category1@category2@name/--></a><span class="fa">+</span>
+                            <ul>
+                                <!--/loop_category1@category2@category3/-->
+                                <li><a href="<!--/category1@category2@category3@link/-->&viewtype=gallery"><!--/category1@category2@category3@name/--></a></li>
+                                <!--/end_loop/-->
+                            </ul>
+                        </li>
+                        <!--/else/-->
+                        <li><a href="<!--/category1@category2@link/-->&viewtype=gallery"><!--/category1@category2@name/--></a></li>
+                        <!--/end_if/-->
+                        <!--/end_loop/-->
+                    </ul>
+                </li>
+                <!--/else/-->
+                <li><a href="<!--/category1@link/-->&viewtype=gallery"><!--/category1@name/--></a></li>
+                <!--/end_if/-->
+                <!--/end_loop/-->
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- //카테고리 -->
+

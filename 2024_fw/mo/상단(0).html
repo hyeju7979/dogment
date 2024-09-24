@@ -1,0 +1,283 @@
+<!-- Uneedcomms Keepgrow Script -->
+<div id="kg-service-data" data-member="<!--/if_login/--><!--/user_id/--><!--/end_if/-->" style="display:none !important"></div>
+<!-- <script id="kg-service-init" data-hosting="makeshop" data-env="mobile" src="//storage.keepgrow.com/admin/keepgrow-service/keepgrow-service_6ce6b61e-50b2-4e6b-8372-6e1656eea53b.js"></script> -->
+<!-- 스마트스킨 코드 시작 :: 지우지 마세요 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+
+<script>
+    try {
+        var SMS_TD_shop_name = "pigment.co.kr";
+		var SMS_TD_DataObj={SMS_TD_shop_host:SMS_TD_shop_name,SMS_TD_shop_hosting:"mk",SMS_TD_userinfo:{SMS_TD_virtual_url:"",SMS_TD_host:"",SMS_TD_login_check:<!--/if_login/-->true<!--/else/-->false<!--/end_if/-->,SMS_TD_referrer:document.referrer,SMS_TD_current_path:window.location.pathname,SMS_TD_current_url:document.location.href,SMS_TD_useragent:navigator.userAgent},SMS_TD_pagelist:{SMS_TD_cate:{},SMS_TD_detail:{},SMS_TD_order:{},SMS_TD_order_complete:{},SMS_TD_mypage:{},SMS_TD_search:{}}};var SMS_TD_util={init:function(data_parm){this.hostst();this.vir_path(data_parm)},html_re:function(str){str=str.replace(/^\s+|\s+$/g,"");str=str.replace(/\n/g,"");str=str.replace(/'/gi,"");str=str.replace(/"/gi,"");return str.replace(/(<([^>]+)>)/gi,"")},num_re:function(str){return str.replace(/[^0-9]/g,"")},x_code:function(noc){if(noc){var _num=noc.split('xcode')[1];return this.num_re(_num)}else{return noc=""}},m_code:function(noc){if(noc){var _num=noc.split('mcode')[1];return this.num_re(_num)}else{return noc=""}},s_code:function(noc){if(noc){var _num=noc.split('scode')[1];return this.num_re(_num)}else{return noc=""}},hostst:function(){var SMS_hostUrl=window.location.hostname;var SMS_hostre=SMS_hostUrl.replace(/www|wwww|com|co|kr|jp|cafe24|skin-|skin\d{1,2}(?!\d)|100|mobile[0-9]{1,2}|mobile[0-9]{1,2}/g,'');var SMS_hostre1=SMS_hostre.replace('m.','');var SMS_hostst=SMS_hostre1.replace(/\./g,'');SMS_TD_DataObj.SMS_TD_userinfo.SMS_TD_host=SMS_hostst},vir_url:function(_insert){var sms_w_path=window.location.pathname;var sms_pst=sms_w_path.split('/').slice(-1)[0];var SMS_vir_url="sms_"+sms_pst+"?base=page";for(var i in _insert){for(var _i in _insert[i].path){if(_insert[i].path[_i]==sms_w_path){SMS_vir_url=_insert[i].html+_insert[i].parm}}};if(sms_w_path.indexOf("mypage.html")!=-1){for(var e in _insert.myshop_main){for(var _e in _insert.myshop_main[e].path){if(_insert.myshop_main[e].path[_e]==window.location.search){SMS_vir_url=_insert.myshop_main[e].html+_insert.myshop_main[e].parm}}}};if(sms_w_path.indexOf("board.html")!=-1){SMS_vir_url="sms_board/main.html?page=list";for(var e in _insert.board_m){for(var _e in _insert.board_m[e].path){if(window.location.search.indexOf(_insert.board_m[e].path)!=-1){SMS_vir_url=_insert.board_m[e].html+_insert.board_m[e].parm}}}};SMS_TD_DataObj.SMS_TD_userinfo.SMS_TD_virtual_url=SMS_vir_url},vir_path:function(_parm_data){var data_parm=_parm_data;if(data_parm==undefined||data_parm=="undefined"){data_parm="base=page"};var SMS_path_obj={main:{path:["/","/m","/m/","/m//","/main.html","/m/main.html","/m/main.html/","/m/main.html//"],html:"sms_main.html?",parm:"main_id=m"},list:{path:["/m/product_list.html"],html:"sms_list.html?",parm:data_parm},detail:{path:["/m/product.html"],html:"sms_detail.html?",parm:data_parm},search:{path:["/m/search.html"],html:"sms_search.html?",parm:data_parm},order:{path:["/m/order.html"],html:"sms_order.html?",parm:data_parm},ordercom:{path:["/m/order_complete.html"],html:"sms_ordercom.html?",parm:data_parm},cart:{path:["/m/basket.html"],html:"sms_cart.html?",parm:data_parm},myshop_check:{path:["/m/attendance.html"],html:"sms_mypage/stamp.html?",parm:"page=main"},myshop_check:{path:["/m/order_list.html"],html:"sms_mypage/orderlist.html?",parm:"page=main"},myshop_main:{sms_my_page01:{path:[""],html:"sms_mypage/main.html?",parm:"page=main"},sms_my_page02:{path:["?mypage_type=mycoupon"],html:"sms_mypage/coupon.html?",parm:"page=main"},sms_my_page03:{path:["?mypage_type=myreserve"],html:"sms_mypage/reserve.html?",parm:"page=main"},sms_my_page04:{path:["?mypage_type=myemoney"],html:"sms_mypage/deposit.html?",parm:"page=main"},sms_my_page05:{path:["?mypage_type=mypoint"],html:"sms_mypage/point.html?",parm:"page=main"},sms_my_page06:{path:["?mypage_type=mywishlist"],html:"sms_mypage/wish.html?",parm:"page=main"},sms_my_page07:{path:["?mypage_type=myseegoods"],html:"sms_mypage/recent.html?",parm:"page=main"},sms_my_page08:{path:["?mypage_type=myarticle"],html:"sms_mypage/article.html?",parm:"page=main"},sms_my_page09:{path:["?mypage_type=mym2mboard"],html:"sms_mypage/mymboard.html?",parm:"page=main"},},member:{path:["/m/login.html"],html:"sms_login.html?",parm:data_parm},agreement:{path:["/m/join_contract.html"],html:"sms_agreement.html?",parm:data_parm},join:{path:["/m/join_us.html"],html:"sms_join.html?",parm:data_parm},joinresult:{path:["/m/join_complete.html"],html:"sms_join_result.html?",parm:data_parm},board_m:{board_m01:{path:["type=i"],html:"sms_board/write.html?",parm:"page=write"},board_m02:{path:["type=v"],html:"sms_board/view.html?",parm:"page=view"},},power_r:{path:["/m/power_review.html"],html:"sms_power_review.html?",parm:data_parm}};this.vir_url(SMS_path_obj)}};SMS_TD_util.init()}catch(e){}
+</script>
+<!-- 스마트스킨 코드 끝 :: 지우지 마세요 -->
+
+
+<!-- 해당 스크립트 삭제에 유의 부탁드리며, 스냅 솔루션의 스크립트입니다. -->
+<!-- snap common script contact mail: support@snapvi.co.kr -->
+<span id = 'solutiontype' style='display:none;'>makeshop</span>
+<span id='sfsnapfit_store_id' style='display:none'>pigment2</span>
+<div><input id="sf_draw_type" type="hidden" value="mobile"><input id="sf_store_name" type = 'hidden' value = 'pigment2'></div>
+<!--/if_login/-->
+<span id="sf_user_name" class="xans-member-var-id" style="display:none;"><!--/user_id/--></span>
+<span id="sf_group_name" class="xans-member-var-group_name" style="display:none;" ><!--/group_name/--></span>
+<span id="sf_member_name" class="xans-member-var-name" style="display:none;"><!--/user_name/--></span>
+<!--/end_if/-->
+<!-- snap common end -->
+
+<script>
+    /**삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨]**/
+    //스마트스킨 Object
+    var SMARTSKIN_MAIN_OBJECT = {
+        "popup": false, // 메인팝업 미 사용시 false 로 변경 사용:true
+        "popupCloseTime": 0, // 팝업 자동 닫기 [미사용시 0] / 사용시 시간 적용 [1초:1000]
+        "mallname": "피그먼트", //북마크 시 아이콘 이름
+        "mallcode": "ad=smartskin_Bookmark", // 북마크로 몰 접근 시 광고 코드
+        "bookmarkAuto": false, //북마크 자동 설치 true,false 변경
+        "bookmarkConfirm": false, //북마크 자동 설치 alert, 미 사용시 false로 변경
+        "AppAble": false, //앱으로 보기 웹으로 보기 팝업 사용, 미 사용시 false로 변경
+        "AppCount": 3, // 웹페이지 방문 카운트 수
+        "AppIOSLink": "https://apps.apple.com/kr/app/%ED%94%BC%EA%B7%B8%EB%A8%BC%ED%8A%B8/id1480339041", // IOS 앱 링크 //
+        "AppAndroidLink": "market://details?id=com.pigment.byapps&hl=en_ko" // 안드로이드 앱 링크 
+        // 앱 다운로드 onclick="smartskinAppLink()"
+    };
+    /**삭제하지 마세요!! 삭제 시 기능오류 발생할 수 있습니다!! [스마트스킨]**/
+</script>
+
+<!-- 모달 검색창 -->
+<div id="hc_modal_search">
+    <div>
+        <div class="hc_tit">What are you looking for?</div>
+        <div>상품, 색상, 컬렉션 등을 검색하세요.</div>
+        <div class="hc_modal_search_form">
+			<!--/form_search/-->
+			<fieldset>
+				<legend>검색 폼</legend>
+				<!--/input_search_word(search_auto_completion)/-->
+            </fieldset>
+			<!--/end_form/-->
+			<a class="hc_inputbox_middle_btn" href="<!--/link_search_button/-->">검색</a>
+        </div>
+        <ul class="hc_best_keyword">
+            <li><a href="/m/product_list.html?xcode=028&type=Y">티셔츠</a></li>
+            <li><a href="/m/product_list.html?xcode=108&type=P">1+1</a></li>
+            <li><a href="/m/product_list.html?xcode=045&type=P">오프라인</a></li>
+            <li><a href="/m/product_list.html?xcode=114&type=P">세일</a></li>
+            <li><a href="/m/product_list.html?xcode=022&type=X">셔츠</a></li>
+            <li><a href="/m/product_list.html?xcode=023&type=X">바지</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- 햄버거 메뉴 -->
+<div id="hcSideWrap" class="hc_hamburger_menu">
+    <div class="hc_hamburger_tabs">
+        <input id="category" type="radio" name="hamburger_item" checked>
+        <label class="hamburger_item" for="category">CATEGORY</label>
+
+        <input id="member" type="radio" name="hamburger_item">
+        <label class="hamburger_item" for="member">LOOKBOOK</label>
+
+        <div class="hamburger_content" id="category_content">
+            <ul>
+				<li class="hcHoverMenu hcFontBold"><a href="/shop/shopbrand.html?xcode=035&type=P">신상품</a></li>
+				<li class="hcHoverMenu hcFontBold"><a href="/shop/shopbrand.html?xcode=055&type=P">베스트셀러</a></li>
+				<li class="hcHoverMenu hcFontBold"><a href="/m/product_list.html?xcode=115&type=P">아울렛</a></li>
+				<li class="hcHoverMenu hcFontBold"><a href="/m/product_list.html?xcode=087&type=P">투데이 특가</a></li>
+                <li class="hcHoverMenu hcFontBold"><a href="/m/product_list.html?xcode=118&type=P&gf_ref=Yz1ValI2M04=">1+1</a></li>
+                <li class="hcHoverMenu hcFontBold"><a href="/m/product_list.html?xcode=001&type=P" class="hc_color_point">가을 신상 ~50%</a></li>
+ 
+   
+
+
+
+			</ul>
+
+            <ul>
+
+            
+                <li>
+                    <label for="hc_menu_shop">
+                        <div class="hc_main_menu hcFontBold">SHOP</div>
+                    </label>
+                    <input type="checkbox" class="hc_menu_state" id="hc_menu_shop" hidden checked>
+                    <div class="hc_menu_content">
+                        <ul class="hc_submenu">
+					        <li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=028&type=Y">티셔츠</a></li>
+							<li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=032&type=Y">팬츠</a></li>
+							<li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=066&type=Y">셔츠&블라우스</a></li>
+							<li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=029&type=Y">드레스&스커트</a></li>
+							<li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=063&type=Y">니트웨어</a></li>
+							<li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=091&type=Y">아우터</a></li>
+							<li class="hcHoverMenu"><a href="/shop/shopbrand.html?xcode=092&type=Y">액세서리</a></li>
+							<li class="hcHoverMenu"><a href="/m/product_list.html?xcode=098&type=P">전체상품</a></li>
+
+</ul>
+                    </div>
+                </li>
+            </ul>
+   <li>
+                    <label for="hc_menu_culture">
+                        <div class="hc_main_menu hcFontBold">CULTURE</div>
+                    </label>
+                    <input type="checkbox" class="hc_menu_state" id="hc_menu_culture" hidden>
+                    <div class="hc_menu_content">
+                        <ul class="hc_submenu">
+                            <li class="hcHoverMenu hcFontBold"><a href="/shop/shopbrand.html?xcode=097&type=X">PFS:GALLERY</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            <ul>
+                <li>
+                    <label for="hc_menu_information">
+                        <div class="hc_main_menu hcFontBold">+ INFORMATION</div>
+                    </label>
+                    <input type="checkbox" class="hc_menu_state" id="hc_menu_information" hidden>
+                    <div class="hc_menu_content">
+                        <ul class="hc_submenu">
+							<li class="hcHoverMenu"><a href="/board/board.html?code=kcompany7_board1">NOTICE</a></li>
+							<li class="hcHoverMenu"><a href="/board/board.html?code=kcompany7">Q&amp;A</a></li>
+							<li class="hcHoverMenu"><a href="/board/board.html?code=kcompany7_board2">REVIEW</a></li>
+						</ul>
+                    </div>
+                </li>
+                <li><a href="/shop/page.html?id=7"><strong>+ STORE</strong> <p>피그먼트 오프라인 매장안내</p></a></li>
+            </ul>
+
+            <ul>
+                <!--/if_login/-->
+                    <li class="hcHoverMenu"><a href="<!--/link_logout/-->">+ LOGOUT</a></li>
+                <!--/else/-->
+                    <li class="hcHoverMenu"><a href="<!--/link_login/-->">+ LOGIN</a></li>
+                <!--/end_if/-->
+            </ul>
+        </div>
+
+        <div class="hamburger_content" id="member_content">        
+            <ul>
+                <li class="hcHoverMenu"><a href="/shop/page.html?id=45">2024 F/W </a></li>                
+                <li class="hcHoverMenu"><a href="/shop/page.html?id=44">2024 second S/S </a></li>
+                <li class="hcHoverMenu"><a href="/shop/page.html?id=13">2024 S/S</a></li>
+                <li class="hcHoverMenu"><a href="/shop/page.html?id=20">2023 F/W</a></li>
+                <li class="hcHoverMenu"><a href="/shop/page.html?id=21">2023 S/S</a></li>
+                <li class="hcHoverMenu"><a href="/shop/page.html?id=22">2022 F/W</a></li>
+                <li class="hcHoverMenu"><a href="/shop/page.html?id=23">2022 S/S</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 뱃지 -->
+<div class="hc_badge">
+    <div>
+        <a href="http://pf.kakao.com/_xidlxeC/chat">
+            <img src="http://kcompony7.jpg3.kr/web/hncok/img/icon/icon_kakao.svg" alt="">
+        </a>
+    </div>
+    <div class="hc_badge_up">
+        <a href="#hc_wrap_top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+            </svg>
+        </a>
+    </div>
+    <div class="hc_badge_down">
+        <a href="#hc_wrap_footer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 17L15 12L10 7" stroke="black" stroke-width="1.5" stroke-linecap="square"/>
+            </svg>
+        </a>
+    </div>
+</div> 
+
+<!-- 상단 텍스트 배너 -->
+<div class="hc_notice_top">
+    <!--/head_banner/-->
+    <a href="#">F/W NEW SEASON SALE</a>
+</div>
+
+
+
+<!-- 상단 영역 -->
+<header>
+    <div id="hc_hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    <h1 id="mainLogo"><a href="<!--/link_home/-->">PIGMENT</a></h1>
+    <div id="hcHeadSearch" class="hc_head_search">
+        <svg width="26" height="26" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_search">
+            <path d="M15.6597 26.9483C21.5472 26.9483 26.32 22.1756 26.32 16.2881C26.32 10.4007 21.5472 5.62791 15.6597 5.62791C9.77226 5.62791 4.99951 10.4007 4.99951 16.2881C4.99951 22.1756 9.77226 26.9483 15.6597 26.9483Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M34.9994 35.4765L23.1218 23.7503" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>    
+    <div id="hcHeadMypage" class="hc_head_mypage">
+        <a href="<!--/link_mypage/-->">
+        <svg width="24" height="24" fill="none">
+            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM21 22a9 9 0 1 0-18 0"/>
+        </svg>
+        </a>
+    </div>    
+    <div id="hc_head_cart" class="hc_head_cart">
+        <a href="<!--/link_basket/-->">
+            <span class="hc_incart"><!--/user_basket_quantity/--></span>
+            <svg width="26" height="26" viewBox="0 0 40 40" fill="none" class="hc_hd_ic_cart">
+                <path d="M27 18.9612V12.2946C27 10.5265 26.2976 8.83076 25.0474 7.58052C23.7971 6.33028 22.1014 5.6279 20.3333 5.6279C18.5652 5.6279 16.8695 6.33028 15.6193 7.58052C14.369 8.83076 13.6667 10.5265 13.6667 12.2946V18.9612M8.66667 15.6279H32L33.6667 35.6279H7L8.66667 15.6279Z" stroke="black" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+</header>
+        
+<!-- 다찾다 검색 파인더 -->
+<!--/if_form_smart_finder/-->
+    <div id="allfinder-ctr"><a href="javascript:;" class="all-finder-open">스마트<br/>파인더</a></div>
+    <!--/form_smart_finder/-->
+
+        <div class="all-finder-layer" id="all-finder-layer" style="display:none;">
+            <div class="finder-hd">
+                <a href="javascript:;" class="fa fa-close all-finder-close"></a>
+                <div class="finder-tit">스마트 검색</div>
+            </div>
+            <div class="finder-opt">
+                <dl>
+                <!--/loop_smart_finder/-->
+                    <dt>
+                        <!--/smart_finder@title/--> <!--/if_smart_finder@tooltip/--><a href="javascript:;" class="finder-tooltip-btn finder-layer-open">?</a><!--/end_if/--> <!--/smart_finder@icon/-->
+                        <!-- (레이어) 항목 설명 -->
+                        <div class="finder-comm-layer">
+                            <a href="javascript:;" class="finder-tooltip-btn finder-btn-close fa fa-close finder-layer-close"></a>
+                            <div class="finder-layer-tit"><!--/smart_finder@title/--></div>
+                            <div class="finder-layer-cnt">
+                                <!--/smart_finder@tooltip/-->
+                            </div>
+                        </div>
+                        <!-- //(레이어) 항목 설명 -->
+                    </dt>
+                    <dd style="<!--/smart_finder@style/-->">
+                        <div class="<!--/smart_finder@class_name/-->">
+                            <!--/loop_smart_finder@items(20)/-->
+                                <!--/smart_finder@items@name/-->
+                            <!--/end_loop/-->
+                        </div>
+                    </dd>
+                    <!--/if_smart_finder@is_category/-->
+                    <dd class="finder-child-category">
+                        <div class="mobile-select-category"></div>
+                        <div class="finder-category2"></div>
+                    </dd>
+                    <!--/end_if/-->
+                <!--/end_loop/-->
+                </dl>
+            </div>
+            <div class="finder-btn-c">
+                <a href="#none" class="reset">초기화</a>
+                <button type="submit">
+                    <span class="fa fa-search"></span><span class="finder-count-toggle"><span class="finder-count"></span>개</span> 상품검색
+                </button>
+            </div><!-- .finder-btn-c -->
+        </div>
+    <!--/end_form/-->
+<!--/end_if/--> 
+<!-- 다찾다 검색 파인더 -->

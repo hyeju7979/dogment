@@ -1127,8 +1127,8 @@
                         <section id="related_product_tk" class="shopdetailRelation">
                             <h4>COMPLETE THE LOOK : 함께 코디하면 좋은 제품</h4>
                             <!--/form_related_product/-->
-                            <ul class="hc_column3">
-                                <!--/loop_related_product(3)/-->
+                            <ul class="hc_column2">
+                                <!--/loop_related_product(2)/-->
                                 <li>
                                     <div class="hc_thumbnail">
                                         <!--/related_product@checkbox/-->
@@ -1139,21 +1139,30 @@
                                         <!--/if_related_product@is_soldout/-->
                                             <li>(품절)</li>
                                         <!--/else/-->
-                                            <!--/if_related_product@price_replace/-->
-                                                <li><!--/related_product@price_replace/--></li>
+                                            <!--/if_related_product@price_discount/-->
+                                                <span class="hc_normal_price"><em><!--/number/related_product@price_sell/-->WON</em></span>
+                                                <span class="hc_discount_price"><!--/number/related_product@price_discount/-->WON</span>
                                             <!--/else/-->
-                                                <!--/if_related_product@price_discount/-->
-                                                    <li class="hc_normal_price"><!--/number/related_product@price_sell/-->원</li>
-                                                    <li class="hc_discount_price">
-                                                        <!--/if_related_product@discount_apply_type(mobile)/-->
-                                                        <!--/end_if/-->
-                                                        <!--/number/related_product@price_discount/-->원
-                                                    </li>
-                                                <!--/else/-->
-                                                    <li class=""><!--/number/related_product@price_sell/-->원</li>
+                                                <!--/if_related_product@price_consumer(+1)/-->
+                                                    <span class="hc_normal_price"><em><!--/number/related_product@price_consumer/-->WON</em></span>
                                                 <!--/end_if/-->
+                                                    <span class="hc_discount_price"><!--/number/related_product@price_sell/-->WON</span>
                                             <!--/end_if/-->
 
+                                            <!-- 소비자가 대비 할인금액 할인율 소스 -->
+                                            <span class="hncok_discount_badge hc_blind">
+                                                <!--/if_related_product@consumer_discount_rate/-->
+                                                    <!--/related_product@consumer_discount_rate/-->%
+                                                <!--/end_if/-->
+                                            </span>
+
+                                            <!-- 판매가 대비 할인금액 할인율 소스 -->
+                                            <span class="hncok_discount_badge">
+                                                <!--/if_related_product@sell_discount_rate/-->
+                                                    <!--/related_product@sell_discount_rate/-->%
+                                                <!--/end_if/-->
+                                            </span>  
+                                            
                                             <!--/if_related_product@reserve_price(+1)/-->
                                                 <li class="hc_blind">
                                                     <!--/if_related_product@used_mobile_reserve/-->
@@ -1161,6 +1170,7 @@
                                                     <!--/number/related_product@reserve_price/-->원 적립
                                                 </li>
                                             <!--/end_if/-->
+
 
                                             <!--/if_related_product@point_price(+1)/-->
                                                 <li class="hc_blind"><!--/number/related_product@point_price/--><!--/related_product@point_unit/--> 적립</li>
@@ -1184,7 +1194,7 @@
                                                     <!--/end_if/-->
                                                 <!--/end_loop/-->
                                             </li>
-                                    <!--/end_if/-->
+                                            <!--/end_if/-->
                                         <!--/end_if/-->
                                         <li><!--/related_product@mobile_icons/--><!--/related_product@subs_icon/--><!--/related_product@promotion_icon_mobile/--></li>
                                     </ul>
@@ -1196,13 +1206,13 @@
                         </section>
                         <!--/end_if/-->
 
-                        <!-- 추가 >> 스마트 관련 구매상품 -->
+                        <!-- 추가 >> 스마트 관련 구매상품 : 비슷한 상품 -->
                         <!--/if_purchased_product/-->
                         <section id="purchased_product_tk" class="shopdetail_purchased">
                             <h4>비슷한 상품</h4>
                             <!--/form_purchased_product/-->
-                            <ul class="hc_column3">
-                                <!--/loop_purchased_product(3)/-->
+                            <ul class="hc_column2">
+                                <!--/loop_purchased_product(2)/-->
                                 <li>
                                     <div class="hc_thumbnail">
                                         <a href="<!--/purchased_product@link/-->"><img src="<!--/purchased_product@mobile_image/-->" alt=""/></a>
@@ -1212,20 +1222,29 @@
                                         <!--/if_purchased_product@is_soldout/-->
                                             <li>(품절)</li>
                                         <!--/else/-->
-                                            <!--/if_purchased_product@price_replace/-->
-                                                <li><!--/purchased_product@price_replace/--></li>
+                                            <!--/if_purchased_product@price_discount/-->
+                                                <span class="hc_normal_price"><em><!--/number/purchased_product@price_sell/-->WON</em></span>
+                                                <span class="hc_discount_price"><!--/number/purchased_product@price_discount/-->WON</span>
                                             <!--/else/-->
-                                                <!--/if_purchased_product@price_discount/-->
-                                                    <li class="hc_normal_price"><!--/number/purchased_product@price_sell/-->원</li>
-                                                    <li class="hc_discount_price">
-                                                        <!--/if_purchased_product@discount_apply_type(mobile)/-->
-                                                        <!--/end_if/-->
-                                                        <!--/number/purchased_product@price_discount/-->원
-                                                    </li>
-                                                <!--/else/-->
-                                                    <li class=""><!--/number/purchased_product@price_sell/-->원</li>
+                                                <!--/if_purchased_product@price_consumer(+1)/-->
+                                                    <span class="hc_normal_price"><em><!--/number/purchased_product@price_consumer/-->WON</em></span>
                                                 <!--/end_if/-->
+                                                    <span class="hc_discount_price"><!--/number/purchased_product@price_sell/-->WON</span>
                                             <!--/end_if/-->
+
+                                            <!-- 소비자가 대비 할인금액 할인율 소스 -->
+                                            <span class="hncok_discount_badge hc_blind">
+                                                <!--/if_purchased_product@consumer_discount_rate/-->
+                                                    <!--/purchased_product@consumer_discount_rate/-->%
+                                                <!--/end_if/-->
+                                            </span>
+
+                                            <!-- 판매가 대비 할인금액 할인율 소스 -->
+                                            <span class="hncok_discount_badge">
+                                                <!--/if_purchased_product@sell_discount_rate/-->
+                                                    <!--/purchased_product@sell_discount_rate/-->%
+                                                <!--/end_if/-->
+                                            </span>  
 
                                             <!--/if_purchased_product@reserve_price(+1)/-->
                                                 <li class="hc_blind">
@@ -1238,7 +1257,9 @@
                                             <!--/if_purchased_product@point_price(+1)/-->
                                                 <li class="hc_blind"><!--/number/purchased_product@point_price/--><!--/purchased_product@point_unit/--> 적립</li>
                                             <!--/end_if/-->
+
                                         <!--/end_if/-->
+
                                         <li><!--/purchased_product@mobile_icons/--><!--/purchased_product@subs_icon/--><!--/purchased_product@promotion_icon_mobile/--></li>
                                     </ul>
                                 </li>
@@ -1250,18 +1271,18 @@
 
                         <!-- 추가 >> 포토갤러리 -->
                         <section>
-                            <!--/loop_photo_gallery/-->
+                            <!--/loop_photo_gallery(2)/-->
                             <div><!-- 포토 갤러리 > 이미지 --><!--/photo_gallery@image/--></div>
                             <!--/end_loop/-->
                         </section>
 
-                        <!-- 추가 >> 프로모션 상품 -->
+                        <!-- 추가 >> 프로모션 상품 : 세트 구성 상품 -->
                         <!--/if_promotion_product/-->
                         <section id="promotion_product_tk" class="shopdetail_purchased">
-                            <h4>세트 구성 상품 </h4>
+                            <h4>세트 구성 상품</h4>
                             <!--/form_promotion_product/-->
-                            <ul class="hc_column3">
-                                <!--/loop_promotion_product(3)/-->
+                            <ul class="hc_column2">
+                                <!--/loop_promotion_product(2)/-->
                                 <li>
                                     <div class="hc_thumbnail">
                                         <a href="<!--/promotion_product@link/-->"><img src="<!--/promotion_product@mobile_image/-->" alt=""/></a>
@@ -1271,20 +1292,29 @@
                                         <!--/if_promotion_product@is_soldout/-->
                                             <li>(품절)</li>
                                         <!--/else/-->
-                                            <!--/if_promotion_product@price_replace/-->
-                                                <li><!--/promotion_product@price_replace/--></li>
+                                            <!--/if_promotion_product@price_discount/-->
+                                                <span class="hc_normal_price"><em><!--/number/promotion_product@price_sell/-->WON</em></span>
+                                                <span class="hc_discount_price"><!--/number/promotion_product@price_discount/-->WON</span>
                                             <!--/else/-->
-                                                <!--/if_promotion_product@price_discount/-->
-                                                    <li class="hc_normal_price"><!--/number/promotion_product@price_sell/-->원</li>
-                                                    <li class="hc_discount_price">
-                                                        <!--/if_promotion_product@discount_apply_type(mobile)/-->
-                                                        <!--/end_if/-->
-                                                        <!--/number/promotion_product@price_discount/-->원
-                                                    </li>
-                                                <!--/else/-->
-                                                    <li class=""><!--/number/promotion_product@price_sell/-->원</li>
+                                                <!--/if_promotion_product@price_consumer(+1)/-->
+                                                    <span class="hc_normal_price"><em><!--/number/promotion_product@price_consumer/-->WON</em></span>
                                                 <!--/end_if/-->
+                                                    <span class="hc_discount_price"><!--/number/promotion_product@price_sell/-->WON</span>
                                             <!--/end_if/-->
+
+                                            <!-- 소비자가 대비 할인금액 할인율 소스 -->
+                                            <span class="hncok_discount_badge hc_blind">
+                                                <!--/if_promotion_product@consumer_discount_rate/-->
+                                                    <!--/promotion_product@consumer_discount_rate/-->%
+                                                <!--/end_if/-->
+                                            </span>
+
+                                            <!-- 판매가 대비 할인금액 할인율 소스 -->
+                                            <span class="hncok_discount_badge">
+                                                <!--/if_promotion_product@sell_discount_rate/-->
+                                                    <!--/promotion_product@sell_discount_rate/-->%
+                                                <!--/end_if/-->
+                                            </span>  
 
                                             <!--/if_promotion_product@reserve_price(+1)/-->
                                                 <li class="hc_blind">
@@ -1310,8 +1340,8 @@
                         <!-- 최근본 상품 -->
                         <section>
                             <!--/block_view_product/-->
-                                <!--/loop_view_product/-->
-                                <ul>
+                                <!--/loop_view_product(2)/-->
+                                <ul class="hc_prd_element">
                                     <li>
                                         <a href="<!--/view_product@link/-->">
                                             <!--/if_view_product@image_s/-->
@@ -1321,12 +1351,12 @@
                                             <!--/end_if/-->
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="hc_prd_name">
                                         <!--/if_view_product@name/-->
                                             <!--/view_product@name/-->
                                         <!--/else/-->
                                             <!--/view_product@mobile_name/-->
-                                        <!--/end_if/-->
+                                        <!--/end_if/--> 
                                     </li>
                                 </ul>
                                 <!--/end_loop/-->

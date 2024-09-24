@@ -148,27 +148,40 @@
                                                                         <a href="<!--/related_product@link/-->">
                                                                             <img src="<!--/related_product@image_m/-->" class="thumb" />
                                                                             <div class="hc_prd_list_information">
-                                                                                <span class="hc_prd_name"><!--/related_product@name/--></span>
-                                                                                <span class="hc_prd_element">
+                                                                                <p class="hc_prd_name"><!--/related_product@name/--></p>
+                                                                                <p class="prd-price">
                                                                                 <!--/if_related_product@price_replace/--><!-- 가격 대체문구 -->
                                                                                     <!--/related_product@price_replace/-->
                                                                                 <!--/else_if_related_product@is_soldout/--><!-- 품절여부 -->
                                                                                     <span>Sold Out</span>
                                                                                 <!--/else/-->
                                                                                     <!--/if_related_product@price_discount/--><!-- 할인 가격 -->
-                                                                                    <span class="hc_normal_price"><!--/number/related_product@price_sell/-->원</span><!-- 판매 가격 -->
-                                                                                    <span class="price"><!--/number/related_product@price_discount/-->원</span>
-                                                                                    <span><!--/related_product@discount_percent/--></span><!-- 소비자 가격 대비 할인율 -->
+                                                                                    <span class="hc_normal_price"><em><!--/number/related_product@price_sell/-->WON</em></span>
+														                            <span class="hc_discount_price"><!--/number/related_product@price_discount/-->WON</span>
                                                                                     <!--/else/-->
                                                                                         <!--/if_related_product@price_consumer(+1)/--><!-- 소비자 가격 -->
-                                                                                            <strike><!--/number/related_product@price_consumer/-->원</strike>
+                                                                                            <span class="hc_normal_price"><em><!--/number/related_product@price_consumer/-->WON</em></span>
                                                                                         <!--/end_if/-->
                                                                                         <!--/if_related_product@price_sell/-->
-                                                                                        <span class="price"><!--/number/related_product@price_sell/-->원</span>
+                                                                                            <span class="hc_discount_price"><!--/number/related_product@price_sell/-->WON</span>
                                                                                         <!--/end_if/-->
                                                                                     <!--/end_if/-->
                                                                                 <!--/end_if/-->
+
+                                                                                <!-- 소비자가 대비 할인금액 할인율 소스 -->
+                                                                                <span class="hncok_discount_badge hc_blind">
+                                                                                    <!--/if_related_product@consumer_discount_rate/-->
+                                                                                        <!--/related_product@consumer_discount_rate/-->%
+                                                                                    <!--/end_if/-->
                                                                                 </span>
+
+                                                                                <!-- 판매가 대비 할인금액 할인율 소스 -->
+                                                                                <span class="hncok_discount_badge">
+                                                                                    <!--/if_related_product@sell_discount_rate/-->
+                                                                                        <!--/related_product@sell_discount_rate/-->%
+                                                                                    <!--/end_if/-->
+                                                                                </span>
+                                                                                </p>
                                                                             </div>
                                                                         </a>
                                                                     </li>
