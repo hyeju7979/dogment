@@ -272,7 +272,7 @@
 /* 관련상품 */
 .shopdetail_purchased,
 .shopdetailRelation {
-    margin: 30px 10px;
+    margin: 30px 0;
  }
 .shopdetail_purchased h4,
 .shopdetailRelation h4 {
@@ -284,7 +284,7 @@
 .shopdetail_purchased .hc_column2,
 .shopdetailRelation .hc_column2 {
     margin: 20px 0 30px;
-    gap: 6px;
+    gap: 0.4rem;
 }
 .shopdetail_purchased .hc_thumbnail,
 .shopdetailRelation .hc_thumbnail {
@@ -645,7 +645,6 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="number"],
 /* 할인율 */
 .hc_discount_rate {
     margin:0 !important;
-    font-size: var(--hc_bd_large);
 }
 
 /* 정상가 */
@@ -723,9 +722,10 @@ input[type="text"], input[type="date"], input[type="tel"], input[type="number"],
     /*padding: 0 10px;*/
 }
 /* 상품명 */
-.hc_product_name {
-	position: relative;
-	padding: 0 10px;
+.shopdetailInfo .hc_product_name {
+    position: relative;
+    padding: 0 10px;
+    font-size: var(--hc_bd_large);
 }
 .hc_count_list img {
     vertical-align: middle;

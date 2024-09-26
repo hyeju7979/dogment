@@ -621,10 +621,12 @@ input[name=hamburger_item] {
     pointer-events: none;    
     padding-top : 50px;
 }
+
 .hc_mypage_menu li,
 .hc_hamburger_menu li {
     cursor: pointer;
 }
+
 .hc_mypage_menu nav,
 .hc_hamburger_menu nav {
     position: relative;
@@ -742,4 +744,8 @@ input[name=hamburger_item] {
 }
 .hc_mypage_menu input:checked ~ .tab-content {
     max-height: 100vh;
+}
+
+.hncok-main-wrap {
+    margin-top:0rem;
 }

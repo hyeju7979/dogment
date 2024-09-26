@@ -33,37 +33,39 @@
                         <!--/include_header(3)/-->
                     </div>
 
-                    <!--/if_category/-->
-                        <div class="hncok_sub_category">	
-                            <ul>
-                            <!--/loop_category/-->
-                                <!--/if_upper_category_set/-->
-                                    <!--/if_category@is_pc_display/-->
-                                    <li><a href="<!--/category@link/-->"><!--/category@name/--><span class="hc_blind"><!--/if_category@brand_cnt/-->(<!--/category@brand_cnt/-->)<!--/end_if/--></span></a></li>
-                                    <!--/end_if/-->
-                                <!--/else/-->
-                                    <li><a href="<!--/category@link/-->"><!--/category@name/--><span class="hc_blind"><!--/if_category@brand_cnt/-->(<!--/category@brand_cnt/-->)<!--/end_if/--></span></a></li>
-                                <!--/end_if/-->
-                            <!--/end_loop/-->
-                            </ul>
-                        </div>
-                    <!--/else/-->
-                        <!--/if_same_level_category/-->
-                            <div class="class-list">
+                    <div class="hc_blind">
+                        <!--/if_category/-->
+                            <div class="hncok_sub_category">	
                                 <ul>
-                                <!--/loop_same_level_category/-->
+                                <!--/loop_category/-->
                                     <!--/if_upper_category_set/-->
                                         <!--/if_category@is_pc_display/-->
-                                            <li><a href="<!--/same_level_category@link/-->"><!--/same_level_category@name/--><span class="hc_blind"><!--/if_same_level_category@brand_cnt/-->(<!--/same_level_category@brand_cnt/-->)<!--/end_if/--></span></a></li>
+                                        <li><a href="<!--/category@link/-->"><!--/category@name/--><span class="hc_blind"><!--/if_category@brand_cnt/-->(<!--/category@brand_cnt/-->)<!--/end_if/--></span></a></li>
                                         <!--/end_if/-->
                                     <!--/else/-->
-                                        <li><a href="<!--/same_level_category@link/-->"><!--/same_level_category@name/--><span class="hc_blind"><!--/if_same_level_category@brand_cnt/-->(<!--/same_level_category@brand_cnt/-->)<!--/end_if/--></span></a></li>
+                                        <li><a href="<!--/category@link/-->"><!--/category@name/--><span class="hc_blind"><!--/if_category@brand_cnt/-->(<!--/category@brand_cnt/-->)<!--/end_if/--></span></a></li>
                                     <!--/end_if/-->
                                 <!--/end_loop/-->
                                 </ul>
                             </div>
-                        <!--/end_if/-->
-                    <!--/end_if/--> 
+                        <!--/else/-->
+                            <!--/if_same_level_category/-->
+                                <div class="class-list">
+                                    <ul>
+                                    <!--/loop_same_level_category/-->
+                                        <!--/if_upper_category_set/-->
+                                            <!--/if_category@is_pc_display/-->
+                                                <li><a href="<!--/same_level_category@link/-->"><!--/same_level_category@name/--><span class="hc_blind"><!--/if_same_level_category@brand_cnt/-->(<!--/same_level_category@brand_cnt/-->)<!--/end_if/--></span></a></li>
+                                            <!--/end_if/-->
+                                        <!--/else/-->
+                                            <li><a href="<!--/same_level_category@link/-->"><!--/same_level_category@name/--><span class="hc_blind"><!--/if_same_level_category@brand_cnt/-->(<!--/same_level_category@brand_cnt/-->)<!--/end_if/--></span></a></li>
+                                        <!--/end_if/-->
+                                    <!--/end_loop/-->
+                                    </ul>
+                                </div>
+                            <!--/end_if/-->
+                        <!--/end_if/--> 
+                    </div>
                 </div>
 
                 <!--/if_block_best_product/-->

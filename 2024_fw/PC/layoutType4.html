@@ -30,17 +30,103 @@
                     </dl>
                 </div>
 
+                <div class="cate-wrap">
+                    <div class="hncok_primary_category">
+                        <!--/include_menu(5)/-->
+                    </div>
+
+                    <!--/if_category/-->
+                    <div class="hncok_sub_category hc_blind">	
+                        <ul>
+                        <!--/loop_category/-->
+                            <!--/if_upper_category_set/-->
+                                <!--/if_category@is_pc_display/-->
+                                <li><a href="<!--/category@link/-->"><!--/category@name/--><span class="hc_blind"><!--/if_category@brand_cnt/-->(<!--/category@brand_cnt/-->)<!--/end_if/--></span></a></li>
+                                <!--/end_if/-->
+                            <!--/else/-->
+                                <li><a href="<!--/category@link/-->"><!--/category@name/--><span class="hc_blind"><!--/if_category@brand_cnt/-->(<!--/category@brand_cnt/-->)<!--/end_if/--></span></a></li>
+                            <!--/end_if/-->
+                        <!--/end_loop/-->
+                        </ul>
+                    </div>
+                    <!--/else/-->
+                        <!--/if_same_level_category/-->
+                        <div class="class-list">
+                            <ul>
+                            <!--/loop_same_level_category/-->
+                                <!--/if_upper_category_set/-->
+                                    <!--/if_category@is_pc_display/-->
+                                        <li><a href="<!--/same_level_category@link/-->"><!--/same_level_category@name/--><span class="hc_blind"><!--/if_same_level_category@brand_cnt/-->(<!--/same_level_category@brand_cnt/-->)<!--/end_if/--></span></a></li>
+                                    <!--/end_if/-->
+                                <!--/else/-->
+                                    <li><a href="<!--/same_level_category@link/-->"><!--/same_level_category@name/--><span class="hc_blind"><!--/if_same_level_category@brand_cnt/-->(<!--/same_level_category@brand_cnt/-->)<!--/end_if/--></span></a></li>
+                                <!--/end_if/-->
+                            <!--/end_loop/-->
+                            </ul>
+                        </div>
+                        <!--/end_if/-->
+                    <!--/end_if/--> 
+                </div>
+
                 
 				<section>
+                    <!-- 썸네일 정렬 옵션 -->
+					<div class="hc_sorting_options">
+						<ul>
+							<li>
+								<!--/if_now_sort_type(order)/-->
+								<a href="<!--/link_sort_date/-->"><span class="hc_sorting_on"></span>NEW</a>
+								<!--/else/-->
+								<a href="<!--/link_sort_date/-->"><span></span>NEW</a>
+								<!--/end_if/-->
+							</li>
+							<li>
+								<!--/if_now_sort_type(sellcnt)/-->
+								<a href="<!--/link_sort_sell_count/-->"><span class="hc_sorting_on"></span>BEST</a>
+								<!--/else/-->
+								<a href="<!--/link_sort_sell_count/-->"><span></span>BEST</a>
+								<!--/end_if/-->
+							</li>
+							<li>
+								<!--/if_now_sort_type(viewcnt)/-->
+								<a href="<!--/link_sort_view_count/-->"><span class="hc_sorting_on"></span>HOT</a>
+								<!--/else/-->
+								<a href="<!--/link_sort_view_count/-->"><span></span>HOT</a>
+								<!--/end_if/-->
+							</li>
+							<li>
+								<!--/if_now_sort_type(price)/-->
+								<a href="<!--/link_sort_price_up/-->"><span class="hc_sorting_on"></span>LOW PRICE</a>
+								<!--/else/-->
+								<a href="<!--/link_sort_price_up/-->"><span></span>LOW PRICE</a>
+								<!--/end_if/-->
+							</li>
+							<li>
+								<!--/if_now_sort_type(price2)/-->
+								<a href="<!--/link_sort_price_down/-->"><span class="hc_sorting_on"></span>HIGH PRICE</a>
+								<!--/else/-->
+								<a href="<!--/link_sort_price_down/-->"><span></span>HIGH PRICE</a>
+								<!--/end_if/-->
+							</li>
+							<li>
+								<!--/if_now_sort_type(brandname)/-->
+								<a href="<!--/link_sort_product_name/-->"><span class="hc_sorting_on"></span>NAME</a>
+								<!--/else/-->
+								<a href="<!--/link_sort_product_name/-->"><span></span>NAME</a>
+								<!--/end_if/-->
+							</li>
+						</ul>
+					</div>
+                    
 					<!--/if_product/-->
 					<div>
                         <!-- 왼쪽 네비게이션 -->
-						<div class="hncok-nav" style="position: absolute;">
+						<div class="hncok-nav" style="position: absolute; display:none">
                             <!--/include_header(4)/-->
 						</div>
 						
 						<div class="hc_thumbnail_list">
-						<!--/loop_product(16)/-->
+						<!--/loop_product(18)/-->
 							<dl data-aos="fade-up" data-aos-duration="1000">
 								<dt><a style="display:block" href="<!--/product@link/-->"><img src="<!--/product@image_m/-->" alt="<!--/product@img_alt/-->"/></a></dt>
 								<dd class="hc_prd_list_information">

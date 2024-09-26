@@ -1419,6 +1419,7 @@ header nav {
     padding: 10rem 10rem 0;
 }
 /* SUB 페이지 좌우 여백 적용 */
+.hc_wrap_layout4,
 .hc_wrap_half,
 .hc_wrap_event,
 .hc_wrap_sub {
@@ -1491,7 +1492,7 @@ header nav h1 a {
 	position: fixed;
 	top: 46px;
 	left: -400px;
-	z-index: 1000;
+	z-index: 10000;
 	width: 400px;
 	height: 100vh;
 	line-height: 2;
