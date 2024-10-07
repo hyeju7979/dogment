@@ -85,6 +85,22 @@ function activateTab($tab) {
     $tab.addClass('active');
 }
 
+var hc_timeoutId;
+function moveTarget(element) {
+
+    if (hc_timeoutId) {
+        clearTimeout(hc_timeoutId);
+    }
+    
+    hc_timeoutId = setTimeout(function(){
+        element.scrollIntoView({
+                behavior: 'smooth', 
+                block: 'start',     
+                inline: 'nearest'   
+        });        
+    },2500)    
+}
+
 function hcSetEvent() {
 
     //탭 클릭
@@ -97,7 +113,15 @@ function hcSetEvent() {
         
         const targetPosition = $targetContent.offset().top - tabBarHeight;
         activateTab($tab);
-        $('html, body').animate({ scrollTop: targetPosition }, 500); // 애니메이션 제거
+        //$('html, body').stop().animate({ scrollTop: targetPosition }, 500); // 애니메이션 제거
+        
+        const element = document.getElementById(id);
+        element.scrollIntoView({
+            behavior: 'smooth', 
+            block: 'start',     
+            inline: 'nearest'   
+        });
+        moveTarget(element);
        
     });
 
@@ -112,6 +136,8 @@ function hcSetEvent() {
         $('#hcSizeInfoModal').show();
         $('body').addClass('scroll_hidden');
     });
+    
+    
     
     $('#hcSizeInfoModalClose').on('click',function(){
         $('#hcSizeInfoModal').hide();

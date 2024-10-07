@@ -450,11 +450,41 @@ h2.hc_page_title {
     
  * ***********************************/
  
+.hc_notice_top {
+      display: none;
+}
+.hc_entire {
+    margin-top : 51px;
+}
+
+
+
+ 
+/* 상단 텍스트 배너 노출하고 싶을때 주석 해제 start */
+
+
+/*
+    
+.hc_notice_top {
+       display: block;
+}
+.hc_entire {
+    margin-top : 91px;
+}
+   
+*/
+
+
+/* 상단 텍스트 배너 노출하고 싶을때 주석 해제 end */
+ 
+ 
+
+ 
 #hc-header-wrap {
     position: fixed;
     top: 0;
     z-index: 9999;
-    width: 100%;
+    width: 100%;    
 }
 
 /* 상단 텍스트 배너 */
@@ -463,7 +493,7 @@ h2.hc_page_title {
     text-align: center;
     color: var(--hc_bright_color);
     background: var(--hc_dark_color);
-    /* display: none; /* 배너가 없는 경우 주석 해제 */
+    
 }
 
 .hc_notice_top a {

@@ -1,0 +1,100 @@
+<!--/include_header(1)/-->
+
+<div class="hc_entire">
+    <div class="hc_container hc_sub_wrap">
+        <main class="hc_contents">
+			<!-- 페이지 타이틀 -->
+            <h2 class="hc_page_title">SEARCH</h2>
+
+            <!--/form_search/-->
+            <div class="hc_searchform">
+                <!--/input_keyword(search_auto_completion)/--><a href="<!--/link_search/-->">검색</a>
+            </div>
+            <!--/end_form/-->
+			
+            <!--/block_product/-->
+				<!--/if_product_list/-->
+					<!--/if_product_list_viewtype(gallery)/-->
+					<div>
+						<ul data-type="gallery" data-open="on" class="prd_list items thumbnailRuleColumn2">
+							<!--/loop_product_list(12)/-->
+							<li class="prdlist2_content">
+                                <div class="hc_thumbnail">
+                                    <a href="<!--/product_list@link/-->"><img src="<!--/product_list@mobile_image/-->" alt="<!--/product_list@img_alt/-->" /></a>
+                                </div>
+                                <ul class="hc_prd_element">
+                                    <li class="hc_prd_name"><!--/notag/product_list@name/--></li>
+                                    
+                                    <!--/if_product_list@is_soldout/-->
+                                        <li class="listSoldout">(품절)</li>
+                                    <!--/else/-->
+                                        <!--/if_product_list@price_replace/-->
+                                            <li><!--/product_list@price_replace/--></li>
+                                        <!--/else/-->
+                                            <!--/if_product_list@price_discount/--><!-- 할인 가격 -->
+                                                <span class="hc_normal_price"><em><!--/number/product_list@price_sell/-->WON</em></span>
+                                                <span class="hc_discount_price"><!--/number/product_list@price_discount/-->WON</span>
+                                            <!--/else/-->
+                                                <!--/if_product_list@price_consumer(+1)/--><!-- 소비자 가격 -->
+                                                    <span class="hc_normal_price"><em><!--/number/product_list@price_consumer/-->WON</em></span>
+                                                <!--/end_if/-->
+                                                    <span class="hc_discount_price"><!--/number/product_list@price_sell/-->WON</span>
+                                            <!--/end_if/-->
+
+                                            <!--/if_product_list@reserve_price(+1)/-->
+                                                <li class="hc_blind">
+                                                    <!--/if_product_list@used_mobile_reserve/-->
+                                                    <!--/end_if/-->
+                                                    <!--/number/product_list@reserve_price/-->원 적립
+                                                </li>
+                                            <!--/end_if/-->
+                                        <!--/end_if/-->
+
+                                        <!-- 소비자가 대비 할인금액 할인율 소스 -->
+                                        <span class="hncok_discount_badge hc_blind">
+                                            <!--/if_product_list@consumer_discount_rate/-->
+                                                <!--/product_list@consumer_discount_rate/-->%
+                                            <!--/end_if/-->
+                                        </span>
+
+                                        <!-- 판매가 대비 할인금액 할인율 소스 -->
+                                        <span class="hncok_discount_badge">
+                                            <!--/if_product_list@sell_discount_rate/-->
+                                                <!--/product_list@sell_discount_rate/-->%
+                                            <!--/end_if/-->
+                                        </span>           
+
+
+                                        <!--/if_product_list@point_price(+1)/-->
+                                            <li class="hc_blind"><!--/number/product_list@point_price/--><!--/product_list@point_unit/--> 적립</li>
+                                        <!--/end_if/-->
+                                    <!--/end_if/-->
+                                    <li><!--/product_list@mobile_icons/--><!--/product_list@subs_icon/--><!--/product_list@promotion_icon_mobile/--></li>
+                                </ul>
+                            </li>   
+							<!--/end_loop/-->
+						</ul>
+					</div>
+					<!--/end_if/-->
+				<!--/else/-->
+				<div class="hc_no_date">
+					<p class="hc_interval2">SORRY</p>
+					<p>검색어를 찾지 못했습니다 .</p>
+					<p>
+						다른 단어로 다시 검색하거나 찾으시는 스타일을<br />
+						정확하게 한번 더 기재 후 검색 버튼을 눌러주세요.
+					</p>
+				</div>
+				<!--/end_if/-->
+            <!--/end_block/-->
+			
+            <!--/block_product_more/-->
+            <div class="hc_btn_wrap">
+                <a class="hc_btn_more" href="<!--/link_more_product_list/-->">MORE</a>
+            </div>
+            <!--/end_block/-->
+        </main>
+    </div>
+</div>
+
+<!--/include_footer(1)/-->
