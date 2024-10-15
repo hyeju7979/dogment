@@ -1092,8 +1092,9 @@ summary::-webkit-details-marker {
 }
 .hc_icons {
 	position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 5px;
+    z-index:100;
 }
 .hc_icons .MK-product-icons img {
 	width: unset;

@@ -14,3 +14,9 @@
     justify-content: start;
     padding: 0 6px;
 }
+
+.prdlist2_content {
+    position: relative;
+    vertical-align: top;
+    padding: 0 2px;
+}
