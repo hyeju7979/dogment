@@ -249,13 +249,6 @@ a.hc_btn_small_fill {
 }
 
 /* 썸네일 관련 */
-.hc_prd_list_information {
-	margin: 0 0 80px;
-	font-size: var(--hc_bd_medium);
-	font-weight: var(--hc_regular);
-	line-height: 2;
-	text-align: right;
-}
 
 .hc_discount_rate {
 	margin-left: 14px;
@@ -323,7 +316,8 @@ a.hc_btn_small_fill {
 	margin-top: 48px
 }
 .hc_bottomside {
-	margin-bottom: 68px
+	padding-bottom: 68px;
+    background-color: #fff;
 }
 .hc_bottomside img {
     width:100%;
